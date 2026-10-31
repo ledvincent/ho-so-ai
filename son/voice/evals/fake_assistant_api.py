@@ -33,9 +33,9 @@ class ChatRequest(BaseModel):
     history: list[Turn] = Field(default_factory=list, max_length=12)
 
 
-def create_fixture_app(*, voice_transport=None):
+def create_fixture_app(*, voice_transport=None, gateway_port=8002, cookie_name="hoso_fixture_voice", allow_fixture=True):
     documents = {}
-    for code in sorted(CATALOG_CODES):
+    for code in (sorted(CATALOG_CODES) if allow_fixture else []):
         raw = subprocess.check_output(["git", "-c", f"safe.directory={ROOT.as_posix()}",
             "show", f"{REVISION}:data/procedures/{code}/procedure.json"], cwd=ROOT)
         document = json.loads(raw)
@@ -46,7 +46,7 @@ def create_fixture_app(*, voice_transport=None):
 
     @app.middleware("http")
     async def mark_fixture(request, call_next):
-        if request.method in {"POST", "DELETE"} and request.url.path.startswith("/api/voice/") and request.headers.get("origin") not in {"http://127.0.0.1:8002", "http://localhost:8002"}:
+        if request.method in {"POST", "DELETE"} and request.url.path.startswith("/api/voice/") and request.headers.get("origin") not in {f"http://127.0.0.1:{gateway_port}", f"http://localhost:{gateway_port}"}:
             return JSONResponse({"detail":"origin_denied"}, status_code=403)
         response = await call_next(request)
         response.headers["X-HoSo-Synthetic-Fixture"] = "1"
@@ -66,6 +66,7 @@ def create_fixture_app(*, voice_transport=None):
     @app.get("/audio-client.js")
     @app.get("/realtime-client.js")
     @app.get("/fixture-tool.js")
+    @app.get("/rag-tool.js")
     def voice_asset(request: Request):
         asset = request.url.path[1:]
         return FileResponse(static / asset)
@@ -73,6 +74,8 @@ def create_fixture_app(*, voice_transport=None):
     @app.api_route("/api/voice/{operation}", methods=["GET", "POST", "DELETE"])
     async def voice_bridge(operation: str, request: Request):
         if operation == "fixture-document" and request.method == "POST":
+            if not allow_fixture:
+                raise HTTPException(404)
             raw = await bounded_body(request, 256)
             try:
                 payload = json.loads(raw)
@@ -102,7 +105,7 @@ def create_fixture_app(*, voice_transport=None):
             if name in request.headers:
                 headers[name] = request.headers[name]
         # Isolate the fixture call from an existing direct call on port 8001.
-        cookie = request.cookies.get("hoso_fixture_voice")
+        cookie = request.cookies.get(cookie_name)
         if cookie and re.fullmatch(r"[A-Za-z0-9_-]{20,128}", cookie):
             headers["Cookie"] = "hoso_public_voice=" + cookie
         params = {"language":request.query_params.get("language", "vi")} if operation == "session" else {}
@@ -115,7 +118,7 @@ def create_fixture_app(*, voice_transport=None):
                             media_type=upstream.headers.get("content-type"))
         for name in ("x-call-max-seconds", "set-cookie"):
             if name in upstream.headers:
-                response.headers[name] = upstream.headers[name].replace("hoso_public_voice=", "hoso_fixture_voice=") if name == "set-cookie" else upstream.headers[name]
+                response.headers[name] = upstream.headers[name].replace("hoso_public_voice=", cookie_name + "=") if name == "set-cookie" else upstream.headers[name]
         return response
 
     async def bounded_body(request, limit):

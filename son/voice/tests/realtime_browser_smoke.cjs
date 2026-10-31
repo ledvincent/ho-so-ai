@@ -11,12 +11,19 @@ const {chromium} = require("playwright");
     let calls = 0;
     let documentCalls = 0;
     const fixtureMode = process.env.VOICE_TEST_FIXTURE === "1";
+    const ragMode = process.env.VOICE_TEST_RAG === "1";
     let holdDocument = false, releaseDocument, documentStarted;
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.route("**/api/voice/capabilities", (route) => route.fulfill({json:{realtime_available:true}}));
     await page.route("**/realtime-client.js", (route) => route.fulfill({contentType:"application/javascript", path:path.resolve(__dirname, "../src/voice_app/static/realtime-client.js")}));
     await page.route("**/fixture-tool.js", (route) => route.fulfill({contentType:"application/javascript", path:path.resolve(__dirname, "../src/voice_app/static/fixture-tool.js")}));
+    await page.route("**/rag-tool.js", (route) => route.fulfill({contentType:"application/javascript", path:path.resolve(__dirname, "../src/voice_app/static/rag-tool.js")}));
+    await page.route("**/api/voice/rag", route => {
+      const args = route.request().postDataJSON();
+      assert.equal(args.question, "Synthetic general procedure question");
+      return route.fulfill({json:{status:"answered", answer:"Synthetic sourced answer [s1]", procedure_code:"1.001146", choices:[], citations:[{id:"s1",title:"Synthetic RAG source",url:"https://example.org/source"}]}});
+    });
     await page.route("**/api/voice/fixture-document", async (route) => {
       documentCalls++;
       const args = route.request().postDataJSON();
@@ -75,7 +82,7 @@ const {chromium} = require("playwright");
       };
     });
     const base = process.env.VOICE_TEST_URL || "http://127.0.0.1:8000";
-    await page.goto(base + "/?audio=realtime&language=en" + (fixtureMode ? "&documents=fixture" : ""));
+    await page.goto(base + "/?audio=realtime&language=en" + (fixtureMode ? "&documents=fixture" : ragMode ? "&documents=rag" : ""));
     await page.getByRole("status").getByText(/Accept the disclosure/).waitFor();
     assert.equal(await page.locator("#composer").isVisible(), false);
     assert.equal(await page.locator(".read-toggle").isVisible(), false);
@@ -86,7 +93,7 @@ const {chromium} = require("playwright");
     await page.waitForFunction(() => window.syntheticSent.some((item) => item.type === "response.create"));
     assert.equal(await page.evaluate(() => window.syntheticSent[0].type), "session.update");
     assert.equal(await page.evaluate(() => window.syntheticSent[0].session.max_output_tokens), 2048);
-    assert.equal(await page.evaluate(() => window.syntheticSent[0].session.instructions.includes("ho-so-ai-foreigner-intake-v2")), true);
+    assert.equal(await page.evaluate(ragMode => window.syntheticSent[0].session.instructions.includes(ragMode ? "CONNECTED PROCEDURE ASSISTANT MODE" : "ho-so-ai-foreigner-intake-v2"), ragMode), true);
     assert.equal(await page.evaluate(() => window.syntheticMicEnabledBeforeProfile), false);
     assert.equal(await page.evaluate(() => window.syntheticGreetedBeforeProfile), false);
     if (fixtureMode) {
@@ -102,6 +109,14 @@ const {chromium} = require("playwright");
       await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.done", response:{status:"completed", output:[{
         type:"function_call", name:"inspect_test_document", call_id:"synthetic_1.001146", arguments:'{"procedure_code":"1.001146"}'}]}})}));
       assert.equal(documentCalls, 4);
+    } else if (ragMode) {
+      assert.equal(await page.evaluate(() => window.syntheticSent[0].session.tools[0].name), "ask_procedure_assistant");
+      await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.done", response:{status:"completed", output:[{
+        type:"function_call", name:"ask_procedure_assistant", call_id:"synthetic_rag", arguments:JSON.stringify({question:"Synthetic general procedure question"})}]}})}));
+      await page.waitForFunction(() => window.syntheticSent.some(item => item.item?.call_id === "synthetic_rag"));
+      await page.getByRole("log").getByText("Synthetic sourced answer [s1]", {exact:true}).waitFor();
+      await page.getByRole("log").getByText("SOURCE: Synthetic RAG source — https://example.org/source", {exact:true}).waitFor();
+      assert.equal(documentCalls, 0);
     } else {
       assert.equal(await page.evaluate(() => window.syntheticSent[0].session.tools), undefined);
       assert.equal(documentCalls, 0);

@@ -1,5 +1,50 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Vincent's current RAG API: connected-mode implementation
+
+The `7c78ec4` contract adds `choices`, signed `retrieval_state`, selected
+`procedure_code` and `documents`. The new consumer preserves signed state and the
+last four conversational messages **server-side** per voice cookie. No token is
+returned to the voice model. It handles clarification IDs, explicit procedure
+changes, source markers, errors and cancellation. The RAG remains Vincent's;
+the voice does not build an index or import draft source files.
+
+Start only after obtaining the actual backend origin (a pushed Git branch is
+not a running API). Substitute that origin below, without a key in the command:
+
+```powershell
+son/voice/.venv/Scripts/python.exe son/voice/evals/live_rag_voice.py --assistant-url https://YOUR-ACTUAL-BACKEND
+```
+
+Then open `http://127.0.0.1:8003/?audio=realtime&language=en&documents=rag`
+or `language=vi`. The private voice backend must remain running on 8001. The new
+gateway is loopback-only and uses a separate `hoso_rag_voice` session cookie.
+It provides no authentication adapter for a protected upstream yet; an upstream
+401/403 is an error, never permission to bypass authentication.
+
+Ask naturally: “I want to extend my stay in Vietnam. Where should I start?”
+The voice asks the RAG, follows its clarification choices, retains context and
+shows the complete answer/citations while speaking a concise explanation. For
+example, follow with “What documents do I need?” or explicitly change the request
+to a new visa. It never silently treats an incomplete spoken list as complete.
+Personal profile access, forms and delivery remain separate integrations.
+
+Validation: 62 offline Python tests and mocked browser coverage for ordinary,
+fixture and RAG modes. Signed-state continuity, wrong choices, missing citations,
+409 invalidation, cancellation and session isolation have offline coverage.
+No real RAG or live voice/RAG validation has run: its deployed URL is still
+unknown in this chat. This implementation is ready for that verification, not
+claimed live. Source-readiness enforcement remains upstream; citation membership
+alone is not proof of legal correctness or human approval. The current chat
+response also does not establish the shared pinned checklist/report contract.
+
+RAG timeout is 125 seconds server-side and 130 seconds client-side, bounded by the
+existing three-minute call lease; no automatic retries. Interrupting a pending
+query aborts it. A disconnected lookup invalidates its server conversation so a
+new call may be needed. No transcripts, signed state or error bodies are logged.
+Questions sent upstream must be general and non-personal: there is no automatic
+PII redaction layer. The provider receives the question and bounded history.
+
 ## Try the fictional document API inside a voice call
 
 With the existing private voice server on 8001 and the fixture on 8002 running,

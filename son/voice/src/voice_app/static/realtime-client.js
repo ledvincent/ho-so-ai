@@ -53,7 +53,7 @@ export class RealtimeVoiceClient {
     this.toolPending = null;
   }
 
-  async start({language = "vi", consent = false, fixtureDocuments = false} = {}) {
+  async start({language = "vi", consent = false, fixtureDocuments = false, ragDocuments = false} = {}) {
     if (!consent) throw new Error("audio_consent_required");
     if (!["vi", "en"].includes(language)) throw new Error("unsupported_language");
     if (!globalThis.RTCPeerConnection || !navigator.mediaDevices?.getUserMedia) throw new Error("webrtc_unavailable");
@@ -64,6 +64,10 @@ export class RealtimeVoiceClient {
     this.onState("connecting");
     try {
       const fixture = fixtureDocuments ? await import("./fixture-tool.js") : null;
+      const rag = ragDocuments ? await import("./rag-tool.js") : null;
+      if (fixture && rag) throw new Error("choose_one_document_mode");
+      const lookup = rag ? {tools:rag.TOOLS, instructions:rag.INSTRUCTIONS, execute:rag.execute, name:"ask_procedure_assistant", timeout:130000}
+        : fixture ? {tools:fixture.FIXTURE_TOOLS, instructions:fixture.FIXTURE_INSTRUCTIONS, execute:fixture.inspectFixtureDocument, name:"inspect_test_document", timeout:8000} : null;
       const session = await fetch(`/api/voice/session?language=${language}`, {method:"POST", credentials:"same-origin", signal:controller.signal});
       if (!session.ok) throw new Error(`voice_http_${session.status}`);
       const stream = await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true, noiseSuppression:true, autoGainControl:true}});
@@ -72,7 +76,7 @@ export class RealtimeVoiceClient {
       const peer = new RTCPeerConnection();
       this.peer = peer;
       let profileApplied = false;
-      const instructions = PROJECT_VOICE_PROFILE.language_instructions[language] + "\n\n" + PROJECT_VOICE_PROFILE.instructions.join("\n\n") + (fixture?.FIXTURE_INSTRUCTIONS || "");
+      const instructions = PROJECT_VOICE_PROFILE.language_instructions[language] + "\n\n" + (rag ? rag.INSTRUCTIONS : PROJECT_VOICE_PROFILE.instructions.join("\n\n") + (lookup?.instructions || ""));
       const completedTools = new Set();
       let speechEpoch = 0;
       // Do not stream the caller's speech before project instructions are acknowledged.
@@ -104,7 +108,7 @@ export class RealtimeVoiceClient {
           if (version === this.version && !profileApplied) this.stop(false).finally(() => this.onState("connection_error"));
         }, 8000);
         channel.send(JSON.stringify({type:"session.update", session:{type:"realtime", max_output_tokens:2048, instructions,
-          ...(fixture ? {tools:fixture.FIXTURE_TOOLS, tool_choice:"auto"} : {})}}));
+          ...(lookup ? {tools:lookup.tools, tool_choice:"auto"} : {})}}));
       };
       channel.onmessage = (event) => {
         if (version !== this.version || typeof event.data !== "string" || event.data.length > 65536) return;
@@ -117,7 +121,7 @@ export class RealtimeVoiceClient {
           this.onState("listening");
           this.onDiagnostic({event:"profile_applied", profileId:PROJECT_VOICE_PROFILE.id});
           channel.send(JSON.stringify({type:"response.create", response:{instructions:
-            "Open the call using the following project greeting in a natural voice. " + PROJECT_VOICE_PROFILE.greetings[language]
+            "Open the call using the following project greeting in a natural voice. " + (rag ? (language === "en" ? "Hi, I'm the AI voice assistant for Hồ Sơ AI. What would you like to get done today?" : "Chào bạn, mình là trợ lý giọng nói AI của Hồ Sơ AI. Bạn đang muốn làm thủ tục gì?") : PROJECT_VOICE_PROFILE.greetings[language])
             + (fixture ? (language === "en" ? " Also briefly say this call can test a fictional document API." : " Nói ngắn gọn rằng cuộc gọi này có thể thử API tài liệu giả lập.") : "")}}));
         }
         if (data.type === "input_audio_buffer.speech_started") { speechEpoch++; this.toolPending?.abort(); callerSpeaking = true; this.onState("hearing"); }
@@ -129,7 +133,7 @@ export class RealtimeVoiceClient {
           this.onState(callerSpeaking ? "hearing" : "listening");
         }
         if (data.type === "response.done") {
-          const toolCalls = fixture && data.response?.status === "completed"
+          const toolCalls = lookup && data.response?.status === "completed"
             ? (data.response.output || []).filter(item => item.type === "function_call") : [];
           if (toolCalls.length) {
             const epoch = speechEpoch;
@@ -140,14 +144,14 @@ export class RealtimeVoiceClient {
                 if (typeof item.call_id !== "string" || item.call_id.length > 128) continue;
                 completedTools.add(item.call_id);
                 let output = {error:"unsupported_test_tool"};
-                if (item.name === "inspect_test_document" && typeof item.arguments === "string" && item.arguments.length < 256 && completedTools.size <= 8) {
+                if (item.name === lookup.name && typeof item.arguments === "string" && item.arguments.length < (rag ? 6000 : 256) && completedTools.size <= (rag ? 12 : 8)) {
                   const request = new AbortController();
                   this.toolPending?.abort();
                   this.toolPending = request;
-                  const timeout = setTimeout(() => request.abort(), 8000);
+                  const timeout = setTimeout(() => request.abort(), lookup.timeout);
                   this.onState("thinking");
-                  try { output = await fixture.inspectFixtureDocument(item.arguments, request.signal); }
-                  catch { output = {error:"fixture_unavailable"}; }
+                  try { output = await lookup.execute(item.arguments, request.signal); }
+                  catch { output = {error:rag ? "rag_unavailable" : "fixture_unavailable"}; }
                   finally { clearTimeout(timeout); if (this.toolPending === request) this.toolPending = null; }
                 }
                 if (version !== this.version) return;
@@ -157,6 +161,11 @@ export class RealtimeVoiceClient {
                 if (output.synthetic && epoch === speechEpoch) {
                   this.onDiagnostic({event:"fixture_document", procedureCode:output.procedure_code});
                   this.onTranscript("TEST SOURCE: " + output.document_title + " — " + output.source_url);
+                }
+                if (rag && output.answer && epoch === speechEpoch) {
+                  this.onTranscript(output.answer);
+                  for (const source of output.citations || []) this.onTranscript("SOURCE: " + source.title + " — " + source.url);
+                  this.onDiagnostic({event:"rag_result", status:output.status, procedureCode:output.procedure_code || null});
                 }
               }
               if (delivered && version === this.version && epoch === speechEpoch && !callerSpeaking) channel.send(JSON.stringify({type:"response.create", response:{tool_choice:"none"}}));

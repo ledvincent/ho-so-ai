@@ -386,7 +386,7 @@ async function realtimeHarness() {
       if (active) { await client.stop(); return; }
       active = true;
       controls();
-      try { await client.start({language, consent:consent.checked, fixtureDocuments:new URLSearchParams(location.search).get("documents") === "fixture"}); }
+      try { await client.start({language, consent:consent.checked, fixtureDocuments:new URLSearchParams(location.search).get("documents") === "fixture", ragDocuments:new URLSearchParams(location.search).get("documents") === "rag"}); }
       catch { active = false; $("status").textContent = messages.connection_error; controls(); }
     };
     $("restart").onclick = () => client.stop();
