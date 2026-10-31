@@ -7,6 +7,15 @@ storage contract: SQLite requires a paid persistent disk and a single API
 instance; use managed PostgreSQL only if that owner supplies and verifies its
 adapter/migration. This is a proposed deployment, not a deployed jury link.
 
+**Additional exact blocker from AUTH-02:** `web/lib/local-auth-policy.ts`
+`localOrigin()` accepts only loopback hostnames. The new identity provider is
+deliberately LOCAL and disabled by default. Setting a public HTTPS origin is
+rejected; a hosting account or DNS change cannot make this checkpoint publicly
+deployable. The backend owner must first deliver and review an appropriate
+public-demo/production identity mode, origin rules and non-demo accounts. UI-02
+does not relax this guard. Render is the recommended runtime once that work is
+accepted; this source cannot be deployed unchanged to a jury URL today.
+
 ## What was inspected
 
 - Existing Site `appgprj_6ae563e876f48191bead979e185909d3`: active branding Site,
@@ -45,7 +54,8 @@ References: installed Sites `SKILL.md`, `references/identity-and-secrets.md`,
 ## Concrete deployment work still required
 
 1. Review the delivered AUTH-02/CHAT-01 integration and its database/provider
-   acceptance. Provision jury accounts securely; never expose synthetic
+   acceptance, including replacement of the deliberately loopback-only identity
+   mode with a reviewed hosted configuration. Provision jury accounts securely; never expose synthetic
    `admin/admin`, local database files or API credentials.
 2. Provision the two services, private API hostname and durable storage.
    Render's default filesystem is ephemeral. Paid disk-backed services have
