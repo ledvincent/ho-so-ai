@@ -1,5 +1,63 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Live voice call (current requested experience)
+
+The phone-like mode is **OpenAI Realtime over WebRTC**: one connection carries
+microphone audio and the agent's live speech, automatic turn detection and
+interruptions. It does not use MediaRecorder, transcript confirmation or a Send
+button. Earlier browser/chained-audio modes below remain diagnostic alternatives.
+
+After restarting the private launcher to load the new backend, open:
+
+- http://127.0.0.1:8001/?audio=realtime&language=en
+- http://127.0.0.1:8001/?audio=realtime&language=vi
+
+Accept the live-audio disclosure, choose **Start voice call**, and allow the mic.
+Talk normally, pause for the agent's reply, or interrupt it by speaking. **End
+call** stops the microphone/peer and requests server hangup. If autoplay is
+blocked, **Enable sound** resumes it; End call remains available at the top.
+Nothing connects or transmits mic audio before the call button. Calls have a
+three-minute demo limit (also limited by public-session expiry). Use fictional
+needs, and headphones if speaker echo causes false interruptions.
+
+`RealtimeVoiceClient` in `/realtime-client.js` is headless for Kim's product UI.
+The existing test layout only hosts Start/End call controls; no product redesign.
+The browser sends an SDP offer to the local server; the server authenticates the
+unified `/v1/realtime/calls` request. Only SDP is returned, never an API key,
+ephemeral credential or provider call ID. The server owns hangup, one call per
+public cookie, four concurrent demo calls, lease timeout and shutdown cleanup.
+The public cookie is not application identity and does not authorize personal data.
+
+Default model: `gpt-realtime-2.1`; override `VOICE_REALTIME_MODEL` in the private
+server environment before launching if account access requires another supported
+model. `realtime_available` in capabilities means configured, not verified model
+access. No extra package beyond the existing audio/httpx extra is needed.
+
+Reference: [official OpenAI WebRTC guide](https://developers.openai.com/api/docs/guides/voice-webrtc),
+[turn detection](https://developers.openai.com/api/docs/guides/realtime-vad),
+[hangup API](https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/hangup).
+
+This is an **exploratory conversation-only mode**: the agent clarifies intent,
+does not have reviewed legal facts, and has zero tools for dossiers, forms,
+reports or submissions. Instructions prohibit legal requirements/fees/eligibility
+claims and discourage personal data. These are prompt constraints on generated
+speech, not a deterministic guarantee of legal grounding. Do not treat model
+speech/transcripts as a reviewed checklist or forward them to the report. This
+mode is not the legally grounded release of VOICE-01; verified fact/tool delivery
+still needs the contract and code gates with Vincent/Kim before integration.
+
+Live audio goes directly to OpenAI while connected. No server audio/transcript
+logging or persistence; optional assistant transcripts appear only in page memory.
+Provider retention has not been reviewed. Closing the browser/withdrawing consent
+releases local media and asks the backend to hang up. Failed network hangup cannot
+guarantee immediate cessation of provider billing; the server also attempts hangup
+at lease expiry and process shutdown. Do not expose this public prototype online.
+
+Tests: `python -m unittest discover -s son/voice/tests -v` and
+`node son/voice/tests/realtime_browser_smoke.cjs` (Playwright setup below).
+The browser test uses synthetic WebRTC/media/provider events. Passing it does not
+establish actual acoustic quality, real barge-in, latency or legal-policy adherence.
+
 Owner: Son (backend/dialogue). Kim owns the product UI, including the voice screen
 and microphone controls. The static page in this package is a development/test
 harness only; its design is frozen and does not prescribe Kim's UI. The
@@ -44,7 +102,8 @@ dependency and must not be staged as part of this task.
 
 - Vietnamese speech recognition through the browser Web Speech API, with typed
   input when unavailable. Users check recognized text and press Send.
-- Optional browser speech synthesis. No LLM or external realtime vendor configured.
+- Optional browser speech synthesis in the legacy mode; the live-call mode above
+  instead uses the Realtime speech-to-speech model.
 - Bilingual backend: `POST /api/voice/session?language=en` (default `vi`), then
   `POST /api/voice/turn` with `{ "text": "renew" }`. A turn may specify
   `language: "vi"` or `"en"` to change reply language without losing intent.

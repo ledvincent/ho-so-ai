@@ -1,5 +1,6 @@
 :root { color-scheme: light; --ink:#262b29; --muted:#626b66; --green:#1b5845; --paper:#f6f5ef; --line:#dedfd6; }
 * { box-sizing:border-box; }
+[hidden] { display:none !important; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.6; }
 main { max-width:1160px; padding:28px 38px 32px; margin:auto; }
 header { display:flex; align-items:center; justify-content:space-between; gap:16px; border-bottom:1px solid var(--line); padding-bottom:20px; }

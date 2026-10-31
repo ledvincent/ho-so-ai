@@ -1,6 +1,8 @@
 "use strict";
 // The existing layout is a technical test harness, not Kim's product UI.
-if (new URLSearchParams(location.search).get("audio") === "openai") {
+if (new URLSearchParams(location.search).get("audio") === "realtime") {
+  realtimeHarness();
+} else if (new URLSearchParams(location.search).get("audio") === "openai") {
   openAIHarness();
 } else {
   browserHarness();
@@ -316,4 +318,83 @@ async function openAIHarness() {
     });
     await start();
   } catch (error) { failure(error); }
+}
+
+async function realtimeHarness() {
+  const $ = (id) => document.getElementById(id);
+  const language = new URLSearchParams(location.search).get("language") === "en" ? "en" : "vi";
+  const en = language === "en";
+  const consent = $("audio-consent");
+  const call = $("microphone");
+  let client, active = false, blocked = false;
+  $("composer").hidden = true;
+  $("choices").hidden = true;
+  document.querySelector(".read-toggle").hidden = true;
+  $("restart").hidden = true;
+  document.querySelector(".session-heading h2").textContent = en ? "Live voice call · English" : "Cuộc gọi trực tiếp · Tiếng Việt";
+  $("candidate-title").textContent = en ? "Just talk." : "Bạn cứ nói nhé.";
+  $("candidate-description").textContent = en ? "No recording or Send button. You can interrupt the agent. Official data is not connected." : "Không cần ghi âm rồi gửi. Bạn có thể ngắt lời trợ lý. Dữ liệu chính thức chưa được kết nối.";
+  consent.parentElement.lastChild.textContent = en
+    ? " I agree to a live AI call: microphone audio and connection data go to OpenAI while connected. Calls may incur charges. Use fictional needs, no personal data."
+    : " Tôi đồng ý gọi AI trực tiếp: âm thanh micro và dữ liệu kết nối được gửi đến OpenAI khi đang gọi. Có thể mất phí. Chỉ thử nhu cầu giả định, không dùng dữ liệu cá nhân.";
+  const messages = {
+    connecting: en ? "Connecting… Allow microphone access." : "Đang kết nối… Hãy cho phép dùng micro.",
+    listening: en ? "Call connected. Speak naturally; the agent will answer when you finish." : "Đã kết nối. Bạn cứ nói tự nhiên, trợ lý sẽ trả lời khi bạn nói xong.",
+    hearing: en ? "Listening to you…" : "Đang nghe bạn…",
+    thinking: en ? "The agent is responding…" : "Trợ lý đang trả lời…",
+    speaking: en ? "The agent is speaking. You can interrupt by talking." : "Trợ lý đang nói. Bạn có thể ngắt lời bằng cách nói.",
+    ended: en ? "Call ended. Microphone released." : "Đã kết thúc. Micro đã tắt.",
+    connection_error: en ? "Call failed. Check microphone permission, Realtime model access and API credits." : "Không gọi được. Kiểm tra quyền micro, quyền model Realtime và số dư API.",
+    audio_blocked: en ? "Tap Enable sound to hear the call." : "Chọn Bật âm thanh để nghe cuộc gọi.",
+  };
+  function controls() {
+    call.disabled = !client || (!active && !consent.checked);
+    call.textContent = blocked ? (en ? "Enable sound" : "Bật âm thanh") : active ? (en ? "End call" : "Kết thúc cuộc gọi") : (en ? "Start voice call" : "Bắt đầu cuộc gọi");
+    call.classList.toggle("listening", active);
+    $("restart").hidden = !active;
+    $("restart").textContent = en ? "End call" : "Kết thúc";
+  }
+  controls();
+  try {
+    const capabilities = await fetch("/api/voice/capabilities").then((result) => result.json());
+    if (!capabilities.realtime_available) {
+      $("status").textContent = en ? "Restart the private server to load the new Realtime backend." : "Khởi động lại máy chủ riêng để nạp chế độ Realtime mới.";
+      return;
+    }
+    const {RealtimeVoiceClient} = await import("/realtime-client.js");
+    client = new RealtimeVoiceClient({
+      onState(state) {
+        if (["ended", "connection_error"].includes(state)) { active = false; blocked = false; }
+        if (state === "audio_blocked") blocked = true;
+        if (messages[state]) $("status").textContent = blocked ? messages.audio_blocked : messages[state];
+        controls();
+      },
+      onTranscript(text) {
+        const element = document.createElement("p");
+        element.className = "message";
+        element.textContent = text;
+        $("messages").appendChild(element);
+        element.scrollIntoView({block:"nearest"});
+      },
+    });
+    call.onclick = async () => {
+      if (blocked) {
+        try { await client.resumeAudio(); blocked = false; $("status").textContent = messages.listening; controls(); }
+        catch { $("status").textContent = messages.audio_blocked; }
+        return;
+      }
+      if (active) { await client.stop(); return; }
+      active = true;
+      controls();
+      try { await client.start({language, consent:consent.checked}); }
+      catch { active = false; $("status").textContent = messages.connection_error; controls(); }
+    };
+    $("restart").onclick = () => client.stop();
+    consent.onchange = () => { if (!consent.checked) client.stop(); controls(); };
+    window.addEventListener("pagehide", () => client.stop());
+    $("status").textContent = en ? "Accept the disclosure, then Start voice call. No audio is sent before you start." : "Đồng ý thông báo rồi chọn Bắt đầu cuộc gọi. Chưa gửi âm thanh trước khi bắt đầu.";
+    controls();
+  } catch {
+    $("status").textContent = messages.connection_error;
+  }
 }

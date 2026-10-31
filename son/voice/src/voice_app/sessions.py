@@ -94,6 +94,14 @@ class PublicSessions:
                 raise MissingSession()
             session.audio_busy = False
 
+    def remaining(self, token):
+        with self._lock:
+            self._prune()
+            session = self._sessions.get(token)
+            if session is None:
+                raise MissingSession()
+            return session.expires_at - self.clock()
+
     def end(self, token):
         with self._lock:
             self._sessions.pop(token, None)

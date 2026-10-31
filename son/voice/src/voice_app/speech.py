@@ -1,6 +1,11 @@
-"""Optional audio transport. No free-form generated answers or personal tools."""
+"""Optional chained speech and public Realtime transport; no personal tools."""
 import json
 import os
+import hashlib
+import re
+from urllib.parse import urlsplit
+
+from .realtime import call_configuration
 
 MAX_AUDIO_INPUT = 2 * 1024 * 1024
 MAX_AUDIO_OUTPUT = 4 * 1024 * 1024
@@ -80,6 +85,52 @@ class OpenAISpeech:
         except ValueError:
             raise SpeechUnavailable() from None
         return body
+
+    async def create_realtime(self, offer, language, token):
+        import httpx
+
+        configuration = call_configuration(language, os.getenv("VOICE_REALTIME_MODEL", "gpt-realtime-2.1"))
+        try:
+            async with httpx.AsyncClient(timeout=25, follow_redirects=False, trust_env=False, transport=self.transport) as client:
+                async with client.stream("POST", "https://api.openai.com/v1/realtime/calls",
+                                         headers={"Authorization": "Bearer " + self._api_key,
+                                                  "OpenAI-Safety-Identifier": hashlib.sha256(token.encode()).hexdigest()},
+                                         files={"sdp": (None, offer, "application/sdp"),
+                                                "session": (None, json.dumps(configuration), "application/json")}) as result:
+                    if result.status_code not in (200, 201):
+                        raise SpeechUnavailable()
+                    call_id = urlsplit(result.headers.get("Location", "")).path.rsplit("/", 1)[-1]
+                    if not re.fullmatch(r"[a-zA-Z0-9_-]{1,200}", call_id):
+                        raise SpeechUnavailable()
+                    body = bytearray()
+                    async for chunk in result.aiter_bytes():
+                        body.extend(chunk)
+                        if len(body) > 64 * 1024:
+                            await self.close_realtime(call_id)
+                            raise SpeechUnavailable()
+                    try:
+                        answer = body.decode("utf-8")
+                        if not answer.startswith("v=0"):
+                            raise ValueError()
+                    except (ValueError, UnicodeError):
+                        await self.close_realtime(call_id)
+                        raise SpeechUnavailable() from None
+                    return answer, call_id
+        except httpx.HTTPError:
+            raise SpeechUnavailable() from None
+
+    async def close_realtime(self, call_id):
+        import httpx
+
+        if not re.fullmatch(r"[a-zA-Z0-9_-]{1,200}", call_id):
+            return False
+        try:
+            async with httpx.AsyncClient(timeout=5, follow_redirects=False, trust_env=False, transport=self.transport) as client:
+                result = await client.post("https://api.openai.com/v1/realtime/calls/" + call_id + "/hangup",
+                                           headers={"Authorization": "Bearer " + self._api_key})
+                return result.status_code in (200, 204, 404)
+        except httpx.HTTPError:
+            return False
 
 
 def configured_speech():

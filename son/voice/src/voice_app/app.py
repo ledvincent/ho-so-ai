@@ -2,6 +2,7 @@
 import json
 import os
 from pathlib import Path
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse, Response
@@ -10,6 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field, ValidationError
 from .languages import Language, SPEECH_LANGUAGES, response as dialogue_response
 from .sessions import AudioLimit, CapacityReached, MissingSession, PublicSessions, TurnLimit
 from .speech import MAX_AUDIO_INPUT, SpeechUnavailable, audio_extension, configured_speech
+from .realtime import CALL_SECONDS, CallBusy, RealtimeCalls
 
 STATIC = Path(__file__).parent / "static"
 COOKIE = "hoso_public_voice"
@@ -26,7 +28,15 @@ def create_app(*, sessions=None, allowed_origins=None, secure_cookie=False, spee
     store = sessions if sessions is not None else PublicSessions()
     audio = speech if speech is not None else configured_speech()
     origins = frozenset(allowed_origins or {"http://127.0.0.1:8000", "http://localhost:8000"})
-    app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
+    realtime = RealtimeCalls(audio, store)
+    realtime_available = audio.enabled and hasattr(audio, "create_realtime")
+
+    @asynccontextmanager
+    async def lifespan(app):
+        yield
+        await realtime.close()
+
+    app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None, lifespan=lifespan)
 
     @app.middleware("http")
     async def boundaries(request: Request, call_next):
@@ -36,7 +46,7 @@ def create_app(*, sessions=None, allowed_origins=None, secure_cookie=False, spee
         response.headers.update({
             "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff",
             "Referrer-Policy": "no-referrer",
-            "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
+            "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; media-src 'self' blob:; img-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'",
             "Permissions-Policy": "microphone=(self), camera=(), geolocation=()",
         })
         return response
@@ -57,6 +67,10 @@ def create_app(*, sessions=None, allowed_origins=None, secure_cookie=False, spee
     def audio_client():
         return FileResponse(STATIC / "audio-client.js", media_type="application/javascript")
 
+    @app.get("/realtime-client.js")
+    def realtime_client():
+        return FileResponse(STATIC / "realtime-client.js", media_type="application/javascript")
+
     @app.get("/health")
     def health():
         return {"status": "ok", "mode": "public_dialogue_demo", "reviewed_lookup_available": False,
@@ -65,14 +79,17 @@ def create_app(*, sessions=None, allowed_origins=None, secure_cookie=False, spee
     @app.get("/api/voice/capabilities")
     def capabilities():
         return {"languages": SPEECH_LANGUAGES, "audio_api_enabled": audio.enabled,
+                "realtime_available": realtime_available, "max_call_seconds": CALL_SECONDS,
+                "realtime_mode": {"continuous_audio": True, "transcript_confirmation_required": False},
                 "audio_disclosure_required": True, "transcript_confirmation_required": True,
                 "max_audio_bytes": MAX_AUDIO_INPUT, "personal_tools_enabled": False}
 
     @app.post("/api/voice/session")
-    def start(request: Request):
+    async def start(request: Request):
         language = request.query_params.get("language", "vi")
         if language not in SPEECH_LANGUAGES:
             raise HTTPException(422, detail="unsupported_language")
+        await realtime.end(request.cookies.get(COOKIE))
         try:
             token = store.create(request.cookies.get(COOKIE), language=language)
         except CapacityReached:
@@ -155,9 +172,44 @@ def create_app(*, sessions=None, allowed_origins=None, secure_cookie=False, spee
     async def speech_reply(request: Request):
         return await audio_request(request, "speech")
 
+    @app.post("/api/voice/realtime")
+    async def start_call(request: Request):
+        if request.headers.get("x-audio-consent") != "1":
+            raise HTTPException(403, detail="audio_consent_required")
+        if not realtime_available:
+            raise HTTPException(503, detail="realtime_not_configured")
+        if request.headers.get("content-type", "").split(";", 1)[0] != "application/sdp":
+            raise HTTPException(415, detail="sdp_required")
+        body = bytearray()
+        async for chunk in request.stream():
+            body.extend(chunk)
+            if len(body) > 64 * 1024:
+                raise HTTPException(413, detail="sdp_too_large")
+        try:
+            offer = body.decode("utf-8")
+            if not offer.startswith("v=0") or "m=audio " not in offer:
+                raise ValueError()
+        except (ValueError, UnicodeError):
+            raise HTTPException(422, detail="invalid_sdp") from None
+        try:
+            answer, seconds = await realtime.create(request.cookies.get(COOKIE), offer)
+        except MissingSession:
+            raise HTTPException(401, detail="public_session_expired") from None
+        except (CallBusy, AudioLimit):
+            raise HTTPException(429, detail="call_limit") from None
+        except SpeechUnavailable:
+            raise HTTPException(503, detail="realtime_provider_unavailable") from None
+        return Response(answer, media_type="application/sdp", headers={"X-Call-Max-Seconds": str(int(seconds))})
+
+    @app.delete("/api/voice/realtime")
+    async def stop_call(request: Request):
+        await realtime.end(request.cookies.get(COOKIE))
+        return {"state": "ended"}
+
     @app.delete("/api/voice/session")
-    def end(request: Request):
+    async def end(request: Request):
         store.end(request.cookies.get(COOKIE))
+        await realtime.end(request.cookies.get(COOKIE))
         response = JSONResponse({"state": "ended"})
         response.delete_cookie(COOKIE, path="/api/voice", secure=secure_cookie, httponly=True, samesite="strict")
         return response
