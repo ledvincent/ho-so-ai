@@ -1,5 +1,9 @@
 # UI-02 owner integration seam
 
+Historical preparation note. The connected result and current status are in
+[ui-02-frontend-handoff.md](ui-02-frontend-handoff.md); its final contract and
+implementation references supersede the pending-state notes below.
+
 Base preserved: `b4a3ebf2d208ad4533b2a50f69aec9462626145c`.
 Branch: `codex/kim/ui-02-guided-portal`, sole frontend owner.
 
