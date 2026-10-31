@@ -15,7 +15,7 @@ const destinations = [
 /** Presentation only. Session verification stays in the existing Clerk pages/proxies. */
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const isWorkspace = pathname === '/forms/demo' || pathname === '/demo/ct01' || pathname === '/workspace';
+  const isWorkspace = pathname === '/forms/demo' || pathname.startsWith('/demo/') || pathname === '/workspace';
   const activeDestination = isWorkspace ? '/workspace' : pathname;
   return <div className={`${styles.frame} ${isWorkspace ? styles.compactWorkspace : ''}`}>
     <a className={styles.skip} href="#main-content">Đến nội dung chính</a>
