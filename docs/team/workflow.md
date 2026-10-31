@@ -8,8 +8,8 @@ contract; no manager creates a competing schema.
 
 | Owner | Main scope | Coordination required |
 | --- | --- | --- |
-| Son | Retrieval, voice, conversation sessions and server-side tool authorization | Consume Vincent's contract; agree identity, consent and profile access with Kim |
-| Vincent | Sources, collection, structured data, review, the procedure contract and its tests | Document the format and examples needed by Son and Kim |
+| Son | Primarily the voice agent, conversation sessions and server-side tool authorization | Consume Vincent's retrieval interface and contract; agree identity, consent and profile access with Kim |
+| Vincent | Document retrieval, search through RAG, sources, collection, structured data, review, the procedure contract and related tests | Deliver the retrieval interface, format and examples needed by Son and Kim |
 | Kim | Login, personal profiles and owner checks, consent UI, forms, reports and delivery | Send authenticated consent decisions to Son; preserve the procedure version and checklist used by voice |
 | Local manager | Coordinate the named member's agents, dependencies, reviews and handoffs | Maintain that member's status; respect other owners' scope |
 | Agreed integration coordinator | Consolidate the global board, accepted decisions, integration order and combined verification | Appointment requires explicit team agreement; propose changes until that agreement exists |

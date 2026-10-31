@@ -6,8 +6,9 @@ residence registration and renewal; see `docs/scope-and-ingestion.md`.
 
 ## Team coordination
 
-Son owns search and voice; Vincent owns official sources, structured data and
-validation; Kim owns forms, the mobile report and delivery. See
+Son leads the voice agent; Vincent owns document retrieval, search through RAG,
+official sources, structured data and validation; Kim owns forms, the mobile
+report and delivery. Son's voice agent consumes Vincent's retrieval interface. See
 [`AGENTS.md`](AGENTS.md), the [manager guide](docs/team/manager.md),
 [task board](docs/team/board.md), [shared contracts](docs/team/contracts.md)
 and [decisions](docs/team/decisions.md). The manager advises and prepares fixes;
@@ -30,8 +31,8 @@ All agents follow the [common workflow](docs/team/workflow.md) for branches,
 commits, reviews and handoffs. Each member can copy the agent instruction at
 the end of that document.
 
-## Data collection
+## Data collection and retrieval
 
-Vincent owns collection, its tests and the shared data contract. The manager
-configuration does not ship a collector or impose a data schema. Son and Kim
-will integrate against the contract Vincent delivers.
+Vincent owns collection, document retrieval, search through RAG, their tests and
+the shared data contract. The manager configuration does not ship these services
+or impose a data schema. Son and Kim integrate against Vincent's delivered contract.

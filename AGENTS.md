@@ -5,11 +5,12 @@
 Ship one Vietnamese residence-procedure journey: voice conversation -> reviewed
 checklist -> mobile report. Read `docs/scope-and-ingestion.md` before extending scope.
 
-- Son: search/retrieval, voice agent, conversation sessions and server-side
+- Son: primarily the voice agent, conversation sessions and server-side
   authorization for the agent's access to personal data.
-- Vincent: official sources, capture, structured parsing, source validation and
-  ownership of the shared data contract. Son and Kim validate consumer needs.
-  Leave collection implementation, its tests and contract design to Vincent;
+- Vincent: document retrieval, search through RAG, official sources, capture,
+  structured parsing, source validation and the shared data contract. Son's voice
+  agent consumes Vincent's retrieval interface; Son and Kim validate consumer needs.
+  Leave collection/retrieval implementation, its tests and contract design to Vincent;
   do not implement or publish that work unless explicitly requested.
 - Kim: application login/session integration, personal dossier and its server-side
   owner checks, approval UI, forms, mobile report and delivery.

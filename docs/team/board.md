@@ -4,6 +4,11 @@ Initialise le 31 octobre 2026 (Asia/Saigon). Etat observe dans le checkout local
 branches distantes et travail non publie des membres non verifies.
 Les taches proposees ne signifient pas que leur responsable les a commencees.
 
+Ownership clarified by Kim on 31 October 2026: Son primarily owns the voice
+agent; Vincent owns document retrieval and search through RAG. Son consumes
+Vincent's retrieval interface. This correction does not establish delivery or
+change the verification status of the work below.
+
 | ID | Priorite | Responsable | Tache / critere de fin | Etat | Dependances | Fichiers / preuve |
 | --- | --- | --- | --- | --- | --- | --- |
 | TEAM-03 | P0 | Kim — local manager | Prepare the common English manager protocol, activation prompt, ownership and delivery acknowledgements | In review — documentation proposal | Human review; team agreement before appointing a shared integration coordinator | `codex/kim/team-03-manager-protocol`; links, fences, consistency and whitespace checked; no application changes |
@@ -16,7 +21,7 @@ Les taches proposees ne signifient pas que leur responsable les a commencees.
 | DATA-01 | P0 | Vincent | Definir et livrer la collecte avec provenance, gestion des erreurs et tests | Laisse a Vincent; avancement a confirmer | Aucune | Ancien prototype conserve localement, retire de la branche du manager |
 | CONTRACT-01 | P0 | Vincent | Definir et maintenir le format commun et un exemple synthetique; Son et Kim valident les besoins consommateurs | En attente de la proposition de Vincent | Aucune | `docs/team/contracts.md`; aucun schema impose par le manager |
 | DATA-02 | P0 | Vincent | Produire un enregistrement structure, valide par un humain pour un hash precis | A faire / non observe | CONTRACT-01 | `docs/scope-and-ingestion.md`; capture brute insuffisante |
-| VOICE-01 | P0 | Son | Parcours vocal vietnamien : intention, lookup, checklist sourcee; refus explicite si hors perimetre | A confirmer; code non observe ici | CONTRACT-01; DATA-02 pour donnees reelles | Aucun composant voix observe |
+| VOICE-01 | P0 | Son | Vietnamese voice journey: intent, consuming Vincent's retrieval interface, sourced checklist and explicit out-of-scope response | A confirmer; code non observe ici | Vincent's retrieval delivery; CONTRACT-01; DATA-02 pour donnees reelles | Aucun composant voix observe |
 | REPORT-01 | P0 | Kim | Rapport mobile affichant exactement la version et la checklist du parcours vocal | A confirmer; code non observe ici | CONTRACT-01; DATA-02 pour donnees reelles | Aucun composant rapport observe |
 | FORM-01 | P1 | Vincent + Kim | Resoudre l'edition CT01, verifier le fichier puis le mapping des champs | Bloque selon documentation locale | Revue humaine de la source exacte | `docs/scope-and-ingestion.md`; pas de choix automatique d'edition |
 | DELIVERY-01 | P1 | Kim | Livrer un lien prive apres confirmation destination et consentement | A confirmer | REPORT-01 | Canal a choisir |

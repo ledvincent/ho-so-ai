@@ -21,10 +21,12 @@ Vietnamese wording, quantities, conditions and provenance in source/form data.
 - Each local manager maintains only its member's file in `docs/team/status/`.
   Its implementation agents provide handoffs to that writer. Read and reference
   other members' files without rewriting their status or acknowledgements.
-- Vincent owns the procedure-data contract. Son owns conversation/tool-access
-  interfaces; Kim owns application/profile/forms interfaces. Their owners agree
-  cross-component changes and consumer adaptations. Do not invent a substitute
-  contract or a second identity/profile/conversation system to bypass a dependency.
+- Vincent owns document retrieval, search through RAG and the procedure-data
+  contract. Son focuses on the voice agent, conversation and tool-access interfaces,
+  consuming Vincent's retrieval interfaces. Kim owns application/profile/forms
+  interfaces. Their owners agree cross-component changes and consumer adaptations.
+  Do not invent a substitute contract, retrieval pipeline or second identity,
+  profile or conversation system to bypass a dependency.
 - An explicitly designated integration coordinator consolidates the global board,
   shared decisions and test order. Check the recorded designation first. If none
   is evidenced, propose Kim's manager, pending Son's and Vincent's agreement;

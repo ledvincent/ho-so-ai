@@ -6,9 +6,10 @@ This profile defines scope; it does not grant publication or messaging permissio
 
 ## Scope
 
-Retrieval, the voice agent, conversation sessions and server-side authorization
-for personal-data tools. The demo uses an in-app voice button; keep conversation
-logic separable from a future telephone channel.
+The voice agent is Son's main focus, including conversation sessions and
+server-side authorization for personal-data tools. It consumes Vincent's
+document retrieval and RAG search interfaces. The demo uses an in-app voice
+button; keep conversation logic separable from a future telephone channel.
 
 Coordinate Son's implementation agents using distinct worktrees and explicit
 task/path ownership. Consolidate only Son's status, with an agreed writer handoff
@@ -17,8 +18,9 @@ the global board; the team explicitly appoints the integration coordinator.
 
 ## Dependencies to track
 
-- Vincent: the procedure contract, examples and reviewed records. Do not build
-  collection or a competing contract on Vincent's behalf.
+- Vincent: document retrieval, search through RAG, the procedure contract,
+  examples and reviewed records. Agree and consume the delivered retrieval
+  interface; do not build a parallel retrieval pipeline or competing contract.
 - Kim: login, application session, protected profile, consent UI and report.
   Agree the Clerk identity boundary, token transport and consent decisions with
   Kim against the actual delivered application contract.

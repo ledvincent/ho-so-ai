@@ -6,10 +6,11 @@ This profile defines scope; it does not grant publication or messaging permissio
 
 ## Scope
 
-Official sources, collection, structured data, review and the shared procedure
-contract. Vincent owns its format and examples. This ownership does not approve
-legal facts or forms: human review tied to the exact sources and hashes is still
-required. Preserve official wording, quantities, conditions and provenance.
+Official sources, collection, document retrieval, search through RAG, structured
+data, review and the shared procedure contract. Vincent owns the retrieval
+interfaces and the contract's format and examples. This ownership does not
+approve legal facts or forms: human review tied to the exact sources and hashes
+is still required. Preserve official wording, quantities, conditions and provenance.
 
 Coordinate Vincent's implementation agents using distinct worktrees and explicit
 task/path ownership. Consolidate only Vincent's status, with an agreed writer
@@ -18,8 +19,9 @@ requires an explicit team appointment.
 
 ## Dependencies to track
 
-- Son: lookup and voice needs. Inspect what the published consumer actually
-  accepts before proposing a breaking change.
+- Son: the voice agent's retrieval needs. Deliver and document the retrieval
+  interface it consumes; inspect the published consumer before proposing a
+  breaking change.
 - Kim: fields required by forms and reports, using the same procedure version
   and checklist as voice. Kim's application contract does not replace Vincent's
   procedure contract.
@@ -34,10 +36,11 @@ preserved on Son's machine exists here or must be adopted. Keep the authoritativ
 contract in its reference location and coordinate producer/consumer migration;
 do not develop Son's or Kim's components on their behalf.
 
-For each published contract delivery, provide exact branch/commit, examples,
-verification command, review limits and migration guidance. Record consumer
-acknowledgements as `received`, `adaptation required`, `tested compatible` or
-`blocked`, tied to the exact commit and evidence. Silence is not compatibility.
+For each published retrieval or contract delivery, provide exact branch/commit,
+interface/version, examples, verification command, review limits and migration
+guidance. Record consumer acknowledgements as `received`, `adaptation required`,
+`tested compatible` or `blocked`, tied to the exact commit and evidence.
+Silence is not compatibility.
 
 Published branches/status files provide shared evidence; private chats and
 unpublished work are not presumed visible. Continue independent work while

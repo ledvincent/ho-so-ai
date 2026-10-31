@@ -32,7 +32,8 @@
   exemples et maintenance. Son et Kim valident les besoins de leurs composants.
   Preuve : attribution confirmee par Son dans le chat du manager.
 
-- Son : recherche et agent vocal. Vincent : sources, collecte, donnees structurees
+- Historical allocation, superseded by Kim's ownership correction below:
+  Son : recherche et agent vocal. Vincent : sources, collecte, donnees structurees
   et validation. Kim : formulaires, rapport mobile et envoi.
   Preuve : repartition confirmee par Son dans le chat de configuration.
 - Le manager conseille, prepare les corrections et verifie l'integration;
@@ -71,3 +72,17 @@ composants touches. Ne pas transformer une proposition du manager en accord equi
   or Vincent's machines. Private chat routing and automation state remain local.
 - This entry does not approve new procedure facts, legal forms, authentication
   compatibility or a successful combined demo. Existing technical boundaries remain.
+
+## Ownership correction from Kim — 31 October 2026
+
+- Son focuses primarily on the voice agent, conversation sessions and its
+  server-side tool authorization. The voice agent consumes Vincent's retrieval
+  interface; Son does not own document retrieval or the RAG/search service.
+- Vincent owns document retrieval and search through RAG, alongside official
+  sources, collection, structured data, source review and the shared procedure
+  contract. He provides the retrieval interface needed by Son and Kim.
+- Evidence: Kim explicitly corrected the ownership guidance while reviewing
+  TEAM-03 / PR #3. This supersedes the earlier allocation of search to Son;
+  it does not claim a delivered retrieval service or tested integration.
+- Kim's application/profile/forms/report scope and the existing Son/Kim security
+  responsibilities remain unchanged.

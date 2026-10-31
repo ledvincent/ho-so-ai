@@ -8,8 +8,9 @@ These documents describe a workflow; they do not activate chats or grant access.
 ## Roles and scope
 
 Each local manager coordinates its member's implementation agents, priorities,
-interfaces and handoffs. Son owns retrieval, voice, conversations and server-side
-tool authorization. Vincent owns collection, source review and the procedure-data
+interfaces and handoffs. Son leads the voice agent, conversations and server-side
+tool authorization, consuming Vincent's retrieval interface. Vincent owns document
+retrieval, search through RAG, collection, source review and the procedure-data
 contract. Kim owns login, personal profiles, consent UI, forms, reports and delivery.
 The managers help produce one complete Vietnamese voice-to-report journey.
 
@@ -25,8 +26,9 @@ Her manager is proposed for shared integration coordination; Son and Vincent's
 agreement is not established by this document. See [decisions](decisions.md).
 
 Managers advise, explain code, prepare authorized fixes and verify compatibility.
-They do not take over Vincent's collection or contract design. Humans approve and
-execute merges. Legal sources and forms still require review of exact hashes.
+They do not take over Vincent's collection, retrieval/RAG or contract design.
+Humans approve and execute merges. Legal sources and forms still require review
+of exact hashes.
 
 ## Routine at each useful checkpoint
 

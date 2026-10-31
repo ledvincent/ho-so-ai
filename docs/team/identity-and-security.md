@@ -11,7 +11,7 @@ securite. Aucun service d'identite ou d'autorisation n'est livre par ce document
 | Kim — CONSENT-01 | Ecran de confirmation : demarche, donnees demandees, conversation concernee, expiration, accepter/refuser; envoi d'une decision authentifiee au serveur de Son |
 | Son — ACCESS-01 | Sessions de conversation et serveur d'autorisation : verifier l'identite authentifiee, lier compte/conversation/demarche, gerer la decision et bloquer tout outil d'acces personnel sans droit valide |
 | Son + Kim — SECURITY-01 | Tests d'isolement entre comptes et de refus/expiration/rejeu; preuves pour la demo |
-| Vincent | Donnees officielles et contrat des procedures; aucun ajout de responsabilite sur les comptes utilisateurs |
+| Vincent | Official documents/data, document retrieval, search through RAG and the procedure contract; no added ownership of user accounts |
 
 Kim protege le stockage et les routes du dossier. Son protege les outils de
 l'agent et la validite de l'autorisation : les deux controles sont necessaires.

@@ -30,9 +30,10 @@ overwriting it or creating a competing status file.
   Agree Clerk identity configuration, authenticated consent transport and
   revocation behavior. Do not present an application choice as verified
   interoperability with Son.
-- Vincent: the procedure contract, reviewed records and official forms. Do not
-  create a competing contract or guess a CT01 edition. Activate an official form
-  only after human review bound to the exact source/file/mapping hashes.
+- Vincent: document retrieval, search through RAG, the procedure contract,
+  reviewed records and official forms. Consume the agreed retrieval interface;
+  do not create a competing contract or guess a CT01 edition. Activate an official
+  form only after human review bound to the exact source/file/mapping hashes.
 - Reports: preserve the voice procedure version, checklist, conditions and
   sources. Do not freely reconstruct requirements or permit another account's
   profile/document to be accessed by changing an identifier.

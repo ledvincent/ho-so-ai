@@ -3,9 +3,10 @@
 This is a proposed reduction of the original charter to make room for voice and
 phone delivery. It is a product recommendation, not a claim about legal eligibility.
 
-Collection implementation, its tests and the shared data contract belong to
-Vincent. Prototype observations below are background from an earlier local
-experiment; the manager branch does not ship or prescribe that implementation.
+Collection, document retrieval, search through RAG, their tests and the shared
+data contract belong to Vincent. Prototype observations below are background from
+an earlier local experiment; the manager branch does not ship or prescribe that
+implementation.
 
 ## One complete journey first
 
@@ -68,9 +69,10 @@ Sources:
 
 ## Publication gates and handoff
 
-Vincent owns capture, structured parsing and source review. Son consumes reviewed
-procedure records for search/voice. Kim consumes reviewed form hashes and field
-maps, and builds the mobile report and delivery flow.
+Vincent owns capture, structured parsing, source review, document retrieval and
+search through RAG. Son's voice agent consumes Vincent's retrieval interface and
+reviewed procedure records. Kim consumes reviewed form hashes and field maps,
+and builds the mobile report and delivery flow.
 
 Next implementation steps:
 

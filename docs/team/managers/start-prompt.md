@@ -46,8 +46,11 @@ Maintain only docs/team/status/[member-lowercase].md as my status record.
 Include task, branch, exact SHAs, paths, contract versions, tests/results/limits,
 dependencies, blockers and next action. Do not rewrite another member's status.
 Reference authoritative contracts rather than maintaining parallel copies.
-Vincent owns procedures/data; Son owns conversations and tool authorization;
-Kim owns application/profile/forms and the corresponding user experience.
+Vincent owns official sources, document retrieval, search through RAG and the
+procedure-data contract. Son focuses on the voice agent, conversations and tool
+authorization, consuming Vincent's retrieval interfaces. Kim owns application/
+profile/forms and the corresponding user experience. Coordinate interface changes
+with their owner; do not create a parallel retrieval pipeline.
 
 For Kim's application, reuse the Clerk and app.v1 choice. Read the exact
 delivered shared-scaffold commit and contract version before implementing a
