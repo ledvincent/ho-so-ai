@@ -69,7 +69,7 @@ function sourceLinks(value: unknown): void {
   });
 }
 function origin(baseUrl: string | undefined): string {
-  if (!baseUrl || baseUrl !== baseUrl.trim() || /[\u0000-\u0020\u007f\\@]/u.test(baseUrl)) throw new DiscoveryError(503, 'DISCOVERY_UNAVAILABLE');
+  if (!baseUrl || baseUrl !== baseUrl.trim() || /[\u0000-\u0020\u007f\\@]/u.test(baseUrl) || !/^https?:\/\/[^/?#]+\/?$/iu.test(baseUrl)) throw new DiscoveryError(503, 'DISCOVERY_UNAVAILABLE');
   try {
     const url = new URL(baseUrl);
     const loopback = url.hostname === 'localhost' || url.hostname === '[::1]' || (isIP(url.hostname) === 4 && url.hostname.startsWith('127.'));

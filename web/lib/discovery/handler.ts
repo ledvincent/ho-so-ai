@@ -92,17 +92,18 @@ export function chatRequest(value: unknown): DiscoveryChatRequest {
 export function documentRequest(value: unknown, download = false): DocumentValues | DocumentDownload {
   const allowed = download ? ['values', 'template_version', 'review_token', 'confirmed'] : ['values', 'template_version'];
   if (!record(value) || Object.keys(value).some((key) => !allowed.includes(key)) || !record(value.values)
-      || Object.keys(value.values).length > 200 || typeof value.template_version !== 'string' || !hashPattern.test(value.template_version)) throw new DiscoveryError(422, 'INVALID_REQUEST');
+      || Object.keys(value.values).length > 2000 || typeof value.template_version !== 'string' || !hashPattern.test(value.template_version)) throw new DiscoveryError(422, 'INVALID_REQUEST');
   const values: Record<string, string> = {};
   for (const [key, item] of Object.entries(value.values)) {
-    if (!/^[a-z][a-z0-9_]{0,79}$/.test(key) || typeof item !== 'string' || [...item].length > 4096
+    if (!/^[A-Za-z0-9_][A-Za-z0-9_.:-]{0,127}$/.test(key) || ['__proto__', 'prototype', 'constructor'].includes(key)
+        || typeof item !== 'string' || [...item].length > 16000
         || /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(item)) throw new DiscoveryError(422, 'INVALID_REQUEST');
     values[key] = item;
   }
   const base = { values, template_version: value.template_version };
   if (!download) return base;
   if (value.confirmed !== true || typeof value.review_token !== 'string' || !value.review_token
-      || value.review_token.length > 32768 || /[\u0000-\u0020\u007f]/.test(value.review_token)) throw new DiscoveryError(422, 'INVALID_REQUEST');
+      || value.review_token.length > 131072 || /[\u0000-\u0020\u007f]/.test(value.review_token)) throw new DiscoveryError(422, 'INVALID_REQUEST');
   return { ...base, confirmed: true, review_token: value.review_token };
 }
 
@@ -115,7 +116,7 @@ export function createReviewBindings(now: () => number = Date.now, capacity = 10
   return {
     issue(owner: string, document: string, body: DocumentValues, token: string) {
       prune();
-      if (!token || token.length > 32768 || /[\u0000-\u0020\u007f]/.test(token)) throw new DiscoveryError(502, 'DISCOVERY_INVALID_RESPONSE');
+      if (!token || token.length > 131072 || /[\u0000-\u0020\u007f]/.test(token)) throw new DiscoveryError(502, 'DISCOVERY_INVALID_RESPONSE');
       const key = digest(owner) + ':' + digest(token);
       if (!bindings.has(key) && bindings.size >= capacity) throw new DiscoveryError(429, 'RATE_LIMITED');
       bindings.set(key, { owner: digest(owner), document, version: body.template_version, values: valuesDigest(body), until: now() + 15 * 60000 });
@@ -189,7 +190,7 @@ export function createDiscoveryHandler(deps: {
       deps.limit(session.subject, route.action);
       let body: Record<string, unknown> | undefined;
       if (route.method === 'POST') {
-        const raw = await readRequestBody(request, route.action === 'chat' ? 1024 * 1024 : route.id ? 96 * 1024 : 4096);
+        const raw = await readRequestBody(request, route.action === 'chat' || route.id ? 1024 * 1024 : 4096);
         let value: unknown;
         try { value = JSON.parse(raw); } catch { return errorResponse(400, 'INVALID_REQUEST'); }
         if (!record(value)) return errorResponse(422, 'INVALID_REQUEST');
