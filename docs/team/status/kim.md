@@ -1,6 +1,59 @@
 # Kim — application integration checkpoint
 
-## Latest update — 31 October 2026: connected checkpoint published, chat-first correction
+## Latest update — 31 October 2026 (Asia/Saigon): reviewed UI-03 published
+
+Kim reviewed and explicitly authorized publication for Son and Vincent. The exact
+reviewed snapshot is now available on `codex/kim/ui-03-chat-first-discovery` at
+`1825f5e15cf84fc6259004c56cec7185799ae12c`. GitHub read-back confirmed the
+[frontend handoff](https://github.com/ledvincent/ho-so-ai/blob/1825f5e15cf84fc6259004c56cec7185799ae12c/docs/ui-03-frontend-handoff.md).
+Its earlier "not pushed" statement records the handoff's pre-publication state;
+this update supersedes it. No main merge or deployment occurred.
+
+UI implementation is `2865c96d8a1cb31fb82f8d32fd2d6c3c56f9b8c5`.
+DISCOVERY-01 code `d0b2caa0ca128cc470bf9413eff54bfbfd447265` was consumed as
+`fc8f8490ffe975acd5282455aac2eebf6d80e680`; its evidence
+`6c57d04b321eb3314220006f1d836629170a0999` was consumed as
+`2d54cb4aede620e0c37bdaa52b0705628849772f`. The published UI branch contains
+these consumers; teammates should not apply both equivalent producer and consumer
+commits. The discovery contract SHA256 is
+`a9c67a9a72c78b0906fffbf39021e065d54c576a3f16767d827a6040d3a504c6`.
+
+Delivered: white chat-first workspace, no automatic NA5 selection, structured
+procedure/form confirmation, full-page document viewer with page/zoom/expand
+controls, and authenticated proxies for Vincent's existing search and assistant.
+The owner reports 130 offline tests, production build and browser scenario checks
+passed. The manager independently reproduced six production HTTP checks for local
+database login/session, explicit unavailable retrieval, logout and denied access,
+all with no-store headers, and reviewed desktop/mobile/full-page screenshots.
+
+Acknowledgement of Vincent `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`:
+**tested compatible for pinned contracts and synthetic fixtures only**. Live API,
+loaded data/index and assistant runtime remain missing. UI-03 returns explicit503;
+its form scenarios use deterministic local fixtures and no model key is loaded.
+The earlier UI-02 live field-assistance evidence is separate. Son voice/access,
+live retrieval, official form approval and public deployment are not verified.
+
+### Next authorized local checkpoint: richer profile and consented prefill
+
+Kim requested optional reusable personal details and a document-specific question:
+"Use your saved profile to fill this document?" PROFILE-01 (backend/contracts)
+and PROFILE-UI-01 (sole frontend owner) are resumed in separate new worktrees.
+The reviewed UI-03 source and preview remain preserved. No new profile delivery
+or team acceptance is claimed yet; that work is not included in this push.
+
+The planned flow is exact procedure/form selection, explicit opt-in, a field-level
+preview, checked-field application, then questions for missing or ambiguous values.
+Document edits never implicitly save the profile; personal profile data is not
+sent to retrieval. Existing app.v1 six-field consumers, owner checks and optimistic
+revisions must remain compatible. Son's tool-access grants remain a separate
+boundary; this user-initiated copy does not grant voice/model access.
+
+Public hosting is a later integration checkpoint: persistent runtime/storage,
+HTTPS/session configuration, non-demo credentials and confirmed producer services
+are required. The current LOCAL provider is intentionally loopback-only. No public
+deployment or real personal-data readiness is asserted.
+
+## Historical update — 31 October 2026: UI-02 published, chat-first correction
 
 This update supersedes conflicting historical publication/pause statements below.
 Kim reviewed the local preview and explicitly authorized publishing it for Son.
