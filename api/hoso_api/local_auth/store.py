@@ -133,7 +133,8 @@ class LocalAuthStore:
                     owner_subject TEXT PRIMARY KEY, profile_id TEXT NOT NULL UNIQUE,
                     revision INTEGER NOT NULL CHECK(revision>0), full_name TEXT,
                     date_of_birth TEXT, nationality TEXT, address TEXT,
-                    phone_number TEXT, email TEXT)""",
+                    phone_number TEXT, email TEXT,
+                    details_json TEXT NOT NULL DEFAULT '{}')""",
             ):
                 connection.execute(statement)
             metadata = connection.execute("SELECT * FROM local_auth_metadata WHERE singleton=1").fetchone()

@@ -11,7 +11,7 @@ class LocalRequestBoundary:
         self.public_origin = public_origin
 
     async def __call__(self, scope, receive, send):
-        if scope["type"] != "http" or not scope["path"].startswith("/v1/"):
+        if scope["type"] != "http" or not scope["path"].startswith(("/v1/", "/v2/")):
             return await self.app(scope, receive, send)
 
         async def reject(status, code):

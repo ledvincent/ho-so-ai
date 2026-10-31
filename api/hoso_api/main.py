@@ -105,7 +105,7 @@ def create_app(
     @app.middleware("http")
     async def prevent_private_response_caching(request: Request, call_next):
         response = await call_next(request)
-        if request.url.path.startswith("/v1/"):
+        if request.url.path.startswith(("/v1/", "/v2/")):
             response.headers["Cache-Control"] = "no-store"
         return response
 
@@ -118,6 +118,11 @@ def create_app(
             "full_name", "date_of_birth", "nationality", "address", "phone_number",
             "email", "values", "revision", "template_version", "acknowledged", "template_id",
             "request_id", "draft_revision", "procedure_code", "intent", "message", "focus_field",
+            "details", "basics", "contact", "passport", "residence", "legacy",
+            "full_legal_name", "sex_as_on_document", "nationality_at_birth",
+            "current_nationality", "occupation", "document_number", "document_type",
+            "issue_date", "expiry_date", "issuing_authority", "temporary_address_in_vietnam",
+            "permanent_address", "consent", "applicant_confirmed", "form_sha256", "schema_version",
         }
         issues = [
             {
@@ -148,6 +153,8 @@ def create_app(
         return MeResponse(subject=user.subject)
 
     app.include_router(profile_router)
+    from .profile_v2 import router as profile_v2_router
+    app.include_router(profile_v2_router)
     if config.auth_provider == "local":
         from .local_auth.routes import create_router as create_auth_router
         app.include_router(create_auth_router(public_origin=config.public_origin))

@@ -8,10 +8,14 @@ from contextlib import AbstractContextManager
 from typing import Protocol
 from uuid import uuid4
 
-from sqlalchemy import Connection, text
+from sqlalchemy import Connection, JSON, bindparam, text
 
 from ..auth import AuthenticatedUser
 from ..profile import ProfileFields, ProfileResponse, ProfileUpdate
+from ..profile_v2_models import (
+    ProfileBasics, ProfileContact, ProfileDetails, ProfileDetailsExtension,
+    ProfileLegacy, ProfileV2Response, ProfileV2Update,
+)
 
 
 class ProfileMissing(Exception):
@@ -47,6 +51,23 @@ _UPDATE = text(
     + f"RETURNING {_COLUMNS}"
 )
 
+# Separate statements leave app.v1 usable on a database not yet provisioned for v2.
+_V2_COLUMNS = _COLUMNS + ", details_json"
+_READ_V2 = text(f"SELECT {_V2_COLUMNS} FROM hoso_portal.profiles WHERE owner_subject = :subject")
+_CORE_FIELDS = ("full_name", "date_of_birth", "phone_number", "email")
+_CREATE_V2 = text(
+    f"INSERT INTO hoso_portal.profiles (owner_subject, profile_id, revision, {', '.join(_CORE_FIELDS)}, details_json) "
+    f"VALUES (:subject, :profile_id, 1, {', '.join(':' + field for field in _CORE_FIELDS)}, :details_json) "
+    f"ON CONFLICT (owner_subject) DO NOTHING RETURNING {_V2_COLUMNS}"
+).bindparams(bindparam("details_json", type_=JSON))
+_UPDATE_V2 = text(
+    "UPDATE hoso_portal.profiles SET "
+    + ", ".join(f"{field} = :{field}" for field in _CORE_FIELDS)
+    + ", details_json = :details_json, revision = revision + 1 "
+    + "WHERE owner_subject = :subject AND revision = :expected_revision "
+    + f"RETURNING {_V2_COLUMNS}"
+).bindparams(bindparam("details_json", type_=JSON))
+
 
 def require_verified_user(user: AuthenticatedUser) -> None:
     # Only the shared verifier establishes authenticity. This protects internal
@@ -63,6 +84,29 @@ def _response(row) -> ProfileResponse:
         profile_id=row["profile_id"],
         revision=row["revision"],
         fields=ProfileFields(**{field: row[field] for field in _FIELDS}),
+    )
+
+
+def _response_v2(row) -> ProfileV2Response:
+    # Validate legacy/core values with their original rules, without tightening
+    # old v1-valid rows or interpreting generic nationality/address as explicit.
+    core = _response(row).fields
+    raw = row["details_json"]
+    extension = (
+        ProfileDetailsExtension.model_validate_json(raw)
+        if isinstance(raw, str) else ProfileDetailsExtension.model_validate(raw)
+    )
+    return ProfileV2Response(
+        profile_id=row["profile_id"], revision=row["revision"],
+        details=ProfileDetails(
+            basics=ProfileBasics(
+                **extension.basics.model_dump(),
+                full_legal_name=core.full_name, date_of_birth=core.date_of_birth,
+            ),
+            contact=ProfileContact(phone_number=core.phone_number, email=core.email),
+            passport=extension.passport, residence=extension.residence,
+        ),
+        legacy=ProfileLegacy(nationality=core.nationality, address=core.address),
     )
 
 
@@ -103,3 +147,49 @@ class ProfileRepository:
                         raise ProfileMissing()
                     raise RevisionConflict()
             return _response(row)
+
+    def read_v2(self, user: AuthenticatedUser) -> ProfileV2Response:
+        require_verified_user(user)
+        with self._transactions.for_user(user) as connection:
+            row = connection.execute(_READ_V2, {"subject": user.subject}).mappings().one_or_none()
+            if row is None:
+                raise ProfileMissing()
+            return _response_v2(row)
+
+    def write_v2(self, user: AuthenticatedUser, payload: ProfileV2Update) -> ProfileV2Response:
+        require_verified_user(user)
+        payload = ProfileV2Update.model_validate(payload.model_dump())
+        details = payload.details
+        extension = ProfileDetailsExtension.model_validate({
+            "basics": details.basics.model_dump(exclude={"full_legal_name", "date_of_birth"}),
+            "passport": details.passport.model_dump(),
+            "residence": details.residence.model_dump(),
+        })
+        parameters = {
+            "subject": user.subject,
+            "full_name": details.basics.full_legal_name,
+            "date_of_birth": details.basics.date_of_birth,
+            "phone_number": details.contact.phone_number,
+            "email": details.contact.email,
+            "details_json": extension.model_dump(),
+        }
+        with self._transactions.for_user(user) as connection:
+            if payload.expected_revision == 0:
+                row = connection.execute(
+                    _CREATE_V2, {**parameters, "profile_id": str(uuid4())}
+                ).mappings().one_or_none()
+                if row is None:
+                    raise RevisionConflict()
+            else:
+                row = connection.execute(
+                    _UPDATE_V2, {**parameters, "expected_revision": payload.expected_revision}
+                ).mappings().one_or_none()
+                if row is None:
+                    exists = connection.execute(
+                        text("SELECT 1 FROM hoso_portal.profiles WHERE owner_subject = :subject"),
+                        {"subject": user.subject},
+                    ).first()
+                    if exists is None:
+                        raise ProfileMissing()
+                    raise RevisionConflict()
+            return _response_v2(row)

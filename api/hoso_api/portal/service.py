@@ -5,6 +5,7 @@ from threading import Lock
 
 from ..auth import AuthenticatedUser
 from ..profile import ProfileResponse, ProfileUpdate
+from ..profile_v2_models import ProfileV2Response, ProfileV2Update
 from .repository import ProfileMissing, ProfileRepository, RevisionConflict, StorageUnavailable
 
 
@@ -46,6 +47,26 @@ class ProfileService:
             if self._closed:
                 raise StorageUnavailable()
             return self._repository.write(user, payload)
+        except (ProfileMissing, RevisionConflict):
+            raise
+        except Exception:
+            raise StorageUnavailable() from None
+
+    def read_v2(self, user: AuthenticatedUser) -> ProfileV2Response:
+        try:
+            if self._closed:
+                raise StorageUnavailable()
+            return self._repository.read_v2(user)
+        except ProfileMissing:
+            raise
+        except Exception:
+            raise StorageUnavailable() from None
+
+    def write_v2(self, user: AuthenticatedUser, payload: ProfileV2Update) -> ProfileV2Response:
+        try:
+            if self._closed:
+                raise StorageUnavailable()
+            return self._repository.write_v2(user, payload)
         except (ProfileMissing, RevisionConflict):
             raise
         except Exception:
