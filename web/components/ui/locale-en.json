@@ -304,5 +304,6 @@
   "Chưa tải được danh mục từ dịch vụ cung cấp dữ liệu.": "The data service catalog could not be loaded.",
   "Tài liệu đã thay đổi hoặc chưa có quy trình điền. Hãy kiểm tra lại phiên bản nguồn.": "The document changed or has no filling workflow. Check the source edition again.",
   "Đã xác nhận thủ tục để hỏi đáp. Chưa chọn quy trình điền cho tài liệu.": "Procedure confirmed for questions. No document filling workflow has been selected.",
-  "Câu trả lời đề cập thủ tục khác. Bản nháp hiện tại được giữ nguyên; hãy đổi thủ tục nếu muốn chuẩn bị tài liệu khác.": "The answer concerns another procedure. Your draft is unchanged. Start another procedure to prepare a different document."
+  "Câu trả lời đề cập thủ tục khác. Bản nháp hiện tại được giữ nguyên; hãy đổi thủ tục nếu muốn chuẩn bị tài liệu khác.": "The answer concerns another procedure. Your draft is unchanged. Start another procedure to prepare a different document.",
+  "Dữ liệu phân tích còn hạn chế. Nếu có quy trình điền bên dưới, bạn có thể chuẩn bị và xem trước bản nháp. Việc duyệt mẫu và tải xuống được kiểm tra riêng.": "Procedure analysis is limited. If a filling workflow is available below, you can prepare and preview a draft. Template approval and download eligibility are checked separately."
 }

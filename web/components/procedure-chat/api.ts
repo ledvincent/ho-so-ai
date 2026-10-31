@@ -76,7 +76,7 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
       if (typeof data.sha256 === 'string' && hashPattern.test(data.sha256)) provenance.push(`Bản chụp nguồn: ${data.sha256}`);
       if (typeof data.fetched_at === 'string') provenance.push(`Thời điểm lấy nguồn: ${data.fetched_at}`);
       const factsReady = data.analysis?.facts_ready === true;
-      provenance.push(factsReady ? 'Dữ liệu thủ tục có thể được kiểm tra tiếp. Mẫu vẫn giữ trạng thái duyệt riêng.' : 'Dữ liệu phân tích chưa sẵn sàng; chỉ xem tài liệu gốc.');
+      provenance.push(factsReady ? 'Dữ liệu thủ tục có thể được kiểm tra tiếp. Mẫu vẫn giữ trạng thái duyệt riêng.' : 'Dữ liệu phân tích còn hạn chế. Nếu có quy trình điền bên dưới, bạn có thể chuẩn bị và xem trước bản nháp. Việc duyệt mẫu và tải xuống được kiểm tra riêng.');
       const forms: FormReference[] = [];
       const formIds: number[] = []; const otherForms: { id: number; label: string }[] = [];
       for (const raw of data.forms) {

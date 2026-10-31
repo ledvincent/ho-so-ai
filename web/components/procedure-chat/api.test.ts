@@ -29,3 +29,14 @@ test('chat omits procedure before confirmation and pins it on a confirmed follow
   assert.equal(Object.hasOwn(bodies[0], 'procedure_code'), false);
   assert.equal(bodies[1].procedure_code, '1.003342');
 });
+
+test('limited procedure analysis does not describe an installed draft as original-only', async () => {
+  const adapter = createDiscoveryAdapter(session, (async path => {
+    if (path === '/api/auth/session') return Response.json(session);
+    return Response.json({ code: '1.001146', name: 'Fictional procedure', forms: [], analysis: { facts_ready: false } });
+  }) as typeof fetch);
+  const detail = await adapter.detailCode!('1.001146', new AbortController().signal);
+  assert.equal(detail.factsReady, false);
+  assert.ok(detail.provenance.some(text => text.includes('xem trước bản nháp') && text.includes('duyệt mẫu')));
+  assert.ok(detail.provenance.every(text => !text.includes('chỉ xem tài liệu gốc')));
+});

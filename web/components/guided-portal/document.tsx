@@ -25,10 +25,10 @@ export function GuidedDocument({ values, activeId, onEdit, onManualMode, workflo
   const [page, setPage] = useState(1);
   const [manualId, setManualId] = useState<string | null>(null);
   const [manualValue, setManualValue] = useState('');
-  const [zoom, setZoom] = useState('page');
+  const [zoom, setZoom] = useState('width');
   const [paperWidth, setPaperWidth] = useState(240);
   const [screen, setScreen] = useState({ height: 1000, top: 0 });
-  const compact = screen.height < 560;
+  const compact = screen.height < 700;
   const visible = !collapsed && (!compact || expanded);
   const viewport = useRef<HTMLDivElement>(null);
   const control = useRef<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement | null>(null);
