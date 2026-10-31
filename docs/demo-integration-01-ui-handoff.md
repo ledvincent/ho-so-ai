@@ -76,3 +76,28 @@ isolation. Blank/partial validation should show missing fields; complete fiction
 values can render a draft, while download must remain locked.
 
 No external HTTPS/browser or live runtime result is claimed by this source handoff.
+
+## Acceptance follow-up: document sizing and procedure copy
+
+Root browser evidence `work/manager-monitor/jury-document-too-small.jpg` showed
+the document card shrinking to approximately 150px total, leaving an approximately
+80px paper viewport. Fit-page then produced the unreadable thumbnail.
+
+Scoped app fixes are `b1f72b1beb298a6f04af477e021e9bb57a751006` followed by
+`8fa10995a039dd2b314a66f2e6ad698909256c0b` on the same consumer branch:
+
+- Default zoom is fit width with scrolling. The inline paper height uses measured
+  visual-viewport height (180–300px), cannot flex-shrink, and leaves the conversation
+  scrollable above the composer. At 700px or less the inline document collapses;
+  explicit expanded viewing remains available. Fit page remains an overview option.
+- Limited analysis no longer says original-only. The VI/EN explanation states
+  that any available filling workflow can prepare/preview a draft, with separate
+  template approval and download eligibility. The readiness boolean and all
+  legal/download gates are unchanged.
+- The focused API/document/locale suite passed: 16 tests, including the new
+  limited-analysis copy regression. No browser login or model request was made.
+
+The fixed app production build passed separately in `work/kim-demo-ui-acceptance-fix`,
+detached commit `10fd60b` (same source tree `cf7fc5c403cdc38f111afb9291a21e9f22197634`
+as branch commit `8fa1099`). This protects the running 3030 service's existing
+`.next` directory. Root owns restart and actual viewport acceptance.
