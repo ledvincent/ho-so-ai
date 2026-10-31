@@ -1,145 +1,161 @@
-# UI-01 intermediary review checkpoint
+# UI-01 intermediary review checkpoint — NA5
 
-Status: paused at Kim's requested review checkpoint. No further integration,
-provider setup, publication or polish is queued for automatic continuation.
+Status: paused for Kim's review. This supersedes the earlier CT01-first
+checkpoint. No further integration, provider setup, publication or polish is
+queued for automatic continuation.
 
 ## Try the local preview
 
 - Entry: http://127.0.0.1:3014/demo/login
 - Demo username: `admin`; demo password: `admin`.
-- Successful entry opens `/demo/workspace`, the CT01 document-and-chat mock.
-- Choose `Dùng mẫu`, answer a selected field in chat, or click a highlighted
-  document region to correct the same draft. `Xem cả trang` expands the paper;
-  the second page tab shows the original instructions.
-- `Rà soát bản in` captures the current three values. Acknowledgment enables
-  browser Print / Save as PDF. Actual native printing remains unverified here.
-- `Đăng xuất demo` clears the session, draft, review snapshot and unsent answer.
+- Successful entry opens `/demo/workspace`: **NA5**, procedure **1.001146**,
+  Gia hạn tạm trú cho người nước ngoài (cấp tỉnh).
+- Choose `Dùng mẫu` for Vincent's fictional example, answer the selected field
+  in chat, or click a document region to correct the same draft. The name,
+  birth date, passport and sponsor selectors are immediately available.
+- `host_type` is exactly `organisation` or `family`; the appropriate conditional
+  fields appear. `sponsor_kind=foreign_resident` adds residence-card fields.
+- `Rà soát bản nháp NA5` captures normalized current values after validation.
+  Editing invalidates the snapshot and acknowledgment. Final download remains
+  locked because the template is `draft` and no backend review token exists.
+- `Hỏi về thủ tục` returns a labeled mock `insufficient_context` response.
+  Its answer/citations/status/model response cannot patch the draft.
+- `/demo/research` filters the four exact delivered procedure codes. Only
+  `1.001146` opens this NA5 flow. CT01 is a separate secondary test view.
+- `Đăng xuất demo` clears the session, draft, review and unsent answer. Reload,
+  leaving the demo layout or page-cache restoration also ends the session.
+  Navigating from the workspace to another view discards the local draft.
 
-The demo session exists only in React memory under `/demo/`. Refresh, page-cache
-restoration or leaving that route layout ends it. It is a UI demonstration,
-not an identity, authorization mechanism or saved profile. No cookie, token,
-local/session storage, Clerk request or profile API request is created by login.
-The existing `/sign-in`, `/workspace` and `/portal` retain real Clerk behavior.
-The public `/demo/ct01` route remains an explicitly synthetic fixture preview.
-Research and profile navigation outside `/demo/` leaves the demo session.
+The demo session exists solely in React memory under `/demo/`. It creates no
+identity, token, cookie, persisted session, Clerk or profile API request. It
+cannot authorize the real `/workspace` or `/portal`. Use fictional values only.
+The original real-auth routes and profile-save boundary are retained.
 
-## Exact code and dependencies
+## Exact implementation and producer contract
 
 - Branch: `codex/kim/ui-01-site-design-integration`, isolated local clone.
-- Integration base: `9cacda7320b5d18975a0bc2b62410eb74e45210f`.
-- FORM-02 producer `9fd812891bce0a0f421871be76b6b2f40d6f4f30` was consumed
-  as `626ebc81fc2ee92c9b2a2f7504877fd1cdb54c59` (four UI files).
-- Main UI checkpoint: `f666b633c70b3f65df3813efc42d3ddce58fc8be`.
-- Demo login checkpoint: `d41ceaa970c7d9019bc04443649be923567efe23`.
-- Manager protocol read separately: `17900c3234add2a8c81c323e10a20d44dde88f1e`.
-- Site design/brand source: `9905bc008f0f373eed9ba2cb8e7c3aa12f0ce6b9`.
+- NA5 implementation: `a8dd757c9a80a4a466b1f0257c9a790891a4c6b7`.
+- Producer: `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`,
+  `codex/procedure-foundation`; inspected in a separate read-only checkout.
+- No whole-branch merge, shared/root configuration replacement or backend
+  implementation was needed for this NA5 checkpoint.
+- Exact catalog codes: `1.003326`, `1.001146`, `1.003342`, `1.000771`.
+  None is mapped to CT01.
 
-The following exact dependency commits had already been reconciled before the
-pause instruction arrived. They were cherry-picked cleanly into this branch;
-there was no shared/main merge or push:
+The immutable fixture is under `web/public/test-fixtures/na5/`; its README
+records source locations and rendering provenance.
 
-| Producer | Local consumer | Scope |
-| --- | --- | --- |
-| `584e1ee9adbb5fd1f0a845c1357e204833202d6f` | `7c6b96904bf76ddc695230109c476fe27fe966c9` | Profile storage guards and tests |
-| `def58b7d04667d1865e281391dc25ef1723aa0a2` | `aeac1d55f5172e7b5c56f0b88de1e87075df060e` | Producer handoff evidence |
-| `b07e28e74b4b9174979b7922ad3576d0562c778a` | `7437b00a045c1d8ab473ae4c030f27ddd4ed6310` | Scaffold acceptance evidence |
+| Artifact | SHA-256 |
+| --- | --- |
+| `workflow.json` | `50fe2f675df97308aeafef25c791eada67ea857170c332f3aacd38d28fd3d5c3` |
+| Active blank PDF | `7415719c6a301bc1340b10041afd48b70ff00d4cd9ec27d0b36536128d8680af` |
+| Immutable original DOCX | `a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751` |
 
-The producer reported 147 API and 54 PGlite checks passing. UI-01 did not rerun
-those backend suites. Real PostgreSQL, Clerk and TLS acceptance remain pending.
-The optional API preview process was started before these dependency picks;
-it is not evidence of the new storage guards running against a live database.
+All 43 field definitions in `schema.json` were compared against the immutable
+workflow and match, including required/when/options/manual/inactive/placements.
+Fixed `request_type=stay_extension` is preserved. Manual signatures,
+certification and seals remain blank. Birth and current nationality are distinct;
+no generic profile address is mapped into the temporary residential address.
 
-## Changed behavior and scope
+`components/na5-demo/transport.ts` records these exact wire shapes, but uses no
+HTTP transport at this checkpoint:
 
-- Folded-H brand, burgundy/jade palette, Vietnamese shell, landing and account
-  states reuse the existing Next app. No new app, manifest or dependency.
-- Compact desktop document-left/chat-right workspace. Mobile shows the active
-  document region above chat with the composer pinned to the bottom.
-- Both six-field synthetic forms and the CT01 fixture use one canonical draft
-  per view. Manual correction and deterministic chat apply to that same state.
-- Profile save remains explicit. Form prefill is GET/copy only, through the
-  existing validated boundary. The generated six-field app.v1 schema is intact.
-- Session/account transitions, 401, pagehide and restored pageshow clear old
-  draft content. Generation/revision guards reject late prefill/render replies.
-- `/research` filters three local app-usage guides. It has no procedure retrieval,
-  legal advice, source search or Vincent service integration.
-- CT01 has only name, ISO birth date and a document-local 12-digit ID. IDs retain
-  leading zeroes. Other fields and signatures are blank; no completeness or
-  legal/form approval is implied. No production registry entry was changed.
-- The real root ClerkProvider, server verification, proxies, contracts and
-  profile save implementation are retained. Native Clerk components now use
-  `/workspace` as their fallback destination; live Clerk was not exercised.
+- `GET /workflows/1.001146/schema` returns the delivered schema structure.
+- `POST /workflows/1.001146/preview` body: `{ values }`; the real response must
+  be `application/pdf` plus `X-Review-Token`.
+- `POST /workflows/1.001146/download` body: `{ values, review_token, confirmed }`.
+  Draft templates remain blocked. A future integration must keep backend
+  validation, template review, current-values token binding and acknowledgment.
+- `POST /assistant/chat` body: `{ message, procedure_code, history }`;
+  response: `{ status, answer, citations, model }`, never form-field patches.
 
-## CT01 fixture and print boundary
+The visible draft is an HTML overlay using Arial on three rendered blank PDF
+pages. It is **not** the backend PDF renderer or an approval of the mapping.
+Local overflow blocks review. Template/source revision and dates are inherited
+from the delivery, not independently verified as current legal requirements.
 
-The unchanged blank PDF and both raster pages live under
-`web/public/test-fixtures/ct01/`. The adjacent README records source URL,
-coordinates, image hashes, limits and provenance.
+## Verification observed
 
-- Blank PDF SHA-256:
-  `ba72c63d656c2b3b0702faaef3f7a51c0356847631f16b47e7c354b8f5965444`.
-- UI mapping SHA-256:
-  `16fd8e3db04f4e1b7dec8eb7043f11a7e174b1cc642af7ce2005240ec6552fc5`.
-- The print portal uses an acknowledged immutable snapshot and both pages,
-  with a visible test stamp. Any edit invalidates acknowledgment and snapshot.
-- Printing is browser Print / Save as PDF, not a direct download or fillable PDF.
-  The in-app browser did not provide a usable native print dialog. Loaded images
-  and compiled print CSS were inspected, but printed output is **unverified**.
-- The separate `/forms/demo` endpoint still downloads its clearly synthetic
-  PDF. CT01 never downloads that unrelated file.
+- Five focused NA5 contract tests pass: exact definitions/fixed value,
+  conditional sponsor branches, date/chronology checks, distinct nationalities,
+  immutable/stale review gates and producer wire shapes without assistant patches.
+- `pnpm typecheck` and final `pnpm build` passed; production build includes
+  `/demo/login`, `/demo/workspace`, `/demo/research` and secondary `/demo/ct01`.
+- Browser: wrong password rejected; `admin/admin` enters NA5; logout removes
+  editor and unsent answer; re-entry is blank. Direct reload shows session gate.
+- Chat name/date/passport populate matching fields; manual name correction
+  changes the same draft. Organisation/family and foreign-resident branches
+  show the exact conditional choices. No automatic sponsor identity mapping.
+- Producer example validates. Review plus acknowledgment still leaves download
+  disabled. Mock question response leaves document content unchanged.
+- Catalog displays all four codes; filtering `1.001146` opens the matching NA5.
+- Desktop 1440x1000 and mobile 390x844 inspected. Mobile selected-field crop
+  corrected; opening manual input hides the fixed chat composer. Original
+  three raster pages and filled second-page/manual-signature areas inspected.
+- No real mobile keyboard, live Clerk, NA5 HTTP service, provider call,
+  persistent profile/database integration or filled NA5 PDF download was tested.
 
-## Verification observed in UI-01
-
-- 41 scoped frontend tests passed: forms, profile controller/page lifecycle,
-  six-field chat adapter and CT01 snapshot/validation model.
-- `pnpm typecheck` passed before the demo addition; the final `pnpm build`
-  completed its TypeScript check and production compilation with demo routes.
-- Production preview at 3014: wrong demo password stayed on login with an error;
-  `admin/admin` entered CT01; logout removed the editor; re-entry showed blank
-  values and composer. Direct entry without a demo session showed the entry gate.
-- CT01 browser checks: chat name/date/ID update overlays, ambiguous date asks for
-  clarification, leading zeroes remain, and manual name correction appears in
-  the review snapshot. Desktop/mobile layout inspected at 1440x1000 and 390x844.
-- Real synthetic API preview and PDF download succeeded at `/forms/demo`.
-  A subsequent manual edit disabled old acknowledgment and PDF download.
-- Isolated harness rendering actual components: valid prefill; malformed 200,
-  404 and 503 preserve edits; 401 clears values/composer; account/session changes
-  clear; synthetic pagehide/pageshow clear; forced late replies after account
-  change or edit are ignored. Loading removes the editor; sign-out resets to
-  an empty manual-only form. These are mocked auth/fetch states, not live Clerk.
-- Research filter showed zero matching guides, then restored all three on clear.
-- Independent code review found a print CSS scope issue; it was fixed by requiring
-  the CT01 print portal before hiding body children. Final production build passed.
-- No real mobile keyboard, native print output or live identity/storage proof.
-
-Commands used from `web/`:
+Commands from `web/`:
 
 ```powershell
-pnpm exec tsx --test lib/forms/*.test.ts components/portal/*.test.ts components/forms/demo-answer.test.ts components/ct01-demo/model.test.ts
+pnpm exec tsx --test components/na5-demo/model.test.ts
 pnpm typecheck
 $env:NEXT_TELEMETRY_DISABLED='1'
 pnpm build
-pnpm start --port 3014
+pnpm exec next start --hostname 127.0.0.1 --port 3014
 ```
 
 The test runner required scoped sandbox escalation because tsx could not start
-under the restricted native runtime. No dependency versions or lockfiles changed.
+under the restricted native runtime. No manifests, dependency versions or
+lockfiles changed for this checkpoint.
 
-## Local evidence and running preview
+## Earlier work retained, not repeated as NA5 evidence
 
-Screenshots are local ignored artifacts in `output/ui-01/`:
+- Integration base: `9cacda7320b5d18975a0bc2b62410eb74e45210f`.
+- FORM-02 producer `9fd812891bce0a0f421871be76b6b2f40d6f4f30` consumed
+  as `626ebc81fc2ee92c9b2a2f7504877fd1cdb54c59` (four UI files).
+- Main UI: `f666b633c70b3f65df3813efc42d3ddce58fc8be`.
+- Demo login: `d41ceaa970c7d9019bc04443649be923567efe23`.
+- Manager protocol read separately: `17900c3234add2a8c81c323e10a20d44dde88f1e`.
+- Site design source: `9905bc008f0f373eed9ba2cb8e7c3aa12f0ce6b9`.
 
-- `ct01-demo-desktop.jpg`: final desktop CT01 with demo session and fake values.
-- `ct01-demo-mobile.jpg`: final mobile CT01 and pinned composer.
-- `demo-login-desktop.jpg`: demo entry.
-- `forms-compact-desktop.jpg`, `forms-compact-mobile.jpg`: six-field workspace.
-- `auth-harness-evidence.txt`: observed synthetic guard scenarios.
+Previously verified: 41 frontend tests covering six-field forms, profile
+controller/lifecycle, deterministic chat and CT01 review. The synthetic forms
+API generated its own preview/PDF; mocked actual-component auth/fetch checks
+covered prefill failures, 401 clearing, account/session transitions and late
+response guards. These are not live Clerk or NA5 backend proof.
 
-Next production preview runs on loopback port 3014, using a build with Clerk
-configuration absent. Optional synthetic form API runs on loopback 8014 with
-demo forms enabled and no database/Clerk configuration. CT01/demo login need
-neither backend nor real identity. The test-only harness used port 3015 and is
-not a production route. No source deployment, migration, publication or push
-was performed for UI-01. The original Sites logo comparison remains separate.
+CT01 keeps its separate original two-page fixture, three local fields and
+acknowledged browser-print snapshot. Native Print / Save as PDF output remains
+unverified; no printing work was expanded for this checkpoint.
 
-Next handoff: Kim reviews this intermediary mock. Wait for her direction.
+These backend dependency commits were already picked before the review pause:
+
+| Producer | Local consumer | Scope |
+| --- | --- | --- |
+| `584e1ee9adbb5fd1f0a845c1357e204833202d6f` | `7c6b96904bf76ddc695230109c476fe27fe966c9` | Profile storage guards/tests |
+| `def58b7d04667d1865e281391dc25ef1723aa0a2` | `aeac1d55f5172e7b5c56f0b88de1e87075df060e` | Producer evidence |
+| `b07e28e74b4b9174979b7922ad3576d0562c778a` | `7437b00a045c1d8ab473ae4c030f27ddd4ed6310` | Scaffold evidence |
+
+The producer reported 147 API and 54 PGlite checks; UI-01 did not rerun them.
+Real PostgreSQL, Clerk and TLS acceptance remain pending. The optional synthetic
+API process predates those picks and is not runtime proof of the new guards.
+
+## Local evidence and review boundary
+
+Local ignored screenshots in `output/ui-01/`:
+
+- `na5-demo-desktop.jpg`: production NA5 document/chat with fictional example.
+- `na5-demo-mobile.jpg`: production selected-field crop and pinned composer.
+- `na5-page2-review.jpg`: second page and blank manual signature areas.
+- Prior `ct01-demo-*`, `forms-compact-*` and `auth-harness-evidence.txt` remain
+  historical evidence of the separate earlier views.
+
+The production preview is running on loopback 3014 with Clerk configuration
+absent. NA5 needs neither API nor identity service. An optional synthetic forms
+API on 8014 is unrelated to the NA5 mock. No source deployment, migration,
+publication, push or main merge was performed for UI-01. The original published
+Sites logo comparison remains separate.
+
+Next action belongs to Kim: review this bounded intermediary checkpoint.
+Wait for direction; do not automatically continue integration or polish.
