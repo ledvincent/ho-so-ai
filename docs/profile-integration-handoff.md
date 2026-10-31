@@ -1,5 +1,92 @@
 # APP-01 profile integration handoff
 
+## Current consumer acceptance - 31 October 2026
+
+This section supersedes the historical integration evidence below. The earlier
+501-test failure and three provider-review findings are resolved by the exact
+portal adaptation consumed here. Real PostgreSQL 16/TLS and live Clerk acceptance
+remain outstanding; this is not a complete AUTH-01 or browser-flow claim.
+
+| Reference | Exact SHA |
+| --- | --- |
+| Shared integration producer | `9cacda7320b5d18975a0bc2b62410eb74e45210f` |
+| Portal hardening consumed unchanged | `584e1ee9adbb5fd1f0a845c1357e204833202d6f` |
+| Portal handoff consumed unchanged | `def58b7d04667d1865e281391dc25ef1723aa0a2` |
+
+The adaptation is a direct child of the shared producer. Both commits were consumed
+with `git cherry-pick --ff` on `codex/kim/app-01-profile-integration`, preserving
+producer SHAs; no branch merge or edit to another active worktree occurred. The
+public cleanup implementation from `812d9e850703482eddfbc0bfbecd8ff0b42e5191`
+and shared lifecycle remain unchanged. Read-only review found no additional blocker
+to this scoped consumer acceptance.
+
+Acknowledgment: **tested compatible for the registered API/lifespan interface with
+synthetic signed identities and isolated storage fixtures**. The root consumer
+reran the checks below on its own integration worktree; these are fresh results,
+not only the portal owner's reported counts.
+
+| Check | Observed result / boundary |
+| --- | --- |
+| Full API suite | **147 passed**, no skips/xfail/suppression; one existing Starlette/httpx deprecation warning |
+| Generated profile contract | Matches the API model; `app.v1` and all six fields unchanged |
+| Disposable SQL policy suite | **54 passed**, no skips; PGlite reports PostgreSQL **17.5**, not real PostgreSQL 16/psycopg/TLS |
+| Scope preservation | No diff to shared auth/routes/lifespan/public cleanup, frontend, root manifest or lock from `9cacda7` |
+| Existing forms worktree | `feature/kim-form` remains clean at `d00efb1d95557cb1d74dc61dc66638f4f3455f9b` |
+
+Reproduced from the isolated checkout's `api/`, using its own installed virtualenv:
+
+```powershell
+$testBase = Join-Path $env:TEMP ('app01-hardened-' + [guid]::NewGuid().ToString('N'))
+.\.venv\Scripts\python.exe -m pytest -q --tb=short --basetemp $testBase
+.\.venv\Scripts\python.exe scripts/export_profile_contract.py --check
+$env:AUTH01_PYTHON = (Resolve-Path '.\.venv\Scripts\python.exe').Path
+$env:AUTH01_PGLITE_MODULE = (Resolve-Path '..\..\kim-portal\apps\portal\node_modules\@electric-sql\pglite\dist\index.js').Path
+node --test --test-concurrency=1 tests/portal/postgres-policy.test.mjs
+```
+
+The existing PGlite dependency was read from the preserved draft's installed files;
+no dependency was installed, secret copied or manifest edited. API tests use locally
+signed synthetic JWTs and disposable SQLite fixtures where storage is needed.
+PGlite exercises the actual repository/guard SQL. Connection-option checks intercept
+psycopg before a socket is opened. These are separate evidence boundaries.
+
+### Real PostgreSQL 16/TLS prerequisite
+
+The isolated test plan is ready in [profile-storage-test-plan.md](profile-storage-test-plan.md).
+The current host does not yet provide a reachable PostgreSQL 16 test runtime. No
+native `postgres`, `pg_ctl`, `initdb` or `psql` was found on PATH or standard Windows
+PostgreSQL installation paths. Per-user Docker CLI 29.8.0 exists outside PATH; its
+local `desktop-linux` daemon is unreachable. The only listed WSL distro is
+`docker-desktop`, stopped (WSL2). Docker/WSL was not started because
+starting a shared engine can also restart unrelated containers.
+
+Prerequisite: make an isolated local container engine available, or provide local
+PostgreSQL 16 server binaries. For the container route, confirm an available PG16
+image after the engine is running; image availability was not inferred from CLI
+presence. Then prepare a dedicated project/volume, loopback-only port, test CA/server
+certificate, separate provisioner/runtime login and fixed synthetic issuer according
+to the plan. OpenSSL 3.5.9 is available through Git. Port 55432 was free when inspected;
+recheck immediately before startup. Do not use the existing plaintext Compose setup
+or weaken verify-full/GSS/TLS policy. No database, role, schema or TLS handshake was
+created by this acceptance step.
+
+### Next owner handoff
+
+The frontend owner can consume the same app.v1 seam for Login -> personal workspace/
+chatbot -> search/documents/profile tabs, while integrating FORM-02 as assigned.
+This backend task supplies no document/procedure/search service or UI mock; those
+real interfaces remain Vincent-owned, and UI-only mocks belong to the frontend owner.
+Shared layout/dependency/test-command changes still require frontend coordination.
+
+Next backend acceptance is real PostgreSQL 16/psycopg/TLS, followed by live Clerk
+and the combined account-profile -> editable form copy -> synthetic preview/PDF
+browser journey. Backend fixes remain with the portal owner. No frontend/build
+rerun is claimed for this backend-only consumption; prior frontend results below
+remain tied to the earlier integration. No push, deployment, shared/live migration,
+team-status edit or cross-chat reply was performed.
+
+## Historical integration evidence at 9cacda7 (preserved)
+
 Owner: Kim shared backend/scaffold. Date: 2026-10-31 (Asia/Saigon).
 Status: shared wiring implemented; portal adaptation and real-storage acceptance
 remain pending. This is not a complete AUTH-01 or browser compatibility claim.
