@@ -1,6 +1,6 @@
-"""TEST-ONLY composition of existing auth/model and proposed portal handlers.
+"""Real registered profile routes/lifespan with synthetic storage and tokens.
 
-Production routes still return 501 until the scaffold owner wires the service.
+Production routes are wired by APP-01 and return 503 when storage is unavailable.
 Locally signed tokens exercise the real shared verifier, not a live Clerk tenant.
 """
 
@@ -8,16 +8,11 @@ import time
 
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
-from fastapi import Request
-from fastapi.routing import APIRoute
 from fastapi.testclient import TestClient
 import jwt
 import pytest
 
-from hoso_api.auth import CurrentUser
 from hoso_api.main import create_app
-from hoso_api.profile import ProfileResponse, ProfileUpdate, router as scaffold_profile_router
-from hoso_api.portal.handlers import read_profile, write_profile
 from hoso_api.settings import Settings
 
 
@@ -47,32 +42,28 @@ def credential(signing, subject="synthetic_a", **overrides):
 
 @pytest.fixture
 def client(signing, service):
+    # The fixture owns its SQLite repository; the real app owns routing/lifespan.
+    with TestClient(create_app(signing[1], profile_service=service)) as actual:
+        yield actual
+
+
+@pytest.mark.parametrize("method", ["GET", "PUT"])
+def test_integrated_route_without_storage_returns_private_503(signing, method):
     app = create_app(signing[1])
-    # Explicitly test-only composition. Do not mutate production route registration.
-    app.router.routes[:] = [
-        route for route in app.routes
-        if getattr(route, "original_router", None) is not scaffold_profile_router
-        and (not isinstance(route, APIRoute) or route.path != "/v1/profile")
-    ]
-    app.state.profile_service = service
-
-    @app.get("/v1/profile", response_model=ProfileResponse)
-    def read(request: Request, user: CurrentUser):
-        return read_profile(request, user)
-
-    @app.put("/v1/profile", response_model=ProfileResponse)
-    def write(request: Request, user: CurrentUser, payload: ProfileUpdate):
-        return write_profile(request, user, payload)
-
-    return TestClient(app)
+    # Context entry runs the real application lifespan. Do not replace its router.
+    with TestClient(app) as actual:
+        assert app.state.profile_service is None
+        response = actual.request(
+            method, "/v1/profile", headers=credential(signing),
+            **({"json": {"expected_revision": 0, "fields": {}}} if method == "PUT" else {}),
+        )
+        assert response.status_code == 503
+        assert response.json() == {"detail": {"code": "PROFILE_UNAVAILABLE"}}
+        assert response.headers["cache-control"] == "no-store"
+    assert app.state.profile_service is None
 
 
-def test_production_baseline_is_still_501(signing):
-    actual = TestClient(create_app(signing[1]))
-    assert actual.get("/v1/profile", headers=credential(signing)).status_code == 501
-
-
-def test_composed_api_a_b_ownership_and_revisions(client, signing):
+def test_registered_api_a_b_ownership_and_revisions(client, signing):
     a, b = credential(signing), credential(signing, "synthetic_b")
     assert client.get("/v1/profile", headers=a).status_code == 404
     body = {"expected_revision": 0, "fields": {"full_name": "Synthetic Nguyễn A"}}
