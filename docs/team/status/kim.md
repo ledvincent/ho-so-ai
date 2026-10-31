@@ -1,5 +1,72 @@
 # Kim — application integration checkpoint
 
+## Latest update — 31 October 2026: connected checkpoint published, chat-first correction
+
+This update supersedes conflicting historical publication/pause statements below.
+Kim reviewed the local preview and explicitly authorized publishing it for Son.
+The actual connected application is now available on
+`codex/kim/ui-02-guided-portal` at
+`edb3c1cd4d41a5ac1ae8b0125e84c197862145a5`; implementation is
+`da2c9abeaacb3b0c3a8b10f0454565d059322cdd`.
+[Exact consumer handoff](https://github.com/ledvincent/ho-so-ai/blob/edb3c1cd4d41a5ac1ae8b0125e84c197862145a5/docs/ui-02-frontend-handoff.md)
+was verified by GitHub read-back against the local blob. No main merge or deployment.
+
+The branch includes AUTH-02/CHAT-01 code producer
+`21d3988780c4ecc596c80f49e6503b84f2c8c18c`, consumed as
+`8de13111a1d16a424a25c2799a1ef355c036fad5`, and its evidence producer
+`87993e3d5f5f297a231ca4bc55195016f2d46601`, consumed as
+`b4fd78ec6d5fdf2a10cb668a3dd0a36cfb8034b3`. These are picked equivalents,
+not a straight descendant of the separately published app.v1/Clerk branch.
+Do not blindly merge both histories or count equivalent patches as distinct work.
+
+UI owner verified the combined browser path: real SQLite username/password login,
+one live model-assisted NA5 update, same-draft manual correction, explicit profile
+save, logout/direct-access denial and account separation. The final build and 62
+frontend tests passed. Backend evidence separately reports 247 API tests and
+restart persistence. The manager reviewed this evidence/screenshots and independently
+checked unauthenticated 401/307/no-store behavior. This proves the local checkpoint,
+not Son voice, Vincent live retrieval, reviewed PDF export or public hosting.
+The LOCAL identity provider is loopback-only, distinct from Clerk; Son needs an
+explicit adapter/identity decision. Existing app.v1 fields/revision semantics remain.
+
+### Kim's review correction: discovery before documents
+
+The published checkpoint starts too early with NA5. Kim's intended entry flow is:
+**login -> general procedure conversation -> Vincent retrieval -> candidate or
+clarification -> user confirms procedure -> corresponding document opens -> guided
+filling when the producer supplies a compatible workflow**. No document or personal
+name/passport question should appear before procedure selection. A request for a
+new visa must not default to stay-extension procedure `1.001146`.
+
+UI-03 is assigned to the sole frontend owner on a new isolated branch/worktree;
+DISCOVERY-01 is assigned to scaffold for authenticated thin proxies only. Preserve
+the tested source and running local preview. No new RAG, voice implementation or
+authoritative procedure schema is assigned to Kim. New work is not yet delivered,
+published or tested with Vincent's live service.
+
+At Vincent producer `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`, use structured
+`POST /search` candidates (`code`, `name`, scores), then the selected
+`GET /procedures/{code}` and `/profile` with form hashes/provenance. Fetch the
+associated original through `/forms/{sha256}/original`. `/assistant/chat` supplies
+grounded answer/citations/status/model, not a trusted procedure-selection field;
+do not parse its prose to route forms. Existing profile baseline/run/output hashes
+provide version references. Only `/workflows/1.001146/*` currently supplies a filling
+workflow; other documents stay read-only unless their actual workflow is delivered.
+
+Kim confirmed that Vincent has not supplied a reachable API or startup/data
+handoff yet and will request it. Live discovery is blocked on that specific
+dependency: loaded data, ready/calibrated search index, source/context gates and
+server access/configuration. Owners can prepare fixture-tested consumers with an
+explicit unavailable state; no synthetic result may impersonate Vincent retrieval.
+
+Observed remote inputs: Son voice `cad8198107ce7a38269834bf0c73522dad0348ba`,
+ACCESS `64d0d88d7656e6dff00d909c2790d3243e7133cc`, integration preparation
+`99aa859672573a5053ccc3fec75edb1c11681f64`, main
+`44b24a220f8f88556617e5d3fc993e0c4465aad2`. Publication is verified; complete
+three-member runtime compatibility is not. Son can fetch the new UI branch now.
+
+## Historical checkpoint — 13:13 Asia/Saigon
+
 Owner: Kim; consolidated by Kim's local manager.
 Updated: 2026-10-31 13:13 Asia/Saigon (UTC+07:00); evidence snapshot.
 Task: TEAM-05 — publish the APP-01, AUTH-01, FORM-02 and UI-01 integration checkpoint.
