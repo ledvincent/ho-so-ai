@@ -1,5 +1,25 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Restored local backend on this machine
+
+Vincent's supplied bundle has been restored in WSL to PostgreSQL 16 with
+pgvector, port 55432, database `hoso_kim_demo`. Four direct source lookups and
+an HTTP clarification query pass. Full vector search awaits completion and
+digest verification of the BGE-M3 download.
+
+To activate answer generation, run in an interactive PowerShell terminal:
+
+```powershell
+& 'C:\Users\Son\Documents\Codex\ho-so-ai\son\voice\start-vincent.ps1'
+```
+
+Enter the OpenAI key only at the hidden prompt. The upstream API then runs on
+8004; the existing voice gateway on 8003 already targets it. No key is written
+to a file or included in a command argument. Use
+`http://127.0.0.1:8003/?audio=realtime&language=en&documents=rag` after startup.
+The page on 8002 remains the fictional API test.
+Restoration evidence and remaining checks: `LOCAL-VINCENT-RUNTIME.md`.
+
 ## Vincent's current RAG API: connected-mode implementation
 
 The `7c78ec4` contract adds `choices`, signed `retrieval_state`, selected
