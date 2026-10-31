@@ -1,5 +1,8 @@
 # Kim: start integrating here
 
+See the [frontend compatibility check](kim-integration-check.md) for the exact
+adapter changes still needed and why the current proxy setup does not need CORS.
+
 The backend owns procedure selection, RAG, answers, citations and document
 requirements. Kim's adapter proposes form-field changes. Son's finalized voice
 transcript enters the same routing as typed text. Do not send form values to chat.
