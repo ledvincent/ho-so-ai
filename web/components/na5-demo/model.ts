@@ -2,33 +2,33 @@ import schemaData from '@/public/test-fixtures/na5/schema.json';
 import exampleData from '@/public/test-fixtures/na5/example.json';
 
 export type Placement = { page: number; bbox: number[]; component?: string; anchor_id?: string };
-export type WorkflowField = { id: string; label: string; type: string; group: string; required: boolean; manual?: boolean; inactive?: boolean; hidden?: boolean; max_length: number; multiline?: boolean; repeat?: boolean; when?: Record<string, string>; options?: string[]; placements: Placement[]; marks?: Record<string, Placement> };
-export type WorkflowSchema = { procedure_code: string; name: string; revision: string; effective_from: string; review_status: string; fields: WorkflowField[]; fixed_values: Record<string, string> };
+export type WorkflowField = { id: string; label: string; type: string; group: string; required: boolean; manual?: boolean; inactive?: boolean; hidden?: boolean; uppercase?: boolean; max_length: number; multiline?: boolean; repeat?: boolean; when?: Record<string, string>; options?: string[]; placements: Placement[]; marks?: Record<string, Placement> };
+export type WorkflowSchema = { procedure_code: string; name: string; revision: string; effective_from: string | null; review_status: string; fields: WorkflowField[]; fixed_values: Record<string, string>; date_order?: string[][] };
 export const schema = schemaData as unknown as WorkflowSchema;
 export const PROCEDURE_TITLE = 'Gia hạn tạm trú cho người nước ngoài (cấp tỉnh)';
 export const example = exampleData as Record<string, string>;
 export type Values = Record<string, string>;
-export const emptyValues = (): Values => ({ ...schema.fixed_values });
+export const emptyValues = (source: WorkflowSchema = schema): Values => ({ ...source.fixed_values });
 export function applicable(field: WorkflowField, values: Values) {
   return !field.manual && !field.inactive && Object.entries(field.when ?? {}).every(([id, value]) => values[id] === value);
 }
-export function activeFields(values: Values) { return schema.fields.filter(field => applicable(field, values)); }
-export function editableFields(values: Values) { return activeFields(values).filter(field => !field.hidden && !Object.hasOwn(schema.fixed_values, field.id)); }
-export function updateValue(values: Values, id: string, value: string): Values {
-  const field = schema.fields.find(item => item.id === id);
-  if (!field || !applicable(field, values) || Object.hasOwn(schema.fixed_values, id)) throw new Error('Field is not editable in this workflow.');
-  const next = { ...schema.fixed_values, ...values, [id]: id === 'applicant_full_name' ? value.toUpperCase() : value };
+export function activeFields(values: Values, source: WorkflowSchema = schema) { return source.fields.filter(field => applicable(field, values)); }
+export function editableFields(values: Values, source: WorkflowSchema = schema) { return activeFields(values, source).filter(field => !field.hidden && !Object.hasOwn(source.fixed_values, field.id)); }
+export function updateValue(values: Values, id: string, value: string, source: WorkflowSchema = schema): Values {
+  const field = source.fields.find(item => item.id === id);
+  if (!field || !applicable(field, values) || field.hidden || Object.hasOwn(source.fixed_values, id)) throw new Error('Field is not editable in this workflow.');
+  const next = { ...source.fixed_values, ...values, [id]: field.uppercase || (source === schema && id === 'applicant_full_name') ? value.toUpperCase() : value };
   // Changing sponsor branch drops now-inapplicable values; never submit hidden data.
-  for (const item of schema.fields) if (!applicable(item, next)) delete next[item.id];
+  for (const item of source.fields) if (!applicable(item, next)) delete next[item.id];
   return next;
 }
-export function payloadValues(values: Values): Values {
-  const known = new Set(schema.fields.map(field => field.id));
+export function payloadValues(values: Values, source: WorkflowSchema = schema): Values {
+  const known = new Set(source.fields.map(field => field.id));
   if (Object.keys(values).some(id => !known.has(id))) throw new Error('Unknown form fields');
-  for (const [id, value] of Object.entries(schema.fixed_values)) if (Object.hasOwn(values, id) && values[id] !== value) throw new Error('This workflow only supports stay extension');
-  return Object.fromEntries(activeFields({ ...schema.fixed_values, ...values }).map(field => {
-    const value = (schema.fixed_values[field.id] ?? values[field.id] ?? '').trim();
-    return [field.id, field.id === 'applicant_full_name' ? value.toUpperCase() : value];
+  for (const [id, value] of Object.entries(source.fixed_values)) if (Object.hasOwn(values, id) && values[id] !== value) throw new Error('This workflow has a different fixed value');
+  return Object.fromEntries(activeFields({ ...source.fixed_values, ...values }, source).map(field => {
+    const value = (source.fixed_values[field.id] ?? values[field.id] ?? '').trim();
+    return [field.id, field.uppercase || (source === schema && field.id === 'applicant_full_name') ? value.toUpperCase() : value];
   }));
 }
 function validDate(value: string) {
@@ -45,14 +45,14 @@ export function fieldIssue(field: WorkflowField, raw: string): string | undefine
   if (value && field.options && !field.options.includes(value)) return 'Chọn đúng một giá trị trong danh sách.';
   return undefined;
 }
-export function issues(values: Values): Record<string, string> {
+export function issues(values: Values, source: WorkflowSchema = schema): Record<string, string> {
   const result: Record<string, string> = {};
-  const normalized = payloadValues(values);
-  for (const field of activeFields(normalized)) {
+  const normalized = payloadValues(values, source);
+  for (const field of activeFields(normalized, source)) {
     const issue = fieldIssue(field, normalized[field.id] ?? '');
     if (issue) result[field.id] = issue;
   }
-  for (const [earlier, later] of [['birth_date', 'entry_date'], ['entry_date', 'permitted_until'], ['permitted_until', 'extension_until'], ['extension_until', 'passport_expiry']]) {
+  for (const [earlier, later] of source.date_order ?? (source === schema ? [['birth_date', 'entry_date'], ['entry_date', 'permitted_until'], ['permitted_until', 'extension_until'], ['extension_until', 'passport_expiry']] : [])) {
     if (normalized[earlier] && normalized[later] && !result[earlier] && !result[later] && normalized[earlier] > normalized[later]) result[later] = `${later} phải bằng hoặc sau ${earlier}.`;
   }
   return result;
@@ -65,7 +65,7 @@ export function resolveLiteral(field: WorkflowField, answer: string): { value: s
 }
 
 export type Review = { revision: number; values: Readonly<Values> };
-export function captureReview(values: Values, revision: number): Review { return Object.freeze({ revision, values: Object.freeze(payloadValues(values)) }); }
+export function captureReview(values: Values, revision: number, source: WorkflowSchema = schema): Review { return Object.freeze({ revision, values: Object.freeze(payloadValues(values, source)) }); }
 export function canDownload(reviewStatus: string, review: Review | null, revision: number, token: string | null, confirmed: boolean) {
   return reviewStatus === 'reviewed' && review?.revision === revision && Boolean(token) && confirmed;
 }
