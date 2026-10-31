@@ -1,0 +1,81 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+  "code": "3.000347",
+  "name": "Đổi giấy phép lái xe",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "fc892d9e-a335-482a-bfd9-05bbc9009ba0",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 33,
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 141
+    },
+    "output_sha256": "ad3b8da3f88aafdee3c7bec5e18c2ddefdeb9d1df73b445dcc57a00c8e1b618d"
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372358",
+  "operation": "recover_official_forms",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372358",
+      "mode": "live",
+      "sha256": "8ee3fa52084f8e66b0f8643f6c61fd4b6821ee138c22fac42835c15bba109f66",
+      "raw_path": "data/_store/html/8ee3fa52084f8e66b0f8643f6c61fd4b6821ee138c22fac42835c15bba109f66",
+      "fetched_at": "2026-10-31T08:09:05.581439+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+      "mode": "resolved_live",
+      "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+      "raw_path": "data/_store/html/fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+      "fetched_at": "2026-10-31T08:09:07.858493+00:00",
+      "input_name": "Đổi giấy phép lái xe",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372358",
+      "resolved_name": "Đổi giấy phép lái xe",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "3bbd24fedb7bcfe51a094558e5d969808fc464015e058424ca312f78effa7712",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "parent_run_id": "af0911d3-6bc7-4e09-8dec-b20084d623a7",
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0",
+      "label": "PhulucXII.doigplx.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "raw_path": "data/_store/html/fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86",
+      "page_url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+      "raw_path": "data/forms/_objects/48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86/driving-exchange-XII--48ccd53ae2f7.pdf",
+      "download_url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ]
+}

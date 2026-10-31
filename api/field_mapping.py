@@ -11,6 +11,9 @@ import re
 import shutil
 import subprocess
 import tempfile
+import uuid
+import logging
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -21,6 +24,9 @@ from typing import Literal
 from api.config import ROOT
 
 VERSION = 'visual-fields-2'
+MODEL_OUTPUT_TOKENS = 64000
+MODEL_RETRY_OUTPUT_TOKENS = 128000
+log = logging.getLogger(__name__)
 
 
 class Strict(BaseModel):
@@ -216,15 +222,38 @@ def invoke(prompt, images, schema, provider, model, effort, folder):
     content = [dict(type='input_text', text=prompt)]
     for path in images:
         content.append(dict(type='input_image', image_url='data:image/png;base64,'+base64.b64encode(path.read_bytes()).decode(), detail='high'))
-    response = httpx.post('https://api.openai.com/v1/responses', headers={'Authorization': 'Bearer '+key},
-        json=dict(model=model, reasoning=dict(effort=effort), store=False, input=[dict(role='user',content=content)],
-                  text=dict(format=dict(type='json_schema', name='form_fields', strict=True, schema=schema)), max_output_tokens=24000), timeout=900)
-    response.raise_for_status()
-    data = response.json()
+    payload = dict(model=model, reasoning=dict(effort=effort), store=False, input=[dict(role='user',content=content)],
+                   text=dict(format=dict(type='json_schema', name='extraction', strict=True, schema=schema)),
+                   max_output_tokens=MODEL_OUTPUT_TOKENS)
+    for attempt in range(2):
+        log.info('Model request: %s, reasoning=%s, token limit=%s, attempt=%s',
+                 model, effort, payload['max_output_tokens'], attempt+1)
+        response = httpx.post('https://api.openai.com/v1/responses',
+                              headers={'Authorization': 'Bearer '+key}, json=payload, timeout=900)
+        if response.status_code in (429, 500, 502, 503, 504) and attempt == 0:
+            log.warning('Model service returned %s; retrying once', response.status_code)
+            time.sleep(5)
+            continue
+        response.raise_for_status()
+        data = response.json()
+        diagnostics = {k: data.get(k) for k in
+                       ('id', 'model', 'status', 'incomplete_details', 'error', 'usage')}
+        path = Path(folder)/('response-metadata-'+uuid.uuid4().hex+'.json')
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2), encoding='utf-8')
+        if (data.get('incomplete_details') or {}).get('reason') == 'max_output_tokens' and attempt == 0:
+            log.warning('Model exhausted its output budget; retrying once with more room')
+            payload['max_output_tokens'] = MODEL_RETRY_OUTPUT_TOKENS
+            continue
+        break
     if data.get('status') != 'completed':
-        raise ValueError('Field mapping response incomplete')
+        reason = (data.get('incomplete_details') or {}).get('reason')
+        reason = reason or (data.get('error') or {}).get('code') or 'unspecified'
+        raise ValueError(f"Model response did not complete: status={data.get('status')}, "
+                         f"reason={reason}, model={model}. Diagnostics: {path.name}")
     output = ''.join(c['text'] for item in data['output'] if item['type'] == 'message' for c in item['content'] if c['type'] == 'output_text')
-    return json.loads(output), dict(provider=provider, model=data['model'], response_id=data['id'], usage=data.get('usage'), reasoning_effort=effort)
+    return json.loads(output), dict(provider=provider, model=data['model'], response_id=data['id'], usage=data.get('usage'), reasoning_effort=effort,
+                                   max_output_tokens=payload['max_output_tokens'])
 
 
 def map_form(pdf_path, sha, context='', hints=None, force=False, provider=None):

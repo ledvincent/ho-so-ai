@@ -1,0 +1,222 @@
+[
+  {
+    "source_id": "primary",
+    "locator": "identity",
+    "text": "procedure_code: 1.010912\nofficial_name: Đăng ký sang tên, di chuyển xe mô tô, xe gắn máy tại Công an cấp xã được phân cấp đăng ký xe",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:0:Trình tự thực hiện",
+    "text": "+ Khi chuyển quyền sở hữu xe, chủ xe phải giữ lại chứng nhận đăng ký xe, biển số xe (không giao cho tổ chức, cá nhân nhận chuyển quyền sở hữu xe) và nộp cho cơ quan đăng ký xe chứng nhận đăng ký xe, biển số xe để làm thủ tục thu hồi; trong thời hạn 30 ngày, kể từ ngày làm giấy tờ chuyển quyền sở hữu xe, chủ xe phải làm thủ tục thu hồi, trường hợp quá thời hạn trên mà chủ xe không làm thủ tục thu hồi hoặc giao chứng nhận đăng ký xe, biển số xe cho tổ chức, cá nhân nhận chuyển quyền sở hữu xe làm thủ tục thu hồi thì trước khi giải quyết cơ quan đăng ký xe ra quyết định xử phạt đối với chủ xe về hành vi không làm thủ tục thu hồi theo quy định;\nKhi chuyển trụ sở, nơi cư trú từ tỉnh, thành phố trực thuộc Trung ương này sang tỉnh, thành phố trực thuộc Trung ương khác (di chuyển nguyên chủ), chủ xe phải làm thủ tục thu hồi tại cơ quan đang quản lý hồ sơ xe đó.\n+ Tổ chức, cá nhân nhận chuyển quyền sở hữu xe, chủ xe (đối với trường hợp di chuyển nguyên chủ) làm thủ tục đăng ký sang tên, di chuyển xe tại cơ quan đăng ký xe theo quy định.\n1. Thủ tục thu hồi\nBước 1: Chủ xe kê khai giấy khai thu hồi đăng ký, biển số xe trên cổng dịch vụ công; cung cấp mã hồ sơ đăng ký xe trực tuyến; nộp hồ sơ thu hồi quy định tại khoản 1 Điều 14 Thông tư số 24//2023/TT-BCA và nhận giấy hẹn trả kết quả đăng ký xe theo quy định;\nBước 2: Sau khi kiểm tra hồ sơ xe hợp lệ, cơ quan đăng ký xe cấp chứng nhận thu hồi đăng ký, biển số xe theo quy định (có dán bản chà số máy, số khung và đóng dấu giáp lai của cơ quan đăng ký xe trên bản chà số máy, số khung xe): 01 bản trả cho chủ xe; 01 bản lưu hồ sơ xe; trường hợp mất chứng nhận đăng ký xe thì thực hiện xác minh theo quy định.\n2. Thủ tục đăng ký sang tên, di chuyển xe\nBước 1: Tổ chức, cá nhân nhận chuyển quyền sở hữu xe, chủ xe (đối với trường hợp di chuyển nguyên chủ): Kê khai giấy khai đăng ký xe theo quy định tại Điều 9 Thông tư số 24/2023/TT-BCA; đưa xe đến để kiểm tra, cung cấp mã hồ sơ đăng ký xe trực tuyến và nộp hồ sơ quy định tại khoản 2 Điều 14 Thông tư số 24/2023/TT-BCA;\nBước 2: Sau khi kiểm tra hồ sơ xe, thực tế xe đảm bảo hợp lệ thì được cơ quan đăng ký xe cấp biển số theo quy định tại khoản 2 Điều 12 Thông tư số 24/2023/TT-BCA; cáp giấy hẹn trả kết quả đăng ký và xác định mức thu lệ phí đăng ký xe;\nBước 3: Chủ xe nộp lệ phí đăng ký xe trên cổng dịch vụ công Bộ Công an và nhận biển số xe (trường hợp được cấp biển số theo quy định tại điểm a khoản 2 Điều 12 Thông tư số 24/2023/TT-BCA); trường hợp chủ xe có nhu cầu nhận trả kết quả đăng ký xe qua dịch vụ bưu chính công ích thì đăng ký với đơn vị dịch vụ bưu chính công ích;\nBước 4: Chủ xe nhận chứng nhận đăng ký xe, biển số xe (trường hợp được cấp biển số theo quy định tại điểm b khoản 2 Điều 12 Thông tư số 24/2023/TT-BCA) tại cơ quan đăng ký xe hoặc từ đơn vị dịch vụ bưu chính công ích.\nTrường hợp đăng ký xe di chuyển nguyên chủ thì được giữ nguyên biển số định danh (biển 05 số); trường hợp biển số cũ là biển 3 hoặc 4 số thì cấp đổi sang biển số định danh theo quy định tại Thông tư số 24/2023/TT-BCA.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:1:Cách thức thực hiện",
+    "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n02 Ngày làm việc\nLệ phí: Đồng\nLệ phí: Đồng\n+ Cấp chứng nhận thu hồi đăng ký, biển số xe: Không quá 02 ngày làm việc (trường hợp cấp chứng nhận thu hồi đăng ký, biển số), kể từ ngày nhận đủ hồ sơ hợp lệ.\n+ Cấp chứng nhận đăng ký xe: Không quá 02 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ\n+ Cấp biển số định danh lần đầu: Cấp ngay sau khi tiếp nhận hồ sơ đăng ký xe hợp lệ.\n+ Cấp lại biển số định danh: Không quá 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ.\n+ Thời gian trả kết quả đăng ký xe theo quy định được tính từ ngày nhận đủ hồ sơ hợp lệ và hệ thống đăng ký, quản lý xe đã nhận được kết quả xác thực về việc hoàn thành nộp lệ phí đăng ký xe từ cổng dịch vụ công.\n+ Trường hợp mất chứng nhận đăng ký xe khi làm thủ tục thu hồi thì thời hạn xác minh là 30 ngày.\nTrực tuyến\n02 Ngày làm việc\nLệ phí: Đồng\nLệ phí: Đồng\n+ Nộp Giấy khai thu hồi đăng ký, biển số xe trên Cổng Dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\n+ Kê khai Giấy khai đăng ký xe trên Cổng Dịch vụ công.\n+ Cấp chứng nhận thu hồi đăng ký, biển số xe: Không quá 02 ngày làm việc (trường hợp cấp chứng nhận thu hồi đăng ký, biển số), kể từ ngày nhận đủ hồ sơ hợp lệ.\n+ Cấp chứng nhận đăng ký xe: Không quá 02 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ\n+ Cấp biển số định danh lần đầu: Cấp ngay sau khi tiếp nhận hồ sơ đăng ký xe hợp lệ.\n+ Cấp lại biển số định danh: Không quá 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ.\n+ Thời gian trả kết quả đăng ký xe theo quy định được tính từ ngày nhận đủ hồ sơ hợp lệ và hệ thống đăng ký, quản lý xe đã nhận được kết quả xác thực về việc hoàn thành nộp lệ phí đăng ký xe từ cổng dịch vụ công.\n+ Trường hợp mất chứng nhận đăng ký xe khi làm thủ tục thu hồi thì thời hạn xác minh là 30 ngày.\nDịch vụ bưu chính\n02 Ngày làm việc\n+ Trả kết quả qua dịch vụ bưu chính.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:2:Thành phần hồ sơ",
+    "text": "1. Hồ sơ thu hồi\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nGiấy khai thu hồi đăng ký, biển số xe\n5. Mẫu giấy khai thu hồi đăng ký, biển số xe.doc.docx\nBản chính: 1 - Bản sao: 0\nGiấy tờ của chủ xe theo quy định\nBản chính: 1 - Bản sao: 0\n02 bản chà số máy, số khung xe\nBản chính: 2 - Bản sao: 0\nChứng nhận đăng ký xe\nBản chính: 1 - Bản sao: 0\nBiển số xe (quy định tại TT 24/2023/TT-BCA)\nBản chính: 1 - Bản sao: 0\nTrường hợp di chuyển nguyên chủ, chủ xe không phải nộp lại biển số xe trừ trường hợp xe đã đăng ký là biển 3 hoặc 4 số thì phải nộp lại biển 3 hoặc 4 số đó; Trường hợp mất chứng nhận đăng ký xe hoặc mất biển số xe thì phải ghi rõ lý do trong giấy khai thu hồi đăng ký, biển số xe;\nBản chính: 0 - Bản sao: 0\nChứng từ chuyển quyền sở hữu xe theo quy định tại khoản 2 Điều 11 Thông tư số 24/2023/TT-BCA (trừ trường hợp di chuyển nguyên chủ).\nBản chính: 0 - Bản sao: 1\n2. Hồ sơ đăng ký sang tên, di chuyển xe\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nGiấy khai đăng ký xe (Mẫu ĐKX12 Ban hành kèm theo Thông tư số 24/2023/TT-BCA ngày 01/07/2023 của Bộ trưởng Bộ Công an)\n4. Mẫu giấy khai đăng ký xe.docx\nBản chính: 1 - Bản sao: 0\nGiấy tờ của chủ xe theo quy định\nBản chính: 1 - Bản sao: 0\nChứng từ chuyển quyền sở hữu xe theo quy định tại khoản 2 Điều 11 Thông tư số 24/2023/TT-BCA (trừ trường hợp di chuyển nguyên chủ).\nBản chính: 1 - Bản sao: 0\nChứng từ lệ phí trước bạ theo quy định\nBản chính: 1 - Bản sao: 0\nChứng nhận thu hồi đăng ký, biển số xe\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:3:Cơ quan thực hiện",
+    "text": "Công an Xã",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+    "text": "Thực hiện tại Công an cấp xã có số lượng trung bình 03 năm liền kề gần nhất, đã đăng ký mới từ 250 xe mô tô, xe gắn máy (kể cả xe máy điện) trở lên trong 01 năm của cơ quan, tổ chức, cá nhân có trụ sở hoặc nơi thường trú tại địa bàn cấp xã (trừ các quận, thành phố thuộc thành phố trực thuộc trung ương; các thành phố thuộc tỉnh nơi Phòng Cảnh sát giao thông đặt trụ sở và cấp xã nơi Công an cấp huyện đặt trụ sở) và và đảm bảo các điều kiện cơ sở vật chất, nhân lực theo quy định.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+    "text": "",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:0",
+    "text": "1. Hồ sơ thu hồi\nGiấy khai thu hồi đăng ký, biển số xe\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:1",
+    "text": "1. Hồ sơ thu hồi\nGiấy tờ của chủ xe theo quy định\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:2",
+    "text": "1. Hồ sơ thu hồi\n02 bản chà số máy, số khung xe\nBản chính: 2 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:3",
+    "text": "1. Hồ sơ thu hồi\nChứng nhận đăng ký xe\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:4",
+    "text": "1. Hồ sơ thu hồi\nBiển số xe (quy định tại TT 24/2023/TT-BCA)\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:5",
+    "text": "1. Hồ sơ thu hồi\nTrường hợp di chuyển nguyên chủ, chủ xe không phải nộp lại biển số xe trừ trường hợp xe đã đăng ký là biển 3 hoặc 4 số thì phải nộp lại biển 3 hoặc 4 số đó; Trường hợp mất chứng nhận đăng ký xe hoặc mất biển số xe thì phải ghi rõ lý do trong giấy khai thu hồi đăng ký, biển số xe;\nBản chính: 0 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:6",
+    "text": "1. Hồ sơ thu hồi\nChứng từ chuyển quyền sở hữu xe theo quy định tại khoản 2 Điều 11 Thông tư số 24/2023/TT-BCA (trừ trường hợp di chuyển nguyên chủ).\nBản chính: 0 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:7",
+    "text": "2. Hồ sơ đăng ký sang tên, di chuyển xe\nGiấy khai đăng ký xe (Mẫu ĐKX12 Ban hành kèm theo Thông tư số 24/2023/TT-BCA ngày 01/07/2023 của Bộ trưởng Bộ Công an)\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:8",
+    "text": "2. Hồ sơ đăng ký sang tên, di chuyển xe\nGiấy tờ của chủ xe theo quy định\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:9",
+    "text": "2. Hồ sơ đăng ký sang tên, di chuyển xe\nChứng từ chuyển quyền sở hữu xe theo quy định tại khoản 2 Điều 11 Thông tư số 24/2023/TT-BCA (trừ trường hợp di chuyển nguyên chủ).\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:10",
+    "text": "2. Hồ sơ đăng ký sang tên, di chuyển xe\nChứng từ lệ phí trước bạ theo quy định\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:11",
+    "text": "2. Hồ sơ đăng ký sang tên, di chuyển xe\nChứng nhận thu hồi đăng ký, biển số xe\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:0",
+    "text": "Trực tiếp\n02 Ngày làm việc\n+ Cấp chứng nhận thu hồi đăng ký, biển số xe: Không quá 02 ngày làm việc (trường hợp cấp chứng nhận thu hồi đăng ký, biển số), kể từ ngày nhận đủ hồ sơ hợp lệ. + Cấp chứng nhận đăng ký xe: Không quá 02 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ + Cấp biển số định danh lần đầu: Cấp ngay sau khi tiếp nhận hồ sơ đăng ký xe hợp lệ. + Cấp lại biển số định danh: Không quá 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ. + Thời gian trả kết quả đăng ký xe theo quy định được tính từ ngày nhận đủ hồ sơ hợp lệ và hệ thống đăng ký, quản lý xe đã nhận được kết quả xác thực về việc hoàn thành nộp lệ phí đăng ký xe từ cổng dịch vụ công. + Trường hợp mất chứng nhận đăng ký xe khi làm thủ tục thu hồi thì thời hạn xác minh là 30 ngày.\nLệ phí: Đồng\nLệ phí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:1",
+    "text": "Trực tuyến\n02 Ngày làm việc\n+ Nộp Giấy khai thu hồi đăng ký, biển số xe trên Cổng Dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. + Kê khai Giấy khai đăng ký xe trên Cổng Dịch vụ công. + Cấp chứng nhận thu hồi đăng ký, biển số xe: Không quá 02 ngày làm việc (trường hợp cấp chứng nhận thu hồi đăng ký, biển số), kể từ ngày nhận đủ hồ sơ hợp lệ. + Cấp chứng nhận đăng ký xe: Không quá 02 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ + Cấp biển số định danh lần đầu: Cấp ngay sau khi tiếp nhận hồ sơ đăng ký xe hợp lệ. + Cấp lại biển số định danh: Không quá 07 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ. + Thời gian trả kết quả đăng ký xe theo quy định được tính từ ngày nhận đủ hồ sơ hợp lệ và hệ thống đăng ký, quản lý xe đã nhận được kết quả xác thực về việc hoàn thành nộp lệ phí đăng ký xe từ cổng dịch vụ công. + Trường hợp mất chứng nhận đăng ký xe khi làm thủ tục thu hồi thì thời hạn xác minh là 30 ngày.\nLệ phí: Đồng\nLệ phí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:2",
+    "text": "Dịch vụ bưu chính\n02 Ngày làm việc\n+ Trả kết quả qua dịch vụ bưu chính.\n",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "kind": "procedure",
+    "snapshot_id": 48,
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+  "code": "3.000333",
+  "name": "Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "00046b9e-3f95-45bf-8b38-fc03502e2870",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 32,
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 127
+    },
+    "output_sha256": "08661e8f9c327cea2d89ae12e35b4430d32924eea160726ed01baef40e0d3868"
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372337",
+  "operation": "recover_official_forms",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372337",
+      "mode": "live",
+      "sha256": "ae9937b6ae2cb0c85e12c742e29111de199bf2006b046de9766fc3ac9abc9349",
+      "raw_path": "data/_store/html/ae9937b6ae2cb0c85e12c742e29111de199bf2006b046de9766fc3ac9abc9349",
+      "fetched_at": "2026-10-31T08:07:09.737238+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+      "mode": "resolved_live",
+      "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+      "raw_path": "data/_store/html/ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+      "fetched_at": "2026-10-31T08:07:12.074633+00:00",
+      "input_name": "Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam, người nước ngoài đang cư trú tại Việt Nam, người Việt Nam đang cư trú ở nước ngoài",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372337",
+      "resolved_name": "Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài",
+      "title_changed": true
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "3bbd24fedb7bcfe51a094558e5d969808fc464015e058424ca312f78effa7712",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "parent_run_id": "9250f21f-cea7-4d95-9eb4-23b5d49a7fdc",
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54",
+      "label": "Mau_so_1.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627",
+      "label": "Mau_so_2.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6",
+      "label": "Mau_so_4.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237",
+      "label": "Mau_so_5.docx"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "raw_path": "data/_store/html/ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "raw_path": "data/forms/_objects/f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077/Mau_so_1--f9a5a798ace8.docx",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_1_20250401020820.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "raw_path": "data/forms/_objects/a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614/Mau_so_2--a93ac68fa27e.docx",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_2_20250401020820.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "raw_path": "data/forms/_objects/94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea/Mau_so_4--94d51b1cf5bd.docx",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_4_20250401020820.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "raw_path": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/Mau_so_5--9da031385397.docx",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_5_20250401020820.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ]
+}

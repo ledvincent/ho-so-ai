@@ -1,0 +1,1024 @@
+[
+  {
+    "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+    "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+    "revision": "66/2023/TT-BCA",
+    "record": {
+      "sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+      "raw_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/CT01-66-2023--d7840089f355.doc",
+      "original_filename": "CT01-66-2023.doc",
+      "stored_filename": "CT01-66-2023--d7840089f355.doc",
+      "url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+      "fetched_at": "2026-10-31T08:46:11.131741+00:00"
+    },
+    "pdf_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/blank.pdf",
+    "derivation": null,
+    "family": "CT01",
+    "summary": "Tờ khai thay đổi thông tin cư trú",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.004194",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004194",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004194",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd12c68e67682f8",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe98705331925cf",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feaac47150fc1f2",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe8680df25c5851",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3fbca2c54c1e3",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feca041203ea4aa",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcbc69fd0705a90",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb5cc79ba9a266",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.010041",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e",
+        "label": "Mẫu CT01 _66.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "97b10d1166e88e4bf469bc1a6b0a592350c95cdfe06a79cc84524cab6b0361e3"
+  },
+  {
+    "page_url": "https://xaydungchinhsach.chinhphu.vn/mau-to-khai-thay-doi-thong-tin-cu-tru-xac-nhan-thong-tin-ve-cu-tru-119231124101042745.htm",
+    "download_url": "https://xdcs.cdnchinhphu.vn/446259493575335936/2023/11/24/11-bieu-mau-kem-theo-tt-66-bca-1700794104605968287286.docx",
+    "revision": "66/2023/TT-BCA",
+    "record": {
+      "sha256": "c1d3adb1e3f632142b03196815d6c342d49ebea9428c677af77c26c4f89a2fdb",
+      "raw_path": "data/forms/_objects/c1d3adb1e3f632142b03196815d6c342d49ebea9428c677af77c26c4f89a2fdb/CT02--c1d3adb1e3f6.pdf",
+      "original_filename": "CT02.pdf",
+      "stored_filename": "CT02--c1d3adb1e3f6.pdf",
+      "url": "https://xdcs.cdnchinhphu.vn/446259493575335936/2023/11/24/11-bieu-mau-kem-theo-tt-66-bca-1700794104605968287286.docx",
+      "fetched_at": "2026-10-31T08:46:11.069294+00:00"
+    },
+    "pdf_path": "data/forms/_objects/c1d3adb1e3f632142b03196815d6c342d49ebea9428c677af77c26c4f89a2fdb/CT02--c1d3adb1e3f6.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        3,
+        4,
+        5
+      ],
+      "original_sha256": "2404566d7c7bc760f746c75158266fd8a206fc554ff633ae56fa309b2ba9da02",
+      "original_path": "data/forms/_objects/2404566d7c7bc760f746c75158266fd8a206fc554ff633ae56fa309b2ba9da02/11-bieu-mau-66-2023--2404566d7c7b.docx",
+      "source_pdf_path": "data/forms/_objects/2404566d7c7bc760f746c75158266fd8a206fc554ff633ae56fa309b2ba9da02/blank.pdf"
+    },
+    "family": "CT02",
+    "summary": "Tờ khai thay đổi thông tin cư trú dùng cho công dân Việt Nam định cư ở nước ngoài",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2ae157549377b",
+        "label": "Mẫu CT02_66.docx"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe0a1850ea10687",
+        "label": "Mẫu CT02_66.docx"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd586c1d3911160",
+        "label": "Mẫu CT02_66.docx"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4e357b6e75978",
+        "label": "Mẫu CT02_66.docx"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc02aae0a034fc0",
+        "label": "Mẫu CT02_66.docx"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd3e88984cd8392",
+        "label": "Mẫu CT02_66.docx"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd2c31804a2a53c",
+        "label": "Mẫu CT02_66.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "f6255cff79fb78589e8d9f701cb303845e984486cbad009068ad4467046214bb"
+  },
+  {
+    "page_url": "https://namxang.ninhbinh.gov.vn/en/thu-tuc-hanh-chinh/dang-ky-ket-hon-luu-dong",
+    "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc",
+    "revision": null,
+    "record": {
+      "sha256": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "raw_path": "data/forms/_objects/27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d/2.TKngkkthn--27b12f101e9f.doc",
+      "original_filename": "2.TKngkkthn.doc",
+      "stored_filename": "2.TKngkkthn--27b12f101e9f.doc",
+      "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc",
+      "fetched_at": "2026-10-31T08:46:11.153645+00:00"
+    },
+    "pdf_path": "data/forms/_objects/27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d/blank.pdf",
+    "derivation": null,
+    "family": "marriage-declaration",
+    "summary": "Tờ khai đăng ký kết hôn",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.000894",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc3a2c708e1c58",
+        "label": "2.TKngkkthn.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "2b66a756e9e6769cb56b91c895bbf536f8467132d2d8f878c7a1aa963302fada"
+  },
+  {
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=59625",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx",
+    "revision": null,
+    "record": {
+      "sha256": "f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "raw_path": "data/forms/_objects/f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54/2-Dang-ky-ket-hon--f04cca3aecda.docx",
+      "original_filename": "2-Dang-ky-ket-hon.docx",
+      "stored_filename": "2-Dang-ky-ket-hon--f04cca3aecda.docx",
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx",
+      "fetched_at": "2026-10-31T08:48:40.102907+00:00"
+    },
+    "pdf_path": "data/forms/_objects/f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54/blank.pdf",
+    "derivation": null,
+    "family": "marriage-electronic",
+    "summary": "Nội dung mẫu hộ tịch điện tử tương tác đăng ký kết hôn",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "1.000894",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fee1f90d0167573",
+        "label": "2.DDTTT-ngkkthn.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "fde8ddc8fd7bd755a7f233dd1f7bd4a31fff2f41d71d7b71a68ce71aa779de01"
+  },
+  {
+    "page_url": "https://muongang.dienbien.gov.vn/dev~HUYENMUONGANG~XaMuongLan/TTHC/View/?UserKey=Thu-tuc-cap-Giay-xac-nhan-tinh-trang-hon-nhan",
+    "download_url": "https://muongang.dienbien.gov.vn/Cms_Data/Contents/HUYENMUONGANG/Media/Thu_Tuc_Hanh_Chinh/123/19-TKcpGiyXNTTHN.doc",
+    "revision": null,
+    "record": {
+      "sha256": "06aa5340683ceabbccb57851bf08841e771613928bda426cb910aa4ef2e0b5fb",
+      "raw_path": "data/forms/_objects/06aa5340683ceabbccb57851bf08841e771613928bda426cb910aa4ef2e0b5fb/19-TKcpGiyXNTTHN--06aa5340683c.doc",
+      "original_filename": "19-TKcpGiyXNTTHN.doc",
+      "stored_filename": "19-TKcpGiyXNTTHN--06aa5340683c.doc",
+      "url": "https://muongang.dienbien.gov.vn/Cms_Data/Contents/HUYENMUONGANG/Media/Thu_Tuc_Hanh_Chinh/123/19-TKcpGiyXNTTHN.doc",
+      "fetched_at": "2026-10-31T08:46:37.842866+00:00"
+    },
+    "pdf_path": "data/forms/_objects/06aa5340683ceabbccb57851bf08841e771613928bda426cb910aa4ef2e0b5fb/blank.pdf",
+    "derivation": null,
+    "family": "marital-status-declaration",
+    "summary": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.004873",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa6f783637ae430",
+        "label": "19.TKcpGiyXNTTHN.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "54cc54b7990989310f37022215c6f1e13c4fcaf91414e78d1338433ea25277aa"
+  },
+  {
+    "page_url": "https://muongang.dienbien.gov.vn/dev~HUYENMUONGANG~XaMuongLan/TTHC/View/?UserKey=Thu-tuc-cap-Giay-xac-nhan-tinh-trang-hon-nhan",
+    "download_url": "https://muongang.dienbien.gov.vn/Cms_Data/Contents/HUYENMUONGANG/Media/Thu_Tuc_Hanh_Chinh/123/19-DTTT-CpgiyXNTThnnhn.doc",
+    "revision": null,
+    "record": {
+      "sha256": "2091d9f5785707a6d7e20ca24e7e41438851e1ae3327b4fc90ecb0d0279941ae",
+      "raw_path": "data/forms/_objects/2091d9f5785707a6d7e20ca24e7e41438851e1ae3327b4fc90ecb0d0279941ae/19-DTTT-CpgiyXNTThnnhn--2091d9f57857.doc",
+      "original_filename": "19-DTTT-CpgiyXNTThnnhn.doc",
+      "stored_filename": "19-DTTT-CpgiyXNTThnnhn--2091d9f57857.doc",
+      "url": "https://muongang.dienbien.gov.vn/Cms_Data/Contents/HUYENMUONGANG/Media/Thu_Tuc_Hanh_Chinh/123/19-DTTT-CpgiyXNTThnnhn.doc",
+      "fetched_at": "2026-10-31T08:46:37.813464+00:00"
+    },
+    "pdf_path": "data/forms/_objects/2091d9f5785707a6d7e20ca24e7e41438851e1ae3327b4fc90ecb0d0279941ae/blank.pdf",
+    "derivation": null,
+    "family": "marital-status-electronic",
+    "summary": "Nội dung mẫu điện tử tương tác yêu cầu cấp Giấy xác nhận tình trạng hôn nhân",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "1.004873",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1717570074230",
+        "label": "19.DTTT-CpgiyXNTThnnhn.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "54cc54b7990989310f37022215c6f1e13c4fcaf91414e78d1338433ea25277aa"
+  },
+  {
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=40654&represent=1",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+    "revision": null,
+    "record": {
+      "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+      "raw_path": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+      "original_filename": "18-TKyeucaubansaotrichluchotich.doc",
+      "stored_filename": "18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+      "fetched_at": "2026-10-31T08:48:40.041095+00:00"
+    },
+    "pdf_path": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/blank.pdf",
+    "derivation": null,
+    "family": "civil-extract-declaration",
+    "summary": "Tờ khai đề nghị cấp bản sao trích lục hộ tịch",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "2.000635",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+        "label": "18.TKyeucaubansaotrichluchotich.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "3299536dfcb3b299d59cad4585ba9d5bb38d851024338be9b9a27bf43e0db321"
+  },
+  {
+    "page_url": "https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh",
+    "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+    "revision": null,
+    "record": {
+      "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+      "raw_path": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+      "original_filename": "18-DTTT-CpBSkhaisinhTrchlcHT.doc",
+      "stored_filename": "18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+      "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+      "fetched_at": "2026-10-31T08:50:17.333666+00:00"
+    },
+    "pdf_path": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/blank.pdf",
+    "derivation": null,
+    "family": "civil-extract-electronic",
+    "summary": "Nội dung mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "2.000635",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+        "label": "18.DTTT-CpBSkhaisinhTrchlcHT.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "a8e4a97bf4108573ad567ace7da8ed793287c5a77d2719dfea989206963451ad"
+  },
+  {
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_1_20250401020820.docx",
+    "revision": "01/2025/LLTP",
+    "record": {
+      "sha256": "f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077",
+      "raw_path": "data/forms/_objects/f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077/Mau_so_1--f9a5a798ace8.docx",
+      "original_filename": "Mau_so_1.docx",
+      "stored_filename": "Mau_so_1--f9a5a798ace8.docx",
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_1_20250401020820.docx",
+      "fetched_at": "2026-10-31T08:46:50.185677+00:00"
+    },
+    "pdf_path": "data/forms/_objects/f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077/blank.pdf",
+    "derivation": null,
+    "family": "LLTP-01",
+    "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp dành cho cá nhân",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "3.000333",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54",
+        "label": "Mau_so_1.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03"
+  },
+  {
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_2_20250401020820.docx",
+    "revision": "02/2025/LLTP",
+    "record": {
+      "sha256": "a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614",
+      "raw_path": "data/forms/_objects/a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614/Mau_so_2--a93ac68fa27e.docx",
+      "original_filename": "Mau_so_2.docx",
+      "stored_filename": "Mau_so_2--a93ac68fa27e.docx",
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_2_20250401020820.docx",
+      "fetched_at": "2026-10-31T08:47:00.650324+00:00"
+    },
+    "pdf_path": "data/forms/_objects/a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614/blank.pdf",
+    "derivation": null,
+    "family": "LLTP-02",
+    "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp dành cho người được ủy quyền hoặc cha mẹ của người chưa thành niên",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "3.000333",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627",
+        "label": "Mau_so_2.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03"
+  },
+  {
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_4_20250401020820.docx",
+    "revision": "04/2025/LLTP",
+    "record": {
+      "sha256": "94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea",
+      "raw_path": "data/forms/_objects/94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea/Mau_so_4--94d51b1cf5bd.docx",
+      "original_filename": "Mau_so_4.docx",
+      "stored_filename": "Mau_so_4--94d51b1cf5bd.docx",
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_4_20250401020820.docx",
+      "fetched_at": "2026-10-31T08:47:00.748505+00:00"
+    },
+    "pdf_path": "data/forms/_objects/94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea/blank.pdf",
+    "derivation": null,
+    "family": "LLTP-04",
+    "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp điện tử tương tác dành cho cá nhân",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "3.000333",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6",
+        "label": "Mau_so_4.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03"
+  },
+  {
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_5_20250401020820.docx",
+    "revision": "05/2025/LLTP",
+    "record": {
+      "sha256": "9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff",
+      "raw_path": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/Mau_so_5--9da031385397.docx",
+      "original_filename": "Mau_so_5.docx",
+      "stored_filename": "Mau_so_5--9da031385397.docx",
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_5_20250401020820.docx",
+      "fetched_at": "2026-10-31T08:47:09.622792+00:00"
+    },
+    "pdf_path": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/blank.pdf",
+    "derivation": null,
+    "family": "LLTP-05",
+    "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp điện tử tương tác dành cho người được ủy quyền hoặc cha mẹ",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "3.000333",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237",
+        "label": "Mau_so_5.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03"
+  },
+  {
+    "page_url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+    "download_url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+    "revision": "12/2025/TT-BCA",
+    "record": {
+      "sha256": "48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86",
+      "raw_path": "data/forms/_objects/48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86/driving-exchange-XII--48ccd53ae2f7.pdf",
+      "original_filename": "driving-exchange-XII.pdf",
+      "stored_filename": "driving-exchange-XII--48ccd53ae2f7.pdf",
+      "url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+      "fetched_at": "2026-10-31T08:47:22.089048+00:00"
+    },
+    "pdf_path": "data/forms/_objects/48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86/driving-exchange-XII--48ccd53ae2f7.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        122
+      ],
+      "original_sha256": "2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807",
+      "original_path": "data/forms/_objects/2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807/Phu-luc-XII-12-2025--2849c9a9c942.pdf",
+      "source_pdf_path": "data/forms/_objects/2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807/Phu-luc-XII-12-2025--2849c9a9c942.pdf"
+    },
+    "family": "driving-exchange-XII",
+    "summary": "Đề nghị đổi (cấp lại) giấy phép lái xe",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "3.000347",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0",
+        "label": "PhulucXII.doigplx.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807"
+  },
+  {
+    "page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm",
+    "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+    "revision": "31/2023/TT-BCA",
+    "record": {
+      "sha256": "91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313",
+      "raw_path": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/TK01--91bd17903194.pdf",
+      "original_filename": "TK01.pdf",
+      "stored_filename": "TK01--91bd17903194.pdf",
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "fetched_at": "2026-10-31T08:48:47.472367+00:00"
+    },
+    "pdf_path": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/TK01--91bd17903194.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        6
+      ],
+      "original_sha256": "c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d",
+      "original_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf",
+      "source_pdf_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf"
+    },
+    "family": "TK01",
+    "summary": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người từ 14 tuổi trở lên",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001456",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412",
+        "label": "Mau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "8b82f3abecbb83db5735395b486021d1a1255672c9551a93d4e541f392bc5aee"
+  },
+  {
+    "page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm",
+    "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+    "revision": "31/2023/TT-BCA",
+    "record": {
+      "sha256": "17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641",
+      "raw_path": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/TK01a--17c0b4435d81.pdf",
+      "original_filename": "TK01a.pdf",
+      "stored_filename": "TK01a--17c0b4435d81.pdf",
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "fetched_at": "2026-10-31T08:48:47.472367+00:00"
+    },
+    "pdf_path": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/TK01a--17c0b4435d81.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        7
+      ],
+      "original_sha256": "c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d",
+      "original_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf",
+      "source_pdf_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf"
+    },
+    "family": "TK01a",
+    "summary": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người chưa đủ 14 tuổi",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001456",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba",
+        "label": "Mau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "8b82f3abecbb83db5735395b486021d1a1255672c9551a93d4e541f392bc5aee"
+  },
+  {
+    "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+    "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+    "revision": "374/2025/ND-CP",
+    "record": {
+      "sha256": "709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba",
+      "raw_path": "data/forms/_objects/709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba/unemployment-10--709f0a1483e8.pdf",
+      "original_filename": "unemployment-10.pdf",
+      "stored_filename": "unemployment-10--709f0a1483e8.pdf",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "fetched_at": "2026-10-31T08:50:24.602367+00:00"
+    },
+    "pdf_path": "data/forms/_objects/709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba/unemployment-10--709f0a1483e8.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        25
+      ],
+      "original_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+      "original_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf",
+      "source_pdf_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf"
+    },
+    "family": "unemployment-10",
+    "summary": "Đề nghị hưởng trợ cấp thất nghiệp",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.014748",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0",
+        "label": "Mus10tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "replaces_sha256": "d569110d6cc3c8cddb9e799e2d11680a59a6a2bef247241a5319103ea1eb91e7",
+    "page_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa"
+  },
+  {
+    "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+    "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+    "revision": "374/2025/ND-CP",
+    "record": {
+      "sha256": "3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a",
+      "raw_path": "data/forms/_objects/3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a/unemployment-11--3475d0b811e7.pdf",
+      "original_filename": "unemployment-11.pdf",
+      "stored_filename": "unemployment-11--3475d0b811e7.pdf",
+      "url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "fetched_at": "2026-10-31T08:50:24.602367+00:00"
+    },
+    "pdf_path": "data/forms/_objects/3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a/unemployment-11--3475d0b811e7.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        26
+      ],
+      "original_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+      "original_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf",
+      "source_pdf_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf"
+    },
+    "family": "unemployment-11",
+    "summary": "Đề nghị không hưởng trợ cấp thất nghiệp",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.014748",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20",
+        "label": "Mus11tiPhlcbanhnhkmtheo_VL.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "replaces_sha256": "a7e9b4274bddec6b521d5e2b10675603715a0fbabad5810389729f99aec064ed",
+    "page_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa"
+  },
+  {
+    "page_url": "https://congan.ninhbinh.gov.vn/public/userfiles/van_ban_/Th%C3%B4ng%20t%C6%B0%2017_2024.pdf",
+    "download_url": "https://congan.ninhbinh.gov.vn/public/userfiles/van_ban_/Th%C3%B4ng%20t%C6%B0%2017_2024.pdf",
+    "revision": "17/2024/TT-BCA",
+    "record": {
+      "sha256": "f868861d64634db72187d5d0e22a0ff986bba164725f703d167e38ea3c9e030b",
+      "raw_path": "data/forms/_objects/f868861d64634db72187d5d0e22a0ff986bba164725f703d167e38ea3c9e030b/DC02--f868861d6463.pdf",
+      "original_filename": "DC02.pdf",
+      "stored_filename": "DC02--f868861d6463.pdf",
+      "url": "https://congan.ninhbinh.gov.vn/public/userfiles/van_ban_/Th%C3%B4ng%20t%C6%B0%2017_2024.pdf",
+      "fetched_at": "2026-10-31T08:49:08.856444+00:00"
+    },
+    "pdf_path": "data/forms/_objects/f868861d64634db72187d5d0e22a0ff986bba164725f703d167e38ea3c9e030b/DC02--f868861d6463.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        18,
+        19
+      ],
+      "original_sha256": "900794170bd77de3d7203f87b448ef800ff6aa5e605dc8811cecfebb97332c9a",
+      "original_path": "data/forms/_objects/900794170bd77de3d7203f87b448ef800ff6aa5e605dc8811cecfebb97332c9a/17-2024-TT-BCA--900794170bd7.pdf",
+      "source_pdf_path": "data/forms/_objects/900794170bd77de3d7203f87b448ef800ff6aa5e605dc8811cecfebb97332c9a/17-2024-TT-BCA--900794170bd7.pdf"
+    },
+    "family": "DC02",
+    "summary": "Phiếu đề nghị giải quyết thủ tục về căn cước",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.014064",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9e5db71724686",
+        "label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "900794170bd77de3d7203f87b448ef800ff6aa5e605dc8811cecfebb97332c9a"
+  },
+  {
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+    "revision": null,
+    "record": {
+      "sha256": "932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe",
+      "raw_path": "data/forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/BHYT-01-TK--932031aea343.pdf",
+      "original_filename": "BHYT-01-TK.pdf",
+      "stored_filename": "BHYT-01-TK--932031aea343.pdf",
+      "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau%20dinh%20kem.docx",
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00"
+    },
+    "pdf_path": "data/forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/BHYT-01-TK--932031aea343.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+      "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+      "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+    },
+    "family": "BHYT-01-TK",
+    "summary": "Tờ khai đăng ký đóng, cấp thẻ bảo hiểm y tế trên Cổng dịch vụ công",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42",
+        "label": "Mẫu 01-TK.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f"
+  },
+  {
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+    "revision": null,
+    "record": {
+      "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+      "raw_path": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+      "original_filename": "D03-TS.pdf",
+      "stored_filename": "D03-TS--763dcf8aaa82.pdf",
+      "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau%20dinh%20kem.docx",
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00"
+    },
+    "pdf_path": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+      "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+      "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+    },
+    "family": "D03-TS",
+    "summary": "Danh sách người chỉ tham gia bảo hiểm y tế và hướng dẫn lập",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d",
+        "label": "Mẫu D03-TS.docx"
+      },
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74",
+        "label": "Mẫu D03-TS.docx"
+      },
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320",
+        "label": "Mẫu D03-TS.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f"
+  },
+  {
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+    "revision": null,
+    "record": {
+      "sha256": "468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8",
+      "raw_path": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf",
+      "original_filename": "BHYT-Mau-2.pdf",
+      "stored_filename": "BHYT-Mau-2--468a81ab1dce.pdf",
+      "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau%20dinh%20kem.docx",
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00"
+    },
+    "pdf_path": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        9
+      ],
+      "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+      "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+      "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+    },
+    "family": "BHYT-Mau-2",
+    "summary": "Danh sách đối tượng tham gia bảo hiểm y tế",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708",
+        "label": "Mẫu số 2_NĐ 146.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f"
+  },
+  {
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+    "revision": null,
+    "record": {
+      "sha256": "5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78",
+      "raw_path": "data/forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/C66a-HD--5cfd1b678598.pdf",
+      "original_filename": "C66a-HD.pdf",
+      "stored_filename": "C66a-HD--5cfd1b678598.pdf",
+      "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau%20dinh%20kem.docx",
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00"
+    },
+    "pdf_path": "data/forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/C66a-HD--5cfd1b678598.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        12,
+        13
+      ],
+      "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+      "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+      "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+    },
+    "family": "C66a-HD",
+    "summary": "Giấy thanh toán thù lao cho tổ chức làm đại lý và hướng dẫn lập",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e",
+        "label": "Mẫu C66a-HD.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f"
+  },
+  {
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+    "revision": null,
+    "record": {
+      "sha256": "629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225",
+      "raw_path": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+      "original_filename": "TK1_TS.pdf",
+      "stored_filename": "TK1_TS--629efd6340e2.pdf",
+      "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+      "fetched_at": "2026-10-31T08:50:17.590255+00:00"
+    },
+    "pdf_path": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+    "derivation": null,
+    "family": "TK1-TS",
+    "summary": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm xã hội, bảo hiểm y tế và hướng dẫn",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c",
+        "label": "Mẫu TK1-TS.docx"
+      },
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54",
+        "label": "Mẫu TK1-TS.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7"
+  },
+  {
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Phu_luc_03_Giayto_lam_cancu_caplai_the_BHYT.pdf",
+    "revision": "948/QD-BHXH",
+    "record": {
+      "sha256": "46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8",
+      "raw_path": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf",
+      "original_filename": "BHYT-Phu-luc-03.pdf",
+      "stored_filename": "BHYT-Phu-luc-03--46246309e4b8.pdf",
+      "url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Phu_luc_03_Giayto_lam_cancu_caplai_the_BHYT.pdf",
+      "fetched_at": "2026-10-31T08:50:17.617530+00:00"
+    },
+    "pdf_path": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf",
+    "derivation": null,
+    "family": "BHYT-appendix-03",
+    "summary": "Các loại giấy tờ làm căn cứ để cấp lại, ghi, điều chỉnh thẻ bảo hiểm y tế",
+    "document_kind": "supporting_guidance",
+    "matches": [
+      {
+        "procedure_code": "1.001939",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe",
+        "label": "Phụ lục 03.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7"
+  },
+  {
+    "page_url": "https://dangkykinhdoanh.gov.vn/vn/tin-tuc/597/6560/huong-dan-ho-so--thu-tuc-dang-ky-ho-kinh-doanh.aspx",
+    "download_url": "https://dangkykinhdoanh.gov.vn/Images/editor/files/Thong%20tu%2002_2023%20lien%20thong%20HKD(3).pdf",
+    "revision": "02/2023/TT-BKHDT",
+    "record": {
+      "sha256": "073757205c6fe74a6271e1d645e5164ff00375e4cd308d74b7b521d854b1207e",
+      "raw_path": "data/forms/_objects/073757205c6fe74a6271e1d645e5164ff00375e4cd308d74b7b521d854b1207e/HKD-III-1--073757205c6f.pdf",
+      "original_filename": "HKD-III-1.pdf",
+      "stored_filename": "HKD-III-1--073757205c6f.pdf",
+      "url": "https://dangkykinhdoanh.gov.vn/Images/editor/files/Thong%20tu%2002_2023%20lien%20thong%20HKD(3).pdf",
+      "fetched_at": "2026-10-31T08:52:21.059134+00:00"
+    },
+    "pdf_path": "data/forms/_objects/073757205c6fe74a6271e1d645e5164ff00375e4cd308d74b7b521d854b1207e/HKD-III-1--073757205c6f.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "original_sha256": "8225eb625bb366a865d36d9c1819d84175e5eaa36dcadc71a1e614bc08f6b81d",
+      "original_path": "data/forms/_objects/8225eb625bb366a865d36d9c1819d84175e5eaa36dcadc71a1e614bc08f6b81d/HKD-02-2023-signed--8225eb625bb3.pdf",
+      "source_pdf_path": "data/forms/_objects/8225eb625bb366a865d36d9c1819d84175e5eaa36dcadc71a1e614bc08f6b81d/HKD-02-2023-signed--8225eb625bb3.pdf"
+    },
+    "family": "HKD-III-1",
+    "summary": "Giấy đề nghị đăng ký hộ kinh doanh",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.001612",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+        "label": "Mauso1GiaydenghidangkyHKD.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "2023 form matches the captured procedure legal basis, but the primary attachment is named Mẫu số 1. Exact requested revision remains ambiguous; do not present as a verified replacement.",
+    "candidate_only": true,
+    "page_sha256": "067acacdcc4092734e9f0ed7ad4d96047cf96bb8715ac1cb4d3c5584a48746bb"
+  },
+  {
+    "page_url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-63-2024-nd-cp-42050/50468.htm",
+    "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2024/6/42050/50468-1-2024737-73863-2024-nd-cp.pdf",
+    "revision": "63/2024/ND-CP",
+    "record": {
+      "sha256": "099e309718456f479c3c383d8f4e2228898d971ce5c61a76d5f77fb9b08d0637",
+      "raw_path": "data/forms/_objects/099e309718456f479c3c383d8f4e2228898d971ce5c61a76d5f77fb9b08d0637/birth-linked-01--099e30971845.pdf",
+      "original_filename": "birth-linked-01.pdf",
+      "stored_filename": "birth-linked-01--099e30971845.pdf",
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2024/6/42050/50468-1-2024737-73863-2024-nd-cp.pdf",
+      "fetched_at": "2026-10-31T08:52:53.877917+00:00"
+    },
+    "pdf_path": "data/forms/_objects/099e309718456f479c3c383d8f4e2228898d971ce5c61a76d5f77fb9b08d0637/birth-linked-01--099e30971845.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        26,
+        27,
+        28
+      ],
+      "original_sha256": "0df62837ab8a1a0b30224eb9d6f562e367f87b4de83eab4a30f94c67d426d0cc",
+      "original_path": "data/forms/_objects/0df62837ab8a1a0b30224eb9d6f562e367f87b4de83eab4a30f94c67d426d0cc/63-2024-gazette--0df62837ab8a.pdf",
+      "source_pdf_path": "data/forms/_objects/0df62837ab8a1a0b30224eb9d6f562e367f87b4de83eab4a30f94c67d426d0cc/63-2024-gazette--0df62837ab8a.pdf"
+    },
+    "family": "birth-linked-01",
+    "summary": "Tờ khai điện tử liên thông đăng ký khai sinh, đăng ký thường trú và cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+    "document_kind": "electronic_specification",
+    "matches": [
+      {
+        "procedure_code": "2.002621",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc532f38905624",
+        "label": "To khai DT. Mau so 01 (khai sinh).docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "b4f61318389af462060b899cc46a9374abbf72d11ef1c69aa5f9a9c723adfddc"
+  },
+  {
+    "page_url": "https://chinhphu.vn/?classid=1&docid=208348&pageid=27160&typegroupid=6",
+    "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+    "revision": "24/2023/TT-BCA",
+    "record": {
+      "sha256": "d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1",
+      "raw_path": "data/forms/_objects/d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1/DKX12--d613872ab712.pdf",
+      "original_filename": "DKX12.pdf",
+      "stored_filename": "DKX12--d613872ab712.pdf",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+      "fetched_at": "2026-10-31T08:50:21.222690+00:00"
+    },
+    "pdf_path": "data/forms/_objects/d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1/DKX12--d613872ab712.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        63,
+        64
+      ],
+      "original_sha256": "58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728",
+      "original_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf",
+      "source_pdf_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf"
+    },
+    "family": "DKX12",
+    "summary": "Giấy khai đăng ký xe",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.010912",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e",
+        "label": "4. Mẫu giấy khai đăng ký xe.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "7bcd432d6c9a427210e31da702ea77eeb34404d360efcbbc31cba76c12fcc3a3"
+  },
+  {
+    "page_url": "https://chinhphu.vn/?classid=1&docid=208348&pageid=27160&typegroupid=6",
+    "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+    "revision": "24/2023/TT-BCA",
+    "record": {
+      "sha256": "e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94",
+      "raw_path": "data/forms/_objects/e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94/DKX13--e75f12ac5803.pdf",
+      "original_filename": "DKX13.pdf",
+      "stored_filename": "DKX13--e75f12ac5803.pdf",
+      "url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+      "fetched_at": "2026-10-31T08:50:21.222690+00:00"
+    },
+    "pdf_path": "data/forms/_objects/e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94/DKX13--e75f12ac5803.pdf",
+    "derivation": {
+      "method": "pdf_page_extraction",
+      "pages": [
+        65
+      ],
+      "original_sha256": "58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728",
+      "original_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf",
+      "source_pdf_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf"
+    },
+    "family": "DKX13",
+    "summary": "Giấy khai thu hồi đăng ký, biển số xe",
+    "document_kind": "blank_form",
+    "matches": [
+      {
+        "procedure_code": "1.010912",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558",
+        "label": "5. Mẫu giấy khai thu hồi đăng ký, biển số xe.doc.docx"
+      }
+    ],
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "page_sha256": "7bcd432d6c9a427210e31da702ea77eeb34404d360efcbbc31cba76c12fcc3a3"
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "source_id": "primary",
+    "locator": "identity",
+    "text": "procedure_code: 3.000333\nofficial_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:0:Trình tự thực hiện",
+    "text": "- Bước 1: Người có yêu cầu cấp Phiếu Lý lịch tư pháp (sau đây gọi tắt là Người yêu cầu) đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia; chọn Cấp Phiếu Lý lịch tư pháp tại Nhóm dịch vụ Thủ tục hành chính và làm theo hướng dẫn.\n- Bước 2: Người yêu cầu kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu tờ khai cấp Phiếu Lý lịch tư pháp điện tử tương tác.\n- Bước 3: Người yêu cầu chọn “Thông tin về thủ tục hành chính” và “Thông tin trả kết quả”.\n- Bước 4: Người yêu cầu xác nhận thông tin hồ sơ, chọn loại đối tượng nộp phí và cam đoan lời khai trước khi gửi yêu cầu.\n- Bước 5: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã số hồ sơ, ngày hẹn trả kết quả và hướng dẫn nộp lệ phí cấp Phiếu Lý lịch tư pháp qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để người có yêu cầu cấp Phiếu Lý lịch tư pháp nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên Cổng dịch vụ công, Ứng dụng định danh quốc gia.\n- Bước 6: Người yêu cầu theo dõi tình trạng giải quyết hồ sơ trên Cổng dịch vụ công, Ứng dụng định danh quốc gia tại mục Cấp Phiếu Lý lịch tư pháp.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:1:Cách thức thực hiện",
+    "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n10 Ngày\nPhí: Đồng\nTrong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày.\nTrực tuyến\n10 Ngày\nPhí: Đồng\nTrong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày.\nDịch vụ bưu chính\n10 Ngày\nPhí: Đồng\nTrong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:2:Thành phần hồ sơ",
+    "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 01/2025/LLTP;\nMau_so_1.docx\nBản chính: 1 - Bản sao: 0\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;\nMau_so_2.docx\nBản chính: 1 - Bản sao: 0\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 04/2025/LLTP;\nMau_so_4.docx\nBản chính: 1 - Bản sao: 0\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP;\nMau_so_5.docx\nBản chính: 1 - Bản sao: 0\nBản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu (Xuất trình bản chính để đối chiếu. Trường hợp không có bản chính thì nộp bản sao có chứng thực theo quy định của pháp luật).\nBản chính: 1 - Bản sao: 0\nVăn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền). Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam. Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2.\nBản chính: 1 - Bản sao: 0\nCác giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có).\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:3:Cơ quan thực hiện",
+    "text": "Công an tỉnh",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+    "text": "Không",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+    "text": "Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang cư trú ở nước ngoài\nToàn trình\nCơ quan thực hiện: Công an Tỉnh\nĐối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài\nCấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang cư trú ở nước ngoài\nToàn trình\nCơ quan thực hiện: Công an thành phố Hà Nội\nĐối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài\nCấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang cư trú ở nước ngoài\nToàn trình\nCơ quan thực hiện: Công an tỉnh Điện Biên\nĐối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:0",
+    "text": "Bao gồm\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 01/2025/LLTP;\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:1",
+    "text": "Bao gồm\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:2",
+    "text": "Bao gồm\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 04/2025/LLTP;\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:3",
+    "text": "Bao gồm\nTờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP;\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:4",
+    "text": "Bao gồm\nBản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu (Xuất trình bản chính để đối chiếu. Trường hợp không có bản chính thì nộp bản sao có chứng thực theo quy định của pháp luật).\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:5",
+    "text": "Bao gồm\nVăn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền). Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam. Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2.\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:6",
+    "text": "Bao gồm\nCác giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có).\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:0",
+    "text": "Trực tiếp\n10 Ngày\nTrong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày.\nPhí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:1",
+    "text": "Trực tuyến\n10 Ngày\nTrong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày.\nPhí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:2",
+    "text": "Dịch vụ bưu chính\n10 Ngày\nTrong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày.\nPhí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000333",
+    "sha256": "ed6b7a4644cd66e1fb3eff2a3b3d714a37d912f34d90c60efa12f617804656fc",
+    "kind": "procedure",
+    "snapshot_id": 46,
+    "fetched_at": "2026-10-31T08:07:12.074633+00:00"
+  }
+]

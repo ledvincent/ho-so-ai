@@ -1,0 +1,90 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+  "code": "1.014748",
+  "name": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged.",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "a1386b47-6014-4a65-a95b-bdf0fc1112da",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 34,
+    "output_sha256": "9d61cad49f309c9464d7c655f8d01b0653311d53d006ae119ddbe13fbbe50faa",
+    "validation": {
+      "schema": true,
+      "citations_verified": 165,
+      "identity": true,
+      "form_hashes": true
+    }
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+  "operation": "recover_official_forms",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "mode": "live",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "raw_path": "data/_store/html/2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "389744cb893d96001a8766523ab330fd3a7f15b0ac083982b3c12bf794c239d1",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "parent_run_id": "1fe01f00-70f1-4264-9aaa-0fd8f9015742",
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0",
+      "label": "Mus10tiPhlcbanhnhkmtheo_VL.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20",
+      "label": "Mus11tiPhlcbanhnhkmtheo_VL.docx"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+    "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+    "raw_path": "data/_store/html/2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+    "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba",
+      "raw_path": "data/forms/_objects/709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba/unemployment-10--709f0a1483e8.pdf",
+      "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a",
+      "raw_path": "data/forms/_objects/3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a/unemployment-11--3475d0b811e7.pdf",
+      "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ]
+}

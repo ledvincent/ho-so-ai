@@ -53,6 +53,26 @@ def test_full_sections_keep_method_descriptions_and_quantities():
     assert all(r['text_verbatim'] in full for r in p['requirements'])
 
 
+def test_service_directory_does_not_mix_local_variants_into_national_profile():
+    from bs4 import BeautifulSoup
+    manifest=json.loads((ROOT/'data/archive/raw/manifest.json').read_text())
+    source=manifest['1.004194']
+    soup=BeautifulSoup((ROOT/source['raw_path']).read_bytes().decode('utf-8'),'html.parser')
+    service=soup.select_one('#listDVC')
+    service.clear()
+    service.append(BeautifulSoup('''<tbody>
+        <tr class="head"><td>National procedure</td></tr>
+        <tr><td><a onclick="showFreeFun('1.004194.01')">Fee</a>National audience</td></tr>
+        <tr class="head"><td>Local variant</td></tr>
+        <tr><td><a onclick="showFreeFun('1.004194.H01.01')">Fee</a>Local-only office</td></tr>
+        </tbody>''','html.parser'))
+    result=parse(str(soup).encode('utf-8'),'1.004194',source['url'],source['fetched_at'],'Đăng ký tạm trú')
+    panel=result['document']['sections'][-1]['text_verbatim']
+    assert 'National audience' in panel
+    assert 'Local-only office' not in panel
+    assert 'Local variant' not in panel
+
+
 def test_foreigner_fee_currency():
     p = parsed("1.001146")
     assert p["status"] == "parsed"

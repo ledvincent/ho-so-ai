@@ -1,0 +1,35 @@
+{
+  "sha256": "468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8",
+  "family": "BHYT-Mau-2",
+  "original": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": null,
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "BHYT-Mau-2",
+    "summary": "Danh sách đối tượng tham gia bảo hiểm y tế",
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+    "derivation": {
+      "pages": [
+        9
+      ],
+      "method": "pdf_page_extraction",
+      "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+      "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+      "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+    },
+    "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+    "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "blank_form",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

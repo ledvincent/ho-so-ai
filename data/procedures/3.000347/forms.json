@@ -1,0 +1,35 @@
+[
+  {
+    "sha256": "48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86",
+    "family": "driving-exchange-XII",
+    "original": "data/forms/_objects/48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86/driving-exchange-XII--48ccd53ae2f7.pdf",
+    "pdf": "data/forms/_objects/48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86/driving-exchange-XII--48ccd53ae2f7.pdf",
+    "fields": "data/forms/_objects/48ccd53ae2f7b97474ca8761d557ef721bbd21bb5f9d165a470a8907e515be86/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0",
+    "source_label": "PhulucXII.doigplx.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "driving-exchange-XII",
+      "summary": "Đề nghị đổi (cấp lại) giấy phép lái xe",
+      "page_url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+      "derivation": {
+        "pages": [
+          122
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807/Phu-luc-XII-12-2025--2849c9a9c942.pdf",
+        "original_sha256": "2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807",
+        "source_pdf_path": "data/forms/_objects/2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807/Phu-luc-XII-12-2025--2849c9a9c942.pdf"
+      },
+      "fetched_at": "2026-10-31T08:47:22.089048+00:00",
+      "page_sha256": "2849c9a9c94243a7f5aa08366ba8420d242c532b6f8c09d15aca13dfc8257807",
+      "download_url": "https://tuphap.hatinh.gov.vn/storage/2025/3/posts/Kem_Tien.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

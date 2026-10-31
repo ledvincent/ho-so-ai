@@ -1,0 +1,1577 @@
+{
+  "procedure_code": {
+    "value": "1.004194",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 1.004194"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Đăng ký tạm trú",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đăng ký tạm trú"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Đăng ký tạm trú.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đăng ký tạm trú"
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Thông báo kết quả giải quyết thủ tục đăng ký cư trú, nếu có; nhận theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Bước 5: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có)."
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "register",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Đăng ký tạm trú"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Đăng ký tạm trú",
+      "language": "vi",
+      "origin": "source",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Đăng ký tạm trú"
+        }
+      ]
+    },
+    {
+      "text": "Làm thủ tục đăng ký tạm trú",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Đăng ký tạm trú theo danh sách",
+      "language": "vi",
+      "origin": "source",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "* Đăng ký tạm trú theo danh sách, hồ sơ gồm:"
+        }
+      ]
+    },
+    {
+      "text": "Temporary residence registration",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Register a temporary place of residence",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Group temporary residence registration",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi muốn đăng ký tạm trú trực tuyến.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Đăng ký tạm trú cho con chưa thành niên cần giấy tờ gì?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Đơn vị muốn đăng ký tạm trú theo danh sách.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi cần đăng ký tạm trú tại nơi đơn vị công an đóng quân.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I want to register my temporary residence online.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "What documents are needed to register temporary residence for my child?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Our organization needs to submit a temporary residence registration list.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "How do I register temporary residence at my military unit?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Doanh nghiệp",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Hợp tác xã",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "published_conditions_section",
+      "statement": {
+        "value": "Mục yêu cầu, điều kiện thực hiện ghi “Không”. Không diễn giải nội dung này thành sự miễn trừ các yêu cầu hồ sơ hoặc các điều kiện pháp luật chỉ được dẫn chiếu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "minor_consent",
+      "statement": {
+        "value": "Tờ khai của người chưa thành niên phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (Mẫu CT01); đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "is_minor",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "has_written_parent_guardian_consent",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "minor_declarant_and_court_custody",
+      "statement": {
+        "value": "Cha, mẹ hoặc người giám hộ kê khai và xác nhận ý kiến vào CT01 khi người chưa thành niên đăng ký tại nơi tạm trú của cha/mẹ hoặc tại nơi không phải nơi tạm trú của cha/mẹ/người giám hộ. Nếu Tòa án giao cho cha hoặc mẹ chăm sóc, nuôi dưỡng thì người được giao thực hiện kê khai, xác nhận.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp người chưa thành niên đăng ký tạm trú tại nơi tạm trú của cha, mẹ hoặc cha hoặc mẹ thì cha hoặc mẹ hoặc người giám hộ thực hiện kê khai, xác nhận ý kiến vào Tờ khai thay đổi thông tin cư trú. - Trường hợp người chưa thành niên đăng ký tạm trú tại nơi tạm trú không phải là nơi tạm trú của cha, mẹ hoặc người giám hộ thì cha hoặc mẹ hoặc người giám hộ thực hiện kê khai, xác nhận ý kiến vào Tờ khai thay đổi thông tin cư trú. Trường hợp người chưa thành niên được Tòa án quyết định giao cho cha hoặc mẹ chăm sóc, nuôi dưỡng thì người được giao chăm sóc, nuôi dưỡng kê khai, xác nhận ý kiến vào Tờ khai thay đổi thông tin cư trú."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "is_minor",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp người chưa thành niên đăng ký tạm trú tại nơi tạm trú của cha, mẹ hoặc cha hoặc mẹ thì cha hoặc mẹ hoặc người giám hộ thực hiện kê khai, xác nhận ý kiến vào Tờ khai thay đổi thông tin cư trú."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "household_lawful_accommodation_evidence_exception",
+      "statement": {
+        "value": "Công dân đăng ký tạm trú về với hộ gia đình thuộc khoản 2 Điều 20 Luật Cư trú, khi chủ hộ và chủ sở hữu chỗ ở hợp pháp đồng ý, không phải xuất trình hoặc cung cấp giấy tờ chứng minh chỗ ở hợp pháp. Nội dung khoản luật được dẫn chiếu không được cung cấp, nên chưa thể xác lập phép kiểm tra điều kiện đầy đủ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Lưu ý: - Công dân đăng ký tạm trú về với hộ gia đình thuộc trường hợp quy định tại khoản 2 Điều 20 Luật Cư trú khi chủ hộ, chủ sở hữu chỗ ở hợp pháp đồng ý và không phải xuất trình, cung cấp giấy tờ chứng minh chỗ ở hợp pháp"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Công dân đăng ký tạm trú về với hộ gia đình thuộc trường hợp quy định tại khoản 2 Điều 20 Luật Cư trú khi chủ hộ, chủ sở hữu chỗ ở hợp pháp đồng ý và không phải xuất trình, cung cấp giấy tờ chứng minh chỗ ở hợp pháp"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "shared_information_no_resubmission",
+      "statement": {
+        "value": "Nếu thông tin giấy tờ chứng minh điều kiện đăng ký cư trú đã được chia sẻ và khai thác từ cơ sở dữ liệu quốc gia hoặc chuyên ngành, cơ quan đăng ký không được yêu cầu nộp hoặc xuất trình giấy tờ đó.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp thông tin giấy tờ chứng minh điều kiện đăng ký cư trú đã được chia sẻ và khai thác từ cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành thì cơ quan đăng ký cư trú không được yêu cầu công dân nộp, xuất trình giấy tờ đó để giải quyết đăng ký cư trú."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp thông tin giấy tờ chứng minh điều kiện đăng ký cư trú đã được chia sẻ và khai thác từ cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành thì cơ quan đăng ký cư trú không được yêu cầu công dân nộp, xuất trình giấy tờ đó để giải quyết đăng ký cư trú."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "authority_verification_and_evidence_request",
+      "statement": {
+        "value": "Cơ quan đăng ký kiểm tra tính pháp lý, nội dung hồ sơ và khai thác chứng minh chỗ ở hợp pháp từ căn cước điện tử, tài khoản định danh điện tử, Ứng dụng định danh quốc gia và các cơ sở dữ liệu/kho dữ liệu/hệ thống được nêu. Nếu không khai thác được, cơ quan phải kiểm tra, xác minh; công dân cung cấp bản sao, bản chụp hoặc bản điện tử của một giấy tờ chứng minh chỗ ở hợp pháp khi được yêu cầu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Bước 3: Khi tiếp nhận hồ sơ đăng ký tạm trú, cơ quan đăng ký cư trú kiểm tra tính pháp lý và nội dung hồ sơ; thực hiện khai thác chứng minh về chỗ ở hợp pháp do công dân cung cấp trong trong căn cước điện tử, tài khoản định danh điện tử trên hệ thống định danh và xác thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác. Trường hợp không khai thác được thông tin thì cơ quan đăng ký cư trú có trách nhiệm kiểm tra, xác minh để giải quyết thủ tục về cư trú; công dân có trách nhiệm cung cấp bản sao, bản chụp, bản điện tử một trong các giấy tờ, tài liệu chứng minh về chỗ ở hợp pháp khi cơ quan đăng ký cư trú có yêu cầu."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp không khai thác được thông tin thì cơ quan đăng ký cư trú có trách nhiệm kiểm tra, xác minh để giải quyết thủ tục về cư trú; công dân có trách nhiệm cung cấp bản sao, bản chụp, bản điện tử một trong các giấy tờ, tài liệu chứng minh về chỗ ở hợp pháp khi cơ quan đăng ký cư trú có yêu cầu."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "newborn_registration_deadline",
+      "statement": {
+        "value": "Trong tối đa 60 ngày kể từ đăng ký khai sinh, cha hoặc mẹ hoặc chủ hộ hoặc người giám hộ phải đăng ký tạm trú cho người chưa thành niên nếu cha hoặc mẹ hoặc người giám hộ không có nơi thường trú, chỉ có nơi tạm trú. Giữ nguyên phép thử về cha/mẹ/người giám hộ trong nguồn, chưa chuyển thành điều kiện thực thi tự động.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trong thời hạn tối đa 60 ngày, kể từ ngày người chưa thành niên được đăng ký khai sinh thì cha hoặc mẹ hoặc chủ hộ hoặc người giám hộ có trách nhiệm thực hiện thủ tục đăng ký tạm trú cho người chưa thành niên nếu cha hoặc mẹ hoặc người giám hộ của người chưa thành niên không có nơi thường trú, chỉ có nơi tạm trú."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trong thời hạn tối đa 60 ngày, kể từ ngày người chưa thành niên được đăng ký khai sinh thì cha hoặc mẹ hoặc chủ hộ hoặc người giám hộ có trách nhiệm thực hiện thủ tục đăng ký tạm trú cho người chưa thành niên nếu cha hoặc mẹ hoặc người giám hộ của người chưa thành niên không có nơi thường trú, chỉ có nơi tạm trú."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "household_relocation_combined_declaration",
+      "statement": {
+        "value": "Nếu cả hộ chuyển nơi cư trú, chủ hộ đăng ký cho bản thân và kê khai, đăng ký kèm các thành viên khác trong CT01. Nếu một hoặc nhiều thành viên chuyển, một người trong số đó đăng ký cho mình và có thể kê khai, đăng ký kèm các thành viên khác; không phải nộp hồ sơ và thực hiện thêm thủ tục đăng ký cư trú khác cho thành viên hộ gia đình.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp hộ gia đình chuyển nơi cư trú mới thì chủ hộ chỉ thực hiện đăng ký cư trú đối với bản thân mình theo điều kiện, thủ tục của Luật Cư trú và kê khai, đăng ký cư trú kèm theo cho các thành viên khác của hộ gia đình trong Tờ khai thay đổi thông tin cư trú. - Trường hợp một hoặc nhiều thành viên trong hộ gia đình chuyển nơi cư trú mới thì một trong các thành viên đó thực hiện đăng ký cư trú đối với bản thân mình theo điều kiện, thủ tục của Luật Cư trú; người thực hiện thủ tục được kê khai, đăng ký cư trú kèm theo cho các thành viên khác của hộ gia đình trong Tờ khai thay đổi thông tin cư trú, không phải nộp hồ sơ và thực hiện thêm các thủ tục đăng ký cư trú khác cho thành viên hộ gia đình."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp hộ gia đình chuyển nơi cư trú mới thì chủ hộ chỉ thực hiện đăng ký cư trú đối với bản thân mình theo điều kiện, thủ tục của Luật Cư trú và kê khai, đăng ký cư trú kèm theo cho các thành viên khác của hộ gia đình trong Tờ khai thay đổi thông tin cư trú."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "processing_branches",
+      "statement": {
+        "value": "Hồ sơ đầy đủ, hợp lệ: tiếp nhận và cấp CT04. Hồ sơ đủ điều kiện nhưng thiếu thành phần: hướng dẫn bổ sung và cấp CT05. Hồ sơ không đủ điều kiện: từ chối và cấp CT06. Các mẫu này được nguồn dẫn là ban hành kèm Thông tư 66/2023/TT-BCA. Nếu có hồ sơ đề nghị xác nhận nơi thường xuyên đậu, đỗ/sử dụng phương tiện để ở hoặc xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu, chuyển đến UBND cấp xã xem xét, giải quyết.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký; + Chuyển hồ sơ đề nghị xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở hoặc hồ sơ đề nghị xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu để đăng ký thường trú, đăng ký tạm trú đến Ủy ban nhân dân cấp xã để xem xét, giải quyết theo quy định (nếu có). - Trường hợp hồ sơ đủ điều kiện nhưng chưa đầy đủ thành phần hồ sơ theo quy định của pháp luật thì hướng dẫn bổ sung, hoàn thiện và cấp Phiếu hướng dẫn bổ sung, hoàn thiện hồ sơ (mẫu CT05 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký; - Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký;"
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [],
+  "jurisdiction": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Công an Xã",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an Xã"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": "Cấp xã",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Bước 2: Cá nhân nộp hồ sơ đến Công an cấp xã."
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Tiếp nhận trong giờ hành chính từ thứ 2 đến thứ 6 và sáng thứ 7 hằng tuần, trừ ngày nghỉ lễ, tết theo pháp luật.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp tại Công an cấp xã. Có thể nộp bản sao chứng thực từ bản chính hoặc bản sao cấp từ sổ gốc, hoặc bản quét/bản chụp kèm bản chính để đối chiếu. Với bản quét/bản chụp kèm bản chính, người tiếp nhận kiểm tra, đối chiếu và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "- Nộp hồ sơ trực tiếp tại Công an cấp xã."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tiếp tại cơ quan đăng ký cư trú thì người yêu cầu đăng ký cư trú có thể nộp bản sao giấy tờ, tài liệu được chứng thực từ bản chính hoặc bản sao giấy tờ được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản quét, bản chụp kèm theo bản chính giấy tờ, tài liệu để đối chiếu. Trường hợp người yêu cầu đăng ký cư trú nộp bản quét hoặc bản chụp kèm theo bản chính giấy tờ để đối chiếu thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản quét, bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 Ngày làm việc",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "Trực tiếp 03 Ngày làm việc"
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "10.000 Đồng; nguồn không nêu trường hợp áp dụng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "Trực tiếp 03 Ngày làm việc Phí: 10.000 Đồng Phí: 15.000 Đồng Phí: Miễn phí Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "15.000 Đồng; nguồn không nêu trường hợp áp dụng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "Trực tiếp 03 Ngày làm việc Phí: 10.000 Đồng Phí: 15.000 Đồng Phí: Miễn phí Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Miễn phí; nguồn không nêu trường hợp áp dụng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "Trực tiếp 03 Ngày làm việc Phí: 10.000 Đồng Phí: 15.000 Đồng Phí: Miễn phí Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "Trực tuyến 03 Ngày làm việc"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Tiếp nhận trong giờ hành chính từ thứ 2 đến thứ 6 và sáng thứ 7 hằng tuần, trừ ngày nghỉ lễ, tết theo pháp luật.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, VNeID hoặc dịch vụ công trực tuyến khác theo pháp luật. Khai biểu mẫu điện tử; tải bản quét/bản chụp hợp lệ hoặc dẫn nguồn từ Kho quản lý dữ liệu điện tử của tổ chức, cá nhân. Không bắt buộc công chứng, chứng thực, ký số hoặc xác thực khác. Nếu bản tải lên không ký số/xác thực, khi cơ quan kiểm tra, xác minh, công dân phải xuất trình để đối chiếu, ghi nhận tính chính xác vào biên bản; cơ quan không yêu cầu nộp để lưu giữ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "- Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp thực hiện đăng ký cư trú trực tuyến, người yêu cầu đăng ký cư trú khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn, đăng tải bản quét hoặc bản chụp giấy tờ, tài liệu hợp lệ (không bắt buộc phải công chứng, chứng thực, ký số hoặc xác thực bằng hình thức khác) hoặc dẫn nguồn tài liệu từ Kho quản lý dữ liệu điện tử của tổ chức, cá nhân. Trường hợp công dân đăng tải bản quét, bản chụp giấy tờ, tài liệu mà không được ký số hoặc xác thực bằng hình thức khác thì khi cơ quan đăng ký cư trú tiến hành kiểm tra, xác minh để giải quyết thủ tục về cư trú; công dân có trách nhiệm xuất trình giấy tờ, tài liệu đã đăng tải để cơ quan đăng ký cư trú kiểm tra, đối chiếu và ghi nhận tính chính xác vào biên bản xác minh. Cơ quan đăng ký cư trú không yêu cầu công dân nộp để lưu giữ giấy tờ đó."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 Ngày làm việc",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:1:Cách thức thực hiện",
+            "quote": "Trực tuyến 03 Ngày làm việc"
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "5.000 Đồng; nguồn không nêu trường hợp áp dụng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "Trực tuyến 03 Ngày làm việc Phí: 5.000 Đồng Phí: 7.000 Đồng Phí: Miễn phí Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "7.000 Đồng; nguồn không nêu trường hợp áp dụng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "Trực tuyến 03 Ngày làm việc Phí: 5.000 Đồng Phí: 7.000 Đồng Phí: Miễn phí Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Miễn phí; nguồn không nêu trường hợp áp dụng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "Trực tuyến 03 Ngày làm việc Phí: 5.000 Đồng Phí: 7.000 Đồng Phí: Miễn phí Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01) — hồ sơ đăng ký tạm trú thông thường; người chưa thành niên cần ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ khi đã có văn bản đồng ý.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "* Hồ sơ đăng ký tạm trú gồm: Tên giấy tờ Mẫu đơn, tờ khai Số lượng - Tờ khai thay đổi thông tin cư trú (Mẫu CT01); đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "registration_context",
+        "values": [
+          "general"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "* Hồ sơ đăng ký tạm trú gồm: Tên giấy tờ Mẫu đơn, tờ khai Số lượng - Tờ khai thay đổi thông tin cư trú (Mẫu CT01);"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy tờ, tài liệu chứng minh chỗ ở hợp pháp theo khoản 3 Điều 5 Nghị định 154/2024/NĐ-CP ngày 26/11/2024. Không phải cung cấp nếu cơ quan khai thác được thông tin từ các nguồn điện tử được nêu; còn có ngoại lệ về đăng ký về với hộ gia đình theo khoản 2 Điều 20 Luật Cư trú.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Giấy tờ, tài liệu chứng minh chỗ ở hợp pháp theo quy định tại khoản 3 Điều 5 Nghị định 154/2024/NĐ-CP ngày 26/11/2024 của Chính phủ, trừ trường hợp cơ quan đăng ký cư trú khai thác được thông tin này trong căn cước điện tử, tài khoản định danh điện tử của công dân trên Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác khác Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Lưu ý: - Công dân đăng ký tạm trú về với hộ gia đình thuộc trường hợp quy định tại khoản 2 Điều 20 Luật Cư trú khi chủ hộ, chủ sở hữu chỗ ở hợp pháp đồng ý và không phải xuất trình, cung cấp giấy tờ chứng minh chỗ ở hợp pháp Bản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1; ngoại lệ đăng ký về với hộ gia đình được nguồn nêu có số lượng 0.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "cơ sở dữ liệu chuyên ngành khác khác Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "không phải xuất trình, cung cấp giấy tờ chứng minh chỗ ở hợp pháp Bản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0; ngoại lệ đăng ký về với hộ gia đình cũng ghi 0.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "cơ sở dữ liệu chuyên ngành khác khác Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "không phải xuất trình, cung cấp giấy tờ chứng minh chỗ ở hợp pháp Bản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Áp dụng quy cách theo kênh nộp. Bản quét/bản chụp từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng phải rõ nét, đầy đủ, toàn vẹn nội dung. Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp phải được hợp pháp hóa lãnh sự và dịch sang tiếng Việt theo quy định, trừ trường hợp được miễn hợp pháp hóa lãnh sự.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Bản quét hoặc bản chụp giấy tờ bằng thiết bị điện tử từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung; đã được hợp pháp hóa lãnh sự, dịch sang tiếng Việt theo quy định nếu là giấy tờ do cơ quan có thẩm quyền nước ngoài cấp trừ trường hợp được miễn hợp pháp hóa lãnh sự."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tiếp tại cơ quan đăng ký cư trú thì người yêu cầu đăng ký cư trú có thể nộp bản sao giấy tờ, tài liệu được chứng thực từ bản chính hoặc bản sao giấy tờ được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản quét, bản chụp kèm theo bản chính giấy tờ, tài liệu để đối chiếu."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp thực hiện đăng ký cư trú trực tuyến, người yêu cầu đăng ký cư trú khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn, đăng tải bản quét hoặc bản chụp giấy tờ, tài liệu hợp lệ (không bắt buộc phải công chứng, chứng thực, ký số hoặc xác thực bằng hình thức khác) hoặc dẫn nguồn tài liệu từ Kho quản lý dữ liệu điện tử của tổ chức, cá nhân."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Giấy tờ, tài liệu chứng minh chỗ ở hợp pháp theo quy định tại khoản 3 Điều 5 Nghị định 154/2024/NĐ-CP ngày 26/11/2024 của Chính phủ, trừ trường hợp cơ quan đăng ký cư trú khai thác được thông tin này trong căn cước điện tử, tài khoản định danh điện tử của công dân trên Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác khác"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Công dân đăng ký tạm trú về với hộ gia đình thuộc trường hợp quy định tại khoản 2 Điều 20 Luật Cư trú khi chủ hộ, chủ sở hữu chỗ ở hợp pháp đồng ý và không phải xuất trình, cung cấp giấy tờ chứng minh chỗ ở hợp pháp"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01) — đăng ký tại nơi đơn vị đóng quân trong Công an nhân dân hoặc Quân đội nhân dân.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân... Tên giấy tờ Mẫu đơn, tờ khai Số lượng - Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "registration_context",
+            "values": [
+              "police_unit"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:2:Thành phần hồ sơ",
+                "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân..."
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "registration_context",
+            "values": [
+              "military_unit"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:2:Thành phần hồ sơ",
+                "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân... Tên giấy tờ Mẫu đơn, tờ khai Số lượng - Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0 - Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu); Bản chính: 1 - Bản sao: 0 - Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên. Bản chính: 1 - Bản sao: 0"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy giới thiệu của Thủ trưởng đơn vị Công an nhân dân quản lý trực tiếp, ghi rõ nội dung làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu); Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu); Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu); Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp; ký tên, đóng dấu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu)"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "registration_context",
+        "values": [
+          "police_unit"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân..."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu);"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy giới thiệu đăng ký tạm trú của đơn vị Quân đội nhân dân cấp trung đoàn và tương đương trở lên.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "registration_context",
+        "values": [
+          "military_unit"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân..."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Văn bản đề nghị đăng ký tạm trú theo danh sách, ghi rõ thông tin chỗ ở hợp pháp, kèm danh sách người tạm trú. Mỗi người phải có họ, chữ đệm và tên; ngày, tháng, năm sinh; giới tính; số định danh cá nhân; thời hạn tạm trú.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "* Đăng ký tạm trú theo danh sách, hồ sơ gồm: Tên giấy tờ Mẫu đơn, tờ khai Số lượng - Văn bản đề nghị đăng ký tạm trú trong đó ghi rõ thông tin về chỗ ở hợp pháp kèm danh sách người tạm trú. Danh sách bao gồm những thông tin cơ bản của từng người: họ, chữ đệm và tên; ngày, tháng, năm sinh; giới tính; số định danh cá nhân và thời hạn tạm trú. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Danh sách bao gồm những thông tin cơ bản của từng người: họ, chữ đệm và tên; ngày, tháng, năm sinh; giới tính; số định danh cá nhân và thời hạn tạm trú. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Danh sách bao gồm những thông tin cơ bản của từng người: họ, chữ đệm và tên; ngày, tháng, năm sinh; giới tính; số định danh cá nhân và thời hạn tạm trú. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "registration_context",
+        "values": [
+          "by_list"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "* Đăng ký tạm trú theo danh sách, hồ sơ gồm: Tên giấy tờ Mẫu đơn, tờ khai Số lượng - Văn bản đề nghị đăng ký tạm trú trong đó ghi rõ thông tin về chỗ ở hợp pháp kèm danh sách người tạm trú."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01) của từng người — đăng ký theo danh sách.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (của từng người) (Mẫu CT01); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1 cho từng người",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (của từng người) (Mẫu CT01); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (của từng người) (Mẫu CT01); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "registration_context",
+        "values": [
+          "by_list"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "* Đăng ký tạm trú theo danh sách, hồ sơ gồm:"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "- Tờ khai thay đổi thông tin cư trú (của từng người) (Mẫu CT01); Mẫu CT01 _66.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which listed applicant category describes you or the submitting entity?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+            }
+          ]
+        },
+        {
+          "value": "enterprise",
+          "label": "Enterprise",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+            }
+          ]
+        },
+        {
+          "value": "organization_excluding_enterprises_cooperatives",
+          "label": "Organization other than an enterprise or cooperative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+            }
+          ]
+        },
+        {
+          "value": "cooperative",
+          "label": "Cooperative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Will you submit the application in person or online?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "in_person",
+          "label": "In person",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "- Nộp hồ sơ trực tiếp tại Công an cấp xã."
+            }
+          ]
+        },
+        {
+          "value": "online",
+          "label": "Online",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:1:Cách thức thực hiện",
+              "quote": "- Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:1:Cách thức thực hiện",
+          "quote": "Trực tiếp 03 Ngày làm việc Phí: 10.000 Đồng Phí: 15.000 Đồng Phí: Miễn phí Đồng"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:1:Cách thức thực hiện",
+          "quote": "Trực tuyến 03 Ngày làm việc Phí: 5.000 Đồng Phí: 7.000 Đồng Phí: Miễn phí Đồng"
+        }
+      ]
+    },
+    {
+      "criterion_key": "registration_context",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which application context applies? Select all that apply if more than one is relevant.",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "general",
+          "label": "General temporary residence application",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "* Hồ sơ đăng ký tạm trú gồm:"
+            }
+          ]
+        },
+        {
+          "value": "police_unit",
+          "label": "Registration at a People's Public Security unit's station",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân..."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "- Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký tạm trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu);"
+            }
+          ]
+        },
+        {
+          "value": "military_unit",
+          "label": "Registration at a People's Army unit's station",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân..."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "- Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký tạm trú của đơn vị cấp trung đoàn và tương đương trở lên."
+            }
+          ]
+        },
+        {
+          "value": "by_list",
+          "label": "Registration using a list of temporary residents",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "* Đăng ký tạm trú theo danh sách, hồ sơ gồm:"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "* Hồ sơ đăng ký tạm trú gồm:"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "Đăng ký tạm trú tại nơi đơn vị đóng quân trong Công an nhân dân, Quân..."
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "* Đăng ký tạm trú theo danh sách, hồ sơ gồm:"
+        }
+      ]
+    },
+    {
+      "criterion_key": "is_minor",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is the person whose temporary residence is being registered a minor?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "has_written_parent_guardian_consent",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "is_minor",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+          }
+        ]
+      },
+      "question": "Has a parent or guardian already provided written consent?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "đối với người đăng ký tạm trú là người chưa thành niên thì trong tờ khai phải ghi rõ ý kiến đồng ý của cha, mẹ hoặc người giám hộ, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Không có hồ sơ biểu mẫu hoặc hash biểu mẫu liên kết nào được cung cấp. Chưa thể lập quan hệ theo hash, xác định chính xác phiên bản CT01 được chấp nhận, hoặc trích hướng dẫn riêng của từng phiên bản. Tên tệp “Mẫu CT01 _66.doc” chỉ được giữ như bằng chứng văn bản của thủ tục.",
+    "Không có ngày bắt đầu hoặc kết thúc hiệu lực của thủ tục, thông tin thủ tục bị thay thế hoặc phạm vi địa lý cụ thể.",
+    "Chưa có điều kiện áp dụng từng mức phí 10.000/15.000/miễn phí khi trực tiếp và 5.000/7.000/miễn phí khi trực tuyến.",
+    "Không cung cấp nội dung khoản 3 Điều 5 Nghị định 154/2024/NĐ-CP hoặc khoản 2 Điều 20 Luật Cư trú; không thể liệt kê đầy đủ giấy tờ chứng minh chỗ ở hợp pháp hoặc xây dựng đầy đủ phép kiểm tra ngoại lệ hộ gia đình.",
+    "Không nêu mốc tính thời hạn 03 ngày làm việc hoặc loại kết quả thành công cụ thể ngoài thông báo kết quả giải quyết, nếu có.",
+    "Không xác lập tuổi số cụ thể cho thuật ngữ người chưa thành niên; không tự bổ sung ngưỡng tuổi.",
+    "Không nêu rõ quan hệ cộng dồn hoặc thay thế giữa bộ hồ sơ thông thường, hồ sơ tại đơn vị đóng quân và hồ sơ theo danh sách.",
+    "Không cung cấp yêu cầu ký hoặc chứng nhận chung cho CT01 ngoài ý kiến/xác nhận của cha, mẹ, người giám hộ trong các trường hợp đã nêu.",
+    "Phép thử của quy định đăng ký cho người chưa thành niên trong 60 ngày có cách diễn đạt cha hoặc mẹ hoặc người giám hộ; cần xác nhận cách áp dụng trước khi mã hóa logic tự động."
+  ],
+  "issues": [
+    "Đây là bản dự thảo trích xuất để thẩm định. Việc trích xuất thành công và ngày thu thập không chứng minh thủ tục còn hiệu lực hiện nay.",
+    "Mục điều kiện ghi “Không”, nhưng các mục hồ sơ và trình tự vẫn có yêu cầu, ngoại lệ và dẫn chiếu pháp luật. Không coi đây là xung đột trực tiếp hoặc bằng chứng mọi trường hợp đều đủ điều kiện.",
+    "Tiêu đề hồ sơ tại đơn vị đóng quân bị cắt ở “Quân...”; nhánh Quân đội nhân dân được xác nhận bởi dòng giấy giới thiệu ngay trong cùng mục.",
+    "CT01 của bộ hồ sơ thông thường ghi 1 bản chính và 1 bản sao; CT01 tại đơn vị đóng quân và theo danh sách ghi 1 bản chính và 0 bản sao. Đã giữ riêng theo nhánh, không coi là xung đột.",
+    "Cuối khối lưu ý dài trong mục thành phần hồ sơ có dòng “Bản chính: 1 - Bản sao: 1”. Không rõ số lượng này áp dụng cho giấy tờ nào; không tạo một tài liệu bắt buộc giả định hoặc phân bổ số lượng đó sang tài liệu khác.",
+    "Mục hồ sơ liệt kê chứng minh chỗ ở hợp pháp là 1 bản chính, 0 bản sao, trong khi trình tự và hướng dẫn kênh nộp cho phép bản sao/bản chụp/bản điện tử hoặc đối chiếu bản chính. Giữ số lượng công bố và hướng dẫn theo kênh; cần xác nhận cách áp dụng, không tự coi là các yêu cầu nộp cộng dồn.",
+    "CT04, CT05 và CT06 là phiếu do cơ quan cấp theo từng nhánh xử lý, không được coi là biểu mẫu người nộp phải chuẩn bị.",
+    "Không có loại trừ người nộp rõ ràng được cung cấp. Việc loại doanh nghiệp và HTX khỏi nhãn tổ chức chỉ phân biệt các nhóm đối tượng; doanh nghiệp và hợp tác xã vẫn được liệt kê riêng.",
+    "Các nhánh registration_context là phân loại hồ sơ phục vụ định tuyến, không phải kết luận rằng các trường hợp loại trừ lẫn nhau. Nếu nhiều nhánh cùng áp dụng, cần rà soát thay vì cộng dồn hồ sơ tự động.",
+    "Các câu hỏi và nhãn tiếng Anh là diễn đạt được tạo để định tuyến. Giá trị unknown hoặc thiếu câu trả lời phải giữ trạng thái chưa biết, không chuyển thành không đủ điều kiện.",
+    "Các quy tắc quy trình và hướng dẫn hồ sơ được giữ trong eligibility_rules vì schema không có danh mục quy tắc quy trình riêng; không dùng chúng như những điều kiện loại người nộp khỏi thủ tục."
+  ]
+}

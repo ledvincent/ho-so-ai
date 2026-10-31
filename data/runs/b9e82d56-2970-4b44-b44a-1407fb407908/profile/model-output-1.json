@@ -1,0 +1,2339 @@
+{
+  "procedure_code": {
+    "value": "1.001939",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 1.001939"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Đăng ký đóng BHYT và cấp thẻ cho người chỉ tham gia BHYT; quy trình cũng bao gồm giải quyết hoàn trả tiền đã đóng khi có trường hợp hoàn trả.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "8. Trường hợp hoàn trả: Người tham gia nộp hồ sơ theo quy định tại tiết 4 mục Thành phần hồ sơ cho Tổ chức dịch vụ (đối với người tham gia được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình); cơ sở giáo dục (đối với học sinh, sinh viên) hoặc cơ quan BHXH."
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Thẻ BHYT; Quyết định hoàn trả và tiền hoàn trả (nếu có).",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Nhận kết quả, gồm: Thẻ BHYT; Quyết định hoàn trả và tiền hoàn trả (nếu có)"
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "register",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "issue",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Đăng ký tham gia và cấp thẻ bảo hiểm y tế",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Đăng ký đóng BHYT hộ gia đình",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Health-insurance-only contribution registration and card issuance",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Household health insurance registration",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi muốn đăng ký BHYT hộ gia đình qua Cổng Dịch vụ công.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi tham gia BHYT lần đầu thì cần kê khai mẫu nào?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi muốn hỏi hồ sơ hoàn trả tiền BHYT do đóng trùng.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I want to register for household health insurance online.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Which declaration do I need for my first health insurance registration?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "What documents are needed to request a refund of duplicate health insurance payments?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người Việt Nam định cư ở nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "no_stated_eligibility_requirements",
+      "statement": {
+        "value": "Mục yêu cầu, điều kiện ghi: Không có yêu cầu điều kiện. Các phân nhánh về nhóm tham gia, hồ sơ và nơi nộp vẫn phải được áp dụng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không có yêu cầu điều kiện"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không có yêu cầu điều kiện"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "social_insurance_funded_submission",
+      "statement": {
+        "value": "Người tham gia do tổ chức BHXH đóng BHYT nộp cho UBND xã hoặc cơ quan BHXH; riêng người đang hưởng trợ cấp thất nghiệp nộp cho cơ quan BHXH.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "a) Đối với người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "health_insurance_group",
+        "values": [
+          "social_insurance_funded"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "a) Đối với người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH."
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "unemployment_benefit_status",
+          "values": [
+            "receiving"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "fully_state_funded_submission",
+      "statement": {
+        "value": "Nhóm do ngân sách nhà nước đóng hoặc hỗ trợ 100% nộp cho UBND xã. Ngoại lệ: người đã hiến bộ phận cơ thể nộp cho cơ quan BHXH; người do cơ quan, đơn vị quản lý nộp cho đơn vị quản lý đối tượng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "b) Đối với người tham gia do ngân sách nhà nước đóng, (hỗ trợ 100% mức đóng BHYT): Nộp hồ sơ cho UBND xã. Trừ các trường hợp: - Người tham gia đã hiến bộ phận cơ thể người: nộp hồ sơ cho cơ quan BHXH; - Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "health_insurance_group",
+        "values": [
+          "fully_state_funded"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "b) Đối với người tham gia do ngân sách nhà nước đóng, (hỗ trợ 100% mức đóng BHYT): Nộp hồ sơ cho UBND xã."
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "body_part_donation_status",
+          "values": [
+            "donated_under_law"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Người tham gia đã hiến bộ phận cơ thể người: nộp hồ sơ cho cơ quan BHXH;"
+            }
+          ]
+        },
+        {
+          "operator": "eq",
+          "criterion_key": "participant_management",
+          "values": [
+            "managed_by_agency_or_unit"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "partially_supported_and_household_submission",
+      "statement": {
+        "value": "Nhóm được ngân sách hỗ trợ một phần và nhóm hộ gia đình: nộp qua tổ chức dịch vụ hoặc cơ quan BHXH theo hồ sơ tiết 1.1, hoặc nộp trực tuyến trên Cổng Dịch vụ công theo tiết 1.2. Nhóm hộ gia đình được nộp cho tổ chức dịch vụ hoặc cơ quan BHXH trên toàn quốc. Học sinh, sinh viên nộp cho cơ sở giáo dục.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "c) Đối với người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH. - Trường hợp nộp qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công. - Học sinh, sinh viên: Nộp hồ sơ cho cơ sở giáo dục."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "d) Người tham gia BHYT theo hộ gia đình: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH trên toàn quốc. - Trường hợp nộp qua Cổng Dịch vụ công: Lập hồ sơ theo quy định tại tiết 1.2 điểm 1 Mục Thành phần hồ sơ và nộp trực tuyến trên Cổng Dịch vụ công."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "health_insurance_group",
+            "values": [
+              "partially_state_supported"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "c) Đối với người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT:"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "health_insurance_group",
+            "values": [
+              "household"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "d) Người tham gia BHYT theo hộ gia đình:"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "c) Đối với người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT:"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "d) Người tham gia BHYT theo hộ gia đình:"
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "student_status",
+          "values": [
+            "pupil_or_student"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Học sinh, sinh viên: Nộp hồ sơ cho cơ sở giáo dục."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "institutional_preparation_and_forwarding",
+      "statement": {
+        "value": "UBND xã nhận và lập hồ sơ mục 2: nhóm do BHXH đóng chuyển cho BHXH; nhóm do Bộ Lao động - Thương binh và Xã hội quản lý chuyển cho cơ quan Lao động - Thương binh và xã hội và BHXH cấp huyện; nhóm còn lại chuyển BHXH. Cơ quan Lao động - Thương binh và xã hội phối hợp BHXH rà soát, đối chiếu và xác nhận số người, số tiền của từng nhóm. Các cơ sở trợ giúp xã hội, nuôi dưỡng/điều dưỡng thương binh và người có công, cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội, cơ quan/đơn vị quản lý lập hồ sơ mục 2 và chuyển BHXH. Tổ chức dịch vụ và cơ sở giáo dục nhận hồ sơ, thu phần tiền thuộc trách nhiệm người tham gia, lập hồ sơ mục 2 và gửi BHXH. Phòng/Tổ chế độ BHXH nhận hồ sơ từ Bộ phận một cửa, kể cả đối tượng chờ quyết định hưu trí, lập hồ sơ mục 3 và chuyển Phòng/Tổ Quản lý Thu - Sổ, Thẻ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "2. Đối với UBND xã: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp hồ sơ như sau: a) Đối với người tham gia do tổ chức BHXH đóng: Nộp cho cơ quan BHXH. b) Đối với người tham gia do Bộ Lao động - Thương binh và Xã hội quản lý: nộp cho cơ quan Lao động - Thương binh và xã hội và cơ quan BHXH cấp huyện. c) Các đối tượng còn lại nộp cho cơ quan BHXH."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "3. Cơ quan Lao động - Thương binh và xã hội: Nhận hồ sơ do UBND xã gửi đến, phối hợp với cơ quan BHXH rà soát, kiểm tra, đối chiếu, xác nhận số người tham gia, số tiền phải đóng của từng nhóm đối tượng."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "4. Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Nhận hồ sơ của người tham gia, lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp cho cơ quan BHXH."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "5. Tổ chức dịch vụ: Nhận hồ sơ của người tham gia, thu tiền đóng thuộc trách nhiệm đóng của người tham gia BHYT và lập hồ sơ theo quy định tiết 2 mục Thành phần hồ sơ, nộp cho cơ quan BHXH."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "6. Cơ sở giáo dục: Nhận hồ sơ của học sinh, sinh viên, thu tiền đóng BHYT thuộc trách nhiệm đóng của học sinh, sinh viên; lập hồ sơ theo quy định tại tiết 2 mục Thành phần hồ sơ và nộp cho cơ quan BHXH."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "7. Phòng/Tổ chế độ BHXH: Nhận hồ sơ của người tham gia BHYT do tổ chức BHXH đóng (kể cả đối tượng đang chờ ban hành quyết định hưởng hưu trí) từ Bộ phận một cửa; lập hồ sơ theo quy định tại tiết 3 mục Thành phần hồ sơ chuyển cho Phòng/Tổ Quản lý Thu - Sổ, Thẻ"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "payment_and_remittance_guidance",
+      "statement": {
+        "value": "Nhóm được hỗ trợ một phần và hộ gia đình đóng tiền cho tổ chức dịch vụ hoặc BHXH; học sinh, sinh viên đóng cho cơ sở giáo dục. Tổ chức dịch vụ thu phần trách nhiệm người tham gia, cấp biên lai và chuyển tiền hằng ngày qua ngân hàng hoặc hệ thống tiện ích thông minh. Bước 2 yêu cầu cơ sở giáo dục chuyển tiền hằng ngày qua ngân hàng; mô tả phương thức còn nêu hệ thống tiện ích thông minh. Cơ quan Lao động - Thương binh và xã hội chuyển theo phân cấp hoặc phối hợp BHXH đề nghị cơ quan tài chính chuyển. UBND xã và các cơ sở/đơn vị quản lý chuyển theo phân cấp hoặc đề nghị cơ quan Lao động - Thương binh và xã hội hoặc cơ quan tài chính chuyển kinh phí.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "a) Người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT; người tham gia BHYT theo hộ gia đình: Đóng tiền cho tổ chức dịch vụ hoặc cho cơ quan BHXH;"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "b) Học sinh, sinh viên: đóng tiền cho cơ sở giáo dục."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "2. Tổ chức dịch vụ: Thu tiền đóng BHYT phần thuộc trách nhiệm đóng của người tham gia; cấp biên lai thu tiền cho người tham gia theo quy định. Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "3. Cơ sở giáo dục: Nộp số tiền đã thu của Học sinh, sinh viên cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "2.2. Tổ chức dịch vụ/Cơ sở giáo dục: Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "4. Cơ quan Lao động – Thương binh và xã hội: Chuyển tiền đóng BHYT theo phân cấp hoặc phối hợp với cơ quan BHXH đề nghị cơ quan tài chính chuyển tiền đóng BHYT cho cơ quan BHXH theo quy định"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "5. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Chuyển tiền đóng BHYT theo phân cấp hoặc đề nghị cơ quan Lao động - Thương binh và xã hội hoặc cơ quan tài chính chuyển kinh phí đóng BHYT cho cơ quan BHXH."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "refund_submission_and_service_variants",
+      "statement": {
+        "value": "Hồ sơ hoàn trả theo mục 4 nộp cho tổ chức dịch vụ đối với nhóm được hỗ trợ một phần hoặc hộ gia đình; cơ sở giáo dục đối với học sinh, sinh viên; hoặc cơ quan BHXH. Danh mục dịch vụ nêu hoàn trả do đóng trùng, cá nhân có thẻ trực tiếp thực hiện hoặc qua đại lý thu/nhà trường; và do chết, thân nhân nộp hoặc qua đại lý thu. Các dịch vụ hoàn trả này được ghi một phần; đăng ký qua cổng hoặc qua tổ chức/đơn vị được ghi toàn trình.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "8. Trường hợp hoàn trả: Người tham gia nộp hồ sơ theo quy định tại tiết 4 mục Thành phần hồ sơ cho Tổ chức dịch vụ (đối với người tham gia được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình); cơ sở giáo dục (đối với học sinh, sinh viên) hoặc cơ quan BHXH."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Hoàn trả tiền đã đóng đối với người tham gia BHYT theo hộ gia đình, người tham gia BHYT được ngân sách nhà nước hỗ trợ một phần mức đóng do đóng trùng (cá nhân người có thẻ trực tiếp thực hiện) Một phần"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Hoàn trả tiền đã đóng đối với người tham gia BHYT theo hộ gia đình, người tham gia BHYT được ngân sách nhà nước hỗ trợ một phần mức đóng do đóng trùng (thực hiện thông qua đại lý thu/nhà trường) Một phần"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Hoàn trả tiền đã đóng đối với người tham gia BHYT theo hộ gia đình, người tham gia BHYT được ngân sách nhà nước hỗ trợ một phần mức đóng do bị chết (thân nhân người chết nộp hồ sơ) Một phần"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Hoàn trả tiền đã đóng đối với người tham gia BHYT theo hộ gia đình, người tham gia BHYT được ngân sách nhà nước hỗ trợ một phần mức đóng do bị chết (thực hiện qua đại lý thu) Một phần"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đăng ký đóng BHYT đối với người chỉ tham gia BHYT (thông qua tổ chức/đơn vị) Toàn trình"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT trên Cổng Dịch vụ công Toàn trình"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "refund"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "8. Trường hợp hoàn trả: Người tham gia nộp hồ sơ theo quy định tại tiết 4 mục Thành phần hồ sơ"
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [
+    {
+      "rule_id": "organizational_applicant_exclusion",
+      "statement": {
+        "value": "Trong nhóm đối tượng thực hiện là tổ chức, nguồn loại trừ doanh nghiệp và HTX.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "in",
+        "criterion_key": "applicant_category",
+        "values": [
+          "enterprise",
+          "cooperative"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "jurisdiction": {
+    "value": "Riêng người tham gia BHYT theo hộ gia đình nộp qua tổ chức dịch vụ hoặc cơ quan BHXH: được nộp trên toàn quốc. Nguồn không xác lập phạm vi địa lý chung cho mọi nhánh.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "d) Người tham gia BHYT theo hộ gia đình: - Trường hợp nộp hồ sơ cho Tổ chức dịch vụ hoặc cơ quan BHXH: Lập hồ sơ theo quy định tại tiết 1.1 điểm 1 Mục Thành phần hồ sơ và nộp cho tổ chức dịch vụ hoặc cơ quan BHXH trên toàn quốc."
+      }
+    ],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Bảo hiểm xã hội cấp huyện; Bảo hiểm xã hội tỉnh",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Bảo hiểm xã hội cấp huyện Bảo hiểm xã hội tỉnh"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": "Cấp huyện; cấp tỉnh",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Bảo hiểm xã hội cấp huyện Bảo hiểm xã hội tỉnh"
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Nhóm được hỗ trợ một phần hoặc hộ gia đình được nộp trực tiếp tại Bộ phận Một cửa BHXH hoặc tổ chức dịch vụ thu; học sinh, sinh viên nộp trực tiếp cho cơ sở giáo dục. UBND xã và các cơ sở/cơ quan/đơn vị quản lý được nộp trực tiếp tại Bộ phận Một cửa BHXH. Các nhánh BHXH đóng và ngân sách đóng 100% còn áp dụng nơi nhận riêng ở trình tự thực hiện.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "a) Người được ngân sách nhà nước hỗ trợ một phần mức đóng, người tham gia BHYT theo hộ gia đình - Trực tiếp tại Bộ phận Một cửa của cơ quan BHXH; - Trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam; - Trực tiếp cho Tổ chức dịch vụ thu; - Thông qua dịch vụ bưu chính. b) Học sinh, sinh viên: Nộp trực tiếp cho Cơ sở giáo dục."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "1.2. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/Cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Nộp hồ sơ bằng một trong các hình thức sau: a) Trực tiếp tại Bộ phận Một cửa của cơ quan BHXH;"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "a) Đối với người tham gia do tổ chức BHXH đóng BHYT: Nộp hồ sơ cho UBND xã hoặc cho cơ quan BHXH. Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH. b) Đối với người tham gia do ngân sách nhà nước đóng, (hỗ trợ 100% mức đóng BHYT): Nộp hồ sơ cho UBND xã. Trừ các trường hợp: - Người tham gia đã hiến bộ phận cơ thể người: nộp hồ sơ cho cơ quan BHXH; - Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp tại nơi tiếp nhận tương ứng với nhóm tham gia. Có thể nộp tiền mặt cho BHXH khi đóng trực tiếp cho BHXH, cho cơ sở giáo dục nếu là học sinh/sinh viên, hoặc cho tổ chức dịch vụ khi đóng trực tiếp qua tổ chức đó; cũng có thể thanh toán qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh theo phương thức đã chọn. Nhóm được hỗ trợ một phần/hộ gia đình nộp trực tiếp cho BHXH hoặc đóng trực tuyến nhận kết quả theo hình thức đăng ký; người nộp qua UBND xã, tổ chức dịch vụ, cơ sở giáo dục hoặc cơ sở/cơ quan/đơn vị quản lý nhận kết quả từ đơn vị nộp hồ sơ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "2.1. Người tham gia có thể lựa chọn: a) Nộp tiền mặt cho cơ quan BHXH đối với trường hợp người tham gia đóng trực tiếp cho cơ quan BHXH; đối với học sinh, sinh viên nộp cho Cơ sở giáo dục; b) Nộp tiền mặt cho Tổ chức dịch vụ đối với trường hợp người tham gia đóng trực tiếp cho Tổ chức dịch vụ; c) Nộp tiền thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh theo phương thức giao dịch đã lựa chọn."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "3. Nhận kết quả giải quyết: a) Người tham gia được ngân sách nhà nước hỗ trợ một phần mức đóng, người tham gia BHYT theo hộ gia đình nộp hồ sơ trực tiếp cho cơ quan BHXH hoặc đóng theo phương thức trực tuyến: Nhận kết quả theo các hình thức đăng ký. b) Người tham gia nộp hồ sơ cho UBND xã/Tổ chức dịch vụ/Cơ sở giáo dục/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/Cơ quan, đơn vị quản lý người chỉ tham gia BHYT: nhận kết quả từ đơn vị nộp hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Bảng phương thức ghi 5 ngày làm việc. Trình tự ghi kể từ khi BHXH nhận đủ hồ sơ: không quá 05 ngày; riêng người hưởng trợ cấp thất nghiệp không quá 02 ngày.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp 5 Ngày làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Kể từ ngày cơ quan BHXH nhận đủ hồ sơ theo quy định: Không quá 05 ngày; riêng đối với người hưởng trợ cấp thất nghiệp không quá 02 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Người được ngân sách hỗ trợ một phần hoặc tham gia theo hộ gia đình: Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam. UBND xã và các cơ sở/cơ quan/đơn vị quản lý được dùng các cổng này hoặc tổ chức I-VAN. Tổ chức dịch vụ/cơ sở giáo dục lập hồ sơ giao dịch điện tử hằng ngày gửi BHXH.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "a) Người được ngân sách nhà nước hỗ trợ một phần mức đóng, người tham gia BHYT theo hộ gia đình - Trực tiếp tại Bộ phận Một cửa của cơ quan BHXH; - Trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam; - Trực tiếp cho Tổ chức dịch vụ thu; - Thông qua dịch vụ bưu chính."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "1.2. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/Cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Nộp hồ sơ bằng một trong các hình thức sau: a) Trực tiếp tại Bộ phận Một cửa của cơ quan BHXH; b) Thông qua dịch vụ bưu chính; c) Trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam hoặc Tổ chức I-VAN. 1.3. Tổ chức dịch vụ/Cơ sở giáo dục: Lập hồ sơ giao dịch điện tử hàng ngày gửi cơ quan BHXH."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nhóm được hỗ trợ một phần hoặc hộ gia đình nộp qua cổng kê khai Mẫu 01-TK. Có thể thanh toán qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh theo phương thức đã chọn. Nhóm nộp trực tiếp BHXH hoặc đóng trực tuyến nhận kết quả theo hình thức đăng ký; nộp thông qua đơn vị thì nhận từ đơn vị nộp hồ sơ. Tổ chức dịch vụ/cơ sở giáo dục chuyển tiền đã thu hằng ngày qua ngân hàng hoặc hệ thống tiện ích thông minh; các cơ quan, cơ sở, đơn vị quản lý và cơ quan Lao động - Thương binh và Xã hội nộp tiền theo quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "c) Nộp tiền thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh theo phương thức giao dịch đã lựa chọn. 2.2. Tổ chức dịch vụ/Cơ sở giáo dục: Nộp số tiền đã thu của người tham gia cho cơ quan BHXH hàng ngày thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh. 2.3. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/cơ quan/đơn vị quản lý người chỉ tham gia BHYT; Cơ quan Lao động – Thương binh và Xã hội: Nộp tiền theo quy định."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "3. Nhận kết quả giải quyết: a) Người tham gia được ngân sách nhà nước hỗ trợ một phần mức đóng, người tham gia BHYT theo hộ gia đình nộp hồ sơ trực tiếp cho cơ quan BHXH hoặc đóng theo phương thức trực tuyến: Nhận kết quả theo các hình thức đăng ký. b) Người tham gia nộp hồ sơ cho UBND xã/Tổ chức dịch vụ/Cơ sở giáo dục/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/Cơ quan, đơn vị quản lý người chỉ tham gia BHYT: nhận kết quả từ đơn vị nộp hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Bảng phương thức ghi 5 ngày làm việc. Trình tự ghi kể từ khi BHXH nhận đủ hồ sơ: không quá 05 ngày; riêng người hưởng trợ cấp thất nghiệp không quá 02 ngày.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến 5 Ngày làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Kể từ ngày cơ quan BHXH nhận đủ hồ sơ theo quy định: Không quá 05 ngày; riêng đối với người hưởng trợ cấp thất nghiệp không quá 02 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Dịch vụ bưu chính",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Dịch vụ bưu chính"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Áp dụng trong mô tả cho người được ngân sách hỗ trợ một phần, người tham gia theo hộ gia đình; và UBND xã, các cơ sở trợ giúp xã hội, cơ sở nuôi dưỡng/điều dưỡng thương binh và người có công, cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội, cơ quan/đơn vị quản lý người chỉ tham gia BHYT.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "a) Người được ngân sách nhà nước hỗ trợ một phần mức đóng, người tham gia BHYT theo hộ gia đình - Trực tiếp tại Bộ phận Một cửa của cơ quan BHXH; - Trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam; - Trực tiếp cho Tổ chức dịch vụ thu; - Thông qua dịch vụ bưu chính."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "1.2. UBND xã/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/Cơ quan/đơn vị quản lý người chỉ tham gia BHYT: Nộp hồ sơ bằng một trong các hình thức sau: a) Trực tiếp tại Bộ phận Một cửa của cơ quan BHXH; b) Thông qua dịch vụ bưu chính;"
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Gửi hồ sơ qua dịch vụ bưu chính. Mô tả không xác định phí bưu chính. Các lựa chọn nộp tiền gồm tiền mặt cho BHXH/cơ sở giáo dục/tổ chức dịch vụ theo nơi đóng, hoặc ngân hàng/hệ thống tiện ích thông minh. Người nộp qua đơn vị nhận kết quả từ đơn vị nộp hồ sơ; không có hướng dẫn riêng rõ ràng về nhận kết quả khi cá nhân tự gửi bưu chính.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "- Thông qua dịch vụ bưu chính."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "2.1. Người tham gia có thể lựa chọn: a) Nộp tiền mặt cho cơ quan BHXH đối với trường hợp người tham gia đóng trực tiếp cho cơ quan BHXH; đối với học sinh, sinh viên nộp cho Cơ sở giáo dục; b) Nộp tiền mặt cho Tổ chức dịch vụ đối với trường hợp người tham gia đóng trực tiếp cho Tổ chức dịch vụ; c) Nộp tiền thông qua tài khoản ngân hàng hoặc hệ thống tiện ích thông minh theo phương thức giao dịch đã lựa chọn."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "b) Người tham gia nộp hồ sơ cho UBND xã/Tổ chức dịch vụ/Cơ sở giáo dục/Cơ sở trợ giúp xã hội/Cơ sở nuôi dưỡng, điều dưỡng thương binh và người có công/Cơ sở giáo dục nghề nghiệp thuộc ngành Lao động - Thương binh và xã hội/Cơ quan, đơn vị quản lý người chỉ tham gia BHYT: nhận kết quả từ đơn vị nộp hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Bảng phương thức ghi 5 ngày làm việc. Trình tự ghi kể từ khi BHXH nhận đủ hồ sơ: không quá 05 ngày; riêng người hưởng trợ cấp thất nghiệp không quá 02 ngày.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Dịch vụ bưu chính 5 Ngày làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Kể từ ngày cơ quan BHXH nhận đủ hồ sơ theo quy định: Không quá 05 ngày; riêng đối với người hưởng trợ cấp thất nghiệp không quá 02 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS)",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS) đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "registration_information_status",
+            "values": [
+              "first_participation"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:0",
+                "quote": "đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "registration_information_status",
+            "values": [
+              "existing_number_incomplete_information"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:0",
+                "quote": "đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS) đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "in",
+            "criterion_key": "health_insurance_group",
+            "values": [
+              "partially_state_supported",
+              "household"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "submission_channel",
+            "values": [
+              "public_service_portal"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy ra viện có ghi rõ \"đã hiến bộ phận cơ thể\"",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Trường hợp người tham gia là người đã hiến bộ phận cơ thể người theo quy định của pháp luật: bổ sung Giấy ra viện có ghi rõ \"đã hiến bộ phận cơ thể\"."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "body_part_donation_status",
+        "values": [
+          "donated_under_law"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Trường hợp người tham gia là người đã hiến bộ phận cơ thể người theo quy định của pháp luật: bổ sung Giấy ra viện có ghi rõ \"đã hiến bộ phận cơ thể\"."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy tờ chứng minh quyền lợi BHYT cao hơn (nếu có), theo Phụ lục 03 ban hành kèm Quyết định số 948/QĐ-BHXH ngày 05/6/2023",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Trường hợp người tham gia được hưởng quyền lợi BHYT cao hơn: bổ sung Giấy tờ chứng minh (nếu có) theo Phụ lục 03 (ban hành kèm theo Quyết định số 948/QĐ-BHXH ngày 05/6/2023 của Tổng Giám đốc Bảo hiểm xã hội Việt Nam)."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Trường hợp người tham gia được hưởng quyền lợi BHYT cao hơn: bổ sung Giấy tờ chứng minh (nếu có) theo Phụ lục 03 (ban hành kèm theo Quyết định số 948/QĐ-BHXH ngày 05/6/2023 của Tổng Giám đốc Bảo hiểm xã hội Việt Nam)."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Danh sách người chỉ tham gia BHYT (Mẫu D03-TS), kèm theo mẫu TK1-TS của người tham gia; hồ sơ mục 2 của đơn vị/UBND xã/các cơ sở",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "2. Đơn vị; UBND xã; Cơ sở trợ giúp xã hội, Cơ sở nuôi dưỡng, điều... Danh sách người chỉ tham gia BHYT (Mẫu D03-TS) kèm theo mẫu TK1-TS của người tham gia"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "filing_role",
+        "values": [
+          "section_2_institution"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "2. Đơn vị; UBND xã; Cơ sở trợ giúp xã hội, Cơ sở nuôi dưỡng, điều... Danh sách người chỉ tham gia BHYT (Mẫu D03-TS) kèm theo mẫu TK1-TS của người tham gia"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy thanh toán thù lao cho tổ chức làm dịch vụ thu (Mẫu C66a-HD), tương ứng với số tiền nộp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Giấy thanh toán thù lao cho tổ chức làm dịch vụ thu (Mẫu C66a-HD) tương ứng với số tiền nộp (đối với Tổ chức dịch vụ/Cơ sở giáo dục)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "in",
+        "criterion_key": "filing_role",
+        "values": [
+          "collection_service",
+          "educational_institution"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Giấy thanh toán thù lao cho tổ chức làm dịch vụ thu (Mẫu C66a-HD) tương ứng với số tiền nộp (đối với Tổ chức dịch vụ/Cơ sở giáo dục)"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Danh sách đối tượng tham gia BHYT (Mẫu số 2)",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Danh sách đối tượng tham gia BHYT (Mẫu số 2) đối với đối tượng do Bộ Lao động – Thương binh và xã hội quản lý"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "participant_management",
+        "values": [
+          "managed_by_labour_ministry"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Danh sách đối tượng tham gia BHYT (Mẫu số 2) đối với đối tượng do Bộ Lao động – Thương binh và xã hội quản lý"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Danh sách người chỉ tham gia BHYT (Mẫu D03-TS), do Phòng/Tổ chế độ BHXH lập cho nhóm do tổ chức BHXH đóng, kể cả người chờ quyết định hưởng hưu trí",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "3. Phòng/Tổ chế độ BHXH Danh sách người chỉ tham gia BHYT (Mẫu D03-TS) đối với người tham gia BHYT do tổ chức BHXH đóng (kể cả đối tượng đang chờ ban hành quyết định hưởng hưu trí)."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "filing_role",
+            "values": [
+              "social_insurance_benefits_department"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:7",
+                "quote": "3. Phòng/Tổ chế độ BHXH"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "health_insurance_group",
+            "values": [
+              "social_insurance_funded"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:7",
+                "quote": "đối với người tham gia BHYT do tổ chức BHXH đóng (kể cả đối tượng đang chờ ban hành quyết định hưởng hưu trí)."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "3. Phòng/Tổ chế độ BHXH Danh sách người chỉ tham gia BHYT (Mẫu D03-TS) đối với người tham gia BHYT do tổ chức BHXH đóng (kể cả đối tượng đang chờ ban hành quyết định hưởng hưu trí)."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Hồ sơ người tham gia đề nghị hoàn trả: Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS); nếu chết, bổ sung văn bản chứng thực hoặc bản chụp kèm bản chính Giấy chứng tử",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "4. Trường hợp hoàn trả tiền đã đóng a) Đối với người tham gia: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS). - Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1 cho dòng hồ sơ gộp; nguồn không phân bổ riêng số lượng cho từng giấy tờ",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "a) Đối với người tham gia: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS). - Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1 cho dòng hồ sơ gộp; nguồn không phân bổ riêng số lượng cho từng giấy tờ",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "a) Đối với người tham gia: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS). - Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Đối với trường hợp chết: văn bản chứng thực HOẶC bản chụp kèm theo bản chính Giấy chứng tử. Nguồn không nêu người/cơ quan chứng thực.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "refund"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "4. Trường hợp hoàn trả tiền đã đóng a) Đối với người tham gia: - Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS). - Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Danh sách đề nghị hoàn trả theo mẫu D03-TS, do Tổ chức dịch vụ/Cơ sở giáo dục lập khi hoàn trả cho nhiều người trong cùng đối tượng",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "b) Đối với Tổ chức dịch vụ/Cơ sở giáo dục: Trường hợp hoàn trả tiền đóng BHYT cho nhiều người trong cùng đối tượng, lập danh sách đề nghị hoàn trả theo mẫu D03-TS."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "requested_action",
+            "values": [
+              "refund"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:9",
+                "quote": "4. Trường hợp hoàn trả tiền đã đóng"
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "filing_role",
+            "values": [
+              "collection_service",
+              "educational_institution"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:9",
+                "quote": "b) Đối với Tổ chức dịch vụ/Cơ sở giáo dục:"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "refund_batch_scope",
+            "values": [
+              "multiple_people_same_group"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:9",
+                "quote": "Trường hợp hoàn trả tiền đóng BHYT cho nhiều người trong cùng đối tượng, lập danh sách đề nghị hoàn trả theo mẫu D03-TS."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "4. Trường hợp hoàn trả tiền đã đóng b) Đối với Tổ chức dịch vụ/Cơ sở giáo dục: Trường hợp hoàn trả tiền đóng BHYT cho nhiều người trong cùng đối tượng, lập danh sách đề nghị hoàn trả theo mẫu D03-TS."
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "requested_action",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Are you registering for health insurance and a card, or requesting a refund of contributions?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "register_and_issue",
+          "label": "Register contributions and obtain a health insurance card",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+            }
+          ]
+        },
+        {
+          "value": "refund",
+          "label": "Request a refund of paid contributions",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:8",
+              "quote": "4. Trường hợp hoàn trả tiền đã đóng"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:8",
+          "quote": "4. Trường hợp hoàn trả tiền đã đóng"
+        }
+      ]
+    },
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which applicant category describes you or the organization filing?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Công dân Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "overseas_vietnamese",
+          "label": "Vietnamese person residing overseas",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Người Việt Nam định cư ở nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "organization_excluding_enterprises_cooperatives",
+          "label": "Organization other than an enterprise or cooperative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+            }
+          ]
+        },
+        {
+          "value": "enterprise",
+          "label": "Enterprise",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+            }
+          ]
+        },
+        {
+          "value": "cooperative",
+          "label": "Cooperative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "health_insurance_group",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which health insurance contribution group applies to the participant?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "social_insurance_funded",
+          "label": "Contributions paid by the social insurance organization",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Đối với người tham gia do tổ chức BHXH đóng BHYT"
+            }
+          ]
+        },
+        {
+          "value": "fully_state_funded",
+          "label": "Contributions paid or supported 100% by the state budget",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Đối với người tham gia do ngân sách nhà nước đóng, (hỗ trợ 100% mức đóng BHYT)"
+            }
+          ]
+        },
+        {
+          "value": "partially_state_supported",
+          "label": "Contributions partly supported by the state budget",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Đối với người được ngân sách nhà nước hỗ trợ một phần mức đóng BHYT"
+            }
+          ]
+        },
+        {
+          "value": "household",
+          "label": "Household health insurance",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người tham gia BHYT theo hộ gia đình"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Đối với người tham gia do tổ chức BHXH đóng BHYT"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "How will the application be submitted?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "public_service_portal",
+          "label": "National or Vietnam Social Security public service portal",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "in_person",
+          "label": "In person at the appropriate receiving body",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ]
+        },
+        {
+          "value": "postal",
+          "label": "Postal service",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Dịch vụ bưu chính"
+            }
+          ]
+        },
+        {
+          "value": "ivan",
+          "label": "Through an I-VAN organization, for the listed institutional filers",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "c) Trực tuyến tại Cổng Dịch vụ công quốc gia hoặc Cổng Dịch vụ công BHXH Việt Nam hoặc Tổ chức I-VAN."
+            }
+          ]
+        },
+        {
+          "value": "daily_institutional_electronic_filing",
+          "label": "Daily electronic filing by a collection service or educational institution",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "1.3. Tổ chức dịch vụ/Cơ sở giáo dục: Lập hồ sơ giao dịch điện tử hàng ngày gửi cơ quan BHXH."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "Trường hợp người tham gia do ngân sách nhà nước hỗ trợ một phần mức đóng BHYT, người tham gia BHYT theo hộ gia đình nộp qua Cổng Dịch vụ công thì kê khai Tờ khai đăng ký đóng, cấp thẻ BHYT trên Cổng Dịch vụ công (Mẫu 01-TK)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "registration_information_status",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is this the participant's first registration, or do they already have a social insurance number with incomplete information?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "first_participation",
+          "label": "First participation",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+            }
+          ]
+        },
+        {
+          "value": "existing_number_incomplete_information",
+          "label": "Existing social insurance number, but incomplete information",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:0",
+          "quote": "Tờ khai tham gia, điều chỉnh thông tin BHXH, BHYT (Mẫu TK1-TS) đối với người tham gia lần đầu hoặc có mã số BHXH nhưng chưa đủ thông tin."
+        }
+      ]
+    },
+    {
+      "criterion_key": "unemployment_benefit_status",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is the participant currently receiving unemployment benefits?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "receiving",
+          "label": "Currently receiving unemployment benefits",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Đối với người đang hưởng trợ cấp thất nghiệp: nộp hồ sơ cho cơ quan BHXH."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Không quá 05 ngày; riêng đối với người hưởng trợ cấp thất nghiệp không quá 02 ngày."
+        }
+      ]
+    },
+    {
+      "criterion_key": "body_part_donation_status",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Has the participant donated a human body part in accordance with the law?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "donated_under_law",
+          "label": "Has donated a body part under the stated legal provision",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Trường hợp người tham gia là người đã hiến bộ phận cơ thể người theo quy định của pháp luật"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:2",
+          "quote": "Trường hợp người tham gia là người đã hiến bộ phận cơ thể người theo quy định của pháp luật: bổ sung Giấy ra viện có ghi rõ \"đã hiến bộ phận cơ thể\"."
+        }
+      ]
+    },
+    {
+      "criterion_key": "participant_management",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is the participant managed by an agency or unit, including the Ministry of Labour, Invalids and Social Affairs?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "managed_by_agency_or_unit",
+          "label": "Managed by an agency or unit",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng."
+            }
+          ]
+        },
+        {
+          "value": "managed_by_labour_ministry",
+          "label": "Managed by the Ministry of Labour, Invalids and Social Affairs",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:6",
+              "quote": "Danh sách đối tượng tham gia BHYT (Mẫu số 2) đối với đối tượng do Bộ Lao động – Thương binh và xã hội quản lý"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Người tham gia do cơ quan, đơn vị quản lý: nộp hồ sơ cho đơn vị quản lý đối tượng."
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:6",
+          "quote": "Danh sách đối tượng tham gia BHYT (Mẫu số 2) đối với đối tượng do Bộ Lao động – Thương binh và xã hội quản lý"
+        }
+      ]
+    },
+    {
+      "criterion_key": "student_status",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is the participant a pupil or student?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "pupil_or_student",
+          "label": "Pupil or student",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "b) Học sinh, sinh viên: Nộp trực tiếp cho Cơ sở giáo dục."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "b) Học sinh, sinh viên: đóng tiền cho cơ sở giáo dục."
+        }
+      ]
+    },
+    {
+      "criterion_key": "filing_role",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "What role does the body preparing the institutional documents have? Select all applicable roles.",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "section_2_institution",
+          "label": "Unit, commune People's Committee, or institution preparing the section 2 dossier",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "2. Đơn vị; UBND xã; Cơ sở trợ giúp xã hội, Cơ sở nuôi dưỡng, điều..."
+            }
+          ]
+        },
+        {
+          "value": "collection_service",
+          "label": "Collection service organization",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "đối với Tổ chức dịch vụ/Cơ sở giáo dục"
+            }
+          ]
+        },
+        {
+          "value": "educational_institution",
+          "label": "Educational institution",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "đối với Tổ chức dịch vụ/Cơ sở giáo dục"
+            }
+          ]
+        },
+        {
+          "value": "social_insurance_benefits_department",
+          "label": "Social insurance benefits department or team",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:7",
+              "quote": "3. Phòng/Tổ chế độ BHXH"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:4",
+          "quote": "2. Đơn vị; UBND xã; Cơ sở trợ giúp xã hội, Cơ sở nuôi dưỡng, điều... Danh sách người chỉ tham gia BHYT (Mẫu D03-TS) kèm theo mẫu TK1-TS của người tham gia"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Giấy thanh toán thù lao cho tổ chức làm dịch vụ thu (Mẫu C66a-HD) tương ứng với số tiền nộp (đối với Tổ chức dịch vụ/Cơ sở giáo dục)"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:7",
+          "quote": "3. Phòng/Tổ chế độ BHXH"
+        }
+      ]
+    },
+    {
+      "criterion_key": "refund_reason",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "refund"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "4. Trường hợp hoàn trả tiền đã đóng"
+          }
+        ]
+      },
+      "question": "Is the refund request due to duplicate contributions or the participant's death?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "duplicate_contributions",
+          "label": "Duplicate contributions",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Hoàn trả tiền đã đóng đối với người tham gia BHYT theo hộ gia đình, người tham gia BHYT được ngân sách nhà nước hỗ trợ một phần mức đóng do đóng trùng (cá nhân người có thẻ trực tiếp thực hiện)"
+            }
+          ]
+        },
+        {
+          "value": "death",
+          "label": "Participant's death",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:8",
+              "quote": "Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:8",
+          "quote": "Văn bản chứng thực hoặc bản chụp kèm theo bản chính Giấy chứng tử đối với trường hợp chết"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Hoàn trả tiền đã đóng đối với người tham gia BHYT theo hộ gia đình, người tham gia BHYT được ngân sách nhà nước hỗ trợ một phần mức đóng do đóng trùng (cá nhân người có thẻ trực tiếp thực hiện)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "refund_batch_scope",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "refund"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "4. Trường hợp hoàn trả tiền đã đóng"
+          }
+        ]
+      },
+      "question": "Is a collection service or educational institution requesting refunds for multiple people in the same participant group?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "multiple_people_same_group",
+          "label": "Multiple people in the same participant group",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:9",
+              "quote": "b) Đối với Tổ chức dịch vụ/Cơ sở giáo dục: Trường hợp hoàn trả tiền đóng BHYT cho nhiều người trong cùng đối tượng, lập danh sách đề nghị hoàn trả theo mẫu D03-TS."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:9",
+          "quote": "b) Đối với Tổ chức dịch vụ/Cơ sở giáo dục: Trường hợp hoàn trả tiền đóng BHYT cho nhiều người trong cùng đối tượng, lập danh sách đề nghị hoàn trả theo mẫu D03-TS."
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Không có bản ghi biểu mẫu được liên kết bằng file hash trong nguồn được cung cấp; không thể lập quan hệ cho một tệp hoặc phiên bản cụ thể chỉ từ tên tệp trong thành phần hồ sơ.",
+    "Không có nội dung tệp biểu mẫu: chưa xác lập phiên bản, ngày hiệu lực của từng mẫu, người ký, cơ quan chứng thực, hướng dẫn điền chi tiết hoặc quan hệ thay thế biểu mẫu.",
+    "Không xác lập ngày bắt đầu/kết thúc hiệu lực của thủ tục hoặc thủ tục bị thay thế.",
+    "Phí, lệ phí không có giá trị trong bằng chứng được cung cấp; không được hiểu là miễn phí. Không có mức đóng BHYT, công thức tính hoặc phí bưu chính.",
+    "Trình tự ghi 05 ngày và ngoại lệ 02 ngày, còn bảng phương thức ghi 5 ngày làm việc; chưa rõ đơn vị ngày cho ngoại lệ và cách thống nhất hai cách diễn đạt.",
+    "Dòng hồ sơ hoàn trả của người tham gia gộp TK1-TS và giấy tờ chứng tử với số lượng 1 bản chính, 1 bản sao; không thể phân bổ chắc chắn số lượng cho từng giấy tờ.",
+    "Không có nội dung Phụ lục 03 để xác định các loại giấy tờ chứng minh quyền lợi BHYT cao hơn; cách áp dụng cụm 'nếu có' chưa đủ rõ để tạo điều kiện thực thi.",
+    "Tiêu đề nhóm hồ sơ mục 2 bị rút gọn bằng dấu ba chấm; trình tự mô tả thêm các đơn vị lập hồ sơ nhưng không cung cấp toàn bộ tiêu đề nguyên vẹn.",
+    "Chưa rõ quan hệ giữa điều kiện TK1-TS cho người tham gia lần đầu/thông tin chưa đủ với nhánh 01-TK khi nộp qua cổng; không khẳng định hai mẫu thay thế nhau hoặc luôn phải nộp đồng thời.",
+    "Nguồn không quy định thứ tự ưu tiên nếu một người đồng thời thuộc nhiều ngoại lệ nơi nộp, chẳng hạn người hiến bộ phận cơ thể cũng do cơ quan/đơn vị quản lý.",
+    "Không có hướng dẫn nhận kết quả riêng rõ ràng cho cá nhân tự gửi hồ sơ bưu chính.",
+    "Không xác lập phạm vi địa lý chung cho mọi nhánh thủ tục; chỉ nhánh hộ gia đình nộp qua tổ chức dịch vụ/BHXH được ghi rõ trên toàn quốc."
+  ],
+  "issues": [
+    "Đây là hồ sơ trích xuất dự thảo để kiểm tra và thẩm định; việc trích xuất thành công không xác lập hiệu lực hiện tại của nguồn.",
+    "Các quy tắc về nơi nộp, chuẩn bị hồ sơ và thanh toán được lưu cùng các quy tắc thủ tục, không phải các điều kiện đủ mới về quyền tham gia; mục yêu cầu, điều kiện của nguồn ghi không có yêu cầu điều kiện.",
+    "Các giá trị unknown hoặc dữ liệu người dùng bị thiếu phải tiếp tục là chưa biết khi đánh giá; không được chuyển thành không đủ điều kiện.",
+    "Nhóm vai trò filing_role có thể đồng thời áp dụng: tổ chức dịch vụ/cơ sở giáo dục còn lập hồ sơ mục 2. Không được coi các đáp án vai trò là loại trừ lẫn nhau.",
+    "participant_management mô tả các nhóm có thể chồng lấn; không suy ra người do Bộ Lao động - Thương binh và xã hội quản lý không thuộc nhóm cơ quan/đơn vị quản lý.",
+    "Chưa chuyển phép thử 'hiến bộ phận cơ thể theo quy định của pháp luật' thành một đánh giá pháp lý tự động; đáp án chỉ ghi nhận tình trạng đã được xác nhận theo nguồn.",
+    "Hoàn trả là một nhánh được nguồn nêu nhưng không có giá trị tương ứng trong danh mục action_type cho phép; đã giữ nhánh này trong mục đích, kết quả, quy tắc, hồ sơ và tiêu chí, không đổi thành cancel hoặc amend.",
+    "Mục cơ quan thực hiện ghi BHXH cấp huyện và tỉnh. Danh sách dịch vụ còn có nhiều tên cơ quan địa phương, mục trùng lặp, tên kèm '(unfix)', và các mục Cục Hải quan/Cục Thuế/Đơn vị. Các mục bất thường này cần rà soát; không dùng chúng để suy ra giới hạn địa lý hoặc thay đổi cơ quan giải quyết chung.",
+    "Hướng dẫn chuyển tiền của cơ sở giáo dục ở Bước 2 chỉ nêu tài khoản ngân hàng, trong khi mô tả phương thức nêu ngân hàng hoặc hệ thống tiện ích thông minh; đã giữ cả hai cách diễn đạt để rà soát.",
+    "Ngày 05/6/2023 gắn với Quyết định ban hành Phụ lục 03, không được dùng làm ngày hiệu lực của thủ tục hay của một tệp biểu mẫu.",
+    "Số lượng 1 bản chính của Mẫu 01-TK được giữ đúng dòng nguồn dù kênh nộp là trực tuyến; không tự diễn giải thành yêu cầu nộp bản giấy.",
+    "Không tạo quan hệ thay thế giữa các biểu mẫu hoặc phiên bản chỉ từ tên mẫu hoặc tên tệp."
+  ]
+}

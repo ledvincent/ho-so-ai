@@ -1,0 +1,38 @@
+NỘI DUNG MẪU ĐIỆN TỬ TƯƠNG TÁC YÊU CẦU
+CẤP GIẤY XÁC NHẬN TÌNH TRẠNG HÔN NHÂN
+I. Thông tin về người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân
+(1) Họ, chữ đệm, tên;
+(2) Số định danh cá nhân;
+(3) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/Thẻ căn cước/Căn cước điện tử/Hộ
+chiếu/Giấy tờ hợp lệ thay thế); số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;
+(4) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);
+(5) Quan hệ với người được cấp Giấy xác nhận tình trạng hôn nhân.
+II. Thông tin về người được cấp Giấy xác nhận tình trạng hôn nhân
+(6) Họ, chữ đệm, tên;
+(7) Ngày, tháng, năm sinh (tách biệt riêng 03 trường thông tin ngày, tháng, năm); 
+(8) Giới tính;
+(9) Dân tộc;
+(10) Quốc tịch;
+(11) Số định danh cá nhân;
+(12) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/Thẻ căn cước/Căn cước điện tử/Hộ
+chiếu/Giấy tờ hợp lệ thay thế); số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;
+(13) Nơi cư trú (nơi thường trú/nơi tạm trú);
+(14) Tình trạng hôn nhân;
+(15) Mục đích sử dụng Giấy XNTTHN: Ghi rõ mục đích sử dụng Giấy xác nhận tình trạng
+hôn nhân. Trường hợp sử dụng Giấy xác nhận tình trạng hôn nhân để kết hôn, thì phải ghi rõ
+kết hôn với ai (họ, chữ đệm, tên; ngày, tháng, năm sinh; quốc tịch; giấy tờ tùy thân); nơi dự
+định đăng ký kết hôn.
+(16) Phương thức nhận kết quả: 
+□ Trực tiếp
+□ Trực tuyến (bản điện tử sẽ được gửi về Kho quản lý dữ liệu của cá nhân/địa chỉ thư điện
+tử/thiết bị số/điện thoại của người yêu cầu)
+□ Bưu chính (cung cấp địa chỉ nơi nhận).
+(17) Hồ sơ đính kèm theo quy định.
+* Người yêu cầu cam đoan các thông tin cung cấp là đúng sự thật và chịu hoàn toàn trách
+nhiệm trước pháp luật về nội dung cam đoan của mình.
+* Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ
+CSDLQGVDC, được hệ thống điền tự động thì không phải xuất trình (theo hình thức trực
+tiếp) hoặc tải lên (theo hình thức trực tuyến).
+* Mẫu điện tử tương tác ghi nhận thời gian (giờ, phút, giây, ngày, tháng, năm hoàn tất việc
+cung cấp thông tin); người yêu cầu trước đó đã đăng nhập vào hệ thống thông qua việc xác
+thực điện tử theo quy định.

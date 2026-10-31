@@ -2,7 +2,43 @@
 
 Primary catalog: https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html
 
-`candidates.yaml` contains the four retained procedures and supplementary official attachment pages. A candidate is not a released procedure. Primary page URLs are constructed from their national code and recorded in each `analysis_run` and report. Supplementary page bytes, hashes and timestamps are recorded in the report. An exact code match is mandatory. Form version equivalence is a separate review gate.
+## Ingest by URL
+
+With the database, document converter and model provider configured, pass the official procedure URL directly:
+
+```powershell
+uv run python -m api.analysis "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974"
+```
+
+No `candidates.yaml` entry, procedure code, name or attachment list is needed. The agent reads the official identity, extracts the complete procedure, downloads linked forms, maps them and generates a cited profile. Successful imports become active catalog records and are exported under `data/procedures/<code>/`. Evidence and form review remain separate from ingestion.
+
+The terminal prints the current procedure, source/form stages, model attempts and a heartbeat every 30 seconds. `Ctrl+C` records an interrupted attempt as failed. Add `--resume` to a batch to skip URLs already imported into the active catalog; omit it when refreshing sources. Failed attachments remain recorded as unavailable; they do not by themselves prevent a cited procedure profile from being imported. A `blocked` result is an imported record with review issues, while `failed` means extraction did not finish. After imports, the CLI builds, embeds and publishes app search automatically. `--no-index` defers that step. If indexing fails, imported profiles remain saved; `--resume` retries indexing without repeating those model calls. Automatic publication enables lexical routing; semantic thresholds still require calibration against the expanded catalog.
+
+Profile extraction uses `PROFILE_MODEL` and `PROFILE_REASONING`; `.env.example` uses Sol with medium reasoning. Blank-form mapping has separate model/effort settings. API extraction allows 64,000 total output tokens (including reasoning), with one retry at 128,000 for output-limit exhaustion. Incomplete output is never accepted as a profile. Response metadata preserves status, usage and failure reason without API credentials. API rate-limit/server failures receive one bounded retry. Successful imports must then be included in a built, embedded and published retrieval release; see [RAG](rag.md).
+
+For several procedures, pass multiple quoted URLs or create a UTF-8 text file with one URL per line:
+
+```powershell
+uv run python -m api.analysis --urls-file urls.txt
+```
+
+The researched citizen shortlist is already in `data/citizen-procedure-urls.txt`:
+
+```powershell
+uv run python -m api.analysis --urls-file data/citizen-procedure-urls.txt
+```
+
+Blank lines and `#` comments are ignored. Exact duplicate URLs are processed once. The list is validated before work starts; runtime failures are reported individually and the batch continues, exiting nonzero if any procedure fails. Saved HTML, inbox and supplementary-page overrides apply to single-URL runs only. This path does not run all-pairs catalog comparisons.
+
+Supported national-portal hosts are `vpcp.dichvucong.gov.vn`, `dichvucong.gov.vn` and `thutuc.dichvucong.gov.vn`. The agent accepts national by-code, shared, legacy and numeric detail links. It resolves legacy/numeric links using the identity on the page, verifies the complete page's national code, and retains both the submitted URL/snapshot and resolved source in the report. Title differences between a detail card and the complete page are recorded; the extracted name and facts come from the complete page. Numeric page IDs are never stored as procedure codes. A local variant with a suffixed code is rejected pending a local-page adapter; local requirements must not be replaced silently with national requirements. Ministry of Public Security procedure links remain supported.
+
+Forms linked from the primary page are discovered automatically. `--attachment-page` is an optional override for a supplementary supported official page, with an exact procedure-code match required. Inaccessible attachments remain explicit issues; URL-only ingestion does not invent missing files. Form version equivalence is a separate review gate.
+
+The CLI publishes retrieval after successful imports; the library `run()` only imports one procedure. With `--no-index`, use the [retrieval workflow](rag.md) later. Neither path approves form filling or upgrades source currency automatically.
+
+## Existing controlled reruns
+
+`candidates.yaml` remains the selection file for the older four-procedure rerun/comparison workflow. It is not the registry for URL imports; the database holds active membership and the data index includes active exported records. The older batch and smoke-check scripts still contain four-procedure assumptions; use the URL command above for new imports.
 
 Start at [data/README.md](../data/README.md) for the four procedure folders. Shared originals include three distinct NA5 versions and earlier exploratory forms. Current primary attachment links use explicitly labelled filename fallback; successful downloads retain their exact version. Field mappings remain draft. Procedure 1.002411 is inactive. Known stale primary procedure context is gated pending currency checks. Broken fee-detail controls remain internal provenance and do not by themselves block visible facts.
 
@@ -51,6 +87,36 @@ Routing storage (`search_text`) contains official names and deterministic summar
 Downloads and successful rendering establish file availability. Visible primary facts and accompanying descriptions are preserved in full; absent fee-control content is not inferred. Filename fallback is an association hypothesis, not version equivalence. Model-derived fields remain draft until the specification and fictional filled previews are reviewed. The workflow distinguishes source-requiredness from application completeness rules. Use the document's actual fonts during conversion (`FORM_FONT_DIR` or Windows font directory); a changed rendering invalidates the coordinate map and requires another pass. No ingestion or mapping command approves its own result.
 
 ## Manual downloads
+
+Before requesting a manual download, ingestion checks the shared local form store
+when an attachment download fails. A hash-verified original previously downloaded
+from the exact URL can be reused with its original timestamp. Otherwise a unique
+form-code match (including labels such as `Mẫu CT01 _66.doc`) is associated as a
+`filename_fallback` candidate with unknown retrieval date and an explicit revision
+review issue. Multiple matching versions remain unresolved. A direct download
+always takes precedence. The associated local file then enters the normal mapping
+and profile-extraction stages; reuse never approves a template or establishes its
+current legal applicability.
+
+Before a filename-only candidate is used, ingestion also checks
+`data/forms/official-copies.json`: inspected alternate official files matched to
+the exact procedure code, primary URL and label. These use `official_copy`
+associations, preserve the actual alternate download URL, and retain source-bundle
+hashes and page ranges for extracted PDFs. Ambiguous candidates are never assigned.
+This registry is reusable offline; discovery of previously unknown official mirrors
+is still a research step, not an unrestricted automatic web search.
+
+`scripts/associate_recovered_forms.py` repairs existing missing associations without
+rerunning procedure extraction. It creates new validated profile versions while
+preserving existing procedure facts and citations. New form completion semantics
+remain unknown pending extraction/review. `scripts/verify_form_recovery.py` checks
+all hashes, profile associations/citations and exact rendering of extracted pages.
+
+The generated [form inventory](../data/forms/index.md) lists every registered
+version, a document summary, revision/review status, linked procedures, original and
+known download sources. Exports refresh it; `python -m api.form_catalog` refreshes it
+independently. Run database migrations before using local candidates whose original
+retrieval date is unknown.
 
 Use `data/inbox/<procedure-code>/`. Put the binary there and add `source.txt` with its original URL for human reference. Create `manifest.json` mapping the exact attachment URL to its local filename:
 

@@ -1,0 +1,1783 @@
+{
+  "code": "1.001612",
+  "audience": "citizen",
+  "id": 51,
+  "procedure_code": "1.001612",
+  "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+  "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+  "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+  "raw_path": "data/_store/html/10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+  "parser_version": "vpcp-by-code-4",
+  "name": "Đăng ký thành lập hộ kinh doanh",
+  "status": "parsed",
+  "issues": [],
+  "document_json": {
+    "name": "Đăng ký thành lập hộ kinh doanh",
+    "sections": [
+      {
+        "heading": "Trình tự thực hiện",
+        "text_verbatim": "Trường hợp đăng ký trực tiếp:\n- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.\n- Khi tiếp nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã trao Giấy biên nhận cho hộ kinh doanh.\n+ Khi hồ sơ đăng ký hộ kinh doanh đủ điều kiện để được cấp Giấy chứng nhận đăng ký hộ kinh doanh, hệ thống thông tin về đăng ký hộ kinh doanh truyền thông tin đăng ký thành lập hộ kinh doanh sang Hệ thống ứng dụng đăng ký thuế;\nHệ thống ứng dụng đăng ký thuế nhận thông tin đăng ký thành lập hộ kinh doanh từ hệ thống thông tin về đăng ký hộ kinh doanh truyền sang và tự động kiểm tra sự phù hợp của thông tin theo quy định của pháp luật về đăng ký thuế.\n+ Trường hợp thông tin phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động tạo mã số hộ kinh doanh và thực hiện phân cấp cơ quan thuế quản lý đối với hộ kinh doanh; đồng thời truyền các thông tin này sang hệ thống thông tin về đăng ký hộ kinh doanh.\n+ Trường hợp thông tin không phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động phản hồi về việc thông tin không phù hợp và truyền sang hệ thống thông tin về đăng ký hộ kinh doanh;\nTrên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ.\nCơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh cho hộ kinh doanh trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ.\n- Trường hợp hồ sơ không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã phải thông báo bằng văn bản cho người nộp hồ sơ hoặc người thành lập hộ kinh doanh biết. Thông báo phải nêu rõ lý do và các yêu cầu sửa đổi, bổ sung hồ sơ (nếu có).\nTrường hợp đăng ký qua mạng điện tử sử dụng chữ ký số:\n- Người nộp hồ sơ đăng ký hộ kinh doanh kê khai thông tin, tải văn bản điện tử, sử dụng chữ ký số để ký xác thực hồ sơ đăng ký hộ kinh doanh theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.\n- Cơ quan đăng ký kinh doanh cấp xã trả giấy biên nhận hồ sơ và kết quả giải quyết thủ tục đăng ký hộ kinh doanh cho người nộp hồ sơ qua mạng thông tin điện tử theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh."
+      },
+      {
+        "heading": "Cách thức thực hiện",
+        "text_verbatim": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nLệ phí: Đồng\nThời hạn giải quyết\nTrực tuyến\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nLệ phí: Đồng\nThời hạn giải quyết"
+      },
+      {
+        "heading": "Thành phần hồ sơ",
+        "text_verbatim": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n(i) Giấy đề nghị đăng ký hộ kinh doanh;\nMauso1GiaydenghidangkyHKD.docx\nBản chính: 1 - Bản sao: 0\n(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1\n(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1\n(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.\nBản chính: 0 - Bản sao: 1"
+      },
+      {
+        "heading": "Cơ quan thực hiện",
+        "text_verbatim": "Ủy ban nhân dân cấp xã"
+      },
+      {
+        "heading": "Yêu cầu, điều kiện thực hiện",
+        "text_verbatim": "(i) Hộ kinh doanh được cấp Giấy chứng nhận đăng ký hộ kinh doanh khi có đủ các điều kiện sau đây:\n- Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh;\n- Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP;\n- Có hồ sơ đăng ký hộ kinh doanh hợp lệ;\n- Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định.\n(ii) Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử được chấp thuận khi có đầy đủ các yêu cầu sau:\n- Có đầy đủ các giấy tờ và nội dung các giấy tờ đó được kê khai đầy đủ theo quy định như hồ sơ đăng ký hộ kinh doanh bằng bản giấy và được thể hiện dưới dạng văn bản điện tử. Tên văn bản điện tử phải được đặt tương ứng với tên loại giấy tờ trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy. Chủ hộ kinh doanh, các thành viên hộ gia đình hoặc cá nhân khác ký tên trong hồ sơ đăng ký hộ kinh doanh có thể sử dụng chữ ký số để ký trực tiếp trên văn bản điện tử hoặc ký trực tiếp trên văn bản giấy và quét (scan) văn bản giấy theo các định dạng quy định tại khoản 2 Điều 5g (bổ sung tại Khoản 2 Điều 1 Thông tư số 02/2023/TT-BKHĐT ngày 18/4/2023 của Bộ Kế hoạch và Đầu tư sửa đổi, bổ sung một số điều của Thông tư số 01/2021/TT-BKHĐT);\n- Các thông tin đăng ký hộ kinh doanh được kê khai trên hệ thống thông tin về đăng ký hộ kinh doanh phải được nhập đầy đủ và chính xác theo các thông tin trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy; trong đó có thông tin về số điện thoại, thư điện tử của người nộp hồ sơ;\n- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP."
+      },
+      {
+        "heading": "Thông tin dịch vụ và đối tượng thực hiện",
+        "text_verbatim": "Đăng ký thành lập hộ kinh doanh\nToàn trình\nCơ quan thực hiện: Bộ Tài chính\nĐối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+      }
+    ]
+  },
+  "published_on": null,
+  "updated_on": null,
+  "analysis": {
+    "readiness": "blocked",
+    "facts_ready": true,
+    "evidence_status": {},
+    "issues": [
+      "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    ],
+    "summary": "Đăng ký thành lập hộ kinh doanh — ",
+    "report": {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "code": "1.001612",
+      "name": "Đăng ký thành lập hộ kinh doanh",
+      "issues": [
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      ],
+      "run_id": "470b0215-1e16-4950-b1af-db4a4b73169a",
+      "status": "blocked",
+      "profile": {
+        "path": "data/runs/470b0215-1e16-4950-b1af-db4a4b73169a/profile/profile.json",
+        "profile_id": 18,
+        "validation": {
+          "schema": true,
+          "attempts": [
+            {
+              "status": "validated",
+              "attempt": 1
+            }
+          ],
+          "identity": true,
+          "form_hashes": true,
+          "citations_verified": 92
+        },
+        "output_sha256": "4d98bcc497727d6f1a29a8111ff89ce09bf8773054d8e1637dfb391460d316d6"
+      },
+      "documents": [],
+      "freshness": {
+        "status": "source_captured_not_legally_reverified",
+        "procedure_updated_on": null
+      },
+      "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+      "acquisition": [
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+          "mode": "live",
+          "sha256": "ac6671ec62c41909aeb6d8c7ac952be7009e704f1159b3e7a9d10d9f5c43d834",
+          "raw_path": "data/_store/html/ac6671ec62c41909aeb6d8c7ac952be7009e704f1159b3e7a9d10d9f5c43d834",
+          "fetched_at": "2026-10-31T08:11:35.928853+00:00"
+        },
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+          "mode": "resolved_live",
+          "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+          "raw_path": "data/_store/html/10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+          "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+          "input_name": "Đăng ký thành lập hộ kinh doanh",
+          "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+          "resolved_name": "Đăng ký thành lập hộ kinh doanh",
+          "title_changed": false
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        }
+      ],
+      "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+      "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+      "facts_ready": true,
+      "primary_forms": [
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+          "label": "Mauso1GiaydenghidangkyHKD.docx"
+        }
+      ],
+      "primary_source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "raw_path": "data/_store/html/10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+      },
+      "attachment_page": null
+    }
+  },
+  "structured_profile": {
+    "id": 18,
+    "run_id": "470b0215-1e16-4950-b1af-db4a4b73169a",
+    "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+    "profile": {
+      "issues": [
+        "Draft extraction for validation and review; current legal validity is not established by the supplied retrieval timestamp.",
+        "Implementing-authority information is inconsistent: the process and implementation sections identify commune-level bodies, while the service-information section identifies Bộ Tài chính.",
+        "The service-information applicant categories include organizations, while the procedural and documentary text focuses on the founder, owner and family members. Their relationship requires review; neither source statement has been discarded.",
+        "The personal legal-document row is retained as one listed document requirement: owner documents are required, while family-member documents apply when family members register together.",
+        "Online requirements contain cumulative obligations and alternative signing methods. These are preserved in guidance, not treated as fully executable legal-compliance tests.",
+        "Unknown or missing answers must remain unknown and must not be treated as a finding of ineligibility.",
+        "No form revision, replacement relationship or hash association has been inferred from the filename in the dossier table."
+      ],
+      "aliases": [
+        {
+          "text": "Đăng ký hộ kinh doanh",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Thủ tục mở hộ kinh doanh",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Household business establishment registration",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "Register a household business",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        }
+      ],
+      "outcome": {
+        "value": "Giấy chứng nhận đăng ký hộ kinh doanh and Thông báo về cơ quan thuế quản lý trực tiếp; applications not meeting issuance requirements receive a notice requesting amendment or supplementation.",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "Trên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "purpose": {
+        "value": "Register the establishment of a household business.",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Đăng ký thành lập hộ kinh doanh",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "authority": {
+        "value": "The implementation section identifies Ủy ban nhân dân cấp xã, and the process identifies Cơ quan đăng ký kinh doanh cấp xã; the service-information section instead identifies Bộ Tài chính.",
+        "status": "conflict",
+        "conflicts": [
+          "The supplied sections name different implementing authorities; their respective roles are not reconciled."
+        ],
+        "source_refs": [
+          {
+            "quote": "Ủy ban nhân dân cấp xã",
+            "locator": "section:3:Cơ quan thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Cơ quan thực hiện: Bộ Tài chính",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "exclusions": [
+        {
+          "rule_id": "excluded_organization_types",
+          "condition": {
+            "values": [
+              "enterprise",
+              "cooperative"
+            ],
+            "children": [],
+            "operator": "in",
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "applicant_category"
+          },
+          "statement": {
+            "value": "The listed organization applicant category expressly excludes enterprises and cooperatives.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        }
+      ],
+      "supersedes": [],
+      "action_type": [
+        {
+          "value": "register",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "official_name: Đăng ký thành lập hộ kinh doanh",
+              "locator": "identity",
+              "source_id": "primary"
+            }
+          ]
+        }
+      ],
+      "effective_to": {
+        "value": null,
+        "status": "unknown",
+        "conflicts": [],
+        "source_refs": []
+      },
+      "jurisdiction": {
+        "value": "Registration is filed with the commune-level business registration authority where the household business has its head office.",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "official_name": {
+        "value": "Đăng ký thành lập hộ kinh doanh",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Đăng ký thành lập hộ kinh doanh",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "effective_from": {
+        "value": null,
+        "status": "unknown",
+        "conflicts": [],
+        "source_refs": []
+      },
+      "procedure_code": {
+        "value": "1.001612",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "procedure_code: 1.001612",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "authority_level": {
+        "value": "cấp xã",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "Ủy ban nhân dân cấp xã",
+            "locator": "section:3:Cơ quan thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "example_requests": [
+        {
+          "text": "Tôi muốn đăng ký thành lập hộ kinh doanh.",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Gia đình tôi cùng mở hộ kinh doanh thì cần giấy tờ gì?",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Tôi muốn nộp hồ sơ đăng ký hộ kinh doanh trực tuyến bằng chữ ký số.",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "I want to register a new household business.",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "What documents do we need if family members register a household business together?",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "How can I submit a household business registration online using a digital signature?",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        }
+      ],
+      "decision_criteria": [
+        {
+          "question": "Do you want to register the establishment of a household business?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "official_name: Đăng ký thành lập hộ kinh doanh",
+              "locator": "identity",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "requested_action",
+          "answer_options": [
+            {
+              "label": "Register the establishment of a household business",
+              "value": "register",
+              "source_refs": [
+                {
+                  "quote": "official_name: Đăng ký thành lập hộ kinh doanh",
+                  "locator": "identity",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Which applicant category describes you or the applicant organization?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "applicant_category",
+          "answer_options": [
+            {
+              "label": "Vietnamese citizen",
+              "value": "vietnamese_citizen",
+              "source_refs": [
+                {
+                  "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "Organization other than an enterprise or cooperative",
+              "value": "organization_other_than_enterprise_or_cooperative",
+              "source_refs": [
+                {
+                  "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "Enterprise",
+              "value": "enterprise",
+              "source_refs": [
+                {
+                  "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "Cooperative",
+              "value": "cooperative",
+              "source_refs": [
+                {
+                  "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Will you submit the registration in person or online?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "Trực tiếp",
+              "locator": "method:0",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Trực tuyến",
+              "locator": "method:1",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel",
+          "answer_options": [
+            {
+              "label": "In person",
+              "value": "in_person",
+              "source_refs": [
+                {
+                  "quote": "Trực tiếp",
+                  "locator": "method:0",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "Online using a digital signature",
+              "value": "online",
+              "source_refs": [
+                {
+                  "quote": "Trực tuyến",
+                  "locator": "method:1",
+                  "source_id": "primary"
+                },
+                {
+                  "quote": "Trường hợp đăng ký qua mạng điện tử sử dụng chữ ký số:",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Are family members registering the household business together?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            },
+            {
+              "quote": "(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            },
+            {
+              "quote": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "family_members_registering",
+          "answer_options": [
+            {
+              "label": "Yes, family members are registering together",
+              "value": "yes",
+              "source_refs": [
+                {
+                  "quote": "(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+                  "locator": "requirement:2",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "No",
+              "value": "no",
+              "source_refs": [
+                {
+                  "quote": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+                  "locator": "requirement:3",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Whose digital signature will authenticate the online registration dossier?",
+          "condition": {
+            "values": [
+              "online"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          },
+          "source_refs": [
+            {
+              "quote": "- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "online_authenticator",
+          "answer_options": [
+            {
+              "label": "The household business owner's",
+              "value": "owner",
+              "source_refs": [
+                {
+                  "quote": "- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh.",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "A representative authorized by the owner",
+              "value": "authorized_representative",
+              "source_refs": [
+                {
+                  "quote": "- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        }
+      ],
+      "eligibility_rules": [
+        {
+          "rule_id": "listed_applicant_categories",
+          "condition": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "vietnamese_citizen"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "applicant_category"
+              },
+              {
+                "values": [
+                  "organization_other_than_enterprise_or_cooperative"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "applicant_category"
+              }
+            ],
+            "operator": "or",
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "The service lists Vietnamese citizens OR organizations other than enterprises and cooperatives as applicant categories.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "certificate_issuance_requirements",
+          "condition": {
+            "values": [],
+            "children": [
+              {
+                "values": [],
+                "children": [],
+                "operator": "unknown",
+                "source_refs": [
+                  {
+                    "quote": "- Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh;",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": null
+              },
+              {
+                "values": [],
+                "children": [],
+                "operator": "unknown",
+                "source_refs": [
+                  {
+                    "quote": "- Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP;",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": null
+              },
+              {
+                "values": [],
+                "children": [],
+                "operator": "unknown",
+                "source_refs": [
+                  {
+                    "quote": "- Có hồ sơ đăng ký hộ kinh doanh hợp lệ;",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": null
+              },
+              {
+                "values": [],
+                "children": [],
+                "operator": "unknown",
+                "source_refs": [
+                  {
+                    "quote": "- Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định.",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": null
+              }
+            ],
+            "operator": "and",
+            "source_refs": [
+              {
+                "quote": "(i) Hộ kinh doanh được cấp Giấy chứng nhận đăng ký hộ kinh doanh khi có đủ các điều kiện sau đây:\n- Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh;\n- Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP;\n- Có hồ sơ đăng ký hộ kinh doanh hợp lệ;\n- Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "All four requirements must be met: the registered business activities are not prohibited; the household business name complies with Article 88 of Decree 01/2021/NĐ-CP; the registration dossier is valid; and the prescribed registration fee has been paid in full. The substantive legal tests are retained for review rather than converted into guessed executable predicates.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(i) Hộ kinh doanh được cấp Giấy chứng nhận đăng ký hộ kinh doanh khi có đủ các điều kiện sau đây:\n- Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh;\n- Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP;\n- Có hồ sơ đăng ký hộ kinh doanh hợp lệ;\n- Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "online_dossier_requirements",
+          "condition": {
+            "values": [
+              "online"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "(ii) Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử được chấp thuận khi có đầy đủ các yêu cầu sau:",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          },
+          "statement": {
+            "value": "Online acceptance requires all of the following: all documents and their contents required for a paper dossier must be fully provided electronically, with electronic filenames corresponding to the paper document types; registration information entered on the system must be complete and accurate against the paper dossier, including the submitter's telephone number and email; and the dossier must be authenticated using the digital signature of the owner or the owner's authorized representative. Persons signing dossier documents may either digitally sign the electronic document OR sign paper documents and scan them in the referenced prescribed formats. Authorized online filing additionally requires the documents referenced in Article 84(4) of Decree 01/2021/NĐ-CP.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(ii) Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử được chấp thuận khi có đầy đủ các yêu cầu sau:\n- Có đầy đủ các giấy tờ và nội dung các giấy tờ đó được kê khai đầy đủ theo quy định như hồ sơ đăng ký hộ kinh doanh bằng bản giấy và được thể hiện dưới dạng văn bản điện tử. Tên văn bản điện tử phải được đặt tương ứng với tên loại giấy tờ trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy. Chủ hộ kinh doanh, các thành viên hộ gia đình hoặc cá nhân khác ký tên trong hồ sơ đăng ký hộ kinh doanh có thể sử dụng chữ ký số để ký trực tiếp trên văn bản điện tử hoặc ký trực tiếp trên văn bản giấy và quét (scan) văn bản giấy theo các định dạng quy định tại khoản 2 Điều 5g (bổ sung tại Khoản 2 Điều 1 Thông tư số 02/2023/TT-BKHĐT ngày 18/4/2023 của Bộ Kế hoạch và Đầu tư sửa đổi, bổ sung một số điều của Thông tư số 01/2021/TT-BKHĐT);\n- Các thông tin đăng ký hộ kinh doanh được kê khai trên hệ thống thông tin về đăng ký hộ kinh doanh phải được nhập đầy đủ và chính xác theo các thông tin trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy; trong đó có thông tin về số điện thoại, thư điện tử của người nộp hồ sơ;\n- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "family_member_document_scope",
+          "condition": {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "family_members_registering"
+          },
+          "statement": {
+            "value": "Personal legal documents cover the owner and, where family members register the household business, those family members. Family-member registration also requires a copy of their establishment meeting minutes and a copy of their authorization of one member as household business owner.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              },
+              {
+                "quote": "(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              },
+              {
+                "quote": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "tax_information_processing",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [
+              {
+                "quote": "Hệ thống ứng dụng đăng ký thuế nhận thông tin đăng ký thành lập hộ kinh doanh từ hệ thống thông tin về đăng ký hộ kinh doanh truyền sang và tự động kiểm tra sự phù hợp của thông tin theo quy định của pháp luật về đăng ký thuế.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "When the dossier meets certificate-issuance requirements, registration information is transmitted to the tax registration system for automatic conformity checks. If conforming, that system creates the household business number, assigns the managing tax authority and returns the information. If nonconforming, it returns a nonconformity response. The registration authority uses the returned information to issue the certificate and tax-authority notice or request dossier correction.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "+ Khi hồ sơ đăng ký hộ kinh doanh đủ điều kiện để được cấp Giấy chứng nhận đăng ký hộ kinh doanh, hệ thống thông tin về đăng ký hộ kinh doanh truyền thông tin đăng ký thành lập hộ kinh doanh sang Hệ thống ứng dụng đăng ký thuế;\nHệ thống ứng dụng đăng ký thuế nhận thông tin đăng ký thành lập hộ kinh doanh từ hệ thống thông tin về đăng ký hộ kinh doanh truyền sang và tự động kiểm tra sự phù hợp của thông tin theo quy định của pháp luật về đăng ký thuế.\n+ Trường hợp thông tin phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động tạo mã số hộ kinh doanh và thực hiện phân cấp cơ quan thuế quản lý đối với hộ kinh doanh; đồng thời truyền các thông tin này sang hệ thống thông tin về đăng ký hộ kinh doanh.\n+ Trường hợp thông tin không phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động phản hồi về việc thông tin không phù hợp và truyền sang hệ thống thông tin về đăng ký hộ kinh doanh;\nTrên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "invalid_dossier_notification",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [
+              {
+                "quote": "- Trường hợp hồ sơ không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã phải thông báo bằng văn bản cho người nộp hồ sơ hoặc người thành lập hộ kinh doanh biết.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "For an invalid dossier, the commune-level business registration authority must give the submitter or founder written notification within three working days of receipt, stating the reasons and any required amendments or supplements.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Trường hợp hồ sơ không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã phải thông báo bằng văn bản cho người nộp hồ sơ hoặc người thành lập hộ kinh doanh biết. Thông báo phải nêu rõ lý do và các yêu cầu sửa đổi, bổ sung hồ sơ (nếu có).",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        }
+      ],
+      "form_relationships": [],
+      "required_documents": [
+        {
+          "name": {
+            "value": "Giấy đề nghị đăng ký hộ kinh doanh",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(i) Giấy đề nghị đăng ký hộ kinh doanh;",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [],
+            "children": [],
+            "operator": "true",
+            "source_refs": [
+              {
+                "quote": "Bao gồm\n(i) Giấy đề nghị đăng ký hộ kinh doanh;\nBản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        },
+        {
+          "name": {
+            "value": "Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 1",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 1",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [],
+            "children": [],
+            "operator": "true",
+            "source_refs": [
+              {
+                "quote": "Bao gồm\n(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        },
+        {
+          "name": {
+            "value": "Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 1",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 1",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "family_members_registering"
+          }
+        },
+        {
+          "name": {
+            "value": "Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 1",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 1",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "family_members_registering"
+          }
+        },
+        {
+          "name": {
+            "value": "Giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "originals": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "online"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "submission_channel"
+              },
+              {
+                "values": [
+                  "authorized_representative"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "online_authenticator"
+              }
+            ],
+            "operator": "and",
+            "source_refs": [
+              {
+                "quote": "Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        }
+      ],
+      "missing_information": [
+        "Neither procedure effective dates nor supersession information is supplied.",
+        "Both channel fee entries state only “Lệ phí: Đồng”; no amount, calculation, exemption or payment instructions are supplied. This does not establish that the service is free.",
+        "The referenced naming, prohibited-activity, dossier-validity and tax-conformity legal tests are not fully supplied and cannot be evaluated from these records alone.",
+        "The contents, quantities and certification requirements of the additional documents referenced in Article 84(4) of Decree 01/2021/NĐ-CP are not supplied.",
+        "The electronic scan formats are referenced to other provisions but are not listed in the supplied records.",
+        "No document certification requirements are specified.",
+        "The personal legal-document row gives one copy for the row but does not expressly explain whether that quantity is per person; its owner scope and conditional family-member scope are retained without multiplying the quantity.",
+        "The dossier table names Mauso1GiaydenghidangkyHKD.docx, but no associated form record, file hash, form content, code, revision, effective dates or version-specific responsibilities are supplied."
+      ],
+      "submission_channels": [
+        {
+          "fees": [
+            {
+              "value": "Lệ phí: Đồng",
+              "status": "supported",
+              "conflicts": [],
+              "source_refs": [
+                {
+                  "quote": "Lệ phí: Đồng",
+                  "locator": "method:0",
+                  "source_id": "primary"
+                }
+              ]
+            }
+          ],
+          "channel": {
+            "value": "Trực tiếp",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trực tiếp",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "conditions": {
+            "value": "The founder or household business registers with the commune-level business registration authority where the household business has its head office.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "description": {
+            "value": "The method table's description is “Thời hạn giải quyết”. The authority gives a receipt when accepting the dossier; the process provides for issuance or a notice requesting correction.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trực tiếp\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nThời hạn giải quyết\nLệ phí: Đồng",
+                "locator": "method:0",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Khi tiếp nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã trao Giấy biên nhận cho hộ kinh doanh.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Trên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "processing_time": {
+            "value": "Within 03 working days from receipt of a complete, valid dossier.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          }
+        },
+        {
+          "fees": [
+            {
+              "value": "Lệ phí: Đồng",
+              "status": "supported",
+              "conflicts": [],
+              "source_refs": [
+                {
+                  "quote": "Lệ phí: Đồng",
+                  "locator": "method:1",
+                  "source_id": "primary"
+                }
+              ]
+            }
+          ],
+          "channel": {
+            "value": "Trực tuyến",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trực tuyến",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "conditions": {
+            "value": "Online registration uses a digital signature. The electronic dossier must meet all online requirements, including complete electronic documents and accurate system data, and authentication by the owner or an authorized representative; authorized filing requires the additional referenced authorization documents.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp đăng ký qua mạng điện tử sử dụng chữ ký số:",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Các thông tin đăng ký hộ kinh doanh được kê khai trên hệ thống thông tin về đăng ký hộ kinh doanh phải được nhập đầy đủ và chính xác theo các thông tin trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy; trong đó có thông tin về số điện thoại, thư điện tử của người nộp hồ sơ;\n- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Có đầy đủ các giấy tờ và nội dung các giấy tờ đó được kê khai đầy đủ theo quy định như hồ sơ đăng ký hộ kinh doanh bằng bản giấy và được thể hiện dưới dạng văn bản điện tử.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "description": {
+            "value": "The method table's description is “Thời hạn giải quyết”; the service is labelled “Toàn trình”. The submitter enters information, uploads electronic documents and digitally authenticates the dossier on the household business registration system. The commune-level authority returns the receipt and result electronically through that system.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trực tuyến\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nThời hạn giải quyết\nLệ phí: Đồng",
+                "locator": "method:1",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Đăng ký thành lập hộ kinh doanh\nToàn trình",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Người nộp hồ sơ đăng ký hộ kinh doanh kê khai thông tin, tải văn bản điện tử, sử dụng chữ ký số để ký xác thực hồ sơ đăng ký hộ kinh doanh theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.\n- Cơ quan đăng ký kinh doanh cấp xã trả giấy biên nhận hồ sơ và kết quả giải quyết thủ tục đăng ký hộ kinh doanh cho người nộp hồ sơ qua mạng thông tin điện tử theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "processing_time": {
+            "value": "Within 03 working days from receipt of a complete, valid dossier.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          }
+        }
+      ],
+      "applicant_categories": [
+        {
+          "value": "Công dân Việt Nam",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        {
+          "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "procedure_code: 1.001612\nofficial_name: Đăng ký thành lập hộ kinh doanh",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "identity",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Trường hợp đăng ký trực tiếp:\n- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.\n- Khi tiếp nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã trao Giấy biên nhận cho hộ kinh doanh.\n+ Khi hồ sơ đăng ký hộ kinh doanh đủ điều kiện để được cấp Giấy chứng nhận đăng ký hộ kinh doanh, hệ thống thông tin về đăng ký hộ kinh doanh truyền thông tin đăng ký thành lập hộ kinh doanh sang Hệ thống ứng dụng đăng ký thuế;\nHệ thống ứng dụng đăng ký thuế nhận thông tin đăng ký thành lập hộ kinh doanh từ hệ thống thông tin về đăng ký hộ kinh doanh truyền sang và tự động kiểm tra sự phù hợp của thông tin theo quy định của pháp luật về đăng ký thuế.\n+ Trường hợp thông tin phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động tạo mã số hộ kinh doanh và thực hiện phân cấp cơ quan thuế quản lý đối với hộ kinh doanh; đồng thời truyền các thông tin này sang hệ thống thông tin về đăng ký hộ kinh doanh.\n+ Trường hợp thông tin không phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động phản hồi về việc thông tin không phù hợp và truyền sang hệ thống thông tin về đăng ký hộ kinh doanh;\nTrên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ.\nCơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh cho hộ kinh doanh trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ.\n- Trường hợp hồ sơ không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã phải thông báo bằng văn bản cho người nộp hồ sơ hoặc người thành lập hộ kinh doanh biết. Thông báo phải nêu rõ lý do và các yêu cầu sửa đổi, bổ sung hồ sơ (nếu có).\nTrường hợp đăng ký qua mạng điện tử sử dụng chữ ký số:\n- Người nộp hồ sơ đăng ký hộ kinh doanh kê khai thông tin, tải văn bản điện tử, sử dụng chữ ký số để ký xác thực hồ sơ đăng ký hộ kinh doanh theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.\n- Cơ quan đăng ký kinh doanh cấp xã trả giấy biên nhận hồ sơ và kết quả giải quyết thủ tục đăng ký hộ kinh doanh cho người nộp hồ sơ qua mạng thông tin điện tử theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "section:0:Trình tự thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nLệ phí: Đồng\nThời hạn giải quyết\nTrực tuyến\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nLệ phí: Đồng\nThời hạn giải quyết",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "section:1:Cách thức thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n(i) Giấy đề nghị đăng ký hộ kinh doanh;\nMauso1GiaydenghidangkyHKD.docx\nBản chính: 1 - Bản sao: 0\n(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1\n(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1\n(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.\nBản chính: 0 - Bản sao: 1",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "section:2:Thành phần hồ sơ",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Ủy ban nhân dân cấp xã",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "section:3:Cơ quan thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "(i) Hộ kinh doanh được cấp Giấy chứng nhận đăng ký hộ kinh doanh khi có đủ các điều kiện sau đây:\n- Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh;\n- Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP;\n- Có hồ sơ đăng ký hộ kinh doanh hợp lệ;\n- Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định.\n(ii) Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử được chấp thuận khi có đầy đủ các yêu cầu sau:\n- Có đầy đủ các giấy tờ và nội dung các giấy tờ đó được kê khai đầy đủ theo quy định như hồ sơ đăng ký hộ kinh doanh bằng bản giấy và được thể hiện dưới dạng văn bản điện tử. Tên văn bản điện tử phải được đặt tương ứng với tên loại giấy tờ trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy. Chủ hộ kinh doanh, các thành viên hộ gia đình hoặc cá nhân khác ký tên trong hồ sơ đăng ký hộ kinh doanh có thể sử dụng chữ ký số để ký trực tiếp trên văn bản điện tử hoặc ký trực tiếp trên văn bản giấy và quét (scan) văn bản giấy theo các định dạng quy định tại khoản 2 Điều 5g (bổ sung tại Khoản 2 Điều 1 Thông tư số 02/2023/TT-BKHĐT ngày 18/4/2023 của Bộ Kế hoạch và Đầu tư sửa đổi, bổ sung một số điều của Thông tư số 01/2021/TT-BKHĐT);\n- Các thông tin đăng ký hộ kinh doanh được kê khai trên hệ thống thông tin về đăng ký hộ kinh doanh phải được nhập đầy đủ và chính xác theo các thông tin trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy; trong đó có thông tin về số điện thoại, thư điện tử của người nộp hồ sơ;\n- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Đăng ký thành lập hộ kinh doanh\nToàn trình\nCơ quan thực hiện: Bộ Tài chính\nĐối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Bao gồm\n(i) Giấy đề nghị đăng ký hộ kinh doanh;\nBản chính: 1 - Bản sao: 0",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "requirement:0",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Bao gồm\n(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "requirement:1",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Bao gồm\n(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "requirement:2",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Bao gồm\n(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.\nBản chính: 0 - Bản sao: 1",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "requirement:3",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Trực tiếp\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nThời hạn giải quyết\nLệ phí: Đồng",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "method:0",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "kind": "procedure",
+        "text": "Trực tuyến\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nThời hạn giải quyết\nLệ phí: Đồng",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+        "locator": "method:1",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "snapshot_id": 51
+      }
+    ],
+    "metadata": {
+      "validation": {
+        "schema": true,
+        "attempts": [
+          {
+            "status": "validated",
+            "attempt": 1
+          }
+        ],
+        "identity": true,
+        "form_hashes": true,
+        "citations_verified": 92
+      },
+      "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+      "extracted_at": "2026-10-31T08:13:05.064384+00:00",
+      "input_sha256": "e0c09219ef5255b68293fd74ee89d79359a37213b0dfb7bf72716d6ce189e010",
+      "output_sha256": "4d98bcc497727d6f1a29a8111ff89ce09bf8773054d8e1637dfb391460d316d6",
+      "model_metadata": {
+        "model": "gpt-6.1-sol",
+        "usage": {
+          "input_tokens": 5762,
+          "total_tokens": 18396,
+          "output_tokens": 12634,
+          "input_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 5759
+          },
+          "output_tokens_details": {
+            "reasoning_tokens": 515
+          }
+        },
+        "provider": "openai",
+        "response_id": "resp_0ad52b7d479ac59d016ae5a2be467487d2b456e79f09e41408",
+        "reasoning_effort": "medium",
+        "max_output_tokens": 64000
+      },
+      "extraction_status": "validated_draft"
+    },
+    "output_sha256": "4d98bcc497727d6f1a29a8111ff89ce09bf8773054d8e1637dfb391460d316d6"
+  },
+  "facts": [
+    {
+      "id": 177,
+      "snapshot_id": 51,
+      "kind": "steps",
+      "position": 0,
+      "text_verbatim": "- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh. - Khi tiếp nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã trao Giấy biên nhận cho hộ kinh doanh. + Khi hồ sơ đăng ký hộ kinh doanh đủ điều kiện để được cấp Giấy chứng nhận đăng ký hộ kinh doanh, hệ thống thông tin về đăng ký hộ kinh doanh truyền thông tin đăng ký thành lập hộ kinh doanh sang Hệ thống ứng dụng đăng ký thuế; Hệ thống ứng dụng đăng ký thuế nhận thông tin đăng ký thành lập hộ kinh doanh từ hệ thống thông tin về đăng ký hộ kinh doanh truyền sang và tự động kiểm tra sự phù hợp của thông tin theo quy định của pháp luật về đăng ký thuế. + Trường hợp thông tin phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động tạo mã số hộ kinh doanh và thực hiện phân cấp cơ quan thuế quản lý đối với hộ kinh doanh; đồng thời truyền các thông tin này sang hệ thống thông tin về đăng ký hộ kinh doanh. + Trường hợp thông tin không phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động phản hồi về việc thông tin không phù hợp và truyền sang hệ thống thông tin về đăng ký hộ kinh doanh; Trên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ. Cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh cho hộ kinh doanh trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ. - Trường hợp hồ sơ không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã phải thông báo bằng văn bản cho người nộp hồ sơ hoặc người thành lập hộ kinh doanh biết. Thông báo phải nêu rõ lý do và các yêu cầu sửa đổi, bổ sung hồ sơ (nếu có).",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    },
+    {
+      "id": 178,
+      "snapshot_id": 51,
+      "kind": "steps",
+      "position": 1,
+      "text_verbatim": "- Người nộp hồ sơ đăng ký hộ kinh doanh kê khai thông tin, tải văn bản điện tử, sử dụng chữ ký số để ký xác thực hồ sơ đăng ký hộ kinh doanh theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh. - Cơ quan đăng ký kinh doanh cấp xã trả giấy biên nhận hồ sơ và kết quả giải quyết thủ tục đăng ký hộ kinh doanh cho người nộp hồ sơ qua mạng thông tin điện tử theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    },
+    {
+      "id": 179,
+      "snapshot_id": 51,
+      "kind": "agency",
+      "position": 0,
+      "text_verbatim": "Ủy ban nhân dân cấp xã",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    },
+    {
+      "id": 180,
+      "snapshot_id": 51,
+      "kind": "conditions",
+      "position": 0,
+      "text_verbatim": "(i) Hộ kinh doanh được cấp Giấy chứng nhận đăng ký hộ kinh doanh khi có đủ các điều kiện sau đây: - Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh; - Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP; - Có hồ sơ đăng ký hộ kinh doanh hợp lệ; - Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định. (ii) Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử được chấp thuận khi có đầy đủ các yêu cầu sau: - Có đầy đủ các giấy tờ và nội dung các giấy tờ đó được kê khai đầy đủ theo quy định như hồ sơ đăng ký hộ kinh doanh bằng bản giấy và được thể hiện dưới dạng văn bản điện tử. Tên văn bản điện tử phải được đặt tương ứng với tên loại giấy tờ trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy. Chủ hộ kinh doanh, các thành viên hộ gia đình hoặc cá nhân khác ký tên trong hồ sơ đăng ký hộ kinh doanh có thể sử dụng chữ ký số để ký trực tiếp trên văn bản điện tử hoặc ký trực tiếp trên văn bản giấy và quét (scan) văn bản giấy theo các định dạng quy định tại khoản 2 Điều 5g (bổ sung tại Khoản 2 Điều 1 Thông tư số 02/2023/TT-BKHĐT ngày 18/4/2023 của Bộ Kế hoạch và Đầu tư sửa đổi, bổ sung một số điều của Thông tư số 01/2021/TT-BKHĐT); - Các thông tin đăng ký hộ kinh doanh được kê khai trên hệ thống thông tin về đăng ký hộ kinh doanh phải được nhập đầy đủ và chính xác theo các thông tin trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy; trong đó có thông tin về số điện thoại, thư điện tử của người nộp hồ sơ; - Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    }
+  ],
+  "requirements": [
+    {
+      "id": 437,
+      "snapshot_id": 51,
+      "position": 0,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "(i) Giấy đề nghị đăng ký hộ kinh doanh;",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+      "form_ids": [
+        163
+      ]
+    },
+    {
+      "id": 438,
+      "snapshot_id": 51,
+      "position": 1,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+      "originals": 0,
+      "copies": 1,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+      "form_ids": []
+    },
+    {
+      "id": 439,
+      "snapshot_id": 51,
+      "position": 2,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;",
+      "originals": 0,
+      "copies": 1,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+      "form_ids": []
+    },
+    {
+      "id": 440,
+      "snapshot_id": 51,
+      "position": 3,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.",
+      "originals": 0,
+      "copies": 1,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+      "form_ids": []
+    }
+  ],
+  "methods": [
+    {
+      "id": 138,
+      "snapshot_id": 51,
+      "position": 0,
+      "method": "Trực tiếp",
+      "processing_time_verbatim": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+      "description_verbatim": "Thời hạn giải quyết",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    },
+    {
+      "id": 139,
+      "snapshot_id": 51,
+      "position": 1,
+      "method": "Trực tuyến",
+      "processing_time_verbatim": "Trong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.",
+      "description_verbatim": "Thời hạn giải quyết",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    }
+  ],
+  "fees": [
+    {
+      "id": 241,
+      "snapshot_id": 51,
+      "method": "Trực tiếp",
+      "text_verbatim": "Lệ phí: Đồng",
+      "amount": null,
+      "currency": null,
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(1366362)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    },
+    {
+      "id": 242,
+      "snapshot_id": 51,
+      "method": "Trực tuyến",
+      "text_verbatim": "Lệ phí: Đồng",
+      "amount": null,
+      "currency": null,
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(1366363)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+    }
+  ],
+  "forms": [
+    {
+      "id": 163,
+      "snapshot_id": 51,
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+      "label": "Mauso1GiaydenghidangkyHKD.docx",
+      "form_sha256": null,
+      "fetched_at": null,
+      "association_method": "direct_download",
+      "review_status": null,
+      "revision_reference": null,
+      "issued_on": null,
+      "effective_from": null,
+      "raw_path": null,
+      "pdf_path": null,
+      "linked_from": {
+        "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+        "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+        "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe"
+      },
+      "original_download_url": null
+    }
+  ],
+  "shared_forms": []
+}

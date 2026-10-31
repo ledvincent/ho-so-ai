@@ -1,0 +1,90 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+  "code": "1.010912",
+  "name": "Đăng ký sang tên, di chuyển xe mô tô, xe gắn máy tại Công an cấp xã được phân cấp đăng ký xe",
+  "issues": [
+    "Empty fee cell for Dịch vụ bưu chính",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "04b5542e-6da4-48a5-9f63-3ee2d8fe3322",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 27,
+    "output_sha256": "b63c8fb7294bc34f61aa43cd963996747dfc19b0676f20e54b1ad619e7df4fdb",
+    "validation": {
+      "schema": true,
+      "citations_verified": 149,
+      "identity": true,
+      "form_hashes": true
+    }
+  },
+  "documents": [],
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+      "mode": "live",
+      "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+      "raw_path": "data/_store/html/518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+      "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": false,
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558",
+      "label": "5. Mẫu giấy khai thu hồi đăng ký, biển số xe.doc.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e",
+      "label": "4. Mẫu giấy khai đăng ký xe.docx"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "raw_path": "data/_store/html/518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94",
+      "raw_path": "data/forms/_objects/e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94/DKX13--e75f12ac5803.pdf",
+      "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+      "page_url": "https://chinhphu.vn/?classid=1&docid=208348&pageid=27160&typegroupid=6",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1",
+      "raw_path": "data/forms/_objects/d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1/DKX12--d613872ab712.pdf",
+      "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+      "page_url": "https://chinhphu.vn/?classid=1&docid=208348&pageid=27160&typegroupid=6",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ],
+  "parent_run_id": "56aae0ef-bd14-4840-aa09-26567e5cfe12",
+  "operation": "recover_official_forms"
+}

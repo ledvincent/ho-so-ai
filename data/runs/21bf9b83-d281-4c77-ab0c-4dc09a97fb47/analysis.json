@@ -1,0 +1,74 @@
+{
+  "run_id": "21bf9b83-d281-4c77-ab0c-4dc09a97fb47",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=2.002621",
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=2.002621",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": null,
+  "documents": [],
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc532f38905624: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc532f38905624'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=2.002621",
+      "mode": "live",
+      "sha256": "5b2e4e7880b2714d5bbd752e06f5cdf2b56b68ca75720d51ce08f8ba8a804659",
+      "raw_path": "data/_store/html/5b2e4e7880b2714d5bbd752e06f5cdf2b56b68ca75720d51ce08f8ba8a804659",
+      "fetched_at": "2026-10-31T08:03:03.549193+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=2.002621",
+      "mode": "resolved_live",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=2.002621",
+      "sha256": "9c2d662522a8e6416a7b38f4a332569b37ec58d98cd8b756f93fc7b9340787a3",
+      "raw_path": "data/_store/html/9c2d662522a8e6416a7b38f4a332569b37ec58d98cd8b756f93fc7b9340787a3",
+      "fetched_at": "2026-10-31T08:03:06.074912+00:00",
+      "input_name": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+      "resolved_name": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc532f38905624",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc532f38905624'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "code": "2.002621",
+  "name": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=2.002621",
+    "sha256": "9c2d662522a8e6416a7b38f4a332569b37ec58d98cd8b756f93fc7b9340787a3",
+    "raw_path": "data/_store/html/9c2d662522a8e6416a7b38f4a332569b37ec58d98cd8b756f93fc7b9340787a3",
+    "fetched_at": "2026-10-31T08:03:06.074912+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc532f38905624",
+      "label": "To khai DT. Mau so 01 (khai sinh).docx"
+    }
+  ],
+  "profile": {
+    "profile_id": 8,
+    "path": "data/runs/21bf9b83-d281-4c77-ab0c-4dc09a97fb47/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 69,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "481cb15b47541dd50039ab33e743fdf888137f306e6397a9a9ed808ef8d45ca2"
+  },
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "facts_ready": true,
+  "status": "blocked"
+}

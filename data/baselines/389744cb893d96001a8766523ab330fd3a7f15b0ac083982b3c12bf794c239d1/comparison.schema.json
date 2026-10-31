@@ -1,0 +1,168 @@
+{
+  "$defs": {
+    "Citation": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "locator": {
+          "title": "Locator",
+          "type": "string"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "locator",
+        "quote"
+      ],
+      "title": "Citation",
+      "type": "object"
+    },
+    "Comparison": {
+      "additionalProperties": false,
+      "properties": {
+        "left_code": {
+          "title": "Left Code",
+          "type": "string"
+        },
+        "right_code": {
+          "title": "Right Code",
+          "type": "string"
+        },
+        "relationship_type": {
+          "enum": [
+            "different_action",
+            "different_authority_level",
+            "different_applicant_basis",
+            "related",
+            "not_established"
+          ],
+          "title": "Relationship Type",
+          "type": "string"
+        },
+        "rationale": {
+          "$ref": "#/$defs/Fact"
+        },
+        "distinguishing_criteria": {
+          "items": {
+            "$ref": "#/$defs/Difference"
+          },
+          "title": "Distinguishing Criteria",
+          "type": "array"
+        }
+      },
+      "required": [
+        "left_code",
+        "right_code",
+        "relationship_type",
+        "rationale",
+        "distinguishing_criteria"
+      ],
+      "title": "Comparison",
+      "type": "object"
+    },
+    "Difference": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_key": {
+          "title": "Criterion Key",
+          "type": "string"
+        },
+        "left": {
+          "$ref": "#/$defs/Fact"
+        },
+        "right": {
+          "$ref": "#/$defs/Fact"
+        },
+        "question": {
+          "title": "Question",
+          "type": "string"
+        }
+      },
+      "required": [
+        "criterion_key",
+        "left",
+        "right",
+        "question"
+      ],
+      "title": "Difference",
+      "type": "object"
+    },
+    "Fact": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        },
+        "status": {
+          "enum": [
+            "supported",
+            "unknown",
+            "conflict"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "source_refs": {
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "title": "Source Refs",
+          "type": "array"
+        },
+        "conflicts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Conflicts",
+          "type": "array"
+        }
+      },
+      "required": [
+        "value",
+        "status",
+        "source_refs",
+        "conflicts"
+      ],
+      "title": "Fact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "relationships": {
+      "items": {
+        "$ref": "#/$defs/Comparison"
+      },
+      "title": "Relationships",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Issues",
+      "type": "array"
+    }
+  },
+  "required": [
+    "relationships",
+    "issues"
+  ],
+  "title": "ComparisonSet",
+  "type": "object"
+}

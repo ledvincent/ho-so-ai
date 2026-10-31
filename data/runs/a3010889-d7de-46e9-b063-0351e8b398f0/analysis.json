@@ -1,0 +1,100 @@
+{
+  "run_id": "a3010889-d7de-46e9-b063-0351e8b398f0",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": null,
+  "documents": [],
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Required form codes not found in downloaded files: CT01"
+  ],
+  "baseline_id": "adf4cec6d75f411bf072eb07615817236520e1386a36ea4fc27bf2328bc5afa9",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974",
+      "mode": "live",
+      "sha256": "38a470b5cc0ad4e421631a568dd087d3714d0ae08cf8b0d297cd2b522de36ee9",
+      "raw_path": "data/_store/html/38a470b5cc0ad4e421631a568dd087d3714d0ae08cf8b0d297cd2b522de36ee9",
+      "fetched_at": "2026-10-31T07:57:08.246455+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+      "mode": "resolved_live",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974",
+      "sha256": "9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+      "raw_path": "data/_store/html/9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+      "fetched_at": "2026-10-31T07:57:11.831350+00:00",
+      "input_name": "Đăng ký tạm trú",
+      "resolved_name": "Đăng ký tạm trú",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "code": "1.004194",
+  "name": "Đăng ký tạm trú",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+    "sha256": "9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+    "raw_path": "data/_store/html/9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+    "fetched_at": "2026-10-31T07:57:11.831350+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9",
+      "label": "Mẫu CT01 _66.doc"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540",
+      "label": "Mẫu CT01 _66.doc"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86",
+      "label": "Mẫu CT01 _66.doc"
+    }
+  ],
+  "profile": {
+    "profile_id": 5,
+    "path": "data/runs/a3010889-d7de-46e9-b063-0351e8b398f0/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 118,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "rejected",
+          "error": "A source document requirement was omitted"
+        },
+        {
+          "attempt": 2,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "78e051da0ffd50ca8a63e9bf9b054bec0d33dd8347abab8fc160fdef9c70865e"
+  },
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "facts_ready": true,
+  "status": "blocked"
+}

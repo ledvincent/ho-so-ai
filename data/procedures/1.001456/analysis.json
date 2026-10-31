@@ -1,0 +1,101 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+  "code": "1.001456",
+  "name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Required form codes not found in downloaded files: TK01",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "943e1921-71fd-468d-a9a6-83c8e86ba059",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 21,
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 140
+    },
+    "output_sha256": "f650c0e6658f71737ec4f8a332c9160a5f8942f92a13381f51710f5bdc855d44"
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2131",
+  "operation": "recover_official_forms",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2131",
+      "mode": "live",
+      "sha256": "2b2ac3e5b7e4b9dbe4e23f25ccdf0caaf850e223e0264fe02d780077594e2769",
+      "raw_path": "data/_store/html/2b2ac3e5b7e4b9dbe4e23f25ccdf0caaf850e223e0264fe02d780077594e2769",
+      "fetched_at": "2026-10-31T08:02:59.282156+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "mode": "resolved_live",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "raw_path": "data/_store/html/422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "input_name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2131",
+      "resolved_name": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "parent_run_id": "d71258d2-51a5-49f6-b140-338afab842e2",
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412",
+      "label": "Mau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba",
+      "label": "Mau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "raw_path": "data/_store/html/422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313",
+      "page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm",
+      "raw_path": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/TK01--91bd17903194.pdf",
+      "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641",
+      "page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm",
+      "raw_path": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/TK01a--17c0b4435d81.pdf",
+      "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ]
+}

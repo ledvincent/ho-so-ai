@@ -1,0 +1,27 @@
+{
+  "sha256": "06aa5340683ceabbccb57851bf08841e771613928bda426cb910aa4ef2e0b5fb",
+  "family": "marital-status-declaration",
+  "original": "data/forms/_objects/06aa5340683ceabbccb57851bf08841e771613928bda426cb910aa4ef2e0b5fb/19-TKcpGiyXNTTHN--06aa5340683c.doc",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": null,
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "marital-status-declaration",
+    "summary": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân",
+    "page_url": "https://muongang.dienbien.gov.vn/dev~HUYENMUONGANG~XaMuongLan/TTHC/View/?UserKey=Thu-tuc-cap-Giay-xac-nhan-tinh-trang-hon-nhan",
+    "derivation": null,
+    "fetched_at": "2026-10-31T08:46:37.842866+00:00",
+    "page_sha256": "54cc54b7990989310f37022215c6f1e13c4fcaf91414e78d1338433ea25277aa",
+    "download_url": "https://muongang.dienbien.gov.vn/Cms_Data/Contents/HUYENMUONGANG/Media/Thu_Tuc_Hanh_Chinh/123/19-TKcpGiyXNTTHN.doc",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "blank_form",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

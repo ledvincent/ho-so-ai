@@ -1,0 +1,68 @@
+[
+  {
+    "sha256": "709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba",
+    "family": "unemployment-10",
+    "original": "data/forms/_objects/709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba/unemployment-10--709f0a1483e8.pdf",
+    "pdf": "data/forms/_objects/709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba/unemployment-10--709f0a1483e8.pdf",
+    "fields": "data/forms/_objects/709f0a1483e832169e3cb3c58774470789363885b8d34b7d8274a60ec05394ba/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fa9c7a3262042f0",
+    "source_label": "Mus10tiPhlcbanhnhkmtheo_VL.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "unemployment-10",
+      "summary": "Đề nghị hưởng trợ cấp thất nghiệp",
+      "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "derivation": {
+        "pages": [
+          25
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf",
+        "original_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+        "source_pdf_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf"
+      },
+      "fetched_at": "2026-10-31T08:50:24.602367+00:00",
+      "page_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+      "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a",
+    "family": "unemployment-11",
+    "original": "data/forms/_objects/3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a/unemployment-11--3475d0b811e7.pdf",
+    "pdf": "data/forms/_objects/3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a/unemployment-11--3475d0b811e7.pdf",
+    "fields": "data/forms/_objects/3475d0b811e7dae695ffdb92d22f1f1cb408b3e857dc86ee2a247b7fe58e576a/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc833809884fb20",
+    "source_label": "Mus11tiPhlcbanhnhkmtheo_VL.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "unemployment-11",
+      "summary": "Đề nghị không hưởng trợ cấp thất nghiệp",
+      "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "derivation": {
+        "pages": [
+          26
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf",
+        "original_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+        "source_pdf_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf"
+      },
+      "fetched_at": "2026-10-31T08:50:24.602367+00:00",
+      "page_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+      "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

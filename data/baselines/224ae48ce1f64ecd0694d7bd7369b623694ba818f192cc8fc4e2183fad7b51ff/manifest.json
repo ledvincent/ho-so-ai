@@ -1,0 +1,53 @@
+{
+  "id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "version": "procedure-baseline-1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "medium",
+  "field_model": "gpt-6-astra",
+  "field_reasoning": "high",
+  "model_output_tokens": 64000,
+  "model_retry_output_tokens": 128000,
+  "profile_version": "procedure-profile-2",
+  "profile_schema_sha256": "e4a73f2d63af6f2c4f651c4cb99961174e6ed1ff933433903f465fafe889a9f6",
+  "profile_prompt_sha256": "9ac1dbfbee798e76d4b3fa571f6a6eba62301eed76344ec65a60b95d5d93c58d",
+  "field_mapping_version": "visual-fields-2",
+  "field_schema_sha256": "249d43eb25128658aec7258905d7c357679b2d9f0a62e4833b6b4aa012c95c0b",
+  "field_prompt_sha256": "33054c592c6225fcea24f986ad65748d0961b74d9efc5a77d7a140819aa15a1f",
+  "comparison_schema_sha256": "d0fc6b72482b502cf8f3ca5ca70e1dcab475dea0b8a1c9052c05cfecb3c6a2c6",
+  "comparison_prompt_sha256": "2db8e50a7437cfef2a40c2b2e99275d551b99b3a9e51c2f3b23c34e4b7e8328e",
+  "criterion_vocabulary": [
+    "requested_action",
+    "applicant_category",
+    "current_stay_basis",
+    "authority_level",
+    "submission_channel",
+    "sponsor_type",
+    "nationality",
+    "residence_location",
+    "requested_duration"
+  ],
+  "retrieval_policy": "Attempt live primary, supplementary pages and each attachment. Replay explicitly identified last-known evidence on failure; never relabel replay as a fresh fetch.",
+  "association_policy": "Successful exact fingerprint takes precedence; filename fallback only without a successful download.",
+  "validations": [
+    "strict schema",
+    "exact identity",
+    "verbatim citation membership",
+    "condition structure",
+    "known form hashes",
+    "unknown is not ineligible"
+  ],
+  "source_code_sha256": {
+    "api/analysis.py": "fcc2312e9272462c52d8f051b7bc2a128ea84767183f20437fa7355c2a121107",
+    "api/procedure_sources.py": "386268c24292871c43358f11642c468c0e87c0892bd11e6becf7deb9469841b0",
+    "api/form_catalog.py": "482050cc73f97e408cf831593130c8cfe1ea37c5a67510a2fb2134d673425caf",
+    "api/form_recovery.py": "c458e945bfaabae63bad925fa694072b153a47eff59d5fedc8851cdf3e2f2e7f",
+    "api/profiles.py": "9aa99ec5fc7a173298dbc14f74902423b0a3f8d347735fe76bdc389024f744bf",
+    "api/field_mapping.py": "eca609a0d54661d2b7cdda720b50dc3298fa92f1e953abbefa326adad4c99992",
+    "api/comparisons.py": "78562fa90e33d9850cbed5052f79ea676795e728c5087449d879a822185199f6",
+    "api/parse.py": "048e3e035cde50a12a201d03fdc175179aa78ea82367fbd163566857578a7e8d",
+    "api/attachments.py": "3e259b1098dcd2488f3a240ff49098a1bc24632d4446939f1de1a42227cd56c6",
+    "api/documents.py": "0a9c012731c1d8e3eae4f86a849f2a35ab3b266db72ffa05baf2dd006b0a4554"
+  },
+  "profile_validation_attempts": 2
+}

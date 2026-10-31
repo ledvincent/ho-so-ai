@@ -1,0 +1,19 @@
+{
+  "id": "resp_08ba99d92bdae22b016ae59fd5166087d2bca68996a8302616",
+  "model": "gpt-6.1-sol",
+  "status": "completed",
+  "incomplete_details": null,
+  "error": null,
+  "usage": {
+    "input_tokens": 19667,
+    "input_tokens_details": {
+      "cache_write_tokens": 19664,
+      "cached_tokens": 0
+    },
+    "output_tokens": 17644,
+    "output_tokens_details": {
+      "reasoning_tokens": 281
+    },
+    "total_tokens": 37311
+  }
+}

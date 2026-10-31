@@ -199,6 +199,18 @@ def read_state(token):
         raise ConversationStateError('This conversation has expired. Start a new conversation to select a procedure again.') from None
 
 
+def grouped_sources(rows):
+    groups={}
+    def order(row):
+        locator=row['locator']
+        match=re.match(r'(section|page):(\d+)',locator)
+        return (row['url'],0 if locator=='identity' else 1,int(match[2]) if match else 0,locator)
+    for row in sorted(rows,key=order):
+        group=groups.setdefault(row['url'],dict(id=row['id'],title=row['title'],url=row['url'],text=''))
+        group['text']+=row['locator']+'\n'+row['body']+'\n\n'
+    return list(groups.values())
+
+
 def evidence(release,code,query):
     """Small primary procedures remain complete; extra evidence expands to parents."""
     with engine().connect() as db:
@@ -210,7 +222,9 @@ def evidence(release,code,query):
         from api.evidence_policy import allowed
         if not ready or not allowed(ready['facts_ready'],ready['evidence_status'],ready['run_id'],ready['profile_id']): raise RuntimeError('Source is not ready or retrieval release is stale')
         rows=[dict(r) for r in db.execute(text('''SELECT id,kind,title,url,locator,body FROM rag_source
-            WHERE release_id=:r AND code=:c ORDER BY id'''),dict(r=release,c=code)).mappings()]
+            WHERE release_id=:r AND code=:c
+            AND NOT (kind='procedure' AND (locator LIKE 'requirement:%' OR locator LIKE 'method:%'))
+            ORDER BY id'''),dict(r=release,c=code)).mappings()]
     if ready['evidence_status']:
         # Include all competing evidence for reviewed small procedures. Group by
         # original URL, preserving every locator and avoiding top-k conflict loss.
@@ -242,9 +256,10 @@ def evidence(release,code,query):
     extra=[r for r in rows if r['kind']!='procedure']
     extra.sort(key=lambda r:(-vector_scores.get(r['id'],0),-len(words & set(terms(r['body']))),r['id']))
     chosen=primary+ [r for r in extra if r['id'] in vector_scores or words & set(terms(r['body']))][:min(5,max(0,20-len(primary)))]
-    if len(chosen)>20 or sum(len(r['body']) for r in chosen)>80000:
+    sources=grouped_sources(chosen)
+    if len(sources)>20 or sum(len(r['text']) for r in sources)>80000:
         raise RuntimeError('Evidence exceeds context budget; narrow the request')
-    return [dict(id=r['id'],title=r['title'],url=r['url'],text=r['locator']+'\n'+r['body']) for r in chosen]
+    return sources
 
 
 def retrieve(request):

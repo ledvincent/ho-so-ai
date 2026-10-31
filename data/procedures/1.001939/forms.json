@@ -1,0 +1,288 @@
+[
+  {
+    "sha256": "629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225",
+    "family": "TK1-TS",
+    "original": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+    "pdf": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+    "fields": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c",
+    "source_label": "Mẫu TK1-TS.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "TK1-TS",
+      "summary": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm xã hội, bảo hiểm y tế và hướng dẫn",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:50:17.590255+00:00",
+      "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe",
+    "family": "BHYT-01-TK",
+    "original": "data/forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/BHYT-01-TK--932031aea343.pdf",
+    "pdf": "data/forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/BHYT-01-TK--932031aea343.pdf",
+    "fields": "data/forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42",
+    "source_label": "Mẫu 01-TK.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "BHYT-01-TK",
+      "summary": "Tờ khai đăng ký đóng, cấp thẻ bảo hiểm y tế trên Cổng dịch vụ công",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "derivation": {
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+        "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+        "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+      "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "electronic_specification",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8",
+    "family": "BHYT-appendix-03",
+    "original": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf",
+    "pdf": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf",
+    "fields": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe",
+    "source_label": "Phụ lục 03.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "BHYT-appendix-03",
+      "summary": "Các loại giấy tờ làm căn cứ để cấp lại, ghi, điều chỉnh thẻ bảo hiểm y tế",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:50:17.617530+00:00",
+      "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Phu_luc_03_Giayto_lam_cancu_caplai_the_BHYT.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "supporting_guidance",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+    "family": "D03-TS",
+    "original": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "pdf": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "fields": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d",
+    "source_label": "Mẫu D03-TS.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "D03-TS",
+      "summary": "Danh sách người chỉ tham gia bảo hiểm y tế và hướng dẫn lập",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "derivation": {
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+        "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+        "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+      "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78",
+    "family": "C66a-HD",
+    "original": "data/forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/C66a-HD--5cfd1b678598.pdf",
+    "pdf": "data/forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/C66a-HD--5cfd1b678598.pdf",
+    "fields": "data/forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e",
+    "source_label": "Mẫu C66a-HD.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "C66a-HD",
+      "summary": "Giấy thanh toán thù lao cho tổ chức làm đại lý và hướng dẫn lập",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "derivation": {
+        "pages": [
+          12,
+          13
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+        "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+        "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+      "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8",
+    "family": "BHYT-Mau-2",
+    "original": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf",
+    "pdf": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf",
+    "fields": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708",
+    "source_label": "Mẫu số 2_NĐ 146.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "BHYT-Mau-2",
+      "summary": "Danh sách đối tượng tham gia bảo hiểm y tế",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "derivation": {
+        "pages": [
+          9
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+        "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+        "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+      "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+    "family": "D03-TS",
+    "original": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "pdf": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "fields": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74",
+    "source_label": "Mẫu D03-TS.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "D03-TS",
+      "summary": "Danh sách người chỉ tham gia bảo hiểm y tế và hướng dẫn lập",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "derivation": {
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+        "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+        "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+      "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225",
+    "family": "TK1-TS",
+    "original": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+    "pdf": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+    "fields": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54",
+    "source_label": "Mẫu TK1-TS.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "TK1-TS",
+      "summary": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm xã hội, bảo hiểm y tế và hướng dẫn",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:50:17.590255+00:00",
+      "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+    "family": "D03-TS",
+    "original": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "pdf": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+    "fields": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320",
+    "source_label": "Mẫu D03-TS.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "D03-TS",
+      "summary": "Danh sách người chỉ tham gia bảo hiểm y tế và hướng dẫn lập",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "derivation": {
+        "pages": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/BHYT-Mau-dinh-kem--9b801f5c9702.docx",
+        "original_sha256": "9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b",
+        "source_pdf_path": "data/forms/_objects/9b801f5c970265f97f895f32a8ab82bec740e74f51b05b8a79ede8383dba1f7b/blank.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:57.114000+00:00",
+      "page_sha256": "2f3f1cd65cbc2236c88a6ef6343b768c377cc76136269241dc9accb1a147727f",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

@@ -91,7 +91,7 @@ def build(config=None):
             FROM procedure p JOIN source_page s ON s.id=p.current_snapshot_id
             JOIN procedure_profile_head h ON h.snapshot_id=s.id
             JOIN procedure_profile pp ON pp.id=h.profile_id AND pp.snapshot_id=s.id
-            WHERE p.active AND s.status='parsed' ORDER BY p.code''')).mappings())
+            WHERE p.active AND s.status IN ('parsed','needs_source_details') ORDER BY p.code''')).mappings())
         if not rows:
             raise RuntimeError('No active profiles to index')
         fingerprint = digest(canonical([VERSION, space, [(r['code'],r['snapshot_id'],r['profile_id'],r['output_sha256']) for r in rows]]))

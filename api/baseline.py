@@ -9,11 +9,12 @@ from api import profiles,field_mapping
 
 def contract():
     from api.comparisons import PROMPT as compare_prompt,ComparisonSet
-    files=['api/analysis.py','api/profiles.py','api/field_mapping.py','api/comparisons.py','api/parse.py','api/attachments.py','api/documents.py']
+    files=['api/analysis.py','api/procedure_sources.py','api/form_catalog.py','api/form_recovery.py','api/profiles.py','api/field_mapping.py','api/comparisons.py','api/parse.py','api/attachments.py','api/documents.py']
     configuration=dict(version='procedure-baseline-1',provider=os.getenv('FIELD_MAPPING_PROVIDER','openai'),
         model=os.getenv('PROFILE_MODEL',os.getenv('FIELD_MAPPING_MODEL','gpt-6-astra')),
         reasoning_effort=os.getenv('PROFILE_REASONING','high'),
         field_model=os.getenv('FIELD_MAPPING_MODEL','gpt-6-astra'),field_reasoning=os.getenv('FIELD_MAPPING_REASONING','high'),
+        model_output_tokens=field_mapping.MODEL_OUTPUT_TOKENS,model_retry_output_tokens=field_mapping.MODEL_RETRY_OUTPUT_TOKENS,
         profile_version=profiles.VERSION,profile_schema_sha256=profiles.digest(profiles.Profile.model_json_schema()),
         profile_prompt_sha256=hashlib.sha256(profiles.PROMPT.encode()).hexdigest(),
         field_mapping_version=field_mapping.VERSION,field_schema_sha256=profiles.digest(field_mapping.Mapping.model_json_schema()),

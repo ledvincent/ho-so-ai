@@ -1,0 +1,34 @@
+{
+  "sha256": "a7e9b4274bddec6b521d5e2b10675603715a0fbabad5810389729f99aec064ed",
+  "family": "unemployment-11",
+  "original": "data/forms/_objects/a7e9b4274bddec6b521d5e2b10675603715a0fbabad5810389729f99aec064ed/unemployment-11--a7e9b4274bdd.pdf",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": "374/2025/ND-CP",
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "unemployment-11",
+    "summary": "Đề nghị không hưởng trợ cấp thất nghiệp",
+    "page_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+    "derivation": {
+      "pages": [
+        26
+      ],
+      "method": "pdf_page_extraction",
+      "original_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf",
+      "original_sha256": "ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa",
+      "source_pdf_path": "data/forms/_objects/ea03c8db377c6306373d69112c659974afb7925c1791a37ddeac643dd58a7dfa/107-QD-BNV-appendix--ea03c8db377c.pdf"
+    },
+    "fetched_at": "2026-10-31T08:50:24.602367+00:00",
+    "page_sha256": null,
+    "download_url": "https://vpubnd.daklak.gov.vn/CMS/Content/VanBan/2026/01-2026/Trung%20uong/107.QD-BNV%20PL.pdf",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "blank_form",
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

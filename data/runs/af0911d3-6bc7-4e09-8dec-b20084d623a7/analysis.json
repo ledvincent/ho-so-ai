@@ -1,0 +1,74 @@
+{
+  "run_id": "af0911d3-6bc7-4e09-8dec-b20084d623a7",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372358",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": null,
+  "documents": [],
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372358",
+      "mode": "live",
+      "sha256": "8ee3fa52084f8e66b0f8643f6c61fd4b6821ee138c22fac42835c15bba109f66",
+      "raw_path": "data/_store/html/8ee3fa52084f8e66b0f8643f6c61fd4b6821ee138c22fac42835c15bba109f66",
+      "fetched_at": "2026-10-31T08:09:05.581439+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+      "mode": "resolved_live",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=372358",
+      "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+      "raw_path": "data/_store/html/fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+      "fetched_at": "2026-10-31T08:09:07.858493+00:00",
+      "input_name": "Đổi giấy phép lái xe",
+      "resolved_name": "Đổi giấy phép lái xe",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "code": "3.000347",
+  "name": "Đổi giấy phép lái xe",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "raw_path": "data/_store/html/fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb96798262754f0",
+      "label": "PhulucXII.doigplx.doc"
+    }
+  ],
+  "profile": {
+    "profile_id": 15,
+    "path": "data/runs/af0911d3-6bc7-4e09-8dec-b20084d623a7/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 140,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "cf2297bb105c82a0816c888f361e2326567ba0cd024ce1f26c7e8019adc6b3a1"
+  },
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "facts_ready": true,
+  "status": "blocked"
+}

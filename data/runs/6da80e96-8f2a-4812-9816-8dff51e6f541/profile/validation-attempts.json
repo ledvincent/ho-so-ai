@@ -1,0 +1,11 @@
+[
+  {
+    "attempt": 1,
+    "status": "rejected",
+    "error": "Unverifiable citation: primary / requirement:25"
+  },
+  {
+    "attempt": 2,
+    "status": "validated"
+  }
+]

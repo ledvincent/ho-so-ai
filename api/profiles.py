@@ -4,6 +4,7 @@ import json
 import os
 import re
 import tempfile
+import logging
 from datetime import datetime, timezone
 from typing import Literal
 from pydantic import BaseModel, ConfigDict
@@ -11,7 +12,7 @@ from sqlalchemy import text
 from api.config import ROOT, engine
 from api.field_mapping import invoke
 
-VERSION = 'procedure-profile-1'
+VERSION = 'procedure-profile-2'
 CRITERIA = ['requested_action','applicant_category','current_stay_basis','authority_level',
             'submission_channel','sponsor_type','nationality','residence_location','requested_duration']
 
@@ -144,7 +145,10 @@ and a verbatim supporting quote from that record (whitespace may be normalised).
 Unknown facts have null value and status unknown. Do not fabricate quotes. If
 sources disagree, retain both citations and describe the conflict. Source identity
 and associations in the evidence registry are authoritative; filename_fallback
-is NOT proof that the procedure accepts that exact revision. Map every supplied
+is NOT proof that the procedure accepts that exact revision. An official_copy
+also establishes availability from an alternate official source,
+not current applicability or byte equivalence to the missing primary download.
+Map every supplied
 associated form hash separately; do not transfer instructions between versions.
 Retain form guidance, applicant/sponsor/signing/certification responsibilities,
 supporting documents and conditional applicability. Field schemas and mapping
@@ -167,6 +171,11 @@ Record ambiguity in missing_information/issues instead. Keep all required top-le
 fields even when unknown/empty. Be thorough about source requirements, concise in
 generated examples (3-5 per language). The source's validity today is not established
 by successful extraction; this is a draft profile for validation and review.
+The registry also contains individual requirement:N and method:N records. Cite
+EVERY requirement record somewhere in the profile. Some rows are notes or
+exceptions rather than documents: retain those as supported rules or guidance,
+not invented documents. Every method record must be cited in submission_channels.
+Do not merge away distinct channels, quantities, conditional branches or notes.
 '''
 
 
@@ -258,6 +267,26 @@ def validate_profile(raw,sources,code,name,form_hashes):
     return profile,count
 
 
+def validate_source_coverage(profile, sources):
+    """Require actual row provenance, not a document count (notes are rows too)."""
+    def cited(value):
+        return {(n['source_id'], n['locator']) for n in walk(value)
+                if {'source_id', 'locator', 'quote'} <= n.keys()}
+    all_refs = cited(profile)
+    channel_refs = cited(profile['submission_channels'])
+    missing = []
+    for source in sources:
+        key = (source['source_id'], source['locator'])
+        if source['source_id'] != 'primary':
+            continue
+        if source['locator'].startswith('requirement:') and key not in all_refs:
+            missing.append(source['locator'])
+        if source['locator'].startswith('method:') and key not in channel_refs:
+            missing.append(source['locator'])
+    if missing:
+        raise ValueError('Source rows lack profile citations: '+', '.join(missing))
+
+
 def evaluate(condition,answers):
     """Three-valued evaluation: True/False/None; this is not a legal decision."""
     op=condition['operator']
@@ -293,17 +322,26 @@ def build_sources(parsed,sid,report,forms):
     add('primary','identity',identity,parsed['source_url'],parsed['sha256'],'procedure',parsed['fetched_at'])
     for i,section in enumerate(parsed['document']['sections']):
         add('primary',f'section:{i}:{section["heading"]}',section['text_verbatim'],parsed['source_url'],parsed['sha256'],'procedure',parsed['fetched_at'])
+    for i, row in enumerate(parsed['requirements']):
+        body = (row.get('group_heading', '')+'\n'+row['text_verbatim']+
+                f"\nBản chính: {row['originals']} - Bản sao: {row['copies']}")
+        add('primary',f'requirement:{i}',body,parsed['source_url'],parsed['sha256'],'procedure',parsed['fetched_at'])
+    for i, row in enumerate(parsed['methods']):
+        body = '\n'.join([row['method'],row['processing_time_verbatim'],row['description_verbatim']]+
+                         [f['text_verbatim'] for f in parsed['fees'] if f['method']==row['method']])
+        add('primary',f'method:{i}',body,parsed['source_url'],parsed['sha256'],'procedure',parsed['fetched_at'])
     secondary=report.get('attachment_source')
     if secondary and report.get('attachment_document'):
         for i,section in enumerate(report['attachment_document']['sections']):
             add('supplementary',f'section:{i}:{section["heading"]}',section['text_verbatim'],secondary['url'],secondary['sha256'],'supplementary_procedure',secondary['fetched_at'])
     import pymupdf
     for form in forms:
-        sha=form['sha256'];url=form['source_url']
+        sha=form['sha256'];url=(form.get('source_metadata') or {}).get('download_url') if form['association_method']=='official_copy' else form['source_url']
+        url=url or form['source_url']
         if form['pdf_path'] and (ROOT/form['pdf_path']).exists():
             with pymupdf.open(ROOT/form['pdf_path']) as pdf:
                 for i,page in enumerate(pdf,1):
-                    add('form:'+sha,'page:'+str(i),page.get_text(),url,sha,'form',form.get('fetched_at'))
+                    add('form:'+sha,'page:'+str(i),page.get_text().replace('\x00','\ufffd'),url,sha,'form',form.get('fetched_at'))
         # Verified registry metadata is evidence, but association uncertainty must survive.
         add('registry:'+sha,'form-association',canonical({k:form.get(k) for k in ('sha256','source_url','association_method','revision_reference','issued_on','effective_from','source_metadata','review_status')}),url,sha,'registry',form.get('fetched_at'))
     return sources
@@ -322,15 +360,16 @@ def extract(parsed,sid,report,baseline,output):
     schema=Profile.model_json_schema()
     attempts=[]
     for attempt in range(1,3):
+        logging.getLogger(__name__).info('%s: extracting profile, validation attempt %s/2', parsed['code'], attempt)
         raw,metadata=invoke(prompt,[],schema,baseline['provider'],baseline['model'],baseline['reasoning_effort'],output)
         (output/f'model-output-{attempt}.json').write_text(json.dumps(raw,ensure_ascii=False,indent=2),encoding='utf-8')
         try:
             profile,count=validate_profile(raw,sources,parsed['code'],parsed['name'],[f['sha256'] for f in forms])
-            if len(profile['submission_channels'])<len(parsed['methods']):raise ValueError('A source submission channel was omitted')
-            if len(profile['required_documents'])<len(parsed['requirements']):raise ValueError('A source document requirement was omitted')
+            validate_source_coverage(profile,sources)
             attempts.append(dict(attempt=attempt,status='validated'))
             break
         except ValueError as exc:
+            logging.getLogger(__name__).warning('%s: profile validation: %s', parsed['code'], exc)
             attempts.append(dict(attempt=attempt,status='rejected',error=str(exc)))
             (output/'validation-attempts.json').write_text(json.dumps(attempts,indent=2),encoding='utf-8')
             if attempt==2:raise

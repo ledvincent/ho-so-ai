@@ -1,0 +1,52 @@
+[
+  {
+    "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+    "family": "civil-extract-declaration",
+    "original": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+    "pdf": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/blank.pdf",
+    "fields": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+    "source_label": "18.TKyeucaubansaotrichluchotich.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "civil-extract-declaration",
+      "summary": "Tờ khai đề nghị cấp bản sao trích lục hộ tịch",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=40654&represent=1",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:48:40.041095+00:00",
+      "page_sha256": "3299536dfcb3b299d59cad4585ba9d5bb38d851024338be9b9a27bf43e0db321",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+    "family": "civil-extract-electronic",
+    "original": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+    "pdf": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/blank.pdf",
+    "fields": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+    "source_label": "18.DTTT-CpBSkhaisinhTrchlcHT.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "civil-extract-electronic",
+      "summary": "Nội dung mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch",
+      "page_url": "https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:50:17.333666+00:00",
+      "page_sha256": "a8e4a97bf4108573ad567ace7da8ed793287c5a77d2719dfea989206963451ad",
+      "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "electronic_specification",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

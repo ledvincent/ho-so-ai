@@ -1,0 +1,1786 @@
+{
+  "procedure_code": {
+    "value": "3.000333",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 3.000333"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam, người nước ngoài đang cư trú tại Việt Nam và người Việt Nam đang sinh sống ở nước ngoài.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Phiếu Lý lịch tư pháp; thành phần hồ sơ đề cập Phiếu số 1 và Phiếu số 2.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+      },
+      {
+        "source_id": "primary",
+        "locator": "requirement:1",
+        "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;"
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "issue",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Xin cấp Phiếu Lý lịch tư pháp",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Cấp lý lịch tư pháp số 1 hoặc số 2",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Apply for a Vietnamese judicial record certificate",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Vietnam criminal record certificate issuance",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi muốn xin Phiếu Lý lịch tư pháp số 1.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi đang sống ở nước ngoài, muốn xin Phiếu Lý lịch tư pháp.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi muốn xin Phiếu Lý lịch tư pháp số 2 cho con chưa thành niên.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi muốn nộp hồ sơ lý lịch tư pháp trực tuyến.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I need a type 1 judicial record certificate.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I am a foreign national living in Vietnam and need a criminal record certificate.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Can I apply for a type 2 judicial record certificate for my minor child?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "How do I submit my judicial record certificate application online?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người nước ngoài đang cư trú tại Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người Việt Nam đang sinh sống ở nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "stated_applicant_scope",
+      "statement": {
+        "value": "Phạm vi đối tượng nêu trong tên thủ tục gồm công dân Việt Nam, người nước ngoài đang cư trú tại Việt Nam hoặc người Việt Nam đang sinh sống ở nước ngoài.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "in",
+        "criterion_key": "applicant_category",
+        "values": [
+          "vietnamese_citizen",
+          "foreign_national_residing_in_vietnam",
+          "vietnamese_living_abroad"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "no_additional_conditions_in_conditions_section",
+      "statement": {
+        "value": "Mục yêu cầu, điều kiện thực hiện ghi: Không. Điều này không loại bỏ các yêu cầu hồ sơ và quy định ủy quyền nêu riêng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "online_identification_and_declaration",
+      "statement": {
+        "value": "Khi thực hiện trực tuyến, người yêu cầu đăng nhập bằng tài khoản định danh mức độ 2 trên Cổng dịch vụ công hoặc Ứng dụng định danh quốc gia; kê khai chính xác, đầy đủ, trung thực tờ khai điện tử tương tác; chọn thông tin thủ tục và trả kết quả; xác nhận hồ sơ, chọn đối tượng nộp phí và cam đoan trước khi gửi.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 1: Người có yêu cầu cấp Phiếu Lý lịch tư pháp (sau đây gọi tắt là Người yêu cầu) đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia; chọn Cấp Phiếu Lý lịch tư pháp tại Nhóm dịch vụ Thủ tục hành chính và làm theo hướng dẫn.\n- Bước 2: Người yêu cầu kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu tờ khai cấp Phiếu Lý lịch tư pháp điện tử tương tác.\n- Bước 3: Người yêu cầu chọn “Thông tin về thủ tục hành chính” và “Thông tin trả kết quả”.\n- Bước 4: Người yêu cầu xác nhận thông tin hồ sơ, chọn loại đối tượng nộp phí và cam đoan lời khai trước khi gửi yêu cầu."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 1: Người có yêu cầu cấp Phiếu Lý lịch tư pháp (sau đây gọi tắt là Người yêu cầu) đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia; chọn Cấp Phiếu Lý lịch tư pháp tại Nhóm dịch vụ Thủ tục hành chính và làm theo hướng dẫn."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "representative_identity_presentation",
+      "statement": {
+        "value": "Người được ủy quyền phải xuất trình Thẻ Căn cước, Thẻ Căn cước công dân, Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "in",
+        "criterion_key": "request_capacity",
+        "values": [
+          "authorized_representative",
+          "parent_of_minor"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "family_authorization_document_waiver",
+      "statement": {
+        "value": "Không cần văn bản ủy quyền khi người được ủy quyền là cha, mẹ, vợ, chồng hoặc con của người ủy quyền.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "in",
+            "criterion_key": "request_capacity",
+            "values": [
+              "authorized_representative",
+              "parent_of_minor"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "representative_relationship",
+            "values": [
+              "parent",
+              "spouse",
+              "child"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [
+    {
+      "rule_id": "type_2_no_authorization_except_parent_of_minor",
+      "statement": {
+        "value": "Cá nhân yêu cầu Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác thực hiện thủ tục; ngoại lệ là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu Phiếu số 2.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "certificate_type",
+            "values": [
+              "type_2"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "request_capacity",
+            "values": [
+              "authorized_representative",
+              "parent_of_minor"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "request_capacity",
+          "values": [
+            "parent_of_minor"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "jurisdiction": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Công an tỉnh. Mục thông tin dịch vụ liệt kê Công an Tỉnh, Công an thành phố Hà Nội và Công an tỉnh Điện Biên.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an tỉnh"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Công an Tỉnh"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Công an thành phố Hà Nội"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Công an tỉnh Điện Biên"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": "Cấp tỉnh",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an tỉnh"
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp trực tiếp.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Trong 10 ngày kể từ ngày nhận yêu cầu hợp lệ. Không quá 15 ngày nếu người được cấp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài; hoặc là người nước ngoài; hoặc phải xác minh điều kiện đương nhiên xóa án tích.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "Phí: Đồng; nguồn không nêu số tiền.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Phí: Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Đăng nhập bằng tài khoản định danh mức độ 2 trên Cổng dịch vụ công hoặc Ứng dụng định danh quốc gia.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 1: Người có yêu cầu cấp Phiếu Lý lịch tư pháp (sau đây gọi tắt là Người yêu cầu) đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia; chọn Cấp Phiếu Lý lịch tư pháp tại Nhóm dịch vụ Thủ tục hành chính và làm theo hướng dẫn."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Trên Cổng dịch vụ công hoặc Ứng dụng định danh quốc gia, chọn Cấp Phiếu Lý lịch tư pháp trong Nhóm dịch vụ Thủ tục hành chính; kê khai chính xác, đầy đủ, trung thực tờ khai điện tử tương tác; chọn thông tin thủ tục và trả kết quả; xác nhận hồ sơ, chọn đối tượng nộp phí, cam đoan và gửi yêu cầu. Nhận mã hồ sơ, ngày hẹn và hướng dẫn thanh toán qua tin nhắn điện thoại, thư điện tử hoặc thông báo trên ứng dụng; nộp lệ phí qua tiện ích thanh toán tích hợp. Theo dõi tình trạng tại mục Cấp Phiếu Lý lịch tư pháp trên cổng hoặc ứng dụng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 1: Người có yêu cầu cấp Phiếu Lý lịch tư pháp (sau đây gọi tắt là Người yêu cầu) đăng nhập bằng tài khoản định danh mức độ 2 trên cổng dịch vụ công hoặc Ứng dụng định danh quốc gia; chọn Cấp Phiếu Lý lịch tư pháp tại Nhóm dịch vụ Thủ tục hành chính và làm theo hướng dẫn.\n- Bước 2: Người yêu cầu kê khai chính xác, đầy đủ, trung thực các nội dung trong mẫu tờ khai cấp Phiếu Lý lịch tư pháp điện tử tương tác.\n- Bước 3: Người yêu cầu chọn “Thông tin về thủ tục hành chính” và “Thông tin trả kết quả”.\n- Bước 4: Người yêu cầu xác nhận thông tin hồ sơ, chọn loại đối tượng nộp phí và cam đoan lời khai trước khi gửi yêu cầu.\n- Bước 5: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã số hồ sơ, ngày hẹn trả kết quả và hướng dẫn nộp lệ phí cấp Phiếu Lý lịch tư pháp qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để người có yêu cầu cấp Phiếu Lý lịch tư pháp nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên Cổng dịch vụ công, Ứng dụng định danh quốc gia.\n- Bước 6: Người yêu cầu theo dõi tình trạng giải quyết hồ sơ trên Cổng dịch vụ công, Ứng dụng định danh quốc gia tại mục Cấp Phiếu Lý lịch tư pháp."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Trong 10 ngày kể từ ngày nhận yêu cầu hợp lệ. Không quá 15 ngày nếu người được cấp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài; hoặc là người nước ngoài; hoặc phải xác minh điều kiện đương nhiên xóa án tích.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "Phí: Đồng; nguồn không nêu số tiền.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Phí: Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Nộp lệ phí qua tiện ích thanh toán tích hợp trên Cổng dịch vụ công hoặc Ứng dụng định danh quốc gia theo thông báo.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 5: Cổng dịch vụ công, Ứng dụng định danh quốc gia thông báo mã số hồ sơ, ngày hẹn trả kết quả và hướng dẫn nộp lệ phí cấp Phiếu Lý lịch tư pháp qua tin nhắn điện thoại hoặc địa chỉ thư điện tử hoặc thông báo trên Ứng dụng định danh quốc gia để người có yêu cầu cấp Phiếu Lý lịch tư pháp nộp tiền lệ phí qua tiện ích thanh toán được tích hợp trên Cổng dịch vụ công, Ứng dụng định danh quốc gia."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Dịch vụ bưu chính",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Dịch vụ bưu chính"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp qua dịch vụ bưu chính.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Dịch vụ bưu chính"
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Trong 10 ngày kể từ ngày nhận yêu cầu hợp lệ. Không quá 15 ngày nếu người được cấp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài; hoặc là người nước ngoài; hoặc phải xác minh điều kiện đương nhiên xóa án tích.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Trong thời hạn 10 ngày, kể từ ngày nhận được yêu cầu hợp lệ. Trường hợp người được cấp Phiếu Lý lịch tư pháp là công dân Việt Nam đã cư trú ở nhiều nơi hoặc có thời gian cư trú ở nước ngoài, trường hợp người nước ngoài, trường hợp phải xác minh về điều kiện đương nhiên xóa án tích thì thời hạn không quá 15 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "Phí: Đồng; nguồn không nêu số tiền.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Phí: Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 01/2025/LLTP",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 01/2025/LLTP;"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 01/2025/LLTP;"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "and",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "eq",
+                "criterion_key": "request_capacity",
+                "values": [
+                  "authorized_representative"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:1",
+                    "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+                  }
+                ]
+              },
+              {
+                "operator": "eq",
+                "criterion_key": "certificate_type",
+                "values": [
+                  "type_1"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:1",
+                    "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+              }
+            ]
+          },
+          {
+            "operator": "and",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "eq",
+                "criterion_key": "request_capacity",
+                "values": [
+                  "parent_of_minor"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:1",
+                    "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+                  }
+                ]
+              },
+              {
+                "operator": "in",
+                "criterion_key": "certificate_type",
+                "values": [
+                  "type_1",
+                  "type_2"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:1",
+                    "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 04/2025/LLTP",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 04/2025/LLTP;"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp), Mẫu số 04/2025/LLTP;"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP;"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "and",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "eq",
+                "criterion_key": "request_capacity",
+                "values": [
+                  "authorized_representative"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:3",
+                    "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+                  }
+                ]
+              },
+              {
+                "operator": "eq",
+                "criterion_key": "certificate_type",
+                "values": [
+                  "type_1"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:3",
+                    "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:3",
+                "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+              }
+            ]
+          },
+          {
+            "operator": "and",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "eq",
+                "criterion_key": "request_capacity",
+                "values": [
+                  "parent_of_minor"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:3",
+                    "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+                  }
+                ]
+              },
+              {
+                "operator": "in",
+                "criterion_key": "certificate_type",
+                "values": [
+                  "type_1",
+                  "type_2"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:3",
+                    "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:3",
+                "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp điện tử tương tác (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 05/2025/LLTP;"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Bản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu (Xuất trình bản chính để đối chiếu. Trường hợp không có bản chính thì nộp bản sao có chứng thực theo quy định của pháp luật)."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1 theo dòng số lượng; nội dung yêu cầu xuất trình bản chính để đối chiếu, hoặc nộp bản sao có chứng thực nếu không có bản chính.",
+        "status": "conflict",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu (Xuất trình bản chính để đối chiếu. Trường hợp không có bản chính thì nộp bản sao có chứng thực theo quy định của pháp luật)."
+          }
+        ],
+        "conflicts": [
+          "Dòng số lượng ghi một bản chính, nhưng mô tả yêu cầu bản sao và chỉ xuất trình bản chính để đối chiếu; đồng thời cho phép bản sao có chứng thực khi không có bản chính."
+        ]
+      },
+      "copies": {
+        "value": "0 theo dòng số lượng; mô tả yêu cầu bản sao nhưng không nêu số lượng bản sao.",
+        "status": "conflict",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu"
+          }
+        ],
+        "conflicts": [
+          "Dòng số lượng ghi không có bản sao, trái với tên và nội dung giấy tờ yêu cầu bản sao."
+        ]
+      },
+      "certification": {
+        "value": "Xuất trình bản chính để đối chiếu; nếu không có bản chính thì nộp bản sao có chứng thực theo quy định pháp luật.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Xuất trình bản chính để đối chiếu. Trường hợp không có bản chính thì nộp bản sao có chứng thực theo quy định của pháp luật"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bao gồm\nBản sao Thẻ Căn cước hoặc thẻ Căn cước công dân hoặc Giấy xác nhận căn cước hoặc Hộ chiếu của người được cấp Phiếu (Xuất trình bản chính để đối chiếu. Trường hợp không có bản chính thì nộp bản sao có chứng thực theo quy định của pháp luật)."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "certificate_type",
+            "values": [
+              "type_1"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "request_capacity",
+            "values": [
+              "authorized_representative"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp."
+              }
+            ]
+          },
+          {
+            "operator": "not",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "in",
+                "criterion_key": "representative_relationship",
+                "values": [
+                  "parent",
+                  "spouse",
+                  "child"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:5",
+                    "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền). Văn bản ủy quyền phải được công chứng, chứng thực theo quy định của pháp luật Việt Nam."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "in",
+        "criterion_key": "fee_relief_claim",
+        "values": [
+          "exemption",
+          "reduction"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which description applies to the person who needs the certificate?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "công dân Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "foreign_national_residing_in_vietnam",
+          "label": "Foreign national currently residing in Vietnam",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "người nước ngoài đang cư trú tại Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "vietnamese_living_abroad",
+          "label": "Vietnamese person living abroad",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "người Việt Nam đang sinh sống ở nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp Phiếu Lý lịch tư pháp cho công dân Việt Nam; người nước ngoài đang cư trú tại Việt Nam; người Việt Nam đang sinh sống ở nước ngoài"
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "How would you like to submit the application?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "in_person",
+          "label": "In person",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ]
+        },
+        {
+          "value": "online",
+          "label": "Online",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến"
+            }
+          ]
+        },
+        {
+          "value": "postal",
+          "label": "By postal service",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Dịch vụ bưu chính"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:0",
+          "quote": "Trực tiếp"
+        },
+        {
+          "source_id": "primary",
+          "locator": "method:1",
+          "quote": "Trực tuyến"
+        },
+        {
+          "source_id": "primary",
+          "locator": "method:2",
+          "quote": "Dịch vụ bưu chính"
+        }
+      ]
+    },
+    {
+      "criterion_key": "certificate_type",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which type of judicial record certificate are you requesting?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "type_1",
+          "label": "Type 1",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1"
+            }
+          ]
+        },
+        {
+          "value": "type_2",
+          "label": "Type 2",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "request_capacity",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Are you applying for yourself, as a parent of a minor, or as another authorized representative?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "self",
+          "label": "For myself",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Dùng cho cá nhân có yêu cầu cấp Phiếu Lý lịch tư pháp"
+            }
+          ]
+        },
+        {
+          "value": "parent_of_minor",
+          "label": "As the father or mother of a minor who needs the certificate",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+            }
+          ]
+        },
+        {
+          "value": "authorized_representative",
+          "label": "As an authorized representative, other than the parent-of-a-minor case",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "Tờ khai yêu cầu cấp Phiếu Lý lịch tư pháp (Dùng cho cá nhân trong trường hợp ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 và cá nhân là cha, mẹ của người chưa thành niên yêu cầu cấp Phiếu Lý lịch tư pháp số 1, số 2), Mẫu số 02/2025/LLTP;"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Cá nhân yêu cầu cấp Phiếu Lý lịch tư pháp số 2 không được ủy quyền cho người khác làm thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp trừ trường hợp cá nhân là người chưa thành niên có thể ủy quyền cho cha, mẹ yêu cầu cấp Phiếu Lý lịch tư pháp số 2."
+        }
+      ]
+    },
+    {
+      "criterion_key": "representative_relationship",
+      "condition": {
+        "operator": "in",
+        "criterion_key": "request_capacity",
+        "values": [
+          "authorized_representative",
+          "parent_of_minor"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+          }
+        ]
+      },
+      "question": "How is the representative related to the person who needs the certificate?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "parent",
+          "label": "Father or mother",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+            }
+          ]
+        },
+        {
+          "value": "spouse",
+          "label": "Wife or husband",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+            }
+          ]
+        },
+        {
+          "value": "child",
+          "label": "Child",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+            }
+          ]
+        },
+        {
+          "value": "other",
+          "label": "Another relationship or unrelated",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Văn bản ủy quyền yêu cầu cấp Phiếu Lý lịch tư pháp số 1 (người được ủy quyền phải xuất trình Thẻ Căn cước hoặc Thẻ Căn cước công dân hoặc Giấy chứng nhận căn cước hoặc Hộ chiếu khi thực hiện thủ tục yêu cầu cấp Phiếu Lý lịch tư pháp. Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền)."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Trường hợp người được ủy quyền là cha, mẹ, vợ, chồng, con của người ủy quyền thì không cần văn bản ủy quyền"
+        }
+      ]
+    },
+    {
+      "criterion_key": "fee_relief_claim",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Are you seeking a fee exemption or reduction?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "exemption",
+          "label": "Fee exemption",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:6",
+              "quote": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+            }
+          ]
+        },
+        {
+          "value": "reduction",
+          "label": "Fee reduction",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:6",
+              "quote": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+            }
+          ]
+        },
+        {
+          "value": "none",
+          "label": "Neither",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:6",
+              "quote": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:6",
+          "quote": "Các giấy tờ để chứng minh đối tượng miễn, hoặc giảm phí (nếu có)."
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Không có bản ghi biểu mẫu liên kết hoặc hash tệp biểu mẫu trong nguồn cung cấp. Các tên Mau_so_1.docx, Mau_so_2.docx, Mau_so_4.docx và Mau_so_5.docx trong mục hồ sơ không đủ để xác lập quan hệ với một bản sửa đổi tệp cụ thể.",
+    "Không có nội dung biểu mẫu để xác định riêng người ký, chủ thể chứng nhận, hướng dẫn điền hoặc tài liệu kèm theo từng phiên bản.",
+    "Không nêu ngày bắt đầu hoặc kết thúc hiệu lực của thủ tục, cũng không nêu thủ tục bị thay thế.",
+    "Không nêu mức phí, mức miễn hoặc giảm, nhóm đủ điều kiện hưởng miễn hoặc giảm, hay loại chứng từ cụ thể để chứng minh.",
+    "Không xác định quy tắc thẩm quyền theo nơi cư trú hoặc phạm vi địa lý tiếp nhận hồ sơ.",
+    "Không nêu quy trình chi tiết riêng cho nộp trực tiếp và bưu chính, hoặc cách đáp ứng yêu cầu xuất trình giấy tờ trong từng kênh.",
+    "Danh mục nêu cả bốn tờ khai nhưng không quy định rõ chúng là lựa chọn thay thế như thế nào theo kênh nộp. Điều kiện của Mẫu 02 và Mẫu 05 chỉ biểu thị nhóm trường hợp sử dụng được nêu trong tên, không khẳng định phải nộp đồng thời hai mẫu.",
+    "Tiêu đề Mẫu 01 và Mẫu 04 chỉ ghi dùng cho cá nhân có yêu cầu, chưa đủ để tạo điều kiện lựa chọn loại trừ lẫn nhau với Mẫu 02 và Mẫu 05.",
+    "Không xác định ngày là ngày làm việc hay ngày theo lịch; không nêu tiêu chí chi tiết để xác định trường hợp phải xác minh điều kiện đương nhiên xóa án tích."
+  ],
+  "issues": [
+    "Đây là hồ sơ trích xuất dự thảo để kiểm tra và xác nhận; nguồn được cung cấp không chứng minh thủ tục còn hiệu lực tại thời điểm sử dụng.",
+    "Mục thông tin dịch vụ chỉ liệt kê đối tượng thực hiện là Công dân Việt Nam và Người Việt Nam định cư ở nước ngoài, trong khi tên chính thức nêu thêm người nước ngoài đang cư trú tại Việt Nam. Giữ phạm vi trong tên chính thức; sự thiếu nhất quán về phạm vi liệt kê cần được rà soát, không coi việc bỏ sót là loại trừ rõ ràng.",
+    "Dòng số lượng của giấy tờ nhận dạng ghi Bản chính: 1 - Bản sao: 0, nhưng mô tả yêu cầu bản sao, xuất trình bản chính để đối chiếu hoặc nộp bản sao có chứng thực nếu không có bản chính. Đã giữ cả hai nội dung và đánh dấu xung đột.",
+    "Không suy ra giới hạn địa lý từ việc liệt kê Công an thành phố Hà Nội, Công an tỉnh Điện Biên hoặc cấp cơ quan thực hiện.",
+    "Các giá trị unknown và dữ liệu người dùng còn thiếu phải được giữ là chưa biết khi đánh giá điều kiện; không được diễn giải thành không đủ điều kiện.",
+    "Các câu hỏi và giá trị định tuyến bằng tiếng Anh là diễn đạt tạo mới dựa trên nguồn, không phải trích dẫn tên pháp lý hoặc bằng chứng độc lập về điều kiện."
+  ]
+}

@@ -8,6 +8,10 @@ import subprocess
 import uuid
 import tempfile
 import os
+import sys
+import logging
+import threading
+from contextlib import contextmanager
 from email.message import Message
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,10 +24,28 @@ from sqlalchemy import text as sql
 from api.config import ROOT, engine
 from api.db import ingest
 from api.documents import store_document, file_extension
-from api.attachments import attach_download, attach_fallback, save_mapping
+from api.attachments import attach_download, save_mapping
 from api.parse import text, ParseError
 from api.parse import parse as parse_portal
 from urllib.parse import parse_qs
+from api.procedure_sources import PORTAL_HOSTS, is_portal_url, portal_identity
+
+log = logging.getLogger(__name__)
+
+
+@contextmanager
+def heartbeat(url):
+    stop = threading.Event()
+    def pulse():
+        while not stop.wait(30):
+            log.info('Still processing %s (waiting on source, conversion or model)', url)
+    thread = threading.Thread(target=pulse, daemon=True)
+    thread.start()
+    try:
+        yield
+    finally:
+        stop.set()
+        thread.join()
 
 HOST = 'dichvucong.bocongan.gov.vn'
 PORTAL = 'https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html'
@@ -32,10 +54,10 @@ VERSION = 'mps-analysis-1'
 
 def validate_url(url):
     u = urlparse(url)
-    if u.scheme != 'https' or u.hostname not in (HOST,'vpcp.dichvucong.gov.vn','csdl.dichvucong.gov.vn') or u.port not in (None,443) or u.username or u.password:
-        raise ValueError('Expected an HTTPS link on the supported official ministry host')
+    if u.scheme != 'https' or u.hostname not in PORTAL_HOSTS | {HOST,'csdl.dichvucong.gov.vn'} or u.port not in (None,443) or u.username or u.password:
+        raise ValueError('Expected an HTTPS link on a supported official government host')
     if not ((u.hostname == HOST and (u.path == '/bocongan/bothutuc/tthc' or u.path.startswith('/public_dir/'))) or
-            (u.hostname == 'vpcp.dichvucong.gov.vn' and u.path == '/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html' and re.fullmatch(r'\d\.\d{6}',parse_qs(u.query).get('ma_thu_tuc',[''])[0])) or
+            is_portal_url(url) or
             (u.hostname == 'csdl.dichvucong.gov.vn' and u.path == '/web/jsp/download_file.jsp' and parse_qs(u.query).get('ma'))):
         raise ValueError('Unsupported official source path')
 
@@ -190,6 +212,32 @@ def facts_available(parsed):
     return True
 
 
+def read_primary(source, acquisition, allow_resolution=True):
+    raw = (ROOT/source['raw_path']).read_bytes()
+    if urlparse(source['url']).hostname not in PORTAL_HOSTS:
+        parsed, sections, issues = parse_ministry(raw, source)
+        return source, parsed, sections, issues
+    code, name, resolved = portal_identity(raw, source['url'])
+    if resolved:
+        if not allow_resolution:
+            raise ParseError('Saved replay must contain the complete resolved procedure page')
+        original_url = source['url']
+        source = fetch(resolved, 'raw')
+        resolution = dict(url=resolved, mode='resolved_live', resolved_from=original_url,
+                          sha256=source['sha256'], raw_path=source['raw_path'], fetched_at=source['fetched_at'])
+        acquisition.append(resolution)
+        raw = (ROOT/source['raw_path']).read_bytes()
+        resolved_code, resolved_name, further_resolution = portal_identity(raw, resolved)
+        if resolved_code != code or further_resolution:
+            raise ParseError('Resolved page does not match the requested procedure identity')
+        # Portal detail cards can retain an older spelling/title for the same
+        # national code. Preserve both names; extract only the complete page.
+        resolution.update(input_name=name,resolved_name=resolved_name,title_changed=name != resolved_name)
+        name = resolved_name
+    parsed = parse_portal(raw, code, source['url'], source['fetched_at'], name)
+    return source, parsed, {s['heading']:s['text_verbatim'] for s in parsed['document']['sections']}, list(parsed['issues'])
+
+
 def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
         baseline=None, output_dir=None, fallback_html=None, fallback_attachment_html=None, prior=None):
     validate_url(url)
@@ -197,35 +245,29 @@ def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
     baseline=baseline or ensure()
     if baseline['id']!=contract()['id']:raise ValueError('Agent configuration changed after baseline was frozen')
     run_id = str(uuid.uuid4())
-    report = dict(run_id=run_id,url=url,catalog_url=PORTAL,attachment_page=attachment_page,documents=[],issues=[],baseline_id=baseline['id'],acquisition=[])
+    report = dict(run_id=run_id,url=url,input_url=url,catalog_url=PORTAL,attachment_page=attachment_page,documents=[],issues=[],baseline_id=baseline['id'],acquisition=[])
     output_dir=Path(output_dir) if output_dir else ROOT/'data/runs'/run_id
     output_dir.mkdir(parents=True,exist_ok=True)
     prior=prior or {}
     with engine().begin() as db:
         db.execute(sql("INSERT INTO analysis_run(id,source_url,status,baseline_id) VALUES (:id,:url,'running',:baseline)"),dict(id=run_id,url=url,baseline=baseline['id']))
     try:
-        def parse_primary(source):
-            raw=(ROOT/source['raw_path']).read_bytes()
-            if urlparse(url).hostname=='vpcp.dichvucong.gov.vn':
-                soup=BeautifulSoup(raw,'html.parser')
-                name=next((text(h) for h in soup.select('h1.main-title') if text(h)), '')
-                code=parse_qs(urlparse(url).query)['ma_thu_tuc'][0]
-                parsed=parse_portal(raw,code,url,source['fetched_at'],name)
-                return parsed,{s['heading']:s['text_verbatim'] for s in parsed['document']['sections']},list(parsed['issues'])
-            return parse_ministry(raw,source)
+        log.info('Fetching procedure page: %s', url)
         try:
             source=save_bytes(Path(html).read_bytes(),url,'raw') if html else fetch(url,'raw')
             if html:source['fetched_at']=prior.get('fetched_at')  # unknown is not today's fetch
-            parsed,sections,issues=parse_primary(source)
-            report['acquisition'].append(dict(url=url,mode='saved_input' if html else 'live',sha256=source['sha256']))
+            report['acquisition'].append(dict(url=url,mode='saved_input' if html else 'live',sha256=source['sha256'],raw_path=source['raw_path'],fetched_at=source['fetched_at']))
+            source,parsed,sections,issues=read_primary(source,report['acquisition'])
         except (httpx.HTTPError,ValueError) as exc:
             if not fallback_html:raise
-            source=save_bytes(Path(fallback_html).read_bytes(),url,'raw')
+            source=save_bytes(Path(fallback_html).read_bytes(),prior.get('source_url',url),'raw')
             source['fetched_at']=prior.get('fetched_at')
             if not source['fetched_at']:raise ValueError('Saved replay needs its original retrieval timestamp')
-            parsed,sections,issues=parse_primary(source)
+            source,parsed,sections,issues=read_primary(source,report['acquisition'],allow_resolution=False)
             report['acquisition'].append(dict(url=url,mode='saved_replay',error=str(exc),sha256=source['sha256'],original_fetched_at=source['fetched_at']))
-        report.update(code=parsed['code'],name=parsed['name'],primary_source=source,primary_forms=parsed['forms'])
+        url=source['url']
+        report.update(url=url,code=parsed['code'],name=parsed['name'],primary_source=source,primary_forms=parsed['forms'])
+        log.info('%s: source captured; %s linked forms', parsed['code'], len(parsed['forms']))
         sid,_ = ingest(parsed,'foreigner' if 'người nước ngoài' in parsed['name'].lower() else 'citizen',source['raw_path'],activate=False)
         report['issues'].extend(issues)
         attachments = parsed['forms']
@@ -254,6 +296,7 @@ def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
                 for item in attachments:
                     db.execute(sql("INSERT INTO procedure_form(snapshot_id,source_url,label) VALUES (:sid,:url,:label) ON CONFLICT DO NOTHING"),dict(sid=sid,**item))
         for attachment in attachments:
+            log.info('%s: downloading form %s', parsed['code'], attachment['url'])
             record = None
             try:
                 manual = None
@@ -281,6 +324,7 @@ def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
                                 VALUES (:sid,:sha,:section,:pos,:body,:url,:locator,:date) ON CONFLICT DO NOTHING"""),dict(sid=sid,sha=record['sha256'],section='form:'+record['sha256'],pos=page_number*10000+position,body=body,url=record['url'],locator=f'page {page_number}',date=record['fetched_at']))
                 report['documents'].append(dict(url=record['url'],sha256=record['sha256'],original=record['raw_path'],original_filename=record['original_filename'],pdf=result['pdf_path'],field_count=len(result['fields']),observed_form_codes=observed_codes,status='draft',mapping_metadata=result.get('mapping_metadata',{})))
             except (httpx.HTTPError,ValueError,subprocess.SubprocessError,FileNotFoundError) as exc:
+                log.warning('%s: form unavailable or mapping failed: %s', parsed['code'], exc)
                 report['issues'].append(f"Attachment failed {attachment['url']}: {exc}")
                 if record:
                     report['documents'].append(dict(url=record['url'],sha256=record['sha256'],original=record['raw_path'],status='mapping_failed',observed_form_codes=[],error=str(exc)))
@@ -289,17 +333,17 @@ def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
                     with engine().begin() as db:
                         db.execute(sql("""INSERT INTO attachment_observation(run_id,snapshot_id,source_url,fetched_at,status,error)
                             VALUES (:run,:sid,:url,now(),'failed',:error)"""),dict(run=run_id,sid=sid,url=attachment['url'],error=str(exc)))
-        expected_codes = {c.upper() for c in re.findall(r'\b(?:TK|CT|CC|DC|NA)\d{1,2}\b',' '.join(r['text_verbatim'] for r in parsed['requirements']),re.I)}
-        downloaded_codes = {c.upper() for d in report['documents'] for c in d['observed_form_codes']}
-        if expected_codes-downloaded_codes:
-            report['issues'].append('Required form codes not found in downloaded files: '+', '.join(sorted(expected_codes-downloaded_codes)))
-        with engine().begin() as db:
-            for form in parsed['forms']:
-                family = re.fullmatch(r'([A-Z]+\d+)\.docx?',form['label'],re.I)
-                if family:
-                    preferred = db.execute(sql('SELECT preferred_sha256 FROM form_family WHERE code=:code'),dict(code=family[1].upper())).scalar()
-                    if preferred:
-                        attach_fallback(db,sid,form['url'],preferred,source['fetched_at'])
+                    from api.form_catalog import inventory,recover_local
+                    from api.form_recovery import recover_official
+                    local_forms=inventory()
+                    with engine().begin() as db:
+                        recovery=recover_official(db,sid,parsed['code'],attachment)
+                        if recovery['mode']=='official_copy_not_found':
+                            recovery=recover_local(db,sid,attachment,local_forms)
+                    report['acquisition'].append(dict(url=attachment['url'],**recovery))
+                    log.info('%s: local form lookup: %s',parsed['code'],recovery['mode'])
+                    if recovery['mode']=='stored_family_candidate':
+                        report['issues'].append('Local form-code match requires revision/applicability review: '+attachment['url'])
         # Run the same mapper on every distinct associated form, including a
         # cached original or a labelled filename fallback. Cache reuse is recorded.
         with engine().connect() as db:
@@ -317,6 +361,10 @@ def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
             except (ValueError,httpx.HTTPError,subprocess.SubprocessError,FileNotFoundError) as exc:
                 report['issues'].append('Stored form mapping failed '+form['sha256']+': '+str(exc))
         from api.profiles import extract
+        expected_codes = {c.upper() for c in re.findall(r'\b(?:TK|CT|CC|DC|NA)\d{1,2}\b',' '.join(r['text_verbatim'] for r in parsed['requirements']),re.I)}
+        downloaded_codes = {c.upper() for d in report['documents'] for c in d['observed_form_codes']}
+        if expected_codes-downloaded_codes:
+            report['issues'].append('Required form codes not found in downloaded or stored files: '+', '.join(sorted(expected_codes-downloaded_codes)))
         profile=extract(parsed,sid,report,baseline,output_dir/'profile')
         with engine().begin() as db:
             pid=db.execute(sql('''INSERT INTO procedure_profile(snapshot_id,run_id,baseline_id,profile,sources,metadata,output_sha256)
@@ -351,34 +399,102 @@ def run(url, html=None, inbox=None, attachment_page=None, attachment_html=None,
         report['status'] = readiness
     except Exception as exc:
         report.update(status='failed',error=str(exc))
+    except KeyboardInterrupt:
+        report.update(status='failed',error='Interrupted by user',interrupted=True)
     with engine().begin() as db:
-        db.execute(sql("UPDATE analysis_run SET completed_at=now(),status=:status,report=CAST(:report AS jsonb),procedure_code=:code WHERE id=:id"),dict(id=run_id,status=report['status'],report=json.dumps(report),code=report.get('code') if report['status']!='failed' else None))
+        db.execute(sql("UPDATE analysis_run SET completed_at=now(),status=:status,report=CAST(:report AS jsonb),procedure_code=:code,source_url=:url WHERE id=:id"),dict(id=run_id,status=report['status'],report=json.dumps(report),code=report.get('code') if report['status']!='failed' else None,url=report['url']))
     destination = ROOT/'data/_store/runs'/f'{run_id}.json'
     destination.parent.mkdir(parents=True,exist_ok=True)
     destination.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     (output_dir/'analysis.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-    import yaml
-    active_codes = {p['code'] for p in yaml.safe_load((ROOT/'candidates.yaml').read_text(encoding='utf-8'))['procedures']}
-    if report.get('code') in active_codes and report['status']!='failed':
+    if report['status']!='failed':
         with engine().begin() as db:
             db.execute(sql('UPDATE procedure SET active=true WHERE code=:code'),dict(code=report['code']))
         from api.storage import export_procedure
         export_procedure(report['code'])
+        log.info('%s: imported and exported (review status: %s)', report['code'], report['status'])
+    if report.get('interrupted'):
+        raise KeyboardInterrupt
     return report
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('url')
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%H:%M:%S')
+    logging.getLogger('httpx').setLevel(logging.WARNING)
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    parser = argparse.ArgumentParser(description='Ingest official procedure URLs; codes, names and linked forms are discovered automatically.')
+    parser.add_argument('urls', nargs='*', metavar='URL')
+    parser.add_argument('--urls-file', type=Path, help='UTF-8 text file containing one procedure URL per line')
+    parser.add_argument('--resume', action='store_true', help='Skip URLs whose successful import is still the active profile; omit to refresh sources')
+    parser.add_argument('--no-index', action='store_true', help='Import/export only; defer rebuilding and publishing app search')
     parser.add_argument('--html',help='Saved HTML, with the URL retained as provenance')
     parser.add_argument('--inbox',help='Directory containing manifest.json mapping exact source URLs to local filenames')
     parser.add_argument('--attachment-page',help='Supplementary official page; procedure code must match; version review required')
     parser.add_argument('--attachment-html',help='Previously downloaded supplementary HTML')
     args = parser.parse_args()
-    report = run(args.url,args.html,args.inbox,args.attachment_page,args.attachment_html)
-    print(json.dumps(report,ensure_ascii=False,indent=2))
-    if report['status'] == 'failed':
+    urls = list(args.urls)
+    if args.urls_file:
+        urls.extend(line.strip() for line in args.urls_file.read_text(encoding='utf-8-sig').splitlines()
+                    if line.strip() and not line.lstrip().startswith('#'))
+    urls = list(dict.fromkeys(urls))
+    if not urls:
+        parser.error('Provide a procedure URL or --urls-file')
+    if len(urls) > 1 and any((args.html,args.inbox,args.attachment_page,args.attachment_html)):
+        parser.error('Saved HTML, inbox and supplementary page options apply to one URL at a time')
+    # Validate the whole list before starting database/model work.
+    for url in urls:
+        try:
+            validate_url(url)
+            u = urlparse(url)
+            if not is_portal_url(url) and not (u.hostname == HOST and u.path == '/bocongan/bothutuc/tthc'):
+                raise ValueError('Expected a procedure page, not a document download')
+        except ValueError as exc:
+            parser.error(str(exc))
+    failed = False
+    imported = False
+    for number, url in enumerate(urls, 1):
+        try:
+            if args.resume:
+                with engine().connect() as db:
+                    existing = db.execute(sql('''SELECT p.code FROM procedure p
+                        JOIN procedure_profile_head h ON h.snapshot_id=p.current_snapshot_id
+                        JOIN procedure_profile pp ON pp.id=h.profile_id
+                        JOIN analysis_run r ON r.id=pp.run_id
+                        WHERE p.active AND r.status IN ('blocked','needs_review')
+                        AND (r.source_url=:url OR r.report->>'input_url'=:url) LIMIT 1'''),dict(url=url)).scalar()
+                if existing:
+                    log.info('Procedure %s/%s: %s already imported; skipped', number, len(urls), existing)
+                    imported = True
+                    continue
+            log.info('Procedure %s/%s: %s', number, len(urls), url)
+            with heartbeat(url):
+                report = run(url,args.html,args.inbox,args.attachment_page,args.attachment_html)
+        except Exception as exc:
+            report = dict(input_url=url,status='failed',error=str(exc))
+        print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
+        failed = failed or report['status'] == 'failed'
+        imported = imported or report['status'] != 'failed'
+    if imported and not args.no_index:
+        try:
+            publish_imports()
+        except Exception as exc:
+            log.error('Procedures were saved, but search publication failed: %s. '
+                      'Rerun with --resume to retry indexing without repeating successful imports.', exc)
+            failed = True
+    if failed:
         raise SystemExit(1)
+
+
+def publish_imports():
+    from api.rag_index import build,work,publish,status
+    log.info('Building app search index for the active catalog')
+    release = build()
+    existing = next((r for r in status() if str(r['id'])==str(release)), {})
+    work(release, batch_size=16)
+    # A resume of an unchanged catalog must not erase its calibrated threshold.
+    publish(release, minimum=existing.get('min_similarity'))
+    log.info('App search published: %s', release)
 
 
 if __name__ == '__main__':

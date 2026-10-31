@@ -1,0 +1,142 @@
+[
+  {
+    "source_id": "primary",
+    "locator": "identity",
+    "text": "procedure_code: 3.000347\nofficial_name: Đổi giấy phép lái xe",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:0:Trình tự thực hiện",
+    "text": "a) Nộp hồ sơ TTHC: Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến:\n- Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ.\n- Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân.\nb) Giải quyết TTHC:\n* Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận kiểm tra hồ sơ khi tiếp nhận phải: Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA. Khi chưa có kết quả xác minh giấy phép lái xe thì không giải quyết đề nghị; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử.\n- Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ.\n- Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận thực hiện nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công;\n* Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe;\n* Việc trả giấy phép lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân, trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, giấy phép lái xe được trả cho đúng cá nhân đổi giấy phép lái xe, khi nhận giấy phép lái xe, người lái xe chịu trách nhiệm gửi giấy phép lái xe cũ đến cơ quan cấp giấy phép lái xe để tiêu hủy theo quy định;\n* Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe\nBản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.\nTrường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:1:Cách thức thực hiện",
+    "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n05 Ngày làm việc\nPhí: Đồng\nGửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến.\n05 ngày làm việc, kể từ ngày nhận đủ hồ sơ đúng theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử).\nTrực tuyến\n05 Ngày làm việc\nPhí: Đồng\nGửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:2:Thành phần hồ sơ",
+    "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nĐề nghị đổi giấy phép lái xe theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế;\nPhulucXII.doigplx.doc\nBản chính: 1 - Bản sao: 0\nGiấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)\nBản chính: 1 - Bản sao: 0\nBản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp\nBản chính: 0 - Bản sao: 1\nHộ chiếu còn thời hạn sử dụng (đối với người nước ngoài, người Việt Nam định cư ở nước ngoài)\nBản chính: 1 - Bản sao: 0\nCác giấy tờ khác thể hiện thông tin quy định tại điểm d khoản 1 Điều 21 Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:3:Cơ quan thực hiện",
+    "text": "Công an Xã\nCông an tỉnh\nCục Cảnh sát giao thông",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+    "text": "Yêu cầu đối với việc đổi giấy phép lái xe:\na) Người Việt Nam, người nước ngoài được sát hạch, cấp giấy phép lái xe tại Việt Nam;\nb) Người có giấy phép lái xe bị hỏng không còn sử dụng được;\nc) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;\nd) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;\nđ) Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;\ne) Không đổi giấy phép lái xe đối với các trường hợp sau: giấy phép lái xe không có trong hệ thống thông tin giấy phép lái xe của Cục Cảnh sát giao thông hoặc bảng kê danh sách cấp giấy phép lái xe (sổ quản lý); người vi phạm trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+    "text": "Dịch vụ công Đổi giấy phép lái xe\nToàn trình\nCơ quan thực hiện: Bộ Công an\nĐối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:0",
+    "text": "Bao gồm\nĐề nghị đổi giấy phép lái xe theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế;\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:1",
+    "text": "Bao gồm\nGiấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:2",
+    "text": "Bao gồm\nBản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp\nBản chính: 0 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:3",
+    "text": "Bao gồm\nHộ chiếu còn thời hạn sử dụng (đối với người nước ngoài, người Việt Nam định cư ở nước ngoài)\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:4",
+    "text": "Bao gồm\nCác giấy tờ khác thể hiện thông tin quy định tại điểm d khoản 1 Điều 21 Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:0",
+    "text": "Trực tiếp\n05 Ngày làm việc\nGửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến. 05 ngày làm việc, kể từ ngày nhận đủ hồ sơ đúng theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử).\nPhí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:1",
+    "text": "Trực tuyến\n05 Ngày làm việc\nGửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến.\nPhí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=3.000347",
+    "sha256": "fcf2f5e71638e8e9dee3f7dff1b167068a5da0e17718389dea3253e4adf7d7a1",
+    "kind": "procedure",
+    "snapshot_id": 47,
+    "fetched_at": "2026-10-31T08:09:07.858493+00:00"
+  }
+]

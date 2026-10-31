@@ -1,0 +1,1054 @@
+{
+  "procedure_code": {
+    "value": "1.010041",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 1.010041"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Xác nhận thông tin về cư trú",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Xác nhận thông tin về cư trú"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Cấp xác nhận thông tin về cư trú cho công dân.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "method:0",
+        "quote": "cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân"
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Xác nhận thông tin về cư trú; trường hợp từ chối giải quyết, trả lời bằng văn bản và nêu rõ lý do.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "method:3",
+        "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh; trường hợp từ chối giải quyết xác nhận thông tin về cư trú thì phải trả lời bằng văn bản và nêu rõ lý do."
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "issue",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:0",
+          "quote": "cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Xin xác nhận thông tin cư trú",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Cấp giấy xác nhận thông tin về cư trú",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Residence information confirmation",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Request confirmation of residence information",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi muốn xin xác nhận thông tin về cư trú.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi có thể xin xác nhận cư trú qua VNeID không?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Xin xác nhận cư trú tại Công an xã khác nơi tôi cư trú được không?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I need confirmation of my residence information.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Can I request residence information confirmation through VNeID?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "What documents do I need to apply for residence information confirmation in person?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Cán bộ, công chức, viên chức",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Doanh nghiệp",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Hợp tác xã",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "listed_applicant_categories",
+      "statement": {
+        "value": "Các nhóm đối tượng được liệt kê: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "in",
+        "criterion_key": "applicant_category",
+        "values": [
+          "vietnamese_citizen",
+          "cadre_civil_servant_public_employee",
+          "enterprise",
+          "organization_excluding_enterprises_and_cooperatives",
+          "cooperative"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "no_additional_requirements_listed",
+      "statement": {
+        "value": "Mục yêu cầu, điều kiện thực hiện ghi: không.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "không"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "không"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "online_electronic_declaration",
+      "statement": {
+        "value": "Khi thực hiện trực tuyến, người yêu cầu khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn. Dòng lưu ý ghi số lượng bản chính: 0, bản sao: 0; đây là hướng dẫn, không phải một giấy tờ riêng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bao gồm\n*Lưu ý: Trường hợp thực hiện đăng ký cư trú trực tuyến, người yêu cầu đăng ký cư trú khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn.\nBản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "*Lưu ý: Trường hợp thực hiện đăng ký cư trú trực tuyến, người yêu cầu đăng ký cư trú khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Trực tuyến"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "complete_valid_application_receipt",
+      "statement": {
+        "value": "Cơ quan đăng ký cư trú kiểm tra tính pháp lý và nội dung hồ sơ. Hồ sơ đầy đủ, hợp lệ được tiếp nhận và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả, mẫu CT04 ban hành kèm Thông tư số 66/2023/TT-BCA.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 3: Khi tiếp nhận hồ sơ xác nhận thông tin về cư trú, cơ quan đăng ký cư trú kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "eligible_but_incomplete_application",
+      "statement": {
+        "value": "Hồ sơ đủ điều kiện nhưng chưa đủ hồ sơ: hướng dẫn bổ sung, hoàn thiện và cấp Phiếu hướng dẫn bổ sung, hoàn thiện hồ sơ, mẫu CT05 ban hành kèm Thông tư số 66/2023/TT-BCA.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp hồ sơ đủ điều kiện nhưng chưa đủ hồ sơ thì hướng dẫn bổ sung, hoàn thiện và cấp Phiếu hướng dẫn bổ sung, hoàn thiện hồ sơ (mẫu CT05 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp hồ sơ đủ điều kiện nhưng chưa đủ hồ sơ thì hướng dẫn bổ sung, hoàn thiện và cấp Phiếu hướng dẫn bổ sung, hoàn thiện hồ sơ (mẫu CT05 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "receive_result_by_appointment",
+      "statement": {
+        "value": "Cá nhân, tổ chức chuẩn bị hồ sơ và nộp tại Công an cấp xã; căn cứ ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú, nếu có.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 1: Cá nhân, tổ chức chuẩn bị hồ sơ theo quy định của pháp luật.\n- Bước 2: Cá nhân, tổ chức nộp hồ sơ tại Công an cấp xã."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 4: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có)."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "- Bước 4: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có)."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [
+    {
+      "rule_id": "explicit_refusal_for_ineligible_dossier",
+      "statement": {
+        "value": "Hồ sơ không đủ điều kiện bị từ chối; cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ, mẫu CT06 ban hành kèm Thông tư số 66/2023/TT-BCA. Nguồn không định nghĩa cụ thể phép kiểm tra đủ điều kiện.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT-BCA) cho người đăng ký."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "jurisdiction": {
+    "value": "Đối với nộp trực tiếp: Công an cấp xã nơi thuận lợi, phù hợp, không phụ thuộc vào nơi cư trú của công dân.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "method:0",
+        "quote": "Nộp hồ sơ trực tiếp tại Công an cấp xã nơi thuận lợi, phù hợp không phụ thuộc vào nơi cư trú của công dân."
+      }
+    ],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Công an Xã; cơ quan thực hiện được nêu cụ thể trên trang: Công an xã Buôn Đôn, tỉnh Đắk Lắk.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an Xã"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Công an xã Buôn Đôn, tỉnh Đắk Lắk"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": "Cấp xã",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "- Bước 2: Cá nhân, tổ chức nộp hồ sơ tại Công an cấp xã."
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Hồ sơ hợp lệ; thông tin có trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp tại Công an cấp xã nơi thuận lợi, phù hợp, không phụ thuộc nơi cư trú. Tiếp nhận trong giờ hành chính từ thứ 2 đến thứ 6 và sáng thứ 7 hằng tuần, trừ ngày nghỉ lễ, tết theo quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "- Nộp hồ sơ trực tiếp tại Công an cấp xã nơi thuận lợi, phù hợp không phụ thuộc vào nơi cư trú của công dân. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Bảng ghi 0.5 ngày làm việc; mô tả ghi trong thời hạn 01 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ khi thông tin có trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "status": "conflict",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp\n0.5 Ngày làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+          }
+        ],
+        "conflicts": [
+          "Thời hạn 0.5 ngày làm việc trong bảng không thống nhất với thời hạn 01 ngày làm việc trong mô tả; chưa xác định giá trị áp dụng."
+        ]
+      },
+      "fees": [
+        {
+          "value": "Phí: 0 Đồng",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Phí: 0 Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Hồ sơ hợp lệ; trường hợp cần xác minh.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nhánh trực tiếp cần xác minh. Nếu từ chối giải quyết, phải trả lời bằng văn bản và nêu rõ lý do.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tiếp\n03 Ngày làm việc\nKể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh; trường hợp từ chối giải quyết thì phải trả lời bằng văn bản và nêu rõ lý do."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 ngày làm việc kể từ ngày nhận được hồ sơ hợp lệ, đối với trường hợp cần xác minh.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "Phí: 0 Đồng",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Phí: 0 Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Hồ sơ hợp lệ; thông tin có trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định. Tiếp nhận trong giờ hành chính từ thứ 2 đến thứ 6 và sáng thứ 7 hằng tuần, trừ ngày nghỉ lễ, tết theo quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "- Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Bảng ghi 0.5 ngày làm việc; mô tả ghi trong thời hạn 01 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ khi thông tin có trong Cơ sở dữ liệu quốc gia về dân cư.",
+        "status": "conflict",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Trực tuyến\n0.5 Ngày làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+          }
+        ],
+        "conflicts": [
+          "Thời hạn 0.5 ngày làm việc trong bảng không thống nhất với thời hạn 01 ngày làm việc trong mô tả; chưa xác định giá trị áp dụng."
+        ]
+      },
+      "fees": [
+        {
+          "value": "Phí: 0 Đồng",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Phí: 0 Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:3",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Hồ sơ hợp lệ; trường hợp cần xác minh.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:3",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nhánh trực tuyến cần xác minh. Nếu từ chối giải quyết xác nhận thông tin về cư trú, phải trả lời bằng văn bản và nêu rõ lý do.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:3",
+            "quote": "Trực tuyến\n03 Ngày làm việc\nKể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh; trường hợp từ chối giải quyết xác nhận thông tin về cư trú thì phải trả lời bằng văn bản và nêu rõ lý do."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 ngày làm việc kể từ ngày nhận được hồ sơ hợp lệ, đối với trường hợp cần xác minh.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:3",
+            "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "Phí: 0 Đồng",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:3",
+              "quote": "Phí: 0 Đồng"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA).",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA)."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bao gồm\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA).\nBản chính: 1 - Bản sao: 0"
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which listed applicant category applies to you?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+            }
+          ]
+        },
+        {
+          "value": "cadre_civil_servant_public_employee",
+          "label": "Cadre, civil servant or public employee",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Cán bộ, công chức, viên chức"
+            }
+          ]
+        },
+        {
+          "value": "enterprise",
+          "label": "Enterprise",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Doanh nghiệp"
+            }
+          ]
+        },
+        {
+          "value": "organization_excluding_enterprises_and_cooperatives",
+          "label": "Organization other than an enterprise or cooperative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+            }
+          ]
+        },
+        {
+          "value": "cooperative",
+          "label": "Cooperative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Hợp tác xã"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Cán bộ, công chức, viên chức; Doanh nghiệp; Tổ chức (không bao gồm doanh nghiệp, HTX); Hợp tác xã"
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Will you submit the application in person or online?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "in_person",
+          "label": "In person",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ]
+        },
+        {
+          "value": "online",
+          "label": "Online",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Trực tuyến"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:0",
+          "quote": "Trực tiếp"
+        },
+        {
+          "source_id": "primary",
+          "locator": "method:2",
+          "quote": "Trực tuyến"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "*Lưu ý: Trường hợp thực hiện đăng ký cư trú trực tuyến, người yêu cầu đăng ký cư trú khai báo thông tin theo biểu mẫu điện tử được cung cấp sẵn."
+        }
+      ]
+    },
+    {
+      "criterion_key": "residence_information_in_population_database",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is the residence information needed for this request available in the National Population Database?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes, the information is available",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+            },
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:0",
+          "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+        },
+        {
+          "source_id": "primary",
+          "locator": "method:2",
+          "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 01 ngày làm việc với trường hợp thông tin có trong Cơ sở dữ liệu quốc gia về dân cư."
+        }
+      ]
+    },
+    {
+      "criterion_key": "residence_information_verification_required",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Does your request require verification of the residence information?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes, verification is required",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+            },
+            {
+              "source_id": "primary",
+              "locator": "method:3",
+              "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:1",
+          "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+        },
+        {
+          "source_id": "primary",
+          "locator": "method:3",
+          "quote": "Kể từ ngày nhận được hồ sơ hợp lệ, cơ quan đăng ký cư trú có trách nhiệm cấp xác nhận thông tin về cư trú cho công dân trong thời hạn 03 ngày làm việc với trường hợp cần xác minh"
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Procedure effective-from and effective-to dates and any superseded procedure are not supplied.",
+    "No associated form-file hashes or form source records are supplied. CT01 is identified as the form issued with Circular 66/2023/TT-BCA, but no exact file revision can be mapped.",
+    "The supplied evidence does not state CT01 signing or certification responsibilities, sponsor responsibilities, or additional form-specific supporting documents.",
+    "The source does not resolve how the general CT01 quantity of one original relates to the online electronic declaration note, which records zero originals and zero copies. No paper-exemption condition has been inferred.",
+    "The source does not define the substantive tests for a complete, valid or eligible dossier, or the circumstances requiring verification. These workflow tests have not been converted into executable legal predicates.",
+    "The evidence does not establish whether database availability and a need for verification are mutually exclusive. They must not be treated as inverse answers.",
+    "The broader geographic scope of this procedure is not established. The named implementing office does not establish a residence restriction."
+  ],
+  "issues": [
+    "Draft profile for validation and review; extraction does not establish that the supplied source is currently valid.",
+    "For both in-person and online database-available branches, the table states 0.5 working day while the description states 01 working day. Both values are retained as conflicts.",
+    "The applicant list includes organizations as well as individuals, while the issuance descriptions refer to citizens. The source does not explain how organizational applications operate.",
+    "The phrase excluding enterprises and cooperatives qualifies one organization category only; enterprises and cooperatives are separately listed applicants, not procedure-wide exclusions.",
+    "CT04, CT05 and CT06 are agency-issued workflow documents, not additional applicant submission documents.",
+    "Unknown or missing answers remain unknown and must not be interpreted as ineligible. The applicant categories may overlap; no mutually exclusive classification is established.",
+    "The method records repeat the same zero-fee text within each row. Each distinct method branch is retained, without treating duplicate fee text as an additional charge."
+  ]
+}

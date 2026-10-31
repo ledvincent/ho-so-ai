@@ -1,0 +1,3240 @@
+{
+  "code": "2.000635",
+  "audience": "citizen",
+  "id": 45,
+  "procedure_code": "2.000635",
+  "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+  "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+  "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+  "raw_path": "data/_store/html/737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+  "parser_version": "vpcp-by-code-4",
+  "name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+  "status": "parsed",
+  "issues": [],
+  "document_json": {
+    "name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+    "sections": [
+      {
+        "heading": "Trình tự thực hiện",
+        "text_verbatim": "- Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh nộp hồ sơ đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp phí theo quy định pháp luật.\nTrường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.\n- Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh truy cập Cổng dịch vụ công quốc gia, xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, lựa chọn Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử có thẩm quyền.\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến cung cấp thông tin theo mẫu điện tử tương tác yêu cầu bản sao Trích lục hộ tịch, cấp bản sao Giấy khai sinh (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu liên quan đến nội dung đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh; nộp phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.\n- Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ.\n(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; nếu tiếp nhận hồ sơ sau 15 giờ thì có Phiếu hẹn, trả kết quả cho người yêu cầu trong ngày làm việc tiếp theo (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Sở Tư pháp/Ủy ban nhân dân cấp xã có thẩm quyền xử lý.\n(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);\n(iii) Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao giấy khai sinh.\n- Công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm).\n+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);\n+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến).\n+ Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.\nTrường hợp tiếp nhận hồ sơ xin cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tuyến, công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi lại nội dung biểu mẫu Trích lục hộ tịch điện tử tương ứng với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.\nNgười yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục hộ tịch điện tử và xác nhận (tối đa một ngày).\nNếu người có yêu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu."
+      },
+      {
+        "heading": "Cách thức thực hiện",
+        "text_verbatim": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nTrực tuyến\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký\n- Thủ tục này đủ điều kiện thực hiện dịch vụ công trực tuyến toàn trình.\n- Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nDịch vụ bưu chính\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký.\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn)."
+      },
+      {
+        "heading": "Thành phần hồ sơ",
+        "text_verbatim": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);\n18.TKyeucaubansaotrichluchotich.doc\nBản chính: 1 - Bản sao: 0\n- Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)\n18.DTTT-CpBSkhaisinhTrchlcHT.doc\nBản chính: 1 - Bản sao: 1\n- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0\n* Giấy tờ phải nộp:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nVăn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.\nBản chính: 1 - Bản sao: 0\nTrường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.\nBản chính: 0 - Bản sao: 0\n* Giấy tờ phải xuất trình:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).\nBản chính: 1 - Bản sao: 0\n* Lưu ý:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.\nBản chính: 0 - Bản sao: 0\n- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:\nBản chính: 0 - Bản sao: 0\n+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).\nBản chính: 0 - Bản sao: 0\nTrường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.\nBản chính: 0 - Bản sao: 0\n+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.\nBản chính: 0 - Bản sao: 0\n+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .\nBản chính: 0 - Bản sao: 0\n+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.\nBản chính: 0 - Bản sao: 0\n- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:\nBản chính: 0 - Bản sao: 0\n+ Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.\nBản chính: 0 - Bản sao: 0\n+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.\nBản chính: 0 - Bản sao: 0\n- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.\nBản chính: 0 - Bản sao: 0"
+      },
+      {
+        "heading": "Cơ quan thực hiện",
+        "text_verbatim": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử"
+      },
+      {
+        "heading": "Yêu cầu, điều kiện thực hiện",
+        "text_verbatim": "Không"
+      },
+      {
+        "heading": "Thông tin dịch vụ và đối tượng thực hiện",
+        "text_verbatim": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh\nMột phần\nCơ quan thực hiện: Cấp tỉnh/ xã\nĐối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+      }
+    ]
+  },
+  "published_on": null,
+  "updated_on": null,
+  "analysis": {
+    "readiness": "blocked",
+    "facts_ready": true,
+    "evidence_status": {},
+    "issues": [
+      "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+      "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+    ],
+    "summary": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh — ",
+    "report": {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "code": "2.000635",
+      "name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+      "issues": [
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+        "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+      ],
+      "run_id": "f73bc5c8-3258-49f8-8923-19fe96467b74",
+      "status": "blocked",
+      "profile": {
+        "profile_id": 30,
+        "validation": {
+          "schema": true,
+          "identity": true,
+          "form_hashes": true,
+          "citations_verified": 151
+        },
+        "output_sha256": "01e42616f03092d9b3c59c81e108939f4c20b6ce5b3a7454dec046978e5678a9"
+      },
+      "documents": [],
+      "freshness": {
+        "status": "source_captured_not_legally_reverified",
+        "procedure_updated_on": null
+      },
+      "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "operation": "recover_official_forms",
+      "acquisition": [
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+          "mode": "live",
+          "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+          "raw_path": "data/_store/html/737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+          "fetched_at": "2026-10-31T08:06:51.234805+00:00"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        }
+      ],
+      "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+      "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+      "facts_ready": true,
+      "parent_run_id": "8b4a9a05-138c-45bd-9c1f-120eb4d24b45",
+      "primary_forms": [
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+          "label": "18.TKyeucaubansaotrichluchotich.doc"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+          "label": "18.DTTT-CpBSkhaisinhTrchlcHT.doc"
+        }
+      ],
+      "primary_source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "raw_path": "data/_store/html/737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00"
+      },
+      "attachment_page": null,
+      "recovered_forms": [
+        {
+          "mode": "official_copy",
+          "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+          "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=40654&represent=1",
+          "raw_path": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+          "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+          "association_updated": true,
+          "current_applicability_verified": false
+        },
+        {
+          "mode": "official_copy",
+          "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+          "page_url": "https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh",
+          "raw_path": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+          "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+          "association_updated": true,
+          "current_applicability_verified": false
+        }
+      ]
+    }
+  },
+  "structured_profile": {
+    "id": 30,
+    "run_id": "f73bc5c8-3258-49f8-8923-19fe96467b74",
+    "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+    "profile": {
+      "issues": [
+        "Đây là hồ sơ dự thảo để xác thực và rà soát; việc trích xuất thành công không xác lập nguồn còn hiệu lực hiện nay.",
+        "Phân loại dịch vụ trực tuyến mâu thuẫn trong cùng nguồn: method:1 ghi đủ điều kiện toàn trình, trong khi section:5 ghi Một phần.",
+        "requirement:4 yêu cầu gửi bản sao có chứng thực nhưng dòng số lượng ghi 0 bản chính, 0 bản sao. Giữ nguyên số lượng nguồn và yêu cầu nội dung, không diễn giải số 0 thành miễn nộp.",
+        "requirement:1 ghi mẫu điện tử có 1 bản chính và 1 bản sao; giữ nguyên, chưa có hướng dẫn giải thích cách áp dụng số lượng điện tử.",
+        "Các dòng requirement:2 và requirement:6 đến requirement:19 là hướng dẫn, lưu ý hoặc trường hợp xử lý, phần lớn có số lượng dòng 0/0; không biến các dòng lưu ý này thành giấy tờ độc lập.",
+        "requirement:16 có cấu trúc 'không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin'. Chưa rõ phạm vi kết hợp của vế không thể tra cứu; giữ nguyên quy tắc từ chối bằng văn bản và không đoán công thức AND/OR.",
+        "Các bảng phương thức nêu trả ngày làm việc tiếp theo khi nhận sau 15 giờ mà không giải quyết được ngay; phần trình tự nêu Phiếu hẹn cho hồ sơ nhận sau 15 giờ. Giữ cả hai mô tả, không bỏ điều kiện của bảng phương thức.",
+        "Thời hạn cùng ngày ở bảng phương thức cần được rà soát cùng bước xác nhận biểu mẫu trực tuyến tối đa một ngày và cơ chế xin lỗi, hẹn lại khi cần xác minh; không tự cộng thành thời hạn mới.",
+        "Mục điều kiện ghi Không không xóa bỏ yêu cầu giấy tờ, thẩm quyền hoặc các trường hợp từ chối được nêu ở các phần khác.",
+        "Không tạo quan hệ thay thế giữa biểu mẫu từ tên tệp; không có mã băm biểu mẫu liên kết nào trong registry được cung cấp.",
+        "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+      ],
+      "aliases": [
+        {
+          "text": "Xin bản sao trích lục hộ tịch",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Xin cấp bản sao giấy khai sinh",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Cấp bản sao hộ tịch trực tuyến",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Issue copies of civil status extracts and birth certificates",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "Request a civil status extract copy",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "Request a birth certificate copy",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        }
+      ],
+      "outcome": {
+        "value": "Bản sao Trích lục hộ tịch hoặc bản sao Giấy khai sinh; quy trình mô tả việc in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký và chuyển trả kết quả.",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+            "locator": "identity",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Nếu người có yêu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "purpose": {
+        "value": "Giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh cho cá nhân hoặc theo văn bản yêu cầu nêu rõ lý do của cơ quan, tổ chức có thẩm quyền.",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+            "locator": "identity",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "authority": {
+        "value": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử",
+            "locator": "section:3:Cơ quan thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "exclusions": [
+        {
+          "rule_id": "organizations_exclude_enterprises_and_cooperatives",
+          "condition": {
+            "values": [
+              "enterprise",
+              "cooperative"
+            ],
+            "children": [],
+            "operator": "in",
+            "source_refs": [
+              {
+                "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "organization_type"
+          },
+          "statement": {
+            "value": "Nhóm tổ chức thực hiện không bao gồm doanh nghiệp và HTX.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "refusal_for_insufficient_or_inaccurate_unsearchable_information",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [
+              {
+                "quote": "- Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.",
+                "locator": "requirement:16",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Cơ quan đăng ký hộ tịch từ chối giải quyết trong trường hợp nguồn mô tả: người yêu cầu không cung cấp đầy đủ hoặc cung cấp thông tin không chính xác, không thể tra cứu được thông tin.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.",
+                "locator": "requirement:16",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "refusal_when_application_cannot_be_completed",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Nếu người yêu cầu không bổ sung, hoàn thiện được hồ sơ thì cán bộ báo cáo lãnh đạo Trung tâm để thông báo từ chối giải quyết.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(iii) Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao giấy khai sinh.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        }
+      ],
+      "supersedes": [],
+      "action_type": [
+        {
+          "value": "issue",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "official_name: Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+              "locator": "identity",
+              "source_id": "primary"
+            }
+          ]
+        }
+      ],
+      "effective_to": {
+        "value": null,
+        "status": "unknown",
+        "conflicts": [],
+        "source_refs": []
+      },
+      "jurisdiction": {
+        "value": null,
+        "status": "unknown",
+        "conflicts": [],
+        "source_refs": []
+      },
+      "official_name": {
+        "value": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "effective_from": {
+        "value": null,
+        "status": "unknown",
+        "conflicts": [],
+        "source_refs": []
+      },
+      "procedure_code": {
+        "value": "2.000635",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "procedure_code: 2.000635",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "authority_level": {
+        "value": "Cấp tỉnh/ xã",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "Cơ quan thực hiện: Cấp tỉnh/ xã",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      "example_requests": [
+        {
+          "text": "Tôi muốn xin bản sao giấy khai sinh.",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Tôi muốn nộp yêu cầu cấp bản sao trích lục hộ tịch trực tuyến.",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Tôi có thể ủy quyền cho mẹ xin bản sao trích lục hộ tịch không?",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "Cơ quan tôi cần gửi văn bản yêu cầu bản sao trích lục hộ tịch của một cá nhân.",
+          "origin": "generated",
+          "language": "vi",
+          "source_refs": []
+        },
+        {
+          "text": "I would like a copy of my birth certificate.",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "How do I request a civil status extract copy online?",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "Can I authorize my mother to request the extract copy for me?",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        },
+        {
+          "text": "Our organization needs to submit a written request for an individual's civil status extract copy.",
+          "origin": "generated",
+          "language": "en",
+          "source_refs": []
+        }
+      ],
+      "decision_criteria": [
+        {
+          "question": "How would you like to submit the application?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "(nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp)",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            },
+            {
+              "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel",
+          "answer_options": [
+            {
+              "label": "In person",
+              "value": "in_person",
+              "source_refs": [
+                {
+                  "quote": "Trực tiếp",
+                  "locator": "method:0",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "Online",
+              "value": "online",
+              "source_refs": [
+                {
+                  "quote": "Trực tuyến",
+                  "locator": "method:1",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "By postal service",
+              "value": "postal",
+              "source_refs": [
+                {
+                  "quote": "Dịch vụ bưu chính",
+                  "locator": "method:2",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Is the request being made by an individual or by an authority or organization?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "applicant_category",
+          "answer_options": [
+            {
+              "label": "An individual",
+              "value": "individual",
+              "source_refs": [
+                {
+                  "quote": "Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân",
+                  "locator": "requirement:0",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "An authority or organization",
+              "value": "authority_or_organization",
+              "source_refs": [
+                {
+                  "quote": "Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức",
+                  "locator": "requirement:0",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Is the requesting organization an enterprise, a cooperative, or another type of authority or organization?",
+          "condition": {
+            "values": [
+              "authority_or_organization"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "trong trường hợp người yêu cầu là cơ quan, tổ chức",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "applicant_category"
+          },
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "organization_type",
+          "answer_options": [
+            {
+              "label": "An enterprise",
+              "value": "enterprise",
+              "source_refs": [
+                {
+                  "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "A cooperative",
+              "value": "cooperative",
+              "source_refs": [
+                {
+                  "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "Another type of authority or organization",
+              "value": "other_authority_or_organization",
+              "source_refs": [
+                {
+                  "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                },
+                {
+                  "quote": "Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Will someone else submit the request under your authorization?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "uses_authorized_representative",
+          "answer_options": [
+            {
+              "label": "Yes, I will authorize someone else",
+              "value": "yes",
+              "source_refs": [
+                {
+                  "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện",
+                  "locator": "method:0",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "No, I will act directly",
+              "value": "no",
+              "source_refs": [
+                {
+                  "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện",
+                  "locator": "method:0",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Is the authorized person your grandparent, parent, child, spouse, or full sibling?",
+          "condition": {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "uses_authorized_representative"
+          },
+          "source_refs": [
+            {
+              "quote": "Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "representative_is_listed_close_relative",
+          "answer_options": [
+            {
+              "label": "Yes, one of those listed relatives",
+              "value": "yes",
+              "source_refs": [
+                {
+                  "quote": "Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "locator": "requirement:3",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "No, not one of those listed relatives",
+              "value": "no",
+              "source_refs": [
+                {
+                  "quote": "Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                  "locator": "requirement:3",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Has the system automatically filled in your identity-document information from the population or electronic civil status databases?",
+          "condition": {
+            "values": [
+              "online"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          },
+          "source_refs": [
+            {
+              "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "identity_information_database_autofilled",
+          "answer_options": [
+            {
+              "label": "Yes, the information is in the databases and has been automatically filled in",
+              "value": "yes",
+              "source_refs": [
+                {
+                  "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                  "locator": "requirement:5",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "No, that database autofill condition is not met",
+              "value": "no",
+              "source_refs": [
+                {
+                  "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                  "locator": "requirement:5",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        },
+        {
+          "question": "Will you collect the result at a Public Administration Service Center?",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "source_refs": [
+            {
+              "quote": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.",
+              "locator": "requirement:18",
+              "source_id": "primary"
+            },
+            {
+              "quote": "- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+              "locator": "requirement:19",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "collect_at_public_administration_center",
+          "answer_options": [
+            {
+              "label": "Yes",
+              "value": "yes",
+              "source_refs": [
+                {
+                  "quote": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.",
+                  "locator": "requirement:18",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "No",
+              "value": "no",
+              "source_refs": [
+                {
+                  "quote": "- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                  "locator": "requirement:19",
+                  "source_id": "primary"
+                }
+              ]
+            },
+            {
+              "label": "I'm not sure",
+              "value": "unknown",
+              "source_refs": []
+            }
+          ],
+          "question_origin": "generated"
+        }
+      ],
+      "eligibility_rules": [
+        {
+          "rule_id": "no_separate_conditions_listed",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "true",
+            "source_refs": [
+              {
+                "quote": "Không",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Mục yêu cầu, điều kiện thực hiện ghi “Không”; các yêu cầu hồ sơ và trường hợp từ chối vẫn được nêu riêng.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Không",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "listed_applicant_scope",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Đối tượng được liệt kê là công dân Việt Nam hoặc tổ chức không bao gồm doanh nghiệp, HTX. Quy trình riêng yêu cầu cơ quan, tổ chức có thẩm quyền gửi văn bản nêu rõ lý do khi yêu cầu bản sao của cá nhân.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "submission_presentation_upload_guidance",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Người yêu cầu nộp/xuất trình giấy tờ khi nộp trực tiếp hoặc tải lên khi nộp trực tuyến. Đây là dòng hướng dẫn, số lượng ghi 0 bản chính và 0 bản sao, không phải một giấy tờ riêng.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau: Bản chính: 0 - Bản sao: 0",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "residence_choice_and_assistance",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Cá nhân có quyền lựa chọn cơ quan đăng ký hộ tịch nơi cư trú theo pháp luật về cư trú. Nếu lựa chọn không phải UBND cấp xã nơi thường trú hoặc tạm trú, UBND cấp xã tiếp nhận phải hỗ trợ nộp hồ sơ trực tuyến đến đúng cơ quan có thẩm quyền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+                "locator": "requirement:6",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "direct_submission_acceptable_document_formats",
+          "condition": {
+            "values": [
+              "in_person"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          },
+          "statement": {
+            "value": "Đối với giấy tờ nộp, xuất trình khi nộp trực tiếp: được nộp bản sao chứng thực từ bản chính, bản sao cấp từ sổ gốc, bản chụp kèm bản chính hoặc bản điện tử, bao gồm giấy tờ tích hợp, hiển thị trên VneID.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              },
+              {
+                "quote": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+                "locator": "requirement:8",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "receiver_verifies_photocopy_with_original",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Khi nộp bản chụp kèm bản chính, người tiếp nhận phải kiểm tra, đối chiếu và ký xác nhận; không được yêu cầu nộp bản sao giấy tờ đó.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+                "locator": "requirement:9",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "presented_documents_returned",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Người tiếp nhận kiểm tra giấy tờ xuất trình, đối chiếu tờ khai, chụp hoặc ghi thông tin lưu hồ sơ rồi trả lại; không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                "locator": "requirement:10",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "no_extra_documents",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Người tiếp nhận phải tiếp nhận đúng, đủ hồ sơ và không được yêu cầu thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+                "locator": "requirement:11",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "population_database_lookup",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Người tiếp nhận khai thác CSDLQGVDC khi người yêu cầu đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Nếu thông tin cần khai thác không có thì đề nghị kê khai đầy đủ.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+                "locator": "requirement:12",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "online_attachment_quality",
+          "condition": {
+            "values": [
+              "online"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                "locator": "requirement:13",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          },
+          "statement": {
+            "value": "Giấy tờ đính kèm trực tuyến phải là ảnh chụp hoặc bản quét rõ nét, đầy đủ, toàn vẹn nội dung, từ giấy tờ được cấp hợp lệ và còn giá trị sử dụng.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+                "locator": "requirement:13",
+                "source_id": "primary"
+              },
+              {
+                "quote": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+                "locator": "requirement:14",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "online_existing_electronic_documents",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Nếu giấy tờ phải đính kèm hồ sơ trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì được sử dụng bản điện tử đó.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+                "locator": "requirement:15",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "authorization_certification_exception",
+          "condition": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "yes"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch.",
+                    "locator": "requirement:3",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "uses_authorized_representative"
+              },
+              {
+                "values": [
+                  "yes"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                    "locator": "requirement:3",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "representative_is_listed_close_relative"
+              }
+            ],
+            "operator": "and",
+            "source_refs": [
+              {
+                "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Văn bản ủy quyền không phải chứng thực nếu người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị hoặc em ruột của người ủy quyền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "online_identity_upload_exception",
+          "condition": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "online"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                    "locator": "requirement:5",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "submission_channel"
+              },
+              {
+                "values": [
+                  "yes"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                    "locator": "requirement:5",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "identity_information_database_autofilled"
+              }
+            ],
+            "operator": "and",
+            "source_refs": [
+              {
+                "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Không phải tải lên giấy tờ nhân thân khi nộp trực tuyến nếu thông tin cá nhân trong giấy tờ đã có trong CSDLQGVDC, CSDLHTĐT và được hệ thống điền tự động.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "foreign_document_consular_legalization",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [
+              {
+                "quote": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật",
+                "locator": "requirement:17",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                "locator": "requirement:17",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": [
+            {
+              "values": [],
+              "children": [],
+              "operator": "unknown",
+              "source_refs": [
+                {
+                  "quote": "trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                  "locator": "requirement:17",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": null
+            }
+          ]
+        },
+        {
+          "rule_id": "collection_at_public_administration_center",
+          "condition": {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "collect_at_public_administration_center"
+          },
+          "statement": {
+            "value": "Nếu chọn nhận kết quả tại Trung tâm Phục vụ hành chính công, người yêu cầu phải xuất trình giấy tờ tùy thân và nộp các giấy tờ thuộc thành phần hồ sơ theo quy định.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "collection_elsewhere",
+          "condition": {
+            "values": [
+              "no"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                "locator": "requirement:19",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "collect_at_public_administration_center"
+          },
+          "statement": {
+            "value": "Nếu không chọn nhận kết quả tại Trung tâm Phục vụ hành chính công, người yêu cầu phải nộp các giấy tờ thuộc thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+                "locator": "requirement:19",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "intake_and_supplementation",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Cán bộ kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ. Hồ sơ đầy đủ, hợp lệ được tiếp nhận và chuyển xử lý; hồ sơ chưa đầy đủ, hợp lệ được thông báo rõ giấy tờ, nội dung cần bổ sung, sau đó thực hiện lại bước tiếp nhận. Nếu không thể bổ sung, hoàn thiện thì báo cáo lãnh đạo Trung tâm để thông báo từ chối.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "(iii) Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao giấy khai sinh.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "processing_routing_and_appointments",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Hồ sơ đầy đủ, hợp lệ chuyển công chức tư pháp - hộ tịch; nếu tiếp nhận tại Trung tâm cấp tỉnh thì chuyển Sở Tư pháp/UBND cấp xã có thẩm quyền. Quy trình nêu hồ sơ nhận sau 15 giờ có Phiếu hẹn trả ngày làm việc tiếp theo; trực tuyến nhận Phiếu hẹn qua thư điện tử hoặc tin nhắn.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; nếu tiếp nhận hồ sơ sau 15 giờ thì có Phiếu hẹn, trả kết quả cho người yêu cầu trong ngày làm việc tiếp theo (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Sở Tư pháp/Ủy ban nhân dân cấp xã có thẩm quyền xử lý.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "verification_and_delayed_results",
+          "condition": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "statement": {
+            "value": "Công chức thẩm tra tính thống nhất, hợp lệ; nếu cần bổ sung hoặc từ chối thì thông báo qua Trung tâm để quay lại bước tương ứng. Nếu cần xác minh hoặc vì nguyên nhân khác không thể trả đúng hẹn thì lập Phiếu xin lỗi và hẹn lại, nêu lý do và thời gian; trả qua Trung tâm cho hồ sơ trực tiếp hoặc qua email/tin nhắn cho hồ sơ trực tuyến.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm).",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến).",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        },
+        {
+          "rule_id": "online_draft_confirmation",
+          "condition": {
+            "values": [
+              "online"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "Trường hợp tiếp nhận hồ sơ xin cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tuyến, công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi lại nội dung biểu mẫu Trích lục hộ tịch điện tử tương ứng với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          },
+          "statement": {
+            "value": "Với hồ sơ trực tuyến, công chức gửi nội dung biểu mẫu Trích lục hộ tịch điện tử đầy đủ qua thư điện tử hoặc thiết bị số. Người yêu cầu kiểm tra tính chính xác, đầy đủ và xác nhận trong tối đa một ngày. Nếu đã thống nhất, đầy đủ hoặc không phản hồi sau một ngày thì công chức in bản sao, trình Thủ trưởng ký và chuyển Trung tâm trả kết quả.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp tiếp nhận hồ sơ xin cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tuyến, công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi lại nội dung biểu mẫu Trích lục hộ tịch điện tử tương ứng với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục hộ tịch điện tử và xác nhận (tối đa một ngày).",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Nếu người có yêu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "exceptions": []
+        }
+      ],
+      "form_relationships": [
+        {
+          "aliases": [],
+          "version": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "file_hash": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+          "form_code": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "signed_by": [],
+          "certified_by": [],
+          "completed_by": [],
+          "effective_to": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "instructions": [],
+          "required_when": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "effective_from": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "official_title": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "field_schema_ref": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/fields.json",
+          "association_method": "official_copy",
+          "supporting_documents": [],
+          "mapping_review_status": "draft"
+        },
+        {
+          "aliases": [],
+          "version": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "file_hash": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+          "form_code": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "signed_by": [],
+          "certified_by": [],
+          "completed_by": [],
+          "effective_to": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "instructions": [],
+          "required_when": {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [],
+            "criterion_key": null
+          },
+          "effective_from": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "official_title": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "field_schema_ref": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/fields.json",
+          "association_method": "official_copy",
+          "supporting_documents": [],
+          "mapping_review_status": "draft"
+        }
+      ],
+      "required_documents": [
+        {
+          "name": {
+            "value": "Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu, đối với cá nhân nộp trực tiếp.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "in_person"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "(nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp)",
+                    "locator": "requirement:0",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "submission_channel"
+              },
+              {
+                "values": [
+                  "individual"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân",
+                    "locator": "requirement:0",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "applicant_category"
+              }
+            ],
+            "operator": "and",
+            "source_refs": [
+              {
+                "quote": "- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        },
+        {
+          "name": {
+            "value": "Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do, đối với cơ quan, tổ chức nộp trực tiếp; cơ quan, tổ chức có thẩm quyền gửi yêu cầu bản sao của cá nhân cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "in_person"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "(nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp)",
+                    "locator": "requirement:0",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "submission_channel"
+              },
+              {
+                "values": [
+                  "authority_or_organization"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức",
+                    "locator": "requirement:0",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "applicant_category"
+              }
+            ],
+            "operator": "and",
+            "source_refs": [
+              {
+                "quote": "- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        },
+        {
+          "name": {
+            "value": "Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch; người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 1",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 1",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          "required_when": {
+            "values": [
+              "online"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "- Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          }
+        },
+        {
+          "name": {
+            "value": "Văn bản ủy quyền theo quy định của pháp luật.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": "Theo quy định của pháp luật; không phải chứng thực nếu người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền. Nguồn không nêu chi tiết hình thức chứng thực cho các quan hệ khác.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "required_when": {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "uses_authorized_representative"
+          }
+        },
+        {
+          "name": {
+            "value": "Một giấy tờ chứng minh nhân thân còn giá trị sử dụng: Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc giấy tờ khác có ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp. Xuất trình khi nộp trực tiếp; tải lên khi nộp trực tuyến, trừ trường hợp thông tin đã có trong CSDLQGVDC, CSDLHTĐT và được tự động điền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "0",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "1",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 1 - Bản sao: 0",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": "Bưu chính: gửi kèm bản sao có chứng thực giấy tờ phải xuất trình. Trực tiếp: giấy tờ xuất trình được kiểm tra, lưu thông tin và trả lại; không được yêu cầu nộp bản sao hoặc bản chụp.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              },
+              {
+                "quote": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+                "locator": "requirement:10",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "required_when": {
+            "values": [],
+            "children": [
+              {
+                "values": [
+                  "in_person"
+                ],
+                "children": [],
+                "operator": "eq",
+                "source_refs": [
+                  {
+                    "quote": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                    "locator": "requirement:2",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": "submission_channel"
+              },
+              {
+                "values": [],
+                "children": [
+                  {
+                    "values": [
+                      "online"
+                    ],
+                    "children": [],
+                    "operator": "eq",
+                    "source_refs": [
+                      {
+                        "quote": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                        "locator": "requirement:2",
+                        "source_id": "primary"
+                      }
+                    ],
+                    "criterion_key": "submission_channel"
+                  },
+                  {
+                    "values": [
+                      "no"
+                    ],
+                    "children": [],
+                    "operator": "eq",
+                    "source_refs": [
+                      {
+                        "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                        "locator": "requirement:5",
+                        "source_id": "primary"
+                      }
+                    ],
+                    "criterion_key": "identity_information_database_autofilled"
+                  }
+                ],
+                "operator": "and",
+                "source_refs": [
+                  {
+                    "quote": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                    "locator": "requirement:2",
+                    "source_id": "primary"
+                  },
+                  {
+                    "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                    "locator": "requirement:5",
+                    "source_id": "primary"
+                  }
+                ],
+                "criterion_key": null
+              }
+            ],
+            "operator": "or",
+            "source_refs": [
+              {
+                "quote": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                "locator": "requirement:2",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+                "locator": "requirement:5",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        },
+        {
+          "name": {
+            "value": "Bản sao có chứng thực các giấy tờ phải xuất trình, gửi kèm hồ sơ bưu chính.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "copies": {
+            "value": "0 (số lượng ghi tại dòng yêu cầu bưu chính, dù nội dung yêu cầu gửi kèm bản sao có chứng thực)",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên. Bản chính: 0 - Bản sao: 0",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "originals": {
+            "value": "0 (số lượng ghi tại dòng yêu cầu bưu chính)",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Bản chính: 0 - Bản sao: 0",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "certification": {
+            "value": "Có chứng thực.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "required_when": {
+            "values": [
+              "postal"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "submission_channel"
+          }
+        }
+      ],
+      "missing_information": [
+        "Không có ngày bắt đầu hoặc kết thúc hiệu lực thủ tục, hay thông tin thủ tục bị thay thế.",
+        "Không xác định phạm vi địa lý cụ thể; không suy ra phạm vi từ cấp tỉnh/xã hoặc hướng dẫn lựa chọn cơ quan nơi cư trú.",
+        "Không có bản ghi biểu mẫu kèm mã băm hoặc nội dung biểu mẫu được cung cấp. section:2:Thành phần hồ sơ chỉ nêu tên tệp 18.TKyeucaubansaotrichluchotich.doc và 18.DTTT-CpBSkhaisinhTrchlcHT.doc; chưa xác định phiên bản, ngày hiệu lực, người ký hoặc chứng nhận từng biểu mẫu.",
+        "Chưa nêu cụ thể cơ quan, tổ chức nào đáp ứng yêu cầu có thẩm quyền; không tự động hóa phép thử thẩm quyền chỉ từ loại người yêu cầu.",
+        "Chưa nêu chi tiết chứng thực văn bản ủy quyền cho các quan hệ ngoài danh sách được miễn chứng thực.",
+        "Chưa có danh sách điều ước hoặc phép thử xác định trường hợp miễn hợp pháp hóa lãnh sự.",
+        "Thành phần tờ khai/văn bản tại requirement:0 chỉ xác định rõ nhánh trực tiếp; không tự suy ra cùng yêu cầu và số lượng cho bưu chính.",
+        "Không có mức phí riêng cho bản sao Giấy khai sinh, phí bưu chính hoặc trường hợp miễn, giảm trong chứng cứ; giữ nguyên đơn vị lệ phí đã nêu.",
+        "Điều kiện chưa được thiết lập cho một số quy tắc hướng dẫn hoặc đánh giá hồ sơ được giữ unknown; không xem unknown là không đủ điều kiện."
+      ],
+      "submission_channels": [
+        {
+          "fees": [
+            {
+              "value": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+              "status": "supported",
+              "conflicts": [],
+              "source_refs": [
+                {
+                  "quote": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+                  "locator": "method:0",
+                  "source_id": "primary"
+                }
+              ]
+            }
+          ],
+          "channel": {
+            "value": "Trực tiếp",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trực tiếp",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "conditions": {
+            "value": "Người yêu cầu trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "description": {
+            "value": "Nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp phí theo quy định. Mô tả dòng phương thức cũng liệt kê gửi qua bưu chính và nộp trực tuyến tại Cổng dịch vụ công quốc gia.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+                "locator": "method:0",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh nộp hồ sơ đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp phí theo quy định pháp luật.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "processing_time": {
+            "value": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          }
+        },
+        {
+          "fees": [
+            {
+              "value": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+              "status": "supported",
+              "conflicts": [],
+              "source_refs": [
+                {
+                  "quote": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+                  "locator": "method:1",
+                  "source_id": "primary"
+                }
+              ]
+            }
+          ],
+          "channel": {
+            "value": "Trực tuyến",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Trực tuyến",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "conditions": {
+            "value": "Người yêu cầu trực tiếp thực hiện hoặc ủy quyền; truy cập Cổng dịch vụ công quốc gia, xác thực người dùng, đăng nhập và chọn Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử có thẩm quyền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+                "locator": "method:1",
+                "source_id": "primary"
+              },
+              {
+                "quote": "- Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh truy cập Cổng dịch vụ công quốc gia, xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, lựa chọn Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử có thẩm quyền.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "description": {
+            "value": "Nộp tại https://dichvucong.gov.vn bằng mẫu điện tử tương tác, đính kèm bản chụp hoặc bản sao điện tử giấy tờ liên quan và nộp phí trực tuyến hoặc cách khác theo quy định. Dòng phương thức ghi đủ điều kiện dịch vụ công trực tuyến toàn trình, nhưng thông tin dịch vụ ghi “Một phần”. Mô tả phương thức cũng liệt kê nộp trực tiếp và bưu chính.",
+            "status": "conflict",
+            "conflicts": [
+              "method:1 mô tả đủ điều kiện trực tuyến toàn trình; section:5:Thông tin dịch vụ và đối tượng thực hiện ghi Một phần. Chưa xác định phân loại đúng."
+            ],
+            "source_refs": [
+              {
+                "quote": "- Thủ tục này đủ điều kiện thực hiện dịch vụ công trực tuyến toàn trình. - Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+                "locator": "method:1",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh Một phần",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến cung cấp thông tin theo mẫu điện tử tương tác yêu cầu bản sao Trích lục hộ tịch, cấp bản sao Giấy khai sinh (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu liên quan đến nội dung đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh; nộp phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "processing_time": {
+            "value": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          }
+        },
+        {
+          "fees": [
+            {
+              "value": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký.",
+              "status": "supported",
+              "conflicts": [],
+              "source_refs": [
+                {
+                  "quote": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký.",
+                  "locator": "method:2",
+                  "source_id": "primary"
+                }
+              ]
+            }
+          ],
+          "channel": {
+            "value": "Dịch vụ bưu chính",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Dịch vụ bưu chính",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "conditions": {
+            "value": "Người yêu cầu trực tiếp thực hiện hoặc ủy quyền; hồ sơ bưu chính phải kèm bản sao có chứng thực các giấy tờ phải xuất trình.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+                "locator": "method:2",
+                "source_id": "primary"
+              },
+              {
+                "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "description": {
+            "value": "Gửi hồ sơ qua hệ thống bưu chính. Mô tả dòng phương thức cũng liệt kê nộp trực tiếp tại Trung tâm Phục vụ hành chính công hoặc nộp trực tuyến tại Cổng dịch vụ công quốc gia.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          "processing_time": {
+            "value": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          }
+        }
+      ],
+      "applicant_categories": [
+        {
+          "value": "Công dân Việt Nam",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        {
+          "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        {
+          "value": "Cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao của cá nhân bằng văn bản nêu rõ lý do.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "procedure_code: 2.000635\nofficial_name: Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "identity",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "- Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh nộp hồ sơ đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp phí theo quy định pháp luật.\nTrường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử.\n- Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh truy cập Cổng dịch vụ công quốc gia, xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, lựa chọn Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử có thẩm quyền.\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến cung cấp thông tin theo mẫu điện tử tương tác yêu cầu bản sao Trích lục hộ tịch, cấp bản sao Giấy khai sinh (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu liên quan đến nội dung đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh; nộp phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.\n- Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ.\n(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; nếu tiếp nhận hồ sơ sau 15 giờ thì có Phiếu hẹn, trả kết quả cho người yêu cầu trong ngày làm việc tiếp theo (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Sở Tư pháp/Ủy ban nhân dân cấp xã có thẩm quyền xử lý.\n(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);\n(iii) Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao giấy khai sinh.\n- Công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm).\n+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);\n+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến).\n+ Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.\nTrường hợp tiếp nhận hồ sơ xin cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tuyến, công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi lại nội dung biểu mẫu Trích lục hộ tịch điện tử tương ứng với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.\nNgười yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục hộ tịch điện tử và xác nhận (tối đa một ngày).\nNếu người có yêu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "section:0:Trình tự thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nTrực tuyến\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký\n- Thủ tục này đủ điều kiện thực hiện dịch vụ công trực tuyến toàn trình.\n- Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nDịch vụ bưu chính\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký.\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "section:1:Cách thức thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);\n18.TKyeucaubansaotrichluchotich.doc\nBản chính: 1 - Bản sao: 0\n- Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)\n18.DTTT-CpBSkhaisinhTrchlcHT.doc\nBản chính: 1 - Bản sao: 1\n- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0\n* Giấy tờ phải nộp:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nVăn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.\nBản chính: 1 - Bản sao: 0\nTrường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.\nBản chính: 0 - Bản sao: 0\n* Giấy tờ phải xuất trình:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).\nBản chính: 1 - Bản sao: 0\n* Lưu ý:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.\nBản chính: 0 - Bản sao: 0\n- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:\nBản chính: 0 - Bản sao: 0\n+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).\nBản chính: 0 - Bản sao: 0\nTrường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.\nBản chính: 0 - Bản sao: 0\n+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.\nBản chính: 0 - Bản sao: 0\n+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .\nBản chính: 0 - Bản sao: 0\n+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.\nBản chính: 0 - Bản sao: 0\n- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:\nBản chính: 0 - Bản sao: 0\n+ Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.\nBản chính: 0 - Bản sao: 0\n+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.\nBản chính: 0 - Bản sao: 0\n- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "section:2:Thành phần hồ sơ",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "section:3:Cơ quan thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Không",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh\nMột phần\nCơ quan thực hiện: Cấp tỉnh/ xã\nĐối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Bao gồm\n- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);\nBản chính: 1 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:0",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Bao gồm\n- Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)\nBản chính: 1 - Bản sao: 1",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:1",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Bao gồm\n- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:2",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Giấy tờ phải nộp:\nVăn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.\nBản chính: 1 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:3",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Giấy tờ phải nộp:\nTrường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:4",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Giấy tờ phải xuất trình:\n- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).\nBản chính: 1 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:5",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:6",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:7",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:8",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\nTrường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:9",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:10",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:11",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:12",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:13",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n+ Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:14",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:15",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:16",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:17",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:18",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "* Lưu ý:\n- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.\nBản chính: 0 - Bản sao: 0",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "requirement:19",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Trực tiếp\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "method:0",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Trực tuyến\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\n- Thủ tục này đủ điều kiện thực hiện dịch vụ công trực tuyến toàn trình. - Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "method:1",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "kind": "procedure",
+        "text": "Dịch vụ bưu chính\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.\nNgười yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).\nLệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký.",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+        "locator": "method:2",
+        "source_id": "primary",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+        "kind": "registry",
+        "text": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":null,\"document_kind\":\"blank_form\",\"download_url\":\"https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc\",\"family\":\"civil-extract-declaration\",\"matches\":[{\"label\":\"18.TKyeucaubansaotrichluchotich.doc\",\"procedure_code\":\"2.000635\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=40654&represent=1\",\"revision\":null,\"summary\":\"Tờ khai đề nghị cấp bản sao trích lục hộ tịch\"}",
+        "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+        "locator": "form-association",
+        "source_id": "registry:55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+        "fetched_at": "2026-10-31T08:48:40.041095+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+        "kind": "form",
+        "text": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nTỜ KHAI \nCẤP BẢN SAO TRÍCH LỤC HỘ TỊCH\nKính gửi: (1)....................................................................................................\nHọ, chữ đệm, tên người yêu cầu: .......................................................................................\nNgày, tháng, năm sinh: .........................................................................................................\nNơi cư trú: (2)..........................................................................................................................\n...............................................................................................................................................\nGiấy tờ tùy thân: (3).................................................................................................................\n...............................................................................................................................................\nQuan hệ với người được cấp bản sao Trích lục hộ tịch: .......................................................\nĐề nghị cơ quan cấp bản sao trích lục(4) ............................................................. \ncho người có tên dưới đây: \nHọ, chữ đệm, tên: ................................................................................................................\nNgày, tháng, năm sinh:..........................................................................................................\nGiới tính: (2) ...........................Dân tộc: (2)..................... Quốc tịch: (2)....................................\nNơi cư trú: (2)..........................................................................................................................\n...............................................................................................................................................\nGiấy tờ tùy thân: (3) ................................................................................................................\n...............................................................................................................................................\nĐã đăng ký tại: (5) ..................................................................................................................\n............................................................................................................................................... \nngày  .......... tháng ........... năm .............. số.................. Quyển số: .........................................\nThông tin khác: (6) .................................................................................................................\n...............................................................................................................................................\n...............................................................................................................................................\nSố lượng bản sao yêu cầu cấp:.......................bản(7).\nTôi cam đoan những nội dung khai trên đây là đúng sự thật và chịu trách nhiệm trước\npháp luật về cam đoan của mình. \n   Làm tại: ............................, ngày ...... tháng ...... năm ..........\n                                                                            Người yêu cầu\n    (ký và ghi rõ họ, chữ đệm, tên) \n    .....................................",
+        "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+        "locator": "page:1",
+        "source_id": "form:55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+        "fetched_at": "2026-10-31T08:48:40.041095+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+        "kind": "form",
+        "text": "Chú thích: \n(1) Ghi tên cơ quan đề nghị thực hiện việc cấp bản sao Trích lục hộ tịch.\n(2) Chỉ ghi trong trường hợp người có yêu cầu đăng ký hộ tịch chưa có/không\ncung cấp số định danh cá nhân/căn cước công dân/thẻ căn cước/chứng minh nhân dân. \nTrường hợp phải cung cấp thông tin “Nơi cư trú” thì ghi theo nơi đăng ký\nthường trú; nếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú;\ntrường hợp không có nơi đăng ký thường trú và nơi đăng ký tạm trú thì ghi theo nơi ở\nhiện tại. \n(3) Ghi số định danh cá nhân/căn cước công dân/thẻ căn cước (ví dụ: Căn cước\ncông dân số 025188001010 do Cục Cảnh sát QLHC về TTXH cấp ngày 20/11/2021).\nTrường hợp không có số định danh cá nhân/căn cước công dân/thẻ căn cước thì ghi\ngiấy tờ hợp lệ thay thế (hộ chiếu, chứng minh nhân dân,...).  \n(4) Ghi rõ loại việc hộ tịch đã đăng ký trước đây, nay đề nghị cấp bản sao Trích lục hộ\ntịch.\n(5) Ghi rõ tên cơ quan đã đăng ký hộ tịch trước đây.\nVí dụ: Ủy ban nhân dân phường Điện Biên, quận Ba Đình, thành phố Hà Nội.\nỦy ban nhân dân quận Hoàn Kiếm, thành phố Hà Nội. \nSở Tư pháp tỉnh Hòa Bình. \n(6) Trường hợp người yêu cầu không cung cấp được thông tin tại mục (5) thì cung\ncấp bổ sung thông tin khác để phục vụ việc tra cứu. \nVí dụ: Cung cấp thông tin về cha, mẹ để phục vụ việc cấp bản sao Giấy khai\nsinh; cung cấp thông tin về vợ, chồng để phục vụ việc cấp bản sao Trích lục kết hôn;...\n(7) Ghi rõ số lượng bản sao đề nghị cấp.",
+        "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+        "locator": "page:2",
+        "source_id": "form:55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+        "fetched_at": "2026-10-31T08:48:40.041095+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+        "kind": "registry",
+        "text": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":null,\"document_kind\":\"electronic_specification\",\"download_url\":\"https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc\",\"family\":\"civil-extract-electronic\",\"matches\":[{\"label\":\"18.DTTT-CpBSkhaisinhTrchlcHT.doc\",\"procedure_code\":\"2.000635\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh\",\"revision\":null,\"summary\":\"Nội dung mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch\"}",
+        "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+        "locator": "form-association",
+        "source_id": "registry:b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+        "fetched_at": "2026-10-31T08:50:17.333666+00:00",
+        "snapshot_id": 45
+      },
+      {
+        "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+        "kind": "form",
+        "text": "NỘI DUNG MẪU ĐIỆN TỬ TƯƠNG TÁC YÊU CẦU\nCẤP BẢN SAO GIẤY KHAI SINH, BẢN SAO TRÍCH LỤC HỘ TỊCH\nI. Thông tin về người yêu cầu\n(1) Họ, chữ đệm, tên;\n(2) Số định danh cá nhân;\n(3) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/Thẻ căn cước/Căn cước điện tử/Hộ\nchiếu/Giấy tờ hợp lệ thay thế); số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;\n(4) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);\n(5) Quan hệ với người được cấp bản sao Giấy khai sinh/Trích lục hộ tịch.\nII. Thông tin về giấy tờ hộ tịch đã đăng ký\n(6) Họ, chữ đệm, tên người được đăng ký; \n(7) Số định danh cá nhân;\n(8) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/Thẻ căn cước/Căn cước điện tử/Hộ\nchiếu/Giấy tờ hợp lệ thay thế); số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;\n(9) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);\n(10) Loại việc yêu cầu cấp bản sao Giấy khai sinh/Trích lục hộ tịch; \n(11) Cơ quan đã đăng ký sự kiện hộ tịch trước đây;\n(12) Tên giấy tờ hộ tịch, số, quyển số, ngày, tháng, năm đăng ký; \n(13) Số lượng bản sao;\n(14) Phương thức nhận kết quả: \n□ Trực tiếp\n□ Trực tuyến (bản điện tử sẽ được gửi về Kho quản lý dữ liệu của cá nhân/địa chỉ thư điện\ntử/thiết bị số/điện thoại của người yêu cầu)\n□ Bưu chính (cung cấp địa chỉ nơi nhận).\n(15) Hồ sơ đính kèm theo quy định.\n* Người yêu cầu cam đoan các thông tin cung cấp là đúng sự thật và chịu hoàn toàn trách\nnhiệm trước pháp luật về nội dung cam đoan của mình.\n* Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ\nCSDLQGVDC, được hệ thống điền tự động thì không phải xuất trình (theo hình thức trực\ntiếp) hoặc tải lên (theo hình thức trực tuyến).\n* Mẫu điện tử tương tác ghi nhận thời gian (giờ, phút, giây, ngày, tháng, năm) hoàn tất việc\ncung cấp thông tin; người yêu cầu trước đó đã đăng nhập vào hệ thống, thực hiện xác thực\nđiện tử theo quy định.",
+        "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+        "locator": "page:1",
+        "source_id": "form:b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+        "fetched_at": "2026-10-31T08:50:17.333666+00:00",
+        "snapshot_id": 45
+      }
+    ],
+    "metadata": {
+      "operation": "append_verified_form_associations_v1",
+      "validation": {
+        "schema": true,
+        "identity": true,
+        "form_hashes": true,
+        "citations_verified": 151
+      },
+      "extracted_at": "2026-10-31T08:55:16.312424+00:00",
+      "model_invoked": false,
+      "extraction_status": "validated_draft",
+      "parent_profile_id": 13
+    },
+    "output_sha256": "01e42616f03092d9b3c59c81e108939f4c20b6ce5b3a7454dec046978e5678a9"
+  },
+  "facts": [
+    {
+      "id": 151,
+      "snapshot_id": 45,
+      "kind": "steps",
+      "position": 0,
+      "text_verbatim": "- Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh nộp hồ sơ đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp phí theo quy định pháp luật. Trường hợp cơ quan, tổ chức có thẩm quyền đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh của cá nhân thì gửi văn bản yêu cầu nêu rõ lý do cho Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử. - Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh truy cập Cổng dịch vụ công quốc gia, xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, lựa chọn Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử có thẩm quyền. Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến cung cấp thông tin theo mẫu điện tử tương tác yêu cầu bản sao Trích lục hộ tịch, cấp bản sao Giấy khai sinh (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu liên quan đến nội dung đề nghị cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh; nộp phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ. - Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ. (i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; nếu tiếp nhận hồ sơ sau 15 giờ thì có Phiếu hẹn, trả kết quả cho người yêu cầu trong ngày làm việc tiếp theo (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Sở Tư pháp/Ủy ban nhân dân cấp xã có thẩm quyền xử lý. (ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i); (iii) Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu cấp bản sao Trích lục hộ tịch, bản sao giấy khai sinh. - Công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu do người yêu cầu nộp, xuất trình hoặc đính kèm). + Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii); + Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến). + Nếu thấy hồ sơ đầy đủ, hợp lệ, đúng quy định, trường hợp tiếp nhận hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu. Trường hợp tiếp nhận hồ sơ xin cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh theo hình thức trực tuyến, công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch gửi lại nội dung biểu mẫu Trích lục hộ tịch điện tử tương ứng với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số. Người yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Trích lục hộ tịch điện tử và xác nhận (tối đa một ngày). Nếu người có yêu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch/công chức làm công tác hộ tịch in bản sao Trích lục hộ tịch, trình Thủ trưởng Cơ quan quản lý Cơ sở dữ liệu hộ tịch điện tử ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    },
+    {
+      "id": 152,
+      "snapshot_id": 45,
+      "kind": "agency",
+      "position": 0,
+      "text_verbatim": "Cơ quan quản lý cơ sở dữ liệu hộ tịch điện tử",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    },
+    {
+      "id": 153,
+      "snapshot_id": 45,
+      "kind": "conditions",
+      "position": 0,
+      "text_verbatim": "Không",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    }
+  ],
+  "requirements": [
+    {
+      "id": 379,
+      "snapshot_id": 45,
+      "position": 0,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "- Tờ khai đề nghị bản sao Trích lục hộ tịch theo mẫu trong trường hợp người yêu cầu là cá nhân hoặc Văn bản yêu cầu cấp bản sao Trích lục hộ tịch nêu rõ lý do trong trường hợp người yêu cầu là cơ quan, tổ chức (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": [
+        143
+      ]
+    },
+    {
+      "id": 380,
+      "snapshot_id": 45,
+      "position": 1,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "- Mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+      "originals": 1,
+      "copies": 1,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": [
+        144
+      ]
+    },
+    {
+      "id": 381,
+      "snapshot_id": 45,
+      "position": 2,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "- Người có yêu cầu cấp bản sao Trích lục hộ tịch thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 382,
+      "snapshot_id": 45,
+      "position": 3,
+      "group_heading": "* Giấy tờ phải nộp:",
+      "text_verbatim": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực.",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 383,
+      "snapshot_id": 45,
+      "position": 4,
+      "group_heading": "* Giấy tờ phải nộp:",
+      "text_verbatim": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 384,
+      "snapshot_id": 45,
+      "position": 5,
+      "group_heading": "* Giấy tờ phải xuất trình:",
+      "text_verbatim": "- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp bản sao Trích lục hộ tịch. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến).",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 385,
+      "snapshot_id": 45,
+      "position": 6,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 386,
+      "snapshot_id": 45,
+      "position": 7,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 387,
+      "snapshot_id": 45,
+      "position": 8,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 388,
+      "snapshot_id": 45,
+      "position": 9,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 389,
+      "snapshot_id": 45,
+      "position": 10,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 390,
+      "snapshot_id": 45,
+      "position": 11,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 391,
+      "snapshot_id": 45,
+      "position": 12,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 392,
+      "snapshot_id": 45,
+      "position": 13,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 393,
+      "snapshot_id": 45,
+      "position": 14,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 394,
+      "snapshot_id": 45,
+      "position": 15,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tuyến đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 395,
+      "snapshot_id": 45,
+      "position": 16,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Trường hợp người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh không cung cấp đầy đủ hoặc cung cấp các thông tin không chính xác, không thể tra cứu được thông tin thì cơ quan đăng ký hộ tịch từ chối giải quyết.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 396,
+      "snapshot_id": 45,
+      "position": 17,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 397,
+      "snapshot_id": 45,
+      "position": 18,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Trường hợp người yêu cầu đăng k‎ý hộ tịch lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    },
+    {
+      "id": 398,
+      "snapshot_id": 45,
+      "position": 19,
+      "group_heading": "* Lưu ý:",
+      "text_verbatim": "- Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "form_ids": []
+    }
+  ],
+  "methods": [
+    {
+      "id": 121,
+      "snapshot_id": 45,
+      "position": 0,
+      "method": "Trực tiếp",
+      "processing_time_verbatim": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+      "description_verbatim": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    },
+    {
+      "id": 122,
+      "snapshot_id": 45,
+      "position": 1,
+      "method": "Trực tuyến",
+      "processing_time_verbatim": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+      "description_verbatim": "- Thủ tục này đủ điều kiện thực hiện dịch vụ công trực tuyến toàn trình. - Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    },
+    {
+      "id": 123,
+      "snapshot_id": 45,
+      "position": 2,
+      "method": "Dịch vụ bưu chính",
+      "processing_time_verbatim": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.",
+      "description_verbatim": "Người yêu cầu cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện nộp hồ sơ trực tiếp tại Trung tâm Phục vụ hành chính công, gửi qua hệ thống bưu chính hoặc nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn).",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    }
+  ],
+  "fees": [
+    {
+      "id": 222,
+      "snapshot_id": 45,
+      "method": "Trực tiếp",
+      "text_verbatim": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+      "amount": null,
+      "currency": null,
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(1370161)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    },
+    {
+      "id": 223,
+      "snapshot_id": 45,
+      "method": "Trực tuyến",
+      "text_verbatim": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký",
+      "amount": null,
+      "currency": null,
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(1370162)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    },
+    {
+      "id": 224,
+      "snapshot_id": 45,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Lệ phí: 8.000 đồng/bản sao Trích lục/sự kiện hộ tịch đã đăng ký.",
+      "amount": null,
+      "currency": null,
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(1370243)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+    }
+  ],
+  "forms": [
+    {
+      "id": 143,
+      "snapshot_id": 45,
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+      "label": "18.TKyeucaubansaotrichluchotich.doc",
+      "form_sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+      "fetched_at": "2026-10-31T08:48:40.041095+00:00",
+      "association_method": "official_copy",
+      "review_status": "draft",
+      "revision_reference": null,
+      "issued_on": null,
+      "effective_from": null,
+      "raw_path": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+      "pdf_path": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/blank.pdf",
+      "linked_from": {
+        "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+      },
+      "original_download_url": "/forms/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/original"
+    },
+    {
+      "id": 144,
+      "snapshot_id": 45,
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+      "label": "18.DTTT-CpBSkhaisinhTrchlcHT.doc",
+      "form_sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+      "fetched_at": "2026-10-31T08:50:17.333666+00:00",
+      "association_method": "official_copy",
+      "review_status": "draft",
+      "revision_reference": null,
+      "issued_on": null,
+      "effective_from": null,
+      "raw_path": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+      "pdf_path": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/blank.pdf",
+      "linked_from": {
+        "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+        "fetched_at": "2026-10-31T08:06:51.234805+00:00",
+        "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72"
+      },
+      "original_download_url": "/forms/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/original"
+    }
+  ],
+  "shared_forms": [
+    {
+      "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+      "family": "civil-extract-declaration",
+      "original": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+      "pdf": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/blank.pdf",
+      "fields": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/fields.json",
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+      "source_label": "18.TKyeucaubansaotrichluchotich.doc",
+      "association_method": "official_copy",
+      "recovery_source": {
+        "family": "civil-extract-declaration",
+        "summary": "Tờ khai đề nghị cấp bản sao trích lục hộ tịch",
+        "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=40654&represent=1",
+        "derivation": null,
+        "fetched_at": "2026-10-31T08:48:40.041095+00:00",
+        "page_sha256": "3299536dfcb3b299d59cad4585ba9d5bb38d851024338be9b9a27bf43e0db321",
+        "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+        "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+        "document_kind": "blank_form",
+        "candidate_only": null,
+        "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+        "inspected_official_copy": true,
+        "current_applicability_verified": false
+      }
+    },
+    {
+      "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+      "family": "civil-extract-electronic",
+      "original": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+      "pdf": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/blank.pdf",
+      "fields": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/fields.json",
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+      "source_label": "18.DTTT-CpBSkhaisinhTrchlcHT.doc",
+      "association_method": "official_copy",
+      "recovery_source": {
+        "family": "civil-extract-electronic",
+        "summary": "Nội dung mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch",
+        "page_url": "https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh",
+        "derivation": null,
+        "fetched_at": "2026-10-31T08:50:17.333666+00:00",
+        "page_sha256": "a8e4a97bf4108573ad567ace7da8ed793287c5a77d2719dfea989206963451ad",
+        "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+        "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+        "document_kind": "electronic_specification",
+        "candidate_only": null,
+        "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+        "inspected_official_copy": true,
+        "current_applicability_verified": false
+      }
+    }
+  ]
+}

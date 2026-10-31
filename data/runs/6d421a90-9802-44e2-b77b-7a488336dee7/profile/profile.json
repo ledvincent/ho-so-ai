@@ -1,0 +1,3039 @@
+{
+  "profile": {
+    "procedure_code": {
+      "value": "1.004222",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "procedure_code: 1.004222"
+        }
+      ],
+      "conflicts": []
+    },
+    "official_name": {
+      "value": "Đăng ký thường trú",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Đăng ký thường trú"
+        }
+      ],
+      "conflicts": []
+    },
+    "purpose": {
+      "value": "Đăng ký thường trú theo hồ sơ và trường hợp cư trú tương ứng, thực hiện tại Công an cấp xã.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đăng ký thường trú (thực hiện tại cấp xã)"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Bước 2: Cá nhân nộp hồ sơ đến Công an cấp xã."
+        }
+      ],
+      "conflicts": []
+    },
+    "outcome": {
+      "value": "Giải quyết đăng ký thường trú và nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả, nếu có.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Bước 5: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có)."
+        }
+      ],
+      "conflicts": []
+    },
+    "action_type": [
+      {
+        "value": "register",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "official_name: Đăng ký thường trú"
+          }
+        ],
+        "conflicts": []
+      }
+    ],
+    "aliases": [
+      {
+        "text": "Đăng ký thường trú tại cấp xã",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Thủ tục đăng ký nơi thường trú",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Permanent residence registration",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Register permanent residence with commune-level police",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      }
+    ],
+    "example_requests": [
+      {
+        "text": "Tôi muốn đăng ký thường trú tại nhà thuộc sở hữu của mình.",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Đăng ký thường trú tại nhà thuê cần giấy tờ gì?",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi là người Việt Nam ở nước ngoài về sinh sống, nhập cảnh bằng hộ chiếu nước ngoài. Tôi dùng tờ khai nào?",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi có thể đăng ký thường trú qua VNeID không?",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I want to register permanent residence in a home I own.",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "What documents do I need to register permanent residence in rented housing?",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I am an overseas Vietnamese returning to live in Vietnam and entered with a foreign passport. Which declaration should I use?",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Can I apply for permanent residence registration through VNeID?",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      }
+    ],
+    "applicant_categories": [
+      {
+        "value": "Công dân Việt Nam",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+          }
+        ],
+        "conflicts": []
+      }
+    ],
+    "eligibility_rules": [
+      {
+        "rule_id": "citizen_information_updated",
+        "statement": {
+          "value": "Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào cả Cơ sở dữ liệu quốc gia về dân cư và Cơ sở dữ liệu về cư trú.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "citizen_information_updated_in_both_databases",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "ct02_returning_overseas_vietnamese",
+        "statement": {
+          "value": "Sử dụng CT02 theo Thông tư 66/2023/TT-BCA đối với người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống có hoàn cảnh nhập cảnh/hộ chiếu được nêu trong nguồn. Quy tắc này xác định loại tờ khai, không tự xác lập đủ điều kiện đăng ký thường trú.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "and",
+          "criterion_key": null,
+          "values": [],
+          "children": [
+            {
+              "operator": "eq",
+              "criterion_key": "overseas_vietnamese_returning_to_live",
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:1",
+                  "quote": "người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống"
+                }
+              ]
+            },
+            {
+              "operator": "or",
+              "criterion_key": null,
+              "values": [],
+              "children": [
+                {
+                  "operator": "in",
+                  "criterion_key": "last_entry_document",
+                  "values": [
+                    "foreign_passport",
+                    "foreign_passport_replacement",
+                    "other_document_issued_by_vietnamese_authority"
+                  ],
+                  "children": [],
+                  "source_refs": [
+                    {
+                      "source_id": "primary",
+                      "locator": "requirement:1",
+                      "quote": "nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp"
+                    }
+                  ]
+                },
+                {
+                  "operator": "and",
+                  "criterion_key": null,
+                  "values": [],
+                  "children": [
+                    {
+                      "operator": "eq",
+                      "criterion_key": "last_entry_document",
+                      "values": [
+                        "vietnamese_passport"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "requirement:1",
+                          "quote": "sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+                        }
+                      ]
+                    },
+                    {
+                      "operator": "in",
+                      "criterion_key": "vietnamese_passport_status",
+                      "values": [
+                        "lost",
+                        "expired"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "requirement:1",
+                          "quote": "sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+                        }
+                      ]
+                    }
+                  ],
+                  "source_refs": [
+                    {
+                      "source_id": "primary",
+                      "locator": "requirement:1",
+                      "quote": "sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+                    }
+                  ]
+                }
+              ],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:1",
+                  "quote": "nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+                }
+              ]
+            }
+          ],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "non_owned_housing_first_branch_ct01",
+        "statement": {
+          "value": "Nhánh thứ nhất có tiêu đề bị cắt về chỗ ở hợp pháp không thuộc quyền sở hữu: CT01, 1 bản chính, 0 bản sao. Tờ khai ghi ý kiến đồng ý của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ khi đã có ý kiến đồng ý bằng văn bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của... Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA), Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của..."
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "operator": "eq",
+            "criterion_key": "written_residence_consent_available",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:3",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rule_id": "rented_borrowed_hosted_housing_declarations",
+        "statement": {
+          "value": "Nhánh chỗ ở được cho thuê, cho mượn, cho ở nhờ: CT01 có 1 bản chính, 0 bản sao; trường hợp CT02 được mô tả trong nguồn cũng có 1 bản chính, 0 bản sao. Ghi ý kiến đồng ý của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền; không phải ghi lại nếu đã có ý kiến đồng ý bằng văn bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:6",
+              "quote": "trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA), trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của..."
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "operator": "eq",
+            "criterion_key": "written_residence_consent_available",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              },
+              {
+                "source_id": "primary",
+                "locator": "requirement:6",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rule_id": "religious_premises_first_branch_declarations",
+        "statement": {
+          "value": "Nhánh cơ sở tín ngưỡng, cơ sở tôn giáo thứ nhất: CT01 có 1 bản chính, 0 bản sao; CT02 cho trường hợp người Việt Nam định cư ở nước ngoài có hoàn cảnh nhập cảnh/hộ chiếu được nêu cũng có 1 bản chính, 0 bản sao. Tiêu đề nhánh bị cắt nên phạm vi đầy đủ chưa được xác lập.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:7",
+              "quote": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công... Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA). Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:8",
+              "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA); Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:7",
+              "quote": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công..."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "belief_premises_management_consent",
+        "statement": {
+          "value": "Người được đồng ý đăng ký thường trú để trực tiếp quản lý, tổ chức hoạt động tín ngưỡng phải ghi trong tờ khai ý kiến đồng ý của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, trừ khi đã có ý kiến đồng ý bằng văn bản. Đây là hướng dẫn khai, không phải tài liệu riêng; dòng nguồn ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:9",
+              "quote": "Đối với người được người đại diện hoặc ban quản lý cơ sở tín ngưỡng đồng ý cho đăng ký thường trú để trực tiếp quản lý, tổ chức hoạt động tín ngưỡng tại cơ sở tín ngưỡng thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, trừ trường hợp đã có ý kiến đồng ý bằng văn bản. Bản chính: 0 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:9",
+              "quote": "Đối với người được người đại diện hoặc ban quản lý cơ sở tín ngưỡng đồng ý cho đăng ký thường trú để trực tiếp quản lý, tổ chức hoạt động tín ngưỡng tại cơ sở tín ngưỡng"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "operator": "eq",
+            "criterion_key": "written_residence_consent_available",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:9",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rule_id": "religious_premises_second_branch_declarations",
+        "statement": {
+          "value": "Nhánh cơ sở tín ngưỡng, cơ sở tôn giáo thứ hai, kèm xác nhận về đối tượng khoản 2 Điều 17 Luật Cư trú: CT01 hoặc CT02 theo hoàn cảnh được nêu, mỗi loại có 1 bản chính, 0 bản sao. Trong tờ khai ghi ý kiến đồng ý của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ khi đã có ý kiến đồng ý bằng văn bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:12",
+              "quote": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:13",
+              "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA), trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về người thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật Cư trú và việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:12",
+              "quote": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công..."
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "người thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật Cư trú"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "operator": "eq",
+            "criterion_key": "written_residence_consent_available",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:12",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              },
+              {
+                "source_id": "primary",
+                "locator": "requirement:13",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rule_id": "care_assistance_declarations",
+        "statement": {
+          "value": "Nhánh người được chăm sóc, nuôi dưỡng, trợ giúp: CT01 có 1 bản chính, 0 bản sao; CT02 theo hoàn cảnh người Việt Nam định cư ở nước ngoài được nêu cũng có 1 bản chính, 0 bản sao.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:15",
+              "quote": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú... Tờ khai thay đổi thông tin cư trú (Mẫu CT01 Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA), Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:16",
+              "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA). Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:15",
+              "quote": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú..."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "individual_household_care_consent",
+        "statement": {
+          "value": "Người được cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng phải ghi trong tờ khai ý kiến đồng ý của chủ hộ nhận chăm sóc, nuôi dưỡng, chủ sở hữu chỗ ở hợp pháp của cá nhân, hộ gia đình đó hoặc người được ủy quyền; ngoại lệ khi đã có ý kiến đồng ý bằng văn bản. Dòng này là hướng dẫn, ghi 0 bản chính, 0 bản sao, không phải tài liệu riêng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:17",
+              "quote": "Đối với người được cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ nhận chăm sóc, nuôi dưỡng, chủ sở hữu chỗ ở hợp pháp của cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 0 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:17",
+              "quote": "Đối với người được cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "operator": "eq",
+            "criterion_key": "written_residence_consent_available",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:17",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rule_id": "vehicle_residents_declarations",
+        "statement": {
+          "value": "Nhánh người sinh sống, người làm nghề lưu động trên phương tiện: CT01 có 1 bản chính, 0 bản sao; CT02 cho hoàn cảnh nhập cảnh/hộ chiếu được nêu có 1 bản chính, 0 bản sao. Dòng CT02 của nhánh này chỉ ghi về Việt Nam, không ghi thêm sinh sống như các dòng khác.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:20",
+              "quote": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng... Tờ khai thay đổi thông tin cư trú (Mẫu CT01 Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:21",
+              "quote": "trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA) Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:20",
+              "quote": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng..."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "non_owner_vehicle_consent",
+        "statement": {
+          "value": "Người đăng ký thường trú không phải chủ phương tiện phải ghi trong tờ khai ý kiến đồng ý của chủ phương tiện hoặc người được ủy quyền, trừ khi đã có ý kiến đồng ý bằng văn bản. Dòng này ghi 0 bản chính, 0 bản sao và là hướng dẫn, không phải tài liệu riêng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:22",
+              "quote": "Đối với người đăng ký thường trú không phải là chủ phương tiện thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ phương tiện hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản; Bản chính: 0 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:22",
+              "quote": "Đối với người đăng ký thường trú không phải là chủ phương tiện"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "operator": "eq",
+            "criterion_key": "written_residence_consent_available",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:22",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rule_id": "unit_stationing_declaration",
+        "statement": {
+          "value": "Nhánh đăng ký thường trú tại nơi đơn vị đóng quân: CT01 theo Thông tư 66/2023/TT-BCA, 1 bản chính, 0 bản sao; có giấy giới thiệu riêng cho Công an nhân dân và Quân đội nhân dân như danh mục tài liệu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:25",
+              "quote": "Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,... Tờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA); Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:26",
+              "quote": "Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:27",
+              "quote": "Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký thường trú của đơn vị cấp trung đoàn và tương đương trở lên."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:25",
+              "quote": "Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,..."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "ownership_evidence_submission_exception",
+        "statement": {
+          "value": "Không yêu cầu xuất trình giấy tờ chứng minh chỗ ở hợp pháp khi thông tin đã có trong cơ sở dữ liệu chuyên ngành kết nối, chia sẻ, hoặc công dân cung cấp nguồn dẫn, hoặc đã có bản điện tử trên dịch vụ công qua thủ tục khác; cơ quan đăng ký cư trú tự kiểm tra, xác minh. Ngoại lệ này chỉ miễn việc xuất trình chứng cứ, không miễn điều kiện về chỗ ở.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Trừ trường hợp thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú hoặc được công dân cung cấp nguồn dẫn hoặc đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "or",
+          "criterion_key": null,
+          "values": [],
+          "children": [
+            {
+              "operator": "eq",
+              "criterion_key": "housing_evidence_in_connected_database",
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:2",
+                  "quote": "thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú"
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "housing_evidence_source_link_provided",
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:2",
+                  "quote": "được công dân cung cấp nguồn dẫn"
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "housing_evidence_electronic_from_other_procedure",
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:2",
+                  "quote": "đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác"
+                }
+              ]
+            }
+          ],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Trừ trường hợp thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú hoặc được công dân cung cấp nguồn dẫn hoặc đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "authority_verification_and_requested_evidence",
+        "statement": {
+          "value": "Cơ quan đăng ký cư trú khai thác thông tin chứng minh chỗ ở hợp pháp, quan hệ nhân thân từ căn cước điện tử, tài khoản định danh điện tử qua Ứng dụng định danh quốc gia hoặc các cơ sở dữ liệu, kho dữ liệu, hệ thống thông tin được nêu. Nếu không khai thác được, cơ quan phải kiểm tra, xác minh; công dân cung cấp bản sao, bản chụp hoặc bản điện tử một giấy tờ, tài liệu chứng minh chỗ ở hợp pháp khi được yêu cầu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "thực hiện khai thác thông tin chứng minh về chỗ ở hợp pháp, quan hệ nhân thân do công dân cung cấp trong trong căn cước điện tử, tài khoản định danh điện tử trên hệ thống định danh và xác thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác. Trường hợp không khai thác được thông tin thì cơ quan đăng ký cư trú có trách nhiệm kiểm tra, xác minh để giải quyết thủ tục về cư trú; công dân có trách nhiệm cung cấp bản sao, bản chụp, bản điện tử một trong các giấy tờ, tài liệu chứng minh về chỗ ở hợp pháp khi cơ quan đăng ký cư trú có yêu cầu."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "receipt_supplementation_and_refusal",
+        "statement": {
+          "value": "Hồ sơ đầy đủ, hợp lệ được tiếp nhận và cấp CT04. Hồ sơ đủ điều kiện nhưng thiếu thành phần được hướng dẫn bổ sung và cấp CT05. Hồ sơ không đủ điều kiện bị từ chối và cấp CT06. Các mẫu này là phiếu do cơ quan cấp, không được liệt kê thành tờ khai người nộp phải chuẩn bị.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (Mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Trường hợp hồ sơ đủ điều kiện nhưng chưa đầy đủ thành phần hồ sơ theo quy định của pháp luật thì hướng dẫn bổ sung, hoàn thiện và cấp Phiếu hướng dẫn bổ sung, hoàn thiện hồ sơ (Mẫu CT05 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký;"
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (Mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trường hợp hồ sơ đã đầy đủ, hợp lệ"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "conditional_interagency_referrals",
+        "statement": {
+          "value": "Nếu có, chuyển hồ sơ đề nghị văn bản đồng ý giải quyết thường trú cho công dân Việt Nam định cư ở nước ngoài không có hộ chiếu Việt Nam còn giá trị đến cơ quan quản lý xuất nhập cảnh Công an cấp tỉnh nơi đề nghị thường trú để kiểm tra, xác minh và đề nghị cơ quan quản lý xuất nhập cảnh Bộ Công an xem xét cấp văn bản. Nếu có, chuyển hồ sơ xác nhận nơi thường xuyên đậu, đỗ, việc sử dụng phương tiện để ở, hoặc tình trạng chỗ ở hợp pháp và diện tích nhà ở tối thiểu đến UBND cấp xã.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Chuyển hồ sơ đề nghị cấp văn bản đồng ý cho giải quyết thường trú đến cơ quan quản lý xuất, nhập cảnh Công an tỉnh, thành phố trực thuộc Trung ương nơi công dân đề nghị đăng ký thường trú (kèm hồ sơ đề nghị đăng ký thường trú) để kiểm tra, xác minh và đề nghị cơ quan quản lý xuất, nhập cảnh Bộ Công an xem xét cấp văn bản đồng ý cho giải quyết thường trú đối với trường hợp công dân Việt Nam định cư ở nước ngoài không có hộ chiếu Việt Nam còn giá trị sử dụng (nếu có)."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Chuyển hồ sơ đề nghị xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở hoặc hồ sơ đề nghị xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu để đăng ký thường trú, đăng ký tạm trú đến Ủy ban nhân dân cấp xã để xem xét, giải quyết theo quy định (nếu có)."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "đối với trường hợp công dân Việt Nam định cư ở nước ngoài không có hộ chiếu Việt Nam còn giá trị sử dụng (nếu có)"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "exclusions": [
+      {
+        "rule_id": "organization_category_excludes_businesses_and_cooperatives",
+        "statement": {
+          "value": "Danh mục đối tượng tổ chức ghi rõ không bao gồm doanh nghiệp và HTX. Đây là giới hạn của nhóm tổ chức được liệt kê, không được mở rộng thành kết luận về tư cách cá nhân của người thuộc các tổ chức này.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "in",
+          "criterion_key": "applicant_category",
+          "values": [
+            "enterprise",
+            "cooperative"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "jurisdiction": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "authority": {
+      "value": "Công an Xã",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:3:Cơ quan thực hiện",
+          "quote": "Công an Xã"
+        }
+      ],
+      "conflicts": []
+    },
+    "authority_level": {
+      "value": "Cấp xã",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đăng ký thường trú (thực hiện tại cấp xã)"
+        }
+      ],
+      "conflicts": []
+    },
+    "submission_channels": [
+      {
+        "channel": {
+          "value": "Trực tiếp",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Nộp trực tiếp tại Công an cấp xã. Tiếp nhận trong giờ hành chính thứ 2 đến thứ 6 và sáng thứ 7 hằng tuần, trừ ngày nghỉ lễ, tết theo quy định.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "- Nộp hồ sơ trực tiếp tại Công an cấp xã. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "07 Ngày làm việc",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "07 Ngày làm việc"
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Phí: 20.000 Đồng; nguồn không nêu điều kiện áp dụng.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:0",
+                "quote": "Phí: 20.000 Đồng"
+              }
+            ],
+            "conflicts": []
+          },
+          {
+            "value": "Phí: Miễn phí Đồng; nguồn không nêu đối tượng hoặc điều kiện miễn.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:0",
+                "quote": "Phí: Miễn phí Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      },
+      {
+        "channel": {
+          "value": "Trực tuyến",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Nộp qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo pháp luật. Tiếp nhận trong giờ hành chính thứ 2 đến thứ 6 và sáng thứ 7 hằng tuần, trừ ngày nghỉ lễ, tết theo quy định. Thông tin dịch vụ ghi mức độ Một phần.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "- Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật; Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đăng ký thường trú (thực hiện tại cấp xã) Một phần"
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "07 Ngày làm việc",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "07 Ngày làm việc"
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Phí: 10.000 Đồng; nguồn không nêu điều kiện áp dụng.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:1",
+                "quote": "Phí: 10.000 Đồng"
+              }
+            ],
+            "conflicts": []
+          },
+          {
+            "value": "Phí: Miễn phí Đồng; nguồn không nêu đối tượng hoặc điều kiện miễn.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:1",
+                "quote": "Phí: Miễn phí Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      }
+    ],
+    "required_documents": [
+      {
+        "name": {
+          "value": "Tờ khai thay đổi thông tin cư trú, mẫu CT01 ban hành kèm theo Thông tư 66/2023/TT-BCA. Các nhánh và hướng dẫn đồng ý được giữ riêng trong các quy tắc.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Tờ khai thay đổi thông tin cư trú (mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA)"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc..."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài), mẫu CT02 theo Thông tư 66/2023/TT-BCA: nhánh đầu tiên và các nhánh 1 bản chính, 0 bản sao được nêu riêng trong quy tắc.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc..."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "CT02 theo Thông tư 66/2023/TT-BCA trong nhánh chỗ ở không thuộc quyền sở hữu thứ nhất. Ghi ý kiến đồng ý của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ khi đã có ý kiến đồng ý bằng văn bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA). Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Bản chính: 1 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Bản chính: 1 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của..."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy tờ, tài liệu chứng minh việc sở hữu chỗ ở hợp pháp; áp dụng ngoại lệ xuất trình chứng cứ trong quy tắc ownership_evidence_submission_exception.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Giấy tờ, tài liệu chứng minh việc sở hữu chỗ ở hợp pháp."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc..."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Chứng cứ tư cách và việc được hoạt động tôn giáo tại cơ sở đối với người được bổ nhiệm, bầu cử, suy cử, phân công, thuyên chuyển; hoặc chứng cứ là người đại diện cơ sở tín ngưỡng đối với người đại diện cơ sở tín ngưỡng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:10",
+              "quote": "Giấy tờ, tài liệu chứng minh là chức sắc, chức việc, nhà tu hành hoặc người khác hoạt động tôn giáo và được hoạt động tại cơ sở tôn giáo đó theo quy định của pháp luật về tín ngưỡng, tôn giáo đối với người hoạt động tôn giáo được bổ nhiệm, bầu cử, suy cử, phân công, thuyên chuyển đến hoạt động tôn giáo tại cơ sở tôn giáo; giấy tờ, tài liệu chứng minh là người đại diện cơ sở tín ngưỡng đối với người đại diện cơ sở tín ngưỡng"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:10",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:10",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:10",
+              "quote": "đối với người hoạt động tôn giáo được bổ nhiệm, bầu cử, suy cử, phân công, thuyên chuyển đến hoạt động tôn giáo tại cơ sở tôn giáo; giấy tờ, tài liệu chứng minh là người đại diện cơ sở tín ngưỡng đối với người đại diện cơ sở tín ngưỡng"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Văn bản xác nhận của UBND cấp xã về công trình phụ trợ là nhà ở trong cơ sở tín ngưỡng, cơ sở tôn giáo — nhánh thứ nhất.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Cơ quan xác nhận nội dung văn bản: Ủy ban nhân dân cấp xã; nguồn không nêu yêu cầu chứng thực bản sao.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công..."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Văn bản xác nhận của UBND cấp xã về người thuộc khoản 2 Điều 17 Luật Cư trú và công trình phụ trợ là nhà ở trong cơ sở tín ngưỡng, cơ sở tôn giáo — nhánh thứ hai.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về người thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật Cư trú và việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Cơ quan xác nhận nội dung văn bản: Ủy ban nhân dân cấp xã; nguồn không nêu yêu cầu chứng thực bản sao.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "người thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật Cư trú"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Văn bản đề nghị của người đứng đầu cơ sở trợ giúp xã hội đối với người được cơ sở nhận chăm sóc, nuôi dưỡng, trợ giúp.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:18",
+              "quote": "Văn bản đề nghị của người đứng đầu cơ sở trợ giúp xã hội đối với người được cơ sở trợ giúp xã hội nhận chăm sóc, nuôi dưỡng, trợ giúp"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:18",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:18",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:18",
+              "quote": "đối với người được cơ sở trợ giúp xã hội nhận chăm sóc, nuôi dưỡng, trợ giúp"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy tờ, tài liệu xác nhận về việc chăm sóc, nuôi dưỡng, trợ giúp.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:19",
+              "quote": "Giấy tờ, tài liệu xác nhận về việc chăm sóc, nuôi dưỡng, trợ giúp"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:19",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:19",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:19",
+              "quote": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú..."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy chứng nhận đăng ký phương tiện VÀ giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường; HOẶC văn bản UBND cấp xã xác nhận sử dụng phương tiện để ở đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm. Giữ nguyên lượng 0 bản chính, 1 bản sao của cả dòng; nguồn không phân bổ riêng số bản cho từng giấy chứng nhận.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:23",
+              "quote": "Giấy chứng nhận đăng ký phương tiện và giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện hoặc văn bản xác nhận của Ủy ban nhân dân cấp xã về việc sử dụng phương tiện đó vào mục đích để ở đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:23",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1 theo dòng yêu cầu kết hợp",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:23",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Đối với phương án văn bản xác nhận sử dụng phương tiện để ở: Ủy ban nhân dân cấp xã xác nhận.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:23",
+              "quote": "văn bản xác nhận của Ủy ban nhân dân cấp xã về việc sử dụng phương tiện đó vào mục đích để ở"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:23",
+              "quote": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng..."
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:23",
+              "quote": "đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Văn bản UBND cấp xã xác nhận địa điểm phương tiện thường xuyên đậu, đỗ, trong trường hợp phương tiện không phải đăng ký HOẶC nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "- Văn bản xác nhận của Ủy ban nhân dân cấp xã về địa điểm phương tiện đăng ký đậu, đỗ thường xuyên trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "Bản chính: 0 - Bản sao: 1"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Ủy ban nhân dân cấp xã xác nhận nội dung văn bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "or",
+          "criterion_key": null,
+          "values": [],
+          "children": [
+            {
+              "operator": "eq",
+              "criterion_key": "vehicle_registration_required",
+              "values": [
+                "no"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:24",
+                  "quote": "trong trường hợp phương tiện không phải đăng ký"
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "vehicle_registration_matches_regular_mooring",
+              "values": [
+                "no"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "requirement:24",
+                  "quote": "nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+                }
+              ]
+            }
+          ],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp, ghi rõ để làm thủ tục đăng ký thường trú và đơn vị có chỗ ở cho cán bộ chiến sĩ.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:26",
+              "quote": "Đối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký thường trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu)."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:26",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:26",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp, ký tên và đóng dấu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:26",
+              "quote": "Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký thường trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu)."
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:26",
+              "quote": "Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,... Đối với Công an nhân dân:"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Quân đội nhân dân: Giấy giới thiệu đăng ký thường trú của đơn vị cấp trung đoàn và tương đương trở lên.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:27",
+              "quote": "Đối với Quân đội nhân dân: Giấy giới thiệu đăng ký thường trú của đơn vị cấp trung đoàn và tương đương trở lên."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:27",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:27",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:27",
+              "quote": "Đối với Quân đội nhân dân"
+            }
+          ]
+        }
+      }
+    ],
+    "effective_from": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "effective_to": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "supersedes": [],
+    "decision_criteria": [
+      {
+        "criterion_key": "applicant_category",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Which listed applicant category describes the application?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "vietnamese_citizen",
+            "label": "Vietnamese citizen",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "Công dân Việt Nam"
+              }
+            ]
+          },
+          {
+            "value": "organization_other_than_enterprise_or_cooperative",
+            "label": "Organization other than an enterprise or cooperative",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "Tổ chức (không bao gồm doanh nghiệp, HTX)"
+              }
+            ]
+          },
+          {
+            "value": "enterprise",
+            "label": "Enterprise",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "không bao gồm doanh nghiệp, HTX"
+              }
+            ]
+          },
+          {
+            "value": "cooperative",
+            "label": "Cooperative",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "không bao gồm doanh nghiệp, HTX"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)"
+          }
+        ]
+      },
+      {
+        "criterion_key": "citizen_information_updated_in_both_databases",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Has your citizen information been collected and updated in both the National Population Database and the Residence Database?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes, in both databases",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No, not in both databases",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú"
+          }
+        ]
+      },
+      {
+        "criterion_key": "overseas_vietnamese_returning_to_live",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Are you an overseas Vietnamese returning to live in Vietnam?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Trường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)"
+          }
+        ]
+      },
+      {
+        "criterion_key": "last_entry_document",
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "overseas_vietnamese_returning_to_live",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất"
+            }
+          ]
+        },
+        "question": "Which document did you use for your most recent entry into Vietnam?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "foreign_passport",
+            "label": "A foreign-issued passport",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "hộ chiếu do nước ngoài cấp"
+              }
+            ]
+          },
+          {
+            "value": "foreign_passport_replacement",
+            "label": "A foreign-issued passport replacement document",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "giấy tờ thay thế hộ chiếu do nước ngoài cấp"
+              }
+            ]
+          },
+          {
+            "value": "other_document_issued_by_vietnamese_authority",
+            "label": "Another document issued by a competent Vietnamese authority",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp"
+              }
+            ]
+          },
+          {
+            "value": "vietnamese_passport",
+            "label": "A Vietnamese passport",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "sử dụng hộ chiếu Việt Nam"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+          }
+        ]
+      },
+      {
+        "criterion_key": "vietnamese_passport_status",
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "last_entry_document",
+          "values": [
+            "vietnamese_passport"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+            }
+          ]
+        },
+        "question": "What is the status of the Vietnamese passport you used to enter Vietnam?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "lost",
+            "label": "Lost",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "hộ chiếu Việt Nam nhưng bị mất"
+              }
+            ]
+          },
+          {
+            "value": "expired",
+            "label": "Expired",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "hết hạn sử dụng"
+              }
+            ]
+          },
+          {
+            "value": "valid",
+            "label": "Still valid",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "không có hộ chiếu Việt Nam còn giá trị sử dụng"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng"
+          }
+        ]
+      },
+      {
+        "criterion_key": "written_residence_consent_available",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền"
+            }
+          ]
+        },
+        "question": "For the consent required in your application branch, has the relevant person or body already given written consent to permanent residence registration?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes, written consent already exists",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:3",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No written consent yet",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:3",
+                "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, trừ trường hợp đã có ý kiến đồng ý bằng văn bản."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:17",
+            "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:22",
+            "quote": "trừ trường hợp đã có ý kiến đồng ý bằng văn bản"
+          }
+        ]
+      },
+      {
+        "criterion_key": "housing_evidence_in_connected_database",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Is evidence of your lawful accommodation already held in a specialist database connected and shared with the residence registration authority?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh."
+          }
+        ]
+      },
+      {
+        "criterion_key": "housing_evidence_source_link_provided",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Have you provided a source link for the evidence of your lawful accommodation?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "được công dân cung cấp nguồn dẫn"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "được công dân cung cấp nguồn dẫn"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "hoặc được công dân cung cấp nguồn dẫn hoặc đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh."
+          }
+        ]
+      },
+      {
+        "criterion_key": "housing_evidence_electronic_from_other_procedure",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Is an electronic copy of your lawful accommodation evidence already available on a public service system from another administrative procedure?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "hoặc đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh."
+          }
+        ]
+      },
+      {
+        "criterion_key": "vehicle_registration_required",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng..."
+            }
+          ]
+        },
+        "question": "For an application involving residence on a vehicle or vessel, is that vehicle or vessel required to be registered?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:24",
+                "quote": "trong trường hợp phương tiện không phải đăng ký"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:24",
+                "quote": "trong trường hợp phương tiện không phải đăng ký"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:24",
+            "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về địa điểm phương tiện đăng ký đậu, đỗ thường xuyên trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+          }
+        ]
+      },
+      {
+        "criterion_key": "vehicle_registration_matches_regular_mooring",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:24",
+              "quote": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng..."
+            }
+          ]
+        },
+        "question": "Does the vehicle or vessel's registered location match where it regularly parks or moors?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes, the locations match",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:24",
+                "quote": "nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No, the locations differ",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:24",
+                "quote": "nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:24",
+            "quote": "Văn bản xác nhận của Ủy ban nhân dân cấp xã về địa điểm phương tiện đăng ký đậu, đỗ thường xuyên trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ"
+          }
+        ]
+      }
+    ],
+    "form_relationships": [],
+    "missing_information": [
+      "Không có ngày bắt đầu hoặc kết thúc hiệu lực của thủ tục, hoặc căn cứ xác lập thủ tục thay thế thủ tục khác.",
+      "Không có phạm vi địa lý có thẩm quyền đủ rõ để xác lập jurisdiction; cấp xã không tự xác lập một giới hạn địa lý.",
+      "Nhiều tiêu đề nhánh hồ sơ bị cắt bằng dấu ba chấm, gồm nhánh chỗ ở thuộc sở hữu, hai nhánh chỗ ở không thuộc sở hữu, hai nhánh cơ sở tín ngưỡng/tôn giáo, nhánh chăm sóc và nhánh phương tiện. Phạm vi áp dụng đầy đủ cần xác minh.",
+      "Nguồn viện dẫn khoản 2 Điều 17 Luật Cư trú nhưng không cung cấp nội dung điều khoản; không thể tạo điều kiện thực thi cho nhóm này.",
+      "Không nêu điều kiện áp dụng các mức phí thông thường và miễn phí cho từng kênh.",
+      "Không nêu mốc bắt đầu tính thời hạn 07 ngày làm việc hoặc cách xử lý thời gian xác minh, bổ sung.",
+      "Không có bản thân các tệp mẫu, hash biểu mẫu liên kết hoặc hướng dẫn ký, chứng thực của từng phiên bản. Chỉ có tên CT01, CT02 và tên tệp trong danh mục; không tạo quan hệ biểu mẫu theo hash khi registry không cung cấp hash liên kết.",
+      "Không có quy định chung về chứng thực bản sao; không được coi việc UBND xác nhận nội dung một văn bản là yêu cầu chứng thực bản sao.",
+      "Dòng yêu cầu phương tiện kết hợp hai giấy chứng nhận bằng VÀ và một phương án xác nhận thay thế; số lượng 1 bản sao được ghi cho cả dòng, không được phân bổ riêng trong nguồn.",
+      "Nguồn liệt kê tổ chức là đối tượng thực hiện nhưng trình tự diễn đạt theo cá nhân; vai trò nộp hồ sơ của tổ chức chưa được giải thích.",
+      "Nguồn không cung cấp danh mục chi tiết hồ sơ đề nghị văn bản đồng ý giải quyết thường trú hoặc các hồ sơ xác nhận được chuyển liên cơ quan."
+    ],
+    "issues": [
+      "Đây là hồ sơ trích xuất dự thảo để kiểm tra và xác nhận; việc trích xuất thành công không xác lập nguồn còn hiệu lực tại thời điểm sử dụng.",
+      "Điều kiện unknown và câu trả lời unknown phải giữ là chưa xác lập; không được đánh giá thành không đủ điều kiện.",
+      "Các quy tắc có ngoại lệ về ý kiến đồng ý bằng văn bản chỉ miễn việc ghi lại ý kiến trong tờ khai, không miễn bản thân yêu cầu đồng ý hoặc việc nộp tờ khai.",
+      "Các nhánh dùng CT01 có cùng số lượng được gom ở mức loại tài liệu nhưng từng nhánh, số lượng và hướng dẫn được giữ riêng trong các quy tắc. CT02 có 1 bản chính, 1 bản sao tại requirement:4 được giữ riêng, không sửa thành 0 bản sao như các nhánh khác.",
+      "Dòng CT02 tại requirement:21 thiếu cụm sinh sống so với các dòng CT02 khác. Không chuyển điều kiện chi tiết của nhánh khác sang nhánh phương tiện; phạm vi đầy đủ của nhánh này vẫn unknown.",
+      "Các trường required_when unknown cho tài liệu có tiêu đề bị cắt không phủ nhận điều kiện CT02 đã được cấu trúc trong quy tắc riêng; chúng phản ánh việc chưa xác lập đầy đủ nhánh áp dụng.",
+      "Các điều kiện liên quan phương tiện chỉ được đánh giá sau khi xác nhận đây là hồ sơ thuộc nhánh cư trú trên phương tiện; không hỏi hoặc áp dụng chúng cho hồ sơ nhà ở thông thường.",
+      "Không có xung đột đã xác lập giữa các nguồn; mức thu và miễn phí cùng xuất hiện nhưng điều kiện phân nhánh còn thiếu, không tự coi đó là hai mức thu mâu thuẫn.",
+      "Không có associated form hash được cung cấp để ánh xạ riêng từng tệp. Tên tệp hoặc việc nhắc Thông tư 66/2023/TT-BCA không chứng minh một hash hoặc revision tệp cụ thể được chấp nhận."
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "primary",
+      "locator": "identity",
+      "text": "procedure_code: 1.004222\nofficial_name: Đăng ký thường trú",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:0:Trình tự thực hiện",
+      "text": "Bước 1: Cá nhân chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Cá nhân nộp hồ sơ đến Công an cấp xã.\nBước 3: Khi tiếp nhận hồ sơ đăng ký thường trú, cơ quan đăng ký cư trú kiểm tra tính pháp lý và nội dung hồ sơ; thực hiện khai thác thông tin chứng minh về chỗ ở hợp pháp, quan hệ nhân thân do công dân cung cấp trong trong căn cước điện tử, tài khoản định danh điện tử trên hệ thống định danh và xác thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú, Kho quản lý dữ liệu điện tử tổ chức, cá nhân trên Cổng dịch vụ công quốc gia, Hệ thống thông tin giải quyết thủ tục hành chính cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuyên ngành khác. Trường hợp không khai thác được thông tin thì cơ quan đăng ký cư trú có trách nhiệm kiểm tra, xác minh để giải quyết thủ tục về cư trú; công dân có trách nhiệm cung cấp bản sao, bản chụp, bản điện tử một trong các giấy tờ, tài liệu chứng minh về chỗ ở hợp pháp khi cơ quan đăng ký cư trú có yêu cầu.\n- Trường hợp hồ sơ đã đầy đủ, hợp lệ thì tiếp nhận hồ sơ và cấp Phiếu tiếp nhận hồ sơ và hẹn trả kết quả (Mẫu CT04 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký.\n+ Chuyển hồ sơ đề nghị cấp văn bản đồng ý cho giải quyết thường trú đến cơ quan quản lý xuất, nhập cảnh Công an tỉnh, thành phố trực thuộc Trung ương nơi công dân đề nghị đăng ký thường trú (kèm hồ sơ đề nghị đăng ký thường trú) để kiểm tra, xác minh và đề nghị cơ quan quản lý xuất, nhập cảnh Bộ Công an xem xét cấp văn bản đồng ý cho giải quyết thường trú đối với trường hợp công dân Việt Nam định cư ở nước ngoài không có hộ chiếu Việt Nam còn giá trị sử dụng (nếu có).\n+ Chuyển hồ sơ đề nghị xác nhận nơi thường xuyên đậu, đỗ; sử dụng phương tiện vào mục đích để ở hoặc hồ sơ đề nghị xác nhận tình trạng chỗ ở hợp pháp, diện tích nhà ở tối thiểu để đăng ký thường trú, đăng ký tạm trú đến Ủy ban nhân dân cấp xã để xem xét, giải quyết theo quy định (nếu có).\n- Trường hợp hồ sơ đủ điều kiện nhưng chưa đầy đủ thành phần hồ sơ theo quy định của pháp luật thì hướng dẫn bổ sung, hoàn thiện và cấp Phiếu hướng dẫn bổ sung, hoàn thiện hồ sơ (Mẫu CT05 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký;\n- Trường hợp hồ sơ không đủ điều kiện thì từ chối và cấp Phiếu từ chối tiếp nhận, giải quyết hồ sơ (Mẫu CT06 ban hành kèm theo Thông tư số 66/2023/TT- BCA) cho người đăng ký.\nBước 4: Cá nhân nộp lệ phí đăng ký thường trú theo quy định.\nBước 5: Căn cứ theo ngày hẹn trên Phiếu tiếp nhận hồ sơ và hẹn trả kết quả để nhận thông báo kết quả giải quyết thủ tục đăng ký cư trú (nếu có).",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:1:Cách thức thực hiện",
+      "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n07 Ngày làm việc\nPhí: 20.000 Đồng\nPhí: Miễn phí Đồng\n- Nộp hồ sơ trực tiếp tại Công an cấp xã.\nThời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nTrực tuyến\n07 Ngày làm việc\nPhí: 10.000 Đồng\nPhí: Miễn phí Đồng\n- Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật;\nThời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:2:Thành phần hồ sơ",
+      "text": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 0\nGiấy tờ, tài liệu chứng minh việc sở hữu chỗ ở hợp pháp. Trừ trường hợp thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú hoặc được công dân cung cấp nguồn dẫn hoặc đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh.\nBản chính: 0 - Bản sao: 1\n* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA), Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA). Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 1\n* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\ntrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA), trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 0\n* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA).\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA);\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 0\nĐối với người được người đại diện hoặc ban quản lý cơ sở tín ngưỡng đồng ý cho đăng ký thường trú để trực tiếp quản lý, tổ chức hoạt động tín ngưỡng tại cơ sở tín ngưỡng thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, trừ trường hợp đã có ý kiến đồng ý bằng văn bản.\nBản chính: 0 - Bản sao: 0\nGiấy tờ, tài liệu chứng minh là chức sắc, chức việc, nhà tu hành hoặc người khác hoạt động tôn giáo và được hoạt động tại cơ sở tôn giáo đó theo quy định của pháp luật về tín ngưỡng, tôn giáo đối với người hoạt động tôn giáo được bổ nhiệm, bầu cử, suy cử, phân công, thuyên chuyển đến hoạt động tôn giáo tại cơ sở tôn giáo; giấy tờ, tài liệu chứng minh là người đại diện cơ sở tín ngưỡng đối với người đại diện cơ sở tín ngưỡng\nBản chính: 0 - Bản sao: 1\nVăn bản xác nhận của Ủy ban nhân dân cấp xã về việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở\nBản chính: 0 - Bản sao: 1\n* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA), trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 0\nVăn bản xác nhận của Ủy ban nhân dân cấp xã về người thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật Cư trú và việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở\nBản chính: 0 - Bản sao: 1\n* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA),\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA).\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 0\nĐối với người được cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ nhận chăm sóc, nuôi dưỡng, chủ sở hữu chỗ ở hợp pháp của cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 0 - Bản sao: 0\nVăn bản đề nghị của người đứng đầu cơ sở trợ giúp xã hội đối với người được cơ sở trợ giúp xã hội nhận chăm sóc, nuôi dưỡng, trợ giúp\nBản chính: 1 - Bản sao: 0\nGiấy tờ, tài liệu xác nhận về việc chăm sóc, nuôi dưỡng, trợ giúp\nBản chính: 0 - Bản sao: 1\n* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\ntrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nMẫu CT02_66.docx\nBản chính: 1 - Bản sao: 0\nĐối với người đăng ký thường trú không phải là chủ phương tiện thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ phương tiện hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 0 - Bản sao: 0\nGiấy chứng nhận đăng ký phương tiện và giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện hoặc văn bản xác nhận của Ủy ban nhân dân cấp xã về việc sử dụng phương tiện đó vào mục đích để ở đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm\nBản chính: 0 - Bản sao: 1\n- Văn bản xác nhận của Ủy ban nhân dân cấp xã về địa điểm phương tiện đăng ký đậu, đỗ thường xuyên trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ\nBản chính: 0 - Bản sao: 1\nĐăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,...\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA);\nMẫu CT01 _66.doc\nBản chính: 1 - Bản sao: 0\nĐối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký thường trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu).\nBản chính: 1 - Bản sao: 0\nĐối với Quân đội nhân dân: Giấy giới thiệu đăng ký thường trú của đơn vị cấp trung đoàn và tương đương trở lên.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:3:Cơ quan thực hiện",
+      "text": "Công an Xã",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+      "text": "Người thực hiện thủ tục đã được thu thập, cập nhật thông tin công dân vào Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu về cư trú",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+      "text": "Đăng ký thường trú (thực hiện tại cấp xã)\nMột phần\nCơ quan thực hiện: Công an Xã\nĐối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:0",
+      "text": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc...\nTờ khai thay đổi thông tin cư trú (mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:1",
+      "text": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc...\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:2",
+      "text": "* Trường hợp công dân đăng ký thường trú vào chỗ ở hợp pháp thuộc...\nGiấy tờ, tài liệu chứng minh việc sở hữu chỗ ở hợp pháp. Trừ trường hợp thông tin chứng minh về chỗ ở hợp pháp của công dân đã có trong cơ sở dữ liệu chuyên ngành đã được kết nối, chia sẻ với cơ quan đăng ký cư trú hoặc được công dân cung cấp nguồn dẫn hoặc đã có bản điện tử trên dịch vụ công qua giải quyết thủ tục hành chính khác thì cơ quan đăng ký cư trú tự kiểm tra, xác minh không yêu cầu công dân xuất trình giấy tờ chứng minh.\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:3",
+      "text": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA), Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:4",
+      "text": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của...\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA). Trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 1 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:5",
+      "text": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:6",
+      "text": "* Đăng ký thường trú tại chỗ ở hợp pháp không thuộc quyền sở hữu của...\ntrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA), trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ, chủ sở hữu chỗ ở hợp pháp được cho thuê, cho mượn, cho ở nhờ hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:7",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA).\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:8",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA);\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:9",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nĐối với người được người đại diện hoặc ban quản lý cơ sở tín ngưỡng đồng ý cho đăng ký thường trú để trực tiếp quản lý, tổ chức hoạt động tín ngưỡng tại cơ sở tín ngưỡng thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, trừ trường hợp đã có ý kiến đồng ý bằng văn bản.\nBản chính: 0 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:10",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nGiấy tờ, tài liệu chứng minh là chức sắc, chức việc, nhà tu hành hoặc người khác hoạt động tôn giáo và được hoạt động tại cơ sở tôn giáo đó theo quy định của pháp luật về tín ngưỡng, tôn giáo đối với người hoạt động tôn giáo được bổ nhiệm, bầu cử, suy cử, phân công, thuyên chuyển đến hoạt động tôn giáo tại cơ sở tôn giáo; giấy tờ, tài liệu chứng minh là người đại diện cơ sở tín ngưỡng đối với người đại diện cơ sở tín ngưỡng\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:11",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nVăn bản xác nhận của Ủy ban nhân dân cấp xã về việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:12",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA) trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:13",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA), trong đó ghi rõ ý kiến đồng ý cho đăng ký thường trú của người đại diện hoặc ban quản lý cơ sở tín ngưỡng, người đứng đầu hoặc người đại diện cơ sở tôn giáo, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:14",
+      "text": "* Đăng ký thường trú tại cơ sở tín ngưỡng, cơ sở tôn giáo có công...\nVăn bản xác nhận của Ủy ban nhân dân cấp xã về người thuộc đối tượng quy định tại khoản 2 Điều 17 của Luật Cư trú và việc trong cơ sở tín ngưỡng, cơ sở tôn giáo có công trình phụ trợ là nhà ở\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:15",
+      "text": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA),\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:16",
+      "text": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú...\nTrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam sinh sống nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA).\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:17",
+      "text": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú...\nĐối với người được cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ hộ nhận chăm sóc, nuôi dưỡng, chủ sở hữu chỗ ở hợp pháp của cá nhân, hộ gia đình nhận chăm sóc, nuôi dưỡng hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 0 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:18",
+      "text": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú...\nVăn bản đề nghị của người đứng đầu cơ sở trợ giúp xã hội đối với người được cơ sở trợ giúp xã hội nhận chăm sóc, nuôi dưỡng, trợ giúp\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:19",
+      "text": "* Người được chăm sóc, nuôi dưỡng, trợ giúp được đăng ký thường trú...\nGiấy tờ, tài liệu xác nhận về việc chăm sóc, nuôi dưỡng, trợ giúp\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:20",
+      "text": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:21",
+      "text": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng...\ntrường hợp người Việt Nam định cư ở nước ngoài về Việt Nam nhập cảnh vào Việt Nam lần gần nhất bằng hộ chiếu do nước ngoài cấp hoặc giấy tờ thay thế hộ chiếu do nước ngoài cấp hoặc giấy tờ khác do cơ quan có thẩm quyền của Việt Nam cấp hoặc sử dụng hộ chiếu Việt Nam nhưng bị mất, hết hạn sử dụng thực hiện thủ tục đăng ký thường trú thì sử dụng Tờ khai thay đổi thông tin về cư trú (dùng cho người Việt Nam định cư ở nước ngoài) (mẫu CT02 ban hành kèm theo Thông tư số 66/2023/TT-BCA)\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:22",
+      "text": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng...\nĐối với người đăng ký thường trú không phải là chủ phương tiện thì trong tờ khai phải ghi rõ ý kiến đồng ý cho đăng ký thường trú của chủ phương tiện hoặc người được ủy quyền, trừ trường hợp đã có ý kiến đồng ý bằng văn bản;\nBản chính: 0 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:23",
+      "text": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng...\nGiấy chứng nhận đăng ký phương tiện và giấy chứng nhận an toàn kỹ thuật và bảo vệ môi trường của phương tiện hoặc văn bản xác nhận của Ủy ban nhân dân cấp xã về việc sử dụng phương tiện đó vào mục đích để ở đối với phương tiện không thuộc đối tượng phải đăng ký, đăng kiểm\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:24",
+      "text": "* Người sinh sống, người làm nghề lưu động trên phương tiện được đăng...\n- Văn bản xác nhận của Ủy ban nhân dân cấp xã về địa điểm phương tiện đăng ký đậu, đỗ thường xuyên trong trường hợp phương tiện không phải đăng ký hoặc nơi đăng ký phương tiện không trùng với nơi thường xuyên đậu, đỗ\nBản chính: 0 - Bản sao: 1",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:25",
+      "text": "Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,...\nTờ khai thay đổi thông tin cư trú (Mẫu CT01 ban hành kèm theo Thông tư số 66/2023/TT-BCA);\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:26",
+      "text": "Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,...\nĐối với Công an nhân dân: Giấy giới thiệu của Thủ trưởng đơn vị quản lý trực tiếp ghi rõ nội dung để làm thủ tục đăng ký thường trú và đơn vị có chỗ ở cho cán bộ chiến sĩ (ký tên, đóng dấu).\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:27",
+      "text": "Đăng ký thường trú tại nơi đơn vị đóng quân trong Công an nhân dân,...\nĐối với Quân đội nhân dân: Giấy giới thiệu đăng ký thường trú của đơn vị cấp trung đoàn và tương đương trở lên.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:0",
+      "text": "Trực tiếp\n07 Ngày làm việc\n- Nộp hồ sơ trực tiếp tại Công an cấp xã. Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nPhí: 20.000 Đồng\nPhí: Miễn phí Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:1",
+      "text": "Trực tuyến\n07 Ngày làm việc\n- Nộp hồ sơ trực tuyến qua các cổng cung cấp dịch vụ công trực tuyến như: Trực tuyến qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng VNeID hoặc dịch vụ công trực tuyến khác theo quy định của pháp luật; Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nPhí: 10.000 Đồng\nPhí: Miễn phí Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+      "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+      "kind": "procedure",
+      "snapshot_id": 38,
+      "fetched_at": "2026-10-31T08:01:38.732950+00:00"
+    }
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "model_metadata": {
+    "provider": "openai",
+    "model": "gpt-6.1-sol",
+    "response_id": "resp_03dd4ddcf31f2143016ae5a08503f487d297c7b6edaf1dd92f",
+    "usage": {
+      "input_tokens": 14737,
+      "input_tokens_details": {
+        "cache_write_tokens": 14734,
+        "cached_tokens": 0
+      },
+      "output_tokens": 24873,
+      "output_tokens_details": {
+        "reasoning_tokens": 1034
+      },
+      "total_tokens": 39610
+    },
+    "reasoning_effort": "medium",
+    "max_output_tokens": 64000
+  },
+  "input_sha256": "de33c97602c6d9046c704d9beb2628329aeea365aa3fa9c0172917ca9e9db8ef",
+  "output_sha256": "0c4b497d05d370181b8d180ec759d49edb7d6cc995eba3cfa32c71da7786fe75",
+  "extraction_status": "validated_draft",
+  "validation": {
+    "schema": true,
+    "citations_verified": 189,
+    "identity": true,
+    "form_hashes": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "validated"
+      }
+    ]
+  },
+  "extracted_at": "2026-10-31T08:04:51.842459+00:00"
+}

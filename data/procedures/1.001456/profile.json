@@ -1,0 +1,2195 @@
+{
+  "id": 21,
+  "run_id": "943e1921-71fd-468d-a9a6-83c8e86ba059",
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "profile": {
+    "issues": [
+      "Đây là hồ sơ dự thảo phục vụ xác thực và rà soát; việc trích xuất thành công và thời điểm thu thập nguồn không chứng minh thủ tục còn hiệu lực hiện nay.",
+      "Tên chính thức nói chung về hộ chiếu phổ thông, trong khi phần trình tự nộp hồ sơ ghi hộ chiếu không gắn chíp điện tử. Không mở rộng hướng dẫn này sang hộ chiếu gắn chíp hoặc kết luận loại có chíp bị loại trừ.",
+      "Mô tả phương thức trực tiếp chứa cụm 'trước khi đến nộp hồ sơ trực tuyến'. Giữ nguyên sự bất nhất về diễn đạt này, không tự sửa thành một yêu cầu khác.",
+      "Hai hàng tờ khai có nội dung yêu cầu giống nhau nhưng phần thành phần hồ sơ gắn tên tệp TK01 và TK01a riêng. Giữ hai nhánh theo tuổi, mỗi nhánh 1 bản chính và 0 bản sao; không yêu cầu đồng thời cả hai tờ khai.",
+      "Các hàng giấy khai sinh và chứng minh đại diện đều ghi 1 bản chính, 1 bản sao, trong khi văn bản mô tả việc xuất trình bản chính trong nhánh nộp bản chụp. Giữ cả số lượng và điều kiện xuất trình, không khẳng định bản chính luôn bị lưu giữ.",
+      "Trạng thái năng lực hành vi được ghi nhận theo nhóm pháp lý mà nguồn nêu, không phải phép chẩn đoán hay phép xác định pháp lý tự động.",
+      "Các câu trả lời unknown và dữ liệu người dùng thiếu phải được giữ là chưa biết; không được xem là không đủ điều kiện hoặc là phủ định của một nhánh.",
+      "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+    ],
+    "aliases": [
+      {
+        "text": "Làm hộ chiếu phổ thông trong nước tại công an cấp tỉnh",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Xin cấp hộ chiếu lần đầu hoặc từ lần thứ hai tại cấp tỉnh",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Domestic ordinary passport issuance at provincial level",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "Apply for a Vietnamese ordinary passport through provincial immigration police",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      }
+    ],
+    "outcome": {
+      "value": "Hộ chiếu phổ thông; nếu chưa cấp thì có văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an, nêu rõ lý do.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "+ Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        },
+        {
+          "quote": "+ Trường hợp chưa cấp hộ chiếu phổ thông thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "purpose": {
+      "value": "Giải quyết đề nghị cấp hộ chiếu phổ thông ở trong nước tại cấp tỉnh, gồm đề nghị lần đầu và từ lần thứ hai; phần trình tự nộp hồ sơ mô tả hộ chiếu không gắn chíp điện tử.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "official_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+          "locator": "identity",
+          "source_id": "primary"
+        },
+        {
+          "quote": "Người đề nghị cấp hộ chiếu phổ thông không gắn chíp điện tử trực tiếp nộp hồ sơ",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        },
+        {
+          "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "authority": {
+      "value": "Công an Tỉnh; tiếp nhận và trả kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "Công an Tỉnh",
+          "locator": "section:3:Cơ quan thực hiện",
+          "source_id": "primary"
+        },
+        {
+          "quote": "+ Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "rule_id": "article_21_excluded_cases_by_reference",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [
+            {
+              "quote": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam được nguồn viện dẫn rõ ràng; không có nội dung chi tiết để phân loại từng trường hợp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "supersedes": [],
+    "action_type": [
+      {
+        "value": "issue",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      }
+    ],
+    "effective_to": {
+      "value": null,
+      "status": "unknown",
+      "conflicts": [],
+      "source_refs": []
+    },
+    "jurisdiction": {
+      "value": "Ở trong nước. Lần đầu: cơ quan quản lý xuất nhập cảnh công an cấp tỉnh nơi thường trú hoặc tạm trú; nếu có Thẻ căn cước công dân thì nơi thuận lợi. Từ lần thứ hai: cơ quan quản lý xuất nhập cảnh công an cấp tỉnh nơi thuận lợi.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "official_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+          "locator": "identity",
+          "source_id": "primary"
+        },
+        {
+          "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "official_name": {
+      "value": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "official_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+          "locator": "identity",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "effective_from": {
+      "value": null,
+      "status": "unknown",
+      "conflicts": [],
+      "source_refs": []
+    },
+    "procedure_code": {
+      "value": "1.001456",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "procedure_code: 1.001456",
+          "locator": "identity",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "authority_level": {
+      "value": "Cấp tỉnh",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "official_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+          "locator": "identity",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "example_requests": [
+      {
+        "text": "Tôi muốn làm hộ chiếu lần đầu tại công an cấp tỉnh.",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi muốn nộp trực tuyến hồ sơ cấp hộ chiếu cho con dưới 14 tuổi.",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Hộ chiếu còn hạn của tôi bị mất, tôi cần nộp giấy tờ gì để xin cấp hộ chiếu?",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "I want to apply for my first Vietnamese ordinary passport at provincial level.",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "How can I apply online for a passport for my child under 14?",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "I lost my still-valid passport. What documents do I need for another passport?",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      }
+    ],
+    "decision_criteria": [
+      {
+        "question": "Is the passport applicant a Vietnamese citizen?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "nationality",
+        "answer_options": [
+          {
+            "label": "Vietnamese citizen",
+            "value": "vietnamese",
+            "source_refs": [
+              {
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is the passport applicant under 14, or aged 14 or over?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi)",
+            "locator": "requirement:0",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân",
+            "locator": "requirement:4",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "age_group",
+        "answer_options": [
+          {
+            "label": "Under 14",
+            "value": "under_14",
+            "source_refs": [
+              {
+                "quote": "mẫu TK01a dành cho người chưa đủ 14 tuổi",
+                "locator": "requirement:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Aged 14 or over",
+            "value": "14_or_over",
+            "source_refs": [
+              {
+                "quote": "mẫu TK01 dành cho người từ 14 tuổi trở lên",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Does the applicant have either of these civil-law statuses requiring a legal representative to complete and sign the application?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+            "locator": "requirement:0",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi",
+            "locator": "requirement:5",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "civil_capacity_status",
+        "answer_options": [
+          {
+            "label": "Loss of civil act capacity under the Civil Code",
+            "value": "lost_civil_act_capacity",
+            "source_refs": [
+              {
+                "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Difficulty in cognition or control of behavior under the Civil Code",
+            "value": "difficulty_in_cognition_or_behavior_control",
+            "source_refs": [
+              {
+                "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+                "locator": "requirement:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is this the applicant's first passport application, or their second or later application?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "passport_application_sequence",
+        "answer_options": [
+          {
+            "label": "First application",
+            "value": "first",
+            "source_refs": [
+              {
+                "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Second or later application",
+            "value": "second_or_later",
+            "source_refs": [
+              {
+                "quote": "+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Does the first-time applicant have a Citizen Identity Card (Thẻ căn cước công dân)?",
+        "condition": {
+          "values": [
+            "first"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "passport_application_sequence"
+        },
+        "source_refs": [
+          {
+            "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "has_citizen_identity_card",
+        "answer_options": [
+          {
+            "label": "Has a Citizen Identity Card",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Has the applicant under 14 not yet been issued a personal identification number?",
+        "condition": {
+          "values": [
+            "under_14"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "age_group"
+        },
+        "source_refs": [
+          {
+            "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+            "locator": "requirement:4",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "personal_identification_number_status",
+        "answer_options": [
+          {
+            "label": "Not yet issued a personal identification number",
+            "value": "not_issued",
+            "source_refs": [
+              {
+                "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is the latest passport still valid and available, or was it lost while still valid?",
+        "condition": {
+          "values": [
+            "second_or_later"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "passport_application_sequence"
+        },
+        "source_refs": [
+          {
+            "quote": "Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+            "locator": "requirement:3",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "latest_passport_status",
+        "answer_options": [
+          {
+            "label": "Latest passport is still valid and available",
+            "value": "valid_and_available",
+            "source_refs": [
+              {
+                "quote": "Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Passport was lost while still valid",
+            "value": "valid_but_lost",
+            "source_refs": [
+              {
+                "quote": "trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Will you submit in person, apply online, or send supplementary documents through the public postal service?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Trực tiếp",
+            "locator": "method:0",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Trực tuyến",
+            "locator": "method:1",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Dịch vụ bưu chính",
+            "locator": "method:2",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "submission_channel",
+        "answer_options": [
+          {
+            "label": "Submit in person",
+            "value": "in_person",
+            "source_refs": [
+              {
+                "quote": "Trực tiếp",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Apply online",
+            "value": "online",
+            "source_refs": [
+              {
+                "quote": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Send supplementary documents through public postal service, as notified",
+            "value": "postal_supplement",
+            "source_refs": [
+              {
+                "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Have the documents for the online application been electronically certified?",
+        "condition": {
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        },
+        "source_refs": [
+          {
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+            "locator": "requirement:6",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "electronic_certification_status",
+        "answer_options": [
+          {
+            "label": "Electronically certified",
+            "value": "electronically_certified",
+            "source_refs": [
+              {
+                "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định",
+                "locator": "requirement:6",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Not yet electronically certified",
+            "value": "not_electronically_certified",
+            "source_refs": [
+              {
+                "quote": "trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+                "locator": "requirement:6",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      }
+    ],
+    "eligibility_rules": [
+      {
+        "rule_id": "applicant_and_article_21_requirement",
+        "condition": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "vietnamese"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+                  "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "nationality"
+            },
+            {
+              "values": [],
+              "children": [],
+              "operator": "unknown",
+              "source_refs": [
+                {
+                  "quote": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": null
+            }
+          ],
+          "operator": "and",
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Đối tượng là công dân Việt Nam và không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam. Nội dung các trường hợp tại Điều 21 không được cung cấp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "first_application_residence_office",
+        "condition": {
+          "values": [
+            "first"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "passport_application_sequence"
+        },
+        "statement": {
+          "value": "Đề nghị cấp hộ chiếu lần đầu thực hiện tại cơ quan quản lý xuất nhập cảnh công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân được thực hiện tại nơi thuận lợi.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "has_citizen_identity_card"
+          }
+        ]
+      },
+      {
+        "rule_id": "convenient_provincial_office",
+        "condition": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "second_or_later"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "passport_application_sequence"
+            },
+            {
+              "values": [],
+              "children": [
+                {
+                  "values": [
+                    "first"
+                  ],
+                  "children": [],
+                  "operator": "eq",
+                  "source_refs": [
+                    {
+                      "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                      "locator": "section:0:Trình tự thực hiện",
+                      "source_id": "primary"
+                    }
+                  ],
+                  "criterion_key": "passport_application_sequence"
+                },
+                {
+                  "values": [
+                    "yes"
+                  ],
+                  "children": [],
+                  "operator": "eq",
+                  "source_refs": [
+                    {
+                      "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                      "locator": "section:0:Trình tự thực hiện",
+                      "source_id": "primary"
+                    }
+                  ],
+                  "criterion_key": "has_citizen_identity_card"
+                }
+              ],
+              "operator": "and",
+              "source_refs": [
+                {
+                  "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": null
+            }
+          ],
+          "operator": "or",
+          "source_refs": [
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Có thể thực hiện tại cơ quan quản lý xuất nhập cảnh công an cấp tỉnh nơi thuận lợi khi cấp từ lần thứ hai, hoặc cấp lần đầu và có Thẻ căn cước công dân.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "legal_representative_completes_and_signs",
+        "condition": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "under_14"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+                  "locator": "requirement:0",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "age_group"
+            },
+            {
+              "values": [
+                "lost_civil_act_capacity",
+                "difficulty_in_cognition_or_behavior_control"
+              ],
+              "children": [],
+              "operator": "in",
+              "source_refs": [
+                {
+                  "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+                  "locator": "requirement:0",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "civil_capacity_status"
+            }
+          ],
+          "operator": "or",
+          "source_refs": [
+            {
+              "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Người đại diện hợp pháp khai và ký thay cho người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo Bộ luật Dân sự, hoặc người chưa đủ 14 tuổi.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "online_electronic_certification_and_postal_fallback",
+        "condition": {
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        },
+        "statement": {
+          "value": "Hồ sơ trực tuyến phải được chứng thực điện tử theo quy định; nếu chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận qua dịch vụ bưu chính công ích. Đây là ghi chú về cách nộp, không phải giấy tờ riêng; hàng nguồn ghi Bản chính: 0 - Bản sao: 0.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "values": [
+              "not_electronically_certified"
+            ],
+            "children": [],
+            "operator": "eq",
+            "source_refs": [
+              {
+                "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+                "locator": "requirement:6",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": "electronic_certification_status"
+          }
+        ]
+      },
+      {
+        "rule_id": "processing_guidance",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [
+            {
+              "quote": "* Cán bộ quản lý xuất nhập cảnh tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Hồ sơ đầy đủ, hợp lệ được cấp giấy hẹn, thu lệ phí và giao biên lai hoặc thông báo thanh toán trực tuyến, nhận biên lai điện tử. Hồ sơ thiếu hoặc không hợp lệ được hướng dẫn hoàn chỉnh. Hồ sơ không đủ điều kiện không được tiếp nhận và được trả lời bằng văn bản hoặc thông báo trên cổng dịch vụ công, nêu rõ lý do.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị cấp hộ chiếu phổ thông; yêu cầu nộp lệ phí cho cán bộ thu lệ phí, cán bộ thu lệ phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp hộ chiếu phổ thông hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông thanh toán trực tuyến và nhận biên lai điện tử.\n+ Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông hoàn chỉnh hồ sơ.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "form_relationships": [
+      {
+        "aliases": [],
+        "version": {
+          "value": "31/2023/TT-BCA",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":{\"method\":\"pdf_page_extraction\",\"original_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\",\"original_sha256\":\"c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d\",\"pages\":[7],\"source_pdf_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\"},\"document_kind\":\"blank_form\",\"download_url\":\"https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf\",\"family\":\"TK01a\",\"matches\":[{\"label\":\"Mau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc\",\"procedure_code\":\"1.001456\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm\",\"revision\":\"31/2023/TT-BCA\",\"summary\":\"Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người chưa đủ 14 tuổi\"}",
+              "locator": "form-association",
+              "source_id": "registry:17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641"
+            }
+          ]
+        },
+        "file_hash": "17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641",
+        "form_code": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "signed_by": [],
+        "certified_by": [],
+        "completed_by": [],
+        "effective_to": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "instructions": [],
+        "required_when": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "effective_from": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "official_title": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "field_schema_ref": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/fields.json",
+        "association_method": "official_copy",
+        "supporting_documents": [],
+        "mapping_review_status": "draft"
+      },
+      {
+        "aliases": [],
+        "version": {
+          "value": "31/2023/TT-BCA",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":{\"method\":\"pdf_page_extraction\",\"original_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\",\"original_sha256\":\"c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d\",\"pages\":[6],\"source_pdf_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\"},\"document_kind\":\"blank_form\",\"download_url\":\"https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf\",\"family\":\"TK01\",\"matches\":[{\"label\":\"Mau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc\",\"procedure_code\":\"1.001456\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm\",\"revision\":\"31/2023/TT-BCA\",\"summary\":\"Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người từ 14 tuổi trở lên\"}",
+              "locator": "form-association",
+              "source_id": "registry:91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313"
+            }
+          ]
+        },
+        "file_hash": "91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313",
+        "form_code": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "signed_by": [],
+        "certified_by": [],
+        "completed_by": [],
+        "effective_to": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "instructions": [],
+        "required_when": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "effective_from": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "official_title": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "field_schema_ref": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/fields.json",
+        "association_method": "official_copy",
+        "supporting_documents": [],
+        "mapping_review_status": "draft"
+      }
+    ],
+    "required_documents": [
+      {
+        "name": {
+          "value": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước, mẫu TK01 dành cho người từ 14 tuổi trở lên, ban hành kèm Thông tư số 31/2023/TT-BCA ngày 20/7/2023. Người đại diện hợp pháp khai và ký thay trong các trường hợp nguồn quy định.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [
+            "14_or_over"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi)",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "age_group"
+        }
+      },
+      {
+        "name": {
+          "value": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước, mẫu TK01a dành cho người chưa đủ 14 tuổi, ban hành kèm Thông tư số 31/2023/TT-BCA ngày 20/7/2023. Người đại diện hợp pháp khai và ký thay.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [
+            "under_14"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi)",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "age_group"
+        }
+      },
+      {
+        "name": {
+          "value": "Ảnh chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt và hai tai, không đeo kính, trang phục lịch sự, nền trắng.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Ảnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [],
+          "children": [],
+          "operator": "true",
+          "source_refs": [
+            {
+              "quote": "Bao gồm\nẢnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        }
+      },
+      {
+        "name": {
+          "value": "Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị bị mất áp dụng nhánh đơn báo mất/thông báo tiếp nhận.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [
+            "valid_and_available"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Hộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "latest_passport_status"
+        }
+      },
+      {
+        "name": {
+          "value": "Đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "originals": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [
+            "valid_but_lost"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "latest_passport_status"
+        }
+      },
+      {
+        "name": {
+          "value": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh. Nếu không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 1",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1 theo hàng số lượng; phần mô tả yêu cầu xuất trình bản chính để đối chiếu trong nhánh nộp bản chụp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": "Nếu không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "required_when": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "under_14"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân",
+                  "locator": "requirement:4",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "age_group"
+            },
+            {
+              "values": [
+                "not_issued"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân",
+                  "locator": "requirement:4",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "personal_identification_number_status"
+            }
+          ],
+          "operator": "and",
+          "source_refs": [
+            {
+              "quote": "Bản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        }
+      },
+      {
+        "name": {
+          "value": "Bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp. Nếu không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 1",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1 theo hàng số lượng; phần mô tả yêu cầu xuất trình bản chính để đối chiếu trong nhánh nộp bản chụp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": "Nếu không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "required_when": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "under_14"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi",
+                  "locator": "requirement:5",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "age_group"
+            },
+            {
+              "values": [
+                "lost_civil_act_capacity",
+                "difficulty_in_cognition_or_behavior_control"
+              ],
+              "children": [],
+              "operator": "in",
+              "source_refs": [
+                {
+                  "quote": "Bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi",
+                  "locator": "requirement:5",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "civil_capacity_status"
+            }
+          ],
+          "operator": "or",
+          "source_refs": [
+            {
+              "quote": "Bản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        }
+      }
+    ],
+    "missing_information": [
+      "Không có ngày bắt đầu hoặc kết thúc hiệu lực của thủ tục, hay thông tin thủ tục bị thay thế.",
+      "Không có nội dung Điều 21 để đánh giá các trường hợp chưa được cấp giấy tờ xuất nhập cảnh; điều kiện này phải để chưa xác lập, không tự suy diễn thành phép kiểm tra pháp lý.",
+      "Mỗi phương thức đều liệt kê 160000 Đồng và 200000 Đồng nhưng không chỉ rõ trường hợp, thời kỳ hoặc cách lựa chọn mức phí; không xác định đây là các khoản cộng dồn.",
+      "Không có số tiền phí chuyển phát, địa chỉ cổng dịch vụ công cụ thể, hoặc mốc bắt đầu tính thời hạn 08 ngày làm việc.",
+      "Không có bản ghi biểu mẫu, nội dung biểu mẫu hay hash tệp biểu mẫu được liên kết trong registry được cung cấp. Do đó không thể lập quan hệ theo từng hash hoặc xác nhận phiên bản tệp được chấp nhận; tên tệp trong thành phần hồ sơ không đủ để làm việc đó.",
+      "Không có hướng dẫn riêng cho trường hợp hộ chiếu gần nhất đã hết giá trị; không suy ra giấy tờ cần nộp cho nhánh này.",
+      "Không có số lượng tách riêng cho đơn báo mất hoặc thông báo tiếp nhận đơn; giữ số lượng giấy tờ thay thế này là chưa biết.",
+      "Không có tiêu chí chi tiết về tính đầy đủ, hợp lệ hoặc điều kiện tiếp nhận hồ sơ ngoài các thông tin được trích dẫn."
+    ],
+    "submission_channels": [
+      {
+        "fees": [
+          {
+            "value": "160000 Đồng; nguồn không nêu điều kiện áp dụng mức này.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Phí: 160000 Đồng",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "value": "200000 Đồng; nguồn không nêu điều kiện áp dụng mức này.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Phí: 200000 Đồng",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "value": "Phải trả phí dịch vụ chuyển phát nếu yêu cầu nhận kết quả qua bưu chính; không nêu số tiền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          }
+        ],
+        "channel": {
+          "value": "Trực tiếp",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trực tiếp",
+              "locator": "method:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "conditions": {
+          "value": "Nộp tại cơ quan quản lý xuất nhập cảnh công an cấp tỉnh theo nhánh nơi nộp lần đầu/từ lần thứ hai. Khi nộp xuất trình Chứng minh nhân dân, Thẻ căn cước công dân hoặc hộ chiếu còn giá trị sử dụng. Tiếp nhận vào giờ hành chính, từ thứ 2 đến thứ 6 và sáng thứ 7 tại đơn vị có bố trí, trừ Tết và ngày lễ.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "* Người đề nghị cấp hộ chiếu phổ thông không gắn chíp điện tử trực tiếp nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (khi đến nộp hồ sơ phải xuất trình Chứng minh nhân dân, Thẻ căn cước công dân hoặc hộ chiếu còn giá trị sử dụng)",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến thứ 6 hàng tuần và sáng thứ 7 (đối với các đơn vị bố trí tiếp nhận hồ sơ vào sáng thứ 7); trừ ngày Tết, ngày lễ.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "description": {
+          "value": "Nộp trực tiếp tại trụ sở cơ quan quản lý xuất nhập cảnh công an cấp tỉnh. Nguồn cho phép khai tờ khai trước qua cổng dịch vụ công, nhưng câu mô tả kết thúc bằng 'trước khi đến nộp hồ sơ trực tuyến'. Nhận trực tiếp tại cơ quan: mang giấy hẹn, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân; trả hộ chiếu từ thứ 2 đến thứ 6, trừ Tết và ngày lễ. Có thể yêu cầu chuyển kết quả qua bưu chính và trả phí chuyển phát.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "nộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến trước khi đến nộp hồ sơ trực tuyến).",
+              "locator": "method:0",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Thời gian trả hộ chiếu: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "processing_time": {
+          "value": "08 Ngày làm việc",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "08 Ngày làm việc",
+              "locator": "method:0",
+              "source_id": "primary"
+            }
+          ]
+        }
+      },
+      {
+        "fees": [
+          {
+            "value": "160000 Đồng; nguồn không nêu điều kiện áp dụng mức này.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Phí: 160000 Đồng",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "value": "200000 Đồng; nguồn không nêu điều kiện áp dụng mức này.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Phí: 200000 Đồng",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "value": "Phải trả phí dịch vụ chuyển phát nếu yêu cầu nhận kết quả qua bưu chính; không nêu số tiền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          }
+        ],
+        "channel": {
+          "value": "Trực tuyến",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trực tuyến",
+              "locator": "method:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "conditions": {
+          "value": "Thành phần hồ sơ phải được chứng thực điện tử; nếu chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận qua dịch vụ bưu chính công ích. Gửi bổ sung hồ sơ qua bưu chính công ích theo thông báo của cơ quan trên cổng dịch vụ công, nếu có.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            },
+            {
+              "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).",
+              "locator": "method:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "description": {
+          "value": "Nộp qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. Có thông báo thanh toán trực tuyến và nhận biên lai điện tử. Kết quả có thể nhận trực tiếp hoặc yêu cầu chuyển phát; nhận trực tiếp mang giấy hẹn và xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân; nhận qua bưu chính theo hướng dẫn nhà cung cấp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.",
+              "locator": "method:1",
+              "source_id": "primary"
+            },
+            {
+              "quote": "hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông thanh toán trực tuyến và nhận biên lai điện tử.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "processing_time": {
+          "value": "08 Ngày làm việc",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "08 Ngày làm việc",
+              "locator": "method:1",
+              "source_id": "primary"
+            }
+          ]
+        }
+      },
+      {
+        "fees": [
+          {
+            "value": "160000 Đồng; nguồn không nêu điều kiện áp dụng mức này.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Phí: 160000 Đồng",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "value": "200000 Đồng; nguồn không nêu điều kiện áp dụng mức này.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Phí: 200000 Đồng",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "value": "Phải trả phí dịch vụ chuyển phát nếu yêu cầu nhận kết quả qua bưu chính; không nêu số tiền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          }
+        ],
+        "channel": {
+          "value": "Dịch vụ bưu chính",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Dịch vụ bưu chính",
+              "locator": "method:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "conditions": {
+          "value": "Nộp bổ sung qua bưu chính công ích theo thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an, nếu có. Hồ sơ trực tuyến chưa được chứng thực điện tử phải gửi về cơ quan tiếp nhận qua bưu chính công ích; nguồn không mô tả đây là phương thức nộp hồ sơ ban đầu độc lập.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).",
+              "locator": "method:2",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Trường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "description": {
+          "value": "Dịch vụ bưu chính công ích để bổ sung/gửi hồ sơ theo điều kiện nguồn nêu. Ngoài ra có thể yêu cầu nhận kết quả qua bưu chính, thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính và trả phí chuyển phát.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).",
+              "locator": "method:2",
+              "source_id": "primary"
+            },
+            {
+              "quote": "* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "processing_time": {
+          "value": "08 Ngày làm việc",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "08 Ngày làm việc",
+              "locator": "method:2",
+              "source_id": "primary"
+            }
+          ]
+        }
+      }
+    ],
+    "applicant_categories": [
+      {
+        "value": "Công dân Việt Nam",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "procedure_code: 1.001456\nofficial_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "identity",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Nộp hồ sơ\n* Người đề nghị cấp hộ chiếu phổ thông không gắn chíp điện tử trực tiếp nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (khi đến nộp hồ sơ phải xuất trình Chứng minh nhân dân, Thẻ căn cước công dân hoặc hộ chiếu còn giá trị sử dụng) hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có), cụ thể:\n+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n* Cán bộ quản lý xuất nhập cảnh tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị cấp hộ chiếu phổ thông; yêu cầu nộp lệ phí cho cán bộ thu lệ phí, cán bộ thu lệ phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp hộ chiếu phổ thông hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông thanh toán trực tuyến và nhận biên lai điện tử.\n+ Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông hoàn chỉnh hồ sơ.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến thứ 6 hàng tuần và sáng thứ 7 (đối với các đơn vị bố trí tiếp nhận hồ sơ vào sáng thứ 7); trừ ngày Tết, ngày lễ.\nBước 3: Nhận kết quả\n+ Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp chưa cấp hộ chiếu phổ thông thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả hộ chiếu: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "section:0:Trình tự thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n08 Ngày làm việc\nPhí: 160000 Đồng\nPhí: 200000 Đồng\nnộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến trước khi đến nộp hồ sơ trực tuyến).\nTrực tuyến\n08 Ngày làm việc\nPhí: 160000 Đồng\nPhí: 200000 Đồng\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nDịch vụ bưu chính\n08 Ngày làm việc\nPhí: 160000 Đồng\nPhí: 200000 Đồng\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "section:1:Cách thức thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nMau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc\nBản chính: 1 - Bản sao: 0\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nMau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc\nBản chính: 1 - Bản sao: 0\nẢnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng\nBản chính: 1 - Bản sao: 0\nHộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.\nBản chính: 1 - Bản sao: 0\nBản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1\nBản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1\nTrường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "section:2:Thành phần hồ sơ",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Công an Tỉnh",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "section:3:Cơ quan thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: CAT Đắk Lắk\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an Thành phố Huế\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Cần Thơ\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Hà Nội\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Hải Phòng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Hồ Chí Minh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Đà Nẵng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh An Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bà Rịa - Vũng Tàu\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Dương\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Phước\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Thuận\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Định\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bạc Liêu\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bắc Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bắc Kạn\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bắc Ninh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bến Tre\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Cao Bằng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Cà Mau\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Gia Lai\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hoà Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hà Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hà Nam\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hà Tĩnh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hưng Yên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hải Dương\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hậu Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Khánh Hòa\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Kiên Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Kon Tum\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lai Châu\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Long An\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lào Cai\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lâm Đồng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lạng Sơn\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Nam Định\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Nghệ An\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Ninh Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Ninh Thuận\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Phú Thọ\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Phú Yên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Nam\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Ngãi\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Ninh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Trị\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Sóc Trăng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Sơn La\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Thanh Hóa\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Thái Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Thái Nguyên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Tiền Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Trà Vinh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Tuyên Quang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Tây Ninh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Vĩnh Long\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Vĩnh Phúc\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Yên Bái\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Điện Biên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Đắk Nông\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Đồng Nai\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Đồng Tháp\nĐối tượng thực hiện: Công dân Việt Nam",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nBản chính: 1 - Bản sao: 0",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:0",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nBản chính: 1 - Bản sao: 0",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:1",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nẢnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng\nBản chính: 1 - Bản sao: 0",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:2",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nHộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.\nBản chính: 1 - Bản sao: 0",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:3",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nBản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:4",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nBản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:5",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Bao gồm\nTrường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "requirement:6",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Trực tiếp\n08 Ngày làm việc\nnộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến trước khi đến nộp hồ sơ trực tuyến).\nPhí: 160000 Đồng\nPhí: 200000 Đồng",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "method:0",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Trực tuyến\n08 Ngày làm việc\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nPhí: 160000 Đồng\nPhí: 200000 Đồng",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "method:1",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+      "kind": "procedure",
+      "text": "Dịch vụ bưu chính\n08 Ngày làm việc\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\nPhí: 160000 Đồng\nPhí: 200000 Đồng",
+      "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+      "locator": "method:2",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:03:01.549831+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "kind": "registry",
+      "text": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":{\"method\":\"pdf_page_extraction\",\"original_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\",\"original_sha256\":\"c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d\",\"pages\":[7],\"source_pdf_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\"},\"document_kind\":\"blank_form\",\"download_url\":\"https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf\",\"family\":\"TK01a\",\"matches\":[{\"label\":\"Mau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc\",\"procedure_code\":\"1.001456\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm\",\"revision\":\"31/2023/TT-BCA\",\"summary\":\"Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người chưa đủ 14 tuổi\"}",
+      "sha256": "17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641",
+      "locator": "form-association",
+      "source_id": "registry:17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641",
+      "fetched_at": "2026-10-31T08:48:47.472367+00:00",
+      "snapshot_id": 41
+    },
+    {
+      "url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "kind": "registry",
+      "text": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":{\"method\":\"pdf_page_extraction\",\"original_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\",\"original_sha256\":\"c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d\",\"pages\":[6],\"source_pdf_path\":\"data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf\"},\"document_kind\":\"blank_form\",\"download_url\":\"https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf\",\"family\":\"TK01\",\"matches\":[{\"label\":\"Mau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc\",\"procedure_code\":\"1.001456\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm\",\"revision\":\"31/2023/TT-BCA\",\"summary\":\"Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người từ 14 tuổi trở lên\"}",
+      "sha256": "91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313",
+      "locator": "form-association",
+      "source_id": "registry:91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313",
+      "fetched_at": "2026-10-31T08:48:47.472367+00:00",
+      "snapshot_id": 41
+    }
+  ],
+  "metadata": {
+    "operation": "append_verified_form_associations_v1",
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 140
+    },
+    "extracted_at": "2026-10-31T08:55:08.316216+00:00",
+    "model_invoked": false,
+    "extraction_status": "validated_draft",
+    "parent_profile_id": 10
+  },
+  "output_sha256": "f650c0e6658f71737ec4f8a332c9160a5f8942f92a13381f51710f5bdc855d44"
+}

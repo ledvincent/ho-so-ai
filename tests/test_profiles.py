@@ -36,6 +36,19 @@ def test_invented_quote_rejected(specimen):
     with pytest.raises(ValueError,match='Unverifiable'):validate(data,sources)
 
 
+def test_requirement_notes_need_citations_not_fake_document_entries(specimen):
+    data, sources = specimen
+    sources.append(dict(source_id='primary',locator='requirement:0',text='A special exception'))
+    with pytest.raises(ValueError,match='requirement:0'):
+        profiles.validate_source_coverage(data,sources)
+    data['eligibility_rules'] = [dict(statement=dict(source_refs=[
+        dict(source_id='primary',locator='requirement:0',quote='A special exception')]))]
+    profiles.validate_source_coverage(data,sources)
+    sources.append(dict(source_id='primary',locator='method:0',text='Online'))
+    with pytest.raises(ValueError,match='method:0'):
+        profiles.validate_source_coverage(data,sources)
+
+
 def test_supported_fact_needs_evidence(specimen):
     data,sources=specimen
     data['purpose']=dict(value='Guessed',status='supported',source_refs=[],conflicts=[])

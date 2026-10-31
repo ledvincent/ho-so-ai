@@ -1,7 +1,6 @@
 """Human-readable exports of the active procedure dataset."""
 import json
 import shutil
-import yaml
 import hashlib
 import re
 from pathlib import Path
@@ -19,9 +18,9 @@ def write_json(path, value):
 
 def export_index():
     rows = []
-    selected = yaml.safe_load((ROOT/'candidates.yaml').read_text(encoding='utf-8'))['procedures']
-    for item in selected:
-        code = item['code']
+    with engine().connect() as db:
+        codes = list(db.execute(text('SELECT code FROM procedure WHERE active AND current_snapshot_id IS NOT NULL ORDER BY code')).scalars())
+    for code in codes:
         path = ROOT/'data/procedures'/code/'procedure.json'
         if not path.exists():
             continue
@@ -37,6 +36,8 @@ def export_index():
 
 
 def export_forms_index():
+    from api.form_catalog import export_catalog
+    export_catalog()
     versions = []
     na5=[]
     for metadata in sorted((ROOT/'data/forms/_objects').glob('*/metadata.json')):
@@ -46,7 +47,7 @@ def export_forms_index():
         row=f"| {info['family']} | {info.get('revision_reference') or 'Unverified revision'} | {'Preferred workflow template' if info.get('preferred') else 'Retained source version'} | [Original](_objects/{version}/{original}) · [Fields](_objects/{version}/fields.json) |"
         versions.append(row)
         if info['family']=='NA5':na5.append(row.replace('](_objects/','](../_objects/'))
-    (ROOT/'data/forms/README.md').write_text('# Forms\n\nStart with [NA5](NA5/README.md): its workflow, review and distinct source versions are grouped there. `_objects/` is the shared content-addressed storage; do not copy its files into procedure folders. Same-name revisions remain separate and traceable.\n\n## All retained originals (including earlier exploration)\n\n| Family | Revision | Use | Files |\n| --- | --- | --- | --- |\n'+'\n'.join(versions)+'\n',encoding='utf-8')
+    (ROOT/'data/forms/README.md').write_text('# Forms\n\n[Complete form index and summaries](index.md)\n\nStart with [NA5](NA5/README.md): its workflow, review and distinct source versions are grouped there. `_objects/` is the shared content-addressed storage; do not copy its files into procedure folders. Same-name revisions remain separate and traceable.\n\n## All retained originals (including earlier exploration)\n\n| Family | Revision | Use | Files |\n| --- | --- | --- | --- |\n'+'\n'.join(versions)+'\n',encoding='utf-8')
     folder=ROOT/'data/forms/NA5';folder.mkdir(exist_ok=True)
     (folder/'README.md').write_text('# NA5\n\n[Current workflow fields](workflow.json) · [Source and dates](source.json) · [Review record](review.json)\n\nOne shared original per fingerprint. The 2015 originals are distinct downloaded versions, not redundant copies; a working procedure link must retain the exact bytes it served. The preferred 2026 template does not overwrite those associations. Model evidence and previous renderings are under `_objects/<hash>/`.\n\n| Family | Revision | Use | Files |\n| --- | --- | --- | --- |\n'+'\n'.join(na5)+'\n',encoding='utf-8')
 
@@ -58,7 +59,7 @@ def export_shared_form(sha):
         preferred = db.execute(text('SELECT code FROM form_family WHERE preferred_sha256=:sha'),dict(sha=sha)).scalar()
         labels = list(db.execute(text('SELECT label FROM procedure_form WHERE form_sha256=:sha'),dict(sha=sha)).scalars())
         matches = re.findall(r'\b([A-Z]+\d+)\b',' '.join(labels),re.I)
-        family = preferred or (matches[0].upper() if matches else 'unknown')
+        family = (form.get('source_metadata') or {}).get('family') or preferred or (matches[0].upper() if matches else 'unknown')
     folder = ROOT/'data/forms/_objects'/sha
     folder.mkdir(parents=True,exist_ok=True)
     source = ROOT/form['raw_path']
@@ -88,7 +89,10 @@ def export_procedure(code):
     hashes = sorted({f['form_sha256'] for f in p['forms'] if f['form_sha256']})
     historical = {d['sha256'] for d in report.get('documents',[])}
     shared = {sha:export_shared_form(sha) for sha in set(hashes)|historical}
-    refs = [{**shared[f['form_sha256']], 'source_url':f['source_url'], 'source_label':f['label'], 'association_method':f['association_method']} for f in p['forms'] if f['form_sha256']]
+    with engine().connect() as db:
+        provenance={r['sha256']:r['source_metadata'] or {} for r in db.execute(text('SELECT sha256,source_metadata FROM form')).mappings()}
+    refs = [{**shared[f['form_sha256']], 'source_url':f['source_url'], 'source_label':f['label'], 'association_method':f['association_method'],
+             'recovery_source':provenance[f['form_sha256']] if f['association_method']=='official_copy' else None} for f in p['forms'] if f['form_sha256']]
     write_json(folder/'forms.json',refs)
     p['shared_forms'] = refs
     write_json(folder/'procedure.json',p)
@@ -105,7 +109,9 @@ def export_procedure(code):
                 old.unlink()
         if not any(legacy.iterdir()):
             legacy.rmdir()
-    links = '\n'.join(f"- [Shared {r['family']} original](../../{r['original'].removeprefix('data/')}) · [Draft fields](../../{r['fields'].removeprefix('data/')}) · {r['association_method']} · [download source]({r['source_url']})" for r in refs)
+    links = '\n'.join(f"- [Shared {r['family']} original](../../{r['original'].removeprefix('data/')}) · [Draft fields](../../{r['fields'].removeprefix('data/')}) · {r['association_method']} · [download source](<{(r.get('recovery_source') or {}).get('download_url') or r['source_url']}>)" for r in refs)
     profile_link=f"\n\nStructured profile and citations: [profile.json](profile.json). Baseline: `{p['structured_profile']['baseline_id']}`. Generated routing phrases are separate from sourced facts." if p.get('structured_profile') else ''
     (folder/'README.md').write_text(f"# {code}: {p['name']}\n\nSource: [Official procedure page]({p['source_url']})\n\nFull captured procedure: [procedure.json](procedure.json). Every visible section and submission description is retained. Form placements remain draft.{profile_link}\n\nShared form references: [forms.json](forms.json)\n\n{links}\n\nInternal provenance: [analysis.json](analysis.json). Original snapshots: source.html and attachment-source.html.\n",encoding='utf-8')
     export_index()
+    from api.form_catalog import export_catalog
+    export_catalog()

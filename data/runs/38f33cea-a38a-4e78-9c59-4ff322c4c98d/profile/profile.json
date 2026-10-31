@@ -1,0 +1,2454 @@
+{
+  "profile": {
+    "procedure_code": {
+      "value": "1.014748",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "procedure_code: 1.014748"
+        }
+      ],
+      "conflicts": []
+    },
+    "official_name": {
+      "value": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+        }
+      ],
+      "conflicts": []
+    },
+    "purpose": {
+      "value": "Tiếp nhận và giải quyết hồ sơ đề nghị hưởng trợ cấp thất nghiệp của người lao động chưa có việc làm, có nhu cầu hưởng trợ cấp.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp."
+        }
+      ],
+      "conflicts": []
+    },
+    "outcome": {
+      "value": "Quyết định về việc hưởng trợ cấp thất nghiệp; chuyển quyết định cho bảo hiểm xã hội cấp tỉnh để chi trả trợ cấp và cấp thẻ bảo hiểm y tế, đồng thời gửi cho người lao động. Nếu không được hưởng, người lao động nhận thông báo bằng văn bản nêu rõ lý do.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Quyết định về việc hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 12 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Quyết định về việc hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh nơi người lao động đang hưởng trợ cấp thất nghiệp để thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động; 01 bản đến người lao động được hưởng trợ cấp thất nghiệp."
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Trường hợp người lao động không được hưởng trợ cấp thất nghiệp thì tổ chức dịch vụ việc làm công phải thông báo bằng văn bản và nêu rõ lý do."
+        }
+      ],
+      "conflicts": []
+    },
+    "action_type": [
+      {
+        "value": "issue",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động"
+          }
+        ],
+        "conflicts": []
+      }
+    ],
+    "aliases": [
+      {
+        "text": "Thủ tục hưởng trợ cấp thất nghiệp cấp tỉnh",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Đăng ký nhận trợ cấp thất nghiệp",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Nộp hồ sơ bảo hiểm thất nghiệp",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Provincial unemployment benefit application",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Claim unemployment benefits",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Apply for unemployment allowance",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      }
+    ],
+    "example_requests": [
+      {
+        "text": "Tôi vừa nghỉ việc, muốn làm hồ sơ hưởng trợ cấp thất nghiệp.",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi có thể nộp hồ sơ trợ cấp thất nghiệp trực tuyến không?",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi bị ốm, có được nhờ người khác nộp hồ sơ thất nghiệp không?",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi đã nộp hồ sơ nhưng không còn muốn nhận trợ cấp thất nghiệp.",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I recently left my job and want to apply for unemployment benefits.",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Can I submit my unemployment benefit application online?",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I am ill. Can someone submit my unemployment benefit application for me?",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I submitted my application but no longer want unemployment benefits.",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      }
+    ],
+    "applicant_categories": [
+      {
+        "value": "Công dân Việt Nam",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "value": "Người lao động đang đóng bảo hiểm thất nghiệp.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:"
+          }
+        ],
+        "conflicts": []
+      }
+    ],
+    "eligibility_rules": [
+      {
+        "rule_id": "eligibility_all_requirements",
+        "statement": {
+          "value": "Người lao động đang đóng bảo hiểm thất nghiệp phải đồng thời đáp ứng điều kiện chấm dứt việc làm theo pháp luật và không thuộc các trường hợp loại trừ; đáp ứng thời gian đóng bảo hiểm theo loại hợp đồng; nộp đủ hồ sơ trong 03 tháng; và không thuộc các trường hợp được liệt kê trong 10 ngày làm việc kể từ ngày nộp đủ hồ sơ.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:\n1. Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật và không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;\n- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu.\n2. Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động.\n3. Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc\n4. Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:\n- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;\n- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;\n- Đi học tập có thời hạn trên 12 tháng;\n- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;\n- Bị tạm giam, chấp hành hình phạt tù;\n- Ra nước ngoài định cư;\n- Chết."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "and",
+          "criterion_key": null,
+          "values": [],
+          "children": [
+            {
+              "operator": "eq",
+              "criterion_key": "currently_contributing_unemployment_insurance",
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:"
+                }
+              ]
+            },
+            {
+              "operator": "unknown",
+              "criterion_key": null,
+              "values": [],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "quote": "Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật"
+                }
+              ]
+            },
+            {
+              "operator": "not",
+              "criterion_key": null,
+              "values": [],
+              "children": [
+                {
+                  "operator": "or",
+                  "criterion_key": null,
+                  "values": [],
+                  "children": [
+                    {
+                      "operator": "eq",
+                      "criterion_key": "unlawful_unilateral_termination",
+                      "values": [
+                        "yes"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                          "quote": "Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;"
+                        }
+                      ]
+                    },
+                    {
+                      "operator": "eq",
+                      "criterion_key": "pension_eligible_when_leaving",
+                      "values": [
+                        "yes"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                          "quote": "Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+                        }
+                      ]
+                    }
+                  ],
+                  "source_refs": [
+                    {
+                      "source_id": "primary",
+                      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                      "quote": "không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;\n- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+                    }
+                  ]
+                }
+              ],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "quote": "không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;\n- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+                }
+              ]
+            },
+            {
+              "operator": "or",
+              "criterion_key": null,
+              "values": [],
+              "children": [
+                {
+                  "operator": "and",
+                  "criterion_key": null,
+                  "values": [],
+                  "children": [
+                    {
+                      "operator": "eq",
+                      "criterion_key": "contract_one_to_under_twelve_months",
+                      "values": [
+                        "no"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                          "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+                        }
+                      ]
+                    },
+                    {
+                      "operator": "eq",
+                      "criterion_key": "contributions_twelve_in_twenty_four_months",
+                      "values": [
+                        "yes"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                          "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật."
+                        }
+                      ]
+                    }
+                  ],
+                  "source_refs": [
+                    {
+                      "source_id": "primary",
+                      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                      "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+                    }
+                  ]
+                },
+                {
+                  "operator": "and",
+                  "criterion_key": null,
+                  "values": [],
+                  "children": [
+                    {
+                      "operator": "eq",
+                      "criterion_key": "contract_one_to_under_twelve_months",
+                      "values": [
+                        "yes"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                          "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+                        }
+                      ]
+                    },
+                    {
+                      "operator": "eq",
+                      "criterion_key": "contributions_twelve_in_thirty_six_months",
+                      "values": [
+                        "yes"
+                      ],
+                      "children": [],
+                      "source_refs": [
+                        {
+                          "source_id": "primary",
+                          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                          "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+                        }
+                      ]
+                    }
+                  ],
+                  "source_refs": [
+                    {
+                      "source_id": "primary",
+                      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                      "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+                    }
+                  ]
+                }
+              ],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "complete_application_within_three_months",
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "quote": "Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc"
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "post_filing_exclusion",
+              "values": [
+                "none"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:\n- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;\n- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;\n- Đi học tập có thời hạn trên 12 tháng;\n- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;\n- Bị tạm giam, chấp hành hình phạt tù;\n- Ra nước ngoài định cư;\n- Chết."
+                }
+              ]
+            }
+          ],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "filing_deadline_alternative_start",
+        "statement": {
+          "value": "Nộp 01 bộ hồ sơ trong 03 tháng kể từ ngày chấm dứt hợp đồng/chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo khoản 6 Điều 3 Nghị định 374/2025/NĐ-CP. Nguồn điều kiện chỉ nêu mốc chấm dứt việc làm; chưa đủ căn cứ để tự động áp dụng mốc xác nhận thay thế.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động hoặc hợp đồng làm việc hoặc chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP, người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "authorized_or_postal_submission",
+        "statement": {
+          "value": "Được ủy quyền người khác nộp hoặc gửi qua bưu chính khi: ốm đau hoặc thai sản có xác nhận y tế có thẩm quyền; tai nạn có xác nhận cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hoặc hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch UBND cấp xã. Ngày nộp là ngày người được ủy quyền trực tiếp nộp hoặc ngày đi trên dấu bưu chính.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã. Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "or",
+          "criterion_key": null,
+          "values": [],
+          "children": [
+            {
+              "operator": "eq",
+              "criterion_key": "assisted_submission_ground",
+              "values": [
+                "illness_or_maternity_medically_certified"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "quote": "ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền"
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "assisted_submission_ground",
+              "values": [
+                "accident_certified"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "quote": "bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền"
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "assisted_submission_ground",
+              "values": [
+                "listed_emergency_commune_chair_certified"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "quote": "hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã"
+                }
+              ]
+            }
+          ],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "withdrawal_request",
+        "statement": {
+          "value": "Trong 10 ngày làm việc kể từ ngày nộp hồ sơ, người lao động không còn nhu cầu hưởng phải nộp đề nghị không hưởng theo Mẫu số 11 của Nghị định 374/2025/NĐ-CP tại nơi đã nộp hồ sơ. Nếu đã nộp trực tiếp, tổ chức dịch vụ việc làm công gửi lại hồ sơ vào ngày trả kết quả theo phiếu hẹn.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP cho tổ chức dịch vụ việc làm công nơi người lao động đã nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp. Trường hợp người lao động trực tiếp nộp hồ sơ, tổ chức dịch vụ việc làm công có trách nhiệm gửi lại hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho người lao động vào ngày trả kết quả theo phiếu hẹn trả kết quả."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "benefit_request_status",
+          "values": [
+            "no_longer_wants_benefit"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "receipt_appointment_and_supplementation",
+        "statement": {
+          "value": "Tổ chức dịch vụ việc làm công tiếp nhận, kiểm tra, lập và trao/gửi phiếu hẹn Mẫu số 04; hồ sơ trực tuyến được thông báo hẹn trả kết quả trong 03 ngày làm việc. Nếu thiếu thông tin làm cơ sở giải quyết, yêu cầu bổ sung, hoàn thiện bằng phiếu Mẫu số 03. Các mẫu được viện dẫn thuộc Phụ lục Nghị định 374/2025/NĐ-CP.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Tổ chức dịch vụ việc làm công có trách nhiệm tiếp nhận, kiểm tra hồ sơ, ghi phiếu hẹn trả kết quả theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và trao phiếu cho người nộp hồ sơ trực tiếp hoặc gửi qua dịch vụ bưu chính đối với trường hợp nộp hồ sơ qua dịch vụ bưu chính, trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trường hợp hồ sơ chưa đủ các thông tin để làm cơ sở giải quyết thì tổ chức dịch vụ việc làm công yêu cầu người lao động bổ sung, hoàn thiện hồ sơ, phiếu yêu cầu theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "decision_and_payment_timing",
+        "statement": {
+          "value": "Trong 15 ngày làm việc từ khi nhận đủ hồ sơ, tổ chức dịch vụ việc làm công xem xét, trình Giám đốc Sở Nội vụ quyết định. Hồ sơ bưu chính tính ngày nhận theo ngày chuyển đến trên dấu bưu chính. Bảo hiểm xã hội chi trả trong 05 ngày làm việc từ khi hết hạn nhận quyết định hoặc hết hạn thông báo tìm kiếm việc làm hằng tháng.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động, trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 05 ngày làm việc kể từ ngày người lao động hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp hoặc hết thời hạn thông báo về việc tìm kiếm việc làm hằng tháng, cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "uncollected_in_person_decision",
+        "statement": {
+          "value": "Đối với hồ sơ nộp trực tiếp, quá 03 ngày làm việc kể từ ngày trên phiếu hẹn mà không nhận quyết định thì được coi là không có nhu cầu hưởng. Trong 02 ngày làm việc từ khi hết hạn nhận quyết định, tổ chức dịch vụ việc làm công thông tin cho bảo hiểm xã hội để dừng chi trả; trong 07 ngày làm việc kể từ ngày không đến nhận theo quy định, trình Giám đốc Sở Nội vụ hủy quyết định. Quyết định hủy theo Mẫu số 08 của Nghị định 374/2025/NĐ-CP được gửi 01 bản cho bảo hiểm xã hội cấp tỉnh và 01 bản cho người lao động.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Bước 4: Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp.\nTrong thời hạn 02 ngày làm việc kể từ ngày hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công phải thông tin cho cơ quan bảo hiểm xã hội các trường hợp không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp để dừng chi trả theo quy định.\nTrong thời hạn 07 ngày làm việc kể từ ngày người lao động không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp của người lao động."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để không chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "uncollected_money_and_contribution_preservation",
+        "statement": {
+          "value": "Sau 03 tháng kể từ khi hết thời hạn hưởng theo quyết định, nếu không nhận tiền và không thông báo bằng văn bản cho bảo hiểm xã hội nơi đang hưởng thì được xác định không có nhu cầu hưởng. Trong 07 ngày làm việc sau thời hạn đó, bảo hiểm xã hội thông báo cho tổ chức dịch vụ việc làm công bằng Mẫu số 13. Trong 10 ngày làm việc từ khi nhận thông báo, tổ chức này xem xét, trình Giám đốc Sở Nội vụ quyết định bảo lưu thời gian đóng theo Mẫu số 14. Gửi 01 bản quyết định cho bảo hiểm xã hội cấp tỉnh và 01 bản cho người lao động; đối với hồ sơ trực tuyến, gửi các bản bằng hình thức trực tuyến. Các mẫu thuộc Phụ lục Nghị định 374/2025/NĐ-CP.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 07 ngày làm việc sau thời hạn nêu trên, cơ quan bảo hiểm xã hội phải thông báo cho tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp về việc người lao động không đến nhận tiền trợ cấp thất nghiệp. Thông báo về việc người lao động không đến nhận tiền trợ cấp thất nghiệp thực hiện theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nhận được thông báo của cơ quan bảo hiểm xã hội, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp hồ sơ trực tuyến thì Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh, 01 bản đến người lao động bằng hình thức trực tuyến.\nQuyết định bảo lưu thời gian đóng bảo hiểm thất nghiệp thực hiện theo Mẫu số 14 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "missing_employer_representative_confirmation",
+        "statement": {
+          "value": "Nếu không có giấy tờ chấm dứt hợp đồng do đơn vị không có người đại diện theo pháp luật và người được ủy quyền, người lao động đề nghị Sở Nội vụ làm thủ tục xác nhận. Trong 03 ngày làm việc từ khi nhận đề nghị, Sở Nội vụ yêu cầu Sở Tài chính xác nhận tình trạng đại diện. Sở Tài chính phối hợp cơ quan thuế, công an và chính quyền địa phương nơi đặt trụ sở để xác minh, trả lời Sở Nội vụ trong 10 ngày làm việc từ khi nhận yêu cầu. Không coi đây là một loại giấy tờ riêng do người lao động phải tự tạo.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "exclusions": [
+      {
+        "rule_id": "exclude_unlawful_unilateral_termination",
+        "statement": {
+          "value": "Loại trừ người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo Bộ luật Lao động.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "unlawful_unilateral_termination",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "exclude_pension_eligible_departure",
+        "statement": {
+          "value": "Loại trừ người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;\n- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "pension_eligible_when_leaving",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "exclude_events_within_ten_working_days",
+        "statement": {
+          "value": "Trong 10 ngày làm việc kể từ ngày nộp đủ hồ sơ, không được thuộc bất kỳ trường hợp nào: có việc làm đồng thời thuộc diện bảo hiểm xã hội bắt buộc; thực hiện nghĩa vụ quân sự, nghĩa vụ Công an nhân dân hoặc dân quân thường trực; học tập trên 12 tháng; chấp hành quyết định vào cơ sở giáo dục bắt buộc hoặc cai nghiện bắt buộc; tạm giam hoặc chấp hành hình phạt tù; ra nước ngoài định cư; chết.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:\n- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;\n- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;\n- Đi học tập có thời hạn trên 12 tháng;\n- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;\n- Bị tạm giam, chấp hành hình phạt tù;\n- Ra nước ngoài định cư;\n- Chết."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "in",
+          "criterion_key": "post_filing_exclusion",
+          "values": [
+            "employment_with_compulsory_social_insurance",
+            "military_police_or_standing_militia",
+            "study_over_twelve_months",
+            "compulsory_education_or_rehabilitation",
+            "detention_or_imprisonment",
+            "emigration",
+            "death"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:\n- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;\n- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;\n- Đi học tập có thời hạn trên 12 tháng;\n- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;\n- Bị tạm giam, chấp hành hình phạt tù;\n- Ra nước ngoài định cư;\n- Chết."
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "jurisdiction": {
+      "value": "Nộp tại tổ chức dịch vụ việc làm công ở địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp."
+        }
+      ],
+      "conflicts": []
+    },
+    "authority": {
+      "value": "Cơ quan thực hiện được liệt kê: Sở Nội vụ; Ủy ban nhân dân tỉnh và thành phố trực thuộc Trung ương. Tổ chức dịch vụ việc làm công tiếp nhận, xem xét và trình Giám đốc Sở Nội vụ quyết định; bảo hiểm xã hội thực hiện chi trả.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:3:Cơ quan thực hiện",
+          "quote": "Sở Nội vụ\nỦy ban nhân dân tỉnh và thành phố trực thuộc Trung ương"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động."
+        }
+      ],
+      "conflicts": []
+    },
+    "authority_level": {
+      "value": "Tên thủ tục ghi Cấp tỉnh; thông tin dịch vụ ghi Cấp tỉnh/ xã.",
+      "status": "conflict",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Hưởng trợ cấp thất nghiệp (Cấp tỉnh)"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Cơ quan thực hiện: Cấp tỉnh/ xã"
+        }
+      ],
+      "conflicts": [
+        "Phạm vi cấp thực hiện không thống nhất hoàn toàn giữa tên thủ tục (cấp tỉnh) và trường thông tin dịch vụ (cấp tỉnh/xã); cần xác minh vai trò của cấp xã."
+      ]
+    },
+    "submission_channels": [
+      {
+        "channel": {
+          "value": "Trực tiếp",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": "Người lao động nộp tại tổ chức dịch vụ việc làm công nơi có nhu cầu nhận trợ cấp. Việc nhờ người được ủy quyền trực tiếp nộp chỉ được nêu cho các trường hợp có xác nhận theo hướng dẫn về ốm đau, thai sản, tai nạn hoặc các sự kiện khẩn cấp được liệt kê.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã."
+            }
+          ],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "15 Ngày làm việc\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định."
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Phí: 0 Đồng",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:0",
+                "quote": "Phí: 0 Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      },
+      {
+        "channel": {
+          "value": "Trực tuyến",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Dịch vụ được ghi là toàn trình. Mô tả của kênh: Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ gửi qua bưu chính thì ngày nhận là ngày chuyển đến trên dấu bưu chính. Với hồ sơ trực tuyến, gửi thông báo hẹn trả kết quả trong 03 ngày làm việc.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Toàn trình"
+            },
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động."
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "15 Ngày làm việc\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định."
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Phí: 0 Đồng",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:1",
+                "quote": "Phí: 0 Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      },
+      {
+        "channel": {
+          "value": "Dịch vụ bưu chính",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Dịch vụ bưu chính"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": "Ốm đau hoặc thai sản có xác nhận của cơ sở y tế có thẩm quyền; hoặc tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hoặc hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch UBND cấp xã.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã."
+            }
+          ],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Thời hạn 15 ngày làm việc kể từ khi nhận đủ hồ sơ. Ngày nhận hồ sơ là ngày chuyển đến trên dấu bưu chính; ngày nộp hồ sơ là ngày đi trên dấu bưu chính.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Thời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính."
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "15 Ngày làm việc\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định."
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Phí: 0 Đồng",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:2",
+                "quote": "Phí: 0 Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      }
+    ],
+    "required_documents": [
+      {
+        "name": {
+          "value": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "benefit_request_status",
+          "values": [
+            "seeking_benefit"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "benefit_request_status",
+          "values": [
+            "no_longer_wants_benefit"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Một giấy tờ xác nhận chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng hết hạn hoặc hoàn thành công việc; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng; xác nhận của người sử dụng lao động nêu thông tin người lao động, loại hợp đồng, lý do và thời điểm chấm dứt; xác nhận của cơ quan nhà nước về giải thể/phá sản doanh nghiệp hoặc hợp tác xã; hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với người quản lý doanh nghiệp/hợp tác xã được bổ nhiệm. Với hợp đồng lao động từ đủ 01 tháng đến dưới 12 tháng, giấy tờ là chính hợp đồng đó.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã;"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1 theo cột số lượng; phần mô tả đồng thời cho phép các hình thức thay thế.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0 theo cột số lượng; mô tả cho phép bản sao có chứng thực hoặc bản chính kèm bản sao để đối chiếu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Thông thường chấp nhận bản chính HOẶC bản sao có chứng thực HOẶC bản chính kèm bản sao để đối chiếu HOẶC bản điện tử. Riêng hợp đồng từ đủ 01 tháng đến dưới 12 tháng: bản chính HOẶC bản sao có chứng thực của hợp đồng đó.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó."
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "benefit_request_status",
+          "values": [
+            "seeking_benefit"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bao gồm\nBản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc:"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Sổ bảo hiểm xã hội.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "1. Sổ bảo hiểm xã hội."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "benefit_request_status",
+          "values": [
+            "seeking_benefit"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Bao gồm\n1. Sổ bảo hiểm xã hội."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Xác nhận của cơ sở y tế có thẩm quyền về ốm đau hoặc thai sản để ủy quyền nộp hồ sơ hoặc gửi qua bưu chính.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "copies": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Cơ sở y tế có thẩm quyền xác nhận.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "assisted_submission_ground",
+          "values": [
+            "illness_or_maternity_medically_certified"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Xác nhận tai nạn của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền để ủy quyền nộp hồ sơ hoặc gửi qua bưu chính.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "copies": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền xác nhận.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "assisted_submission_ground",
+          "values": [
+            "accident_certified"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền"
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Xác nhận của Chủ tịch UBND cấp xã về hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa hoặc dịch bệnh để ủy quyền nộp hồ sơ hoặc gửi qua bưu chính.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "copies": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "certification": {
+          "value": "Chủ tịch UBND cấp xã xác nhận.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã"
+            }
+          ],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "assisted_submission_ground",
+          "values": [
+            "listed_emergency_commune_chair_certified"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã."
+            }
+          ]
+        }
+      }
+    ],
+    "effective_from": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "effective_to": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "supersedes": [],
+    "decision_criteria": [
+      {
+        "criterion_key": "applicant_category",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Are you applying as a Vietnamese citizen?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "vietnamese_citizen",
+            "label": "Vietnamese citizen",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+          }
+        ]
+      },
+      {
+        "criterion_key": "currently_contributing_unemployment_insurance",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Were you a worker contributing to unemployment insurance when your employment ended?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:"
+          }
+        ]
+      },
+      {
+        "criterion_key": "unlawful_unilateral_termination",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Was your departure an unlawful unilateral termination of your employment contract under the Labour Code?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật và không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;"
+          }
+        ]
+      },
+      {
+        "criterion_key": "pension_eligible_when_leaving",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Were you already eligible for a pension when you left work?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;\n- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu."
+          }
+        ]
+      },
+      {
+        "criterion_key": "contract_one_to_under_twelve_months",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Was your employment contract for at least one month but less than twelve months?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes, at least one month and less than twelve months",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No, that contract-duration category does not apply",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó."
+          }
+        ]
+      },
+      {
+        "criterion_key": "contributions_twelve_in_twenty_four_months",
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "contract_one_to_under_twelve_months",
+          "values": [
+            "no"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+            }
+          ]
+        },
+        "question": "Did you pay unemployment insurance for at least twelve months during the twenty-four months before your employment ended?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật."
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật."
+          }
+        ]
+      },
+      {
+        "criterion_key": "contributions_twelve_in_thirty_six_months",
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "contract_one_to_under_twelve_months",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+            }
+          ]
+        },
+        "question": "Did you pay unemployment insurance for at least twelve months during the thirty-six months before your employment contract ended?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động."
+          }
+        ]
+      },
+      {
+        "criterion_key": "complete_application_within_three_months",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Did you submit a complete unemployment benefit application within three months after your employment ended?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "yes",
+            "label": "Yes",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc"
+              }
+            ]
+          },
+          {
+            "value": "no",
+            "label": "No",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP"
+          }
+        ]
+      },
+      {
+        "criterion_key": "post_filing_exclusion",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "During the ten working days after submitting a complete application, did any of these situations apply? Choose an applicable situation, or 'None' only if none applied throughout that period.",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "employment_with_compulsory_social_insurance",
+            "label": "Employed and subject to compulsory social insurance",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;"
+              }
+            ]
+          },
+          {
+            "value": "military_police_or_standing_militia",
+            "label": "Military service, People's Public Security service, or standing militia service",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;"
+              }
+            ]
+          },
+          {
+            "value": "study_over_twelve_months",
+            "label": "Studying for more than twelve months",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Đi học tập có thời hạn trên 12 tháng;"
+              }
+            ]
+          },
+          {
+            "value": "compulsory_education_or_rehabilitation",
+            "label": "Subject to a decision placing you in a compulsory education or rehabilitation institution",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;"
+              }
+            ]
+          },
+          {
+            "value": "detention_or_imprisonment",
+            "label": "Remanded in custody or serving a prison sentence",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Bị tạm giam, chấp hành hình phạt tù;"
+              }
+            ]
+          },
+          {
+            "value": "emigration",
+            "label": "Moving abroad for permanent settlement",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Ra nước ngoài định cư;"
+              }
+            ]
+          },
+          {
+            "value": "death",
+            "label": "The worker died",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Chết."
+              }
+            ]
+          },
+          {
+            "value": "none",
+            "label": "None of these applied throughout the ten-working-day period",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:\n- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;\n- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;\n- Đi học tập có thời hạn trên 12 tháng;\n- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;\n- Bị tạm giam, chấp hành hình phạt tù;\n- Ra nước ngoài định cư;\n- Chết."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:"
+          }
+        ]
+      },
+      {
+        "criterion_key": "benefit_request_status",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Do you want to claim unemployment benefits, or have you already applied and no longer want them?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "seeking_benefit",
+            "label": "I want to claim unemployment benefits",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:0",
+                "quote": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+              }
+            ]
+          },
+          {
+            "value": "no_longer_wants_benefit",
+            "label": "I already applied and no longer want the benefit",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Đề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP."
+          }
+        ]
+      },
+      {
+        "criterion_key": "submission_channel",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "How do you intend to submit your application?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "in_person",
+            "label": "In person",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:0",
+                "quote": "Trực tiếp"
+              }
+            ]
+          },
+          {
+            "value": "online",
+            "label": "Online",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:1",
+                "quote": "Trực tuyến"
+              }
+            ]
+          },
+          {
+            "value": "postal",
+            "label": "By postal service",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:2",
+                "quote": "Dịch vụ bưu chính"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Dịch vụ bưu chính"
+          }
+        ]
+      },
+      {
+        "criterion_key": "assisted_submission_ground",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "If you need another person to submit for you or want to use postal service, which certified circumstance applies?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "illness_or_maternity_medically_certified",
+            "label": "Illness or maternity, certified by a competent medical facility",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền"
+              }
+            ]
+          },
+          {
+            "value": "accident_certified",
+            "label": "An accident, certified by traffic police or a competent medical facility",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền"
+              }
+            ]
+          },
+          {
+            "value": "listed_emergency_commune_chair_certified",
+            "label": "Fire, flood, earthquake, tsunami, hostile action, or epidemic, certified by the commune People's Committee chairperson",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Người lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã."
+          }
+        ]
+      }
+    ],
+    "form_relationships": [],
+    "missing_information": [
+      "Không có ngày bắt đầu hoặc kết thúc hiệu lực của thủ tục, thông tin thay thế thủ tục, hoặc căn cứ xác lập hiệu lực hiện tại.",
+      "Không có bản ghi biểu mẫu kèm hash hoặc bản nội dung biểu mẫu được liên kết. Chỉ có tên tệp Mẫu số 10 và 11 trong phần thành phần hồ sơ và các viện dẫn mẫu trong trình tự; không thể tạo quan hệ theo hash, xác định phiên bản, ngày hiệu lực, người ký hay hướng dẫn điền của từng tệp.",
+      "Nguồn không cung cấp nội dung khoản 6 Điều 3 Nghị định 374/2025/NĐ-CP để xác định đầy đủ trường hợp người sử dụng lao động không có khả năng đóng bảo hiểm và áp dụng mốc 03 tháng tính từ xác nhận.",
+      "Nguồn không định nghĩa cách đánh giá chấm dứt việc làm theo pháp luật, chấm dứt hợp đồng trái pháp luật, điều kiện hưởng lương hưu, hoặc đối tượng bảo hiểm xã hội bắt buộc; cần kiểm tra pháp lý khi người dùng chưa rõ.",
+      "Không nêu địa chỉ tiếp nhận, đường dẫn nộp trực tuyến cụ thể, điều kiện kỹ thuật nộp trực tuyến hoặc số lượng/hình thức bản của các xác nhận cho việc nộp thay, gửi bưu chính.",
+      "Không nêu giấy ủy quyền phải có hình thức nào, số lượng nào hoặc có cần chứng thực; không bổ sung yêu cầu ngoài nguồn.",
+      "Không nêu mức tiền, công thức tính hoặc thời gian hưởng trợ cấp trong các bản ghi được cung cấp.",
+      "Cần xác minh cách áp dụng cột số lượng 01 bản chính, 0 bản sao đối với giấy tờ chấm dứt việc làm trong khi mô tả chấp nhận nhiều hình thức thay thế."
+    ],
+    "issues": [
+      "Đây là hồ sơ trích xuất dự thảo để thẩm định; việc trích xuất thành công và thời điểm thu thập không chứng minh thủ tục còn hiệu lực hiện nay.",
+      "Giữ nguyên tên chính thức có '(Cấp tỉnh)'. Trường cấp thực hiện trong thông tin dịch vụ lại ghi 'Cấp tỉnh/ xã'; không dùng sự khác biệt này để suy ra giới hạn địa lý.",
+      "Phần trình tự cho phép một mốc bắt đầu 03 tháng thay thế theo ngày xác nhận người sử dụng lao động không có khả năng đóng bảo hiểm; phần điều kiện chỉ ghi ngày chấm dứt việc làm. Không được kết luận không đủ điều kiện chỉ từ câu trả lời 'no' về thời hạn thông thường khi trường hợp thay thế chưa được làm rõ.",
+      "Điều kiện 'chấm dứt ... theo quy định của pháp luật' được giữ là unknown trong tổ hợp điều kiện, không tự dựng phép kiểm tra pháp lý. Các câu trả lời về tính trái pháp luật hoặc đủ điều kiện hưu trí là thông tin đầu vào, không thay thế xác minh pháp lý.",
+      "Cụm 'đang đóng bảo hiểm thất nghiệp' không có định nghĩa thời điểm chi tiết trong nguồn; câu hỏi định tuyến đặt trong bối cảnh chấm dứt việc làm cần được rà soát trước khi dùng tự động.",
+      "requirement:0 và requirement:1 lặp cùng nội dung mô tả hai mẫu; section:2 gắn lần lượt tên tệp Mẫu số 10 và Mẫu số 11. Hồ sơ giữ hai nhánh hưởng/không hưởng, không yêu cầu nộp đồng thời cả hai mẫu và không khẳng định phiên bản tệp.",
+      "requirement:2 chứa cả giấy tờ, hình thức bản và quy trình xác minh đặc biệt. Quy trình đặc biệt được giữ thành hướng dẫn, không biến thành giấy tờ mới. Văn bản dùng 'và' ở điều kiện thiếu người đại diện nhưng dùng 'hoặc' ở phần xác minh; điều kiện này không được biên dịch thành phép thử tự động.",
+      "Các mô tả method:0 và method:1 đều lặp nội dung về ngày nhận bưu chính; nội dung lặp được giữ, không hiểu thành yêu cầu chuyển hồ sơ trực tiếp/trực tuyến sang bưu chính.",
+      "Các quy tắc mang tiền tố về tiếp nhận, quyết định, chi trả, không nhận quyết định và bảo lưu là hướng dẫn quy trình, không phải các điều kiện hưởng bổ sung.",
+      "Mẫu số 03, 04, 08, 10, 11, 12, 13 và 14 đều được giữ trong tài liệu hoặc hướng dẫn phù hợp; không có hash biểu mẫu được cung cấp để lập form_relationships. Không có căn cứ về thay thế giữa các phiên bản.",
+      "Giá trị unknown, giá trị người dùng bị thiếu, hoặc thời hạn 10 ngày làm việc chưa kết thúc phải giữ là chưa xác định; không đổi thành 'no', 'none' hoặc không đủ điều kiện."
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "primary",
+      "locator": "identity",
+      "text": "procedure_code: 1.014748\nofficial_name: Hưởng trợ cấp thất nghiệp (Cấp tỉnh)",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:0:Trình tự thực hiện",
+      "text": "Bước 1: Nộp hồ sơ hưởng trợ cấp thất nghiệp\n(1) Trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động hoặc hợp đồng làm việc hoặc chấm dứt làm việc hoặc kể từ ngày có xác nhận của cơ quan có thẩm quyền đối với người sử dụng lao động không có khả năng đóng bảo hiểm thất nghiệp theo quy định tại khoản 6 Điều 3 Nghị định số 374/2025/NĐ-CP, người lao động chưa có việc làm mà có nhu cầu hưởng trợ cấp thất nghiệp nộp 01 bộ hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho tổ chức dịch vụ việc làm công tại địa phương nơi người lao động có nhu cầu nhận trợ cấp thất nghiệp.\nNgười lao động được ủy quyền cho người khác nộp hồ sơ hoặc gửi hồ sơ qua dịch vụ bưu chính nếu thuộc một trong các trường hợp sau: ốm đau, thai sản có xác nhận của cơ sở y tế có thẩm quyền; bị tai nạn có xác nhận của cảnh sát giao thông hoặc cơ sở y tế có thẩm quyền; hỏa hoạn, lũ lụt, động đất, sóng thần, địch họa, dịch bệnh có xác nhận của Chủ tịch Ủy ban nhân dân cấp xã. Ngày nộp hồ sơ là ngày người được ủy quyền trực tiếp nộp hồ sơ hoặc ngày đi ghi trên dấu bưu chính đối với trường hợp gửi qua dịch vụ bưu chính.\n(2) Trong thời hạn 10 ngày làm việc kể từ ngày nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp, nếu người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì người lao động phải nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP cho tổ chức dịch vụ việc làm công nơi người lao động đã nộp hồ sơ đề nghị hưởng trợ cấp thất nghiệp. Trường hợp người lao động trực tiếp nộp hồ sơ, tổ chức dịch vụ việc làm công có trách nhiệm gửi lại hồ sơ đề nghị hưởng trợ cấp thất nghiệp cho người lao động vào ngày trả kết quả theo phiếu hẹn trả kết quả.\n(3) Tổ chức dịch vụ việc làm công có trách nhiệm tiếp nhận, kiểm tra hồ sơ, ghi phiếu hẹn trả kết quả theo Mẫu số 04 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP và trao phiếu cho người nộp hồ sơ trực tiếp hoặc gửi qua dịch vụ bưu chính đối với trường hợp nộp hồ sơ qua dịch vụ bưu chính, trường hợp người lao động nộp hồ sơ trực tuyến thì gửi thông báo về việc hẹn trả kết quả trong 03 ngày làm việc cho người lao động.\nBước 2: Trong thời hạn 15 ngày làm việc kể từ ngày nhận đủ hồ sơ theo quy định, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc hưởng trợ cấp thất nghiệp của người lao động, trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính. Trường hợp hồ sơ chưa đủ các thông tin để làm cơ sở giải quyết thì tổ chức dịch vụ việc làm công yêu cầu người lao động bổ sung, hoàn thiện hồ sơ, phiếu yêu cầu theo Mẫu số 03 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nQuyết định về việc hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 12 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nQuyết định về việc hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh nơi người lao động đang hưởng trợ cấp thất nghiệp để thực hiện chi trả trợ cấp thất nghiệp và cấp thẻ bảo hiểm y tế cho người lao động; 01 bản đến người lao động được hưởng trợ cấp thất nghiệp.\nTrường hợp người lao động không được hưởng trợ cấp thất nghiệp thì tổ chức dịch vụ việc làm công phải thông báo bằng văn bản và nêu rõ lý do.\nBước 3: Chi trả trợ cấp thất nghiệp\nTrong thời hạn 05 ngày làm việc kể từ ngày người lao động hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp hoặc hết thời hạn thông báo về việc tìm kiếm việc làm hằng tháng, cơ quan bảo hiểm xã hội thực hiện chi trả trợ cấp thất nghiệp cho người lao động.\nBước 4: Đối với trường hợp người lao động nộp hồ sơ trực tiếp, sau thời hạn 03 ngày làm việc kể từ ngày ghi trong phiếu hẹn trả kết quả, nếu người lao động không đến nhận quyết định vể việc hưởng trợ cấp thất nghiệp thì được coi là không có nhu cầu hưởng trợ cấp thất nghiệp.\nTrong thời hạn 02 ngày làm việc kể từ ngày hết thời hạn nhận quyết định về việc hưởng trợ cấp thất nghiệp, tổ chức dịch vụ việc làm công phải thông tin cho cơ quan bảo hiểm xã hội các trường hợp không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp để dừng chi trả theo quy định.\nTrong thời hạn 07 ngày làm việc kể từ ngày người lao động không đến nhận quyết định về việc hưởng trợ cấp thất nghiệp theo quy định, tổ chức dịch vụ việc làm công trình Giám đốc Sở Nội vụ quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp của người lao động.\nQuyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để không chi trả trợ cấp thất nghiệp cho người lao động; 01 bản đến người lao động. Quyết định về việc hủy quyết định hưởng trợ cấp thất nghiệp thực hiện theo Mẫu số 08 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nBước 5: Sau thời hạn 03 tháng kể từ ngày người lao động hết thời hạn hưởng trợ cấp thất nghiệp theo quyết định hưởng trợ cấp thất nghiệp nhưng người lao động không đến nhận tiền trợ cấp thất nghiệp và không thông báo bằng văn bản cơ quan bảo hiểm xã hội nơi đang hưởng trợ cấp thất nghiệp thì người lao động đó được xác định là không có nhu cầu hưởng trợ cấp thất nghiệp.\nTrong thời hạn 07 ngày làm việc sau thời hạn nêu trên, cơ quan bảo hiểm xã hội phải thông báo cho tổ chức dịch vụ việc làm công nơi người lao động đang hưởng trợ cấp thất nghiệp về việc người lao động không đến nhận tiền trợ cấp thất nghiệp. Thông báo về việc người lao động không đến nhận tiền trợ cấp thất nghiệp thực hiện theo Mẫu số 13 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nTrong thời hạn 10 ngày làm việc kể từ ngày nhận được thông báo của cơ quan bảo hiểm xã hội, tổ chức dịch vụ việc làm công có trách nhiệm xem xét, trình Giám đốc Sở Nội vụ quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động.\nQuyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp được tổ chức dịch vụ việc làm công gửi: 01 bản đến Bảo hiểm xã hội cấp tỉnh để thực hiện bảo lưu thời gian đóng bảo hiểm thất nghiệp cho người lao động; 01 bản đến người lao động. Trường hợp người lao động nộp hồ sơ trực tuyến thì Quyết định về việc bảo lưu thời gian đóng bảo hiểm thất nghiệp gửi 01 bản đến Bảo hiểm xã hội cấp tỉnh, 01 bản đến người lao động bằng hình thức trực tuyến.\nQuyết định bảo lưu thời gian đóng bảo hiểm thất nghiệp thực hiện theo Mẫu số 14 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:1:Cách thức thực hiện",
+      "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n15 Ngày làm việc\nPhí: 0 Đồng\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.\nTrực tuyến\n15 Ngày làm việc\nPhí: 0 Đồng\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.\nDịch vụ bưu chính\n15 Ngày làm việc\nPhí: 0 Đồng\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:2:Thành phần hồ sơ",
+      "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nĐề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nMus10tiPhlcbanhnhkmtheo_VL.docx\nBản chính: 1 - Bản sao: 0\nĐề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nMus11tiPhlcbanhnhkmtheo_VL.docx\nBản chính: 1 - Bản sao: 0\nBản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.\nBản chính: 1 - Bản sao: 0\n1. Sổ bảo hiểm xã hội.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:3:Cơ quan thực hiện",
+      "text": "Sở Nội vụ\nỦy ban nhân dân tỉnh và thành phố trực thuộc Trung ương",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+      "text": "Người lao động đang đóng bảo hiểm thất nghiệp được hưởng trợ cấp thất nghiệp khi có đủ các điều kiện sau đây:\n1. Chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật và không thuộc một trong các trường hợp sau đây:\n- Người lao động đơn phương chấm dứt hợp đồng lao động trái pháp luật theo quy định của Bộ luật Lao động;\n- Người lao động nghỉ việc khi đủ điều kiện hưởng lương hưu.\n2. Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì phải đóng đủ 12 tháng trở lên trong thời gian 36 tháng trước khi chấm dứt hợp đồng lao động.\n3. Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc\n4. Trong thời hạn 10 ngày làm việc kể từ ngày nộp đủ hồ sơ hưởng trợ cấp thất nghiệp, người lao động không thuộc một trong các trường hợp sau đây:\n- Có việc làm và thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc theo quy định tại Luật Bảo hiểm xã hội;\n- Thực hiện nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân, dân quân thường trực;\n- Đi học tập có thời hạn trên 12 tháng;\n- Chấp hành quyết định áp dụng biện pháp đưa vào cơ sở giáo dục bắt buộc, cơ sở cai nghiện bắt buộc;\n- Bị tạm giam, chấp hành hình phạt tù;\n- Ra nước ngoài định cư;\n- Chết.",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+      "text": "Hưởng trợ cấp thất nghiệp (Cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Cấp tỉnh/ xã\nĐối tượng thực hiện: Công dân Việt Nam",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:0",
+      "text": "Bao gồm\nĐề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:1",
+      "text": "Bao gồm\nĐề nghị hưởng trợ cấp thất nghiệp theo Mẫu số 10 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP. Trường hợp người lao động không có nhu cầu hưởng trợ cấp thất nghiệp thì nộp đề nghị không hưởng trợ cấp thất nghiệp theo Mẫu số 11 tại Phụ lục ban hành kèm theo Nghị định số 374/2025/NĐ-CP.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:2",
+      "text": "Bao gồm\nBản chính hoặc bản sao có chứng thực hoặc bản chính kèm theo bản sao để đối chiếu hoặc bản điện tử của một trong các giấy tờ sau đây xác nhận về việc chấm dứt hợp đồng lao động/hợp đồng làm việc hoặc chấm dứt làm việc: hợp đồng lao động hoặc hợp đồng làm việc đã hết hạn hoặc đã hoàn thành công việc theo hợp đồng lao động; quyết định thôi việc; quyết định sa thải; quyết định kỷ luật buộc thôi việc; thông báo hoặc thỏa thuận chấm dứt hợp đồng lao động hoặc hợp đồng làm việc; xác nhận của người sử dụng lao động trong đó có nội dung cụ thể về thông tin của người lao động; loại hợp đồng lao động đã ký; lý do, thời điểm chấm dứt hợp đồng lao động đối với người lao động; xác nhận của cơ quan nhà nước có thẩm quyền về việc doanh nghiệp hoặc hợp tác xã giải thể, phá sản hoặc quyết định bãi nhiệm, miễn nhiệm, cách chức đối với các chức danh được bổ nhiệm trong trường hợp người lao động là người quản lý doanh nghiệp, quản lý hợp tác xã; trường hợp người lao động không có các giấy tờ xác nhận về việc chấm dứt hợp đồng lao động do đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền thì thực hiện theo quy trình quy trình sau: Người lao động tại đơn vị sử dụng lao động không có người đại diện theo pháp luật và người được người đại diện theo pháp luật ủy quyền có nhu cầu chấm dứt hợp đồng lao động để hưởng các chế độ bảo hiểm thất nghiệp thì người lao động đề nghị Sở Nội vụ thực hiện các thủ tục để xác nhận việc chấm dứt hợp đồng lao động hoặc hợp đồng làm việc. Sở Nội vụ gửi văn bản yêu cầu Sở Tài chính xác nhận đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 03 ngày làm việc kể từ ngày nhận được văn bản đề nghị của người lao động. Sở Tài chính có trách nhiệm phối hợp với cơ quan thuế, cơ quan công an, chính quyền địa phương nơi đơn vị sử dụng lao động đặt trụ sở chính thực hiện xác minh nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền. Sở Tài chính gửi văn bản trả lời cho Sở Nội vụ về nội dung đơn vị sử dụng lao động không có người đại diện theo pháp luật hoặc không có người được người đại diện theo pháp luật ủy quyền trong thời hạn 10 ngày làm việc kể từ ngày nhận được văn bản yêu cầu xác nhận của Sở Nội vụ. Trường hợp người lao động làm việc theo hợp đồng lao động có thời hạn từ đủ 01 tháng đến dưới 12 tháng thì giấy tờ xác nhận về việc chấm dứt hợp đồng lao động là bản chính hoặc bản sao có chứng thực của hợp đồng đó.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:3",
+      "text": "Bao gồm\n1. Sổ bảo hiểm xã hội.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:0",
+      "text": "Trực tiếp\n15 Ngày làm việc\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.\nPhí: 0 Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:1",
+      "text": "Trực tuyến\n15 Ngày làm việc\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.\nPhí: 0 Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:2",
+      "text": "Dịch vụ bưu chính\n15 Ngày làm việc\nThời hạn 15 ngày làm việc, kể từ ngày nhận đủ hồ sơ theo quy định. Trường hợp hồ sơ đề nghị hưởng trợ cấp thất nghiệp gửi qua dịch vụ bưu chính thì ngày nhận hồ sơ được tính là ngày chuyển đến ghi trên dấu bưu chính.\nPhí: 0 Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=1.014748",
+      "sha256": "2f8dcca074211a49bee6be36b208239bfa8f7cdcf9d90265b3f62a04882521c4",
+      "kind": "procedure",
+      "snapshot_id": 50,
+      "fetched_at": "2026-10-31T08:11:29.949665+00:00"
+    }
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "model_metadata": {
+    "provider": "openai",
+    "model": "gpt-6.1-sol",
+    "response_id": "resp_0f25cd0000e9dba3016ae5a2b8a5a087d2929731a36524a939",
+    "usage": {
+      "input_tokens": 8685,
+      "input_tokens_details": {
+        "cache_write_tokens": 8682,
+        "cached_tokens": 0
+      },
+      "output_tokens": 26162,
+      "output_tokens_details": {
+        "reasoning_tokens": 1274
+      },
+      "total_tokens": 34847
+    },
+    "reasoning_effort": "medium",
+    "max_output_tokens": 64000
+  },
+  "input_sha256": "5e552a9e9a9710b3e4e527edc0f26586859a83f3a69e7d64188fa0572aa562b0",
+  "output_sha256": "1e299ff9dd92483474e9cd102e7b8399506fb0fea192c697be39a874767b9d64",
+  "extraction_status": "validated_draft",
+  "validation": {
+    "schema": true,
+    "citations_verified": 163,
+    "identity": true,
+    "form_hashes": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "validated"
+      }
+    ]
+  },
+  "extracted_at": "2026-10-31T08:14:31.370104+00:00"
+}

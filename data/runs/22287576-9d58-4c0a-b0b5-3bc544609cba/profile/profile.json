@@ -1,0 +1,1504 @@
+{
+  "profile": {
+    "procedure_code": {
+      "value": "1.014064",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "procedure_code: 1.014064"
+        }
+      ],
+      "conflicts": []
+    },
+    "official_name": {
+      "value": "Cấp lại thẻ căn cước",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp lại thẻ căn cước"
+        }
+      ],
+      "conflicts": []
+    },
+    "purpose": {
+      "value": "Replace a citizen identity card, including the described cases of loss, damage rendering the card unusable, and restoration of Vietnamese nationality.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước."
+        }
+      ],
+      "conflicts": []
+    },
+    "outcome": {
+      "value": "A replacement identity card; results are collected at the receiving police office or delivered by post to the requested address.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Cấp lại thẻ căn cước"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "- Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu."
+        }
+      ],
+      "conflicts": []
+    },
+    "action_type": [
+      {
+        "value": "replace",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "official_name: Cấp lại thẻ căn cước"
+          }
+        ],
+        "conflicts": []
+      }
+    ],
+    "aliases": [
+      {
+        "text": "Xin cấp lại thẻ căn cước",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Làm lại căn cước bị mất",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Cấp lại căn cước bị hỏng",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Identity card replacement",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Replace a lost Vietnamese identity card",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Replace an unusable identity card",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      }
+    ],
+    "example_requests": [
+      {
+        "text": "Tôi bị mất thẻ căn cước, muốn xin cấp lại.",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Thẻ căn cước của tôi bị hỏng không dùng được, nộp trực tuyến thế nào?",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi được trở lại quốc tịch Việt Nam và muốn cấp lại thẻ căn cước.",
+        "language": "vi",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I lost my Vietnamese identity card and need a replacement.",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "My identity card is damaged and unusable. Can I apply online?",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      },
+      {
+        "text": "I have regained Vietnamese nationality and want my identity card reissued.",
+        "language": "en",
+        "origin": "generated",
+        "source_refs": []
+      }
+    ],
+    "applicant_categories": [
+      {
+        "value": "Công dân Việt Nam",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+          }
+        ],
+        "conflicts": []
+      },
+      {
+        "value": "A legal representative applying for a person under 14 years old.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi;"
+          }
+        ],
+        "conflicts": []
+      }
+    ],
+    "eligibility_rules": [
+      {
+        "rule_id": "applicant_scope",
+        "statement": {
+          "value": "The stated applicant population is Vietnamese citizens.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "nationality",
+          "values": [
+            "vietnamese"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "no_additional_conditions_listed",
+        "statement": {
+          "value": "The dedicated requirements and conditions section states 'Không.'; it does not enumerate additional eligibility conditions.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Không."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "lost_or_unusable_card_biometrics",
+        "statement": {
+          "value": "For loss or damage rendering the card unusable, the receiving officer uses the most recently collected facial image, fingerprints and iris information, together with existing population and identity database information, to issue the replacement.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "or",
+          "criterion_key": null,
+          "values": [],
+          "children": [
+            {
+              "operator": "eq",
+              "criterion_key": "replacement_reason",
+              "values": [
+                "lost"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+                }
+              ]
+            },
+            {
+              "operator": "eq",
+              "criterion_key": "replacement_reason",
+              "values": [
+                "damaged_unusable"
+              ],
+              "children": [],
+              "source_refs": [
+                {
+                  "source_id": "primary",
+                  "locator": "section:0:Trình tự thực hiện",
+                  "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+                }
+              ]
+            }
+          ],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "restored_nationality_processing",
+        "statement": {
+          "value": "For restoration of Vietnamese nationality under point b, clause 2, Article 24 of the Law on Identity, follow the steps for initial issuance, including collection of fingerprints, facial photograph and iris images.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân (áp dụng với trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước)."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "replacement_reason",
+          "values": [
+            "restored_vietnamese_nationality"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "in_person_verification_and_signature",
+        "statement": {
+          "value": "For in-person applications at commune-level police, the information receipt is printed for the citizen or representative of a person under 14 to check and sign. The officer searches the national population database to prepare the replacement dossier.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại thẻ căn cước."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "submission_channel",
+          "values": [
+            "in_person"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "online_electronic_form_note",
+        "statement": {
+          "value": "For online submission, the citizen completes an electronic form. This separate requirement row lists 0 originals and 0 copies; it is retained as electronic-form guidance, not an additional paper document.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bao gồm\nPhiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến.\nBản chính: 0 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "submission_channel",
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Phiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "online_database_check",
+        "statement": {
+          "value": "Online applicants select the replacement procedure and check information retrieved from the national population database. If accurate, they confirm transfer of the dossier to their chosen commune-level police office nationwide, irrespective of residence.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn ."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "eq",
+          "criterion_key": "submission_channel",
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn ."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "nationwide_rollout_note",
+        "statement": {
+          "value": "The rollout of replacement issuance at commune-level police nationwide irrespective of residence follows Ministry of Public Security announcements.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "(Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)"
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "(Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "refusal_guidance",
+        "statement": {
+          "value": "If the citizen does not meet replacement conditions, intake is refused with reasons and a notice of refusal using CC03 under Circular 53/2025/TT-BCA dated 01/7/2025. The source does not specify an executable test for this general refusal condition.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp công dân không đủ điều kiện cấp lại thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp công dân không đủ điều kiện cấp lại thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)."
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "old_card_fees_and_appointment",
+        "statement": {
+          "value": "The office collects the old identity card if any, collects fees if applicable, and issues a paper or electronic result appointment slip using CC02 under Circular 17/2024/TT-BCA dated 15/5/2024.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 6: Thu thẻ căn cước cũ (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) (bản giấy hoặc bản điện tử)."
+            }
+          ],
+          "conflicts": []
+        },
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "exceptions": []
+      }
+    ],
+    "exclusions": [],
+    "jurisdiction": {
+      "value": "Nationwide, irrespective of place of residence; implementation of this rollout follows Ministry of Public Security announcements.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:0",
+          "quote": "- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú."
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "(Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)"
+        }
+      ],
+      "conflicts": []
+    },
+    "authority": {
+      "value": "Công an Xã",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:3:Cơ quan thực hiện",
+          "quote": "Công an Xã"
+        }
+      ],
+      "conflicts": []
+    },
+    "authority_level": {
+      "value": "Commune level",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:0",
+          "quote": "- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú."
+        }
+      ],
+      "conflicts": []
+    },
+    "submission_channels": [
+      {
+        "channel": {
+          "value": "Trực tiếp",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": "Nationwide irrespective of residence, subject to the Ministry of Public Security's rollout announcements.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "(Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)"
+            }
+          ],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Apply at a commune-level police office or commune-level one-stop unit. Intake during administrative hours Monday through Friday and Saturday mornings, excluding statutory holidays and Tết. Results may be collected at the receiving police office.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu."
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "No more than 07 working days.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Thời hạn giải quyết: Không quá 07 ngày làm việc."
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Lệ phí: 70.000 Đồng",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:0",
+                "quote": "Lệ phí: 70.000 Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      },
+      {
+        "channel": {
+          "value": "Trực tuyến",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": "The citizen checks population database information and, if accurate, confirms transfer to the selected commune-level police office.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn ."
+            }
+          ],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Apply through the National Public Service Portal, Ministry of Public Security Public Service Portal, or national identification application. Intake during administrative hours Monday through Friday and Saturday mornings, excluding statutory holidays and Tết. The service is identified as partially online.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "- Thực hiện trực tuyến thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật)."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Cấp lại thẻ căn cước\nMột phần"
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "No more than 07 working days.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Thời hạn giải quyết: Không quá 07 ngày làm việc."
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Lệ phí: 70.000 Đồng",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:1",
+                "quote": "Lệ phí: 70.000 Đồng"
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      },
+      {
+        "channel": {
+          "value": "Dịch vụ bưu chính",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Dịch vụ bưu chính"
+            }
+          ],
+          "conflicts": []
+        },
+        "conditions": {
+          "value": "Delivery of results to the address requested by the citizen.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "- Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu."
+            }
+          ],
+          "conflicts": []
+        },
+        "description": {
+          "value": "Return of results by postal service; the method record does not describe postal submission of the application.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Trả kết quả qua dịch vụ bưu chính, trả phí theo quy định."
+            }
+          ],
+          "conflicts": []
+        },
+        "processing_time": {
+          "value": "07 working days.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "07 Ngày làm việc"
+            }
+          ],
+          "conflicts": []
+        },
+        "fees": [
+          {
+            "value": "Postal fees payable as prescribed; no amount stated.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:2",
+                "quote": "Trả kết quả qua dịch vụ bưu chính, trả phí theo quy định."
+              }
+            ],
+            "conflicts": []
+          }
+        ]
+      }
+    ],
+    "required_documents": [
+      {
+        "name": {
+          "value": "Phiếu CC01 — generated from national population database information and printed during dossier intake for the citizen to check and sign.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Phiếu CC01 được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1, as listed for the combined CC01 requirement row.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0, as listed for the combined CC01 requirement row.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        }
+      },
+      {
+        "name": {
+          "value": "Phiếu thu thập thông tin dân cư — Mẫu DC01 under Circular 53/2025/TT-BCA dated 01/7/2025.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an)."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "copies": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "population_database_record",
+          "values": [
+            "absent"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy tờ, tài liệu chứng minh thông tin công dân.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân."
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "copies": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "population_database_record",
+          "values": [
+            "absent"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:0",
+              "quote": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân."
+            }
+          ]
+        }
+      },
+      {
+        "name": {
+          "value": "Phiếu đề nghị giải quyết thủ tục về căn cước — Mẫu DC02 under Circular 17/2024/TT-BCA.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Phiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1 in the DC02 requirement row; a separate online electronic-form note lists 0 originals.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Phiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến.\nBản chính: 0 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0 in the DC02 requirement row and 0 in the separate electronic-form note.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            },
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Bản chính: 0 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi"
+            }
+          ],
+          "conflicts": []
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Bản chính: 1 - Bản sao: 0"
+            }
+          ],
+          "conflicts": []
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        "required_when": {
+          "operator": "eq",
+          "criterion_key": "applicant_category",
+          "values": [
+            "legal_representative_of_person_under_14"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "+ Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi;"
+            }
+          ]
+        }
+      }
+    ],
+    "effective_from": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "effective_to": {
+      "value": null,
+      "status": "unknown",
+      "source_refs": [],
+      "conflicts": []
+    },
+    "supersedes": [],
+    "decision_criteria": [
+      {
+        "criterion_key": "nationality",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Is the person who needs the replacement card a Vietnamese citizen?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "vietnamese",
+            "label": "Vietnamese citizen",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+          }
+        ]
+      },
+      {
+        "criterion_key": "replacement_reason",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Why do you need the identity card replaced?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "lost",
+            "label": "The card was lost",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+              }
+            ]
+          },
+          {
+            "value": "damaged_unusable",
+            "label": "The card is damaged and cannot be used",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+              }
+            ]
+          },
+          {
+            "value": "restored_vietnamese_nationality",
+            "label": "Vietnamese nationality has been restored",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước."
+          }
+        ]
+      },
+      {
+        "criterion_key": "applicant_category",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Are you applying as the legal representative of a person under 14?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "legal_representative_of_person_under_14",
+            "label": "Legal representative of a person under 14",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "+ Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi;"
+              }
+            ]
+          },
+          {
+            "value": "citizen_applying_for_self",
+            "label": "Citizen applying for their own card",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "- Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi;"
+          }
+        ]
+      },
+      {
+        "criterion_key": "population_database_record",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Is the citizen's information already in the national population database?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "present",
+            "label": "Information is already in the database",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:0",
+                "quote": "Phiếu CC01 được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận."
+              }
+            ]
+          },
+          {
+            "value": "absent",
+            "label": "Information is not yet in the database",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:0",
+                "quote": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân."
+          }
+        ]
+      },
+      {
+        "criterion_key": "submission_channel",
+        "condition": {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": []
+        },
+        "question": "Will you submit the application in person or online?",
+        "question_origin": "generated",
+        "answer_options": [
+          {
+            "value": "in_person",
+            "label": "In person",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:0",
+                "quote": "Trực tiếp"
+              }
+            ]
+          },
+          {
+            "value": "online",
+            "label": "Online",
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "method:1",
+                "quote": "Trực tuyến"
+              },
+              {
+                "source_id": "primary",
+                "locator": "requirement:2",
+                "quote": "Phiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến."
+              }
+            ]
+          },
+          {
+            "value": "unknown",
+            "label": "I'm not sure",
+            "source_refs": []
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Phiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến."
+          }
+        ]
+      }
+    ],
+    "form_relationships": [],
+    "missing_information": [
+      "No associated form-file hashes or form-content records were supplied. Mentioned form codes are retained in documents and guidance, but no exact file revision can be mapped.",
+      "Procedure effective dates and supersession information are not supplied.",
+      "The national rollout announcements are not supplied, so implementation timing at a particular commune-level office is unestablished.",
+      "The general refusal condition refers to insufficient eligibility without providing a complete executable eligibility test.",
+      "The CC01 requirement row combines CC01 with conditional DC01 and information-evidence documents and gives only one row-level quantity of 1 original and 0 copies. Separate quantities for the conditional additions are not established.",
+      "The electronic-form note says 'Phiếu này' without explicitly repeating a form code. Its placement after DC02 suggests a relationship, but the exact form association and paper-versus-electronic applicability require review.",
+      "No certification requirements or detailed list of acceptable evidence of citizen information or legal representation are supplied.",
+      "The source does not state what to do when online database information is inaccurate.",
+      "The referenced initial-issuance procedure for restored nationality is not supplied in full.",
+      "Fee exemptions, reductions, the circumstances covered by 'if applicable', and the postal fee amount are not specified.",
+      "The listed postal processing time does not establish a separate delivery transit time."
+    ],
+    "issues": [
+      "Draft extraction for validation and review; current legal validity is not established by the supplied snapshot or its retrieval date.",
+      "The conditions section states 'Không.' while the workflow describes specific replacement branches and a general refusal for insufficient conditions. These are retained without treating the conditions section as proof of unconditional eligibility.",
+      "The described replacement reasons are retained as procedural branches, not asserted to be an exhaustive statutory eligibility list.",
+      "No explicit categorical exclusions are supplied; none have been inferred from applicant scope.",
+      "The postal method is retained separately, but its description supports result delivery rather than postal application intake.",
+      "Dates attached to cited circulars have not been treated as procedure effective dates or as effective dates of exact form revisions.",
+      "The workflow numbers two successive steps as 'Bước 6'.",
+      "Unknown criterion answers and missing user values must remain unknown, not be evaluated as ineligible."
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "primary",
+      "locator": "identity",
+      "text": "procedure_code: 1.014064\nofficial_name: Cấp lại thẻ căn cước",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:0:Trình tự thực hiện",
+      "text": "- Bước 1:\n+ Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn .\n+ Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi;\n(Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)\n- Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại thẻ căn cước.\n- Bước 3:\n+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước.\n+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước.\n+ Trường hợp công dân không đủ điều kiện cấp lại thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an).\n- Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân (áp dụng với trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước).\n- Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã.\n- Bước 6: Thu thẻ căn cước cũ (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) (bản giấy hoặc bản điện tử).\n- Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:1:Cách thức thực hiện",
+      "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n07 Ngày làm việc\nLệ phí: 70.000 Đồng\n- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú.\n- Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nThời hạn giải quyết: Không quá 07 ngày làm việc.\nTrực tuyến\n07 Ngày làm việc\nLệ phí: 70.000 Đồng\n- Thực hiện trực tuyến thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia.\n- Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nThời hạn giải quyết: Không quá 07 ngày làm việc.\nDịch vụ bưu chính\n07 Ngày làm việc\nTrả kết quả qua dịch vụ bưu chính, trả phí theo quy định.",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:2:Thành phần hồ sơ",
+      "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nPhiếu CC01 được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận. Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân.\nBản chính: 1 - Bản sao: 0\nPhiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)\nMẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc\nBản chính: 1 - Bản sao: 0\nPhiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến.\nBản chính: 0 - Bản sao: 0\nGiấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:3:Cơ quan thực hiện",
+      "text": "Công an Xã",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+      "text": "Không.",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+      "text": "Cấp lại thẻ căn cước\nMột phần\nCơ quan thực hiện: Công an Xã\nĐối tượng thực hiện: Công dân Việt Nam",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:0",
+      "text": "Bao gồm\nPhiếu CC01 được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận. Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân.\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:1",
+      "text": "Bao gồm\nPhiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:2",
+      "text": "Bao gồm\nPhiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến.\nBản chính: 0 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "requirement:3",
+      "text": "Bao gồm\nGiấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi\nBản chính: 1 - Bản sao: 0",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:0",
+      "text": "Trực tiếp\n07 Ngày làm việc\n- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). Thời hạn giải quyết: Không quá 07 ngày làm việc.\nLệ phí: 70.000 Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:1",
+      "text": "Trực tuyến\n07 Ngày làm việc\n- Thực hiện trực tuyến thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). Thời hạn giải quyết: Không quá 07 ngày làm việc.\nLệ phí: 70.000 Đồng",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "source_id": "primary",
+      "locator": "method:2",
+      "text": "Dịch vụ bưu chính\n07 Ngày làm việc\nTrả kết quả qua dịch vụ bưu chính, trả phí theo quy định.\n",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "kind": "procedure",
+      "snapshot_id": 39,
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    }
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "model_metadata": {
+    "provider": "openai",
+    "model": "gpt-6.1-sol",
+    "response_id": "resp_058b6c7cb138b775016ae5a068d02487d2807225b72b077987",
+    "usage": {
+      "input_tokens": 6183,
+      "input_tokens_details": {
+        "cache_write_tokens": 6180,
+        "cached_tokens": 0
+      },
+      "output_tokens": 12552,
+      "output_tokens_details": {
+        "reasoning_tokens": 284
+      },
+      "total_tokens": 18735
+    },
+    "reasoning_effort": "medium",
+    "max_output_tokens": 64000
+  },
+  "input_sha256": "0fc00ddc7ce9cf7db0720bd2e09fa44867e3266ba29d98f1820109e8d78c88aa",
+  "output_sha256": "f7db2c49fe6e93c0489cad9022e4aab856072c7740ba3e411ecdfdc68ced5b86",
+  "extraction_status": "validated_draft",
+  "validation": {
+    "schema": true,
+    "citations_verified": 88,
+    "identity": true,
+    "form_hashes": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "validated"
+      }
+    ]
+  },
+  "extracted_at": "2026-10-31T08:03:01.083056+00:00"
+}

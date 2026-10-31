@@ -1,0 +1,69 @@
+[
+  {
+    "sha256": "e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94",
+    "family": "DKX13",
+    "original": "data/forms/_objects/e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94/DKX13--e75f12ac5803.pdf",
+    "pdf": "data/forms/_objects/e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94/DKX13--e75f12ac5803.pdf",
+    "fields": "data/forms/_objects/e75f12ac5803f66b6d5a9ddc71e02a51b750753250d9898ab5f7892dd56ade94/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558",
+    "source_label": "5. Mẫu giấy khai thu hồi đăng ký, biển số xe.doc.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "DKX13",
+      "summary": "Giấy khai thu hồi đăng ký, biển số xe",
+      "page_url": "https://chinhphu.vn/?classid=1&docid=208348&pageid=27160&typegroupid=6",
+      "derivation": {
+        "pages": [
+          65
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf",
+        "original_sha256": "58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728",
+        "source_pdf_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf"
+      },
+      "fetched_at": "2026-10-31T08:50:21.222690+00:00",
+      "page_sha256": "7bcd432d6c9a427210e31da702ea77eeb34404d360efcbbc31cba76c12fcc3a3",
+      "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1",
+    "family": "DKX12",
+    "original": "data/forms/_objects/d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1/DKX12--d613872ab712.pdf",
+    "pdf": "data/forms/_objects/d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1/DKX12--d613872ab712.pdf",
+    "fields": "data/forms/_objects/d613872ab712e8ce9a5b6fdc74086c2bb48ce52fa03eacffe0ddad339cfc37e1/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e",
+    "source_label": "4. Mẫu giấy khai đăng ký xe.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "DKX12",
+      "summary": "Giấy khai đăng ký xe",
+      "page_url": "https://chinhphu.vn/?classid=1&docid=208348&pageid=27160&typegroupid=6",
+      "derivation": {
+        "pages": [
+          63,
+          64
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf",
+        "original_sha256": "58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728",
+        "source_pdf_path": "data/forms/_objects/58750caf00341ce6a511cc8be2c3c646a7446001d4d7db7698551fb75d3f7728/24-2023-TT-BCA--58750caf0034.pdf"
+      },
+      "fetched_at": "2026-10-31T08:50:21.222690+00:00",
+      "page_sha256": "7bcd432d6c9a427210e31da702ea77eeb34404d360efcbbc31cba76c12fcc3a3",
+      "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/7/24-bca.signed.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

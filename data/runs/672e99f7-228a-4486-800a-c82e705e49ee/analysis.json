@@ -1,0 +1,72 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+  "code": "1.014064",
+  "name": "Cấp lại thẻ căn cước",
+  "issues": [
+    "Empty fee cell for Dịch vụ bưu chính",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9e5db71724686: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9e5db71724686'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Required form codes not found in downloaded files: CC01, DC01, DC02",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "672e99f7-228a-4486-800a-c82e705e49ee",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 28,
+    "output_sha256": "7660725bbde9861e5a74b7e1e67b868216d458d0141874b44f17e365f85930d6",
+    "validation": {
+      "schema": true,
+      "citations_verified": 89,
+      "identity": true,
+      "form_hashes": true
+    }
+  },
+  "documents": [],
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+      "mode": "live",
+      "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "raw_path": "data/_store/html/75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+      "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9e5db71724686",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9e5db71724686'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": false,
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9e5db71724686",
+      "label": "Mẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "raw_path": "data/_store/html/75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "f868861d64634db72187d5d0e22a0ff986bba164725f703d167e38ea3c9e030b",
+      "raw_path": "data/forms/_objects/f868861d64634db72187d5d0e22a0ff986bba164725f703d167e38ea3c9e030b/DC02--f868861d6463.pdf",
+      "download_url": "https://congan.ninhbinh.gov.vn/public/userfiles/van_ban_/Th%C3%B4ng%20t%C6%B0%2017_2024.pdf",
+      "page_url": "https://congan.ninhbinh.gov.vn/public/userfiles/van_ban_/Th%C3%B4ng%20t%C6%B0%2017_2024.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ],
+  "parent_run_id": "22287576-9d58-4c0a-b0b5-3bc544609cba",
+  "operation": "recover_official_forms"
+}

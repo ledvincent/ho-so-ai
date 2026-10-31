@@ -1,0 +1,92 @@
+{
+  "recovered_associations": 47,
+  "verified_profiles": [
+    {
+      "code": "1.004194",
+      "forms": 1,
+      "citations": 119
+    },
+    {
+      "code": "1.010041",
+      "forms": 1,
+      "citations": 76
+    },
+    {
+      "code": "1.014064",
+      "forms": 1,
+      "citations": 89
+    },
+    {
+      "code": "2.002621",
+      "forms": 1,
+      "citations": 70
+    },
+    {
+      "code": "1.004222",
+      "forms": 2,
+      "citations": 191
+    },
+    {
+      "code": "1.001456",
+      "forms": 2,
+      "citations": 140
+    },
+    {
+      "code": "1.000894",
+      "forms": 2,
+      "citations": 158
+    },
+    {
+      "code": "3.000333",
+      "forms": 4,
+      "citations": 127
+    },
+    {
+      "code": "2.000635",
+      "forms": 2,
+      "citations": 151
+    },
+    {
+      "code": "1.004873",
+      "forms": 2,
+      "citations": 199
+    },
+    {
+      "code": "3.000347",
+      "forms": 1,
+      "citations": 141
+    },
+    {
+      "code": "1.010912",
+      "forms": 2,
+      "citations": 149
+    },
+    {
+      "code": "1.001939",
+      "forms": 6,
+      "citations": 177
+    },
+    {
+      "code": "1.014748",
+      "forms": 2,
+      "citations": 165
+    }
+  ],
+  "unresolved": [
+    {
+      "code": "1.001612",
+      "label": "Mauso1GiaydenghidangkyHKD.docx",
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+      "candidates": [
+        {
+          "sha256": "073757205c6fe74a6271e1d645e5164ff00375e4cd308d74b7b521d854b1207e",
+          "path": "data/forms/_objects/073757205c6fe74a6271e1d645e5164ff00375e4cd308d74b7b521d854b1207e/HKD-III-1--073757205c6f.pdf",
+          "reason": "2023 form matches the captured procedure legal basis, but the primary attachment is named Mẫu số 1. Exact requested revision remains ambiguous; do not present as a verified replacement."
+        }
+      ]
+    }
+  ],
+  "originals_hash_checked": true,
+  "derived_pages_render_identically": true,
+  "procedure_facts_unchanged": true
+}

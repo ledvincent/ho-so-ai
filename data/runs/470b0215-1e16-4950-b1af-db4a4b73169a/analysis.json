@@ -1,0 +1,74 @@
+{
+  "run_id": "470b0215-1e16-4950-b1af-db4a4b73169a",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": null,
+  "documents": [],
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+      "mode": "live",
+      "sha256": "ac6671ec62c41909aeb6d8c7ac952be7009e704f1159b3e7a9d10d9f5c43d834",
+      "raw_path": "data/_store/html/ac6671ec62c41909aeb6d8c7ac952be7009e704f1159b3e7a9d10d9f5c43d834",
+      "fetched_at": "2026-10-31T08:11:35.928853+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+      "mode": "resolved_live",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2350",
+      "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+      "raw_path": "data/_store/html/10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+      "fetched_at": "2026-10-31T08:11:38.651486+00:00",
+      "input_name": "Đăng ký thành lập hộ kinh doanh",
+      "resolved_name": "Đăng ký thành lập hộ kinh doanh",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "code": "1.001612",
+  "name": "Đăng ký thành lập hộ kinh doanh",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "raw_path": "data/_store/html/10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3ae74e63262dc",
+      "label": "Mauso1GiaydenghidangkyHKD.docx"
+    }
+  ],
+  "profile": {
+    "profile_id": 18,
+    "path": "data/runs/470b0215-1e16-4950-b1af-db4a4b73169a/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 92,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "4d98bcc497727d6f1a29a8111ff89ce09bf8773054d8e1637dfb391460d316d6"
+  },
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "facts_ready": true,
+  "status": "blocked"
+}

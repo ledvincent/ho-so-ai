@@ -1,0 +1,27 @@
+{
+  "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+  "family": "civil-extract-electronic",
+  "original": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": null,
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "civil-extract-electronic",
+    "summary": "Nội dung mẫu điện tử tương tác yêu cầu cấp bản sao Giấy khai sinh, bản sao Trích lục hộ tịch",
+    "page_url": "https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh",
+    "derivation": null,
+    "fetched_at": "2026-10-31T08:50:17.333666+00:00",
+    "page_sha256": "a8e4a97bf4108573ad567ace7da8ed793287c5a77d2719dfea989206963451ad",
+    "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "electronic_specification",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

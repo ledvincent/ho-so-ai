@@ -1,0 +1,1032 @@
+{
+  "procedure_code": {
+    "value": "2.002621",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 2.002621"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Thực hiện liên thông đăng ký khai sinh, đăng ký thường trú và cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi qua hồ sơ trực tuyến.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Người yêu cầu truy cập vào Cổng Dịch vụ công quốc gia (tại địa chỉ dichvucong.gov.vn) hoặc trên ứng dụng VNeID, lựa chọn mục “Dịch vụ công liên thông khai sinh, khai tử” để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Đăng ký khai sinh, đăng ký thường trú và cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi; bản điện tử Giấy khai sinh được chuyển trong hệ thống liên thông để xử lý các thủ tục tiếp theo.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Sau khi Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung của Bộ Tư pháp chuyển bản điện tử Giấy khai sinh sang Phần mềm dịch vụ công liên thông thông qua Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh, Phần mềm dịch vụ công liên thông phân tách, chuyển hồ sơ điện tử (bao gồm biểu mẫu, tờ khai người yêu cầu đã kê khai, bản điện tử Giấy khai sinh) đến Hệ thống thông tin quản lý cư trú để thực hiện đăng ký thường trú và Hệ thống thông tin ngành Bảo hiểm xã hội để thực hiện cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi theo quy định pháp luật liên quan."
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "register",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "issue",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Liên thông khai sinh, thường trú và bảo hiểm y tế cho trẻ dưới 6 tuổi",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Đăng ký khai sinh kèm nhập thường trú và cấp thẻ BHYT cho trẻ",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Integrated birth registration, permanent residence registration and health insurance card issuance for children under six",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Linked birth, residence and child health insurance application",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi muốn làm khai sinh, đăng ký thường trú và thẻ BHYT cho con mới sinh cùng lúc.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Nộp hồ sơ liên thông khai sinh cho con trên VNeID thế nào?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Con tôi không có giấy chứng sinh, hồ sơ liên thông cần giấy tờ thay thế gì?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I want to register my newborn's birth and permanent residence and obtain a health insurance card together.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "How do I submit the linked birth registration application through VNeID?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "What substitute documents are needed if my child has no birth notification certificate?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "child_under_six_scope",
+      "statement": {
+        "value": "Thủ tục liên thông dành cho trẻ em dưới 6 tuổi.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "child_age_group",
+        "values": [
+          "under_6"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "no_separate_conditions_specified",
+      "statement": {
+        "value": "Mục yêu cầu, điều kiện thực hiện ghi: Không quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không quy định"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Không quy định"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "paper_documents_digitization",
+      "statement": {
+        "value": "Các thành phần hồ sơ nêu trên nếu là bản giấy phải được số hóa theo Nghị định số 107/2021/NĐ-CP. Dòng này nằm dưới nhánh bị cắt ngắn về đăng ký thường trú khác nơi thường trú và ghi Bản chính: 1 - Bản sao: 1; đây là hướng dẫn số hóa, không phải một giấy tờ riêng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "- Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của...\nCác thành phần hồ sơ trên là bản giấy thì phải thực hiện số hóa theo quy định tại Nghị định số 107/2021/NĐ-CP của Chính phủ\nBản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "unknown",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:4",
+                "quote": "- Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của..."
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "documents_in_paper_form",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:4",
+                "quote": "Các thành phần hồ sơ trên là bản giấy thì phải thực hiện số hóa theo quy định tại Nghị định số 107/2021/NĐ-CP của Chính phủ"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "- Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của...\nCác thành phần hồ sơ trên là bản giấy thì phải thực hiện số hóa theo quy định tại Nghị định số 107/2021/NĐ-CP của Chính phủ"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "online_submission_and_notifications",
+      "statement": {
+        "value": "Người yêu cầu nộp hồ sơ trực tuyến và lệ phí theo quy định qua Cổng Dịch vụ công quốc gia hoặc VNeID, chọn “Dịch vụ công liên thông khai sinh, khai tử”. Thông báo hẹn trả kết quả được gửi qua Cổng Dịch vụ công quốc gia, VNeID và SMS.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Người yêu cầu truy cập vào Cổng Dịch vụ công quốc gia (tại địa chỉ dichvucong.gov.vn) hoặc trên ứng dụng VNeID, lựa chọn mục “Dịch vụ công liên thông khai sinh, khai tử” để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh tiếp nhận hồ sơ đăng ký khai sinh từ Phần mềm dịch vụ công liên thông; thông báo hẹn trả kết quả được Phần mềm dịch vụ công liên thông gửi cho người yêu cầu qua Cổng Dịch vụ công quốc gia, ứng dụng VNeID và tin nhắn SMS."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Người yêu cầu truy cập vào Cổng Dịch vụ công quốc gia (tại địa chỉ dichvucong.gov.vn) hoặc trên ứng dụng VNeID, lựa chọn mục “Dịch vụ công liên thông khai sinh, khai tử” để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "component_processing_times",
+      "statement": {
+        "value": "Đăng ký khai sinh được xử lý ngay trong ngày làm việc sau khi hồ sơ được chuyển tới phần mềm hộ tịch; đăng ký thường trú không quá 2 ngày làm việc, hoặc không quá 5 ngày làm việc nếu phải xác minh, kể từ ngày nhận hồ sơ điện tử và thông tin xác nhận qua VNeID; cấp thẻ BHYT không quá 2 ngày làm việc.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Sau khi hồ sơ đăng ký khai sinh điện tử được Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh chuyển tới Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung của Bộ Tư pháp, công chức làm công tác hộ tịch thực hiện nghiệp vụ đăng ký khai sinh ngay trong ngày làm việc trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung của Bộ Tư pháp."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Thời gian giải quyết đăng ký thường trú không quá hai (02) ngày làm việc, trường hợp phải xác minh thì thời hạn giải quyết không quá năm (05) ngày làm việc kể từ ngày nhận được hồ sơ điện tử, thông tin xác nhận qua ứng dụng VNeID.\nThời gian giải quyết cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi không quá hai (02) ngày làm việc."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Bước 3. Giải quyết hồ sơ đăng ký khai sinh"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Bước 4. Giải quyết hồ sơ đăng ký thường trú và cấp thẻ bảo hiểm y tế..."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [],
+  "jurisdiction": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Thông tin không thống nhất: mục Cơ quan thực hiện liệt kê Công an Xã, Bảo hiểm xã hội cấp huyện, Ủy ban nhân dân cấp xã và Ủy ban nhân dân cấp Huyện; mục thông tin dịch vụ ghi Văn phòng Chính phủ.",
+    "status": "conflict",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an Xã\nBảo hiểm xã hội cấp huyện\nỦy ban nhân dân cấp xã\nỦy ban nhân dân cấp Huyện"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Văn phòng Chính phủ"
+      }
+    ],
+    "conflicts": [
+      "Hai mục ghi các cơ quan thực hiện khác nhau; nguồn không giải thích vai trò hoặc quan hệ giữa các danh sách."
+    ]
+  },
+  "authority_level": {
+    "value": "Cấp xã và cấp huyện được nêu trong danh sách cơ quan thực hiện; nguồn không xác lập một cấp thẩm quyền duy nhất.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an Xã\nBảo hiểm xã hội cấp huyện\nỦy ban nhân dân cấp xã\nỦy ban nhân dân cấp Huyện"
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Thời hạn tính từ khi các cơ quan có thẩm quyền giải quyết nhận đầy đủ hồ sơ theo quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Ba (03) ngày làm việc kể từ khi các cơ quan có thẩm quyền giải quyết nhận đầy đủ hồ sơ theo quy định"
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp qua Cổng Dịch vụ công quốc gia tại dichvucong.gov.vn hoặc ứng dụng VNeID, chọn “Dịch vụ công liên thông khai sinh, khai tử”.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tuyến\n3 Ngày làm việc\nBa (03) ngày làm việc kể từ khi các cơ quan có thẩm quyền giải quyết nhận đầy đủ hồ sơ theo quy định"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Người yêu cầu truy cập vào Cổng Dịch vụ công quốc gia (tại địa chỉ dichvucong.gov.vn) hoặc trên ứng dụng VNeID, lựa chọn mục “Dịch vụ công liên thông khai sinh, khai tử” để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "3 ngày làm việc kể từ khi các cơ quan có thẩm quyền giải quyết nhận đầy đủ hồ sơ theo quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "3 Ngày làm việc\nBa (03) ngày làm việc kể từ khi các cơ quan có thẩm quyền giải quyết nhận đầy đủ hồ sơ theo quy định"
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        {
+          "value": "Nộp lệ phí theo quy định; nguồn không nêu mức tiền.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Trường hợp phải xác minh. Nếu tiếp nhận hồ sơ sau 15 giờ thì thời gian được tính bắt đầu từ ngày làm việc tiếp theo.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trường hợp phải xác minh thì không quá năm (05) ngày làm việc. Nếu tiếp nhận hồ sơ sau 15 giờ thì thời gian được tính bắt đầu từ ngày làm việc tiếp theo."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nhánh trực tuyến phải xác minh; nộp qua Cổng Dịch vụ công quốc gia hoặc VNeID.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến\n5 Ngày làm việc\nTrường hợp phải xác minh thì không quá năm (05) ngày làm việc."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Người yêu cầu truy cập vào Cổng Dịch vụ công quốc gia (tại địa chỉ dichvucong.gov.vn) hoặc trên ứng dụng VNeID, lựa chọn mục “Dịch vụ công liên thông khai sinh, khai tử” để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Không quá 5 ngày làm việc khi phải xác minh; hồ sơ tiếp nhận sau 15 giờ được tính thời gian bắt đầu từ ngày làm việc tiếp theo.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "5 Ngày làm việc\nTrường hợp phải xác minh thì không quá năm (05) ngày làm việc. Nếu tiếp nhận hồ sơ sau 15 giờ thì thời gian được tính bắt đầu từ ngày làm việc tiếp theo."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        },
+        {
+          "value": "Nộp lệ phí theo quy định; nguồn không nêu mức tiền.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "để thực hiện nộp hồ sơ trực tuyến và lệ phí theo quy định."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai điện tử (Mẫu số 01 kèm theo Nghị định)",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai điện tử (Mẫu số 01 kèm theo Nghị định)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bao gồm\nTờ khai điện tử (Mẫu số 01 kèm theo Nghị định)\nBản chính: 1 - Bản sao: 0"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Dữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Dữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Dữ liệu điện tử có ký số, liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Dữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "has_birth_notification_certificate",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bao gồm\nDữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Trường hợp không có giấy chứng sinh thì đính kèm các thành phần hồ sơ thay thế theo quy định pháp luật về Hộ tịch."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Các thành phần hồ sơ thay thế giấy chứng sinh theo quy định pháp luật về Hộ tịch",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Trường hợp không có giấy chứng sinh thì đính kèm các thành phần hồ sơ thay thế theo quy định pháp luật về Hộ tịch."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "has_birth_notification_certificate",
+        "values": [
+          "no"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Trường hợp không có giấy chứng sinh thì đính kèm các thành phần hồ sơ thay thế theo quy định pháp luật về Hộ tịch."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Các thành phần hồ sơ theo quy định pháp luật về cư trú",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Đính kèm các thành phần hồ sơ theo quy định pháp luật về cư trú"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "- Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của...\nĐính kèm các thành phần hồ sơ theo quy định pháp luật về cư trú"
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which listed applicant category describes you?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam"
+        }
+      ]
+    },
+    {
+      "criterion_key": "child_age_group",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Is the child under six years old?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "under_6",
+          "label": "Under six years old",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Đăng ký khai sinh, đăng ký thường trú, cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi"
+        }
+      ]
+    },
+    {
+      "criterion_key": "has_birth_notification_certificate",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Does the child have a birth notification certificate (Giấy chứng sinh)?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Dữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:2",
+              "quote": "Trường hợp không có giấy chứng sinh thì đính kèm các thành phần hồ sơ thay thế theo quy định pháp luật về Hộ tịch."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "Dữ liệu điện tử có ký số của Giấy chứng sinh được liên thông từ cơ sở khám bệnh, chữa bệnh với Phần mềm dịch vụ công liên thông"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:2",
+          "quote": "Trường hợp không có giấy chứng sinh thì đính kèm các thành phần hồ sơ thay thế theo quy định pháp luật về Hộ tịch."
+        }
+      ]
+    },
+    {
+      "criterion_key": "documents_in_paper_form",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "- Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của..."
+          }
+        ]
+      },
+      "question": "Are any of the relevant supporting documents in paper form?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes, there are paper documents",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Các thành phần hồ sơ trên là bản giấy thì phải thực hiện số hóa theo quy định tại Nghị định số 107/2021/NĐ-CP của Chính phủ"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:4",
+          "quote": "- Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của...\nCác thành phần hồ sơ trên là bản giấy thì phải thực hiện số hóa theo quy định tại Nghị định số 107/2021/NĐ-CP của Chính phủ"
+        }
+      ]
+    },
+    {
+      "criterion_key": "verification_required",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Does your application require verification?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes, verification is required",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trường hợp phải xác minh thì không quá năm (05) ngày làm việc."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "method:1",
+          "quote": "Trường hợp phải xác minh thì không quá năm (05) ngày làm việc."
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Không có bản ghi biểu mẫu kèm hash trong registry được cung cấp. Mục thành phần hồ sơ chỉ nêu Mẫu số 01 và tên tệp “To khai DT. Mau so 01 (khai sinh).docx”; chưa thể xác lập quan hệ với một hash hoặc phiên bản biểu mẫu cụ thể.",
+    "Không có nội dung biểu mẫu để xác định chi tiết người kê khai, người ký, người chứng nhận, hướng dẫn từng phiên bản hoặc ngày hiệu lực biểu mẫu.",
+    "Nhánh “Trường hợp đăng ký thường trú cho trẻ em khác nơi thường trú của...” bị cắt ngắn; không xác định được đối tượng so sánh hoặc điều kiện áp dụng đầy đủ.",
+    "Nguồn không liệt kê cụ thể giấy tờ thay thế giấy chứng sinh hoặc các thành phần hồ sơ cư trú được viện dẫn.",
+    "Phạm vi của hướng dẫn số hóa nằm dưới nhánh bị cắt ngắn cần được xác minh; không mặc định mở rộng hoặc thu hẹp sang toàn bộ hồ sơ.",
+    "Hai bản ghi phương thức chỉ có nhãn Phí mà không có mức tiền; chưa biết mức phí, lệ phí, miễn hoặc giảm.",
+    "Không có ngày bắt đầu, ngày kết thúc hiệu lực của thủ tục hoặc thông tin thủ tục bị thay thế.",
+    "Không xác định được phạm vi địa lý áp dụng hoặc thẩm quyền lãnh thổ từ các bản ghi.",
+    "Nguồn không giải thích sự khác nhau giữa danh sách cơ quan thực hiện và thông tin Văn phòng Chính phủ.",
+    "Quy tắc tính thời gian khi nhận sau 15 giờ xuất hiện ở dòng phương thức phải xác minh; phạm vi áp dụng ngoài dòng này chưa được xác lập.",
+    "Nguồn chưa nêu cách thức giao trả từng kết quả cuối cùng."
+  ],
+  "issues": [
+    "Đây là hồ sơ trích xuất dự thảo để kiểm tra và thẩm định; việc trích xuất không xác lập hiệu lực hiện hành của nguồn.",
+    "Không dùng thời điểm thu thập dữ liệu làm ngày hiệu lực thủ tục.",
+    "Mục yêu cầu, điều kiện ghi “Không quy định”; điều này không xóa phạm vi trẻ dưới 6 tuổi, nhóm đối tượng được nêu hoặc các nhánh hồ sơ có điều kiện.",
+    "Dòng requirement:4 là hướng dẫn số hóa, không phải một tài liệu bổ sung. Số lượng ghi trên dòng được giữ trong nội dung hướng dẫn để tránh tạo giấy tờ giả.",
+    "Thời gian từng công đoạn và thời gian liên thông được giữ riêng; không cộng cơ học các công đoạn hoặc coi chúng là mâu thuẫn.",
+    "Giá trị unknown hoặc dữ liệu người dùng còn thiếu phải được giữ là chưa xác định, không được coi là không đủ điều kiện.",
+    "Không có loại trừ được nêu rõ trong nguồn; danh sách exclusions để trống, không suy ra loại trừ từ phạm vi hoặc nhóm đối tượng."
+  ]
+}

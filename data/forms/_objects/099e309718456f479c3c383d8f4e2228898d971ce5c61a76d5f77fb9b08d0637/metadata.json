@@ -1,0 +1,37 @@
+{
+  "sha256": "099e309718456f479c3c383d8f4e2228898d971ce5c61a76d5f77fb9b08d0637",
+  "family": "birth-linked-01",
+  "original": "data/forms/_objects/099e309718456f479c3c383d8f4e2228898d971ce5c61a76d5f77fb9b08d0637/birth-linked-01--099e30971845.pdf",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": "63/2024/ND-CP",
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "birth-linked-01",
+    "summary": "Tờ khai điện tử liên thông đăng ký khai sinh, đăng ký thường trú và cấp thẻ bảo hiểm y tế cho trẻ em dưới 6 tuổi",
+    "page_url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-63-2024-nd-cp-42050/50468.htm",
+    "derivation": {
+      "pages": [
+        26,
+        27,
+        28
+      ],
+      "method": "pdf_page_extraction",
+      "original_path": "data/forms/_objects/0df62837ab8a1a0b30224eb9d6f562e367f87b4de83eab4a30f94c67d426d0cc/63-2024-gazette--0df62837ab8a.pdf",
+      "original_sha256": "0df62837ab8a1a0b30224eb9d6f562e367f87b4de83eab4a30f94c67d426d0cc",
+      "source_pdf_path": "data/forms/_objects/0df62837ab8a1a0b30224eb9d6f562e367f87b4de83eab4a30f94c67d426d0cc/63-2024-gazette--0df62837ab8a.pdf"
+    },
+    "fetched_at": "2026-10-31T08:52:53.877917+00:00",
+    "page_sha256": "b4f61318389af462060b899cc46a9374abbf72d11ef1c69aa5f9a9c723adfddc",
+    "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2024/6/42050/50468-1-2024737-73863-2024-nd-cp.pdf",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "electronic_specification",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

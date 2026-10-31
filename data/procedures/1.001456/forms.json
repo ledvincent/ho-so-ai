@@ -1,0 +1,68 @@
+[
+  {
+    "sha256": "91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313",
+    "family": "TK01",
+    "original": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/TK01--91bd17903194.pdf",
+    "pdf": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/TK01--91bd17903194.pdf",
+    "fields": "data/forms/_objects/91bd179031940dc57d8e30c3e8cbab4820f6a5b4c8c0ef78aee78f141d107313/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe2031616353412",
+    "source_label": "Mau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "TK01",
+      "summary": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người từ 14 tuổi trở lên",
+      "page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm",
+      "derivation": {
+        "pages": [
+          6
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf",
+        "original_sha256": "c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d",
+        "source_pdf_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:47.472367+00:00",
+      "page_sha256": "8b82f3abecbb83db5735395b486021d1a1255672c9551a93d4e541f392bc5aee",
+      "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641",
+    "family": "TK01a",
+    "original": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/TK01a--17c0b4435d81.pdf",
+    "pdf": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/TK01a--17c0b4435d81.pdf",
+    "fields": "data/forms/_objects/17c0b4435d812988dffe1aa09294c2aa387b24e2fbd45fef16c9b803a6675641/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe39b027d0e57ba",
+    "source_label": "Mau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "TK01a",
+      "summary": "Tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước dành cho người chưa đủ 14 tuổi",
+      "page_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-31-2023-tt-bca-39952/46135.htm",
+      "derivation": {
+        "pages": [
+          7
+        ],
+        "method": "pdf_page_extraction",
+        "original_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf",
+        "original_sha256": "c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d",
+        "source_pdf_path": "data/forms/_objects/c4aac8cd218c68c49686c1f22e5aa690746e7b1baa87cdb82e0b4af94e0fdd8d/31-2023-TT-BCA--c4aac8cd218c.pdf"
+      },
+      "fetched_at": "2026-10-31T08:48:47.472367+00:00",
+      "page_sha256": "8b82f3abecbb83db5735395b486021d1a1255672c9551a93d4e541f392bc5aee",
+      "download_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2023/7/39952/46135-1-2023929-93031-2023-tt-bca.pdf",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

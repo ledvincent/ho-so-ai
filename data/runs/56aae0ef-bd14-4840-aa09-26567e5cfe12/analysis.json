@@ -1,0 +1,74 @@
+{
+  "run_id": "56aae0ef-bd14-4840-aa09-26567e5cfe12",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": null,
+  "documents": [],
+  "issues": [
+    "Empty fee cell for Dịch vụ bưu chính",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "baseline_id": "9e9c2c0f6ce908de5418c82e586d110024b839dfea9880c3d65cb82762d43241",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+      "mode": "live",
+      "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+      "raw_path": "data/_store/html/518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+      "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "code": "1.010912",
+  "name": "Đăng ký sang tên, di chuyển xe mô tô, xe gắn máy tại Công an cấp xã được phân cấp đăng ký xe",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010912",
+    "sha256": "518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "raw_path": "data/_store/html/518626865544df7f1fa73c7274b2156a28462632b65e113434bf3b0a46adbb73",
+    "fetched_at": "2026-10-31T08:09:22.840056+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fce52097f4c6558",
+      "label": "5. Mẫu giấy khai thu hồi đăng ký, biển số xe.doc.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe255189ea00d3e",
+      "label": "4. Mẫu giấy khai đăng ký xe.docx"
+    }
+  ],
+  "profile": {
+    "profile_id": 16,
+    "path": "data/runs/56aae0ef-bd14-4840-aa09-26567e5cfe12/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 147,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "fe2ec917e73944be9e816e48d390c7356e7f7f10aa66be59a3edebcfa648904d"
+  },
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "facts_ready": false,
+  "status": "blocked"
+}

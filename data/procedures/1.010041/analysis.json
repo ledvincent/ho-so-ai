@@ -1,0 +1,82 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010041",
+  "code": "1.010041",
+  "name": "Xác nhận thông tin về cư trú",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Required form codes not found in downloaded files: CT01",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "055fba8b-0b23-4094-a9ad-b29a4822dfca",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 26,
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 76
+    },
+    "output_sha256": "237b7af18628bf0654cd3509ac65d0123c847d7473c98b8be1b9015d6cc8e74f"
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=273057",
+  "operation": "recover_official_forms",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=273057",
+      "mode": "live",
+      "sha256": "764fab16dbc503dd74cab18d863cbe9057f34c2d6a63ad753aec1a8ba826d789",
+      "raw_path": "data/_store/html/764fab16dbc503dd74cab18d863cbe9057f34c2d6a63ad753aec1a8ba826d789",
+      "fetched_at": "2026-10-31T08:01:41.266697+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010041",
+      "mode": "resolved_live",
+      "sha256": "a61e65b4f467fc3067a5c561b720c259aa6597bdf4edc13d519ee8bfc13887c6",
+      "raw_path": "data/_store/html/a61e65b4f467fc3067a5c561b720c259aa6597bdf4edc13d519ee8bfc13887c6",
+      "fetched_at": "2026-10-31T08:01:43.556946+00:00",
+      "input_name": "Xác nhận thông tin về cư trú",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=273057",
+      "resolved_name": "Xác nhận thông tin về cư trú",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "parent_run_id": "80b20b26-4767-44e2-9947-c7ab042d3e1c",
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e",
+      "label": "Mẫu CT01 _66.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.010041",
+    "sha256": "a61e65b4f467fc3067a5c561b720c259aa6597bdf4edc13d519ee8bfc13887c6",
+    "raw_path": "data/_store/html/a61e65b4f467fc3067a5c561b720c259aa6597bdf4edc13d519ee8bfc13887c6",
+    "fetched_at": "2026-10-31T08:01:43.556946+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+      "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+      "raw_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/CT01-66-2023--d7840089f355.doc",
+      "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ]
+}

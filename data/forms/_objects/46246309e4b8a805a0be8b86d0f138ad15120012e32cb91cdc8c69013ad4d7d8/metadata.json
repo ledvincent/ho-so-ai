@@ -1,0 +1,27 @@
+{
+  "sha256": "46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8",
+  "family": "BHYT-appendix-03",
+  "original": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": "948/QD-BHXH",
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "BHYT-appendix-03",
+    "summary": "Các loại giấy tờ làm căn cứ để cấp lại, ghi, điều chỉnh thẻ bảo hiểm y tế",
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+    "derivation": null,
+    "fetched_at": "2026-10-31T08:50:17.617530+00:00",
+    "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Phu_luc_03_Giayto_lam_cancu_caplai_the_BHYT.pdf",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "supporting_guidance",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

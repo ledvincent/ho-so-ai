@@ -38,6 +38,25 @@ def test_existing_database_is_not_overwritten(tmp_path):
     assert not (tmp_path/'data/_store/html/file').exists()
 
 
+def test_repository_assets_verified_across_checkout_line_endings(tmp_path):
+    bundle(tmp_path, {'procedure-db.dump': b'dump'})
+    path = tmp_path/'data/forms/example.json'
+    path.parent.mkdir(parents=True)
+    path.write_bytes(b'{}\r\n')
+    manifest_path = tmp_path/'data/bootstrap/manifest.json'
+    manifest = json.loads(manifest_path.read_text())
+    manifest['repository_files'] = {'data/forms/example.json': hashlib.sha256(b'{}\n').hexdigest()}
+    manifest_path.write_text(json.dumps(manifest))
+    verified_files(tmp_path)
+    path.write_bytes(b'changed')
+    with pytest.raises(ValueError, match='Repository asset checksum'):
+        verified_files(tmp_path)
+    manifest['repository_files'] = {'data/forms/../../.env': 'bad'}
+    manifest_path.write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match='repository asset path'):
+        verified_files(tmp_path)
+
+
 def test_restore_uses_transaction_and_preserves_existing_assets(tmp_path):
     calls=[]
     def run(*args,**kwargs):

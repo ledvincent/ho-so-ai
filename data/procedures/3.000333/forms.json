@@ -1,0 +1,102 @@
+[
+  {
+    "sha256": "f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077",
+    "family": "LLTP-01",
+    "original": "data/forms/_objects/f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077/Mau_so_1--f9a5a798ace8.docx",
+    "pdf": "data/forms/_objects/f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077/blank.pdf",
+    "fields": "data/forms/_objects/f9a5a798ace8b5cb821af856386708d0cca4c4f37973b56c22b1d73d3ff4b077/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fc533b0a63b2b54",
+    "source_label": "Mau_so_1.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "LLTP-01",
+      "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp dành cho cá nhân",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:46:50.185677+00:00",
+      "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_1_20250401020820.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614",
+    "family": "LLTP-02",
+    "original": "data/forms/_objects/a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614/Mau_so_2--a93ac68fa27e.docx",
+    "pdf": "data/forms/_objects/a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614/blank.pdf",
+    "fields": "data/forms/_objects/a93ac68fa27e6c26a5d83664f9e3b33150537c2b122c8461e08a44511514a614/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe36026ba93e627",
+    "source_label": "Mau_so_2.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "LLTP-02",
+      "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp dành cho người được ủy quyền hoặc cha mẹ của người chưa thành niên",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:47:00.650324+00:00",
+      "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_2_20250401020820.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea",
+    "family": "LLTP-04",
+    "original": "data/forms/_objects/94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea/Mau_so_4--94d51b1cf5bd.docx",
+    "pdf": "data/forms/_objects/94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea/blank.pdf",
+    "fields": "data/forms/_objects/94d51b1cf5bd99792ba0b8ad4d5de196e9463a6e30e0d7b8339af8a198b295ea/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdad04afe1695b6",
+    "source_label": "Mau_so_4.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "LLTP-04",
+      "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp điện tử tương tác dành cho cá nhân",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:47:00.748505+00:00",
+      "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_4_20250401020820.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "electronic_specification",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff",
+    "family": "LLTP-05",
+    "original": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/Mau_so_5--9da031385397.docx",
+    "pdf": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/blank.pdf",
+    "fields": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feba6a0b0e70237",
+    "source_label": "Mau_so_5.docx",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "LLTP-05",
+      "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp điện tử tương tác dành cho người được ủy quyền hoặc cha mẹ",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:47:09.622792+00:00",
+      "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_5_20250401020820.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "electronic_specification",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

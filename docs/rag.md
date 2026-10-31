@@ -26,7 +26,10 @@ split and reports a separate development test split. This small fixture is not
 a production quality guarantee. Inspect candidate errors and expand the corpus.
 
 `build` is idempotent for the same source/profile/model versions. It captures
-all active parsed profiles, including those currently blocked for answering.
+all active validated profiles, including `needs_source_details` snapshots and
+those currently blocked for answering. Missing fee/source details must not hide
+a procedure from routing; the separate evidence-readiness check still prevents
+unreviewed incomplete sources from being used for factual answers.
 Embedding cache keys include exact input text and model configuration/digest.
 Jobs are leased with `FOR UPDATE SKIP LOCKED`, use bounded attempts, record
 failures, and retry after 30 seconds. Rerun `work` after a transient failure;

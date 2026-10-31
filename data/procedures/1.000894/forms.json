@@ -1,0 +1,52 @@
+[
+  {
+    "sha256": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+    "family": "marriage-declaration",
+    "original": "data/forms/_objects/27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d/2.TKngkkthn--27b12f101e9f.doc",
+    "pdf": "data/forms/_objects/27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d/blank.pdf",
+    "fields": "data/forms/_objects/27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc3a2c708e1c58",
+    "source_label": "2.TKngkkthn.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "marriage-declaration",
+      "summary": "Tờ khai đăng ký kết hôn",
+      "page_url": "https://namxang.ninhbinh.gov.vn/en/thu-tuc-hanh-chinh/dang-ky-ket-hon-luu-dong",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:46:11.153645+00:00",
+      "page_sha256": "2b66a756e9e6769cb56b91c895bbf536f8467132d2d8f878c7a1aa963302fada",
+      "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  },
+  {
+    "sha256": "f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+    "family": "marriage-electronic",
+    "original": "data/forms/_objects/f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54/2-Dang-ky-ket-hon--f04cca3aecda.docx",
+    "pdf": "data/forms/_objects/f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54/blank.pdf",
+    "fields": "data/forms/_objects/f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fee1f90d0167573",
+    "source_label": "2.DDTTT-ngkkthn.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "marriage-electronic",
+      "summary": "Nội dung mẫu hộ tịch điện tử tương tác đăng ký kết hôn",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=59625",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:48:40.102907+00:00",
+      "page_sha256": "fde8ddc8fd7bd755a7f233dd1f7bd4a31fff2f41d71d7b71a68ce71aa779de01",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "electronic_specification",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

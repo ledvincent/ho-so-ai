@@ -1,0 +1,132 @@
+[
+  {
+    "source_id": "primary",
+    "locator": "identity",
+    "text": "procedure_code: 1.001612\nofficial_name: Đăng ký thành lập hộ kinh doanh",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:0:Trình tự thực hiện",
+    "text": "Trường hợp đăng ký trực tiếp:\n- Người thành lập hộ kinh doanh hoặc hộ kinh doanh thực hiện đăng ký hộ kinh doanh tại Cơ quan đăng ký kinh doanh cấp xã nơi đặt trụ sở hộ kinh doanh.\n- Khi tiếp nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã trao Giấy biên nhận cho hộ kinh doanh.\n+ Khi hồ sơ đăng ký hộ kinh doanh đủ điều kiện để được cấp Giấy chứng nhận đăng ký hộ kinh doanh, hệ thống thông tin về đăng ký hộ kinh doanh truyền thông tin đăng ký thành lập hộ kinh doanh sang Hệ thống ứng dụng đăng ký thuế;\nHệ thống ứng dụng đăng ký thuế nhận thông tin đăng ký thành lập hộ kinh doanh từ hệ thống thông tin về đăng ký hộ kinh doanh truyền sang và tự động kiểm tra sự phù hợp của thông tin theo quy định của pháp luật về đăng ký thuế.\n+ Trường hợp thông tin phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động tạo mã số hộ kinh doanh và thực hiện phân cấp cơ quan thuế quản lý đối với hộ kinh doanh; đồng thời truyền các thông tin này sang hệ thống thông tin về đăng ký hộ kinh doanh.\n+ Trường hợp thông tin không phù hợp theo quy định của pháp luật về đăng ký thuế, Hệ thống ứng dụng đăng ký thuế tự động phản hồi về việc thông tin không phù hợp và truyền sang hệ thống thông tin về đăng ký hộ kinh doanh;\nTrên cơ sở thông tin do Hệ thống ứng dụng đăng ký thuế cung cấp, cơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh và Thông báo về cơ quan thuế quản lý trực tiếp cho người thành lập hộ kinh doanh; trường hợp hồ sơ chưa đủ điều kiện cấp, cơ quan đăng ký kinh doanh cấp xã phải ra Thông báo về việc sửa đổi, bổ sung hồ sơ.\nCơ quan đăng ký kinh doanh cấp xã cấp Giấy chứng nhận đăng ký hộ kinh doanh cho hộ kinh doanh trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ hợp lệ.\n- Trường hợp hồ sơ không hợp lệ, trong thời hạn 03 ngày làm việc kể từ ngày nhận hồ sơ, Cơ quan đăng ký kinh doanh cấp xã phải thông báo bằng văn bản cho người nộp hồ sơ hoặc người thành lập hộ kinh doanh biết. Thông báo phải nêu rõ lý do và các yêu cầu sửa đổi, bổ sung hồ sơ (nếu có).\nTrường hợp đăng ký qua mạng điện tử sử dụng chữ ký số:\n- Người nộp hồ sơ đăng ký hộ kinh doanh kê khai thông tin, tải văn bản điện tử, sử dụng chữ ký số để ký xác thực hồ sơ đăng ký hộ kinh doanh theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.\n- Cơ quan đăng ký kinh doanh cấp xã trả giấy biên nhận hồ sơ và kết quả giải quyết thủ tục đăng ký hộ kinh doanh cho người nộp hồ sơ qua mạng thông tin điện tử theo quy trình trên hệ thống thông tin về đăng ký hộ kinh doanh.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:1:Cách thức thực hiện",
+    "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nLệ phí: Đồng\nThời hạn giải quyết\nTrực tuyến\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nLệ phí: Đồng\nThời hạn giải quyết",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:2:Thành phần hồ sơ",
+    "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n(i) Giấy đề nghị đăng ký hộ kinh doanh;\nMauso1GiaydenghidangkyHKD.docx\nBản chính: 1 - Bản sao: 0\n(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1\n(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1\n(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.\nBản chính: 0 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:3:Cơ quan thực hiện",
+    "text": "Ủy ban nhân dân cấp xã",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+    "text": "(i) Hộ kinh doanh được cấp Giấy chứng nhận đăng ký hộ kinh doanh khi có đủ các điều kiện sau đây:\n- Ngành, nghề đăng ký kinh doanh không bị cấm đầu tư kinh doanh;\n- Tên của hộ kinh doanh được đặt theo đúng quy định tại Điều 88 Nghị định số 01/2021/NĐ-CP;\n- Có hồ sơ đăng ký hộ kinh doanh hợp lệ;\n- Nộp đủ lệ phí đăng ký hộ kinh doanh theo quy định.\n(ii) Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử được chấp thuận khi có đầy đủ các yêu cầu sau:\n- Có đầy đủ các giấy tờ và nội dung các giấy tờ đó được kê khai đầy đủ theo quy định như hồ sơ đăng ký hộ kinh doanh bằng bản giấy và được thể hiện dưới dạng văn bản điện tử. Tên văn bản điện tử phải được đặt tương ứng với tên loại giấy tờ trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy. Chủ hộ kinh doanh, các thành viên hộ gia đình hoặc cá nhân khác ký tên trong hồ sơ đăng ký hộ kinh doanh có thể sử dụng chữ ký số để ký trực tiếp trên văn bản điện tử hoặc ký trực tiếp trên văn bản giấy và quét (scan) văn bản giấy theo các định dạng quy định tại khoản 2 Điều 5g (bổ sung tại Khoản 2 Điều 1 Thông tư số 02/2023/TT-BKHĐT ngày 18/4/2023 của Bộ Kế hoạch và Đầu tư sửa đổi, bổ sung một số điều của Thông tư số 01/2021/TT-BKHĐT);\n- Các thông tin đăng ký hộ kinh doanh được kê khai trên hệ thống thông tin về đăng ký hộ kinh doanh phải được nhập đầy đủ và chính xác theo các thông tin trong hồ sơ đăng ký hộ kinh doanh bằng bản giấy; trong đó có thông tin về số điện thoại, thư điện tử của người nộp hồ sơ;\n- Hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải được xác thực bằng chữ ký số của chủ hộ kinh doanh hoặc người được chủ hộ kinh doanh ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh. Trường hợp ủy quyền thực hiện thủ tục đăng ký hộ kinh doanh, hồ sơ đăng ký hộ kinh doanh qua mạng thông tin điện tử phải kèm theo các giấy tờ, tài liệu quy định tại khoản 4 Điều 84 Nghị định số 01/2021/NĐ-CP.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+    "text": "Đăng ký thành lập hộ kinh doanh\nToàn trình\nCơ quan thực hiện: Bộ Tài chính\nĐối tượng thực hiện: Công dân Việt Nam; Tổ chức (không bao gồm doanh nghiệp, HTX)",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:0",
+    "text": "Bao gồm\n(i) Giấy đề nghị đăng ký hộ kinh doanh;\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:1",
+    "text": "Bao gồm\n(ii) Giấy tờ pháp lý của cá nhân đối với chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:2",
+    "text": "Bao gồm\n(iii) Bản sao biên bản họp thành viên hộ gia đình về việc thành lập hộ kinh doanh trong trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh;\nBản chính: 0 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:3",
+    "text": "Bao gồm\n(iv) Bản sao văn bản ủy quyền của thành viên hộ gia đình cho một thành viên làm chủ hộ kinh doanh đối với trường hợp các thành viên hộ gia đình đăng ký hộ kinh doanh.\nBản chính: 0 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:0",
+    "text": "Trực tiếp\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nThời hạn giải quyết\nLệ phí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:1",
+    "text": "Trực tuyến\nTrong thời hạn 03 (ba) ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ.\nThời hạn giải quyết\nLệ phí: Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001612",
+    "sha256": "10817ebc97ce3e19574d61a053a01ccfa3d0974ff625dcd5ede471252fb44fbe",
+    "kind": "procedure",
+    "snapshot_id": 51,
+    "fetched_at": "2026-10-31T08:11:38.651486+00:00"
+  }
+]

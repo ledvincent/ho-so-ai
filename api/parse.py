@@ -5,7 +5,7 @@ from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
-VERSION = "vpcp-by-code-3"
+VERSION = "vpcp-by-code-4"
 
 
 class ParseError(ValueError):
@@ -52,6 +52,27 @@ def parse(raw: bytes, code: str, source_url: str, fetched_at: str, expected_name
     service=soup.select_one('#listDVC')
     if service:
         visible=BeautifulSoup(str(service),'html.parser')
+        # Shared procedure pages append thousands of links to LOCAL variants.
+        # Their office/audience metadata does not describe this national code.
+        # Retain only services belonging to the exact national procedure;
+        # the complete directory remains in the original HTML snapshot.
+        rows = visible.select('tr')
+        selected = []
+        header = None
+        has_identifiers = False
+        for row in rows:
+            if 'head' in row.get('class', []):
+                header = row
+                continue
+            identifiers = [m.group(1) for a in row.select('a[onclick]')
+                           if (m := re.search(r"showFreeFun\('([^']+)'\)", a['onclick']))]
+            has_identifiers = has_identifiers or bool(identifiers)
+            if any(re.fullmatch(re.escape(code)+r'(?:\.\d+)?', value) for value in identifiers):
+                if header is not None:
+                    selected.append(str(header))
+                selected.append(str(row))
+        if has_identifiers:
+            visible = BeautifulSoup(''.join(selected), 'html.parser')
         for control in visible.select('script,style,button,a'):
             control.decompose()
         document_sections.append(dict(heading='Thông tin dịch vụ và đối tượng thực hiện',text_verbatim=visible.get_text('\n',strip=True)))

@@ -1,0 +1,214 @@
+{
+  "$defs": {
+    "Condition": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "value"
+      ],
+      "title": "Condition",
+      "type": "object"
+    },
+    "Exclusion": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_id": {
+          "title": "Anchor Id",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "anchor_id",
+        "reason"
+      ],
+      "title": "Exclusion",
+      "type": "object"
+    },
+    "MappedField": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "text",
+            "date",
+            "choice",
+            "manual"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "owner": {
+          "title": "Owner",
+          "type": "string"
+        },
+        "group": {
+          "title": "Group",
+          "type": "string"
+        },
+        "required": {
+          "title": "Required",
+          "type": "boolean"
+        },
+        "conditions": {
+          "items": {
+            "$ref": "#/$defs/Condition"
+          },
+          "title": "Conditions",
+          "type": "array"
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Options",
+          "type": "array"
+        },
+        "placements": {
+          "items": {
+            "$ref": "#/$defs/Placement"
+          },
+          "title": "Placements",
+          "type": "array"
+        },
+        "multiline": {
+          "title": "Multiline",
+          "type": "boolean"
+        },
+        "repeat": {
+          "title": "Repeat",
+          "type": "boolean"
+        },
+        "max_length": {
+          "maximum": 2000,
+          "minimum": 1,
+          "title": "Max Length",
+          "type": "integer"
+        },
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        },
+        "uncertainties": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Uncertainties",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "type",
+        "owner",
+        "group",
+        "required",
+        "conditions",
+        "options",
+        "placements",
+        "multiline",
+        "repeat",
+        "max_length",
+        "evidence",
+        "uncertainties"
+      ],
+      "title": "MappedField",
+      "type": "object"
+    },
+    "Placement": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_id": {
+          "title": "Anchor Id",
+          "type": "string"
+        },
+        "component": {
+          "enum": [
+            "value",
+            "day",
+            "month",
+            "year",
+            "choice"
+          ],
+          "title": "Component",
+          "type": "string"
+        },
+        "option": {
+          "title": "Option",
+          "type": "string"
+        }
+      },
+      "required": [
+        "anchor_id",
+        "component",
+        "option"
+      ],
+      "title": "Placement",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "form_code": {
+      "title": "Form Code",
+      "type": "string"
+    },
+    "revision_reference": {
+      "title": "Revision Reference",
+      "type": "string"
+    },
+    "fields": {
+      "items": {
+        "$ref": "#/$defs/MappedField"
+      },
+      "title": "Fields",
+      "type": "array"
+    },
+    "excluded_anchors": {
+      "items": {
+        "$ref": "#/$defs/Exclusion"
+      },
+      "title": "Excluded Anchors",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Issues",
+      "type": "array"
+    }
+  },
+  "required": [
+    "form_code",
+    "revision_reference",
+    "fields",
+    "excluded_anchors",
+    "issues"
+  ],
+  "title": "Mapping",
+  "type": "object"
+}

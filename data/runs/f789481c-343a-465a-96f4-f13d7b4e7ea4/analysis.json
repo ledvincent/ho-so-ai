@@ -1,0 +1,120 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+  "code": "1.004194",
+  "name": "Đăng ký tạm trú",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Required form codes not found in downloaded files: CT01",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "f789481c-343a-465a-96f4-f13d7b4e7ea4",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 23,
+    "output_sha256": "7d231b9c04c72303eda4db33abaad864a7d789f8471d4a5938b617002a225b36",
+    "validation": {
+      "schema": true,
+      "citations_verified": 119,
+      "identity": true,
+      "form_hashes": true
+    }
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974",
+      "mode": "live",
+      "sha256": "38a470b5cc0ad4e421631a568dd087d3714d0ae08cf8b0d297cd2b522de36ee9",
+      "raw_path": "data/_store/html/38a470b5cc0ad4e421631a568dd087d3714d0ae08cf8b0d297cd2b522de36ee9",
+      "fetched_at": "2026-10-31T07:57:08.246455+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+      "mode": "resolved_live",
+      "sha256": "9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+      "raw_path": "data/_store/html/9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+      "fetched_at": "2026-10-31T07:57:11.831350+00:00",
+      "input_name": "Đăng ký tạm trú",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=5974",
+      "resolved_name": "Đăng ký tạm trú",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9",
+      "label": "Mẫu CT01 _66.doc"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540",
+      "label": "Mẫu CT01 _66.doc"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86",
+      "label": "Mẫu CT01 _66.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+    "sha256": "9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+    "raw_path": "data/_store/html/9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+    "fetched_at": "2026-10-31T07:57:11.831350+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+      "raw_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/CT01-66-2023--d7840089f355.doc",
+      "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+      "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+      "raw_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/CT01-66-2023--d7840089f355.doc",
+      "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+      "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+      "raw_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/CT01-66-2023--d7840089f355.doc",
+      "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+      "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ],
+  "parent_run_id": "a3010889-d7de-46e9-b063-0351e8b398f0",
+  "operation": "recover_official_forms"
+}

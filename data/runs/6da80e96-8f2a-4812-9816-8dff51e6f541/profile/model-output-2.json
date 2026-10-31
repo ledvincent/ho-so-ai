@@ -1,0 +1,2755 @@
+{
+  "procedure_code": {
+    "value": "1.004873",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 1.004873"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Thủ tục cấp Giấy xác nhận tình trạng hôn nhân",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Thủ tục cấp Giấy xác nhận tình trạng hôn nhân"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích kết hôn hoặc mục đích khác.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "requirement:12",
+        "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích kết hôn thì cơ quan đăng ký hộ tịch chỉ cấp 01 bản cho người yêu cầu."
+      },
+      {
+        "source_id": "primary",
+        "locator": "requirement:13",
+        "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn thì trong Giấy xác nhận tình trạng hôn nhân phải ghi rõ mục đích sử dụng, số lượng Giấy xác nhận tình trạng hôn nhân được cấp theo yêu cầu."
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Giấy xác nhận tình trạng hôn nhân được in, trình Lãnh đạo UBND cấp xã ký và chuyển tới Trung tâm Phục vụ hành chính công trả kết quả. Để kết hôn: cấp 01 bản. Cho mục đích khác: ghi rõ mục đích sử dụng và cấp số lượng theo yêu cầu.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Công chức tư pháp - hộ tịch in Giấy xác nhận tình trạng hôn nhân, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu."
+      },
+      {
+        "source_id": "primary",
+        "locator": "requirement:12",
+        "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích kết hôn thì cơ quan đăng ký hộ tịch chỉ cấp 01 bản cho người yêu cầu."
+      },
+      {
+        "source_id": "primary",
+        "locator": "requirement:13",
+        "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn thì trong Giấy xác nhận tình trạng hôn nhân phải ghi rõ mục đích sử dụng, số lượng Giấy xác nhận tình trạng hôn nhân được cấp theo yêu cầu."
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "issue",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "official_name: Thủ tục cấp Giấy xác nhận tình trạng hôn nhân"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "replace",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác hoặc do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định thì phải nộp lại Giấy xác nhận tình trạng hôn nhân đã được cấp trước đó."
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Xin giấy xác nhận tình trạng hôn nhân",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Cấp giấy xác nhận độc thân",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Marital status certificate issuance",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Apply for a certificate of marital status",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi muốn xin giấy xác nhận tình trạng hôn nhân để kết hôn.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi có thể xin giấy xác nhận tình trạng hôn nhân trực tuyến không?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Giấy xác nhận tình trạng hôn nhân đã hết hạn, tôi muốn xin cấp lại.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I need a marital status certificate to get married.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "How do I apply online for a marital status certificate?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "My marital status certificate has expired. How can I get another one?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người Việt Nam định cư ở nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "marriage_conditions",
+      "statement": {
+        "value": "Nếu xin giấy để kết hôn, phải đồng thời đáp ứng: nam từ đủ 20 tuổi hoặc nữ từ đủ 18 tuổi; việc kết hôn do nam và nữ tự nguyện quyết định; không bị mất năng lực hành vi dân sự; không thuộc bất kỳ trường hợp cấm kết hôn được liệt kê. Các trường hợp cấm gồm kết hôn giả tạo, ly hôn giả tạo; tảo hôn, cưỡng ép, lừa dối, cản trở kết hôn; đang có vợ/chồng mà kết hôn với người khác hoặc chưa có vợ/chồng mà kết hôn với người đang có vợ/chồng; kết hôn giữa người cùng dòng máu trực hệ, họ trong phạm vi ba đời, cha/mẹ nuôi với con nuôi, người từng là cha/mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng. Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính. Các phép đánh giá pháp lý chưa được xác lập để tự động thực thi.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:\n- Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;\n- Việc kết hôn do nam và nữ tự nguyện quyết định;\n- Không bị mất năng lực hành vi dân sự;\n- Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:\n+ Kết hôn giả tạo, ly hôn giả tạo;\n+ Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;\n+ Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;\n+ Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.\n- Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "certificate_purpose",
+        "values": [
+          "marriage"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:"
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "certificate_purpose",
+          "values": [
+            "other"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn, thì người yêu cầu không phải đáp ứng điều kiện kết hôn."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "marriage_age_branches",
+      "statement": {
+        "value": "Điều kiện tuổi cho mục đích kết hôn có hai nhánh: nam từ đủ 20 tuổi hoặc nữ từ đủ 18 tuổi. Đáp ứng tuổi không đồng nghĩa đã đáp ứng toàn bộ điều kiện kết hôn.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:\n- Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "certificate_purpose",
+            "values": [
+              "marriage"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:"
+              }
+            ]
+          },
+          {
+            "operator": "or",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "eq",
+                "criterion_key": "marriage_age_category",
+                "values": [
+                  "male_at_least_20"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+                  }
+                ]
+              },
+              {
+                "operator": "eq",
+                "criterion_key": "marriage_age_category",
+                "values": [
+                  "female_at_least_18"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:\n- Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "non_marriage_purpose",
+      "statement": {
+        "value": "Cho mục đích khác, không phải đăng ký kết hôn: không phải đáp ứng điều kiện kết hôn; giấy phải ghi rõ mục đích sử dụng và số lượng được cấp theo yêu cầu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn, thì người yêu cầu không phải đáp ứng điều kiện kết hôn."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:13",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn thì trong Giấy xác nhận tình trạng hôn nhân phải ghi rõ mục đích sử dụng, số lượng Giấy xác nhận tình trạng hôn nhân được cấp theo yêu cầu."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "certificate_purpose",
+        "values": [
+          "other"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:13",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "marriage_output_quantity",
+      "statement": {
+        "value": "Để sử dụng vào mục đích kết hôn, chỉ cấp 01 bản.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:12",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích kết hôn thì cơ quan đăng ký hộ tịch chỉ cấp 01 bản cho người yêu cầu."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "certificate_purpose",
+        "values": [
+          "marriage"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:12",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích kết hôn thì cơ quan đăng ký hộ tịch chỉ cấp 01 bản cho người yêu cầu."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "document_submission_guidance",
+      "statement": {
+        "value": "Nộp/xuất trình giấy tờ theo hình thức trực tiếp hoặc tải lên theo hình thức trực tuyến. Đây là hướng dẫn, không phải một giấy tờ; dòng nguồn ghi 0 bản chính, 0 bản sao.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Người có yêu cầu cấp Giấy xác nhận tình trạng hôn nhân thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "in",
+        "criterion_key": "submission_channel",
+        "values": [
+          "in_person",
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Người có yêu cầu cấp Giấy xác nhận tình trạng hôn nhân thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "postal_certified_copies",
+      "statement": {
+        "value": "Gửi qua bưu chính phải kèm bản sao có chứng thực của các giấy tờ phải xuất trình. Dòng ghi chú có số lượng 0 bản chính, 0 bản sao; không nêu riêng số bản sao chứng thực cần gửi.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên.\nBản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "postal"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "residence_and_assisted_routing",
+      "statement": {
+        "value": "Cá nhân có quyền lựa chọn cơ quan đăng ký hộ tịch nơi cư trú, xác định theo pháp luật cư trú. Nếu lựa chọn UBND cấp xã không phải nơi thường trú hoặc tạm trú, UBND nơi tiếp nhận phải hỗ trợ nộp trực tuyến đến đúng cơ quan có thẩm quyền.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:10",
+            "quote": "Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "previous_residences_verification",
+      "statement": {
+        "value": "Nếu từng đăng ký thường trú tại nhiều nơi, cung cấp giấy tờ chứng minh tình trạng hôn nhân tại nơi thường trú trước đây nếu có. Cơ quan tra cứu qua hệ thống cấp tỉnh kết nối CSDL hộ tịch điện tử và CSDLQGVDC. Nếu không tra cứu được vì chưa có dữ liệu, đề nghị UBND cấp xã nơi thường trú/nơi đã đăng ký kết hôn xác minh. UBND nhận đề nghị phải kiểm tra, xác minh và gửi kết quả trong 03 ngày làm việc từ khi nhận yêu cầu. Dòng ghi chú ghi 0 bản chính, 0 bản sao, không xác định số lượng giấy tờ cung cấp nếu có.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:11",
+            "quote": "Trường hợp người yêu cầu xác nhận tình trạng hôn nhân đã từng đăng ký thường trú tại nhiều nơi khác nhau, người yêu cầu cung cấp các giấy tờ chứng minh tình trạng hôn nhân tại nơi thường trú trước đây (nếu có). Trên cơ sở các thông tin được cung cấp, cơ quan đăng ký hộ tịch tra cứu thông tin về tình trạng hôn nhân của người yêu cầu xác nhận tình trạng hôn nhân trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC. Trường hợp không tra cứu được tình trạng hôn nhân do chưa có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC, thì cơ quan đăng ký hộ tịch đề nghị Ủy ban nhân dân cấp xã nơi người yêu cầu thường trú/nơi đã đăng ký kết hôn xác minh, cung cấp thông tin. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được yêu cầu xác minh, Ủy ban nhân dân cấp xã nơi nhận được đề nghị xác minh có trách nhiệm kiểm tra, xác minh và gửi kết quả về tình trạng hôn nhân của người đó.\nBản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "multiple_previous_permanent_residences",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:11",
+            "quote": "Trường hợp người yêu cầu xác nhận tình trạng hôn nhân đã từng đăng ký thường trú tại nhiều nơi khác nhau"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "in_person_document_guidance",
+      "statement": {
+        "value": "Đối với nộp trực tiếp: có thể nộp bản sao chứng thực từ bản chính, bản sao từ sổ gốc, bản chụp kèm bản chính hoặc bản điện tử, kể cả giấy tờ tích hợp/hiển thị trên VneID. Khi nhận bản chụp kèm bản chính, cán bộ đối chiếu và ký xác nhận, không yêu cầu nộp bản sao. Với giấy tờ chỉ xuất trình, cán bộ kiểm tra với tờ khai, chụp/ghi thông tin lưu hồ sơ rồi trả lại, không yêu cầu bản sao hoặc bản chụp. Không được yêu cầu giấy tờ ngoài quy định. Khi người yêu cầu cung cấp họ tên, ngày sinh và số định danh/căn cước, cán bộ khai thác CSDLQGVDC; thiếu thông tin trong cơ sở dữ liệu thì đề nghị kê khai đầy đủ. Nếu người yêu cầu cung cấp thông tin giấy tờ hộ tịch đã đăng ký, cơ quan tra cứu qua hệ thống cấp tỉnh kết nối CSDL hộ tịch điện tử và CSDLQGVDC; nếu không có dữ liệu để tra cứu thì yêu cầu nộp/xuất trình giấy tờ chứng minh.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:15",
+            "quote": "Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:16",
+            "quote": "Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID)."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:17",
+            "quote": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:18",
+            "quote": "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:19",
+            "quote": "Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp ."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:20",
+            "quote": "Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:21",
+            "quote": "Trường hợp người yêu cầu đăng ký hộ tịch cung cấp thông tin về giấy tờ hộ tịch của cá nhân đã được đăng ký, cơ quan đăng ký hộ tịch có trách nhiệm tra cứu thông tin trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC. Trường hợp không tra cứu được do không có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, CSDLQGVDC thì cơ quan đăng ký hộ tịch yêu cầu người đi đăng ký hộ tịch nộp/xuất trình giấy tờ liên quan để chứng minh."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "in_person"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:15",
+            "quote": "Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "online_document_guidance",
+      "statement": {
+        "value": "Bản chụp đính kèm hồ sơ trực tuyến phải rõ nét, đầy đủ, toàn vẹn nội dung, được chụp/quét từ giấy tờ cấp hợp lệ và còn giá trị. Nếu đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì được sử dụng bản điện tử đó.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:22",
+            "quote": "Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:23",
+            "quote": "Bản chụp các giấy tờ gửi kèm theo hồ sơ cấp Giấy xác nhận tình trạng hôn nhân trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng."
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:24",
+            "quote": "Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ cấp Giấy xác nhận tình trạng hôn nhân trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:22",
+            "quote": "Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "result_collection_documents",
+      "statement": {
+        "value": "Nếu nhận kết quả tại Trung tâm Phục vụ hành chính công: xuất trình giấy tờ tùy thân và nộp giấy tờ thuộc thành phần hồ sơ. Nếu không nhận tại Trung tâm: nộp giấy tờ thuộc thành phần hồ sơ trước khi nhận kết quả.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:25",
+            "quote": "lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch phải xuất trình giấy tờ tuỳ thân, nộp các giấy tờ là thành phần hồ sơ theo quy định;"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:25",
+            "quote": "Trường hợp người yêu cầu đăng ký hộ tịch không lựa chọn nhận kết quả tại Trung tâm Phục vụ hành chính công thì người yêu cầu đăng ký hộ tịch nộp các giấy tờ là thành phần hồ sơ theo quy định trước khi nhận kết quả."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "foreign_document_legalisation",
+      "statement": {
+        "value": "Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp, công chứng hoặc xác nhận để dùng đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự, trừ trường hợp miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:27",
+            "quote": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:27",
+            "quote": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam"
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "unknown",
+          "criterion_key": null,
+          "values": [],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:27",
+              "quote": "trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "declaration_responsibility",
+      "statement": {
+        "value": "Nếu được phép lập văn bản cam đoan, cơ quan đăng ký hộ tịch phải giải thích rõ trách nhiệm và hệ quả pháp lý của việc cam đoan không đúng sự thật.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:28",
+            "quote": "Trường hợp cho phép người yêu cầu đăng ký hộ tịch lập văn bản cam đoan về nội dung yêu cầu đăng ký hộ tịch thì cơ quan đăng ký hộ tịch phải giải thích rõ cho người lập văn bản cam đoan về trách nhiệm, hệ quả pháp lý của việc cam đoan không đúng sự thật."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:28",
+            "quote": "Trường hợp cho phép người yêu cầu đăng ký hộ tịch lập văn bản cam đoan về nội dung yêu cầu đăng ký hộ tịch"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "reissue_for_marriage_without_previous_certificate",
+      "statement": {
+        "value": "Xin cấp lại để kết hôn nhưng không nộp lại được giấy trước đây: phải trình bày rõ lý do. Trong 03 ngày làm việc từ khi tiếp nhận hồ sơ, cơ quan đăng ký hộ tịch trao đổi bằng văn bản với nơi dự định đăng ký kết hôn trước đây để xác minh. Nếu không xác minh được hoặc không nhận được kết quả xác minh thì cho phép người yêu cầu lập văn bản cam đoan tình trạng hôn nhân.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây, thì người yêu cầu phải trình bày rõ lý do không nộp lại được Giấy xác nhận tình trạng hôn nhân. Trong thời hạn 03 ngày làm việc kể từ ngày tiếp nhận hồ sơ, cơ quan đăng ký hộ tịch có văn bản trao đổi với nơi dự định đăng ký kết hôn trước đây để xác minh. Trường hợp không xác minh được hoặc không nhận được kết quả xác minh thì cơ quan đăng ký hộ tịch cho phép người yêu cầu lập văn bản cam đoan về tình trạng hôn nhân."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "requested_action",
+            "values": [
+              "replace"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "certificate_purpose",
+            "values": [
+              "marriage"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "can_return_previous_certificate",
+            "values": [
+              "no"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "online_review_and_confirmation",
+      "statement": {
+        "value": "Với hồ sơ trực tuyến, công chức gửi biểu mẫu giấy xác nhận điện tử đầy đủ qua email hoặc thiết bị số. Người yêu cầu kiểm tra tính chính xác, đầy đủ và xác nhận trong tối đa một ngày. Nếu xác nhận thông tin thống nhất, đầy đủ hoặc không phản hồi sau một ngày thì công chức cập nhật vào phần mềm hộ tịch điện tử dùng chung.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp tiếp nhận hồ sơ xác nhận tình trạng hôn nhân theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Giấy xác nhận tình trạng hôn nhân điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.\nNgười yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Giấy xác nhận tình trạng hôn nhân điện tử và xác nhận (tối đa một ngày).\nNếu người yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn một ngày thì công chức tư pháp - hộ tịch cập nhật thông tin xác nhận tình trạng hôn nhân trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp tiếp nhận hồ sơ xác nhận tình trạng hôn nhân theo hình thức trực tuyến"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "intake_correction_and_delays",
+      "statement": {
+        "value": "Hồ sơ được kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ. Đầy đủ/hợp lệ thì tiếp nhận, cấp phiếu hẹn và chuyển công chức tư pháp - hộ tịch; hồ sơ tiếp nhận tại Trung tâm cấp tỉnh được chuyển về UBND cấp xã có thẩm quyền. Chưa đầy đủ/hợp lệ thì thông báo rõ giấy tờ, nội dung cần bổ sung và kiểm tra lại sau bổ sung; không bổ sung được thì có văn bản từ chối. Công chức thẩm tra và thông báo qua Trung tâm nếu cần bổ sung hoặc từ chối. Nếu xác minh hoặc nguyên nhân khác làm chậm hẹn, lập phiếu xin lỗi nêu lý do và hẹn lại; hồ sơ trực tiếp nhận qua Trung tâm, hồ sơ trực tuyến nhận email hoặc tin nhắn.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ; có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến); chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý.\n(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì cán bộ tiếp nhận hồ sơ thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);\n(iii) Nếu người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân không bổ sung, hoàn thiện được hồ sơ thì báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có văn bản từ chối giải quyết yêu cầu cấp Giấy xác nhận tình trạng hôn nhân."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu đính kèm).\n+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);\n+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến)."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [
+    {
+      "rule_id": "express_marriage_refusal",
+      "statement": {
+        "value": "Từ chối nếu xin giấy để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:14",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "intended_marriage_circumstance",
+            "values": [
+              "same_sex"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:14",
+                "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "intended_marriage_circumstance",
+            "values": [
+              "foreign_national_at_foreign_mission_in_vietnam"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:14",
+                "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:14",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "missing_or_invalid_documents_cancellation",
+      "statement": {
+        "value": "Cơ quan có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch nếu người yêu cầu không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp/xuất trình bị tẩy xóa, sửa chữa, làm giả.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:26",
+            "quote": "Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "or",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "unknown",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:26",
+                "quote": "người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định"
+              }
+            ]
+          },
+          {
+            "operator": "unknown",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:26",
+                "quote": "giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:26",
+            "quote": "Trường hợp người yêu cầu đăng ký hộ tịch không cung cấp được giấy tờ theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "false_declaration",
+      "statement": {
+        "value": "Nếu có cơ sở xác định nội dung cam đoan không đúng sự thật, cơ quan đăng ký hộ tịch từ chối giải quyết hoặc đề nghị cơ quan có thẩm quyền hủy bỏ kết quả.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:29",
+            "quote": "Cơ quan đăng ký hộ tịch từ chối giải quyết hoặc đề nghị cơ quan có thẩm quyền hủy bỏ kết quả đăng ký hộ tịch, nếu có cơ sở xác định nội dung cam đoan không đúng sự thật."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:29",
+            "quote": "nếu có cơ sở xác định nội dung cam đoan không đúng sự thật."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "jurisdiction": {
+    "value": "Cơ quan đăng ký hộ tịch nơi cư trú theo pháp luật cư trú. Nếu lựa chọn UBND cấp xã không phải nơi thường trú hoặc tạm trú, cơ quan tiếp nhận hỗ trợ nộp trực tuyến đến đúng cơ quan có thẩm quyền. Nguồn không xác định địa bàn tỉnh/xã cụ thể.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "requirement:10",
+        "quote": "Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định."
+      }
+    ],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Ủy ban nhân dân cấp xã",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Ủy ban nhân dân cấp xã"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": "Cấp xã giải quyết; có tiếp nhận tại Trung tâm Phục vụ hành chính công cấp tỉnh rồi chuyển về UBND cấp xã. Phần thông tin dịch vụ ghi Cấp tỉnh/ xã.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Ủy ban nhân dân cấp xã"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Cấp tỉnh/ xã"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý."
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Người yêu cầu trực tiếp thực hiện hoặc ủy quyền cho người khác.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện"
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân nộp hồ sơ yêu cầu cấp Giấy xác nhận tình trạng hôn nhân tại Trung tâm phục vụ hành chính công có thẩm quyền nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí cấp Giấy xác nhận tình trạng hôn nhân."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 ngày làm việc; trường hợp phải xác minh thì thời hạn giải quyết không quá 23 ngày.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "03 ngày làm việc; trường hợp phải xác minh thì thời hạn giải quyết không quá 23 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Người yêu cầu trực tiếp thực hiện hoặc ủy quyền; xác thực người dùng, đăng nhập hệ thống và chọn UBND cấp xã có thẩm quyền.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân truy cập Cổng dịch vụ công quốc gia , xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, lựa chọn Ủy ban nhân dân cấp xã có thẩm quyền."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Dịch vụ công trực tuyến toàn trình tại https://dichvucong.gov.vn. Người yêu cầu cung cấp thông tin theo mẫu điện tử tương tác, đính kèm bản chụp hoặc bản sao điện tử các giấy tờ; thanh toán phí, lệ phí trực tuyến hoặc bằng cách thức khác theo quy định.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Thủ tục này đủ điều kiện thực hiện dịch vụ công trực tuyến toàn trình."
+          },
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "nộp hồ sơ trực tuyến tại Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn)."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân trực tuyến cung cấp thông tin theo mẫu điện tử tương tác cấp Giấy xác nhận tình trạng hôn nhân (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 ngày làm việc; trường hợp phải xác minh thì thời hạn giải quyết không quá 23 ngày.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "03 ngày làm việc; trường hợp phải xác minh thì thời hạn giải quyết không quá 23 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Dịch vụ bưu chính",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Dịch vụ bưu chính"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Người yêu cầu trực tiếp thực hiện hoặc ủy quyền. Gửi kèm bản sao có chứng thực của các giấy tờ phải xuất trình.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "Người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Gửi hồ sơ qua hệ thống bưu chính.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "gửi qua hệ thống bưu chính"
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "03 ngày làm việc; trường hợp phải xác minh thì thời hạn giải quyết không quá 23 ngày.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:2",
+            "quote": "03 ngày làm việc; trường hợp phải xác minh thì thời hạn giải quyết không quá 23 ngày."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": null,
+          "status": "unknown",
+          "source_refs": [],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "in_person"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Mẫu điện tử tương tác cấp Giấy xác nhận tình trạng hôn nhân; người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Mẫu điện tử tương tác cấp Giấy xác nhận tình trạng hôn nhân (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1 theo dòng số lượng cho mẫu điện tử",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy tờ hợp lệ chứng minh ly hôn hoặc vợ/chồng đã chết; xuất trình bản chính hoặc nộp bản sao.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Trường hợp người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân đã có vợ hoặc chồng nhưng đã ly hôn hoặc người vợ/chồng đã chết thì phải xuất trình (bản chính) hoặc nộp bản sao giấy tờ hợp lệ để chứng minh;"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "0 theo cột số lượng; nội dung cho phép xuất trình bản chính thay cho nộp bản sao.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "phải xuất trình (bản chính) hoặc nộp bản sao giấy tờ hợp lệ để chứng minh;\nBản chính: 0 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1 theo cột số lượng; có lựa chọn xuất trình bản chính.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "phải xuất trình (bản chính) hoặc nộp bản sao giấy tờ hợp lệ để chứng minh;\nBản chính: 0 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "in",
+        "criterion_key": "marital_history",
+        "values": [
+          "divorced",
+          "widowed"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Trường hợp người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân đã có vợ hoặc chồng nhưng đã ly hôn hoặc người vợ/chồng đã chết thì phải xuất trình (bản chính) hoặc nộp bản sao giấy tờ hợp lệ để chứng minh;"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Bản sao Trích lục ghi chú ly hôn",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 0 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 0 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "nationality",
+            "values": [
+              "vietnamese"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:4",
+                "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "foreign_marriage_termination",
+            "values": [
+              "divorce",
+              "annulment"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:4",
+                "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy xác nhận tình trạng hôn nhân đã được cấp trước đó, nộp lại khi cấp lại để dùng vào mục đích khác hoặc do hết thời hạn sử dụng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác hoặc do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định thì phải nộp lại Giấy xác nhận tình trạng hôn nhân đã được cấp trước đó."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "requested_action",
+            "values": [
+              "replace"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân"
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "reissue_reason",
+            "values": [
+              "different_purpose",
+              "expired"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:5",
+                "quote": "để sử dụng vào mục đích khác hoặc do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác hoặc do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định thì phải nộp lại Giấy xác nhận tình trạng hôn nhân đã được cấp trước đó."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Văn bản ủy quyền theo quy định của pháp luật",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc cấp Giấy xác nhận tình trạng hôn nhân."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Không phải chứng thực nếu người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền. Trường hợp khác theo quy định pháp luật; nguồn không nêu chi tiết.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc cấp Giấy xác nhận tình trạng hôn nhân. Trường hợp người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột của người ủy quyền thì văn bản ủy quyền không phải chứng thực."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "authorized_representative",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:6",
+            "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc cấp Giấy xác nhận tình trạng hôn nhân."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy tờ nhân thân còn giá trị: Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc giấy tờ khác có ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp. Trực tuyến không phải tải lên nếu thông tin đã có trong CSDLQGVDC, CSDLHTĐT và được hệ thống điền tự động.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp Giấy xác nhận tình trạng hôn nhân. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1 để xuất trình theo dòng hồ sơ",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "* Giấy tờ phải xuất trình:"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0 theo dòng hồ sơ; bưu chính phải gửi bản sao có chứng thực, số lượng riêng không nêu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Bản sao có chứng thực khi gửi qua bưu chính.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "not",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "and",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "eq",
+                "criterion_key": "submission_channel",
+                "values": [
+                  "online"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:7",
+                    "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+                  }
+                ]
+              },
+              {
+                "operator": "eq",
+                "criterion_key": "identity_information_autofilled",
+                "values": [
+                  "yes"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "requirement:7",
+                    "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:7",
+                "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu cấp Giấy xác nhận tình trạng hôn nhân. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy tờ có giá trị chứng minh thông tin về cư trú khi cơ quan đăng ký hộ tịch không khai thác được thông tin theo khoản 2 Điều 14 Nghị định 104/2022/NĐ-CP. Nếu đã khai thác được thông tin theo các phương thức đó, không phải xuất trình trực tiếp hoặc tải lên trực tuyến.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến)."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1 để xuất trình theo dòng hồ sơ",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "* Giấy tờ phải xuất trình:"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0 theo dòng hồ sơ; bưu chính phải gửi bản sao có chứng thực, số lượng riêng không nêu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          },
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Bản sao có chứng thực khi gửi qua bưu chính.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:9",
+            "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "residence_information_retrievable",
+        "values": [
+          "no"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:8",
+            "quote": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ."
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "requested_action",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Are you requesting a certificate or reissue of a previously issued certificate?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "issue",
+          "label": "Issue a certificate",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "official_name: Thủ tục cấp Giấy xác nhận tình trạng hôn nhân"
+            }
+          ]
+        },
+        {
+          "value": "replace",
+          "label": "Reissue a certificate",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác hoặc do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định thì phải nộp lại Giấy xác nhận tình trạng hôn nhân đã được cấp trước đó."
+        }
+      ]
+    },
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Which listed applicant category applies to you?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "overseas_vietnamese",
+          "label": "Vietnamese person residing abroad",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài"
+        }
+      ]
+    },
+    {
+      "criterion_key": "certificate_purpose",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Will you use the certificate to register a marriage or for another purpose?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "marriage",
+          "label": "To register a marriage",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:12",
+              "quote": "để sử dụng vào mục đích kết hôn"
+            }
+          ]
+        },
+        {
+          "value": "other",
+          "label": "For another purpose",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:13",
+              "quote": "để sử dụng vào mục đích khác, không phải để đăng ký kết hôn"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác, không phải để đăng ký kết hôn, thì người yêu cầu không phải đáp ứng điều kiện kết hôn."
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "How would you like to submit the application?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "in_person",
+          "label": "In person",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ]
+        },
+        {
+          "value": "online",
+          "label": "Online",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến"
+            }
+          ]
+        },
+        {
+          "value": "postal",
+          "label": "By post",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:2",
+              "quote": "Dịch vụ bưu chính"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:0",
+          "quote": "Tờ khai cấp Giấy xác nhận tình trạng hôn nhân (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến"
+        },
+        {
+          "source_id": "primary",
+          "locator": "requirement:9",
+          "quote": "Trường hợp gửi hồ sơ qua hệ thống bưu chính thì phải gửi kèm theo bản sao có chứng thực các giấy tờ phải xuất trình nêu trên."
+        }
+      ]
+    },
+    {
+      "criterion_key": "marriage_age_category",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "certificate_purpose",
+        "values": [
+          "marriage"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Trường hợp yêu cầu xác nhận tình trạng hôn nhân nhằm mục đích kết hôn thì người yêu cầu phải đáp ứng đủ điều kiện kết hôn:"
+          }
+        ]
+      },
+      "question": "Which of the stated marriage-age categories applies to you?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "male_at_least_20",
+          "label": "Male and at least 20 years old",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+            }
+          ]
+        },
+        {
+          "value": "female_at_least_18",
+          "label": "Female and at least 18 years old",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+            }
+          ]
+        },
+        {
+          "value": "below_applicable_threshold",
+          "label": "Below the stated age threshold for me",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "intended_marriage_circumstance",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "certificate_purpose",
+        "values": [
+          "marriage"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:14",
+            "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+          }
+        ]
+      },
+      "question": "Does the intended marriage involve either of these expressly stated refusal circumstances?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "same_sex",
+          "label": "Marriage to a person of the same sex",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "kết hôn với người cùng giới tính"
+            }
+          ]
+        },
+        {
+          "value": "foreign_national_at_foreign_mission_in_vietnam",
+          "label": "Marriage to a foreign national at a foreign representative mission in Vietnam",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "neither",
+          "label": "Neither circumstance",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:14",
+              "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:14",
+          "quote": "Trường hợp yêu cầu cấp Giấy xác nhận tình trạng hôn nhân để kết hôn với người cùng giới tính hoặc kết hôn với người nước ngoài tại Cơ quan đại diện nước ngoài tại Việt Nam thì cơ quan đăng ký hộ tịch từ chối giải quyết."
+        }
+      ]
+    },
+    {
+      "criterion_key": "marital_history",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Has a previous marriage ended in divorce or the death of your spouse?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "divorced",
+          "label": "Divorced",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "đã có vợ hoặc chồng nhưng đã ly hôn hoặc người vợ/chồng đã chết"
+            }
+          ]
+        },
+        {
+          "value": "widowed",
+          "label": "Spouse has died",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "đã có vợ hoặc chồng nhưng đã ly hôn hoặc người vợ/chồng đã chết"
+            }
+          ]
+        },
+        {
+          "value": "neither",
+          "label": "Neither",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:3",
+              "quote": "Trường hợp người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân đã có vợ hoặc chồng nhưng đã ly hôn hoặc người vợ/chồng đã chết thì phải xuất trình (bản chính) hoặc nộp bản sao giấy tờ hợp lệ để chứng minh;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:3",
+          "quote": "Trường hợp người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân đã có vợ hoặc chồng nhưng đã ly hôn hoặc người vợ/chồng đã chết thì phải xuất trình (bản chính) hoặc nộp bản sao giấy tờ hợp lệ để chứng minh;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "nationality",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Are you a Vietnamese citizen?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+            }
+          ]
+        },
+        {
+          "value": "not_vietnamese",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:4",
+          "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+        }
+      ]
+    },
+    {
+      "criterion_key": "foreign_marriage_termination",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "nationality",
+        "values": [
+          "vietnamese"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+          }
+        ]
+      },
+      "question": "Have you had a divorce or marriage annulment abroad?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "divorce",
+          "label": "Divorce abroad",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "đã ly hôn, hủy việc kết hôn ở nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "annulment",
+          "label": "Marriage annulment abroad",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "đã ly hôn, hủy việc kết hôn ở nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "neither",
+          "label": "Neither",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:4",
+              "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:4",
+          "quote": "Công dân Việt Nam đã ly hôn, hủy việc kết hôn ở nước ngoài thì phải nộp bản sao Trích lục ghi chú ly hôn."
+        }
+      ]
+    },
+    {
+      "criterion_key": "reissue_reason",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "replace"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:5",
+            "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân"
+          }
+        ]
+      },
+      "question": "Are you requesting reissue for a different purpose or because the previous certificate has expired?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "different_purpose",
+          "label": "For a different purpose",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "để sử dụng vào mục đích khác"
+            }
+          ]
+        },
+        {
+          "value": "expired",
+          "label": "The previous certificate has expired",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:5",
+              "quote": "do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:5",
+          "quote": "Trường hợp cá nhân yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để sử dụng vào mục đích khác hoặc do Giấy xác nhận tình trạng hôn nhân đã hết thời hạn sử dụng theo quy định thì phải nộp lại Giấy xác nhận tình trạng hôn nhân đã được cấp trước đó."
+        }
+      ]
+    },
+    {
+      "criterion_key": "can_return_previous_certificate",
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "requested_action",
+            "values": [
+              "replace"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "certificate_purpose",
+            "values": [
+              "marriage"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn"
+          }
+        ]
+      },
+      "question": "Can you return the previously issued certificate?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây, thì người yêu cầu phải trình bày rõ lý do không nộp lại được Giấy xác nhận tình trạng hôn nhân."
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây, thì người yêu cầu phải trình bày rõ lý do không nộp lại được Giấy xác nhận tình trạng hôn nhân."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Trường hợp người yêu cầu cấp lại Giấy xác nhận tình trạng hôn nhân để kết hôn mà không nộp lại được Giấy xác nhận tình trạng hôn nhân đã được cấp trước đây, thì người yêu cầu phải trình bày rõ lý do không nộp lại được Giấy xác nhận tình trạng hôn nhân."
+        }
+      ]
+    },
+    {
+      "criterion_key": "authorized_representative",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Will another person act under your authorization?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:6",
+              "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc cấp Giấy xác nhận tình trạng hôn nhân."
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Người yêu cầu cấp Giấy xác nhận tình trạng hôn nhân trực tiếp thực hiện hoặc ủy quyền cho người khác thực hiện"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:6",
+          "quote": "Văn bản ủy quyền theo quy định của pháp luật trong trường hợp ủy quyền thực hiện việc cấp Giấy xác nhận tình trạng hôn nhân."
+        }
+      ]
+    },
+    {
+      "criterion_key": "identity_information_autofilled",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "online"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:7",
+            "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+          }
+        ]
+      },
+      "question": "Has the system automatically filled your identity information from the population or electronic civil-status databases?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:7",
+              "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:7",
+              "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:7",
+          "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);"
+        }
+      ]
+    },
+    {
+      "criterion_key": "residence_information_retrievable",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Has the civil-status office obtained your residence information through the methods specified in the source, or is it unable to obtain it?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "The information has been obtained",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:8",
+              "quote": "Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến)."
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "The office cannot obtain it",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:8",
+              "quote": "trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:8",
+          "quote": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ."
+        }
+      ]
+    },
+    {
+      "criterion_key": "multiple_previous_permanent_residences",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "question": "Have you registered permanent residence in more than one place?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "Trường hợp người yêu cầu xác nhận tình trạng hôn nhân đã từng đăng ký thường trú tại nhiều nơi khác nhau"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:11",
+              "quote": "Trường hợp người yêu cầu xác nhận tình trạng hôn nhân đã từng đăng ký thường trú tại nhiều nơi khác nhau"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:11",
+          "quote": "Trường hợp người yêu cầu xác nhận tình trạng hôn nhân đã từng đăng ký thường trú tại nhiều nơi khác nhau, người yêu cầu cung cấp các giấy tờ chứng minh tình trạng hôn nhân tại nơi thường trú trước đây (nếu có)."
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Không có bản ghi biểu mẫu liên kết hoặc file_hash được cung cấp. Tên tệp 19.TKcpGiyXNTTHN.doc và 19.DTTT-CpgiyXNTThnnhn.doc trong thành phần hồ sơ không đủ để xác lập một phiên bản cụ thể.",
+    "Không có nội dung biểu mẫu để xác định mã mẫu, phiên bản, hiệu lực, người ký tờ khai, chứng nhận hoặc hướng dẫn riêng theo phiên bản.",
+    "Không xác định ngày bắt đầu/kết thúc hiệu lực thủ tục hoặc thủ tục bị thay thế.",
+    "Các dòng phương thức chỉ ghi Lệ phí: mà không nêu mức, công thức, trường hợp phải nộp hoặc miễn; không được kết luận miễn phí.",
+    "Thời hạn xác minh ghi không quá 23 ngày nhưng không xác định đây là ngày làm việc hay ngày theo lịch.",
+    "Điều kiện kết hôn mang tính pháp lý: sự tự nguyện, mất năng lực hành vi dân sự và các trường hợp cấm cần được thẩm định; chưa có phép đánh giá thực thi được xác lập. Các điều kiện này là đồng thời, không được chỉ dùng điều kiện tuổi để kết luận đủ điều kiện.",
+    "Chưa có chi tiết để tự động xác định nơi cư trú theo pháp luật, hợp pháp hóa lãnh sự hoặc miễn theo điều ước.",
+    "Nguồn không nêu thời hạn sử dụng cụ thể của Giấy xác nhận tình trạng hôn nhân.",
+    "Chưa rõ tờ khai áp dụng cho hồ sơ bưu chính; điều kiện tờ khai giấy chỉ nêu nộp trực tiếp.",
+    "Không nêu riêng số lượng bản sao có chứng thực gửi qua bưu chính.",
+    "Điều kiện cho phép cam đoan, đánh giá hồ sơ hợp lệ và xác định cam đoan sai cần xác minh; dữ liệu người dùng còn thiếu không phải căn cứ tự động từ chối."
+  ],
+  "issues": [
+    "Hồ sơ dự thảo để validation và review; trích xuất thành công không xác lập nguồn còn hiệu lực tại thời điểm sử dụng.",
+    "Phần cơ quan thực hiện ghi UBND cấp xã, phần thông tin dịch vụ ghi Cấp tỉnh/ xã. Trình tự phân biệt tiếp nhận cấp tỉnh và giải quyết cấp xã; không suy ra cấp tỉnh có thẩm quyền ký cấp giấy.",
+    "requirement:3 ghi 0 bản chính, 1 bản sao nhưng nội dung cho phép xuất trình bản chính hoặc nộp bản sao; đã giữ cả hai, không yêu cầu nộp đồng thời.",
+    "Các requirement là tiêu đề hoặc ghi chú có 0 bản chính, 0 bản sao được giữ dưới dạng hướng dẫn/quy tắc, không tạo giấy tờ giả. requirement:11 giữ giấy tờ nơi thường trú trước đây ở mức cung cấp nếu có.",
+    "Cụm cấp lại để sử dụng vào mục đích khác được giữ theo nguồn; không tự động đồng nhất với mọi yêu cầu cấp giấy cho mục đích không kết hôn.",
+    "Miễn tải lên giấy tờ nhân thân trực tuyến không loại bỏ nghĩa vụ xuất trình giấy tờ tùy thân khi nhận kết quả tại Trung tâm.",
+    "Giá trị unknown hoặc dữ liệu thiếu phải giữ là chưa biết khi đánh giá quy tắc, không biến thành phủ định hay không đủ điều kiện.",
+    "Các hậu quả hủy kết quả đăng ký hộ tịch không được dùng để gán action_type cancel cho thủ tục cấp giấy này."
+  ]
+}

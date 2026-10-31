@@ -1,0 +1,1960 @@
+{
+  "procedure_code": {
+    "value": "3.000347",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 3.000347"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Đổi giấy phép lái xe",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Đổi giấy phép lái xe"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Đổi giấy phép lái xe trong các trường hợp được nêu, bao gồm giấy phép hỏng không sử dụng được, đổi khi hết hạn đối với trường hợp chuyển đổi từ giấy phép nước ngoài đủ điều kiện, sửa thông tin sai lệch hoặc tích hợp giấy phép không thời hạn với giấy phép có thời hạn.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+        "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;\nc) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;\nd) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;\nđ) Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;"
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Giấy phép lái xe được cấp đổi, in và trả cho cá nhân; giấy phép cũ được tiêu hủy, trừ trường hợp đổi giấy phép tích hợp đang trong thời gian bị tước.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe;"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "replace",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "renew",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "amend",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Đổi bằng lái xe",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Đổi GPLX, sửa thông tin hoặc tích hợp giấy phép lái xe",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Driving licence exchange",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Replace or update a Vietnamese driving licence",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Bằng lái của tôi bị hỏng, tôi muốn đổi bằng mới.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Ngày sinh trên giấy phép lái xe khác với căn cước, tôi cần đổi lại.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tôi muốn tích hợp bằng lái không thời hạn với bằng lái có thời hạn.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "My driving licence is damaged and I want to exchange it.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "The birth date on my driving licence differs from my identity card. How do I correct it?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I want to combine my indefinite and fixed-term driving licences.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Công dân Việt Nam",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người Việt Nam định cư ở nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "listed_case_vietnam_tested_and_issued",
+      "statement": {
+        "value": "The requirements list Vietnamese and foreign persons tested and issued a driving licence in Vietnam.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "a) Người Việt Nam, người nước ngoài được sát hạch, cấp giấy phép lái xe tại Việt Nam;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "in",
+            "criterion_key": "applicant_category",
+            "values": [
+              "vietnamese_citizen",
+              "overseas_vietnamese",
+              "foreigner"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+                "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "licence_origin",
+            "values": [
+              "tested_and_issued_in_vietnam"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "a) Người Việt Nam, người nước ngoài được sát hạch, cấp giấy phép lái xe tại Việt Nam;"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "a) Người Việt Nam, người nước ngoài được sát hạch, cấp giấy phép lái xe tại Việt Nam;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "listed_case_unusable_damage",
+      "statement": {
+        "value": "The requirements list holders of a damaged driving licence that can no longer be used.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "licence_unusable_damage",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "listed_case_expired_converted_licence",
+      "statement": {
+        "value": "Vietnamese persons, or foreigners holding a permanent residence card in Vietnam, who hold a Vietnamese licence converted from a foreign licence may request exchange when it expires.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "or",
+            "criterion_key": null,
+            "values": [],
+            "children": [
+              {
+                "operator": "in",
+                "criterion_key": "applicant_category",
+                "values": [
+                  "vietnamese_citizen",
+                  "overseas_vietnamese"
+                ],
+                "children": [],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+                  }
+                ]
+              },
+              {
+                "operator": "and",
+                "criterion_key": null,
+                "values": [],
+                "children": [
+                  {
+                    "operator": "eq",
+                    "criterion_key": "applicant_category",
+                    "values": [
+                      "foreigner"
+                    ],
+                    "children": [],
+                    "source_refs": [
+                      {
+                        "source_id": "primary",
+                        "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                        "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+                      }
+                    ]
+                  },
+                  {
+                    "operator": "eq",
+                    "criterion_key": "vietnam_permanent_residence_card",
+                    "values": [
+                      "yes"
+                    ],
+                    "children": [],
+                    "source_refs": [
+                      {
+                        "source_id": "primary",
+                        "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                        "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+                      }
+                    ]
+                  }
+                ],
+                "source_refs": [
+                  {
+                    "source_id": "primary",
+                    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                    "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+                  }
+                ]
+              }
+            ],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "licence_origin",
+            "values": [
+              "vietnamese_licence_converted_from_foreign"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "licence_expired",
+            "values": [
+              "yes"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "requested_action",
+            "values": [
+              "renew"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "listed_case_identity_correction",
+      "statement": {
+        "value": "Where the licence's date of birth, surname, given or middle names, nationality, place of birth or residence differs from the citizen identity card or identity card, the competent authority exchanges the licence to match that card.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "licence_identity_mismatch",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "listed_case_licence_integration",
+      "statement": {
+        "value": "The requirements list persons wishing to integrate an indefinite driving licence with a fixed-term driving licence.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "đ) Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "integrate_licences"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "đ) Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "operational_verification_and_processing",
+      "statement": {
+        "value": "Receiving officers check licence records and road-traffic violation information. If licence information is unavailable, written verification using mẫu số 01 Phụ lục XII is required; the request is not resolved pending verification. A non-exchangeable licence or noncompliant dossier triggers notice of necessary additions or corrections within 2 working days. Within 1 working day of a complete valid dossier, including electronic identity authentication and verification results where required under mẫu số 02 Phụ lục XII, the provincial traffic police transfer data to Cục Cảnh sát giao thông for centralized management and issuance.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Tra cứu thông tin về giấy phép lái xe từ hệ thống thông tin giấy phép lái xe, trường hợp chưa có thông tin phải có văn bản đề nghị xác minh giấy phép lái xe đã cấp theo mẫu số 01 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA. Khi chưa có kết quả xác minh giấy phép lái xe thì không giải quyết đề nghị; Tra cứu phần mềm cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ hoặc tra cứu vi phạm của người lái xe thông qua tài khoản định danh điện tử."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp giấy phép lái xe không thuộc đối tượng được đổi hoặc hồ sơ không đúng theo quy định, phải thông báo trực tiếp hoặc bằng văn bản hoặc qua hệ thống dịch vụ công trực tuyến những nội dung cần bổ sung hoặc sửa đổi cho cá nhân trong thời hạn 02 ngày làm việc, kể từ ngày nhận hồ sơ."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trong thời hạn 01 ngày làm việc, kể từ ngày nhận đủ hồ sơ hợp lệ theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử, có kết quả xác minh giấy phép lái xe đối với trường hợp phải xác minh theo mẫu số 02 Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA), Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "operational_result_delivery",
+      "statement": {
+        "value": "Results may be collected at Phòng Cảnh sát giao thông or a designated commune police reception point, or delivered by post at the individual's request. For online applications, the licence must be delivered to the individual exchanging it; upon receipt, the driver is responsible for sending the old licence to the issuing authority for destruction.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Việc trả giấy phép lái xe được thực hiện tại Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận hoặc thông qua dịch vụ bưu chính theo yêu cầu của cá nhân, trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, giấy phép lái xe được trả cho đúng cá nhân đổi giấy phép lái xe, khi nhận giấy phép lái xe, người lái xe chịu trách nhiệm gửi giấy phép lái xe cũ đến cơ quan cấp giấy phép lái xe để tiêu hủy theo quy định;"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": []
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "operational_old_licence_destruction",
+      "statement": {
+        "value": "The old driving licence is destroyed, except when exchanging an integrated licence currently subject to deprivation of the right to use it.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "integrated_licence_currently_deprived",
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "operational_original_dossier_retention",
+      "statement": {
+        "value": "Original exchange dossiers, other than online exchange dossiers, are retained at Phòng Cảnh sát giao thông for 2 years from exchange. Dossiers received directly at designated commune police reception points are transferred to Phòng Cảnh sát giao thông for storage after the new licence is returned and the old licence destroyed.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Bản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ.\nTrường hợp cá nhân nộp hồ sơ trực tiếp tại Công an cấp xã nơi bố trí điểm tiếp nhận, hồ sơ đổi giấy phép lái xe được chuyển đến Phòng Cảnh sát giao thông để lưu trữ sau khi trả giấy phép lái xe và tiêu hủy giấy phép lái xe cũ."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": [
+          "in_person"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Bản chính hồ sơ đổi giấy phép lái xe (trừ trường hợp đổi giấy phép lái xe qua hệ thống dịch vụ công trực tuyến) được lưu trữ lại Phòng Cảnh sát giao thông trong thời hạn 02 năm kể từ ngày đổi giấy phép lái xe và tiêu hủy giấy phép lái xe cũ."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [
+    {
+      "rule_id": "exclusion_licence_absent_from_official_records",
+      "statement": {
+        "value": "No exchange for a licence described as absent from the Cục Cảnh sát giao thông licence information system or the licence issuance list/register. The precise meaning of 'hoặc' across these two record sources is not converted into an executable absence test.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "e) Không đổi giấy phép lái xe đối với các trường hợp sau: giấy phép lái xe không có trong hệ thống thông tin giấy phép lái xe của Cục Cảnh sát giao thông hoặc bảng kê danh sách cấp giấy phép lái xe (sổ quản lý);"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "e) Không đổi giấy phép lái xe đối với các trường hợp sau: giấy phép lái xe không có trong hệ thống thông tin giấy phép lái xe của Cục Cảnh sát giao thông hoặc bảng kê danh sách cấp giấy phép lái xe (sổ quản lý);"
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "exclusion_unfulfilled_traffic_violation_requirements",
+      "statement": {
+        "value": "No exchange for a road-traffic order and safety offender who has not completed the competent state authority's requirements for resolution and handling of the administrative violation.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "người vi phạm trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "unfulfilled_traffic_violation_requirements",
+        "values": [
+          "yes"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "người vi phạm trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "jurisdiction": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Bộ Công an; Công an Xã; Công an tỉnh; Cục Cảnh sát giao thông. Designated commune police reception points and Phòng Cảnh sát giao thông receive applications; Phòng Cảnh sát giao thông transfers data to Cục Cảnh sát giao thông and organizes printing and return.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+        "quote": "Cơ quan thực hiện: Bộ Công an"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:3:Cơ quan thực hiện",
+        "quote": "Công an Xã\nCông an tỉnh\nCục Cảnh sát giao thông"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến:"
+      },
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Phòng Cảnh sát giao thông chuyển dữ liệu đến Cục Cảnh sát giao thông để quản lý tập trung và cấp giấy phép lái xe. Phòng Cảnh sát giao thông tổ chức in và trả giấy phép lái xe;"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "The individual must have a photograph taken directly at the licensing authority and pay the fee when the dossier is accepted.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Submit directly at a designated commune police reception point or Phòng Cảnh sát giao thông. The method row describes submission as 'Gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến.'",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "Gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến:"
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "05 working days from receipt of the complete compliant dossier, including electronic identity account authentication through the electronic identification and authentication system.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:0",
+            "quote": "05 Ngày làm việc\nGửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến. 05 ngày làm việc, kể từ ngày nhận đủ hồ sơ đúng theo quy định (bao gồm xác thực tài khoản định danh điện tử qua hệ thống định danh và xác thực điện tử)."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "The fee field displays 'Phí: Đồng' without an amount.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Phí: Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "The fee must be paid when the dossier is accepted.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "The individual declares information according to system guidance, is responsible for its accuracy and legality, and pays the licence fee using the online system's payment function; other service charges depend on services requested.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Submit through the online public-service system; the service is described as fully online. The method row describes submission as 'Gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến.'",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "Gửi trực tiếp hoặc qua hệ thống dịch vụ công trực tuyến."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Dịch vụ công Đổi giấy phép lái xe\nToàn trình"
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "05 working days. The procedural steps specify the return appointment after 05 working days from receipt of a complete valid dossier.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "method:1",
+            "quote": "05 Ngày làm việc"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Phòng Cảnh sát giao thông hoặc Công an cấp xã nơi được bố trí điểm tiếp nhận thực hiện nhập thông tin điện tử; in phiếu hẹn trả kết quả sau 05 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ hoặc gửi thông tin hẹn trả qua hệ thống dịch vụ công;"
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "The fee field displays 'Phí: Đồng' without an amount.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Phí: Đồng"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Pay the licence fee through the online public-service system's payment function and pay other service charges according to the individual's requested services; amounts are not supplied.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Đề nghị đổi giấy phép lái xe theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Đề nghị đổi giấy phép lái xe theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế;"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:0",
+            "quote": "Bao gồm\nĐề nghị đổi giấy phép lái xe theo mẫu quy định tại Phụ lục XII ban hành kèm theo Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế;"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy khám sức khỏe của người lái xe còn hiệu lực, do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật cấp; trừ người có giấy phép lái xe hạng A1, A, B1.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Giấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Issued by a medical examination and treatment establishment meeting the statutory standards; the certificate must remain valid.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "not",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "in",
+            "criterion_key": "driving_licence_class",
+            "values": [
+              "A1",
+              "A",
+              "B1"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "requirement:1",
+                "quote": "Giấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Giấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe; hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 0 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản chính: 0 - Bản sao: 1"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "The listed alternatives are a copy, an electronic copy certified from the original, or an electronic copy issued from the original register. The row also allows the road-traffic administrative penalty decision for deprivation of the right to use an integrated licence; it does not identify a certifying authority.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bao gồm\nBản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Hộ chiếu còn thời hạn sử dụng",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Hộ chiếu còn thời hạn sử dụng (đối với người nước ngoài, người Việt Nam định cư ở nước ngoài)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "in",
+        "criterion_key": "applicant_category",
+        "values": [
+          "foreigner",
+          "overseas_vietnamese"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:3",
+            "quote": "Hộ chiếu còn thời hạn sử dụng (đối với người nước ngoài, người Việt Nam định cư ở nước ngoài)"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Các giấy tờ khác thể hiện thông tin quy định tại điểm d khoản 1 Điều 21 Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Các giấy tờ khác thể hiện thông tin quy định tại điểm d khoản 1 Điều 21 Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:4",
+            "quote": "Các giấy tờ khác thể hiện thông tin quy định tại điểm d khoản 1 Điều 21 Thông tư số 12/2025/TT-BCA ngày 28/02/2025 của Bộ trưởng Bộ Công an quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế"
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "applicant_category",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+          }
+        ]
+      },
+      "question": "Which applicant category describes you?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnamese_citizen",
+          "label": "Vietnamese citizen",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "overseas_vietnamese",
+          "label": "Vietnamese person settled abroad",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "foreigner",
+          "label": "Foreign national",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+              "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:3",
+          "quote": "Hộ chiếu còn thời hạn sử dụng (đối với người nước ngoài, người Việt Nam định cư ở nước ngoài)"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Công dân Việt Nam; Người Việt Nam định cư ở nước ngoài; Người nước ngoài"
+        }
+      ]
+    },
+    {
+      "criterion_key": "requested_action",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "official_name: Đổi giấy phép lái xe"
+          }
+        ]
+      },
+      "question": "Why do you want to exchange your driving licence?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "replace",
+          "label": "Replace a damaged, unusable licence",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+            }
+          ]
+        },
+        {
+          "value": "renew",
+          "label": "Exchange an expired Vietnamese licence converted from a foreign licence",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+            }
+          ]
+        },
+        {
+          "value": "amend",
+          "label": "Correct information that differs from my identity card",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+            }
+          ]
+        },
+        {
+          "value": "integrate_licences",
+          "label": "Integrate an indefinite licence with a fixed-term licence",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "đ) Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;\nc) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;\nd) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;\nđ) Người có nhu cầu tích hợp giấy phép lái xe không thời hạn với giấy phép lái xe có thời hạn;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "licence_origin",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Yêu cầu đối với việc đổi giấy phép lái xe:"
+          }
+        ]
+      },
+      "question": "How did you obtain the driving licence you want to exchange?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "tested_and_issued_in_vietnam",
+          "label": "I was tested and issued the licence in Vietnam",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "a) Người Việt Nam, người nước ngoài được sát hạch, cấp giấy phép lái xe tại Việt Nam;"
+            }
+          ]
+        },
+        {
+          "value": "vietnamese_licence_converted_from_foreign",
+          "label": "It is a Vietnamese licence converted from a foreign licence",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "a) Người Việt Nam, người nước ngoài được sát hạch, cấp giấy phép lái xe tại Việt Nam;"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "vietnam_permanent_residence_card",
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "applicant_category",
+            "values": [
+              "foreigner"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "licence_origin",
+            "values": [
+              "vietnamese_licence_converted_from_foreign"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+          }
+        ]
+      },
+      "question": "Do you hold a permanent residence card in Vietnam?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "licence_expired",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "licence_origin",
+        "values": [
+          "vietnamese_licence_converted_from_foreign"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+          }
+        ]
+      },
+      "question": "Has your Vietnamese licence converted from a foreign licence expired?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "c) Người Việt Nam, người nước ngoài có thẻ thường trú ở Việt Nam đã có giấy phép lái xe Việt Nam đổi từ giấy phép lái xe nước ngoài, khi hết hạn nếu có nhu cầu được đổi giấy phép lái xe;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "licence_unusable_damage",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "replace"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+          }
+        ]
+      },
+      "question": "Is your driving licence damaged to the point that it can no longer be used?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "b) Người có giấy phép lái xe bị hỏng không còn sử dụng được;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "licence_identity_mismatch",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "requested_action",
+        "values": [
+          "amend"
+        ],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+          }
+        ]
+      },
+      "question": "Does your licence differ from your citizen identity card or identity card in date of birth, surname, given or middle names, nationality, place of birth, or residence?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "d) Trường hợp ngày, tháng, năm sinh, họ, tên, tên đệm, quốc tịch, nơi sinh, nơi cư trú ghi trên giấy phép lái xe có sai lệch với căn cước công dân hoặc căn cước thì cơ quan có thẩm quyền làm thủ tục đổi giấy phép lái xe mới phù hợp với thông tin ghi trong căn cước công dân hoặc căn cước;"
+        }
+      ]
+    },
+    {
+      "criterion_key": "driving_licence_class",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:1",
+            "quote": "Giấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)"
+          }
+        ]
+      },
+      "question": "Which class is the driving licence you want to exchange?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "A1",
+          "label": "A1",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "(trừ người có giấy phép lái xe hạng A1, A, B1)"
+            }
+          ]
+        },
+        {
+          "value": "A",
+          "label": "A",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "(trừ người có giấy phép lái xe hạng A1, A, B1)"
+            }
+          ]
+        },
+        {
+          "value": "B1",
+          "label": "B1",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "(trừ người có giấy phép lái xe hạng A1, A, B1)"
+            }
+          ]
+        },
+        {
+          "value": "other_class",
+          "label": "A class other than A1, A or B1",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "requirement:1",
+              "quote": "Giấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:1",
+          "quote": "Giấy khám sức khỏe của người lái xe do cơ sở khám bệnh, chữa bệnh đủ tiêu chuẩn theo quy định của pháp luật về khám bệnh, chữa bệnh cấp còn hiệu lực (trừ người có giấy phép lái xe hạng A1, A, B1)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "integrated_licence_currently_deprived",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "requirement:2",
+            "quote": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp"
+          }
+        ]
+      },
+      "question": "Is your integrated driving licence currently subject to deprivation of the right to use it?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "requirement:2",
+          "quote": "Bản sao hoặc bản sao điện tử được chứng thực từ bản chính hoặc bản sao điện tử được cấp từ sổ gốc của giấy phép lái xe hoặc Quyết định xử phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ đối với trường hợp tước quyền sử dụng giấy phép lái xe tích hợp"
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Giấy phép lái xe cũ được tiêu hủy, trừ trường hợp đổi giấy phép lái xe cho người có giấy phép lái xe tích hợp đang trong thời gian bị tước giấy phép lái xe"
+        }
+      ]
+    },
+    {
+      "criterion_key": "unfulfilled_traffic_violation_requirements",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "e) Không đổi giấy phép lái xe đối với các trường hợp sau:"
+          }
+        ]
+      },
+      "question": "Do you have a road-traffic administrative violation for which you have not completed the competent authority's requirements for resolution and handling?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Yes",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "người vi phạm trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ."
+            }
+          ]
+        },
+        {
+          "value": "no",
+          "label": "No",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "người vi phạm trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "người vi phạm trật tự, an toàn giao thông đường bộ chưa thực hiện xong yêu cầu của cơ quan nhà nước có thẩm quyền về giải quyết, xử lý vụ việc vi phạm hành chính trong lĩnh vực trật tự, an toàn giao thông đường bộ."
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Cá nhân lập hồ sơ gửi trực tiếp tại Công an cấp xã nơi được bố trí điểm tiếp nhận hồ sơ hoặc Phòng Cảnh sát giao thông hoặc gửi qua hệ thống dịch vụ công trực tuyến:"
+          }
+        ]
+      },
+      "question": "How do you want to submit your application?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "in_person",
+          "label": "In person",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:0",
+              "quote": "Trực tiếp"
+            }
+          ]
+        },
+        {
+          "value": "online",
+          "label": "Online",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "method:1",
+              "quote": "Trực tuyến"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:0:Trình tự thực hiện",
+          "quote": "Trường hợp nộp hồ sơ trực tiếp cá nhân phải chụp ảnh trực tiếp tại cơ quan cấp giấy phép lái xe và phải hoàn thành nghĩa vụ nộp lệ phí khi được tiếp nhận hồ sơ.\n- Trường hợp nộp hồ sơ qua hệ thống dịch vụ công trực tuyến, cá nhân kê khai theo hướng dẫn, phải chịu trách nhiệm về tính chính xác, tính hợp pháp của nội dung đã kê khai và phải hoàn thành nghĩa vụ nộp lệ phí cấp giấy phép lái xe thông qua chức năng thanh toán của hệ thống dịch vụ công trực tuyến theo quy định và nộp phí sử dụng dịch vụ khác theo nhu cầu của cá nhân."
+        }
+      ]
+    }
+  ],
+  "form_relationships": [],
+  "missing_information": [
+    "Procedure effective-from and effective-to dates and any superseded procedure are not supplied.",
+    "No express geographic jurisdiction or consolidated authority-level classification is supplied.",
+    "Both method records display 'Phí: Đồng' without a numerical amount; other requested service charges are also unspecified.",
+    "The text of điểm d khoản 1 Điều 21 Thông tư số 12/2025/TT-BCA is not supplied, so the precise other documents and their applicability cannot be established.",
+    "The procedure names the attachment PhulucXII.doigplx.doc, but no associated form record, form hash or form contents are supplied. Exact revision, form code, signature and certification requirements, and revision-specific guidance cannot be established.",
+    "The source lists requirements a–đ without explicitly defining an overall AND/OR relationship. Individual cases are retained separately rather than treated as a complete executable eligibility formula.",
+    "The exclusion concerning absence from the electronic system 'hoặc' issuance register needs clarification before an executable test can be defined.",
+    "The source does not explain how the health-certificate exemption applies to an integrated licence containing multiple classes.",
+    "Criteria answer options do not establish that every possible user situation is covered. Missing or literal unknown answers must remain unknown, not become negative answers or ineligibility."
+  ],
+  "issues": [
+    "Draft extraction for validation and review; current legal validity is not established by the supplied retrieval record.",
+    "Operational processing, delivery, destruction and retention guidance is retained in eligibility_rules because the schema has no separate operational-rules field; these entries are not independent eligibility grants.",
+    "Postal service is expressly a result-delivery option, not an application-submission channel.",
+    "The single requirement:2 row is retained with its shared quantity and conditional penalty-decision alternative; it must not be interpreted as requiring both a licence copy and a penalty decision in every case.",
+    "The circular date 28/02/2025 and retrieval timestamp are not treated as procedure or form effective dates.",
+    "The procedure snapshot SHA-256 is not a form file hash and has not been used to create a form relationship.",
+    "Applicant categories are reproduced as listed and may overlap; routing answers must not be treated as proof of mutually exclusive legal statuses."
+  ]
+}

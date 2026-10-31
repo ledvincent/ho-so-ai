@@ -1,0 +1,89 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+  "code": "2.000635",
+  "name": "Cấp bản sao Trích lục hộ tịch, bản sao Giấy khai sinh",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "f73bc5c8-3258-49f8-8923-19fe96467b74",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 30,
+    "output_sha256": "01e42616f03092d9b3c59c81e108939f4c20b6ce5b3a7454dec046978e5678a9",
+    "validation": {
+      "schema": true,
+      "citations_verified": 151,
+      "identity": true,
+      "form_hashes": true
+    }
+  },
+  "documents": [],
+  "freshness": {
+    "status": "source_captured_not_legally_reverified",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+      "mode": "live",
+      "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "raw_path": "data/_store/html/737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+      "fetched_at": "2026-10-31T08:06:51.234805+00:00"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": true,
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe4d09065699420",
+      "label": "18.TKyeucaubansaotrichluchotich.doc"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe930ca21321c77",
+      "label": "18.DTTT-CpBSkhaisinhTrchlcHT.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=2.000635",
+    "sha256": "737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+    "raw_path": "data/_store/html/737132c23207f2bc7e985b16e1b4a8e1b67dfdffc5a38b44eca8c63a23d4ed72",
+    "fetched_at": "2026-10-31T08:06:51.234805+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d",
+      "raw_path": "data/forms/_objects/55c4bde928a08dc87583c497bb5a47f82e2db7f48e6d2938a72e4acc76ec329d/18-TKyeucaubansaotrichluchotich--55c4bde928a0.doc",
+      "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2024_07/1719805606_18-_TK_yeu_cau_ban_sao_trich_luc_ho_tich.doc",
+      "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=40654&represent=1",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79",
+      "raw_path": "data/forms/_objects/b99f8eef607380e8439e81cccf8a8e8caf49338397e184de2d66df843348ca79/18-DTTT-CpBSkhaisinhTrchlcHT--b99f8eef6073.doc",
+      "download_url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/18dttt-cpbskhaisinhtrchlcht-1767498618-682364.doc",
+      "page_url": "https://namxang.ninhbinh.gov.vn/thu-tuc-hanh-chinh/cap-ban-sao-trich-luc-ho-tich-ban-sao-giay-khai-sinh",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ],
+  "parent_run_id": "8b4a9a05-138c-45bd-9c1f-120eb4d24b45",
+  "operation": "recover_official_forms"
+}

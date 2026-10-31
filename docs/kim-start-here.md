@@ -94,10 +94,12 @@ OpenAPI for the full request shapes. Error strings are not stable error codes.
 ## Run the backend on your machine
 
 The backend and its tested data are on branch `codex/procedure-foundation`.
-The [checked-in snapshot](../data/bootstrap/README.md) contains **only the four
-initial tested procedures**, their required source files and the published
-205-item RAG index. No separate ZIP transfer or hosted service is required.
-The 15 newer procedures are deliberately excluded from this handoff.
+The [checked-in snapshot](../data/bootstrap/README.md) contains **19 active
+procedures, including 15 citizen procedures**, the recovered official forms and
+the published 801-item search index. No separate ZIP transfer or hosted service
+is required. Source-review and form-review restrictions remain in effect; see
+the snapshot README for the unresolved household-business attachment and the
+three procedures whose facts still need review.
 
 Requires Python 3.12+, uv and Docker Desktop. Merge/pull the backend branch into
 the shared repository, then run from its root:
@@ -106,7 +108,7 @@ the shared repository, then run from its root:
 uv sync --locked
 if (!(Test-Path .env)) { Copy-Item .env.example .env }
 docker compose up -d --wait
-uv run python -m scripts.restore_backend_data --database hoso_integration
+uv run python -m scripts.restore_backend_data --database hoso_citizen_demo
 docker compose exec embeddings ollama pull bge-m3
 ```
 
@@ -118,7 +120,7 @@ needed. It does not read or change `.env`.
 Set these values in your local `.env` before starting the API:
 
 ```dotenv
-DATABASE_URL=postgresql+psycopg://hoso:hoso_local@localhost:55432/hoso_integration
+DATABASE_URL=postgresql+psycopg://hoso:hoso_local@localhost:55432/hoso_citizen_demo
 ASSISTANT_BASE_URL=https://api.openai.com/v1
 ASSISTANT_MODEL=gpt-6.1-sol
 ASSISTANT_REASONING_EFFORT=medium
@@ -144,7 +146,7 @@ uv run uvicorn api.main:app --host 127.0.0.1 --port 8001
 uv run python -m scripts.check_frontend_handoff --live-assistant
 ```
 
-Expected migration: `0009`. **API base URL on Kim's PC: `http://127.0.0.1:8001`.**
+Expected migration: `0011`. **API base URL on Kim's PC: `http://127.0.0.1:8001`.**
 OpenAPI: `http://127.0.0.1:8001/docs`; chat: `POST /assistant/chat`.
 This URL becomes available when the startup command is running on his machine.
 The smoke command exercises the app directly, including one paid model request;

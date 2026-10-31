@@ -1,0 +1,21 @@
+# 1.001939: Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT
+
+Source: [Official procedure page](https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001939)
+
+Full captured procedure: [procedure.json](procedure.json). Every visible section and submission description is retained. Form placements remain draft.
+
+Structured profile and citations: [profile.json](profile.json). Baseline: `224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff`. Generated routing phrases are separate from sourced facts.
+
+Shared form references: [forms.json](forms.json)
+
+- [Shared TK1-TS original](../../forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf) · [Draft fields](../../forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf>)
+- [Shared BHYT-01-TK original](../../forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/BHYT-01-TK--932031aea343.pdf) · [Draft fields](../../forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx>)
+- [Shared BHYT-appendix-03 original](../../forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf) · [Draft fields](../../forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Phu_luc_03_Giayto_lam_cancu_caplai_the_BHYT.pdf>)
+- [Shared D03-TS original](../../forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf) · [Draft fields](../../forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx>)
+- [Shared C66a-HD original](../../forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/C66a-HD--5cfd1b678598.pdf) · [Draft fields](../../forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx>)
+- [Shared BHYT-Mau-2 original](../../forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf) · [Draft fields](../../forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx>)
+- [Shared D03-TS original](../../forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf) · [Draft fields](../../forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx>)
+- [Shared TK1-TS original](../../forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf) · [Draft fields](../../forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf>)
+- [Shared D03-TS original](../../forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf) · [Draft fields](../../forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/fields.json) · official_copy · [download source](<https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx>)
+
+Internal provenance: [analysis.json](analysis.json). Original snapshots: source.html and attachment-source.html.

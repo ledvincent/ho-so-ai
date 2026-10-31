@@ -1,0 +1,2685 @@
+{
+  "id": 20,
+  "run_id": "cae75763-1571-4f55-9ffe-2b5cd4863b58",
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "profile": {
+    "issues": [
+      "Đây là hồ sơ dự thảo để kiểm tra và xác nhận, không phải kết luận về hiệu lực pháp luật hiện hành.",
+      "Giữ riêng cả ba phương thức; dòng bưu chính có mâu thuẫn giữa nhãn và mô tả.",
+      "Số lượng 0 bản chính/0 bản sao của các dòng ghi chú được giữ trong hướng dẫn, không biến thành giấy tờ mới hoặc thành miễn nộp các giấy tờ có số lượng riêng.",
+      "Số lượng 1 bản chính/0 bản sao của biểu mẫu trực tuyến được giữ đúng nguồn, không diễn giải thành nghĩa vụ nộp bản giấy.",
+      "Điều kiện giấy tờ nhân thân phản ánh khâu nộp/xuất trình hoặc tải lên; miễn tải lên trực tuyến không miễn việc cả hai bên xuất trình giấy tờ tùy thân khi nhận kết quả.",
+      "Các khóa nationality, prior_foreign_marriage_termination và foreign_termination_annotation_lookup phải được đánh giá cho cùng một bên kết hôn; không ghép quốc tịch của một bên với lịch sử hôn nhân của bên kia.",
+      "Các tiêu chí chọn nhiều phải được đánh giá theo thành viên của tập câu trả lời; 'none' chỉ dùng khi đã xác nhận không có trường hợp nào, không được suy từ giá trị thiếu.",
+      "Giá trị 'unknown', giá trị thiếu hoặc chưa tra cứu phải giữ là chưa biết; đặc biệt không được coi phủ định của một điều kiện chưa biết là đúng.",
+      "Điều kiện của quy tắc tổng hợp về rà soát trực tuyến và ký nhận để unknown vì quy tắc chứa nhiều giai đoạn với phạm vi khác nhau; nội dung vẫn giữ rõ nhánh trực tuyến và yêu cầu có mặt chung, không dùng quy tắc này làm phép thử đủ điều kiện tự động.",
+      "Hủy bỏ kết quả do giấy tờ là hậu quả được nguồn nêu trong thủ tục đăng ký; không vì vậy thêm action_type cancel cho thủ tục này.",
+      "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+    ],
+    "aliases": [
+      {
+        "text": "Đăng ký kết hôn",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Làm giấy đăng ký kết hôn",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Đăng ký kết hôn tại UBND cấp xã",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Marriage registration",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "Register a marriage",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "Commune-level marriage registration",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      }
+    ],
+    "outcome": {
+      "value": "Việc kết hôn được ghi vào Sổ đăng ký kết hôn và hệ thống hộ tịch điện tử; mỗi bên nam, nữ nhận 01 bản chính Giấy chứng nhận kết hôn sau khi có mặt, đối chiếu giấy tờ tùy thân, xác nhận tự nguyện và ký sổ, giấy chứng nhận.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "Nếu người có yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn yêu cầu thì công chức tư pháp - hộ tịch thực hiện việc ghi nội dung vào Sổ đăng ký kết hôn, cập nhật thông tin đăng ký kết hôn và lưu chính thức trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        },
+        {
+          "quote": "Người có yêu cầu đăng ký kết hôn (hai bên nam, nữ phải có mặt, xuất trình giấy tờ tuỳ thân để đối chiếu) kiểm tra thông tin trên Giấy chứng nhận kết hôn, trong Sổ đăng ký kết hôn, khẳng định sự tự nguyện kết hôn và ký tên vào Sổ đăng ký kết hôn, ký tên vào Giấy chứng nhận kết hôn, mỗi bên nam, nữ nhận 01 bản chính Giấy chứng nhận kết hôn.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "purpose": {
+      "value": "Đăng ký việc kết hôn của hai bên nam, nữ sau khi kiểm tra hồ sơ và điều kiện kết hôn.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "Nếu thấy hồ sơ đầy đủ, hợp lệ, các bên có đủ điều kiện kết hôn theo quy định của Luật Hôn nhân và gia đình, không thuộc trường hợp từ chối đăng ký kết hôn theo quy định, trường hợp tiếp nhận hồ sơ đăng ký kết hôn theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện việc ghi vào Sổ đăng ký kết hôn, cập nhật thông tin đăng ký kết hôn và lưu chính thức trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "authority": {
+      "value": "Ủy ban Nhân dân xã, phường, thị trấn.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "Ủy ban Nhân dân xã, phường, thị trấn.",
+          "locator": "section:3:Cơ quan thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "exclusions": [
+      {
+        "rule_id": "explicit_prohibited_marriages",
+        "condition": {
+          "values": [
+            "sham_marriage",
+            "underage_marriage",
+            "forced_marriage",
+            "deceptive_marriage",
+            "obstruction_of_marriage",
+            "existing_marriage",
+            "prohibited_family_relationship"
+          ],
+          "children": [],
+          "operator": "in",
+          "source_refs": [
+            {
+              "quote": "Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:\n+ Kết hôn giả tạo;\n+ Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;\n+ Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;\n+ Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "prohibited_marriage_case"
+        },
+        "statement": {
+          "value": "Các trường hợp cấm: kết hôn giả tạo; tảo hôn; cưỡng ép, lừa dối hoặc cản trở kết hôn; người đang có vợ/chồng kết hôn với người khác hoặc người chưa có vợ/chồng kết hôn với người đang có vợ/chồng; quan hệ trực hệ, họ trong phạm vi ba đời, cha/mẹ nuôi với con nuôi, người từng là cha/mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:\n+ Kết hôn giả tạo;\n+ Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;\n+ Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;\n+ Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "same_sex_marriage_not_recognized",
+        "condition": {
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "same_sex_couple"
+        },
+        "statement": {
+          "value": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "supersedes": [],
+    "action_type": [
+      {
+        "value": "register",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "official_name: Thủ tục đăng ký kết hôn",
+            "locator": "identity",
+            "source_id": "primary"
+          }
+        ]
+      }
+    ],
+    "effective_to": {
+      "value": null,
+      "status": "unknown",
+      "conflicts": [],
+      "source_refs": []
+    },
+    "jurisdiction": {
+      "value": "Cơ quan đăng ký hộ tịch nơi cư trú; khi đến UBND cấp xã không phải nơi thường trú hoặc tạm trú, cơ quan tiếp nhận hỗ trợ nộp trực tuyến đến đúng cơ quan có thẩm quyền.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.",
+          "locator": "requirement:5",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "official_name": {
+      "value": "Thủ tục đăng ký kết hôn",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "official_name: Thủ tục đăng ký kết hôn",
+          "locator": "identity",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "effective_from": {
+      "value": null,
+      "status": "unknown",
+      "conflicts": [],
+      "source_refs": []
+    },
+    "procedure_code": {
+      "value": "1.000894",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "procedure_code: 1.000894",
+          "locator": "identity",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "authority_level": {
+      "value": "Cấp xã giải quyết; có thể tiếp nhận tại Trung tâm Phục vụ hành chính công cấp tỉnh rồi chuyển đến UBND cấp xã có thẩm quyền. Mục thông tin dịch vụ ghi “Cấp tỉnh/ xã”.",
+      "status": "supported",
+      "conflicts": [],
+      "source_refs": [
+        {
+          "quote": "Cơ quan thực hiện: Cấp tỉnh/ xã",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "source_id": "primary"
+        },
+        {
+          "quote": "trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý.",
+          "locator": "section:0:Trình tự thực hiện",
+          "source_id": "primary"
+        }
+      ]
+    },
+    "example_requests": [
+      {
+        "text": "Chúng tôi muốn đăng ký kết hôn tại xã.",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Tôi có thể nộp hồ sơ đăng ký kết hôn trực tuyến không?",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Một người đi nộp tờ khai kết hôn có cần giấy ủy quyền không?",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "Đăng ký kết hôn cần giấy tờ gì và bao lâu có kết quả?",
+        "origin": "generated",
+        "language": "vi",
+        "source_refs": []
+      },
+      {
+        "text": "We want to register our marriage at the commune office.",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "Can I submit our marriage registration online?",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "Can one partner submit the marriage application without authorization?",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      },
+      {
+        "text": "What documents and processing time apply to marriage registration?",
+        "origin": "generated",
+        "language": "en",
+        "source_refs": []
+      }
+    ],
+    "decision_criteria": [
+      {
+        "question": "How would you like to submit the marriage registration application?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp",
+            "locator": "requirement:0",
+            "source_id": "primary"
+          },
+          {
+            "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến",
+            "locator": "requirement:1",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "submission_channel",
+        "answer_options": [
+          {
+            "label": "In person",
+            "value": "in_person",
+            "source_refs": [
+              {
+                "quote": "Trực tiếp",
+                "locator": "method:0",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Online",
+            "value": "online",
+            "source_refs": [
+              {
+                "quote": "Trực tuyến",
+                "locator": "method:1",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Postal service — listed, but instructions need verification",
+            "value": "postal",
+            "source_refs": [
+              {
+                "quote": "Dịch vụ bưu chính",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is the male partner at least 20 years old?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "male_at_least_20",
+        "answer_options": [
+          {
+            "label": "Yes, at least 20",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No, under 20",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is the female partner at least 18 years old?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "female_at_least_18",
+        "answer_options": [
+          {
+            "label": "Yes, at least 18",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No, under 18",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Have both partners voluntarily decided to marry?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Việc kết hôn do nam và nữ tự nguyện quyết định;",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "mutual_voluntary_marriage",
+        "answer_options": [
+          {
+            "label": "Yes",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Việc kết hôn do nam và nữ tự nguyện quyết định;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Việc kết hôn do nam và nữ tự nguyện quyết định;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is it established that neither partner has lost civil act capacity?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Các bên không bị mất năng lực hành vi dân sự;",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "both_parties_not_deprived_of_civil_capacity",
+        "answer_options": [
+          {
+            "label": "Yes, neither partner has lost civil act capacity",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Các bên không bị mất năng lực hành vi dân sự;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No, at least one partner has lost civil act capacity",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Các bên không bị mất năng lực hành vi dân sự;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Which, if any, of these prohibited marriage circumstances has been established? Select all that apply; use 'I'm not sure' if the legal classification is unclear.",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "prohibited_marriage_case",
+        "answer_options": [
+          {
+            "label": "Sham marriage",
+            "value": "sham_marriage",
+            "source_refs": [
+              {
+                "quote": "Kết hôn giả tạo;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Underage marriage",
+            "value": "underage_marriage",
+            "source_refs": [
+              {
+                "quote": "Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Forced marriage",
+            "value": "forced_marriage",
+            "source_refs": [
+              {
+                "quote": "Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Deception in marriage",
+            "value": "deceptive_marriage",
+            "source_refs": [
+              {
+                "quote": "Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Obstruction of marriage",
+            "value": "obstruction_of_marriage",
+            "source_refs": [
+              {
+                "quote": "Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "A married person marrying someone else, or an unmarried person marrying someone who is married",
+            "value": "existing_marriage",
+            "source_refs": [
+              {
+                "quote": "Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "A listed prohibited relationship: direct blood line; relatives within three generations; adoptive or former adoptive parent and child; father-in-law and daughter-in-law; mother-in-law and son-in-law; stepfather and wife's child; stepmother and husband's child",
+            "value": "prohibited_family_relationship",
+            "source_refs": [
+              {
+                "quote": "Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "None of the listed prohibited circumstances applies",
+            "value": "none",
+            "source_refs": [
+              {
+                "quote": "Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Are the two people seeking marriage of the same sex?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "same_sex_couple",
+        "answer_options": [
+          {
+            "label": "Yes",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Has the online system automatically filled the identity information from the population and electronic civil status databases?",
+        "condition": {
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "không phải tải lên (theo hình thức trực tuyến)",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        },
+        "source_refs": [
+          {
+            "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+            "locator": "requirement:3",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "identity_information_database_autofilled",
+        "answer_options": [
+          {
+            "label": "Yes",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+                "locator": "requirement:3",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Can the civil status authority retrieve your residence information using the methods referred to in the source?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân",
+            "locator": "requirement:4",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "residence_information_retrievable",
+        "answer_options": [
+          {
+            "label": "Yes, the residence information has been retrieved",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No, the authority cannot retrieve it",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ.",
+                "locator": "requirement:4",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Is the partner whose previous foreign divorce or annulment is being checked a Vietnamese citizen?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+            "locator": "requirement:7",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "nationality",
+        "answer_options": [
+          {
+            "label": "Vietnamese citizen",
+            "value": "vietnamese",
+            "source_refs": [
+              {
+                "quote": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Has this partner had a divorce or marriage annulment granted by a competent foreign authority?",
+        "condition": {
+          "values": [
+            "vietnamese"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+              "locator": "requirement:7",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "nationality"
+        },
+        "source_refs": [
+          {
+            "quote": "thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.",
+            "locator": "requirement:7",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "prior_foreign_marriage_termination",
+        "answer_options": [
+          {
+            "label": "Divorce by a competent foreign authority",
+            "value": "divorce",
+            "source_refs": [
+              {
+                "quote": "đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Marriage annulment by a competent foreign authority",
+            "value": "annulment",
+            "source_refs": [
+              {
+                "quote": "đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Neither",
+            "value": "none",
+            "source_refs": [
+              {
+                "quote": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Does the authority's database lookup show that the foreign divorce or annulment has been annotated in the civil status records?",
+        "condition": {
+          "values": [
+            "divorce",
+            "annulment"
+          ],
+          "children": [],
+          "operator": "in",
+          "source_refs": [
+            {
+              "quote": "đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+              "locator": "requirement:7",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "prior_foreign_marriage_termination"
+        },
+        "source_refs": [
+          {
+            "quote": "không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.",
+            "locator": "requirement:7",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "foreign_termination_annotation_lookup",
+        "answer_options": [
+          {
+            "label": "The annotation is shown",
+            "value": "shown",
+            "source_refs": [
+              {
+                "quote": "không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "The annotation is not shown in the authority's lookup",
+            "value": "not_shown",
+            "source_refs": [
+              {
+                "quote": "qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn",
+                "locator": "requirement:7",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Will you use documents issued, notarized or certified by a competent foreign authority for this registration?",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+            "locator": "requirement:17",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "uses_foreign_issued_notarized_or_certified_documents",
+        "answer_options": [
+          {
+            "label": "Yes",
+            "value": "yes",
+            "source_refs": [
+              {
+                "quote": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật",
+                "locator": "requirement:17",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "No",
+            "value": "no",
+            "source_refs": [
+              {
+                "quote": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam",
+                "locator": "requirement:17",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      },
+      {
+        "question": "Has any of the following document problems been established? Select all that apply.",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "source_refs": [
+          {
+            "quote": "thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký kết hôn.",
+            "locator": "requirement:18",
+            "source_id": "primary"
+          }
+        ],
+        "criterion_key": "document_failure",
+        "answer_options": [
+          {
+            "label": "Unable to provide the required documents",
+            "value": "cannot_provide_required_documents",
+            "source_refs": [
+              {
+                "quote": "không cung cấp được giấy tờ nêu trên theo quy định",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Submitted or presented documents contain erasures",
+            "value": "erased",
+            "source_refs": [
+              {
+                "quote": "giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Submitted or presented documents have been altered",
+            "value": "altered",
+            "source_refs": [
+              {
+                "quote": "giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "Submitted or presented documents are forged",
+            "value": "forged",
+            "source_refs": [
+              {
+                "quote": "giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "None of these problems",
+            "value": "none",
+            "source_refs": [
+              {
+                "quote": "Trường hợp người yêu cầu đăng ký kết hôn không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả",
+                "locator": "requirement:18",
+                "source_id": "primary"
+              }
+            ]
+          },
+          {
+            "label": "I'm not sure",
+            "value": "unknown",
+            "source_refs": []
+          }
+        ],
+        "question_origin": "generated"
+      }
+    ],
+    "eligibility_rules": [
+      {
+        "rule_id": "marriage_conditions",
+        "condition": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "male_at_least_20"
+            },
+            {
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "female_at_least_18"
+            },
+            {
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Việc kết hôn do nam và nữ tự nguyện quyết định;",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "mutual_voluntary_marriage"
+            },
+            {
+              "values": [
+                "yes"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Các bên không bị mất năng lực hành vi dân sự;",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "both_parties_not_deprived_of_civil_capacity"
+            },
+            {
+              "values": [],
+              "children": [
+                {
+                  "values": [
+                    "sham_marriage",
+                    "underage_marriage",
+                    "forced_marriage",
+                    "deceptive_marriage",
+                    "obstruction_of_marriage",
+                    "existing_marriage",
+                    "prohibited_family_relationship"
+                  ],
+                  "children": [],
+                  "operator": "in",
+                  "source_refs": [
+                    {
+                      "quote": "Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:\n+ Kết hôn giả tạo;\n+ Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;\n+ Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;\n+ Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+                      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                      "source_id": "primary"
+                    }
+                  ],
+                  "criterion_key": "prohibited_marriage_case"
+                }
+              ],
+              "operator": "not",
+              "source_refs": [
+                {
+                  "quote": "Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:",
+                  "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": null
+            }
+          ],
+          "operator": "and",
+          "source_refs": [
+            {
+              "quote": "- Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;\n- Việc kết hôn do nam và nữ tự nguyện quyết định;\n- Các bên không bị mất năng lực hành vi dân sự;\n- Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Đồng thời: nam từ đủ 20 tuổi; nữ từ đủ 18 tuổi; hai bên tự nguyện quyết định; các bên không bị mất năng lực hành vi dân sự; việc kết hôn không thuộc các trường hợp cấm được liệt kê.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;\n- Việc kết hôn do nam và nữ tự nguyện quyết định;\n- Các bên không bị mất năng lực hành vi dân sự;\n- Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:\n+ Kết hôn giả tạo;\n+ Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;\n+ Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;\n+ Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "document_delivery_guidance",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "true",
+          "source_refs": [
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Người yêu cầu nộp/xuất trình giấy tờ khi nộp trực tiếp hoặc tải lên khi nộp trực tuyến. Đây là hướng dẫn, không phải một giấy tờ riêng; dòng nguồn ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Người có yêu cầu đăng ký kết hôn thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "residence_and_assisted_routing",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [
+            {
+              "quote": "nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú.",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Cá nhân được lựa chọn cơ quan đăng ký hộ tịch nơi cư trú theo pháp luật cư trú. Nếu đến UBND cấp xã không phải nơi thường trú hoặc tạm trú, cơ quan tiếp nhận phải hỗ trợ nộp hồ sơ trực tuyến đến đúng cơ quan có thẩm quyền. Đây là ghi chú, không phải giấy tờ; nguồn ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:5",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "authority_marital_status_lookup",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "true",
+          "source_refs": [
+            {
+              "quote": "Đối với yêu cầu đăng ký kết hôn, cơ quan đăng ký hộ tịch tra cứu thông tin về tình trạng hôn nhân của người yêu cầu đăng ký kết hôn",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Cơ quan hộ tịch tra cứu tình trạng hôn nhân qua hệ thống cấp tỉnh kết nối cơ sở dữ liệu hộ tịch điện tử và dân cư, lưu kết quả điện tử hoặc giấy vào hồ sơ. Nếu không tra cứu được do chưa có thông tin, cơ quan hộ tịch đề nghị UBND cấp xã nơi thường trú/nơi đã đăng ký kết hôn xác minh; cơ quan được đề nghị trả kết quả trong 03 ngày làm việc từ khi nhận yêu cầu. Không chuyển trách nhiệm tra cứu này thành giấy xác nhận do người dân phải tự nộp. Dòng ghi chú có số lượng 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Đối với yêu cầu đăng ký kết hôn, cơ quan đăng ký hộ tịch tra cứu thông tin về tình trạng hôn nhân của người yêu cầu đăng ký kết hôn trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư. Kết quả tra cứu được lưu trữ dưới dạng điện tử hoặc bản giấy, phản ánh đầy đủ, chính xác thông tin tại thời điểm tra cứu và đính kèm hồ sơ của người đăng ký. Trường hợp không tra cứu được tình trạng hôn nhân do chưa có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư, thì cơ quan đăng ký hộ tịch đề nghị Ủy ban nhân dân cấp xã nơi người yêu cầu thường trú/nơi đã đăng ký kết hôn xác minh, cung cấp thông tin. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được yêu cầu xác minh, Ủy ban nhân dân cấp xã nơi nhận được đề nghị xác minh có trách nhiệm kiểm tra, xác minh và gửi kết quả về tình trạng hôn nhân của người đó.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:6",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "prior_foreign_divorce_or_annulment",
+        "condition": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "vietnamese"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+                  "locator": "requirement:7",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "nationality"
+            },
+            {
+              "values": [
+                "divorce",
+                "annulment"
+              ],
+              "children": [],
+              "operator": "in",
+              "source_refs": [
+                {
+                  "quote": "đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài",
+                  "locator": "requirement:7",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "prior_foreign_marriage_termination"
+            },
+            {
+              "values": [
+                "not_shown"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn",
+                  "locator": "requirement:7",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "foreign_termination_annotation_lookup"
+            }
+          ],
+          "operator": "and",
+          "source_refs": [
+            {
+              "quote": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài nhưng qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.",
+              "locator": "requirement:7",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy kết hôn tại cơ quan có thẩm quyền nước ngoài, đồng thời tra cứu không thể hiện ghi chú việc đó, cơ quan hộ tịch hướng dẫn thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy kết hôn trước khi giải quyết đăng ký kết hôn. Đây là điều kiện xử lý, không phải một giấy tờ riêng; nguồn ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài nhưng qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:7",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "in_person_document_handling",
+        "condition": {
+          "values": [
+            "in_person"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:",
+              "locator": "requirement:8",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        },
+        "statement": {
+          "value": "Khi nộp trực tiếp: được nộp bản sao chứng thực từ bản chính, bản sao từ sổ gốc, bản chụp kèm bản chính hoặc bản điện tử, kể cả giấy tờ tích hợp/hiển thị trên VNeID. Nếu nộp bản chụp kèm bản chính, người tiếp nhận đối chiếu và ký xác nhận, không yêu cầu thêm bản sao. Với giấy tờ chỉ xuất trình, người tiếp nhận đối chiếu tờ khai, chụp hoặc ghi thông tin để lưu rồi trả lại, không yêu cầu nộp bản sao/bản chụp. Không được đòi thêm giấy tờ ngoài quy định. Khi đã có họ tên, ngày sinh và số định danh/căn cước theo nguồn, người tiếp nhận khai thác CSDLQGVDC; nếu thiếu thông tin trong cơ sở dữ liệu thì yêu cầu kê khai đầy đủ. Các dòng này là hướng dẫn, mỗi dòng ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:8",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:9",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Trường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:10",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:11",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:12",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:13",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "online_attachments",
+        "condition": {
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:",
+              "locator": "requirement:14",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        },
+        "statement": {
+          "value": "Khi nộp trực tuyến, ảnh chụp/bản quét phải rõ nét, đầy đủ, toàn vẹn, từ giấy tờ được cấp hợp lệ và còn giá trị; có thể chụp bằng máy ảnh, điện thoại hoặc thiết bị điện tử. Nếu đã có bản sao điện tử hoặc bản điện tử giấy tờ hộ tịch thì được dùng bản đó. Đây là hướng dẫn, mỗi dòng ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:14",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký kết hôn trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:15",
+              "source_id": "primary"
+            },
+            {
+              "quote": "+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký kết hôn trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:16",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "foreign_document_legalization",
+        "condition": {
+          "values": [
+            "yes"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật",
+              "locator": "requirement:17",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "uses_foreign_issued_notarized_or_certified_documents"
+        },
+        "statement": {
+          "value": "Giấy tờ do cơ quan có thẩm quyền nước ngoài cấp, công chứng hoặc xác nhận để dùng đăng ký hộ tịch tại Việt Nam phải hợp pháp hóa lãnh sự, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên. Đây là yêu cầu đối với giấy tờ, không phải giấy tờ riêng; nguồn ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:17",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": [
+          {
+            "values": [],
+            "children": [],
+            "operator": "unknown",
+            "source_refs": [
+              {
+                "quote": "trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.",
+                "locator": "requirement:17",
+                "source_id": "primary"
+              }
+            ],
+            "criterion_key": null
+          }
+        ]
+      },
+      {
+        "rule_id": "cancellation_for_document_failures",
+        "condition": {
+          "values": [
+            "cannot_provide_required_documents",
+            "erased",
+            "altered",
+            "forged"
+          ],
+          "children": [],
+          "operator": "in",
+          "source_refs": [
+            {
+              "quote": "Trường hợp người yêu cầu đăng ký kết hôn không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký kết hôn.",
+              "locator": "requirement:18",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "document_failure"
+        },
+        "statement": {
+          "value": "Cơ quan có thẩm quyền hủy bỏ kết quả đăng ký kết hôn nếu người yêu cầu không cung cấp được giấy tờ theo quy định HOẶC giấy tờ nộp/xuất trình bị tẩy xóa, sửa chữa hoặc làm giả. Đây là hậu quả xử lý, không phải yêu cầu nộp thêm giấy tờ; nguồn ghi 0 bản chính, 0 bản sao.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Trường hợp người yêu cầu đăng ký kết hôn không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký kết hôn.\nBản chính: 0 - Bản sao: 0",
+              "locator": "requirement:18",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      },
+      {
+        "rule_id": "online_review_and_final_attendance",
+        "condition": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "statement": {
+          "value": "Hồ sơ trực tuyến: người yêu cầu kiểm tra và xác nhận thông tin trên biểu mẫu Giấy chứng nhận kết hôn điện tử trong tối đa một ngày. Nếu xác nhận thông tin thống nhất, đầy đủ HOẶC không phản hồi trong thời hạn thì công chức ghi sổ và lưu hệ thống. Khi nhận kết quả, cả hai bên phải có mặt, xuất trình giấy tờ tùy thân để đối chiếu, kiểm tra thông tin, khẳng định tự nguyện và ký Sổ đăng ký kết hôn cùng Giấy chứng nhận kết hôn. Giấy chứng nhận do Lãnh đạo UBND cấp xã ký.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trường hợp tiếp nhận hồ sơ đăng ký kết hôn theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Giấy chứng nhận kết hôn điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.\nNgười yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Giấy chứng nhận kết hôn điện tử và xác nhận (tối đa một ngày).\nNếu người có yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn yêu cầu thì công chức tư pháp - hộ tịch thực hiện việc ghi nội dung vào Sổ đăng ký kết hôn, cập nhật thông tin đăng ký kết hôn và lưu chính thức trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "- Công chức tư pháp - hộ tịch in Giấy chứng nhận kết hôn, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.\n- Người có yêu cầu đăng ký kết hôn (hai bên nam, nữ phải có mặt, xuất trình giấy tờ tuỳ thân để đối chiếu) kiểm tra thông tin trên Giấy chứng nhận kết hôn, trong Sổ đăng ký kết hôn, khẳng định sự tự nguyện kết hôn và ký tên vào Sổ đăng ký kết hôn, ký tên vào Giấy chứng nhận kết hôn, mỗi bên nam, nữ nhận 01 bản chính Giấy chứng nhận kết hôn.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "exceptions": []
+      }
+    ],
+    "form_relationships": [
+      {
+        "aliases": [],
+        "version": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "file_hash": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+        "form_code": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "signed_by": [],
+        "certified_by": [],
+        "completed_by": [],
+        "effective_to": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "instructions": [],
+        "required_when": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "effective_from": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "official_title": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "field_schema_ref": "data/forms/_objects/27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d/fields.json",
+        "association_method": "official_copy",
+        "supporting_documents": [],
+        "mapping_review_status": "draft"
+      },
+      {
+        "aliases": [],
+        "version": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "file_hash": "f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+        "form_code": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "signed_by": [],
+        "certified_by": [],
+        "completed_by": [],
+        "effective_to": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "instructions": [],
+        "required_when": {
+          "values": [],
+          "children": [],
+          "operator": "unknown",
+          "source_refs": [],
+          "criterion_key": null
+        },
+        "effective_from": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "official_title": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "field_schema_ref": "data/forms/_objects/f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54/fields.json",
+        "association_method": "official_copy",
+        "supporting_documents": [],
+        "mapping_review_status": "draft"
+      }
+    ],
+    "required_documents": [
+      {
+        "name": {
+          "value": "Tờ khai đăng ký kết hôn theo mẫu, đủ thông tin hai bên nam, nữ; hai bên có thể khai chung một tờ khai.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Tờ khai đăng ký kết hôn theo mẫu, có đủ thông tin của hai bên nam, nữ. Hai bên nam, nữ có thể khai chung vào một Tờ khai đăng ký kết hôn (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [
+            "in_person"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp",
+              "locator": "requirement:0",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        }
+      },
+      {
+        "name": {
+          "value": "Mẫu hộ tịch điện tử tương tác đăng ký kết hôn; người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Mẫu hộ tịch điện tử tương tác đăng ký kết hôn (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "required_when": {
+          "values": [
+            "online"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến",
+              "locator": "requirement:1",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "submission_channel"
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy tờ chứng minh nhân thân còn giá trị: Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc giấy tờ khác do cơ quan có thẩm quyền cấp có ảnh và thông tin cá nhân. Xuất trình trực tiếp; khi nộp trực tuyến không phải tải lên nếu thông tin đã có trong CSDLQGVDC, CSDLHTĐT và được tự động điền.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu đăng ký kết hôn. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1 (xuất trình; việc tải lên trực tuyến có ngoại lệ theo nguồn)",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "* Giấy tờ phải xuất trình:",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": "Giấy tờ xuất trình được đối chiếu, chụp hoặc ghi thông tin rồi trả lại; không yêu cầu nộp bản sao hoặc bản chụp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+              "locator": "requirement:11",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "required_when": {
+          "values": [],
+          "children": [
+            {
+              "values": [
+                "in_person"
+              ],
+              "children": [],
+              "operator": "eq",
+              "source_refs": [
+                {
+                  "quote": "nộp/xuất trình (theo hình thức trực tiếp)",
+                  "locator": "requirement:2",
+                  "source_id": "primary"
+                },
+                {
+                  "quote": "* Giấy tờ phải xuất trình:",
+                  "locator": "requirement:3",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": "submission_channel"
+            },
+            {
+              "values": [],
+              "children": [
+                {
+                  "values": [
+                    "online"
+                  ],
+                  "children": [],
+                  "operator": "eq",
+                  "source_refs": [
+                    {
+                      "quote": "tải lên (theo hình thức trực tuyến)",
+                      "locator": "requirement:2",
+                      "source_id": "primary"
+                    }
+                  ],
+                  "criterion_key": "submission_channel"
+                },
+                {
+                  "values": [
+                    "no"
+                  ],
+                  "children": [],
+                  "operator": "eq",
+                  "source_refs": [
+                    {
+                      "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+                      "locator": "requirement:3",
+                      "source_id": "primary"
+                    }
+                  ],
+                  "criterion_key": "identity_information_database_autofilled"
+                }
+              ],
+              "operator": "and",
+              "source_refs": [
+                {
+                  "quote": "Người có yêu cầu đăng ký kết hôn thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+                  "locator": "requirement:2",
+                  "source_id": "primary"
+                },
+                {
+                  "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+                  "locator": "requirement:3",
+                  "source_id": "primary"
+                }
+              ],
+              "criterion_key": null
+            }
+          ],
+          "operator": "or",
+          "source_refs": [
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:",
+              "locator": "requirement:2",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);",
+              "locator": "requirement:3",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": null
+        }
+      },
+      {
+        "name": {
+          "value": "Giấy tờ có giá trị chứng minh thông tin cư trú, khi cơ quan không thể khai thác thông tin cư trú theo khoản 2 Điều 14 Nghị định 104/2022/NĐ-CP. Nếu đã khai thác được theo các phương thức này thì không phải xuất trình trực tiếp hoặc tải lên trực tuyến.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "copies": {
+          "value": "0",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "originals": {
+          "value": "1 (xuất trình khi cần)",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "* Giấy tờ phải xuất trình:",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Bản chính: 1 - Bản sao: 0",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "certification": {
+          "value": "Khi xuất trình trực tiếp, người tiếp nhận đối chiếu, chụp hoặc ghi thông tin rồi trả lại; không yêu cầu nộp bản sao/bản chụp.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.",
+              "locator": "requirement:11",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "required_when": {
+          "values": [
+            "no"
+          ],
+          "children": [],
+          "operator": "eq",
+          "source_refs": [
+            {
+              "quote": "trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).",
+              "locator": "requirement:4",
+              "source_id": "primary"
+            }
+          ],
+          "criterion_key": "residence_information_retrievable"
+        }
+      }
+    ],
+    "missing_information": [
+      "Không có ngày bắt đầu hoặc kết thúc hiệu lực của thủ tục; thời điểm thu thập nguồn không được dùng làm ngày hiệu lực.",
+      "Không có mức lệ phí đăng ký kết hôn, mức phí bản sao trích lục, hoặc tiêu chí cụ thể xác định trường hợp phải nộp/được miễn.",
+      "Phương thức bưu chính có trong bảng nhưng không có điều kiện, địa chỉ gửi hoặc hướng dẫn bưu chính tương ứng.",
+      "URL Cổng dịch vụ công cấp tỉnh là địa chỉ mẫu, chưa xác định một cổng tỉnh cụ thể.",
+      "Nguồn nêu đối tượng là công dân Việt Nam nhưng không xác lập đầy đủ cách xử lý mọi tổ hợp quốc tịch của hai bên; không suy ra loại trừ công dân nước ngoài.",
+      "Nguồn chỉ dẫn pháp luật cư trú và phương thức khai thác dữ liệu nhưng không cung cấp nội dung các quy định được dẫn; không tự mã hóa cách xác định nơi cư trú hoặc cơ quan có thẩm quyền cho từng trường hợp.",
+      "Không có nội dung điều ước quốc tế hoặc tiêu chí xác định miễn hợp pháp hóa lãnh sự; ngoại lệ được giữ ở trạng thái chưa xác lập.",
+      "Không có định nghĩa hay phương pháp đánh giá đầy đủ các khái niệm pháp lý như kết hôn giả tạo, mất năng lực hành vi dân sự hoặc phạm vi ba đời; tiêu chí chỉ ghi nhận phân loại đã được xác lập, không tự suy luận từ dữ kiện thô.",
+      "Không có hồ sơ biểu mẫu gắn hash riêng hoặc nội dung biểu mẫu trong registry được cung cấp. Tên tệp 2.TKngkkthn.doc và 2.DDTTT-ngkkthn.doc trong danh mục không xác lập phiên bản, mã mẫu, ngày hiệu lực, chữ ký hay quan hệ thay thế.",
+      "Chưa xác lập giá trị pháp lý hiện hành của nguồn tại thời điểm sử dụng."
+    ],
+    "submission_channels": [
+      {
+        "fees": [
+          {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          {
+            "value": "Nộp lệ phí đăng ký kết hôn nếu thuộc trường hợp phải nộp; nộp phí cấp bản sao Trích lục kết hôn nếu yêu cầu bản sao. Không có mức tiền trong nguồn.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký kết hôn; nộp phí cấp bản sao Trích lục kết hôn nếu có yêu cầu cấp bản sao Trích lục kết hôn.",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          }
+        ],
+        "channel": {
+          "value": "Trực tiếp",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trực tiếp",
+              "locator": "method:0",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "conditions": {
+          "value": "Bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần văn bản ủy quyền của bên còn lại; cả hai phải có mặt ở bước nhận kết quả và ký.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại",
+              "locator": "method:0",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn (hai bên nam, nữ phải có mặt, xuất trình giấy tờ tuỳ thân để đối chiếu)",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "description": {
+          "value": "Nộp tại Bộ phận một cửa UBND cấp xã hoặc Trung tâm Phục vụ hành chính công có thẩm quyền. Mô tả dòng phương thức đồng thời nhắc lựa chọn nộp trực tuyến tại Cổng dịch vụ công quốc gia hoặc cấp tỉnh. Hồ sơ trực tiếp được cán bộ số hóa và ký số.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).",
+              "locator": "method:0",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký kết hôn nộp hồ sơ đăng ký kết hôn tại Trung tâm Phục vụ hành chính công có thẩm quyền",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Sau khi tiếp nhận hồ sơ theo hình thức nộp trực tiếp, cán bộ tiếp nhận hồ sơ tại Bộ phận một cửa thực hiện số hóa (sao chụp, chuyển thành tài liệu điện tử trên hệ thống thông tin, cơ sở dữ liệu) và ký số vào tài liệu, hồ sơ giải quyết thủ tục hành chính đã được số hóa theo quy định.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "processing_time": {
+          "value": "Ngay trong ngày tiếp nhận; nếu nhận sau 15 giờ và không giải quyết được ngay thì trả trong ngày làm việc tiếp theo; nếu cần xác minh điều kiện kết hôn thì không quá 05 ngày làm việc.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.",
+              "locator": "method:0",
+              "source_id": "primary"
+            }
+          ]
+        }
+      },
+      {
+        "fees": [
+          {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          {
+            "value": "Nguồn chỉ ghi “Lệ phí: Đồng”, không ghi số tiền; phí, lệ phí được thanh toán trực tuyến hoặc bằng cách thức khác theo quy định.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Lệ phí: Đồng",
+                "locator": "method:1",
+                "source_id": "primary"
+              },
+              {
+                "quote": "nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật",
+                "locator": "section:0:Trình tự thực hiện",
+                "source_id": "primary"
+              }
+            ]
+          }
+        ],
+        "channel": {
+          "value": "Trực tuyến",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Trực tuyến",
+              "locator": "method:1",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "conditions": {
+          "value": "Đăng ký tài khoản nếu chưa có, xác thực, đăng nhập và chọn đúng UBND cấp xã có thẩm quyền. Một bên có thể nộp không cần văn bản ủy quyền của bên kia; cả hai vẫn phải có mặt khi nhận kết quả và ký.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "đăng ký tài khoản (nếu chưa có tài khoản), xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, xác định đúng Ủy ban nhân dân cấp xã có thẩm quyền.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            },
+            {
+              "quote": "bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại",
+              "locator": "method:1",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn (hai bên nam, nữ phải có mặt, xuất trình giấy tờ tuỳ thân để đối chiếu)",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "description": {
+          "value": "Nộp trên Cổng dịch vụ công quốc gia https://dichvucong.gov.vn hoặc Cổng dịch vụ công cấp tỉnh; nguồn ghi URL cấp tỉnh dạng mẫu https://dichvucong.---.gov.vn. Cung cấp thông tin bằng biểu mẫu điện tử tương tác, đính kèm bản chụp/bản sao điện tử, thanh toán trực tuyến hoặc theo cách thức hợp pháp khác. Mô tả dòng phương thức cũng nhắc lựa chọn nộp trực tiếp tại Bộ phận một cửa UBND cấp xã.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).",
+              "locator": "method:1",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn trực tuyến cung cấp thông tin theo biểu mẫu điện tử tương tác đăng ký kết hôn (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.",
+              "locator": "section:0:Trình tự thực hiện",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "processing_time": {
+          "value": "Ngay trong ngày tiếp nhận; nếu nhận sau 15 giờ và không giải quyết được ngay thì trả trong ngày làm việc tiếp theo; nếu cần xác minh điều kiện kết hôn thì không quá 05 ngày làm việc.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.",
+              "locator": "method:1",
+              "source_id": "primary"
+            }
+          ]
+        }
+      },
+      {
+        "fees": [
+          {
+            "value": null,
+            "status": "unknown",
+            "conflicts": [],
+            "source_refs": []
+          },
+          {
+            "value": "Nguồn ghi “Lệ phí: Đồng”, không có số tiền.",
+            "status": "supported",
+            "conflicts": [],
+            "source_refs": [
+              {
+                "quote": "Lệ phí: Đồng",
+                "locator": "method:2",
+                "source_id": "primary"
+              }
+            ]
+          }
+        ],
+        "channel": {
+          "value": "Dịch vụ bưu chính",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Dịch vụ bưu chính",
+              "locator": "method:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "conditions": {
+          "value": null,
+          "status": "unknown",
+          "conflicts": [],
+          "source_refs": []
+        },
+        "description": {
+          "value": "Dòng được gắn nhãn dịch vụ bưu chính nhưng mô tả chỉ hướng dẫn nộp trực tiếp tại Bộ phận một cửa UBND cấp xã hoặc trực tuyến tại Cổng dịch vụ công quốc gia/cấp tỉnh, và cho phép một bên nộp không cần ủy quyền của bên còn lại; không có hướng dẫn gửi bưu chính.",
+          "status": "conflict",
+          "conflicts": [
+            "Nhãn phương thức là bưu chính nhưng nội dung mô tả chỉ đề cập trực tiếp/trực tuyến; cần xác minh khả năng và cách nộp bưu chính."
+          ],
+          "source_refs": [
+            {
+              "quote": "Dịch vụ bưu chính",
+              "locator": "method:2",
+              "source_id": "primary"
+            },
+            {
+              "quote": "Người có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).",
+              "locator": "method:2",
+              "source_id": "primary"
+            }
+          ]
+        },
+        "processing_time": {
+          "value": "Ngay trong ngày tiếp nhận; nếu nhận sau 15 giờ và không giải quyết được ngay thì trả trong ngày làm việc tiếp theo; nếu cần xác minh điều kiện kết hôn thì không quá 05 ngày làm việc.",
+          "status": "supported",
+          "conflicts": [],
+          "source_refs": [
+            {
+              "quote": "Ngay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.",
+              "locator": "method:2",
+              "source_id": "primary"
+            }
+          ]
+        }
+      }
+    ],
+    "applicant_categories": [
+      {
+        "value": "Công dân Việt Nam",
+        "status": "supported",
+        "conflicts": [],
+        "source_refs": [
+          {
+            "quote": "Đối tượng thực hiện: Công dân Việt Nam",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "procedure_code: 1.000894\nofficial_name: Thủ tục đăng ký kết hôn",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "identity",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "- Nếu lựa chọn hình thức nộp hồ sơ trực tiếp, người yêu cầu đăng ký kết hôn nộp hồ sơ đăng ký kết hôn tại Trung tâm Phục vụ hành chính công có thẩm quyền; nộp lệ phí nếu thuộc trường hợp phải nộp lệ phí đăng ký kết hôn; nộp phí cấp bản sao Trích lục kết hôn nếu có yêu cầu cấp bản sao Trích lục kết hôn.\n- Nếu lựa chọn hình thức nộp hồ sơ trực tuyến, người có yêu cầu đăng ký kết hôn truy cập Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công cấp tỉnh, đăng ký tài khoản (nếu chưa có tài khoản), xác thực người dùng theo hướng dẫn, đăng nhập vào hệ thống, xác định đúng Ủy ban nhân dân cấp xã có thẩm quyền.\nNgười có yêu cầu đăng ký kết hôn trực tuyến cung cấp thông tin theo biểu mẫu điện tử tương tác đăng ký kết hôn (cung cấp trên Cổng dịch vụ công), đính kèm bản chụp hoặc bản sao điện tử các giấy tờ, tài liệu theo quy định; nộp phí, lệ phí thông qua chức năng thanh toán trực tuyến hoặc bằng cách thức khác theo quy định pháp luật, hoàn tất việc nộp hồ sơ.\n- Cán bộ tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công có trách nhiệm kiểm tra tính chính xác, đầy đủ, thống nhất, hợp lệ của hồ sơ.\n(i) Trường hợp hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, có Phiếu hẹn, trả kết quả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp) hoặc gửi ngay Phiếu hẹn, trả kết quả qua thư điện tử hoặc gửi tin nhắn hẹn trả kết quả qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến), chuyển hồ sơ để công chức tư pháp - hộ tịch xử lý; trường hợp tiếp nhận hồ sơ tại Trung tâm Phục vụ hành chính công cấp tỉnh, cán bộ tiếp nhận hồ sơ chuyển hồ sơ đến Ủy ban nhân dân cấp xã có thẩm quyền xử lý.\n- Sau khi tiếp nhận hồ sơ theo hình thức nộp trực tiếp, cán bộ tiếp nhận hồ sơ tại Bộ phận một cửa thực hiện số hóa (sao chụp, chuyển thành tài liệu điện tử trên hệ thống thông tin, cơ sở dữ liệu) và ký số vào tài liệu, hồ sơ giải quyết thủ tục hành chính đã được số hóa theo quy định.\n(ii) Trường hợp hồ sơ chưa đầy đủ, hợp lệ thì có thông báo cho người yêu cầu bổ sung, hoàn thiện hồ sơ, nêu rõ loại giấy tờ, nội dung cần bổ sung để người có yêu cầu bổ sung, hoàn thiện. Sau khi hồ sơ được bổ sung, thực hiện lại bước (i);\n(iii) Trường hợp người yêu cầu đăng ký kết hôn không bổ sung, hoàn thiện được hồ sơ thì cán bộ tiếp nhận hồ sơ báo cáo Lãnh đạo Trung tâm Phục vụ hành chính công có thông báo từ chối giải quyết yêu cầu đăng ký kết hôn.\n- Công chức tư pháp - hộ tịch thẩm tra hồ sơ (thẩm tra tính thống nhất, hợp lệ của các thông tin trong hồ sơ, giấy tờ, tài liệu đính kèm).\n+ Đối với yêu cầu đăng ký kết hôn, cơ quan đăng ký hộ tịch tra cứu thông tin về tình trạng hôn nhân của người yêu cầu đăng ký kết hôn trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư. Kết quả tra cứu được lưu trữ dưới dạng điện tử hoặc bản giấy, phản ánh đầy đủ, chính xác thông tin tại thời điểm tra cứu và đính kèm hồ sơ của người đăng ký. Trường hợp không tra cứu được tình trạng hôn nhân do chưa có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư, thì cơ quan đăng ký hộ tịch đề nghị Ủy ban nhân dân cấp xã nơi người yêu cầu thường trú/nơi đã đăng ký kết hôn xác minh, cung cấp thông tin. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được yêu cầu xác minh, Ủy ban nhân dân cấp xã nơi nhận được đề nghị xác minh có trách nhiệm kiểm tra, xác minh và gửi kết quả về tình trạng hôn nhân của người đó.\n+ Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài nhưng qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.\n+ Trường hợp hồ sơ cần bổ sung, hoàn thiện hoặc không đủ điều kiện giải quyết, phải từ chối thì công chức tư pháp - hộ tịch gửi thông báo về tình trạng hồ sơ tới Trung tâm Phục vụ hành chính công để thông báo cho người nộp hồ sơ – thực hiện lại bước (ii) hoặc (iii);\n+ Trường hợp cần phải kiểm tra, xác minh làm rõ hoặc do nguyên nhân khác mà không thể trả kết quả đúng thời gian đã hẹn thì công chức tư pháp - hộ tịch lập Phiếu xin lỗi và hẹn lại ngày trả kết quả, trong đó nêu rõ lý do chậm trả kết quả và thời gian hẹn trả kết quả, chuyển Trung tâm Phục vụ hành chính công để trả cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tiếp), hoặc gửi Phiếu xin lỗi và hẹn lại ngày trả kết quả qua thư điện tử hoặc gửi tin nhắn qua điện thoại di động cho người yêu cầu (nếu người yêu cầu nộp hồ sơ trực tuyến).\n+ Nếu thấy hồ sơ đầy đủ, hợp lệ, các bên có đủ điều kiện kết hôn theo quy định của Luật Hôn nhân và gia đình, không thuộc trường hợp từ chối đăng ký kết hôn theo quy định, trường hợp tiếp nhận hồ sơ đăng ký kết hôn theo hình thức trực tiếp, thì công chức tư pháp - hộ tịch thực hiện việc ghi vào Sổ đăng ký kết hôn, cập nhật thông tin đăng ký kết hôn và lưu chính thức trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung.\nTrường hợp tiếp nhận hồ sơ đăng ký kết hôn theo hình thức trực tuyến, công chức tư pháp - hộ tịch gửi lại biểu mẫu Giấy chứng nhận kết hôn điện tử với thông tin đầy đủ cho người yêu cầu qua thư điện tử hoặc thiết bị số.\nNgười yêu cầu có trách nhiệm kiểm tra tính chính xác, đầy đủ của các thông tin trên biểu mẫu Giấy chứng nhận kết hôn điện tử và xác nhận (tối đa một ngày).\nNếu người có yêu cầu xác nhận thông tin đã thống nhất, đầy đủ hoặc không có phản hồi sau thời hạn yêu cầu thì công chức tư pháp - hộ tịch thực hiện việc ghi nội dung vào Sổ đăng ký kết hôn, cập nhật thông tin đăng ký kết hôn và lưu chính thức trên Phần mềm đăng ký, quản lý hộ tịch điện tử dùng chung.\n- Công chức tư pháp - hộ tịch in Giấy chứng nhận kết hôn, trình Lãnh đạo Ủy ban nhân dân cấp xã ký, chuyển tới Trung tâm Phục vụ hành chính công để trả kết quả cho người yêu cầu.\n- Người có yêu cầu đăng ký kết hôn (hai bên nam, nữ phải có mặt, xuất trình giấy tờ tuỳ thân để đối chiếu) kiểm tra thông tin trên Giấy chứng nhận kết hôn, trong Sổ đăng ký kết hôn, khẳng định sự tự nguyện kết hôn và ký tên vào Sổ đăng ký kết hôn, ký tên vào Giấy chứng nhận kết hôn, mỗi bên nam, nữ nhận 01 bản chính Giấy chứng nhận kết hôn.",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "section:0:Trình tự thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.\nLệ phí:\nNgười có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).\nTrực tuyến\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.\nLệ phí: Đồng\nNgười có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).\nDịch vụ bưu chính\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.\nLệ phí: Đồng\nNgười có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "section:1:Cách thức thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Tờ khai đăng ký kết hôn theo mẫu, có đủ thông tin của hai bên nam, nữ. Hai bên nam, nữ có thể khai chung vào một Tờ khai đăng ký kết hôn (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);\n2.TKngkkthn.doc\nBản chính: 1 - Bản sao: 0\n- Mẫu hộ tịch điện tử tương tác đăng ký kết hôn (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)\n2.DDTTT-ngkkthn.doc\nBản chính: 1 - Bản sao: 0\n- Người có yêu cầu đăng ký kết hôn thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0\n* Giấy tờ phải xuất trình:\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu đăng ký kết hôn. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);\nBản chính: 1 - Bản sao: 0\n- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).\nBản chính: 1 - Bản sao: 0\n* Lưu ý :\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\n- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.\nBản chính: 0 - Bản sao: 0\n- Đối với yêu cầu đăng ký kết hôn, cơ quan đăng ký hộ tịch tra cứu thông tin về tình trạng hôn nhân của người yêu cầu đăng ký kết hôn trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư. Kết quả tra cứu được lưu trữ dưới dạng điện tử hoặc bản giấy, phản ánh đầy đủ, chính xác thông tin tại thời điểm tra cứu và đính kèm hồ sơ của người đăng ký. Trường hợp không tra cứu được tình trạng hôn nhân do chưa có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư, thì cơ quan đăng ký hộ tịch đề nghị Ủy ban nhân dân cấp xã nơi người yêu cầu thường trú/nơi đã đăng ký kết hôn xác minh, cung cấp thông tin. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được yêu cầu xác minh, Ủy ban nhân dân cấp xã nơi nhận được đề nghị xác minh có trách nhiệm kiểm tra, xác minh và gửi kết quả về tình trạng hôn nhân của người đó.\nBản chính: 0 - Bản sao: 0\n- Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài nhưng qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.\nBản chính: 0 - Bản sao: 0\n- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:\nBản chính: 0 - Bản sao: 0\n+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).\nBản chính: 0 - Bản sao: 0\nTrường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.\nBản chính: 0 - Bản sao: 0\n+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.\nBản chính: 0 - Bản sao: 0\n+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .\nBản chính: 0 - Bản sao: 0\n+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.\nBản chính: 0 - Bản sao: 0\n- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:\nBản chính: 0 - Bản sao: 0\n+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký kết hôn trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.\nBản chính: 0 - Bản sao: 0\n+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký kết hôn trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.\nBản chính: 0 - Bản sao: 0\n- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.\nBản chính: 0 - Bản sao: 0\n- Trường hợp người yêu cầu đăng ký kết hôn không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký kết hôn.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "section:2:Thành phần hồ sơ",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Ủy ban Nhân dân xã, phường, thị trấn.",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "section:3:Cơ quan thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "- Nam từ đủ 20 tuổi trở lên, nữ từ đủ 18 tuổi trở lên;\n- Việc kết hôn do nam và nữ tự nguyện quyết định;\n- Các bên không bị mất năng lực hành vi dân sự;\n- Việc kết hôn không thuộc một trong các trường hợp cấm kết hôn, gồm:\n+ Kết hôn giả tạo;\n+ Tảo hôn, cưỡng ép kết hôn, lừa dối kết hôn, cản trở kết hôn;\n+ Người đang có vợ, có chồng mà kết hôn với người khác hoặc chưa có vợ, chưa có chồng mà kết hôn với người đang có chồng, có vợ;\n+ Kết hôn giữa những người cùng dòng máu về trực hệ; giữa những người có họ trong phạm vi ba đời; giữa cha, mẹ nuôi với con nuôi; giữa người đã từng là cha, mẹ nuôi với con nuôi, cha chồng với con dâu, mẹ vợ với con rể, cha dượng với con riêng của vợ, mẹ kế với con riêng của chồng.\n* Nhà nước không thừa nhận hôn nhân giữa những người cùng giới tính.",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Thủ tục đăng ký kết hôn\nMột phần\nCơ quan thực hiện: Cấp tỉnh/ xã\nĐối tượng thực hiện: Công dân Việt Nam",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Bao gồm\n- Tờ khai đăng ký kết hôn theo mẫu, có đủ thông tin của hai bên nam, nữ. Hai bên nam, nữ có thể khai chung vào một Tờ khai đăng ký kết hôn (nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tiếp);\nBản chính: 1 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:0",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Bao gồm\n- Mẫu hộ tịch điện tử tương tác đăng ký kết hôn (do người yêu cầu cung cấp thông tin theo hướng dẫn trên Cổng dịch vụ công, nếu người có yêu cầu lựa chọn nộp hồ sơ theo hình thức trực tuyến)\nBản chính: 1 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:1",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Bao gồm\n- Người có yêu cầu đăng ký kết hôn thực hiện việc nộp/xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến) các giấy tờ sau:\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:2",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Giấy tờ phải xuất trình:\n- Hộ chiếu/Chứng minh nhân dân/Thẻ căn cước công dân/Thẻ căn cước/Căn cước điện tử/Giấy chứng nhận căn cước hoặc các giấy tờ khác có dán ảnh và thông tin cá nhân do cơ quan có thẩm quyền cấp, còn giá trị sử dụng để chứng minh về nhân thân của người có yêu cầu đăng ký kết hôn. Trường hợp các thông tin cá nhân trong các giấy tờ này đã có trong CSDLQGVDC, CSDLHTĐT, được hệ thống điền tự động thì không phải tải lên (theo hình thức trực tuyến);\nBản chính: 1 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:3",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Giấy tờ phải xuất trình:\n- Giấy tờ có giá trị chứng minh thông tin về cư trú trong trường hợp cơ quan đăng ký hộ tịch không thể khai thác được thông tin về nơi cư trú của công dân theo các phương thức quy định tại khoản 2 Điều 14 Nghị định số 104/2022/NĐ-CP ngày 21/12/2022 của Chính phủ. Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ Cơ sở dữ liệu quốc gia về dân cư bằng các phương thức này thì người có yêu cầu không phải xuất trình (theo hình thức trực tiếp) hoặc tải lên (theo hình thức trực tuyến).\nBản chính: 1 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:4",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Cá nhân có quyền lựa chọn thực hiện thủ tục hành chính về hộ tịch tại cơ quan đăng ký hộ tịch nơi cư trú; nơi cư trú của cá nhân được xác định theo quy định của pháp luật về cư trú. Trường hợp cá nhân lựa chọn thực hiện thủ tục hành chính về hộ tịch không phải tại Ủy ban nhân dân cấp xã nơi thường trú hoặc nơi tạm trú thì Ủy ban nhân dân cấp xã nơi tiếp nhận yêu cầu có trách nhiệm hỗ trợ người dân nộp hồ sơ đăng ký hộ tịch trực tuyến đến đúng cơ quan có thẩm quyền theo quy định.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:5",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Đối với yêu cầu đăng ký kết hôn, cơ quan đăng ký hộ tịch tra cứu thông tin về tình trạng hôn nhân của người yêu cầu đăng ký kết hôn trên Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh thông qua kết nối với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư. Kết quả tra cứu được lưu trữ dưới dạng điện tử hoặc bản giấy, phản ánh đầy đủ, chính xác thông tin tại thời điểm tra cứu và đính kèm hồ sơ của người đăng ký. Trường hợp không tra cứu được tình trạng hôn nhân do chưa có thông tin trong Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư, thì cơ quan đăng ký hộ tịch đề nghị Ủy ban nhân dân cấp xã nơi người yêu cầu thường trú/nơi đã đăng ký kết hôn xác minh, cung cấp thông tin. Trong thời hạn 03 ngày làm việc kể từ ngày nhận được yêu cầu xác minh, Ủy ban nhân dân cấp xã nơi nhận được đề nghị xác minh có trách nhiệm kiểm tra, xác minh và gửi kết quả về tình trạng hôn nhân của người đó.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:6",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Nếu bên kết hôn là công dân Việt Nam đã ly hôn hoặc hủy việc kết hôn tại cơ quan có thẩm quyền nước ngoài nhưng qua tra cứu thông tin trong Cơ sở dữ liệu hộ tịch điện tử; thông qua kết nối giữa Hệ thống thông tin giải quyết thủ tục hành chính cấp tỉnh với Cơ sở dữ liệu hộ tịch điện tử, Cơ sở dữ liệu quốc gia về dân cư không thể hiện thông tin về việc đã ghi chú ly hôn, hủy việc kết hôn thì cơ quan đăng ký hộ tịch hướng dẫn công dân thực hiện thủ tục ghi vào sổ hộ tịch việc ly hôn/hủy việc kết hôn tại cơ quan nhà nước có thẩm quyền trước khi giải quyết việc đăng ký kết hôn.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:7",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Đối với giấy tờ nộp, xuất trình nếu người yêu cầu nộp hồ sơ theo hình thức trực tiếp:\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:8",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n+ Người yêu cầu đăng ký hộ tịch có thể nộp bản sao được chứng thực từ bản chính hoặc bản sao được cấp từ sổ gốc (sau đây gọi là bản sao) hoặc bản chụp kèm theo bản chính, bản điện tử các giấy tờ này, bao gồm cả giấy tờ được tích hợp, hiển thị trên Ứng dụng định danh điện tử (VneID).\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:9",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\nTrường hợp người yêu cầu nộp bản chụp kèm theo bản chính giấy tờ thì người tiếp nhận có trách nhiệm kiểm tra, đối chiếu bản chụp với bản chính và ký xác nhận, không được yêu cầu nộp bản sao giấy tờ đó.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:10",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n+ Đối với giấy tờ xuất trình khi đăng ký hộ tịch, người tiếp nhận có trách nhiệm kiểm tra, đối chiếu với thông tin trong tờ khai, chụp lại hoặc ghi lại thông tin để lưu trong hồ sơ và trả lại cho người xuất trình, không được yêu cầu nộp bản sao hoặc bản chụp giấy tờ đó.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:11",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n+ Người tiếp nhận có trách nhiệm tiếp nhận đúng, đủ hồ sơ đăng ký hộ tịch theo quy định của pháp luật hộ tịch, không được yêu cầu người đăng ký hộ tịch nộp thêm giấy tờ mà pháp luật hộ tịch không quy định phải nộp .\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:12",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n+ Người tiếp nhận hồ sơ thực hiện khai thác thông tin trong CSDLQGVDC theo quy định pháp luật nếu người yêu cầu đăng ký hộ tịch đã cung cấp họ, chữ đệm, tên; ngày, tháng, năm sinh; số định danh cá nhân/thẻ căn cước công dân/thẻ căn cước/căn cước điện tử. Trường hợp các thông tin cần khai thác không có trong CSDLQGVDC thì đề nghị người yêu cầu kê khai đầy đủ.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:13",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Đối với giấy tờ gửi kèm theo nếu người yêu cầu nộp hồ sơ theo hình thức trực tuyến:\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:14",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n+ Bản chụp các giấy tờ gửi kèm theo hồ sơ đăng ký kết hôn trực tuyến phải bảo đảm rõ nét, đầy đủ, toàn vẹn về nội dung, là bản chụp bằng máy ảnh, điện thoại hoặc được chụp, được quét bằng thiết bị điện tử, từ giấy tờ được cấp hợp lệ, còn giá trị sử dụng.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:15",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n+ Trường hợp giấy tờ, tài liệu phải gửi kèm trong hồ sơ đăng ký kết hôn trực tuyến đã có bản sao điện tử hoặc đã có bản điện tử giấy tờ hộ tịch thì người yêu cầu được sử dụng bản điện tử này.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:16",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Giấy tờ do cơ quan có thẩm quyền của nước ngoài cấp, công chứng hoặc xác nhận để sử dụng cho việc đăng ký hộ tịch tại Việt Nam phải được hợp pháp hóa lãnh sự theo quy định của pháp luật, trừ trường hợp được miễn theo điều ước quốc tế mà Việt Nam là thành viên.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:17",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "* Lưu ý :\n- Trường hợp người yêu cầu đăng ký kết hôn không cung cấp được giấy tờ nêu trên theo quy định hoặc giấy tờ nộp, xuất trình bị tẩy xóa, sửa chữa, làm giả thì cơ quan đăng ký hộ tịch có thẩm quyền hủy bỏ kết quả đăng ký kết hôn.\nBản chính: 0 - Bản sao: 0",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "requirement:18",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Trực tiếp\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo.Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.\nNgười có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).\nLệ phí:",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "method:0",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Trực tuyến\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.\nNgười có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).\nLệ phí: Đồng",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "method:1",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000894",
+      "kind": "procedure",
+      "text": "Dịch vụ bưu chính\nNgay trong ngày tiếp nhận hồ sơ; trường hợp nhận hồ sơ sau 15 giờ mà không giải quyết được ngay thì trả kết quả trong ngày làm việc tiếp theo. Trường hợp cần xác minh điều kiện kết hôn của hai bên nam, nữ thì thời hạn giải quyết không quá 05 ngày làm việc.\nNgười có yêu cầu đăng ký kết hôn thực hiện nộp hồ sơ trực tiếp tại Bộ phận một cửa của UBND cấp xã hoặc nộp hồ sơ trực tuyến trên Cổng dịch vụ công quốc gia (https://dichvucong.gov.vn) hoặc Cổng dịch vụ công cấp tỉnh (https://dichvucong.---.gov.vn) (bên nam hoặc bên nữ có thể nộp hồ sơ mà không cần có văn bản ủy quyền của bên còn lại).\nLệ phí: Đồng",
+      "sha256": "6c7dcd56fdfa8086df13e9564934621e35677870bf1753c209b840183f183ab9",
+      "locator": "method:2",
+      "source_id": "primary",
+      "fetched_at": "2026-10-31T08:04:15.865285+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc",
+      "kind": "registry",
+      "text": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":null,\"document_kind\":\"blank_form\",\"download_url\":\"https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc\",\"family\":\"marriage-declaration\",\"matches\":[{\"label\":\"2.TKngkkthn.doc\",\"procedure_code\":\"1.000894\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcc3a2c708e1c58\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://namxang.ninhbinh.gov.vn/en/thu-tuc-hanh-chinh/dang-ky-ket-hon-luu-dong\",\"revision\":null,\"summary\":\"Tờ khai đăng ký kết hôn\"}",
+      "sha256": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "locator": "form-association",
+      "source_id": "registry:27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "fetched_at": "2026-10-31T08:46:11.153645+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc",
+      "kind": "form",
+      "text": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập – Tự do – Hạnh phúc\n            \nTỜ KHAI ĐĂNG KÝ KẾT HÔN\nKính gửi: (3)................................................................................................\nThông tin\nBên nữ\nBên nam\nHọ, chữ đệm, tên\nNgày, tháng, năm sinh\nDân tộc (4) \nQuốc tịch (4) \nNơi cư trú (4) \nGiấy tờ tùy thân (5)\nKết hôn lần thứ mấy\n     \nChúng tôi cam đoan những lời khai trên đây là đúng sự thật, việc kết hôn của chúng tôi là tự\nnguyện, không vi phạm quy định của Luật hôn nhân và gia đình Việt Nam.\nChúng tôi chịu hoàn toàn trách nhiệm trước pháp luật về nội dung cam đoan của mình. \nĐề nghị Quý cơ quan đăng ký.\n                  ...........................………., ngày ..........…tháng ............ năm............…\nBên nữ\n(Ký, ghi rõ họ, chữ đệm, tên)\n....................................\nBên nam\n(Ký, ghi rõ họ, chữ đệm, tên)\n....................................\nĐề nghị cấp bản sao(6): Có \n, Không \nSố lượng:…….bản\n(1)\n(2)",
+      "sha256": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "locator": "page:1",
+      "source_id": "form:27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "fetched_at": "2026-10-31T08:46:11.153645+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://s3-cdn.ninhbinh.gov.vn/nbportalcdn/tenant-namxang1/2tkngkkthn-1767498331-632353.doc",
+      "kind": "form",
+      "text": "Chú thích:\n(1) (2) Trường hợp làm thủ tục đăng ký kết hôn có yếu tố nước ngoài, thì phải dán ảnh\ncủa hai bên nam, nữ.\n(3) Ghi rõ tên cơ quan đăng ký kết hôn.\n(4) Chỉ ghi trong trường hợp người có yêu cầu đăng ký hộ tịch chưa có/không cung\ncấp số định danh cá nhân/căn cước công dân/thẻ căn cước/căn cước điện tử. \nTrường hợp phải cung cấp thông tin “Nơi cư trú” thì ghi theo nơi đăng ký thường trú;\nnếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú; trường hợp không có\nnơi đăng ký thường trú và nơi đăng ký tạm trú thì ghi theo nơi ở hiện tại. \n(5) Ghi số định danh cá nhân/căn cước công dân/thẻ căn cước (ví dụ: Căn cước công\ndân số 025188001010 do Cục Cảnh sát QLHC về TTXH cấp ngày 20/11/2021). Trường hợp\nkhông có số định danh cá nhân/căn cước công dân/thẻ căn cước/căn cước điện tử thì ghi\ngiấy tờ hợp lệ thay thế (hộ chiếu...). \n(6) Đề nghị đánh dấu X vào ô nếu có yêu cầu cấp bản sao và ghi rõ số lượng.",
+      "sha256": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "locator": "page:2",
+      "source_id": "form:27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+      "fetched_at": "2026-10-31T08:46:11.153645+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx",
+      "kind": "registry",
+      "text": "{\"currency_note\":\"Recovered source edition. Current legal applicability and field mapping are not approved.\",\"derivation\":null,\"document_kind\":\"electronic_specification\",\"download_url\":\"https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx\",\"family\":\"marriage-electronic\",\"matches\":[{\"label\":\"2.DDTTT-ngkkthn.doc\",\"procedure_code\":\"1.000894\",\"source_url\":\"https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fee1f90d0167573\"}],\"matching_basis\":\"Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.\",\"page_url\":\"https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=59625\",\"revision\":null,\"summary\":\"Nội dung mẫu hộ tịch điện tử tương tác đăng ký kết hôn\"}",
+      "sha256": "f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "locator": "form-association",
+      "source_id": "registry:f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "fetched_at": "2026-10-31T08:48:40.102907+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx",
+      "kind": "form",
+      "text": "NỘI DUNG MẪU HỘ TỊCH ĐIỆN TỬ TƯƠNG TÁC ĐĂNG KÝ KẾT HÔN\nI. Thông tin bên nữ\n(1) Ảnh (trường hợp làm thủ tục đăng ký kết hôn có yếu tố nước ngoài); \n(2) Họ, chữ đệm, tên;\n(3) Ngày, tháng, năm sinh (tách biệt riêng 03 trường thông tin ngày, tháng, năm);\n(4) Dân tộc;\n(5) Quốc tịch;\n(6) Số định danh cá nhân;\n(7) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/CMND/Hộ chiếu/Giấy tờ hợp lệ thay thế); số, \nngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;.\n(8) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);\n(9) Kết hôn lần thứ mấy.\nII. Thông tin bên nam\n(10) Ảnh (trường hợp làm thủ tục đăng ký kết hôn có yếu tố nước ngoài);\n(11) Họ, chữ đệm, tên;\n(12) Ngày, tháng, năm sinh (tách biệt riêng 03 trường thông tin ngày, tháng, năm); \n(13) Dân tộc;\n(14) Quốc tịch;\n(15) Số định danh cá nhân;\n(16) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/CMND/Hộ chiếu/Giấy tờ hợp lệ thay thế); \nsố, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;\n(17) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống); \n(18) Kết hôn lần thứ mấy;\n(19) Đề nghị cấp bản sao:\n□ Có\nSố lượng bản sao yêu cầu: ...\n□ Không\n(20) Hồ sơ đính kèm theo quy định.",
+      "sha256": "f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "locator": "page:1",
+      "source_id": "form:f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "fetched_at": "2026-10-31T08:48:40.102907+00:00",
+      "snapshot_id": 43
+    },
+    {
+      "url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2023_11/1700100834_2_Dang_ky_ket_hon.docx",
+      "kind": "form",
+      "text": "* Người yêu cầu cam đoan các thông tin cung cấp là đúng sự thật, việc kết hôn của hai bên là \nhoàn toàn tự nguyện, không vi phạm quy định của Luật hôn nhân và gia đình Việt Nam, chịu \nhoàn toàn trách nhiệm trước pháp luật về nội dung cam đoan của mình.\n* Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ\nCSDLQGVDC, được hệ thống điền tự động thì không phải xuất trình (theo hình thức trực tiếp)\nhoặc tải lên (theo hình thức trực tuyến).\n* Mẫu điện tử tương tác ghi nhận thời gian (giờ, phút, giây, ngày, tháng, năm) hoàn tất việc cung\ncấp thông tin; người yêu cầu trước đó đã đăng nhập vào hệ thống, thực hiện xác thực điện tử theo\nquy định.\nNgười yêu cầu đăng ký kết hôn nhận bản chính Giấy chứng nhận kết hôn trực tiếp tại cơ quan \nđăng ký hộ tịch.\nBản điện tử sẽ tự động gửi về Kho quản lý dữ liệu điện tử của cá nhân/địa chỉ thư điện tử/thiết bị\nsố/điện thoại của người yêu cầu sau khi đã hoàn tất thủ tục đăng ký kết hôn tại cơ quan đăng ký\nhộ tịch.",
+      "sha256": "f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "locator": "page:2",
+      "source_id": "form:f04cca3aecdaa809177d363ee0be42b1b25ec3f79113e281f48c24cdff795b54",
+      "fetched_at": "2026-10-31T08:48:40.102907+00:00",
+      "snapshot_id": 43
+    }
+  ],
+  "metadata": {
+    "operation": "append_verified_form_associations_v1",
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 158
+    },
+    "extracted_at": "2026-10-31T08:55:07.619774+00:00",
+    "model_invoked": false,
+    "extraction_status": "validated_draft",
+    "parent_profile_id": 11
+  },
+  "output_sha256": "a7fe3f09cf61062b908c29a9f8545fc28bc713c0f4221f30b42bbce725ab58a0"
+}

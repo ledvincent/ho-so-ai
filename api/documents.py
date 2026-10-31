@@ -17,6 +17,12 @@ def document_lock(folder):
             break
         except FileExistsError:
             time.sleep(0.05)
+        except PermissionError as exc:
+            # Windows may report a just-deleted lock directory as access denied
+            # while another thread's directory handle is still closing.
+            if getattr(exc, 'winerror', None) not in (5, 32):
+                raise
+            time.sleep(0.05)
     else:
         raise ValueError('Document store busy; retry the download')
     try:

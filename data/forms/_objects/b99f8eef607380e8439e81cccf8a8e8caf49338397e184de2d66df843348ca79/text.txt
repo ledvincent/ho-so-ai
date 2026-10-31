@@ -1,0 +1,33 @@
+NỘI DUNG MẪU ĐIỆN TỬ TƯƠNG TÁC YÊU CẦU
+CẤP BẢN SAO GIẤY KHAI SINH, BẢN SAO TRÍCH LỤC HỘ TỊCH
+I. Thông tin về người yêu cầu
+(1) Họ, chữ đệm, tên;
+(2) Số định danh cá nhân;
+(3) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/Thẻ căn cước/Căn cước điện tử/Hộ
+chiếu/Giấy tờ hợp lệ thay thế); số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;
+(4) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);
+(5) Quan hệ với người được cấp bản sao Giấy khai sinh/Trích lục hộ tịch.
+II. Thông tin về giấy tờ hộ tịch đã đăng ký
+(6) Họ, chữ đệm, tên người được đăng ký; 
+(7) Số định danh cá nhân;
+(8) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/Thẻ căn cước/Căn cước điện tử/Hộ
+chiếu/Giấy tờ hợp lệ thay thế); số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;
+(9) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);
+(10) Loại việc yêu cầu cấp bản sao Giấy khai sinh/Trích lục hộ tịch; 
+(11) Cơ quan đã đăng ký sự kiện hộ tịch trước đây;
+(12) Tên giấy tờ hộ tịch, số, quyển số, ngày, tháng, năm đăng ký; 
+(13) Số lượng bản sao;
+(14) Phương thức nhận kết quả: 
+□ Trực tiếp
+□ Trực tuyến (bản điện tử sẽ được gửi về Kho quản lý dữ liệu của cá nhân/địa chỉ thư điện
+tử/thiết bị số/điện thoại của người yêu cầu)
+□ Bưu chính (cung cấp địa chỉ nơi nhận).
+(15) Hồ sơ đính kèm theo quy định.
+* Người yêu cầu cam đoan các thông tin cung cấp là đúng sự thật và chịu hoàn toàn trách
+nhiệm trước pháp luật về nội dung cam đoan của mình.
+* Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ
+CSDLQGVDC, được hệ thống điền tự động thì không phải xuất trình (theo hình thức trực
+tiếp) hoặc tải lên (theo hình thức trực tuyến).
+* Mẫu điện tử tương tác ghi nhận thời gian (giờ, phút, giây, ngày, tháng, năm) hoàn tất việc
+cung cấp thông tin; người yêu cầu trước đó đã đăng nhập vào hệ thống, thực hiện xác thực
+điện tử theo quy định.

@@ -1,0 +1,172 @@
+[
+  {
+    "source_id": "primary",
+    "locator": "identity",
+    "text": "procedure_code: 1.001456\nofficial_name: Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:0:Trình tự thực hiện",
+    "text": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Nộp hồ sơ\n* Người đề nghị cấp hộ chiếu phổ thông không gắn chíp điện tử trực tiếp nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (khi đến nộp hồ sơ phải xuất trình Chứng minh nhân dân, Thẻ căn cước công dân hoặc hộ chiếu còn giá trị sử dụng) hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có), cụ thể:\n+ Người đề nghị cấp hộ chiếu lần đầu thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thường trú hoặc tạm trú; trường hợp có Thẻ căn cước công dân thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n+ Người đề nghị cấp hộ chiếu từ lần thứ hai thực hiện tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh nơi thuận lợi.\n* Cán bộ quản lý xuất nhập cảnh tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị cấp hộ chiếu phổ thông; yêu cầu nộp lệ phí cho cán bộ thu lệ phí, cán bộ thu lệ phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp hộ chiếu phổ thông hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông thanh toán trực tuyến và nhận biên lai điện tử.\n+ Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp hộ chiếu phổ thông hoàn chỉnh hồ sơ.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Người đề nghị cấp hộ chiếu phổ thông có thể yêu cầu nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến thứ 6 hàng tuần và sáng thứ 7 (đối với các đơn vị bố trí tiếp nhận hồ sơ vào sáng thứ 7); trừ ngày Tết, ngày lễ.\nBước 3: Nhận kết quả\n+ Người đề nghị cấp hộ chiếu phổ thông trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, xuất trình Chứng minh nhân dân hoặc Thẻ căn cước công dân. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp chưa cấp hộ chiếu phổ thông thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả hộ chiếu: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:1:Cách thức thực hiện",
+    "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n08 Ngày làm việc\nPhí: 160000 Đồng\nPhí: 200000 Đồng\nnộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến trước khi đến nộp hồ sơ trực tuyến).\nTrực tuyến\n08 Ngày làm việc\nPhí: 160000 Đồng\nPhí: 200000 Đồng\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nDịch vụ bưu chính\n08 Ngày làm việc\nPhí: 160000 Đồng\nPhí: 200000 Đồng\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:2:Thành phần hồ sơ",
+    "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nMau TK01 to khai cap HCPT ở trong nước TK01 MỚI.doc\nBản chính: 1 - Bản sao: 0\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nMau TK01a to khai trẻ em cap HCPT ở trong nước TK01a MỚI.doc\nBản chính: 1 - Bản sao: 0\nẢnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng\nBản chính: 1 - Bản sao: 0\nHộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.\nBản chính: 1 - Bản sao: 0\nBản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1\nBản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1\nTrường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:3:Cơ quan thực hiện",
+    "text": "Công an Tỉnh",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+    "text": "Không thuộc các trường hợp chưa được cấp giấy tờ xuất nhập cảnh theo quy định tại Điều 21 Luật xuất cảnh, nhập cảnh của công dân Việt Nam.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+    "text": "Cấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: CAT Đắk Lắk\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an Thành phố Huế\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Cần Thơ\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Hà Nội\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Hải Phòng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Hồ Chí Minh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an thành phố Đà Nẵng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh An Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bà Rịa - Vũng Tàu\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Dương\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Phước\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Thuận\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bình Định\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bạc Liêu\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bắc Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bắc Kạn\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bắc Ninh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Bến Tre\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Cao Bằng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Cà Mau\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Gia Lai\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hoà Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hà Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hà Nam\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hà Tĩnh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hưng Yên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hải Dương\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Hậu Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Khánh Hòa\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Kiên Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Kon Tum\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lai Châu\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Long An\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lào Cai\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lâm Đồng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Lạng Sơn\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Nam Định\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Nghệ An\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Ninh Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Ninh Thuận\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Phú Thọ\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Phú Yên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Nam\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Ngãi\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Ninh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Quảng Trị\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Sóc Trăng\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Sơn La\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Thanh Hóa\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Thái Bình\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Thái Nguyên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Tiền Giang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Trà Vinh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Tuyên Quang\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Tây Ninh\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Vĩnh Long\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Vĩnh Phúc\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Yên Bái\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Điện Biên\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Đắk Nông\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Đồng Nai\nĐối tượng thực hiện: Công dân Việt Nam\nCấp hộ chiếu phổ thông ở trong nước (thực hiện tại cấp tỉnh)\nToàn trình\nCơ quan thực hiện: Công an tỉnh Đồng Tháp\nĐối tượng thực hiện: Công dân Việt Nam",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:0",
+    "text": "Bao gồm\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:1",
+    "text": "Bao gồm\nTờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước (mẫu TK01 dành cho người từ 14 tuổi trở lên; mẫu TK01a dành cho người chưa đủ 14 tuổi) ban hành kèm theo Thông tư số 31/2023/TT-BCA ngày 20/7/2023 của Bộ Công an. Đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật Dân sự, người chưa đủ 14 tuổi thì người đại diện hợp pháp khai và ký thay.\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:2",
+    "text": "Bao gồm\nẢnh mới chụp không quá 06 tháng, cỡ 4cm x 6cm, mặt nhìn thẳng, đầu để trần, rõ mặt, rõ hai tai, không đeo kính, trang phục lịch sự, phông ảnh nền trắng\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:3",
+    "text": "Bao gồm\nHộ chiếu phổ thông cấp lần gần nhất còn giá trị sử dụng đối với người đã được cấp hộ chiếu; trường hợp hộ chiếu còn giá trị sử dụng bị mất phải kèm đơn báo mất hoặc thông báo về việc đã tiếp nhận đơn của cơ quan có thẩm quyền quy định tại điểm a khoản 2 Điều 28 Luật Xuất cảnh, nhập cảnh của công dân Việt Nam.\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:4",
+    "text": "Bao gồm\nBản sao giấy khai sinh hoặc trích lục giấy khai sinh đối với người chưa đủ 14 tuổi chưa được cấp mã số định danh cá nhân; trường hợp không có bản sao Giấy khai sinh, trích lục khai sinh thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:5",
+    "text": "Bao gồm\nBản sao giấy tờ do cơ quan có thẩm quyền của Việt Nam cấp chứng minh người đại diện hợp pháp đối với người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi theo quy định của Bộ luật dân sự, người chưa đủ 14 tuổi; trường hợp không có bản sao thì nộp bản chụp và xuất trình bản chính để kiểm tra, đối chiếu.\nBản chính: 1 - Bản sao: 1",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:6",
+    "text": "Bao gồm\nTrường hợp nộp hồ sơ trực tuyến thì thành phần hồ sơ phải được chứng thực điện tử theo quy định, trường hợp hồ sơ chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:0",
+    "text": "Trực tiếp\n08 Ngày làm việc\nnộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh (có thể khai tờ khai đề nghị cấp hộ chiếu phổ thông ở trong nước qua các cổng cung cấp dịch vụ công trực tuyến trước khi đến nộp hồ sơ trực tuyến).\nPhí: 160000 Đồng\nPhí: 200000 Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:1",
+    "text": "Trực tuyến\n08 Ngày làm việc\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nPhí: 160000 Đồng\nPhí: 200000 Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:2",
+    "text": "Dịch vụ bưu chính\n08 Ngày làm việc\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\nPhí: 160000 Đồng\nPhí: 200000 Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001456",
+    "sha256": "422596d8c3949d115f107135d03567a2901b3d8ec7c11cad6fb4de320c81340e",
+    "kind": "procedure",
+    "snapshot_id": 41,
+    "fetched_at": "2026-10-31T08:03:01.549831+00:00"
+  }
+]

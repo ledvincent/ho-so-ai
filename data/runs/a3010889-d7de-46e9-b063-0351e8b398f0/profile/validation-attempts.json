@@ -1,0 +1,11 @@
+[
+  {
+    "attempt": 1,
+    "status": "rejected",
+    "error": "A source document requirement was omitted"
+  },
+  {
+    "attempt": 2,
+    "status": "validated"
+  }
+]

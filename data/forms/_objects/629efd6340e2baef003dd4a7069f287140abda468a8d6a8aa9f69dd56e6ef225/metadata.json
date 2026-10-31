@@ -1,0 +1,27 @@
+{
+  "sha256": "629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225",
+  "family": "TK1-TS",
+  "original": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": null,
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "TK1-TS",
+    "summary": "Tờ khai tham gia, điều chỉnh thông tin bảo hiểm xã hội, bảo hiểm y tế và hướng dẫn",
+    "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+    "derivation": null,
+    "fetched_at": "2026-10-31T08:50:17.590255+00:00",
+    "page_sha256": "559eae23656ab64c62a4003328912cfd5cebdbc41eca3a3ea77caff9464121d7",
+    "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "blank_form",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

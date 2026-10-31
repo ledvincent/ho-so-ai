@@ -1,0 +1,237 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001939",
+  "code": "1.001939",
+  "name": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+  "issues": [
+    "Empty fee cell for Trực tiếp",
+    "Empty fee cell for Trực tuyến",
+    "Empty fee cell for Dịch vụ bưu chính",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+    "Required form codes not found in downloaded files: TK1",
+    "Official alternate form copies recovered; their applicability, completion rules and field mappings require review. Source procedure facts are unchanged."
+  ],
+  "run_id": "fb4bdea2-2eef-4594-ac1a-a7494a2bae52",
+  "status": "blocked",
+  "profile": {
+    "profile_id": 22,
+    "validation": {
+      "schema": true,
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 177
+    },
+    "output_sha256": "1d84b9714f3749e40768f9912006106e86998c832f1ef5d7879d7d7c4ae5a5b8"
+  },
+  "documents": [],
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "input_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2799",
+  "operation": "recover_official_forms",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2799",
+      "mode": "live",
+      "sha256": "4c0799cf6da6a10b4d6b2db7eab47e50f421e34aa00c1d2c6caa0ea7ccdb1c61",
+      "raw_path": "data/_store/html/4c0799cf6da6a10b4d6b2db7eab47e50f421e34aa00c1d2c6caa0ea7ccdb1c61",
+      "fetched_at": "2026-10-31T08:10:05.691247+00:00"
+    },
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001939",
+      "mode": "resolved_live",
+      "sha256": "19a72141c3d902c05cb73565e72be282fc7775ff91da4c08d7312a5d4eda8728",
+      "raw_path": "data/_store/html/19a72141c3d902c05cb73565e72be282fc7775ff91da4c08d7312a5d4eda8728",
+      "fetched_at": "2026-10-31T08:10:08.030466+00:00",
+      "input_name": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+      "resolved_from": "https://vpcp.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=2799",
+      "resolved_name": "Đăng ký đóng, cấp thẻ BHYT đối với người chỉ tham gia BHYT",
+      "title_changed": false
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    }
+  ],
+  "baseline_id": "224ae48ce1f64ecd0694d7bd7369b623694ba818f192cc8fc4e2183fad7b51ff",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": false,
+  "parent_run_id": "b9e82d56-2970-4b44-b44a-1407fb407908",
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe40b6f8512dd8c",
+      "label": "Mẫu TK1-TS.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe1c79b40953c42",
+      "label": "Mẫu 01-TK.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd5b792de75abfe",
+      "label": "Phụ lục 03.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea655a340aab0d",
+      "label": "Mẫu D03-TS.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd835fd5d4c176e",
+      "label": "Mẫu C66a-HD.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe92a426fd78708",
+      "label": "Mẫu số 2_NĐ 146.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fde29641781ed74",
+      "label": "Mẫu D03-TS.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd0a0be71cd8d54",
+      "label": "Mẫu TK1-TS.docx"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdcbf9960368320",
+      "label": "Mẫu D03-TS.docx"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001939",
+    "sha256": "19a72141c3d902c05cb73565e72be282fc7775ff91da4c08d7312a5d4eda8728",
+    "raw_path": "data/_store/html/19a72141c3d902c05cb73565e72be282fc7775ff91da4c08d7312a5d4eda8728",
+    "fetched_at": "2026-10-31T08:10:08.030466+00:00"
+  },
+  "attachment_page": null,
+  "recovered_forms": [
+    {
+      "mode": "official_copy",
+      "sha256": "629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+      "raw_path": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "raw_path": "data/forms/_objects/932031aea34394054abf098e3b73b8e332a8b49680d8b665181e8564c64a38fe/BHYT-01-TK--932031aea343.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+      "raw_path": "data/forms/_objects/46246309e4b8a805a0be8b86d0f138ad15120012e32cb91cdc8c69013ad4d7d8/BHYT-Phu-luc-03--46246309e4b8.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Phu_luc_03_Giayto_lam_cancu_caplai_the_BHYT.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "raw_path": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "raw_path": "data/forms/_objects/5cfd1b6785983b616982ea5fd3f3ba31517b0c26f0ab9d783a564b06a960fe78/C66a-HD--5cfd1b678598.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "raw_path": "data/forms/_objects/468a81ab1dce58930b84d41985132d27f02283735e524608d81556ffcb6b6bb8/BHYT-Mau-2--468a81ab1dce.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "raw_path": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=71",
+      "raw_path": "data/forms/_objects/629efd6340e2baef003dd4a7069f287140abda468a8d6a8aa9f69dd56e6ef225/TK1_TS--629efd6340e2.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/TK1_TS.pdf",
+      "association_updated": true,
+      "current_applicability_verified": false
+    },
+    {
+      "mode": "official_copy",
+      "sha256": "763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead",
+      "page_url": "https://baohiemxahoi.gov.vn/thu-tuc-hanh-chinh/pages/default.aspx?ItemID=73",
+      "raw_path": "data/forms/_objects/763dcf8aaa82cf3a4df6d36b34cabb54e74ff9d0536791f37dc7dd283b66cead/D03-TS--763dcf8aaa82.pdf",
+      "download_url": "https://baohiemxahoi.gov.vn:4545/File_Server_BHXH/ThuTucHanhChinh/documents/Mau dinh kem.docx",
+      "association_updated": true,
+      "current_applicability_verified": false
+    }
+  ]
+}

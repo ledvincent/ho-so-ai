@@ -1,0 +1,27 @@
+{
+  "sha256": "9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff",
+  "family": "LLTP-05",
+  "original": "data/forms/_objects/9da031385397a51fe4a22f5d9ebae703187963e67e141739e4cd1f25133eeeff/Mau_so_5--9da031385397.docx",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": "05/2025/LLTP",
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {
+    "family": "LLTP-05",
+    "summary": "Tờ khai yêu cầu cấp Phiếu lý lịch tư pháp điện tử tương tác dành cho người được ủy quyền hoặc cha mẹ",
+    "page_url": "https://dichvucong.caobang.gov.vn/public/link-to/chi-tiet-thu-tuc?ma-thu-tuc=39132",
+    "derivation": null,
+    "fetched_at": "2026-10-31T08:47:09.622792+00:00",
+    "page_sha256": "ab08752dec283e42d13eb8e835e1d774b7587c2a913385789d41da94c2a93e03",
+    "download_url": "https://dichvucong.caobang.gov.vn/public_dir/04/giayto/2025/04/Mau_so_5_20250401020820.docx",
+    "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+    "document_kind": "electronic_specification",
+    "candidate_only": null,
+    "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+    "inspected_official_copy": true,
+    "current_applicability_verified": false
+  },
+  "mapping_metadata": {},
+  "superseded_by_sha256": null
+}

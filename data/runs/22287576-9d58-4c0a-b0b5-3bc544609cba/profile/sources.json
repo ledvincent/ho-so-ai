@@ -1,0 +1,142 @@
+[
+  {
+    "source_id": "primary",
+    "locator": "identity",
+    "text": "procedure_code: 1.014064\nofficial_name: Cấp lại thẻ căn cước",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:0:Trình tự thực hiện",
+    "text": "- Bước 1:\n+ Công dân đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú đề nghị cấp lại thẻ căn cước hoặc thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, ứng dụng định danh quốc gia lựa chọn thủ tục cấp lại thẻ căn cước, kiểm tra thông tin của mình được khai thác trong Cơ sở dữ liệu quốc gia về dân cư. Trường hợp thông tin chính xác thì xác nhận chuyển hồ sơ đề nghị cấp lại thẻ căn cước đến Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú nơi công dân đã lựa chọn .\n+ Trường hợp người đề nghị cấp lại thẻ căn cước là người đại diện hợp pháp của người dưới 14 tuổi thì hồ sơ đề nghị cấp, cấp đổi, cấp lại thẻ căn cước phải có giấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi;\n(Lưu ý: Lộ trình cấp lại thẻ căn cước tại Công an cấp xã trong cả nước không phụ thuộc vào nơi cư trú thực hiện theo thông báo của Bộ Công an)\n- Bước 2: Cán bộ thu nhận thông tin công dân tìm kiếm thông tin trong Cơ sở dữ liệu quốc gia về dân cư để lập hồ sơ cấp lại thẻ căn cước.\n- Bước 3:\n+ Trường hợp cấp lại thẻ căn cước do bị mất thẻ căn cước hoặc thẻ căn cước bị hư hỏng không sử dụng được thì cán bộ thu nhận sử dụng thông tin về ảnh khuôn mặt, vân tay, mống mắt đã được thu nhận lần gần nhất và các thông tin hiện có trong Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu căn cước để cấp lại thẻ căn cước.\n+ Trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước (Được trở lại quốc tịch Việt Nam theo quy định của pháp luật về quốc tịch Việt Nam), các bước thực hiện như đối với thủ tục cấp mới thẻ căn cước.\n+ Trường hợp công dân không đủ điều kiện cấp lại thẻ căn cước thì từ chối tiếp nhận và nêu rõ lý do, thông báo về việc từ chối giải quyết thủ tục về căn cước (Mẫu CC03 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an).\n- Bước 4: Tiến hành thu nhận vân tay, chụp ảnh khuôn mặt và thu nhận ảnh mống mắt của công dân (áp dụng với trường hợp cấp lại thẻ căn cước quy định tại điểm b khoản 2 Điều 24 Luật Căn cước).\n- Bước 5: In Phiếu thu nhận thông tin căn cước chuyển cho công dân hoặc người đại diện của người dưới 14 tuổi kiểm tra, ký xác nhận đối với trường hợp công dân trực tiếp đến thực hiện thủ tục cấp lại tại Công an cấp xã.\n- Bước 6: Thu thẻ căn cước cũ (nếu có), thu lệ phí (nếu có) và cấp giấy hẹn trả kết quả giải quyết thủ tục về căn cước cho công dân (mẫu CC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA ngày 15/5/2024 của Bộ Công an) (bản giấy hoặc bản điện tử).\n- Bước 6: Nhận kết quả trực tiếp tại cơ quan Công an nơi tiếp nhận hồ sơ hoặc trả qua dịch vụ bưu chính đến địa chỉ theo yêu cầu.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:1:Cách thức thực hiện",
+    "text": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n07 Ngày làm việc\nLệ phí: 70.000 Đồng\n- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú.\n- Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nThời hạn giải quyết: Không quá 07 ngày làm việc.\nTrực tuyến\n07 Ngày làm việc\nLệ phí: 70.000 Đồng\n- Thực hiện trực tuyến thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia.\n- Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật).\nThời hạn giải quyết: Không quá 07 ngày làm việc.\nDịch vụ bưu chính\n07 Ngày làm việc\nTrả kết quả qua dịch vụ bưu chính, trả phí theo quy định.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:2:Thành phần hồ sơ",
+    "text": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nPhiếu CC01 được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận. Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân.\nBản chính: 1 - Bản sao: 0\nPhiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)\nMẫu DC02 Phiếu đề nghị giải quyết thủ tục về căn cước.doc\nBản chính: 1 - Bản sao: 0\nPhiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến.\nBản chính: 0 - Bản sao: 0\nGiấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:3:Cơ quan thực hiện",
+    "text": "Công an Xã",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+    "text": "Không.",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+    "text": "Cấp lại thẻ căn cước\nMột phần\nCơ quan thực hiện: Công an Xã\nĐối tượng thực hiện: Công dân Việt Nam",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:0",
+    "text": "Bao gồm\nPhiếu CC01 được tạo lập khi trích xuất thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và in trong quá trình thu nhận hồ sơ căn cước để công dân kiểm tra và ký xác nhận. Trường hợp công dân chưa có thông tin trong cơ sở dữ liệu quốc gia về dân cư thì hồ sơ còn có: Phiếu thu thập thông tin dân cư (Mẫu DC01 ban hành kèm theo Thông tư số 53/2025/TT-BCA ngày 01/7/2025 của Bộ Công an). Giấy tờ, tài liệu chứng minh thông tin công dân.\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:1",
+    "text": "Bao gồm\nPhiếu đề nghị giải quyết thủ tục về căn cước (Mẫu DC02 ban hành kèm theo Thông tư số 17/2024/TT-BCA của Bộ Công an)\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:2",
+    "text": "Bao gồm\nPhiếu này là biểu mẫu điện tử, công dân kê khai đối với trường hợp nộp hồ sơ trực tuyến.\nBản chính: 0 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "requirement:3",
+    "text": "Bao gồm\nGiấy tờ, tài liệu có giá trị pháp lý chứng minh là người đại diện hợp pháp của người dưới 14 tuổi\nBản chính: 1 - Bản sao: 0",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:0",
+    "text": "Trực tiếp\n07 Ngày làm việc\n- Trực tiếp tại trụ sở Công an cấp xã hoặc bộ phận một cửa cấp xã trong cả nước không phụ thuộc vào nơi cư trú. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). Thời hạn giải quyết: Không quá 07 ngày làm việc.\nLệ phí: 70.000 Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:1",
+    "text": "Trực tuyến\n07 Ngày làm việc\n- Thực hiện trực tuyến thông qua Cổng dịch vụ công quốc gia, Cổng dịch vụ công Bộ Công an, Ứng dụng định danh quốc gia. - Thời gian tiếp nhận hồ sơ: Giờ hành chính các ngày làm việc từ thứ 2 đến thứ 6 và sáng thứ 7 hàng tuần (trừ các ngày nghỉ lễ, tết theo quy định của pháp luật). Thời hạn giải quyết: Không quá 07 ngày làm việc.\nLệ phí: 70.000 Đồng",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  },
+  {
+    "source_id": "primary",
+    "locator": "method:2",
+    "text": "Dịch vụ bưu chính\n07 Ngày làm việc\nTrả kết quả qua dịch vụ bưu chính, trả phí theo quy định.\n",
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.014064",
+    "sha256": "75412446c9ec4fc58f6173ddb9a5e2ef6d4e9dd9e3c48f69e0a5fe0c54fbf94a",
+    "kind": "procedure",
+    "snapshot_id": 39,
+    "fetched_at": "2026-10-31T08:01:41.188083+00:00"
+  }
+]

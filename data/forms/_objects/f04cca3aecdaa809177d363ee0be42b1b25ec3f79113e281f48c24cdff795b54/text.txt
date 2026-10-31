@@ -1,0 +1,44 @@
+NỘI DUNG MẪU HỘ TỊCH ĐIỆN TỬ TƯƠNG TÁC ĐĂNG KÝ KẾT HÔN
+I. Thông tin bên nữ
+(1) Ảnh (trường hợp làm thủ tục đăng ký kết hôn có yếu tố nước ngoài); 
+(2) Họ, chữ đệm, tên;
+(3) Ngày, tháng, năm sinh (tách biệt riêng 03 trường thông tin ngày, tháng, năm);
+(4) Dân tộc;
+(5) Quốc tịch;
+(6) Số định danh cá nhân;
+(7) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/CMND/Hộ chiếu/Giấy tờ hợp lệ thay thế); số, 
+ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;.
+(8) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống);
+(9) Kết hôn lần thứ mấy.
+II. Thông tin bên nam
+(10) Ảnh (trường hợp làm thủ tục đăng ký kết hôn có yếu tố nước ngoài);
+(11) Họ, chữ đệm, tên;
+(12) Ngày, tháng, năm sinh (tách biệt riêng 03 trường thông tin ngày, tháng, năm); 
+(13) Dân tộc;
+(14) Quốc tịch;
+(15) Số định danh cá nhân;
+(16) Giấy tờ tùy thân: Loại giấy tờ sử dụng (CCCD/CMND/Hộ chiếu/Giấy tờ hợp lệ thay thế); 
+số, ngày, tháng, năm cấp, cơ quan cấp; bản chụp đính kèm;
+(17) Nơi cư trú (nơi thường trú/nơi tạm trú/nơi đang sinh sống); 
+(18) Kết hôn lần thứ mấy;
+(19) Đề nghị cấp bản sao:
+□ Có
+Số lượng bản sao yêu cầu: ...
+□ Không
+(20) Hồ sơ đính kèm theo quy định.
+
+
+* Người yêu cầu cam đoan các thông tin cung cấp là đúng sự thật, việc kết hôn của hai bên là 
+hoàn toàn tự nguyện, không vi phạm quy định của Luật hôn nhân và gia đình Việt Nam, chịu 
+hoàn toàn trách nhiệm trước pháp luật về nội dung cam đoan của mình.
+* Trường hợp các thông tin về giấy tờ chứng minh nơi cư trú đã được khai thác từ
+CSDLQGVDC, được hệ thống điền tự động thì không phải xuất trình (theo hình thức trực tiếp)
+hoặc tải lên (theo hình thức trực tuyến).
+* Mẫu điện tử tương tác ghi nhận thời gian (giờ, phút, giây, ngày, tháng, năm) hoàn tất việc cung
+cấp thông tin; người yêu cầu trước đó đã đăng nhập vào hệ thống, thực hiện xác thực điện tử theo
+quy định.
+Người yêu cầu đăng ký kết hôn nhận bản chính Giấy chứng nhận kết hôn trực tiếp tại cơ quan 
+đăng ký hộ tịch.
+Bản điện tử sẽ tự động gửi về Kho quản lý dữ liệu điện tử của cá nhân/địa chỉ thư điện tử/thiết bị
+số/điện thoại của người yêu cầu sau khi đã hoàn tất thủ tục đăng ký kết hôn tại cơ quan đăng ký
+hộ tịch.

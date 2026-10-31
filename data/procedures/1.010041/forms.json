@@ -1,0 +1,27 @@
+[
+  {
+    "sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+    "family": "CT01",
+    "original": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/CT01-66-2023--d7840089f355.doc",
+    "pdf": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/blank.pdf",
+    "fields": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e",
+    "source_label": "Mẫu CT01 _66.doc",
+    "association_method": "official_copy",
+    "recovery_source": {
+      "family": "CT01",
+      "summary": "Tờ khai thay đổi thông tin cư trú",
+      "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+      "derivation": null,
+      "fetched_at": "2026-10-31T08:46:11.131741+00:00",
+      "page_sha256": "97b10d1166e88e4bf469bc1a6b0a592350c95cdfe06a79cc84524cab6b0361e3",
+      "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+      "currency_note": "Recovered source edition. Current legal applicability and field mapping are not approved.",
+      "document_kind": "blank_form",
+      "candidate_only": null,
+      "matching_basis": "Inspected official document title/code and cited edition against the captured procedure requirements; alternate bytes are not claimed identical to the unavailable primary download.",
+      "inspected_official_copy": true,
+      "current_applicability_verified": false
+    }
+  }
+]

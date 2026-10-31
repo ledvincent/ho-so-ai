@@ -21,6 +21,15 @@ def verified_files(root=ROOT):
     archive = folder / 'procedure-data.zip'
     if hashlib.sha256(archive.read_bytes()).hexdigest() != manifest['archive_sha256']:
         raise ValueError('Snapshot checksum mismatch; fetch the data bundle again.')
+    for name, expected in manifest.get('repository_files', {}).items():
+        path = (root / name).resolve()
+        if not name.startswith(('data/_store/', 'data/archive/raw/', 'data/forms/',
+                                'data/baselines/', 'data/procedures/', 'data/runs/')) or not path.is_relative_to((root/'data').resolve()):
+            raise ValueError('Invalid repository asset path.')
+        payload = path.read_bytes()
+        if expected not in (hashlib.sha256(payload).hexdigest(),
+                            hashlib.sha256(payload.replace(b'\r\n', b'\n')).hexdigest()):
+            raise ValueError(f'Repository asset checksum mismatch: {name}. Pull the matching repository revision.')
     with ZipFile(archive) as bundle:
         if len(bundle.namelist()) != len(set(bundle.namelist())) or set(bundle.namelist()) != set(manifest['files']):
             raise ValueError('Snapshot file inventory mismatch.')
