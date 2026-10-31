@@ -2,19 +2,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ProfileEditor } from '@/components/portal/profile-editor';
-import { emptyValues } from '@/components/na5-demo/model';
-import type { GuidedReply } from './state';
-import { createGuidedAdapter, logoutRequest, sameSession, sessionRequest, verifySchema, type LocalSession } from './api';
-import { GuidedWorkbench } from './workbench';
+import { createGuidedAdapter, logoutRequest, sameSession, sessionRequest, type LocalSession } from './api';
+import { ProcedureChat } from '@/components/procedure-chat/chat';
+import { createDiscoveryAdapter } from '@/components/procedure-chat/api';
 import styles from './portal.module.css';
 
 /** Server guard supplies this public session view; it contains no credential. */
-export function AuthenticatedPortal({ session, view = 'workspace' }: { session: LocalSession; view?: 'workspace' | 'profile' }) {
+export function AuthenticatedPortal({ session, view = 'workspace', fixtures = false }: { session: LocalSession; view?: 'workspace' | 'profile'; fixtures?: boolean }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
-  const [guidance, setGuidance] = useState<GuidedReply>();
   const live = useRef(true);
   const adapter = useMemo(() => createGuidedAdapter(session), [session.user.id, session.expires_at]);
+  const discovery = useMemo(() => createDiscoveryAdapter(session), [session.user.id, session.expires_at]);
   const expire = () => { if (!live.current) return; live.current = false; setReady(false); window.location.replace('/login'); };
   useEffect(() => {
     live.current = true; const controller = new AbortController();
@@ -22,14 +21,6 @@ export function AuthenticatedPortal({ session, view = 'workspace' }: { session: 
       try {
         const current = await sessionRequest(controller.signal);
         if (!sameSession(session, current)) { expire(); return; }
-        if (initial) {
-          await verifySchema(controller.signal);
-          if (view === 'workspace') {
-            // Empty message is deterministic schema guidance, not a model call.
-            const first = await adapter({ message: '', values: emptyValues(), revision: 1, focusField: null, history: [], signal: controller.signal });
-            if (live.current) setGuidance(first);
-          }
-        }
         if (live.current) { setReady(true); setFailed(false); }
       } catch (error) {
         if (controller.signal.aborted) return;
@@ -46,5 +37,5 @@ export function AuthenticatedPortal({ session, view = 'workspace' }: { session: 
   }, [session.user.id, session.expires_at]);
   if (!ready) return <main className={styles.loginPage}><section className={styles.loginCard}><h1>{failed ? 'Chưa thể kiểm tra phiên.' : 'Đang mở không gian của bạn…'}</h1>{failed && <><p>Bản nháp đã được xóa khỏi màn hình. Kiểm tra lại kết nối.</p><button type="button" className={styles.primary} onClick={() => window.location.reload()}>Thử lại</button></>}</section></main>;
   if (view === 'profile') return <main id="main-content" className={styles.profilePage}><Link href="/workspace" prefetch={false}>← Trợ lý hồ sơ</Link><h1>Hồ sơ của bạn</h1><ProfileEditor key={`${session.user.id}:${session.expires_at}`} formHref="/workspace" prefillAvailable={false} onLogout={async () => { setReady(false); try { await logoutRequest(); expire(); } catch { setFailed(true); } }} /></main>;
-  return <GuidedWorkbench key={`${session.user.id}:${session.expires_at}`} username={session.user.username} adapter={adapter} logout={logoutRequest} onExpired={expire} initialGuidance={guidance} />;
+  return <ProcedureChat key={`${session.user.id}:${session.expires_at}`} username={session.user.username} formAdapter={adapter} discovery={discovery} logout={logoutRequest} onExpired={expire} fixtures={fixtures} />;
 }

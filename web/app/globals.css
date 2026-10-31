@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Site palette, source 9905bc0. UI tokens only; no identity or data state. */
-:root{--primary:#9F2430;--jade:#245C4B;--ink:#282C2B;--muted:#59635F;--paper:#FFFCF7;--surface:#F2F5F1;--line:#D8DED6;--green:var(--primary);font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper)}
+:root{--primary:#9F2430;--jade:#245C4B;--ink:#282C2B;--muted:#59635F;--paper:#FFFFFF;--surface:#F2F5F1;--line:#D8DED6;--green:var(--primary);font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper)}
 *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--jade);outline-offset:4px}
 .brand{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:600;letter-spacing:-.7px;white-space:nowrap}.brand b{font-size:14px;color:var(--muted);font-weight:500;letter-spacing:0}.brand small{display:block;font-size:9px;font-weight:400;letter-spacing:0;color:var(--muted);margin-top:3px}.brand-mark{width:33px;height:33px;flex-shrink:0;color:var(--primary)}
 .eyebrow{color:var(--jade);font-weight:600;letter-spacing:1.4px;text-transform:uppercase;font-size:10px}
