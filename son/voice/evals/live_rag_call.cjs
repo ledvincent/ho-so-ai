@@ -19,7 +19,9 @@ const {chromium} = require("playwright");
       return route.continue();
     });
     await page.addInitScript(()=>{
-      window.probe={tools:[],requests:[],played:0,profile:false,errors:[],responseFailures:0};
+      window.probe={tools:[],requests:[],spokenTools:[],played:0,profile:false,errors:[],responseFailures:0};
+      const toolResponses=new Map();
+      let waitingTool=null;
       const create=RTCPeerConnection.prototype.createDataChannel;
       RTCPeerConnection.prototype.createDataChannel=function(...args){
         window.probePeer=this;
@@ -32,12 +34,19 @@ const {chromium} = require("playwright");
             const output=JSON.parse(event.item.output);
             probe.tools.push({status:output.status,error:output.error,procedure:output.procedure_code,citations:output.citations?.length||0,choices:output.choices?.length||0,choiceLabels:output.choices?.map(c=>c.label)||[],reset:output.context_reset});
           }
+          if(event.type==="response.create" && event.response?.tool_choice==="none") waitingTool=probe.tools.length;
           return send(value);
         };
         channel.addEventListener("message",event=>{
           const data=JSON.parse(event.data);
           if(data.type==="session.updated" && data.session?.instructions?.includes("CONNECTED PROCEDURE ASSISTANT MODE")) probe.profile=true;
-          if(data.type==="output_audio_buffer.stopped") probe.played++;
+          if(data.type==="response.created" && waitingTool!==null) {
+            toolResponses.set(data.response.id,waitingTool);waitingTool=null;
+          }
+          if(data.type==="output_audio_buffer.stopped") {
+            probe.played++;
+            if(toolResponses.has(data.response_id)) probe.spokenTools.push(toolResponses.get(data.response_id));
+          }
           if(data.type==="response.done" && ["failed","incomplete"].includes(data.response?.status)) probe.responseFailures++;
           if(data.type==="response.done") for(const item of data.response?.output||[]) {
             if(item.type==="function_call") {
@@ -72,9 +81,9 @@ const {chromium} = require("playwright");
       await page.waitForFunction(before=>probe.tools.length>before.tools,before,{timeout:195000});
       assert.equal(await page.evaluate(()=>Boolean(probe.tools.at(-1).error)),false,"Document tool returned an error");
       console.log(JSON.stringify({language:vi?"vi":"en",step:++step,result:await page.evaluate(()=>probe.tools.at(-1))}));
-      const played=await page.evaluate(()=>probe.played);
-      // Wait for audio after the tool result, not an earlier 'checking' filler.
-      await page.waitForFunction(played=>probe.played>played,played,{timeout:60000});
+      // Correlate the exact response: a short answer may already have finished
+      // before this wait starts, and an earlier 'checking' filler does not count.
+      await page.waitForFunction(index=>probe.spokenTools.includes(index),before.tools+1,{timeout:60000});
       return page.evaluate(()=>probe.tools.at(-1));
     }
     let last=await turn(vi?"Tôi muốn gia hạn tạm trú ở Việt Nam.":"I need help extending my stay in Vietnam.");
