@@ -51,6 +51,7 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
   const generation = useRef(0);
   const tail = useRef<HTMLDivElement>(null);
   const replyTail = useRef<HTMLDivElement>(null);
+  const latestReply = useRef<HTMLElement>(null);
   const guideAnchor = useRef<HTMLElement>(null);
   const adapter = useMemo(() => fixtures ? fixtureDiscovery(scenario) : discovery, [fixtures, scenario, discovery]);
   const activeFormAdapter = fixtures ? fixtureFormAdapter : formAdapter;
@@ -58,10 +59,7 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
   function clear() { abort(); setMessages([]); setCandidates([]); setCatalog('idle'); setCatalogData(null); setRetrievalState(null); setRetrievalCode(null); setChoices([]); setLastQuestion(''); setEvidence({ documents: [], citations: [] }); setInstalled([]); setSelectedAction(null); setDetail(null); setFormSha(null); setFormContext(null); setAnswer(''); setReadOnly(false); setConfirmedCode(null); setConfirmReset(false); setFormEpoch(value => value + 1); }
   function reset() { clear(); setMessages([{ role: 'assistant', content: GREETING, ui: true }]); }
   function append(content: string) { setMessages(previous => [...previous, { role: 'assistant', content, ui: true }]); }
-  function editAnswer(value: string) {
-    abort(); setAnswer(value); setChoices([]);
-    if (!confirmedCode) { setCandidates([]); setCatalog('idle'); setDetail(null); setInstalled([]); setSelectedAction(null); setFormSha(null); setFormContext(null); setReadOnly(false); }
-  }
+  function editAnswer(value: string) { setAnswer(value); }
   function failed(error: unknown, fallback: string) {
     if (error instanceof Error && error.name === 'SessionExpired') { flushSync(clear); onExpired(); }
     else if (error instanceof DiscoveryRequestError && error.status === 409) { setRetrievalState(null); setChoices([]); append('Ngữ cảnh tra cứu đã hết hạn hoặc thay đổi. Hãy gửi lại nhu cầu để bắt đầu lượt tra cứu mới.'); }
@@ -71,8 +69,7 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
     const stop = listenForProfilePageLifecycle(window, () => { flushSync(clear); onExpired(); }, () => {});
     return () => { stop(); generation.current += 1; request.current?.abort(); };
   }, []);
-  useEffect(() => { replyTail.current?.scrollIntoView({ block: 'end' }); }, [messages]);
-  useEffect(() => { if (!detail) tail.current?.scrollIntoView({ block: 'end' }); }, [candidates, choices, busy]);
+  useEffect(() => { if (messages.at(-1)?.role === 'assistant') latestReply.current?.scrollIntoView({ block: 'start' }); else replyTail.current?.scrollIntoView({ block: 'end' }); }, [messages]);
   useEffect(() => { if (detail) guideAnchor.current?.scrollIntoView({ block: 'start' }); }, [detail]);
   useEffect(() => {
     const viewport = window.visualViewport; const resize = () => setViewportStyle(viewport ? { height: viewport.height, top: viewport.offsetTop } : {});
@@ -93,7 +90,7 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
     if (text.length < 2 || busy || text.length > 1000 || (choice && (!retrievalState || !choices.some(item => item.id === choice.id)))) return;
     abort(); const attempt = generation.current; const controller = new AbortController(); request.current = controller;
     setBusy(true); setAnswer(''); setChoices([]); setCatalog('idle');
-    if (!confirmedCode) { setCandidates([]); setDetail(null); setInstalled([]); setSelectedAction(null); setFormSha(null); setReadOnly(false); }
+    setCandidates([]); setDetail(null); setInstalled([]); setSelectedAction(null); setFormSha(null); setReadOnly(false);
     setMessages(previous => [...previous, { role: 'user', content: choice?.label ?? text }]);
     try {
       const history = messages.filter(item => item.content.trim().length > 0 && item.content.trim().length <= 16000).slice(-12).map(({ role, content }) => ({ role, content }));
@@ -104,18 +101,23 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
       setRetrievalState(chat.retrievalState ?? null); setRetrievalCode(chat.procedureCode ?? null); setChoices(chat.choices ?? []); setLastQuestion(text);
       setEvidence({ documents: chat.documents ?? [], citations: chat.citations });
       if (chat.choices?.length) { setConfirmedCode(null); setDetail(null); setInstalled([]); setSelectedAction(null); setFormSha(null); setReadOnly(false); return; }
-      if (chat.procedureCode && chat.procedureCode !== confirmedCode && adapter.detailCode) {
-        const inspected = await loadProcedure(chat.procedureCode, controller.signal);
-        if (!acceptsDiscoveryReply(attempt, generation.current, controller.signal)) return;
-        setConfirmedCode(null); setSelectedAction(null); setFormSha(null); setReadOnly(false); setCandidates([inspected.detail.candidate]); setDetail(inspected.detail); setInstalled(inspected.actions);
-      } else if (!confirmedCode && fixtures) {
+      setConfirmedCode(chat.procedureCode ?? null);
+      if (!confirmedCode && fixtures) {
         const found = await adapter.search(text, controller.signal);
         if (!acceptsDiscoveryReply(attempt, generation.current, controller.signal)) return;
         setCandidates(found.candidates); if (!found.candidates.length) setCatalog('no-match');
-      } else if (!chat.procedureCode && !confirmedCode) {
-        setCatalog('unresolved');
       }
     } catch (error) { if (acceptsDiscoveryReply(attempt, generation.current, controller.signal)) { setCatalog('unavailable'); failed(error, 'Tra cứu thủ tục hiện chưa khả dụng. Mình chưa thể xác định thủ tục phù hợp và chưa chọn biểu mẫu nào. Bạn vẫn có thể nhập lại nhu cầu hoặc thử lại sau.'); if (!choice) setAnswer(text); } }
+    finally { if (attempt === generation.current) setBusy(false); }
+  }
+  async function inspectReplyProcedure() {
+    if (!retrievalCode || !adapter.detailCode || busy || choices.length) return;
+    abort(); const attempt = generation.current; const controller = new AbortController(); request.current = controller; setBusy(true);
+    try {
+      const inspected = await loadProcedure(retrievalCode, controller.signal);
+      if (!acceptsDiscoveryReply(attempt, generation.current, controller.signal)) return;
+      setCandidates([inspected.detail.candidate]); setSelectedAction(null); setFormSha(null); setReadOnly(false); setDetail(inspected.detail); setInstalled(inspected.actions);
+    } catch (error) { if (acceptsDiscoveryReply(attempt, generation.current, controller.signal)) failed(error, 'Chưa tải được thông tin xác nhận cho thủ tục này. Chưa mở biểu mẫu.'); }
     finally { if (attempt === generation.current) setBusy(false); }
   }
   async function browseCatalog() {
@@ -184,8 +186,8 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
     <div className={`${shared.content} ${styles.content}`}>
       {fixtures && <div className={styles.fixtureNotice}><b>{t("Kiểm thử giao diện · Dữ liệu giả lập")}</b><p>{t("Không gọi tìm kiếm hay mô hình. Kết quả dưới đây là tình huống thử được chọn thủ công.")}</p><label htmlFor="discovery-scenario">{t("Tình huống")}</label><select id="discovery-scenario" value={scenario} onChange={event => { reset(); setScenario(event.target.value as FixtureScenario); }}><option value="ambiguous_visa">{t("Thị thực · cần phân biệt kết quả")}</option><option value="stay_extension">{t("Gia hạn tạm trú · mẫu được hỗ trợ")}</option><option value="no_match">{t("Không có kết quả")}</option><option value="unavailable">{t("Dịch vụ không khả dụng")}</option></select></div>}
       <section className={`${shared.conversation} ${styles.conversation}`} aria-label={t("Trò chuyện về thủ tục")} aria-live="polite"><div className={shared.thread}>
-        {messages.length === 1 ? <div className={styles.welcome}><BrandMark /><h1>{t(GREETING)}</h1><p>{t("Hãy mô tả nhu cầu của bạn. Chọn đúng thủ tục trước khi chuẩn bị biểu mẫu.")}</p></div> : messages.map((message, index) => <article key={index} className={message.role === 'user' ? shared.userMessage : shared.assistantMessage}>{message.role === 'assistant' && <BrandMark />}<div><p>{message.ui ? t(message.content) : message.content}</p>{message.citations?.map(citation => <a key={citation.id} className={styles.citation} href={citation.url} target="_blank" rel="noopener">{citation.title} {t(" ↗")}</a>)}</div></article>)}
-        <div ref={replyTail} />{!fixtures && catalog === 'idle' && !candidates.length && !detail && <button type="button" disabled={busy || !adapter.setup} onClick={() => { void browseCatalog(); }}>{t("Xem danh mục thủ tục")}</button>}{choices.length > 0 && <section className={styles.clarification} aria-label={t("Làm rõ nhu cầu")}><p>{t("Chọn câu trả lời phù hợp; chưa có thủ tục hoặc biểu mẫu nào được xác nhận.")}</p>{choices.map(choice => <button type="button" key={choice.id} disabled={busy} onClick={() => { void send(lastQuestion, choice); }}>{choice.label}</button>)}</section>}{!detail && <DocumentCards evidence={evidence} onOpen={choices.length ? undefined : inspectAction} busy={busy} />}{candidates.length > 0 && !detail && <div className={styles.candidates} aria-label={t("Thủ tục tìm được")}>{candidates.map(candidate => <article key={candidate.code}><span>{fixtures ? t("Tình huống giả lập") : catalogData ? t("Danh mục từ dịch vụ cung cấp dữ liệu") : t("Kết quả tìm kiếm")} {t(" · ")}{candidate.code}</span><h2>{candidateLabel(candidate, locale)}</h2><button type="button" disabled={busy} onClick={() => inspect(candidate)}>{t("Xem và xác nhận")}</button></article>)}</div>}
+        {messages.length === 1 ? <div className={styles.welcome}><BrandMark /><h1>{t(GREETING)}</h1><p>{t("Hãy mô tả nhu cầu của bạn. Chọn đúng thủ tục trước khi chuẩn bị biểu mẫu.")}</p></div> : messages.map((message, index) => <article key={index} ref={index === messages.length - 1 && message.role === 'assistant' ? latestReply : undefined} className={message.role === 'user' ? shared.userMessage : shared.assistantMessage}>{message.role === 'assistant' && <BrandMark />}<div><p>{message.ui ? t(message.content) : message.content}</p>{message.citations?.map(citation => <a key={citation.id} className={styles.citation} href={citation.url} target="_blank" rel="noopener">{citation.title} {t(" ↗")}</a>)}</div></article>)}
+        <div ref={replyTail} />{!fixtures && catalog === 'idle' && !candidates.length && !detail && <button type="button" disabled={busy || !adapter.setup} onClick={() => { void browseCatalog(); }}>{t("Xem danh mục thủ tục")}</button>}{choices.length > 0 && <section className={styles.clarification} aria-label={t("Làm rõ nhu cầu")}><p>{t("Chọn câu trả lời phù hợp; chưa có thủ tục hoặc biểu mẫu nào được xác nhận.")}</p>{choices.map(choice => <button type="button" key={choice.id} disabled={busy} onClick={() => { void send(lastQuestion, choice); }}>{choice.label}</button>)}</section>}{!detail && evidence.documents.length > 0 && <details className={styles.sourceDetails}><summary>{t("Tài liệu và nguồn tham khảo")}</summary><DocumentCards evidence={evidence} onOpen={choices.length ? undefined : inspectAction} busy={busy} /></details>}{!detail && retrievalCode && !choices.length && <button className={styles.guideAsk} type="button" disabled={busy} onClick={() => { void inspectReplyProcedure(); }}>{t("Xem hướng dẫn thủ tục")}</button>}{candidates.length > 0 && !detail && <div className={styles.candidates} aria-label={t("Thủ tục tìm được")}>{candidates.map(candidate => <article key={candidate.code}><span>{fixtures ? t("Tình huống giả lập") : catalogData ? t("Danh mục từ dịch vụ cung cấp dữ liệu") : t("Kết quả tìm kiếm")} {t(" · ")}{candidate.code}</span><h2>{candidateLabel(candidate, locale)}</h2><button type="button" disabled={busy} onClick={() => inspect(candidate)}>{t("Xem và xác nhận")}</button></article>)}</div>}
         {catalog !== 'idle' && !detail && <section className={styles.catalog} aria-label={t("Danh mục thủ tục")}><h2>{catalog === 'no-match' ? t("Chưa có kết quả khớp với nhu cầu") : catalog === 'unresolved' ? t("Chưa xác nhận thủ tục phù hợp") : t("Chưa kiểm tra được kết quả tìm kiếm")}</h2><p>{catalogData ? t("Danh sách bên trên do dịch vụ cung cấp dữ liệu trả về. Chọn và kiểm tra thủ tục trước khi xác nhận.") : t("Bạn có thể xem danh mục từ dịch vụ cung cấp dữ liệu. Danh sách chưa được tải không xác nhận có thủ tục phù hợp.")}</p>{catalogData && <p>{t("Chỉ mục tra cứu:")} {catalogData.indexReady ? t("Sẵn sàng") : t("Chưa sẵn sàng")} · {t("Dịch vụ trả lời:")} {catalogData.configured ? t("Đã cấu hình") : t("Chưa cấu hình")}</p>}{!fixtures && <button type="button" disabled={busy || !adapter.setup} onClick={() => { void browseCatalog(); }}>{t("Xem danh mục thủ tục")}</button>}{fixtures && <><p>{t("Danh sách dưới đây chỉ dành cho tình huống UI, không xác nhận dịch vụ đang có các thủ tục này.")}</p><button type="button" onClick={() => { setCandidates(fixtureCatalog); setCatalog('idle'); }}>{t("Xem danh mục giả lập")}</button></>}</section>}
         {detail && <section ref={guideAnchor} className={styles.detail} aria-label={t("Hướng dẫn thủ tục")}>
           <header className={styles.guideHeading}><div><span>{t("Hướng dẫn thủ tục")} · {detail.candidate.code}</span><h2>{candidateLabel(detail.candidate, locale)}</h2></div><button type="button" aria-label={t("Đóng thông tin thủ tục")} onClick={() => { abort(); setDetail(null); setFormSha(null); setSelectedAction(null); setFormContext(null); setReadOnly(false); }}><X size={18} /></button></header>
@@ -198,7 +200,7 @@ export function ProcedureChat({ username, formAdapter, discovery = unavailableDi
         </section>}
         {busy && <p className={shared.thinking} role="status">{t("Đang kiểm tra thông tin thủ tục…")}</p>}<div ref={tail} />
       </div></section>
-      <form className={shared.composerArea} onSubmit={submit}><div className={shared.composer}><label className={shared.srOnly} htmlFor="procedure-message">{t("Bạn cần hỗ trợ gì?")}</label><textarea id="procedure-message" rows={1} maxLength={1000} value={answer} onChange={event => editAnswer(event.target.value)} placeholder={t("Ví dụ: Tôi cần xin thị thực mới…")} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); event.currentTarget.form?.requestSubmit(); } }} /><button type="submit" aria-label={t("Gửi nhu cầu")} disabled={busy || answer.trim().length < 2}><ArrowUp size={19} /></button></div><p className={shared.composerNote}>{t("Thông tin cần có nguồn để đối chiếu. Biểu mẫu chỉ mở sau khi bạn xác nhận thủ tục.")}</p></form>
+      <form className={shared.composerArea} onSubmit={submit}><div className={shared.composer}><label className={shared.srOnly} htmlFor="procedure-message">{t("Bạn cần hỗ trợ gì?")}</label><textarea id="procedure-message" disabled={busy} rows={1} maxLength={1000} value={answer} onChange={event => editAnswer(event.target.value)} placeholder={t("Ví dụ: Tôi cần xin thị thực mới…")} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); event.currentTarget.form?.requestSubmit(); } }} /><button type="submit" aria-label={t("Gửi nhu cầu")} disabled={busy || answer.trim().length < 2}><ArrowUp size={19} /></button></div><p className={shared.composerNote}>{t("Hỏi về giấy tờ và cách thực hiện. Kiểm tra các nguồn được trích dẫn.")}</p></form>
     </div>
   </main>;
 }
