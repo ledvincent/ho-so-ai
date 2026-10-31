@@ -103,9 +103,8 @@ class PostgresTransactions:
 
 
 def build_profile_service(settings: Settings) -> ProfileService | None:
-    """Owner may inject this at startup. Missing configuration stays unavailable."""
+    """Inject at startup; call the returned service.close() after requests drain."""
     if not settings.database_url or not settings.clerk_issuer:
         return None
-    return ProfileService(
-        ProfileRepository(PostgresTransactions(settings.database_url, settings.clerk_issuer))
-    )
+    transactions = PostgresTransactions(settings.database_url, settings.clerk_issuer)
+    return ProfileService(ProfileRepository(transactions), cleanup=transactions.close)
