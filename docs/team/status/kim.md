@@ -1,5 +1,57 @@
 # Kim — application integration checkpoint
 
+## Latest update — 31 October 2026: profile published; live integration underway
+
+Kim authorized publication of the completed app and the current integration
+checkpoints. A brief credit-related pause was cancelled; implementation continues.
+These branch deliveries do not establish a merged or jury-ready application.
+
+| Published delivery | Exact commit | Evidence and limits |
+| --- | --- | --- |
+| `codex/kim/profile-ui-01-consented-prefill` | `6ffec8e0270ff52bd27ceca9d4c4b57105c0cb54` | Completed local review checkpoint: database login, expanded profile, explicit field-level consent, shared draft, procedure-question mode and VI/EN controls. Read `docs/profile-ui-01-handoff.md`; code is `9afe5d75bfc5ed9d7ed91040180a0e4b02d0a8c1`. |
+| `codex/kim/demo-integration-01-jury` | `1ad7db19140647764ce8705998d92ac53e8a736d` | Work in progress: hosted HTTPS-origin/session mode, fresh jury-account provisioning, Vincent transport and document proxy. Read `docs/demo-integration-01-checkpoint.md`. |
+| `codex/kim/demo-integration-01-live-retrieval` | `1e5685478f277fca113df414c45ee0e327d8aac5` | Work in progress: signed clarification state, real catalog/document cards and dynamic document consumer. Read `docs/demo-integration-01-ui-checkpoint.md`. Backend delivery is not yet consumed here. |
+
+The two integration branches both start from the completed profile checkpoint;
+they are separate producer/consumer work, not two independently finished demos.
+No main merge occurred. No credentials, runtime user databases or private chat
+identifiers are included in these publications.
+
+Vincent dependency received: `codex/procedure-foundation` at
+`61b99f37dbb79409dba8a6d4027ce023a1dcf5c4`. It adds the four-procedure populated
+database, published 205-item index, source archive and checked restore command.
+Its API/form code is unchanged from `e16279119281e0d1897f0259ec8f9366e091c90d`.
+Acknowledgement: **adaptation required / runtime restoration in progress**.
+The earlier missing-data blocker is resolved by this publication; downloaded
+matching BGE-M3 weights, successful restore and actual browser compatibility
+remain separate checks. The manager reproduced **128 offline tests at e162791**;
+this does not include the new restore tests or establish live RAG acceptance.
+
+Completed profile evidence: owner reports 428 API tests, 150 frontend tests,
+focused final checks/build and local browser scenarios. The manager previously
+reproduced local login/profile save and reload, consented copying/undo, question
+separation, logout/access denial and language persistence. Retrieval in that
+checkpoint used explicit fixtures, not Vincent's running service.
+
+Hosted/backend WIP evidence: owner reports 122 API auth/config tests, 15 web policy
+tests, 42 discovery-handler tests, 24 existing transport tests and TypeScript
+checking. New generic document methods and the combined browser flow still need
+their final checks. The UI WIP reports TypeScript only; no combined build/runtime
+claim is made. Read each handoff for the exact boundaries.
+
+Current target: protected HTTPS portal -> Vincent's real catalog/assistant ->
+explicit procedure/document selection -> consented profile copying and remaining
+field answers -> correction/review. Logical profile-mapping schema identity must
+be explicitly matched to the new document template; the two version fields are
+not interchangeable. Draft legal-template/download gates remain unchanged.
+
+Deployment preparation uses one public Next listener with private loopback Python
+services and fresh persistent SQLite jury accounts. A temporary HTTPS tunnel is
+available but the application has not passed external acceptance; it is not yet
+a jury link. The temporary link will depend on the host computer staying on.
+Son voice/access remains a separately published dependency; the current local
+database identity has not been declared compatible with Son's Clerk adapter.
+
 ## Latest update — 31 October 2026 (Asia/Saigon): reviewed UI-03 published
 
 Kim reviewed and explicitly authorized publication for Son and Vincent. The exact
