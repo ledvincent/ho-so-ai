@@ -1,0 +1,29 @@
+[project]
+name = "hoso-api"
+version = "0.1.0"
+description = "Ho So AI application API scaffold"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "pydantic>=2.11,<3",
+  "httpx>=0.28,<1",
+  "clerk-backend-api>=7,<8",
+  "PyMuPDF>=1.26,<2",
+  "sqlalchemy>=2.0,<3",
+  "psycopg[binary]>=3.2,<4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hoso_api"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

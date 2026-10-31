@@ -1,0 +1,12 @@
+{
+  "name": "ho-so-ai",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "pnpm --dir web dev",
+    "build": "pnpm --dir web build",
+    "typecheck": "pnpm --dir web typecheck",
+    "test": "pnpm --dir web test",
+    "test:prototype": "node --test prototypes/forms/state.test.mjs"
+  }
+}

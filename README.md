@@ -33,6 +33,26 @@ Vincent owns collection, its tests and the shared data contract. The manager
 configuration does not ship a collector or impose a data schema. Son and Kim
 will integrate against the contract Vincent delivers.
 
+## Shared application scaffold
+
+Kim confirmed Next.js, TypeScript, Tailwind, FastAPI/Pydantic, PostgreSQL and Clerk.
+See the [local setup](docs/shared-scaffold.md), [application contract](docs/application-contract.md)
+and [Clerk portal handoff](docs/team/portal-handoff.md). The procedure-data contract
+still belongs to Vincent. Clerk credentials and profile persistence are not supplied
+by this scaffold.
+
+```sh
+pnpm install --frozen-lockfile
+pnpm typecheck
+pnpm test
+pnpm dev
+```
+
+Run the API separately as documented in the setup guide. The synthetic form route
+is `/forms/demo`; official templates remain disabled until their exact editions
+and mappings are reviewed. The older standalone JSON prototype below is retained
+as historical work.
+
 ## Kim local forms work
 
 Form work starts on `feature/kim-form`. See the [form scope, open inputs, and agent handoff](docs/form-workstream.md).
