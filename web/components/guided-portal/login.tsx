@@ -15,7 +15,7 @@ export function PortalLogin({ authenticate, notice }: { authenticate?: (username
     event.preventDefault(); if (busy || !authenticate) return;
     request.current?.abort(); const attempt = new AbortController(); request.current = attempt;
     setBusy(true); setError('');
-    try { await authenticate(username.trim(), password, attempt.signal); }
+    try { await authenticate(username.trim(), password, attempt.signal); setPassword(''); }
     catch { if (!attempt.signal.aborted) { setError('Không thể đăng nhập. Kiểm tra thông tin và thử lại.'); setPassword(''); } }
     finally { if (!attempt.signal.aborted) setBusy(false); }
   }

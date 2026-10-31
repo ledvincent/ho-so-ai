@@ -5,8 +5,9 @@ import { ArrowUp, Check, LogOut, RotateCcw, X } from 'lucide-react';
 import { flushSync } from 'react-dom';
 import { BrandMark } from '@/components/ui/brand';
 import { listenForProfilePageLifecycle } from '@/components/portal/page-lifecycle';
-import { captureReview, emptyValues, issues, schema, updateValue, type Review, type Values } from '@/components/na5-demo/model';
+import { activeFields, captureReview, emptyValues, issues, updateValue, type Review, type Values } from '@/components/na5-demo/model';
 import { GuidedDocument } from './document';
+import { parts } from './document-layout';
 import { checkedValues, changesBetween, fieldLabel, nextMissing, type Change, type GuidedAdapter, type Message } from './state';
 import styles from './portal.module.css';
 
@@ -71,7 +72,9 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
   }
   function undo() { if (!undoValues) return; invalidate(); const restored = undoValues; setValues(restored); setUndoValues(null); setActiveId(nextMissing(restored)?.id ?? null); setMessages(previous => [...previous, { role: 'assistant', content: 'Đã hoàn tác thay đổi cuối cùng và khôi phục bản nháp trước đó.' }]); }
   async function leave() { flushSync(clear); try { await logout(); } finally { onExpired(); } }
-  const validation = issues(values); const remaining = Object.keys(validation).length;
+  const validation = issues(values);
+  for (const field of activeFields(values)) if (parts(field, values[field.id] ?? '').some(part => part.overflow)) validation[field.id] = 'Nội dung chưa vừa vùng điền.';
+  const remaining = Object.keys(validation).length;
   return <main id="main-content" className={`${styles.app} ${manualMode ? styles.manualMode : ''}`} style={viewportStyle}>
     <header className={styles.topbar}><div className={styles.logo}><BrandMark /><span>Hồ Sơ <b>AI</b></span></div><nav aria-label="Không gian cá nhân"><Link href="/research" prefetch={false}>Tra cứu</Link><Link href="/portal" prefetch={false}>Hồ sơ</Link><button type="button" onClick={() => setReviewOpen(true)}>Tài liệu</button></nav><button type="button" onClick={leave} className={styles.logout} aria-label="Đăng xuất"><span>{username}</span><LogOut size={16} /></button></header>
     <div className={styles.content}><div className={styles.procedure}><div><h1>Gia hạn tạm trú</h1><p>NA5 · Cấp tỉnh · 1.001146</p></div><button type="button" onClick={() => setReviewOpen(true)}>{remaining ? `${remaining} mục cần bổ sung` : 'Rà soát bản nháp'}</button></div>
