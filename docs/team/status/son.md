@@ -128,3 +128,47 @@ No active third Son implementation task was found in the inspected planning chat
 Kim's manager is proposed as shared integration coordinator; Son/Vincent team
 designation is not recorded. No team agreement, merge, backend deployment,
 migration, source approval, external contact or monitoring is claimed or performed.
+
+## Update — 2026-10-31 12:50 Asia/Saigon
+
+Fetch succeeded. This section supersedes the missing-publication observations
+above where explicitly noted; earlier evidence remains a historical snapshot.
+
+- **Vincent foundation received:** `codex/procedure-foundation`, exact producer
+  `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`. Inspected `README.md`,
+  `docs/assistant.md`, `api/assistant.py`, `docs/procedure-profiles.md` and the
+  active data index. Code and interface documentation are now published.
+  `POST /assistant/chat` accepts message, optional procedure_code and history;
+  returns status, answer, citations and model. No code means search, whose
+  embeddings/calibration remain unconfigured per producer documentation. Explicit
+  procedure selection still enforces context validation gates. The database is
+  not exported in Git; migrations alone create an empty database on a new clone.
+- **Voice consumer acknowledgement: adaptation required.** Existing intake at
+  code `45943572a225fa0cd628d5977a04e66ad5c9dcc8` targets registration/renewal
+  (`1.004194`/`1.002755`), while the published active data catalog is
+  `1.001146`, `1.003326`, `1.003342`, `1.000771` (foreigner/NA5 journeys).
+  Son must select the shared demo scope with the owners; no automatic mapping.
+  The chat response also lacks a direct canonical procedure/checklist version
+  field: agree the authoritative profile/context reference with Vincent before
+  claiming the report and voice share an immutable checklist. Prompt-generated
+  prose is not the structured checklist. No integration tests were executed here.
+- **Kim progress report received:** `codex/kim/team-05-integration-checkpoint`,
+  exact status SHA `845291a04329324791c6ecf726037577ef8986e1`. Her status now
+  describes APP-01/AUTH-01/FORM-02/UI-01, local synthetic backend compatibility,
+  app.v1 profile/revision semantics and a runnable local UI mock. It explicitly
+  says application branches/contracts are not yet published. Their code cannot
+  be fetched just because this status lists local hashes. Actual app.v1/Clerk
+  consumer adaptation remains blocked until an accessible producer ref is given.
+- **Son voice local delivery progressed:** code `45943572a225fa0cd628d5977a04e66ad5c9dcc8`,
+  handoff `1918912` on the local voice branch. Scoped voice paths were clean at
+  this check; other root prototypes remain untracked and untouched. Voice/access
+  code is still not published on the fetched remote branches.
+
+Coordination updates were sent to both existing Son implementation chats. The
+voice owner was asked to inspect Vincent's exact interface, identify scope and
+version/checklist gaps, and prepare the consumer handoff without implementing a
+second RAG or activating real procedure advice. The access owner was asked to
+use Kim's report to refine the precise identity/profile/consent requests, without
+inventing her unpublished contract. Sending is not acknowledgement or execution.
+Requests to Kim/Vincent remain copy-ready in this file, not directly sent to
+their inaccessible chats. No backend was started, migrated or publicly exposed.
