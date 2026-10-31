@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { emptyValues } from '@/components/na5-demo/model';
+import { emptyValues, type Values } from '@/components/na5-demo/model';
 import { applyRows, prepareRows, selectRow, type PrefillBinding, type PrefillSource } from './prefill-model';
 
 const binding: PrefillBinding = { session: 'account-a:session-1', document: 'code:form:schema:epoch-1', draftRevision: 4, profileId: 'profile-a', profileRevision: 2 };
@@ -16,7 +16,7 @@ test('contact proposals are alternatives for one target; user can select combine
   assert.throws(() => applyRows(rows.map(item => ({ ...item, selected: true })), emptyValues(), binding, binding));
 });
 test('typed draft answers stay locked even when equal to the saved value', () => {
-  const draft = { ...emptyValues(), applicant_full_name: 'TYPED NAME' };
+  const draft: Values = { ...emptyValues(), applicant_full_name: 'TYPED NAME' };
   const rows = prepareRows(source([row('name', 'applicant_full_name', 'TYPED NAME'), row('dob', 'birth_date', '1990-02-01')]), draft);
   assert.equal(rows[0].locked, true); assert.equal(rows[0].selected, false);
   const next = applyRows(rows, draft, binding, binding);

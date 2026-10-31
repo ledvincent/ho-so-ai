@@ -1,3 +1,4 @@
+import { LocalizedStatus } from '@/components/ui/locale';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ArrowRight, FileText, RefreshCw, UserRound } from 'lucide-react';
@@ -15,7 +16,7 @@ export default async function Portal() {
     const local = await appSession();
     const identity = identityFrom(local);
     if (local.status === 'signed-out') redirect('/login');
-    if (local.status !== 'signed-in' || !identity) return <main className="auth-panel"><section className="card"><h1>Chưa thể kiểm tra phiên.</h1><a href="/portal">Thử lại</a></section></main>;
+    if (local.status !== 'signed-in' || !identity) return <LocalizedStatus retry="/portal" />;
     return <AuthenticatedPortal session={identity} view="profile" />;
   }
   let session: Awaited<ReturnType<typeof verifiedSession>>;

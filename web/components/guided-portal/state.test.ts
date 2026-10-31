@@ -30,3 +30,13 @@ test('correction diff includes deleted branch data, and snapshots allow a comple
   assert.deepEqual(before, snapshot);
   assert.equal(snapshot.organisation_name, example.organisation_name);
 });
+
+test('appending a user answer preserves local-message translation and change metadata independently of transport history', async () => {
+  const { appendUserTurn } = await import('./state');
+  const before = [{ role: 'assistant' as const, content: 'Đã áp dụng các mục bạn đã chọn vào bản nháp.', ui: true, changes: [{ id: 'contact', before: '', after: 'fixture@example.test' }] }];
+  const after = appendUserTurn(before, 'Fictional answer');
+  assert.equal(after[0], before[0]);
+  assert.equal(after[0].ui, true);
+  assert.equal('changes' in after[0] && after[0].changes[0].after, 'fixture@example.test');
+  assert.deepEqual(after.map(({role,content}) => ({role,content})), [{role:'assistant',content:before[0].content},{role:'user',content:'Fictional answer'}]);
+});

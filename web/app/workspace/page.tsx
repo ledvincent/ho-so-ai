@@ -1,3 +1,4 @@
+import { LocalizedStatus } from '@/components/ui/locale';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { verifiedSession } from '@/lib/server/clerk';
@@ -13,7 +14,7 @@ export default async function Workspace() {
     const local = await appSession();
     const identity = identityFrom(local);
     if (local.status === 'signed-out') redirect('/login');
-    if (local.status !== 'signed-in' || !identity) return <main className="auth-panel"><section className="card"><h1>Chưa thể kiểm tra phiên.</h1><a href="/workspace">Thử lại</a></section></main>;
+    if (local.status !== 'signed-in' || !identity) return <LocalizedStatus retry="/workspace" />;
     // Pick only the public identity view; never serialize the server token.
     return <AuthenticatedPortal session={identity} />;
   }

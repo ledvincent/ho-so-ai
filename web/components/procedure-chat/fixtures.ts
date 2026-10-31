@@ -9,18 +9,18 @@ const visa: Candidate = { code: '1.003342', name: 'Cấp thị thực cho ngư�
 export const fixtureCatalog: Candidate[] = [stay, visa];
 export const fixtureFormAdapter: GuidedAdapter = async input => {
   const field = editableFields(input.values).find(item => item.id === input.focusField) ?? nextMissing(input.values);
-  if (!field) return { values: { ...input.values }, nextField: null, answer: 'Tình huống UI: các mục bắt buộc đã được điền. Mẫu vẫn chờ duyệt.' };
-  if (!input.message.trim()) return { values: { ...input.values }, nextField: field.id, answer: `Tình huống UI · Nhập dữ liệu giả cho: ${field.label}.` };
+  if (!field) return { ui: true, values: { ...input.values }, nextField: null, answer: 'Tình huống UI: các mục bắt buộc đã được điền. Mẫu vẫn chờ duyệt.' };
+  if (!input.message.trim()) return { ui: true, values: { ...input.values }, nextField: field.id, answer: `Tình huống UI · Nhập dữ liệu giả cho: ${field.label}.` };
   const parsed = resolveLiteral(field, input.message);
-  if ('clarification' in parsed) return { values: { ...input.values }, nextField: field.id, answer: parsed.clarification };
+  if ('clarification' in parsed) return { ui: true, values: { ...input.values }, nextField: field.id, answer: parsed.clarification };
   const values = updateValue(input.values, field.id, parsed.value); const next = nextMissing(values);
-  return { values, nextField: next?.id ?? null, answer: `Tình huống UI · Đã cập nhật bản nháp.${next ? ` Mục tiếp theo: ${next.label}.` : ''}` };
+  return { ui: true, values, nextField: next?.id ?? null, answer: `Tình huống UI · Đã cập nhật bản nháp.${next ? ` Mục tiếp theo: ${next.label}.` : ''}` };
 };
 export function fixtureDiscovery(scenario: FixtureScenario): DiscoveryAdapter {
   return {
     async chat() {
       if (scenario === 'unavailable') throw new Error('DiscoveryUnavailable');
-      return { status: 'needs_clarification', answer: 'Tình huống thử UI: hãy kiểm tra các kết quả có cấu trúc trước khi chọn thủ tục. Đây không phải trả lời từ dịch vụ tra cứu.', citations: [], model: null };
+      return { ui: true, status: 'needs_clarification', answer: 'Tình huống thử UI: hãy kiểm tra các kết quả có cấu trúc trước khi chọn thủ tục. Đây không phải trả lời từ dịch vụ tra cứu.', citations: [], model: null };
     },
     async search() {
       if (scenario === 'unavailable') throw new Error('DiscoveryUnavailable');

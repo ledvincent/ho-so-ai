@@ -1,4 +1,6 @@
 'use client';
+import { useLocale, LocaleToggle } from '@/components/ui/locale';
+
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { RichProfileEditor } from '@/components/saved-profile/editor';
@@ -10,6 +12,7 @@ import styles from './portal.module.css';
 
 /** Server guard supplies this public session view; it contains no credential. */
 export function AuthenticatedPortal({ session, view = 'workspace', fixtures = false }: { session: LocalSession; view?: 'workspace' | 'profile'; fixtures?: boolean }) {
+  const { t } = useLocale();
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const live = useRef(true);
@@ -37,7 +40,7 @@ export function AuthenticatedPortal({ session, view = 'workspace', fixtures = fa
     const timer = setTimeout(expire, Math.max(0, Math.min(expiryMs - Date.now(), 2147483647)));
     return () => { live.current = false; controller.abort(); clearTimeout(timer); window.removeEventListener('focus', focus); document.removeEventListener('visibilitychange', focus); };
   }, [session.user.id, session.expires_at]);
-  if (!ready) return <main className={styles.loginPage}><section className={styles.loginCard}><h1>{failed ? 'Chưa thể kiểm tra phiên.' : 'Đang mở không gian của bạn…'}</h1>{failed && <><p>Bản nháp đã được xóa khỏi màn hình. Kiểm tra lại kết nối.</p><button type="button" className={styles.primary} onClick={() => window.location.reload()}>Thử lại</button></>}</section></main>;
-  if (view === 'profile') return <main id="main-content" className={styles.profilePage}><Link href="/workspace" prefetch={false}>← Trợ lý hồ sơ</Link><h1>Hồ sơ của bạn</h1><RichProfileEditor key={`${session.user.id}:${session.expires_at}`} client={profile} onExpired={expire} onLogout={async () => { setReady(false); try { await logoutRequest(); expire(); } catch { setFailed(true); } }} /></main>;
+  if (!ready) return <main className={styles.loginPage}><section className={styles.loginCard}><LocaleToggle /><h1>{failed ? t("Chưa thể kiểm tra phiên.") : t("Đang mở không gian của bạn…")}</h1>{failed && <><p>{t("Bản nháp đã được xóa khỏi màn hình. Kiểm tra lại kết nối.")}</p><button type="button" className={styles.primary} onClick={() => window.location.reload()}>{t("Thử lại")}</button></>}</section></main>;
+  if (view === 'profile') return <main id="main-content" className={styles.profilePage}><Link href="/workspace" prefetch={false}>{t("← Trợ lý hồ sơ")}</Link><h1>{t("Hồ sơ của bạn")}</h1><RichProfileEditor key={`${session.user.id}:${session.expires_at}`} client={profile} onExpired={expire} onLogout={async () => { setReady(false); try { await logoutRequest(); expire(); } catch { setFailed(true); } }} /></main>;
   return <ProcedureChat key={`${session.user.id}:${session.expires_at}`} username={session.user.username} formAdapter={adapter} discovery={discovery} profile={{ client: profile.prefill, session: `${session.user.id}:${session.expires_at}` }} logout={logoutRequest} onExpired={expire} fixtures={fixtures} />;
 }

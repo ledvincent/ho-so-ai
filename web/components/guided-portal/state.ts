@@ -1,9 +1,12 @@
 import { editableFields, emptyValues, fieldIssue, payloadValues, schema, type Values } from '@/components/na5-demo/model';
 
-export type Message = { role: 'user' | 'assistant'; content: string };
+export type Message = { role: 'user' | 'assistant'; content: string; ui?: boolean };
 export type Change = { id: string; before: string; after: string };
+export function appendUserTurn<T extends Message>(messages: readonly T[], content: string): (T | Message)[] {
+  return [...messages, { role: 'user', content }];
+}
 /** UI view model only. AUTH-02/CHAT-01 owns the eventual HTTP contract. */
-export type GuidedReply = { values: Values; answer: string; nextField: string | null };
+export type GuidedReply = { values: Values; answer: string; nextField: string | null; ui?: boolean };
 export type GuidedAdapter = (input: { message: string; values: Values; revision: number; focusField: string | null; history: Message[]; signal: AbortSignal }) => Promise<GuidedReply>;
 
 export function nextMissing(values: Values) {

@@ -83,7 +83,7 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
         if (typeof item.revision_reference === 'string') provenance.push(`Phiên bản: ${item.revision_reference}`);
         if (typeof item.review_status === 'string') provenance.push(`Trạng thái mẫu: ${item.review_status}`);
       }
-      return { candidate, forms, provenance, fixture: false, factsReady, requirements: readRequirements(data.requirements, formIds), sourceVersion: typeof data.sha256 === 'string' ? data.sha256 : undefined, otherForms };
+      return { candidate, forms, provenance, fixture: false, factsReady, requirements: readRequirements(data.requirements, formIds), sourceVersion: typeof data.sha256 === 'string' ? data.sha256 : undefined, sourceUrl: safeSourceUrl(data.source_url) ? data.source_url : undefined, fetchedAt: typeof data.fetched_at === 'string' ? data.fetched_at : undefined, otherForms };
     },
     async verifyWorkflow(candidate, formSha, signal) {
       if (!codePattern.test(candidate.code) || !hashPattern.test(formSha)) throw invalid();

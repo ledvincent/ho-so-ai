@@ -9,7 +9,7 @@ const definitions: ProfileInput[] = [
   { id: 'basics.current_nationality', section: 'basics', label: 'Quốc tịch hiện nay' },
   { id: 'basics.occupation', section: 'basics', label: 'Nghề nghiệp' },
   { id: 'contact.phone_number', section: 'contact', label: 'Số điện thoại', kind: 'tel' },
-  { id: 'contact.email', section: 'contact', label: 'Email', kind: 'email' },
+  { id: 'contact.email', section: 'contact', label: 'Email', hint: 'Hồ sơ có thể giữ giá trị dạng văn bản đã lưu trước đây; kiểm tra trước khi dùng lại.' },
   { id: 'passport.document_number', section: 'passport', label: 'Số hộ chiếu / giấy tờ đi lại', hint: 'Giữ nguyên các số 0 ở đầu.' },
   { id: 'passport.document_type', section: 'passport', label: 'Loại giấy tờ' },
   { id: 'passport.issue_date', section: 'passport', label: 'Ngày cấp', kind: 'date' },

@@ -2,10 +2,10 @@
 export type Candidate = { code: string; name: string };
 export type FormReference = { id?: number; sha256: string; label: string; href?: string; reviewStatus?: string; revision?: string };
 export type SourceRequirement = { id: number; position: number; groupHeading: string; text: string; originals: number | null; copies: number | null; formIds: number[] };
-export type ProcedureDetail = { candidate: Candidate; forms: FormReference[]; provenance: string[]; fixture: boolean; factsReady: boolean; requirements?: SourceRequirement[]; sourceVersion?: string; otherForms?: { id: number; label: string }[] };
+export type ProcedureDetail = { candidate: Candidate; forms: FormReference[]; provenance: string[]; fixture: boolean; factsReady: boolean; requirements?: SourceRequirement[]; sourceVersion?: string; sourceUrl?: string; fetchedAt?: string; otherForms?: { id: number; label: string }[] };
 export type SearchResult = { status: 'found' | 'not_found'; candidates: Candidate[] };
 export type Citation = { id: string; title: string; url: string };
-export type ProcedureAnswer = { status: 'answered' | 'needs_clarification' | 'insufficient_context' | 'out_of_scope'; answer: string; citations: Citation[]; model: string | null };
+export type ProcedureAnswer = { status: 'answered' | 'needs_clarification' | 'insufficient_context' | 'out_of_scope'; answer: string; citations: Citation[]; model: string | null; ui?: boolean };
 export type HistoryTurn = { role: 'user' | 'assistant'; content: string };
 export type DiscoveryAdapter = {
   chat: (message: string, history: HistoryTurn[], procedureCode: string | null, signal: AbortSignal) => Promise<ProcedureAnswer>;
