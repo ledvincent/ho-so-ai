@@ -1,0 +1,57 @@
+{
+  "task": "INTEGRATION-01",
+  "state": "preparation_only_not_assembled",
+  "owner": "Son",
+  "base": "44b24a220f8f88556617e5d3fc993e0c4465aad2",
+  "procedure_candidate": "1.001146",
+  "components": {
+    "vincent": {
+      "ref": "codex/procedure-foundation",
+      "sha": "9386f428e6794acd0a8b9e4cb3cc759bf5c989b4",
+      "acknowledgement": "received; adaptation required"
+    },
+    "kim_backend": {
+      "ref": "codex/kim/app-01-profile-integration",
+      "sha": "ae77fa8bd47d590a53d26690b687bcad80692a9b",
+      "contract": "app.v1",
+      "acknowledgement": "tested compatible for isolated ACCESS profile consumer only"
+    },
+    "son_voice": {
+      "ref": "codex/son/voice-01-browser-conversation",
+      "sha": "cad8198107ce7a38269834bf0c73522dad0348ba",
+      "functional_sha": "346c013ffea49ff15cc529672bdff446a59be0f5",
+      "offline_tests": 56
+    },
+    "son_access": {
+      "ref": "codex/son/access-01-tool-authorization",
+      "sha": "64d0d88d7656e6dff00d909c2790d3243e7133cc",
+      "core_tests": 24,
+      "app_v1_contract_tests": 28
+    }
+  },
+  "pending": [
+    "Kim NA5 frontend publication after her review",
+    "Shared-file resolution ownership and service/database/port agreement",
+    "Canonical voice session and authenticated consent lifecycle",
+    "Shared real Clerk configuration and live revocation evidence",
+    "Reviewed data and immutable procedure/checklist reference",
+    "Full mobile integration and negative-path tests"
+  ],
+  "merge_calculation": {
+    "tool": "git merge-tree --write-tree",
+    "conflicts": [
+      ".env.example",
+      ".gitignore",
+      "README.md",
+      "compose.yaml"
+    ],
+    "checkout_modified": false
+  },
+  "no_claims": [
+    "live authentication verified",
+    "live PostgreSQL verified",
+    "official template approved",
+    "complete demo verified",
+    "merged into main"
+  ]
+}
