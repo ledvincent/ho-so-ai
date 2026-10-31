@@ -1,6 +1,6 @@
 {
   "name": "ho-so-ai-voice-browser-checks",
   "private": true,
-  "scripts": {"test:browser": "node tests/browser_smoke.cjs", "test:audio-client": "node tests/audio_client_smoke.cjs"},
+  "scripts": {"test:browser": "node tests/browser_smoke.cjs", "test:audio-client": "node tests/audio_client_smoke.cjs", "test:openai-harness": "node tests/openai_harness_smoke.cjs"},
   "devDependencies": {"playwright": "1.62.1"}
 }

@@ -139,3 +139,38 @@ Ce suivi complete le compte rendu existant; code dans
 `son/voice/src/voice_app/launch.py` et tests de saisie/activation. Main distant observe au
 commit `60cb3be` apres fetch, ajouts de profils managers consultes sans les
 fusionner; aucun changement du tableau commun dans cette suite.
+
+## Suivi — audio reel et page de diagnostic
+
+L'utilisateur a lance le backend prive sur le port 8001. Verification locale :
+`/health` et `/api/voice/capabilities` repondent 200 avec audio active. La cle
+reste dans le processus lance par l'utilisateur; aucune valeur lue par l'agent.
+
+Pour corriger la confusion entre API audio et page de test, ajout d'un mode
+explicite `/?audio=openai&language=vi` ou `en`, dans le banc d'essai existant.
+HTML/CSS et design produit inchanges. Micro -> transcription a verifier -> envoi;
+case de lecture pour entendre l'accueil et les reponses serveur. Disclosure
+specifique OpenAI, aucun appel audio/son automatique au chargement. Le mode
+navigateur par defaut reste disponible. Ce raccordement de diagnostic n'etablit
+pas l'integration avec l'UI de Kim.
+
+Verification du raccordement : `node son/voice/tests/openai_harness_smoke.cjs`
+-> passe avec audio simule et routes fournisseur interceptees : opt-in, lecture
+accueil, mic/arret, verification du texte avant tour, reponse EN, retrait consent.
+`node son/voice/tests/browser_smoke.cjs` -> regression du mode navigateur passe.
+Playwright/Edge et NODE_PATH selon les instructions precedentes. Fichiers de la
+suite : `son/voice/src/voice_app/static/voice.js`, nouveau test navigateur,
+`package.json`, README et ce compte rendu. Backend/API/contrats inchanges.
+
+Verification fournisseur **reelle** via le serveur local, sur textes predefinis
+et sans voix ou donnees personnelles de l'utilisateur : synthese VI HTTP 200
+(139392 octets MP3), synthese EN HTTP 200, transcription de ces deux fichiers
+synthetiques VI et EN HTTP 200 avec texte non vide. Quatre requetes audio API au
+total, sans retry; pas de journalisation des transcriptions. Cela prouve le bon
+aller-retour technique, pas la qualite percue, l'accent, le micro physique ou la
+latence en situation reelle. Les fichiers audio sont locaux dans le dossier
+ignore `work/voice-live/`, non committes.
+
+Etat : VOICE-01 toujours en cours; audio technique actif, lookup/identite/rapport
+non integres. Prochaine action : utilisateur teste l'ecoute et son micro avec une
+demande fictive; Kim valide le raccordement produit. Pas de push ni de fusion.

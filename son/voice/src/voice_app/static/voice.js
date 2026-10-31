@@ -1,4 +1,12 @@
 "use strict";
+// The existing layout is a technical test harness, not Kim's product UI.
+if (new URLSearchParams(location.search).get("audio") === "openai") {
+  openAIHarness();
+} else {
+  browserHarness();
+}
+
+function browserHarness() {
 const $ = (id) => document.getElementById(id);
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let ready = false;
@@ -173,3 +181,139 @@ window.addEventListener("pagehide", () => {
   fetch("/api/voice/session", {method:"DELETE", credentials:"same-origin", keepalive:true}).catch(() => {});
 });
 start();
+}
+
+async function openAIHarness() {
+  const $ = (id) => document.getElementById(id);
+  const language = new URLSearchParams(location.search).get("language") === "en" ? "en" : "vi";
+  const en = language === "en";
+  let client, ready = false, busy = false, listening = false, transcribing = false, available = false;
+  const stateText = {
+    idle: en ? "Ready. Use only synthetic demo needs." : "Sẵn sàng. Chỉ dùng nhu cầu giả định để thử.",
+    listening: en ? "Listening… Press Stop when finished." : "Đang ghi âm… Chọn Dừng khi nói xong.",
+    transcribing: en ? "Transcribing with OpenAI…" : "Đang nhận dạng bằng OpenAI…",
+    awaiting_transcript_confirmation: en ? "Check the recognized text, then press Send." : "Kiểm tra nội dung nhận dạng rồi chọn Gửi.",
+    loading_speech: en ? "Generating the AI voice…" : "Đang tạo giọng nói AI…",
+    speaking: en ? "Playing the AI-generated voice. Recording will interrupt it." : "Đang phát giọng nói AI. Bắt đầu ghi âm để ngắt lời.",
+    recording_error: en ? "Microphone error. Try typing instead." : "Không ghi âm được. Bạn có thể nhập nội dung.",
+    transcription_error: en ? "Transcription failed. Check the API account or use text." : "Nhận dạng không thành công. Kiểm tra tài khoản API hoặc nhập nội dung.",
+    speech_error: en ? "Audio failed. Check model access/credits and try again." : "Tạo âm thanh thất bại. Kiểm tra quyền dùng model/số dư API rồi thử lại.",
+    playback_error: en ? "Playback failed. Try enabling Read aloud again." : "Không phát được âm thanh. Thử bật lại Đọc câu trả lời.",
+    audio_too_large: en ? "Recording is too large. Please record a shorter request." : "Ghi âm quá dài. Hãy ghi một câu ngắn hơn.",
+  };
+  const consent = $("audio-consent");
+  const read = $("read-aloud");
+  const input = $("utterance");
+  function controls() {
+    $("send").disabled = !ready || busy || listening || transcribing;
+    input.disabled = busy || listening || transcribing;
+    $("microphone").disabled = !ready || busy || transcribing || !available || !consent.checked || !navigator.mediaDevices?.getUserMedia || !globalThis.MediaRecorder;
+    $("microphone").classList.toggle("listening", listening);
+    $("microphone").textContent = listening ? (en ? "Stop recording" : "Dừng ghi âm") : (en ? "Record with OpenAI" : "Ghi âm với OpenAI");
+    read.disabled = !ready || !available || !consent.checked;
+    for (const button of $("choices").querySelectorAll("button")) button.disabled = !ready || busy || listening || transcribing;
+  }
+  function message(text, kind = "assistant") {
+    const element = document.createElement("p");
+    element.className = "message " + kind;
+    element.textContent = text;
+    $("messages").appendChild(element);
+    element.scrollIntoView({block:"nearest"});
+  }
+  function failure(error) {
+    if (error.name === "AbortError") return;
+    if (error.message === "voice_http_401") ready = false;
+    $("status").textContent = error.message === "voice_http_401"
+      ? (en ? "Session expired. Press Restart." : "Phiên đã hết hạn. Chọn Bắt đầu lại.")
+      : (en ? "Audio unavailable. Check microphone permission, API credits/model access, or try text." : "Âm thanh chưa khả dụng. Kiểm tra quyền micro, số dư/quyền model API hoặc nhập nội dung.");
+    controls();
+  }
+  function play() {
+    if (read.checked && consent.checked && ready) client.readReply().catch(failure);
+  }
+  function render(response) {
+    message(response.reply);
+    $("choices").replaceChildren();
+    for (const choice of response.choices || []) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.textContent = choice.label;
+      button.onclick = () => submit(choice.text);
+      $("choices").appendChild(button);
+    }
+    const names = en ? {"1.004194":"Register temporary residence", "1.002755":"Renew temporary residence"} : {"1.004194":"Đăng ký tạm trú", "1.002755":"Gia hạn tạm trú"};
+    $("candidate-title").textContent = names[response.candidate_code] || (en ? "Let's clarify your need." : "Mình cùng làm rõ.");
+    $("candidate-description").textContent = en
+      ? "Intent routing only. Reviewed official data is not connected yet."
+      : "Chỉ định hướng nhu cầu. Dữ liệu chính thức đã duyệt chưa được kết nối.";
+    controls();
+  }
+  async function submit(text) {
+    if (!ready || busy || listening || transcribing || !text.trim()) return;
+    busy = true;
+    controls();
+    message(text.trim(), "user");
+    input.value = "";
+    let success = false;
+    try { render(await client.turn(text.trim(), language)); success = true; } catch (error) { failure(error); }
+    finally { busy = false; controls(); }
+    if (success) play();
+  }
+  async function start() {
+    if (busy || !client) return;
+    ready = false;
+    busy = true;
+    controls();
+    $("messages").replaceChildren();
+    $("choices").replaceChildren();
+    input.value = "";
+    try {
+      const capabilities = await fetch("/api/voice/capabilities").then((result) => result.json());
+      available = capabilities.audio_api_enabled;
+      const welcome = await client.startSession(language);
+      client.setAudioConsent(consent.checked);
+      ready = true;
+      render(welcome);
+      $("status").textContent = available
+        ? (en ? "OpenAI is enabled. Accept audio processing, then enable Read aloud to hear the greeting." : "OpenAI đã bật. Đồng ý xử lý âm thanh rồi bật Đọc câu trả lời để nghe lời chào.")
+        : (en ? "OpenAI audio is not configured on this server. Text still works." : "Máy chủ chưa cấu hình âm thanh OpenAI. Bạn vẫn có thể nhập nội dung.");
+    } catch (error) { failure(error); }
+    finally { busy = false; controls(); }
+  }
+  document.querySelector(".session-heading h2").textContent = en ? "OpenAI audio test · English" : "Thử âm thanh OpenAI · Tiếng Việt";
+  consent.parentElement.lastChild.textContent = en
+    ? " I agree to send demo audio to OpenAI and hear an AI-generated voice. API requests may incur charges. Do not use personal data."
+    : " Tôi đồng ý gửi âm thanh thử nghiệm đến OpenAI và nghe giọng nói do AI tạo. Yêu cầu API có thể mất phí. Không dùng dữ liệu cá nhân.";
+  if (en) {
+    document.documentElement.lang = "en";
+    $("send").textContent = "Send";
+    $("send").setAttribute("aria-label", "Send");
+    $("restart").textContent = "Restart";
+    document.querySelector("label[for=utterance]").textContent = "Type or check your request";
+    input.placeholder = "Example: I want to renew temporary residence";
+    read.parentElement.lastChild.textContent = " Read aloud";
+  }
+  controls();
+  try {
+    const {VoiceAudioClient} = await import("/audio-client.js");
+    client = new VoiceAudioClient({
+      onState(state) {
+        listening = state === "listening";
+        transcribing = state === "transcribing";
+        if (stateText[state]) $("status").textContent = stateText[state];
+        controls();
+      },
+      onTranscript(transcript) { input.value = transcript.text; input.focus(); },
+    });
+    $("composer").onsubmit = (event) => { event.preventDefault(); submit(input.value); };
+    $("restart").onclick = start;
+    consent.onchange = () => { client.setAudioConsent(consent.checked); if (!consent.checked) read.checked = false; controls(); };
+    read.onchange = () => { if (read.checked) play(); else client.interrupt(); };
+    $("microphone").onclick = () => { if (listening) client.stopRecording(); else client.startRecording().catch(failure); };
+    window.addEventListener("pagehide", () => {
+      client.interrupt();
+      fetch("/api/voice/session", {method:"DELETE", credentials:"same-origin", keepalive:true}).catch(() => {});
+    });
+    await start();
+  } catch (error) { failure(error); }
+}

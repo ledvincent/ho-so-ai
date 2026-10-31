@@ -144,8 +144,19 @@ The typed key is kept only by the server process, not written to `.env`, shell
 history or a new environment variable. Unsafe echoed-input fallback is refused.
 Stop with Ctrl+C. Key validity, model access, actual billing and speech quality
 still need a real, synthetic-audio smoke test after the user enters the key.
-The frozen test UI remains browser-speech based; the new server audio APIs are
-consumed through the headless adapter intended for Kim's UI.
+The default test UI remains browser-speech based. An explicit diagnostic mode
+uses the server adapter without adding a second product UI:
+
+- Vietnamese: http://127.0.0.1:8001/?audio=openai&language=vi
+- English: http://127.0.0.1:8001/?audio=openai&language=en
+
+Accept the audio-processing/AI-voice disclosure, then check **Read aloud**
+(`Đọc câu trả lời`) to hear the greeting. Nothing plays or calls the paid audio
+provider on page load. **Record with OpenAI** starts the microphone; press **Stop
+recording**, check the recognized text, then **Send**. Read aloud stays on for
+subsequent replies. Switching it off or recording interrupts playback. No restart
+is needed after static test-harness assets change; reload the diagnostic URL.
+Product UI design/integration still belongs to Kim.
 
 The new audio path is speech recognition -> user-confirmed text -> deterministic
 dialogue -> synthesis of the latest server-owned reply. It does not forward
@@ -231,3 +242,9 @@ Migration: existing Vietnamese endpoints stay valid; response fields are additiv
 Kim can adopt language selection and the headless adapter independently. No
 Vincent procedure/report schema changed, and no legal content is translated.
 Keep the same origin and `/api/voice` paths until proxy/cookie transport is agreed.
+
+Diagnostic-page wiring test (mocked audio; no paid calls):
+
+```powershell
+node son/voice/tests/openai_harness_smoke.cjs
+```
