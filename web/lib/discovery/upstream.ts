@@ -1,23 +1,11 @@
 import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { isIP } from 'node:net';
-
-export type JsonObject = Record<string, unknown>;
-export type DiscoveryChatRequest = {
-  message: string;
-  procedure_code?: string | null;
-  history?: { role: 'user' | 'assistant'; content: string }[];
-};
-export type DiscoveryOriginal = { bytes: Uint8Array; contentType: string; filename: string };
-export type DiscoveryClient = {
-  search(query: string): Promise<JsonObject>;
-  procedure(code: string): Promise<JsonObject>;
-  profile(code: string): Promise<JsonObject>;
-  analysis(code: string, sha: string): Promise<JsonObject>;
-  original(code: string, sha: string): Promise<DiscoveryOriginal>;
-  schema(code: string, sha: string): Promise<JsonObject>;
-  chat(body: DiscoveryChatRequest): Promise<JsonObject>;
-};
+import { DiscoveryError } from './errors';
+import { chatRequest, chatResponse, documentId, documentSchema as checkDocumentSchema, documentValues, formAction, pagesResult, reviewToken, validationResult } from './document-contract';
+import type { DiscoveryClient, DiscoveryDocumentSchema, JsonObject } from './document-types';
+export { DiscoveryError } from './errors';
+export type * from './document-types';
 
 const CODE = /^[0-9]\.[0-9]{6}$/;
 const SHA = /^[a-f0-9]{64}$/;
@@ -25,15 +13,9 @@ const SUPPORTED_CODE = '1.001146';
 const SUPPORTED_SHA = 'a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751';
 const JSON_LIMIT = 1024 * 1024;
 const ORIGINAL_LIMIT = 10 * 1024 * 1024;
+const PAGE_LIMIT = 16 * 1024 * 1024;
 const UPSTREAM_TIMEOUT = 20_000;
-const CHAT_TIMEOUT = 65_000;
-
-export class DiscoveryError extends Error {
-  constructor(public readonly status: number, public readonly code: string, public readonly retryAfter?: string) {
-    super(code);
-    this.name = 'DiscoveryError';
-  }
-}
+const CHAT_TIMEOUT = 180_000;
 
 function invalid(): never { throw new DiscoveryError(502, 'DISCOVERY_INVALID_RESPONSE'); }
 function requestInvalid(): never { throw new DiscoveryError(422, 'INVALID_REQUEST'); }
@@ -103,6 +85,7 @@ function upstreamError(response: Response): never {
     throw new DiscoveryError(429, 'RATE_LIMITED', /^[0-9]{1,4}$/u.test(supplied) && Number(supplied) <= 3600 ? supplied : '60');
   }
   if (response.status === 504) throw new DiscoveryError(504, 'DISCOVERY_TIMEOUT');
+  if (response.status === 502) invalid();
   if (response.status === 413) throw new DiscoveryError(413, 'REQUEST_TOO_LARGE');
   if (response.status === 400 || response.status === 422) throw new DiscoveryError(response.status, 'INVALID_REQUEST');
   if (response.status >= 300 && response.status < 400) invalid();
@@ -224,14 +207,14 @@ export function createDiscoveryClient(options: { baseUrl?: string; fetch?: typeo
   // Copy caller-owned metadata so a later mutation cannot change the workflow gate.
   const workflow = structuredClone(options.workflow);
 
-  async function request(path: string, settings: { body?: unknown; binary?: boolean; chat?: boolean } = {}) {
+  async function request(path: string, settings: { body?: unknown; binary?: boolean; chat?: boolean; pages?: boolean } = {}) {
     const base = origin(options.baseUrl); // lazy failure: an unconfigured app can still start
-    if (!/^\/search$|^\/assistant\/chat$|^\/procedures\/[0-9]\.[0-9]{6}(?:\/profile)?$|^\/forms\/[a-f0-9]{64}\/(?:analysis|original)$|^\/workflows\/1\.001146\/schema$/u.test(path)) requestInvalid();
+    if (!/^\/search$|^\/assistant\/(?:chat|setup)$|^\/procedures\/[0-9]\.[0-9]{6}(?:\/(?:profile|documents))?$|^\/forms\/[a-f0-9]{64}\/(?:analysis|original)$|^\/workflows\/1\.001146\/schema$|^\/documents\/[a-z0-9][a-z0-9_-]{0,99}\/(?:schema|template|template-pages|validate|preview|preview-pages|download)$/u.test(path)) requestInvalid();
     const controller = new AbortController();
     let reader: ReadableStreamDefaultReader<Uint8Array> | undefined;
     let timer: ReturnType<typeof setTimeout> | undefined;
     const cancel = () => { void reader?.cancel().catch(() => undefined); };
-    const limit = settings.binary ? ORIGINAL_LIMIT : JSON_LIMIT;
+    const limit = settings.binary ? ORIGINAL_LIMIT : settings.pages ? PAGE_LIMIT : JSON_LIMIT;
     const task = async () => {
       const response = await fetcher(base + path, {
         method: settings.body === undefined ? 'GET' : 'POST',
@@ -261,7 +244,7 @@ export function createDiscoveryClient(options: { baseUrl?: string; fetch?: typeo
       let offset = 0;
       for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
       if (settings.binary) return { bytes, response };
-      try { return { json: object(JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes))) }; }
+      try { return { json: object(JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes))), response }; }
       catch { invalid(); }
     };
     try {
@@ -290,25 +273,38 @@ export function createDiscoveryClient(options: { baseUrl?: string; fetch?: typeo
     const forms = associated(snapshot, sha);
     return validateAnalysis(await json(`/forms/${sha}/analysis`), sha, forms);
   }
+  async function documentSchema(selectedId: string): Promise<DiscoveryDocumentSchema> {
+    documentId(selectedId);
+    return checkDocumentSchema(await json(`/documents/${selectedId}/schema`), selectedId);
+  }
+  function pdf(result: Awaited<ReturnType<typeof request>>): { bytes: Uint8Array; contentType: string } {
+    if (!('bytes' in result) || !result.bytes || !result.response || result.response.headers.get('content-type')?.split(';')[0].trim().toLowerCase() !== 'application/pdf' || new TextDecoder().decode(result.bytes.subarray(0, 5)) !== '%PDF-') invalid();
+    return { bytes: result.bytes, contentType: 'application/pdf' };
+  }
+  function boundedBody(body: unknown): void {
+    if (Buffer.byteLength(JSON.stringify(body)) > JSON_LIMIT) throw new DiscoveryError(413, 'REQUEST_TOO_LARGE');
+  }
   return {
     async search(query) {
       if (typeof query !== 'string' || [...query.trim()].length < 2 || [...query.trim()].length > 1000) requestInvalid();
       const body = { query: query.trim() };
       if (Buffer.byteLength(JSON.stringify(body)) > 4096) throw new DiscoveryError(413, 'REQUEST_TOO_LARGE');
       const result = await json('/search', { body });
-      if (!['found', 'not_found'].includes(string(result.status, 20))) invalid();
+      if (!['found', 'not_found', 'unavailable'].includes(string(result.status, 20))) invalid();
+      string(result.release_id, 200);
+      if (typeof result.degraded !== 'boolean' || (result.status === 'unavailable' && result.degraded !== true)) invalid();
       const results = array(result.results);
       if (results.length > 5 || (result.status === 'found') !== (results.length > 0)) invalid();
       const seen = new Set<string>();
       for (const item of results) {
         const match = object(item), matchCode = code(match.code);
         string(match.name, 2000);
-        if (seen.has(matchCode) || typeof match.score !== 'number' || !Number.isFinite(match.score) || typeof match.similarity !== 'number' || !Number.isFinite(match.similarity)) invalid();
+        if (seen.has(matchCode) || typeof match.score !== 'number' || !Number.isFinite(match.score) || match.score < 0 || !Array.isArray(match.matched_by) || !match.matched_by.length || match.matched_by.length > 4 || new Set(match.matched_by).size !== match.matched_by.length || match.matched_by.some(branch => !['exact', 'keyword', 'typo', 'semantic'].includes(branch))) invalid();
         seen.add(matchCode);
       }
-      return { status: result.status, results: results.map(item => {
+      return { status: result.status, release_id: result.release_id, degraded: result.degraded, results: results.map(item => {
         const match = object(item);
-        return { code: match.code, name: match.name, score: match.score, similarity: match.similarity };
+        return { code: match.code, name: match.name, score: match.score, matched_by: match.matched_by };
       }) };
     },
     procedure,
@@ -355,33 +351,65 @@ export function createDiscoveryClient(options: { baseUrl?: string; fetch?: typeo
       return result;
     },
     async chat(body) {
-      if (!body || typeof body !== 'object' || Array.isArray(body)) requestInvalid();
-      const input = body as JsonObject;
-      if (Object.keys(input).some(key => !['message', 'procedure_code', 'history'].includes(key)) || typeof input.message !== 'string' || [...input.message.trim()].length < 2 || [...input.message.trim()].length > 1000) requestInvalid();
-      if (input.procedure_code != null) code(input.procedure_code, true);
-      const history = input.history ?? [];
-      if (!Array.isArray(history) || history.length > 12) requestInvalid();
-      const turns = history.map(item => {
-        if (!item || typeof item !== 'object' || Array.isArray(item)) requestInvalid();
-        const turn = item as JsonObject;
-        if (Object.keys(turn).some(key => !['role', 'content'].includes(key)) || !['user', 'assistant'].includes(turn.role as string) || typeof turn.content !== 'string' || [...turn.content.trim()].length < 1 || [...turn.content.trim()].length > 8000) requestInvalid();
-        return { role: turn.role, content: turn.content.trim() };
+      const payload = chatRequest(body);
+      boundedBody(payload);
+      return chatResponse(await json('/assistant/chat', { body: payload, chat: true }));
+    },
+    async setup() {
+      const result = await json('/assistant/setup');
+      if (typeof result.generation_configured !== 'boolean' || typeof result.index_ready !== 'boolean') invalid();
+      const procedures = array(result.procedures), seen = new Set<string>();
+      if (procedures.length > 1000) invalid();
+      const checked = procedures.map(value => {
+        const item = object(value), selected = code(item.code);
+        if (seen.has(selected)) invalid();
+        seen.add(selected); return { code: selected, name: string(item.name, 2000), name_en: string(item.name_en, 2000) };
       });
-      const payload = { message: input.message.trim(), ...(input.procedure_code === undefined ? {} : { procedure_code: input.procedure_code }), history: turns };
-      if (Buffer.byteLength(JSON.stringify(payload)) > 400 * 1024) throw new DiscoveryError(413, 'REQUEST_TOO_LARGE');
-      const result = await json('/assistant/chat', { body: payload, chat: true });
-      if (Object.keys(result).some(key => !['status', 'answer', 'citations', 'model'].includes(key))) invalid();
-      if (!['answered', 'insufficient_context', 'needs_clarification', 'out_of_scope'].includes(string(result.status, 30))) invalid();
-      if (!string(result.answer, 16000).trim()) invalid();
-      const refs = array(result.citations), ids = new Set<string>();
-      if (refs.length > 20 || (result.status === 'answered' && refs.length === 0) || (result.status === 'out_of_scope' && refs.length !== 0)) invalid();
-      for (const item of refs) {
-        const citation = object(item), key = string(citation.id, 64);
-        if (Object.keys(citation).some(field => !['id', 'title', 'url'].includes(field)) || !/^[A-Za-z0-9_-]+$/u.test(key) || ids.has(key)) invalid();
-        ids.add(key); string(citation.title, 500); safeUrl(citation.url);
+      for (const key of ['model', 'reasoning_effort']) if (result[key] != null && (typeof result[key] !== 'string' || [...result[key] as string].length > 256)) invalid();
+      return { generation_configured: result.generation_configured, index_ready: result.index_ready, procedures: checked, model: result.model ?? null, reasoning_effort: result.reasoning_effort ?? null };
+    },
+    async documents(selectedCode) {
+      code(selectedCode, true);
+      const result = await json(`/procedures/${selectedCode}/documents`);
+      const documents = array(result.documents).map(value => formAction(value, selectedCode));
+      if (documents.length > 200 || new Set(documents.map(item => item.document_id)).size !== documents.length) invalid();
+      return { documents };
+    },
+    documentSchema,
+    async documentTemplate(selectedId) {
+      await documentSchema(selectedId);
+      const result = pdf(await request(`/documents/${selectedId}/template`, { binary: true }));
+      return { ...result, filename: `${selectedId}-template.pdf` };
+    },
+    async documentPages(selectedId) {
+      const schema = await documentSchema(selectedId);
+      const result = await request(`/documents/${selectedId}/template-pages`, { pages: true });
+      if (!('json' in result)) invalid();
+      return pagesResult(result.json, schema);
+    },
+    async documentValidate(selectedId, body) {
+      const schema = await documentSchema(selectedId);
+      const payload = documentValues(body, schema); boundedBody(payload);
+      return validationResult(await json(`/documents/${selectedId}/validate`, { body: payload }), schema);
+    },
+    async documentPreview(selectedId, body, pages) {
+      const schema = await documentSchema(selectedId);
+      const payload = documentValues(body, schema); boundedBody(payload);
+      const result = await request(`/documents/${selectedId}/${pages ? 'preview-pages' : 'preview'}`, { body: payload, pages, binary: !pages });
+      if (!result.response) invalid();
+      const token = reviewToken(result.response);
+      if (pages) {
+        if (!('json' in result)) invalid();
+        return { data: pagesResult(result.json, schema), contentType: 'application/json', reviewToken: token };
       }
-      if (result.model != null) string(result.model, 256);
-      return result;
+      return { ...pdf(result), reviewToken: token };
+    },
+    async documentDownload(selectedId, body) {
+      const schema = await documentSchema(selectedId);
+      const payload = documentValues(body, schema, true); boundedBody(payload);
+      if (!schema.download_available || schema.review_status !== 'reviewed') throw new DiscoveryError(409, 'DISCOVERY_NOT_READY');
+      const result = pdf(await request(`/documents/${selectedId}/download`, { body: payload, binary: true }));
+      return { ...result, filename: `${selectedId}-filled.pdf` };
     },
   };
 }

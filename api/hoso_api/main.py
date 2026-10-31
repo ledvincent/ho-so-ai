@@ -100,7 +100,8 @@ def create_app(
 
     if config.auth_provider == "local":
         from .checkpoint_http import LocalRequestBoundary
-        app.add_middleware(LocalRequestBoundary, public_origin=config.public_origin)
+        app.add_middleware(LocalRequestBoundary, public_origin=config.public_origin,
+                           deployment_mode=config.deployment_mode)
 
     @app.middleware("http")
     async def prevent_private_response_caching(request: Request, call_next):
@@ -157,7 +158,8 @@ def create_app(
     app.include_router(profile_v2_router)
     if config.auth_provider == "local":
         from .local_auth.routes import create_router as create_auth_router
-        app.include_router(create_auth_router(public_origin=config.public_origin))
+        app.include_router(create_auth_router(public_origin=config.public_origin,
+                                             deployment_mode=config.deployment_mode))
 
     def chat_rate_limit(request: Request, user: CurrentUser):
         if config.auth_provider == "local" and request.method == "POST":

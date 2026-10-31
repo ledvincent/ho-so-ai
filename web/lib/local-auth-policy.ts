@@ -6,9 +6,19 @@ export function validSessionToken(value: unknown): value is string {
 }
 export function localOrigin(): URL {
   const url = new URL(process.env.HOSO_PUBLIC_ORIGIN ?? '');
-  if (!['http:', 'https:'].includes(url.protocol) || !['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname)
-      || url.origin !== process.env.HOSO_PUBLIC_ORIGIN || url.username || url.password) throw new Error('Local configuration unavailable');
+  const mode = process.env.HOSO_DEPLOYMENT_MODE ?? 'local';
+  const loopback = ['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname);
+  const publicHost = url.hostname.length <= 253 && url.hostname.includes('.') && !url.hostname.endsWith('.localhost')
+    && !/^\d+\.\d+\.\d+\.\d+$/.test(url.hostname)
+    && url.hostname.split('.').every((label) => /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(label));
+  const allowed = mode === 'local' ? ['http:', 'https:'].includes(url.protocol) && loopback
+    : mode === 'hosted-demo' && url.protocol === 'https:' && !loopback && publicHost
+      && (process.env.HOSO_LOCAL_DEMO_SEED ?? 'false') === 'false';
+  if (!allowed || url.origin !== process.env.HOSO_PUBLIC_ORIGIN || url.username || url.password) throw new Error('Local configuration unavailable');
   return url;
+}
+export function localCookieOptions() {
+  return { httpOnly: true, secure: localOrigin().protocol === 'https:', sameSite: 'lax' as const, path: '/' };
 }
 export function isPrivatePage(path: string): boolean {
   if (path === '/demo/login' || path === '/login' || path.startsWith('/sign-in')) return false;

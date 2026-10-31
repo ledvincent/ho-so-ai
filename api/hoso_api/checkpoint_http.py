@@ -2,13 +2,14 @@
 
 import json
 
-from .local_auth.runtime import is_loopback, valid_local_origin
+from .local_auth.runtime import is_loopback, valid_auth_origin
 
 
 class LocalRequestBoundary:
-    def __init__(self, app, *, public_origin: str):
+    def __init__(self, app, *, public_origin: str, deployment_mode: str = "local"):
         self.app = app
         self.public_origin = public_origin
+        self.deployment_mode = deployment_mode
 
     async def __call__(self, scope, receive, send):
         if scope["type"] != "http" or not scope["path"].startswith(("/v1/", "/v2/")):
@@ -22,7 +23,7 @@ class LocalRequestBoundary:
             ]})
             await send({"type": "http.response.body", "body": body})
 
-        if not valid_local_origin(self.public_origin):
+        if not valid_auth_origin(self.public_origin, self.deployment_mode):
             return await reject(503, "AUTH_UNAVAILABLE")
         if not scope.get("client") or not is_loopback(scope["client"][0]):
             return await reject(403, "ORIGIN_FORBIDDEN")

@@ -48,6 +48,7 @@ function schema(): JsonObject {
     review_status: w.review_status, fields: clone(w.fields), fixed_values: clone(w.fixed_values) };
 }
 const json = (value: unknown, status = 200) => new Response(JSON.stringify(value), { status, headers: { 'Content-Type': 'application/json' } });
+const chatFixture = (value: JsonObject) => ({ choices: [], retrieval_state: null, procedure_code: null, documents: [], ...value });
 function error(status: number, code: string) {
   return (value: unknown) => { assert.ok(value instanceof DiscoveryError); assert.equal(value.status, status); assert.equal(value.code, code); assert.equal(value.message, code); return true; };
 }
@@ -57,15 +58,19 @@ function fixture(routes: Record<string, unknown | (() => Response)>, baseUrl = '
     calls.push({ url: String(url), init });
     const route = routes[new URL(String(url)).pathname];
     assert.notEqual(route, undefined, `Unexpected synthetic fixture route ${String(url)}`);
-    return typeof route === 'function' ? route() : json(route);
+    if (typeof route === 'function') return route();
+    const path = new URL(String(url)).pathname;
+    if (path === '/search') return json({ release_id: 'synthetic-release', degraded: false, ...route as JsonObject });
+    if (path === '/assistant/chat') return json(chatFixture(route as JsonObject));
+    return json(route);
   }) as typeof fetch;
   return { calls, client: createDiscoveryClient({ baseUrl, fetch: fetcher, workflow: workflow() }) };
 }
 
 test('synthetic search preserves found, multiple and not_found without selecting a procedure', async () => {
-  for (const results of [[], [{ code: C, name: 'SYNTHETIC A', score: 0.04, similarity: 0.8 }],
-    [{ code: C, name: 'SYNTHETIC A', score: 0.04, similarity: 0.8 }, { code: '1.003342', name: 'SYNTHETIC B', score: 0.03, similarity: 0.7 }]]) {
-    const expected = { status: results.length ? 'found' : 'not_found', results };
+  for (const results of [[], [{ code: C, name: 'SYNTHETIC A', score: 0.04, matched_by: ['keyword'] }],
+    [{ code: C, name: 'SYNTHETIC A', score: 0.04, matched_by: ['keyword'] }, { code: '1.003342', name: 'SYNTHETIC B', score: 0.03, matched_by: ['semantic'] }]]) {
+    const expected = { status: results.length ? 'found' : 'not_found', release_id: 'synthetic-release', degraded: false, results };
     const { client, calls } = fixture({ '/search': expected });
     assert.deepEqual(await client.search('  synthetic request  '), expected);
     assert.equal(calls.length, 1);
@@ -112,7 +117,7 @@ test('bounded search uses Python-compatible Unicode codepoint lengths', async ()
   await assert.rejects(client.search('\u0001'.repeat(1000)), error(413, 'REQUEST_TOO_LARGE'));
 });
 test('malformed found statuses, duplicate codes and nonfinite scores fail closed', async () => {
-  const a = { code: C, name: 'SYNTHETIC A', score: 1, similarity: 0.8 };
+  const a = { code: C, name: 'SYNTHETIC A', score: 1, matched_by: ['keyword'] };
   for (const value of [{ status: 'found', results: [] }, { status: 'not_found', results: [a] }, { status: 'found', results: [a, a] }, { status: 'found', results: [{ ...a, score: null }] }, { status: 'found', results: Array.from({ length: 6 }, () => a) }]) {
     await assert.rejects(fixture({ '/search': value }).client.search('synthetic request'), error(502, 'DISCOVERY_INVALID_RESPONSE'));
   }
@@ -239,7 +244,7 @@ test('JSON MIME, malformed JSON and invalid UTF-8 fail without leaking raw conte
   }
 });
 test('thin chat forwards the exact validated contract and preserves citations; never routes from prose', async () => {
-  const expected = { status: 'answered', answer: 'SYNTHETIC answer [synthetic-source]', citations: [{ id: 'synthetic-source', title: 'SYNTHETIC source', url: 'https://official.invalid/synthetic' }], model: 'synthetic-model' };
+  const expected = chatFixture({ status: 'answered', answer: 'SYNTHETIC answer [synthetic-source]', citations: [{ id: 'synthetic-source', title: 'SYNTHETIC source', url: 'https://official.invalid/synthetic' }], model: 'synthetic-model' });
   const { client, calls } = fixture({ '/assistant/chat': expected });
   const body: DiscoveryChatRequest = { message: ' synthetic question ', procedure_code: null, history: [{ role: 'user', content: ' synthetic prior turn ' }] };
   assert.deepEqual(await client.chat(body), expected);
@@ -248,7 +253,7 @@ test('thin chat forwards the exact validated contract and preserves citations; n
 });
 test('chat supports all producer status branches and does not invent missing citations', async () => {
   for (const status of ['insufficient_context', 'needs_clarification', 'out_of_scope']) {
-    const expected = { status, answer: 'SYNTHETIC safe text', citations: [], model: null };
+    const expected = chatFixture({ status, answer: 'SYNTHETIC safe text', citations: [], model: null });
     assert.deepEqual(await fixture({ '/assistant/chat': expected }).client.chat({ message: 'synthetic request' }), expected);
   }
   for (const value of [
@@ -267,8 +272,8 @@ test('chat request bounds, history roles, code and extra keys are checked before
   assert.equal(calls.length, 0);
 });
 test('chat Python codepoint limits allow multibyte history up to the independent byte cap', async () => {
-  const expected = { status: 'insufficient_context', answer: 'SYNTHETIC', citations: [], model: null };
+  const expected = chatFixture({ status: 'insufficient_context', answer: 'SYNTHETIC', citations: [], model: null });
   const { client } = fixture({ '/assistant/chat': expected });
-  await client.chat({ message: '😀'.repeat(1000), history: [{ role: 'user', content: '😀'.repeat(8000) }] });
-  await assert.rejects(client.chat({ message: 'synthetic request', history: [{ role: 'user', content: '😀'.repeat(8001) }] }), error(422, 'INVALID_REQUEST'));
+  await client.chat({ message: '😀'.repeat(1000), history: [{ role: 'user', content: '😀'.repeat(16000) }] });
+  await assert.rejects(client.chat({ message: 'synthetic request', history: [{ role: 'user', content: '😀'.repeat(16001) }] }), error(422, 'INVALID_REQUEST'));
 });
