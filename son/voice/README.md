@@ -129,6 +129,24 @@ retrieval, authentication, report delivery or full voice-to-report integration.
 
 ## Optional server audio adapter and headless client
 
+For private local activation without saving a key or placing it in a shell
+command, open an interactive terminal at the repository root:
+
+```powershell
+son/voice/.venv/Scripts/python.exe -m pip install -e './son/voice[audio,test]'
+son/voice/.venv/Scripts/python.exe -m voice_app.launch
+```
+
+The launcher asks for a hidden key (or uses an existing process `OPENAI_API_KEY`),
+then runs only on `127.0.0.1:8001`, leaving the offline port-8000 demo untouched.
+No audio API call is made at startup; model access is not validated by launching.
+The typed key is kept only by the server process, not written to `.env`, shell
+history or a new environment variable. Unsafe echoed-input fallback is refused.
+Stop with Ctrl+C. Key validity, model access, actual billing and speech quality
+still need a real, synthetic-audio smoke test after the user enters the key.
+The frozen test UI remains browser-speech based; the new server audio APIs are
+consumed through the headless adapter intended for Kim's UI.
+
 The new audio path is speech recognition -> user-confirmed text -> deterministic
 dialogue -> synthesis of the latest server-owned reply. It does not forward
 unverified model-generated legal answers to audio. An unrestricted realtime

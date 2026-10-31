@@ -119,3 +119,23 @@ est retenu, puis Son teste sur audio synthetique reel VI/EN; Kim valide et branc
 l'adaptateur dans son UI. Vincent fournit le lookup/version revus avant tout
 contenu officiel. Aucun message d'equipe envoye, aucune fusion proposee comme
 integree ou effectuee.
+
+## Suivi — activation privee de la cle
+
+Son confirme disposer d'une cle API OpenAI dans le chat; aucune valeur n'est
+recue ou verifiee. Lanceur ajoute : `python -m voice_app.launch` dans l'environnement
+du composant. Saisie masquee interactive, refus de repli avec echo, cle en memoire
+uniquement et serveur lie a `127.0.0.1:8001`. Pas d'appel payant au demarrage.
+Le README contient la commande complete. L'activation attend la saisie privee par
+l'utilisateur; aucun test fournisseur reel n'est revendique. La page de test
+reste gelee et son micro utilise encore le navigateur.
+
+Verification : `son/voice/.venv/Scripts/python.exe -m unittest discover -s son/voice/tests -p test_launch.py -v`
+-> 4 tests passes, avec cle synthetique et serveur simule : saisie non interactive
+refusee, repli non masque refuse, aucun secret imprime/persiste, annulation sans
+demarrage. Documentation et code selectionnes explicitement avant commit.
+
+Ce suivi complete le compte rendu existant; code dans
+`son/voice/src/voice_app/launch.py` et tests de saisie/activation. Main distant observe au
+commit `60cb3be` apres fetch, ajouts de profils managers consultes sans les
+fusionner; aucun changement du tableau commun dans cette suite.
