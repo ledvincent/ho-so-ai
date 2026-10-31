@@ -15,4 +15,4 @@
 @media(max-width:600px){.paperViewport{height:clamp(220px,32dvh,300px)}.viewerControls{gap:3px;font-size:9px;padding:5px}.viewerControls>button{display:none}.viewerControls label{font-size:0}.viewerControls select{font-size:10px}.documentExpanded{inset:7px 6px}.documentExpanded .paperViewport{height:auto}}
 @media(max-height:580px){.paperViewport{height:150px}}
 /* Reserve a useful document viewport; the conversation scrolls above its composer. */
-.document:not(.documentExpanded){display:flex;flex-direction:column;flex-shrink:0;min-height:44px}.document>header,.document>footer{flex-shrink:0}.paperViewport{height:clamp(180px,calc(100dvh - 520px),300px);min-height:0;flex-shrink:0}.conversation{min-height:70px}
+.document:not(.documentExpanded){display:flex;flex-direction:column;flex-shrink:0;min-height:44px}.document>header,.document>footer{flex-shrink:0}.paperViewport{height:var(--inline-paper-height,200px);min-height:0;flex-shrink:0}.conversation{min-height:70px}
