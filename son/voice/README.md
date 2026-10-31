@@ -1,6 +1,8 @@
 # VOICE-01: public Vietnamese voice dialogue
 
-Owner: Son. Standalone browser integration shell, not the production app. The
+Owner: Son (backend/dialogue). Kim owns the product UI, including the voice screen
+and microphone controls. The static page in this package is a development/test
+harness only; its design is frozen and does not prescribe Kim's UI. The
 procedure contract belongs to Vincent; this package does not define or replace it.
 No collector files, root package configuration or collection tests are changed.
 
@@ -59,7 +61,10 @@ behavior. Then implement a consumer adapter here after agreeing the actual forma
 Do not treat `/api/voice/turn` as the shared procedure/report schema: it only
 describes this dialogue UI, and contains no legal record or checklist.
 
-Kim: embed/replace this standalone page in the application. Application identity,
+Kim: build the product UI against the backend; do not copy this test page as a
+requirement. Current endpoint behavior and open integration choices are documented
+in `docs/team/handoffs/VOICE-01.md` (repository root), pending Kim's review.
+Application identity,
 dossier owner checks and the authenticated consent decision remain Kim's scope.
 Agree identity transport with Son before ACCESS-01. Anonymous dialogue cookies
 are not user authentication and never authorize personal data. No `/api/dossier`

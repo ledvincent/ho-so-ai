@@ -2,6 +2,14 @@
 
 ## Decisions confirmees — 31 octobre 2026
 
+- Kim possede l'interface produit, y compris l'ecran de conversation, le bouton
+  micro et leur presentation. Son livre le backend de recherche/voix, le dialogue,
+  les sessions et l'autorisation serveur. La page statique de VOICE-01 reste un
+  banc d'essai technique, gele cote design; elle ne constitue pas une seconde UI
+  produit. Preuve : clarification explicite de Son dans le chat VOICE-01.
+  Le raccordement technique avec Kim reste a valider; aucun accord de sa part
+  n'est presume.
+
 - Demo voix par bouton dans l'application sur telephone; entree telephonique
   reelle gardee comme extension, avec la meme logique de conversation.
   Preuve : choix explicite de Son dans le chat du manager.

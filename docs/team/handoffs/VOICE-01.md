@@ -73,6 +73,48 @@ selectionnes explicitement; aucun fichier du prototype de Vincent ajoute.
 
 ## Integration et demandes aux responsables
 
+### Perimetre UI et raccordement pour Kim
+
+Clarification de Son le 31 octobre 2026 : **Kim realise toute l'interface produit**,
+y compris l'ecran voix et les controles micro. Son garde backend, dialogue,
+recherche, sessions et autorisation des outils. La page statique locale est un
+banc d'essai technique; aucun nouveau design produit n'y sera developpe. Kim
+n'a pas a la reproduire ou l'integrer telle quelle.
+
+Comportement actuel du backend (description de l'existant, pas un accord deja
+valide avec Kim, ni le contrat de procedures de Vincent) :
+
+| Appel | Entree / resultat actuel | Point d'attention UI |
+| --- | --- | --- |
+| `POST /api/voice/session` | Sans corps; reponse `reply`, `state`, `choices`, `expires_in`; cookie HttpOnly | Demarrer le dialogue public, ne pas assimiler le cookie a une connexion applicative |
+| `POST /api/voice/turn` | JSON `{ "text": "besoin synthetique" }`, maximum 600 caracteres | Envoyer le texte apres reconnaissance; afficher `reply`, `choices`, `state` |
+| Reponse de tour | `candidate_code`, `reviewed_lookup_available` en plus des champs de dialogue | Le code est une intention; aucune checklist disponible, `reviewed_lookup_available` reste faux |
+| `DELETE /api/voice/session` | Fin et invalidation de la session publique | Arreter micro et lecture cote navigateur, effacer l'affichage local |
+
+Etats existants : `welcome`, `clarify`, `lookup_pending`, `not_found`,
+`not_covered`, `personal_access_unavailable`, `ended`. Erreurs : 401 session
+publique absente/expiree (pas un diagnostic de connexion utilisateur), 403 origine
+refusee, 413 contenu trop volumineux, 415 JSON requis, 422 entree invalide,
+429 limite de tours, 503 capacite atteinte. Les corps d'erreur ne renvoient pas
+la transcription. Un exemple de `choices` comporte `label` et `text`.
+
+Points a convenir avant raccordement avec Kim :
+
+- Montage sous la meme origine via le serveur/proxy de l'application, ou transport
+  interservices explicite. L'API locale ne fournit pas de CORS entre deux serveurs
+  frontend/backend : ne pas resoudre cela par une origine universelle.
+- Choix et disponibilite du fournisseur de reconnaissance/restitution audio. Le
+  Web Speech du banc d'essai est un adaptateur provisoire, pas un choix impose.
+- Mapping de la session applicative authentifiee vers la conversation cote serveur
+  et decisions d'accord pour ACCESS-01; jamais un `user_id` libre dicte au modele.
+- Branchement du meme record/version/checklist revu vers voix et rapport apres
+  livraison de Vincent. Ne pas convertir `candidate_code` en validation de source.
+
+Ordre de raccordement propose : Kim realise ses composants UI -> Son et Kim
+valident le transport et les etats -> connexion au backend -> essais communs
+micro/expiration/erreurs -> lookup revu et rapport. Aucun changement de fichiers
+appartenant a Kim effectue; accord et integration non verifies.
+
 **Vincent — CONTRACT-01 / DATA-02** : besoin du moyen de lookup, d'une version de
 record exacte, d'un statut de revue lie aux hashes, de la checklist avec conditions
 et provenance, et des comportements no-result/unreviewed/error. Son adaptera le
@@ -80,8 +122,9 @@ consommateur a la proposition de Vincent; aucun schema producteur impose ici.
 Le champ `candidate_code` du dialogue est seulement une intention, pas la preuve
 d'un resultat officiel revu.
 
-**Kim — integration UI et identite** : page autonome a integrer/remplacer dans
-l'application. Convenir du fournisseur et du transport d'identite avec Son avant
+**Kim — integration UI et identite** : interface produit a realiser par Kim en
+consommant le backend de Son; page locale uniquement pour les tests. Convenir du
+fournisseur et du transport d'identite avec Son avant
 la liaison ACCESS-01. Ce cookie public ne vaut ni connexion ni autorisation.
 Le rapport reste a produire par Kim depuis exactement le record/version/checklist
 que consommera la voix; le socle actuel ne produit aucun objet de rapport.
@@ -108,3 +151,10 @@ En attendant, l'essai local permet de valider l'ergonomie et les phrases vietnam
 Git : code `a28d937ccbba48424a793d3555a5d13bd71326fb`; pousse non; PR aucune.
 Compte rendu et tableau ajoutes dans un commit documentaire de la meme tache.
 Aucun message envoye aux membres ou au manager; aucun choix de fusion effectue.
+
+Suivi de la clarification UI : documentation seule, `git diff --cached --check`
+verifie avant commit; pas de nouveau test applicatif necessaire. Les 20 tests et
+le scenario navigateur ci-dessus restent la derniere preuve de comportement,
+sans nouvelle revendication d'integration. Prochaine action de coordination :
+faire valider les points de raccordement par Kim, puis Son adaptera le backend
+au transport retenu. Publication toujours non effectuee.

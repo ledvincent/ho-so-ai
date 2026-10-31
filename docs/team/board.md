@@ -22,6 +22,12 @@ Les taches proposees ne signifient pas que leur responsable les a commencees.
 
 ## Ordre conseille
 
+Coordination UI confirmee par Son : Kim realise l'interface produit et les
+controles voix. Son reste sur le backend/dialogue; la page de `son/voice/` sert
+uniquement aux essais et son design est gele. Points de raccordement existants
+et decisions encore ouvertes : `docs/team/handoffs/VOICE-01.md`. Validation avec
+Kim non observee; aucun travail non publie de Kim n'est presume.
+
 1. CONTRACT-01 : se mettre d'accord avant de developper trois formats differents.
 2. Vincent prepare les donnees; Son et Kim peuvent travailler en parallele avec
    un exemple explicitement synthetique, sans le presenter comme source validee.
@@ -37,4 +43,4 @@ publie n'est presume connu. Ne pas saisir de donnees personnelles ici.
 | Responsable | Tache | Branche / PR | Chemins touches | Besoin des autres | Derniere preuve |
 | --- | --- | --- | --- | --- | --- |
 | Manager | Installation des consignes et du suivi | Checkout local | `AGENTS.md`, `docs/team/`, `.github/`, README, repartition du perimetre | Relecture humaine avant partage | Configuration locale, 31 octobre 2026 |
-| Son | VOICE-01 : dialogue vietnamien public dans le navigateur | `codex/son/voice-01-browser-conversation`; pas de push/PR | `son/voice/`, `docs/team/board.md`, `docs/team/handoffs/VOICE-01.md` | Vincent : lookup/version revue; Kim : integration app et accord d'identite pour acces personnel | Base `97e8461`; code `a28d937`; 20 tests + navigateur Edge; anciens prototypes non suivis preserves |
+| Son | VOICE-01 : backend/dialogue; page locale reservee aux essais | `codex/son/voice-01-browser-conversation`; pas de push/PR | `son/voice/`, `docs/team/board.md`, `docs/team/decisions.md`, `docs/team/handoffs/VOICE-01.md` | Vincent : lookup/version revue; Kim : UI produit, integration app et accord d'identite pour acces personnel | Base `97e8461`; code `a28d937`; 20 tests + navigateur Edge; clarification UI documentaire, anciens prototypes non suivis preserves |
