@@ -80,6 +80,8 @@ class RealtimeApiTests(unittest.TestCase):
             self.assertEqual(config["tools"], [])
             self.assertEqual(config["tool_choice"], "none")
             self.assertIn("NO reviewed legal sources", config["instructions"])
+            self.assertGreaterEqual(config["max_output_tokens"], 1024)
+            self.assertLessEqual(config["max_output_tokens"], 4096)
 
 
 class RealtimeLifecycleTests(unittest.IsolatedAsyncioTestCase):

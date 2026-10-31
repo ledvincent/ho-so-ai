@@ -1,8 +1,9 @@
 // Full-duplex WebRTC call adapter. No MediaRecorder, Send button or browser API key.
 export class RealtimeVoiceClient {
-  constructor({onState = () => {}, onTranscript = () => {}} = {}) {
+  constructor({onState = () => {}, onTranscript = () => {}, onDiagnostic = () => {}} = {}) {
     this.onState = onState;
     this.onTranscript = onTranscript;
+    this.onDiagnostic = onDiagnostic;
     this.version = 0;
     this.peer = null;
     this.channel = null;
@@ -47,9 +48,14 @@ export class RealtimeVoiceClient {
       for (const track of stream.getAudioTracks()) peer.addTrack(track, stream);
       const channel = peer.createDataChannel("oai-events");
       this.channel = channel;
+      let callerSpeaking = false;
+      let playing = false;
       channel.onopen = () => {
         if (version !== this.version) return;
         this.onState("listening");
+        // Also upgrades a running older backend without re-entering its key.
+        // This changes only the bounded output allowance, not tools or access.
+        channel.send(JSON.stringify({type:"session.update", session:{type:"realtime", max_output_tokens:2048}}));
         channel.send(JSON.stringify({type:"response.create", response:{instructions:
           language === "vi"
             ? "Chào ngắn gọn bằng tiếng Việt, giới thiệu bạn là trợ lý giọng nói AI và hỏi người gọi cần hỗ trợ điều gì. Không nói thông tin pháp lý."
@@ -59,10 +65,25 @@ export class RealtimeVoiceClient {
         if (version !== this.version || typeof event.data !== "string" || event.data.length > 65536) return;
         let data;
         try { data = JSON.parse(event.data); } catch { return; }
-        if (data.type === "input_audio_buffer.speech_started") this.onState("hearing");
-        if (data.type === "response.created") this.onState("thinking");
-        if (data.type === "output_audio_buffer.started") this.onState("speaking");
-        if (["output_audio_buffer.stopped", "output_audio_buffer.cleared", "response.done"].includes(data.type)) this.onState("listening");
+        if (data.type === "input_audio_buffer.speech_started") { callerSpeaking = true; this.onState("hearing"); }
+        if (data.type === "input_audio_buffer.speech_stopped") { callerSpeaking = false; this.onState(playing ? "speaking" : "thinking"); }
+        if (data.type === "response.created" && !callerSpeaking && !playing) this.onState("thinking");
+        if (data.type === "output_audio_buffer.started") { playing = true; if (!callerSpeaking) this.onState("speaking"); }
+        if (["output_audio_buffer.stopped", "output_audio_buffer.cleared"].includes(data.type)) {
+          playing = false;
+          this.onState(callerSpeaking ? "hearing" : "listening");
+        }
+        if (data.type === "response.done") {
+          // Generation can finish before WebRTC has played the queued audio.
+          // Never invite the next turn until output_audio_buffer.stopped.
+          const allowedStatuses = ["completed", "cancelled", "failed", "incomplete"];
+          const allowedReasons = ["max_output_tokens", "turn_detected", "client_cancelled", "content_filter"];
+          const reason = data.response?.status_details?.reason;
+          this.onDiagnostic({event:"response_done",
+            status:allowedStatuses.includes(data.response?.status) ? data.response.status : "unknown",
+            reason:allowedReasons.includes(reason) ? reason : null,
+            outputTokens:Number.isInteger(data.response?.usage?.output_tokens) ? data.response.usage.output_tokens : null});
+        }
         if (data.type === "response.output_audio_transcript.done" && typeof data.transcript === "string") this.onTranscript(data.transcript.slice(0, 2000));
         if (data.type === "error" && !["response_cancel_not_active", "conversation_already_has_active_response"].includes(data.error?.code)) {
           this.stop(false).finally(() => this.onState("connection_error"));

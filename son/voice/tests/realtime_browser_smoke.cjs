@@ -60,15 +60,32 @@ const {chromium} = require("playwright");
     await page.locator("#audio-consent").check();
     await page.getByRole("button", {name:"Start voice call", exact:true}).click();
     await page.waitForFunction(() => window.syntheticSent.some((item) => item.type === "response.create"));
+    assert.equal(await page.evaluate(() => window.syntheticSent[0].type), "session.update");
+    assert.equal(await page.evaluate(() => window.syntheticSent[0].session.max_output_tokens), 2048);
     await page.evaluate(() => {
       const emit = (type, extra = {}) => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type, ...extra})});
       emit("input_audio_buffer.speech_started");
+      emit("input_audio_buffer.speech_stopped");
       emit("response.created");
       emit("output_audio_buffer.started");
+      emit("response.done", {response:{status:"completed"}});
+    });
+    await page.getByRole("status").getByText("The agent is speaking. You can interrupt by talking.", {exact:true}).waitFor();
+    await page.evaluate(() => {
+      const emit = (type, extra = {}) => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type, ...extra})});
       emit("input_audio_buffer.speech_started"); // User interrupts mid-response.
       emit("output_audio_buffer.cleared");
+      emit("response.done", {response:{status:"cancelled", status_details:{reason:"turn_detected"}}});
+    });
+    await page.getByRole("status").getByText("Listening to you…", {exact:true}).waitFor();
+    await page.evaluate(() => {
+      const emit = (type, extra = {}) => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type, ...extra})});
+      emit("input_audio_buffer.speech_stopped");
+      emit("response.created");
+      emit("output_audio_buffer.started");
       emit("response.output_audio_transcript.done", {transcript:"Synthetic conversational reply"});
-      emit("response.done");
+      emit("response.done", {response:{status:"completed"}});
+      emit("output_audio_buffer.stopped");
     });
     await page.getByRole("log").getByText("Synthetic conversational reply").waitFor();
     assert.equal(calls, 1, "multiple turns share one continuous call");
@@ -78,6 +95,6 @@ const {chromium} = require("playwright");
     assert.equal(await page.evaluate(() => window.syntheticTrackStops), 1);
     assert.equal(await page.evaluate(() => window.syntheticPeerClosed), 1);
     assert.deepEqual(errors, []);
-    console.log("PASS: consent, single live WebRTC connection, no Record/Send, automatic greeting/turn events, interruption events, hangup/mic cleanup; all media/provider mocked");
+    console.log("PASS: consent, single live WebRTC connection, bounded audio budget, generation done does not end playout, interruption state, no Record/Send, hangup/mic cleanup; all media/provider mocked");
   } finally { await browser.close(); }
 })().catch((error) => { console.error(error); process.exitCode = 1; });

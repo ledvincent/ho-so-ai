@@ -112,3 +112,46 @@ locaux hors tache preserves. Publication/fusion et integration complete non fait
 Prochaine action : Son essaie son micro sur le lien d'appel; Kim valide l'adaptateur
 produit. L'equipe choisit les controles de grounding avant de brancher un vrai
 record/version/checklist de Vincent et le rapport de Kim.
+
+## Correction — phrases coupees
+
+Signalement de Son : l'agent coupe ses propres phrases et ne les termine pas.
+Deux defauts observes dans le code : budget de sortie de 250 tokens, trop petit
+pour la parole, et etat UI repassant a l'ecoute sur `response.done` alors que de
+l'audio peut encore attendre sa lecture dans WebRTC.
+
+Reproduction live sur le serveur prive 8001, avec le meme passage synthetique
+non juridique, micro synthetique silencieux et sortie muette :
+
+- Avant : budget 250, statut `incomplete`, motif `max_output_tokens`, exactement
+  250 tokens de sortie; fin de lecture observee, sans intervention du micro.
+- Apres : budget 2048, statut `completed`, aucun motif d'arret, 688 tokens de
+  sortie; fin de lecture observee. Le passage termine sans troncature dans cet essai.
+
+Le premier accueil tres court d'un essai de controle etait complete a 116 tokens;
+la troncature est donc liee au budget, pas systematique pour toute phrase. Ces
+essais n'etablissent pas l'absence de fausse interruption acoustique chez Son.
+Aucun changement de VAD ou des droits d'acces : interruptions volontaires gardees.
+
+Correction : `realtime.py` fixe 2048 tokens; `static/realtime-client.js` envoie la
+meme limite via `session.update` avant l'accueil pour mettre a niveau le backend
+deja lance sans lire/reentrer sa cle. Le client attend maintenant la fin de
+playout (`output_audio_buffer.stopped`) et preserve l'etat caller-speaking lors
+d'un clear/cancel de reponse. Callback diagnostique optionnel limite a statut,
+raison allowlistee et compteur de tokens, sans journalisation automatique.
+
+Verification ciblee : `python -m unittest discover -s son/voice/tests -p test_realtime.py -v`
+-> 8 tests passes. `node son/voice/tests/realtime_browser_smoke.cjs` -> passe avec
+reponses simulees : budget de session borne, generation terminee sans fin de
+lecture prematuree, interruption ne repassant pas a l'ecoute trop tot, fermeture
+du micro et du peer. Deux appels live comparables pour le passage long et un
+controle court; aucun contenu personnel ni transcription journalisee. Script
+intermediaire ignore : `work/realtime_live_check.cjs`, option VOICE_LONG_REPLY.
+
+Chemins touches : `son/voice/src/voice_app/realtime.py`,
+`son/voice/src/voice_app/static/realtime-client.js`, tests Realtime Python et
+navigateur, README et ce compte rendu. API/data contract inchange; callback
+diagnostique additif pour Kim. Les autres suites n'ont pas ete relancees sans
+raison; leurs resultats plus haut restent historiques. `git diff --cached --check`
+verifie avant commit. Prochaine action : Son raccroche, actualise la page et
+retente un appel. Aucun redemarrage serveur requis; publication/fusion non faites.

@@ -33,6 +33,19 @@ server environment before launching if account access requires another supported
 model. `realtime_available` in capabilities means configured, not verified model
 access. No extra package beyond the existing audio/httpx extra is needed.
 
+Reply budget: 2,048 output tokens, including room for audio. The original 250
+token cap could terminate a normal spoken answer mid-sentence. The browser also
+sets this bounded allowance on data-channel open, so reloading the page and
+starting a new call upgrades an already-running older backend without re-entering
+its key. The server default matches it for new processes. Responses should remain
+brief by instruction, not by an artificially tiny audio budget.
+
+Generation completion (`response.done`) is not playback completion. The client
+waits for `output_audio_buffer.stopped` before showing the agent as finished, and
+keeps the caller-speaking state during an interruption. Optional `onDiagnostic`
+receives only allowlisted response status/reason and token count, never transcript,
+audio, credentials or provider IDs; it is not logged or persisted by default.
+
 Reference: [official OpenAI WebRTC guide](https://developers.openai.com/api/docs/guides/voice-webrtc),
 [turn detection](https://developers.openai.com/api/docs/guides/realtime-vad),
 [hangup API](https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/hangup).

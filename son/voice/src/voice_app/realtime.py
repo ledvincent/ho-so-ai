@@ -5,13 +5,15 @@ from dataclasses import dataclass
 from .sessions import MissingSession
 
 CALL_SECONDS = 180
+REPLY_TOKEN_BUDGET = 2048
 
 
 def call_configuration(language, model):
     initial_language = "Vietnamese" if language == "vi" else "English"
     return {
         "type": "realtime", "model": model, "output_modalities": ["audio"],
-        "max_output_tokens": 250, "tools": [], "tool_choice": "none",
+        # Realtime's output budget includes audio; 250 can cut normal sentences.
+        "max_output_tokens": REPLY_TOKEN_BUDGET, "tools": [], "tool_choice": "none",
         "audio": {"input": {"noise_reduction": {"type": "near_field"},
                             "turn_detection": {"type": "semantic_vad", "eagerness": "medium",
                                                "create_response": True, "interrupt_response": True}},
