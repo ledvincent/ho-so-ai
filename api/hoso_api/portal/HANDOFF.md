@@ -1,5 +1,98 @@
 # AUTH-01 portal consumer handoff
 
+## Current backend adaptation - 31 October 2026
+
+This section supersedes the historical draft notes below. Backend owner: Kim
+portal workstream. Frontend/UI remains with the designated frontend owner using
+Sites for design and the existing Next/Clerk app for the working frontend.
+
+| Item | Exact reference / status |
+| --- | --- |
+| Producer APP-01 integration | `9cacda7320b5d18975a0bc2b62410eb74e45210f` |
+| Consumer adaptation | `584e1ee9adbb5fd1f0a845c1357e204833202d6f` |
+| Branch | `codex/kim/auth-01-storage-hardening` |
+| Isolated checkout | `.worktrees/kim-portal-hardening` |
+| Contract | `app.v1`, existing GET/PUT profile routes, six generated fields, `expected_revision`; unchanged |
+| Acknowledgment | **tested compatible for the registered API/lifespan interface with synthetic storage/tokens**, using the two SHAs above and checks below |
+| Remaining acceptance | Real PostgreSQL 16/psycopg wire/TLS and live Clerk remain unverified; this is not complete AUTH-01 or production compatibility |
+
+HEAD exactly matched the supplied producer and the new worktree was clean before
+editing. The original portal/Auth0/scaffold worktrees were preserved; no source
+worktree was merged or edited. No frontend, shared auth, routes, generated types,
+manifests, SQL migration or configuration file changed. No live database/migration,
+server startup, push, merge or deployment was performed. The manager remains the
+single writer of Kim's status. No new shared-interface decision is required by
+this patch; Kim's app integration precedes Son voice and Vincent retrieval.
+
+Changed files:
+
+- `api/hoso_api/portal/postgres.py`: inspect marker/profile mutation rights across
+  session/current roles and all their direct/indirect memberships; retain the
+  conservative policy even for dormant memberships. Marker INSERT/UPDATE checks
+  include column-only grants; profile owner/ID updates and DELETE/TRUNCATE/TRIGGER
+  are checked for every candidate. Force trusted `gssencmode=disable`, preserving
+  `verify-full` and minimum TLS 1.2.
+- `api/tests/portal/test_handlers.py`: remove the obsolete 501 expectation and the
+  helper-router replacement. Tests now enter the real app lifespan and registered
+  routes. Absent storage on both GET/PUT returns 503 `PROFILE_UNAVAILABLE` and
+  `Cache-Control: no-store`.
+- `api/tests/portal/test_postgres_settings.py`: check secure connection arguments
+  at the SQLAlchemy-to-psycopg boundary despite unsafe environment defaults,
+  reject DSN overrides and verify sanitized setup/connection failures.
+- `api/tests/portal/postgres-policy.test.mjs`: direct/inherited/switch-only custom
+  roles, column-only grants, mixed SET-then-inherit paths, PUBLIC grants, dormant
+  memberships and safe positive controls, using disposable synthetic fixtures.
+- `docs/profile-storage-test-plan.md`: PG16 semantics and official references,
+  addressed findings and explicit pending network/TLS acceptance.
+
+Observed verification, no tests excluded/xfail/suppressed:
+
+| Check | Result and boundary |
+| --- | --- |
+| Whole integrated API suite | **147 passed**, one existing Starlette/httpx deprecation warning. Includes registered-route, A/B, revision/concurrency and lifecycle checks using synthetic tokens and disposable SQLite where storage is needed. |
+| Generated profile contract | Matches the API model. |
+| Disposable SQL/RLS/guard matrix | **54 passed**, no skips. PGlite 0.3.16 reports PostgreSQL 17.5; this is not a PG16 wire or TLS test. Actual exported repository/guard SQL is executed. |
+| Connection policy | Actual SQLAlchemy dialect reaches a patched `psycopg.connect`; expected TLS/GSS/CA arguments and sanitized failure observed, no socket or handshake. |
+| Review/scope | Independent read-only review found no actionable issue; staged whitespace checks passed and shared/frontend paths have no diff from the producer. |
+
+Reproduction commands from the new checkout's `api/` (use the existing installed
+Python environment and Node on PATH; a fresh test temp path avoids shared Windows
+temp ownership):
+
+```powershell
+$portalPython = (Resolve-Path '..\..\kim-portal-clerk\api\.venv\Scripts\python.exe').Path
+$portalTestBase = Join-Path $env:TEMP ('auth01-hardening-' + [guid]::NewGuid().ToString('N'))
+& $portalPython -m pytest -q --tb=short --basetemp $portalTestBase
+& $portalPython scripts/export_profile_contract.py --check
+
+$env:AUTH01_PYTHON = $portalPython
+$env:AUTH01_PGLITE_MODULE = (Resolve-Path '..\..\kim-portal\apps\portal\node_modules\@electric-sql\pglite\dist\index.js').Path
+node --test --test-concurrency=1 tests/portal/postgres-policy.test.mjs
+```
+
+This run reused the portal-owned installed dependencies without installing packages,
+copying secrets or modifying manifests/environments. Python module resolution was
+checked to load this new checkout's provider. No frontend/build rerun was needed
+for backend-only changes; prior frontend evidence is not presented as a fresh run.
+
+The full-suite result resolves the reported legacy assertion failure against
+9cacda7. It does not establish real PostgreSQL 16 concurrency, pool behavior over
+the wire, negotiated TLS, disk/backup encryption, live Clerk login/revocation,
+the browser profile-to-form flow, session/document ownership or Son/Vincent
+integration. These gaps are acceptance work, not evidence of an unsafe live database.
+
+Next handoff: scaffold owner consumes exact adaptation `584e1ee9adbb5fd1f0a845c1357e204833202d6f`
+and coordinates the isolated real PostgreSQL 16/TLS tests in
+[the storage plan](../../../docs/profile-storage-test-plan.md). Preserve trusted
+TLS settings and public service cleanup. Frontend owner integrates independently
+against the agreed app.v1 seam. No cross-chat reply was sent.
+
+## Historical portal draft evidence (preserved)
+
+The following records the earlier consumer and its then-pending route wiring.
+Its 501, branch and test-count statements are historical; use the current section
+above for this adaptation and the exact integrated producer.
+
 Owner: Kim portal workstream. Status: component implementation prepared; shared
 route/storage integration pending. This handoff is the portal's scoped record;
 the scaffold owner/manager remains the single writer of `docs/team/status/kim.md`.
