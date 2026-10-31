@@ -1,7 +1,9 @@
-"""Conservative Vietnamese intent routing. No generated legal information."""
+"""Vietnamese/English intent routing. No generated or translated legal facts."""
 from dataclasses import dataclass
 import re
 import unicodedata
+
+from .languages import Language, MESSAGES, choices, response
 
 
 def normalize(value: str) -> str:
@@ -20,46 +22,43 @@ class DialogueState:
     candidate_code: str | None = None
 
 
-CHOICES = [
-    {"label": "Đăng ký tạm trú lần đầu", "text": "Tôi muốn đăng ký tạm trú"},
-    {"label": "Gia hạn tạm trú", "text": "Tôi muốn gia hạn tạm trú"},
-]
-
-WELCOME = "Xin chào! Bạn muốn đăng ký tạm trú lần đầu hay gia hạn tạm trú? Chỉ mô tả nhu cầu, không đọc thông tin cá nhân."
-CLARIFY = "Bạn muốn đăng ký tạm trú lần đầu hay gia hạn đăng ký tạm trú đã có?"
-PENDING = "Tôi đã ghi nhận nhu cầu {name}. Dữ liệu thủ tục đã duyệt chưa được kết nối, nên tôi chưa thể đọc danh sách giấy tờ hoặc lệ phí."
+CHOICES = choices("vi")
+WELCOME = MESSAGES["vi"]["welcome"]
 
 
-def result(state: str, reply: str, candidate_code: str | None = None, choices: bool = False) -> dict:
-    return {"state": state, "reply": reply, "candidate_code": candidate_code,
-            "choices": CHOICES if choices else [], "reviewed_lookup_available": False}
+def advance(previous: DialogueState, utterance: str, language: Language = "vi") -> tuple[DialogueState, dict]:
+    def result(state, key, code=None, with_choices=False, **values):
+        return response(language, state, key, code, with_choices, **values)
 
+    def has(*phrases):
+        return any(contains(value, phrase) for phrase in phrases)
 
-def advance(previous: DialogueState, utterance: str) -> tuple[DialogueState, dict]:
     value = normalize(utterance)
     if not value:
-        return previous, result("clarify", "Tôi chưa nghe rõ. Bạn có thể nói lại hoặc nhập nội dung?", choices=True)
-    if any(contains(value, phrase) for phrase in ("ho so cua toi", "du lieu ca nhan", "thong tin ca nhan", "so dien thoai cua toi", "cccd cua toi", "dossier")):
-        return previous, result("personal_access_unavailable", "Tôi chưa có quyền truy cập hồ sơ cá nhân. Kết nối đăng nhập và xác nhận quyền truy cập chưa sẵn sàng. Bạn có thể hỏi về nhu cầu tạm trú nói chung.")
-    if any(contains(value, phrase) for phrase in ("lam lai", "bat dau lai", "doi thu tuc")):
-        return DialogueState(awaiting_choice=True), result("clarify", CLARIFY, choices=True)
-    if any(contains(value, phrase) for phrase in ("thuong tru", "ho chieu", "passport", "can cuoc", "visa", "nguoi nuoc ngoai", "ket hon", "khai sinh", "kinh doanh")):
-        return DialogueState(), result("not_covered", "Bản thử nghiệm này chỉ hỗ trợ định hướng đăng ký hoặc gia hạn tạm trú cho công dân Việt Nam. Nhu cầu này chưa nằm trong phạm vi hỗ trợ.")
-    residence = contains(value, "tam tru")
-    renewal = contains(value, "gia han")
+        return previous, result("clarify", "repeat", with_choices=True)
+    if has("ho so cua toi", "du lieu ca nhan", "thong tin ca nhan", "so dien thoai cua toi", "cccd cua toi", "dossier", "my dossier", "my personal", "read my phone number", "my profile", "read my passport", "access my passport", "my records"):
+        return previous, result("personal_access_unavailable", "personal")
+    if has("lam lai", "bat dau lai", "doi thu tuc", "start over", "restart", "change procedure"):
+        return DialogueState(awaiting_choice=True), result("clarify", "clarify", with_choices=True)
+    if has("thuong tru", "ho chieu", "passport", "can cuoc", "visa", "nguoi nuoc ngoai", "ket hon", "khai sinh", "kinh doanh", "permanent residence", "identity card", "foreigner", "foreign national", "foreign citizen", "temporary residence card", "trc", "marriage", "birth certificate", "business"):
+        return DialogueState(), result("not_covered", "unsupported")
+    residence = has("tam tru", "temporary residence", "temporary residency")
+    renewal = has("gia han", "renew", "renewal", "extend", "extension")
     # Past registration is context, not a second requested action.
     registration_text = value.replace("da dang ky", "").replace("tung dang ky", "").replace("gia han dang ky", "gia han")
-    registration = contains(registration_text, "dang ky") or contains(value, "lan dau")
+    registration_text = registration_text.replace("renew registration", "renew").replace("extend registration", "extend")
+    registration = any(contains(registration_text, phrase) for phrase in ("dang ky", "register", "first time", "lan dau"))
+    registration = registration or (contains(registration_text, "registration") and (not renewal or has("and", "or")))
     relevant = residence or previous.awaiting_choice
     # Negation and mixed actions require clarification rather than a nearest hit.
-    if relevant and (contains(value, "khong") or (renewal and registration)):
-        return DialogueState(awaiting_choice=True), result("clarify", CLARIFY, choices=True)
+    if relevant and (has("khong", "not", "don t", "dont", "do not") or (renewal and registration)):
+        return DialogueState(awaiting_choice=True), result("clarify", "clarify", with_choices=True)
     if relevant and (renewal or registration):
         code = "1.002755" if renewal else "1.004194"
-        name = "gia hạn tạm trú" if renewal else "đăng ký tạm trú"
-        return DialogueState(candidate_code=code), result("lookup_pending", PENDING.format(name=name), code)
+        name = MESSAGES[language]["renew" if renewal else "register"]
+        return DialogueState(candidate_code=code), result("lookup_pending", "pending", code, name=name)
     if residence:
-        return DialogueState(awaiting_choice=True), result("clarify", CLARIFY, choices=True)
-    if previous.candidate_code and any(contains(value, phrase) for phrase in ("giay to", "le phi", "ho so", "can gi", "bao nhieu")):
-        return previous, result("lookup_pending", "Tôi chưa có dữ liệu thủ tục đã duyệt cho nhu cầu vừa chọn. Tôi sẽ không đoán giấy tờ, điều kiện hay lệ phí.", previous.candidate_code)
-    return DialogueState(), result("not_found", "Tôi chưa xác định được nhu cầu tạm trú trong nội dung này. Bạn có thể chọn một trong hai nhu cầu sau.", choices=True)
+        return DialogueState(awaiting_choice=True), result("clarify", "clarify", with_choices=True)
+    if previous.candidate_code and has("giay to", "le phi", "ho so", "can gi", "bao nhieu", "documents", "fees", "checklist", "how much", "what do i need"):
+        return previous, result("lookup_pending", "facts_pending", previous.candidate_code)
+    return DialogueState(), result("not_found", "not_found", with_choices=True)

@@ -1,4 +1,4 @@
-# VOICE-01: public Vietnamese voice dialogue
+# VOICE-01: public Vietnamese / English voice dialogue
 
 Owner: Son (backend/dialogue). Kim owns the product UI, including the voice screen
 and microphone controls. The static page in this package is a development/test
@@ -14,7 +14,8 @@ son/voice/.venv/Scripts/python.exe -m pip install -e './son/voice[test]'
 son/voice/.venv/Scripts/python.exe -m uvicorn voice_app.app:app --host 127.0.0.1 --port 8000 --no-access-log
 ```
 
-Open http://127.0.0.1:8000. No API key needed for this routing milestone.
+Open http://127.0.0.1:8000. The frozen test page remains Vietnamese; Kim owns
+the bilingual product UI. The backend supports both languages without an API key.
 
 ```powershell
 son/voice/.venv/Scripts/python.exe -m unittest discover -s son/voice/tests -v
@@ -27,6 +28,7 @@ npm --prefix son/voice install --ignore-scripts
 # Use an installed Edge browser, or install Playwright Chromium separately.
 $env:VOICE_BROWSER_CHANNEL='msedge'
 node son/voice/tests/browser_smoke.cjs
+node son/voice/tests/audio_client_smoke.cjs
 ```
 
 Screenshots go to ignored `work/voice-qa/` from the repository root. Override
@@ -43,6 +45,11 @@ dependency and must not be staged as part of this task.
 - Vietnamese speech recognition through the browser Web Speech API, with typed
   input when unavailable. Users check recognized text and press Send.
 - Optional browser speech synthesis. No LLM or external realtime vendor configured.
+- Bilingual backend: `POST /api/voice/session?language=en` (default `vi`), then
+  `POST /api/voice/turn` with `{ "text": "renew" }`. A turn may specify
+  `language: "vi"` or `"en"` to change reply language without losing intent.
+  Replies add `language` and `speech_language`; legacy Vietnamese requests work.
+  These are canned dialogue translations, not translations of official facts.
 - Conservative deterministic intent routing for registration (`1.004194`) versus
   renewal (`1.002755`), clarification on ambiguity, and explicit unsupported/no-result
   states. These are intent candidates, not reviewed procedure results.
@@ -119,3 +126,90 @@ as an application login/authorization implementation.
 Automated tests use handwritten synthetic utterances and no network services.
 They do not claim real acoustic recognition, an LLM conversation, reviewed legal
 retrieval, authentication, report delivery or full voice-to-report integration.
+
+## Optional server audio adapter and headless client
+
+The new audio path is speech recognition -> user-confirmed text -> deterministic
+dialogue -> synthesis of the latest server-owned reply. It does not forward
+unverified model-generated legal answers to audio. An unrestricted realtime
+speech-to-speech conversation is not implemented.
+
+OpenAI audio is an optional adapter, not an agreed team vendor. Documentation
+checked on 31 October 2026: [voice pipelines](https://developers.openai.com/api/docs/guides/voice-agents),
+[transcription](https://developers.openai.com/api/docs/guides/speech-to-text),
+[speech synthesis](https://developers.openai.com/api/docs/guides/text-to-speech).
+Default adapter models: `gpt-4o-mini-transcribe`, `gpt-4o-mini-tts`. Models are
+configurable; live account access and VI/EN acoustic quality are unverified.
+
+Activation is deliberately explicit. Install the audio extra, supply a key privately
+as the server process's `OPENAI_API_KEY`, set `VOICE_ENABLE_AUDIO_API=1`, then
+restart. Never place the key in frontend code, Git, a URL or a chat. The app does
+not load `.env` files automatically. No key or flag means audio calls return 503;
+text dialogue and the existing browser test adapter remain available.
+
+```powershell
+son/voice/.venv/Scripts/python.exe -m pip install -e './son/voice[audio,test]'
+# After setting OPENAI_API_KEY privately in the server environment:
+$env:VOICE_ENABLE_AUDIO_API='1'
+# Optional: VOICE_TRANSCRIBE_MODEL / VOICE_TTS_MODEL
+```
+
+Only synthetic demo audio is intended until identity, consent integration and
+provider retention settings have been reviewed. Audio and transcript cross to
+OpenAI for transcription; only server-owned canned replies cross for synthesis.
+No provider key or ephemeral credential is sent to the browser. There is no
+claim of zero retention by the provider. HTTP failures are sanitized, no retries
+are automatic, and no live API requests ran during implementation.
+
+### Backend additions for Kim
+
+- `GET /api/voice/capabilities`: supported language/speech-locale map, audio
+  availability, byte limit, disclosure and transcript-confirmation requirements.
+- `POST /api/voice/transcribe`: raw audio body with its MIME type; existing dialogue
+  cookie and `X-Audio-Consent: 1` required. Up to 2 MiB; WebM, Ogg, WAV, MP4, MP3
+  container signatures checked, not full codec validation. Returns `text`,
+  `language`, `requires_confirmation: true`; it never advances the dialogue.
+- `POST /api/voice/speech`: empty body, same cookie/consent requirement; reads only
+  the last server reply and returns MP3 with `X-AI-Generated-Audio: true`. Arbitrary
+  client synthesis text is rejected. UI must disclose AI-generated audio first.
+- 20 audio-operation attempts per dialogue, one in flight at once, 20-second
+  upstream timeout, 4 MiB output cap. Invalid/failed operations also use budget.
+  These are local demo limits, not authenticated billing/abuse protection.
+- End/expiry during an upstream operation discards its response; already uploaded
+  audio cannot be retracted. Global quotas/distributed limits are not implemented.
+
+`/audio-client.js` exports `VoiceAudioClient`, a **headless integration adapter**:
+
+```javascript
+import { VoiceAudioClient } from '/audio-client.js';
+const voice = new VoiceAudioClient({
+  onState: state => { /* Kim updates her UI */ },
+  onTranscript: transcript => { /* show/edit text, ask user to confirm */ }
+});
+const welcome = await voice.startSession('en'); // or 'vi'
+// After UI disclosure of upload to OpenAI and AI-generated audio:
+voice.setAudioConsent(true);
+await voice.startRecording();
+voice.stopRecording(); // automatic limit: 20 seconds, browser-side only
+// Only after the user checks the returned transcript:
+const reply = await voice.turn('I want to renew temporary residence');
+await voice.readReply();
+voice.interrupt(); // stop output/recording, release tracks, abort pending fetch
+await voice.endSession();
+```
+
+No UI markup/styles or redesign is included. The adapter can interrupt playback
+when starting a new recording, but is not full-duplex realtime/VAD. It enforces a
+20-second recording limit client-side; the server enforces bytes, not duration.
+Cancellation of fetch does not guarantee cancellation of provider billing. Kim's
+UI must handle rejected promises, playback policy, errors, consent and transcript
+confirmation. Error states: `recording_error`, `audio_too_large`,
+`transcription_error`, `speech_error`, `playback_error`; methods may reject with
+`voice_http_<status>`, permission errors or `AbortError`. Text fallback remains an
+application responsibility. UI/identity integration and phone acoustic testing
+remain unverified.
+
+Migration: existing Vietnamese endpoints stay valid; response fields are additive.
+Kim can adopt language selection and the headless adapter independently. No
+Vincent procedure/report schema changed, and no legal content is translated.
+Keep the same origin and `/api/voice` paths until proxy/cookie transport is agreed.

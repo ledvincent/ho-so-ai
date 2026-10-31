@@ -10,6 +10,7 @@ dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1"]
 
 [project.optional-dependencies]
 test = ["httpx>=0.27,<1"]
+audio = ["httpx>=0.27,<1"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -5,6 +5,7 @@ from threading import Lock
 import time
 
 from .dialogue import DialogueState, advance
+from .languages import Language, MESSAGES
 
 
 class MissingSession(Exception):
@@ -19,11 +20,19 @@ class TurnLimit(Exception):
     pass
 
 
+class AudioLimit(Exception):
+    pass
+
+
 @dataclass
 class Session:
     expires_at: float
+    language: Language = "vi"
     state: DialogueState = field(default_factory=lambda: DialogueState(awaiting_choice=True))
     turns: int = 0
+    last_reply: str = ""
+    audio_operations: int = 0
+    audio_busy: bool = False
 
 
 class PublicSessions:
@@ -39,7 +48,7 @@ class PublicSessions:
         now = self.clock()
         self._sessions = {key: item for key, item in self._sessions.items() if item.expires_at > now}
 
-    def create(self, old_token=None):
+    def create(self, old_token=None, language: Language = "vi"):
         with self._lock:
             self._prune()
             # Restart invalidates the old dialogue cookie, not a user identity.
@@ -48,10 +57,10 @@ class PublicSessions:
             if len(self._sessions) >= self.max_sessions:
                 raise CapacityReached()
             token = secrets.token_urlsafe(32)
-            self._sessions[token] = Session(self.clock() + self.ttl)
+            self._sessions[token] = Session(self.clock() + self.ttl, language=language, last_reply=MESSAGES[language]["welcome"])
             return token
 
-    def turn(self, token, utterance):
+    def turn(self, token, utterance, language: Language | None = None):
         with self._lock:
             self._prune()
             session = self._sessions.get(token)
@@ -59,9 +68,31 @@ class PublicSessions:
                 raise MissingSession()
             if session.turns >= self.max_turns:
                 raise TurnLimit()
-            session.state, response = advance(session.state, utterance)
+            session.language = language or session.language
+            session.state, response = advance(session.state, utterance, session.language)
+            session.last_reply = response["reply"]
             session.turns += 1
             return response
+
+    def audio_begin(self, token):
+        with self._lock:
+            self._prune()
+            session = self._sessions.get(token)
+            if session is None:
+                raise MissingSession()
+            if session.audio_busy or session.audio_operations >= 20:
+                raise AudioLimit()
+            session.audio_busy = True
+            session.audio_operations += 1
+            return session.language, session.last_reply
+
+    def audio_end(self, token):
+        with self._lock:
+            self._prune()
+            session = self._sessions.get(token)
+            if session is None:
+                raise MissingSession()
+            session.audio_busy = False
 
     def end(self, token):
         with self._lock:
