@@ -1,9 +1,31 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Current first-test scope: foreigner temporary-stay extension
+
+Son explicitly chose alignment with Vincent's published catalog for the first
+test. Realtime now uses `ho-so-ai-foreigner-intake-v2`: foreign-national temporary-
+stay extension, with `1.001146` as a provincial integration candidate. It keeps
+central extension, visa issuance and visa-exemption cases distinct, retains an
+unknown procedure variant, and never converts a citizen request into this route.
+NA5 is not presented as an approved or applicable form.
+
+Refresh the existing `?audio=realtime&language=en` (or `vi`) page and start a new
+call. No server restart or key re-entry is needed. This changes the conversational
+scope; Vincent's assistant API is still not invoked. Sources/review/version gates
+and report integration remain pending. The old typed/chained diagnostic routes
+still exercise the historical citizen journey and must not be used for this new
+demo. Their codes are not mappings to the foreigner catalog.
+
+Current manual rubrics: `evals/foreigner-intake-scenarios.json` (12 synthetic
+scenarios). `evals/intake-scenarios.json` and the two previously observed live
+pilots belong to the earlier citizen profile; they do not validate this profile.
+The optional live pilot script now targets the new scope but has not been run
+against the provider for this increment. No reviewed data or form is enabled.
+
 ## Hồ Sơ AI conversation profile
 
 The voice now follows a project-specific intake: welcome -> understand the goal ->
-clarify initial registration versus renewal -> confirm understanding -> useful
+clarify the procedure variant -> confirm understanding -> useful
 verbal recap and the next unresolved step -> close. It remembers answers within
 the call, handles corrections/language switches, and does not keep repeating the
 same menu or data-unavailable warning. This is a conversational plan in the prompt,

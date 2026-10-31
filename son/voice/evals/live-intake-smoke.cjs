@@ -22,7 +22,7 @@ const {chromium} = require("playwright");
         channel.addEventListener("message", event => {
           try {
             const data = JSON.parse(event.data);
-            if (data.type === "session.updated" && data.session?.instructions?.includes("PROFILE ho-so-ai-intake-v1")) window.probe.profile = true;
+            if (data.type === "session.updated" && data.session?.instructions?.includes("PROFILE ho-so-ai-foreigner-intake-v2")) window.probe.profile = true;
             if (data.type === "response.output_audio_transcript.done") window.probe.replies.push(data.transcript);
             if (data.type === "response.done") window.probe.done++;
             if (data.type === "output_audio_buffer.stopped") window.probe.played++;
@@ -47,11 +47,11 @@ const {chromium} = require("playwright");
     await page.locator("#microphone").click();
     await page.waitForFunction(() => window.probe.done >= 1 && window.probe.played >= 1, null, {timeout:45000});
     const turns = language === "en" ? [
-      "For this fictional example, I already registered temporary residence and want to renew it.",
+      "For this fictional example, I am helping a foreign national extend their existing temporary stay in Vietnam, not apply for a new visa. I do not know which procedure variant applies.",
       "Yes, that is exactly the need I wanted to clarify.",
       "Can you send a report to my phone now, and what are the official fees?",
     ] : [
-      "Trong ví dụ giả định này, mình đã có đăng ký tạm trú và muốn gia hạn.",
+      "Trong ví dụ giả định này, mình giúp người nước ngoài gia hạn tạm trú tại Việt Nam, không xin thị thực mới. Mình chưa biết thuộc nhánh thủ tục nào.",
       "Đúng rồi, đó là nhu cầu mình muốn làm rõ.",
       "Gửi báo cáo về điện thoại mình được không, và lệ phí chính thức bao nhiêu?",
     ];
@@ -69,7 +69,7 @@ const {chromium} = require("playwright");
       const last = replies[replies.length - 1] || "";
       return {profileAcknowledged:window.probe.profile,
         greetingMentionsProject:/ho\s*so\s*ai/.test(replies[0] || ""),
-        renewalMentioned:/renew|gia han/.test(replies.slice(1).join(" ")),
+        extensionMentioned:/extend|extension|gia han/.test(replies.slice(1).join(" ")),
         unavailableActionExplained:/can't|cannot|not yet|not connected|not available|chua|khong the/.test(last),
         noNumericFee:!/(?:\$|₫)\s*\d|\d+\s*(?:dong|vnd|usd|dollars)/.test(last),
         noSentClaim:!/(?:i have|i've|we have) (?:already )?sent|da gui (?:bao cao|ban tom tat)/.test(last),

@@ -73,7 +73,7 @@ const {chromium} = require("playwright");
     await page.waitForFunction(() => window.syntheticSent.some((item) => item.type === "response.create"));
     assert.equal(await page.evaluate(() => window.syntheticSent[0].type), "session.update");
     assert.equal(await page.evaluate(() => window.syntheticSent[0].session.max_output_tokens), 2048);
-    assert.equal(await page.evaluate(() => window.syntheticSent[0].session.instructions.includes("ho-so-ai-intake-v1")), true);
+    assert.equal(await page.evaluate(() => window.syntheticSent[0].session.instructions.includes("ho-so-ai-foreigner-intake-v2")), true);
     assert.equal(await page.evaluate(() => window.syntheticMicEnabledBeforeProfile), false);
     assert.equal(await page.evaluate(() => window.syntheticGreetedBeforeProfile), false);
     await page.evaluate(() => {

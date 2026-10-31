@@ -29,6 +29,13 @@ test was executed for this assessment.
 
 ## Blocking scope decision
 
+**Update after this assessment:** Son explicitly selected alignment with Vincent
+for the first test. The Realtime profile now targets foreigner temporary-stay
+extension, with `1.001146` as a candidate only. See `FOREIGNER-DEMO-HANDOFF.md`.
+The historical mismatch below describes the prior state. The domain choice is
+resolved for this test; reviewed evidence/version/checklist and API orchestration
+remain pending. No runtime compatibility with Vincent is claimed.
+
 Current scope doc and deterministic voice routing target `1.004194` registration
 and `1.002755` renewal; the Realtime persona targets the same citizen journey.
 The dependency catalog lists `1.001146`, `1.003326`, `1.003342`, `1.000771`, covering
