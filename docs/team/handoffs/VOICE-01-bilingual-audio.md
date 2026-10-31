@@ -1,5 +1,10 @@
 # VOICE-01 — suite bilingue et audio controle
 
+Suite demandee par Son : le nouveau mode appel WebRTC/Realtime, les limites de
+grounding et les preuves les plus recentes figurent dans
+`docs/team/handoffs/VOICE-01-realtime.md`. Le present fichier conserve l'historique
+du mode transcription/lecture et de son activation privee.
+
 Responsable : Son
 
 Tache : VOICE-01 — dialogue et agent vocal vietnamien/anglais, dans le perimetre
