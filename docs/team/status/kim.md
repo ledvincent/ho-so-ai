@@ -1,11 +1,13 @@
 # Kim — application integration checkpoint
 
 Owner: Kim; consolidated by Kim's local manager.
-Updated: 2026-10-31 13:05 Asia/Saigon (UTC+07:00); evidence snapshot.
+Updated: 2026-10-31 13:13 Asia/Saigon (UTC+07:00); evidence snapshot.
 Task: TEAM-05 — publish the APP-01, AUTH-01, FORM-02 and UI-01 integration checkpoint.
 State: Backend/application contract published for consumer development. Background
-monitor and shared-backend implementation are paused for Kim's intermediary review;
-only the designated frontend owner is finishing the bounded NA5/admin demo.
+monitor, scaffold and frontend implementation are paused for Kim's intermediary
+review. The bounded NA5/admin demo is committed and ready locally. The portal
+pause message was rejected; its app entry is unloaded and delivery unchanged,
+so a new stop acknowledgement is not claimed. Legacy forms is human-confirmed inactive.
 Live authentication/storage and team integration are not complete.
 
 ## What teammates can access
@@ -49,8 +51,8 @@ silently save changes to the user's profile.
 Kim's latest explicit priority is to match Vincent's existing backend and retrieved
 documents. The main preview now targets **NA5, procedure 1.001146**, consuming his
 exact published schema and blank PDF. CT01 is retained only as an earlier secondary
-test fixture. The bounded remaining UI task is `admin/admin` demo entry, Vincent's
-NA5 fields/conditions and consistent document/chat/research identity, then stop.
+test fixture. The completed bounded UI task includes `admin/admin` demo entry,
+Vincent's NA5 fields/conditions and consistent document/chat/research identity.
 The demo login is synthetic UI state, not a Clerk account or profile-API bypass.
 
 - One designated frontend workstream owns all pages, components, layout, styling
@@ -77,7 +79,7 @@ The demo login is synthetic UI state, not a Clerk account or profile-API bypass.
 | APP-01 / `codex/kim/app-01-profile-integration` | Wiring `9cacda7320b5d18975a0bc2b62410eb74e45210f` | Actual profile routes and application lifespan use the portal service. |
 | AUTH-01 / `codex/kim/auth-01-storage-hardening` | Code `584e1ee9adbb5fd1f0a845c1357e204833202d6f`; evidence `def58b7d04667d1865e281391dc25ef1723aa0a2` | Registered-route tests, issuer-marker and role/column privilege guards, trusted TLS/GSS connection policy. |
 | APP-01 consumer acceptance | Evidence HEAD `b07e28e74b4b9174979b7922ad3576d0562c778a` on `codex/kim/app-01-profile-integration` | Consumed the hardening and handoff commits with their original SHAs and reran the integrated checks. |
-| UI-01 / `codex/kim/ui-01-site-design-integration` | UI `f666b633c70b3f65df3813efc42d3ddce58fc8be`; admin demo `d41ceaa970c7d9019bc04443649be923567efe23`; evidence `4f1e8d541ed542a594bda9f2a2d0113d1615a1b4` | Local checkpoint includes branded UI, synthetic/CT01 drafts and isolated admin login. Backend dependency patches are consumed. Vincent-aligned NA5 adaptation is currently in progress and still local. |
+| UI-01 / `codex/kim/ui-01-site-design-integration` | NA5 code `a8dd757c9a80a4a466b1f0257c9a790891a4c6b7`; handoff `b4a3ebf2d208ad4533b2a50f69aec9462626145c` | Clean local checkpoint, paused. Branded UI/admin demo with Vincent's NA5 schema, document and conditional fields. Backend dependency patches are consumed. This UI branch remains local. |
 
 The code and handoff commits were read directly from isolated local branches.
 No active implementation checkout was edited to prepare this status. The old
@@ -108,6 +110,27 @@ owner's isolated Python environment with `-m pytest -q --tb=short --basetemp <fr
 then `scripts/export_profile_contract.py --check`; the disposable SQL suite is
 `node --test --test-concurrency=1 tests/portal/postgres-policy.test.mjs` with the
 documented dependency paths.
+
+### Current NA5 intermediary checkpoint — ready for review
+
+Local entry: `http://127.0.0.1:3014/demo/login`, demo credentials `admin/admin`.
+The owner reports five focused NA5 contract tests, TypeScript and production build
+passing at the code checkpoint above, with desktop/mobile review and logout/reset
+checks. The manager independently verified demo logout, successful entry into
+NA5 `1.001146` with an empty draft, a fictional chat answer updating the selected
+field, and the producer's fictional example loading into the document. The manager
+also compared all 43 field definitions, fixed values, revision and source hashes
+against Vincent's exact producer. The checkout is clean and the owner acknowledged
+stopping. Evidence: `docs/ui-01-frontend-handoff.md` and ignored local
+`output/ui-01/na5-demo-desktop.jpg`, `na5-demo-mobile.jpg`.
+
+This is a mock UI journey, not a live authenticated backend test. The draft is
+memory-only; navigating away discards it. Profile links retain the real-auth
+boundary, so demo admin does not enter the real profile service. The assistant
+mock returns `insufficient_context` and never patches form values. The document
+uses rendered blank pages with HTML overlays, not the backend filled-PDF renderer.
+Final NA5 download stays locked because template review is `draft` and there is
+no backend review token. No new implementation should start until Kim reviews.
 
 ### First visual checkpoint — historical 12:49 snapshot
 
@@ -151,10 +174,10 @@ the production registry. Preview and export must represent the same draft.
 | --- | --- | --- |
 | APP-01 routes -> AUTH-01 adaptation | Producer `9cacda7320b5d18975a0bc2b62410eb74e45210f`; consumer `584e1ee9adbb5fd1f0a845c1357e204833202d6f`; **tested compatible** for registered API/lifespan with synthetic identities/storage only | Preserve the unchanged contract; verify real storage separately. |
 | AUTH-01 hardening -> APP-01 integration | Producer `584e1ee9adbb5fd1f0a845c1357e204833202d6f`; consumer evidence `b07e28e74b4b9174979b7922ad3576d0562c778a`; **tested compatible** within the same synthetic boundary | Deliver the exact combined backend reference to the frontend owner. |
-| APP-01/FORM-02/design -> UI-01 | Exact inputs listed above; **received; adaptation required** | Sole frontend owner finishes the mock, reconciles the hardened backend input and returns code SHA, screenshots and browser results. |
+| APP-01/FORM-02/design -> UI-01 | Exact inputs listed above; consumer `a8dd757c9a80a4a466b1f0257c9a790891a4c6b7`; **tested compatible for the mocked UI checkpoint only** | Backend patches consumed; preview evidence delivered. Pause for Kim; real identity/storage acceptance remains pending. |
 | Son's manager checkpoint -> Kim manager | Published `codex/son/team-04-manager-checkpoint`, latest inspected `59e162ca79a29b3bdf0773a625833b09b14796ad`; **received** | Son identifies procedure/version mismatches and needs actual Kim code; backend publication now resolves that source-access dependency. Voice/access implementation remains unreceived. |
 | Son voice/access -> Kim application | No published implementation received for testing | Later provide exact producer branch/SHA, session/consent/tool boundaries and verification instructions. Son reports local voice code and authorization work; absence of publication is not inactivity. |
-| Vincent retrieval/procedure contract -> Kim application | Published `codex/procedure-foundation`, `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`; **received; adaptation required** | Exact NA5 schema/PDF and assistant/workflow endpoints inspected. Frontend adapts the intermediate mock to those shapes; no live runtime compatibility claimed. |
+| Vincent retrieval/procedure contract -> Kim application | Producer `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`; UI consumer `a8dd757c9a80a4a466b1f0257c9a790891a4c6b7`; **tested compatible for schema/fixture and mock wire shapes only** | Exact schema/PDF reused and verified. Live HTTP, retrieval, authentication and PDF-token integration still require adaptation/testing. |
 
 ## Cross-member alignment review
 
@@ -175,14 +198,13 @@ branch now supplies the implementation and authoritative interface documents.
 | Repository composition | Kim and Vincent both touch root `.env.example`, `.gitignore`, `README.md` and `compose.yaml`. Vincent's branch diverges from the older `25b89443...` base. Keep service/package/config ownership explicit; do not blindly merge or assume shared database/ports. File overlap is not a performed conflict resolution. |
 
 These findings establish received contracts and concrete adapter work, not
-end-to-end interconnectability. Implementation remains paused outside the single
-bounded frontend preview requested by Kim.
+end-to-end interconnectability. The bounded frontend preview is complete; the
+frontend and scaffold are paused and the monitor remains paused for Kim's review.
 
 ## Concrete prerequisites and next actions
 
-1. Frontend owner: finish only the Vincent-aligned NA5/admin preview, commit and
-   report the exact URL, source hashes, synthetic checks and remaining limits,
-   then pause for Kim. Do not activate reviewed downloads or start new backend work.
+1. Kim reviews the committed local NA5/admin preview. Frontend owner remains
+   paused. Do not activate reviewed downloads or start new backend work.
 2. Son can fetch the published application branch and inspect app.v1 now. Record
    exact consumer/producer evidence; real Clerk, consent and revocation remain
    distinct inputs. No status-only publication blocker remains for the backend.
