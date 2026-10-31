@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hồ Sơ AI · Trò chuyện</title>
+  <link rel="stylesheet" href="/voice.css">
+  <script src="/voice.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="/">Hồ Sơ <strong>AI</strong><span>Thủ tục, từng bước một.</span></a><span class="badge">BẢN THỬ NGHIỆM</span></header>
+    <section class="intro">
+      <p class="eyebrow">BẮT ĐẦU TỪ NHU CẦU CỦA BẠN</p>
+      <h1>Chuyện tạm trú,<br>mình cùng làm rõ.</h1>
+      <p>Nói hoặc nhập điều bạn cần. Trợ lý sẽ giúp phân biệt đăng ký mới và gia hạn tạm trú.</p>
+    </section>
+    <section class="workspace" aria-label="Cuộc hội thoại">
+      <div class="conversation">
+        <div class="session-heading"><span class="dot"></span><h2>Trò chuyện bằng tiếng Việt</h2><button id="restart" class="text-button" type="button">Bắt đầu lại</button></div>
+        <div id="messages" class="messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+        <div id="choices" class="choices" aria-label="Chọn nhu cầu"></div>
+        <form id="composer">
+          <label for="utterance">Nhập nhu cầu của bạn</label>
+          <div class="input-row"><input id="utterance" name="utterance" maxlength="600" autocomplete="off" placeholder="Ví dụ: Tôi muốn gia hạn tạm trú…" required><button id="send" type="submit" aria-label="Gửi" disabled>Gửi <span aria-hidden="true">↗</span></button></div>
+        </form>
+        <div class="audio-controls"><button id="microphone" type="button" disabled>Nói bằng giọng nói</button><label class="read-toggle"><input id="read-aloud" type="checkbox"> Đọc câu trả lời</label></div>
+        <label class="audio-consent"><input id="audio-consent" type="checkbox"> Tôi đồng ý dùng nhận dạng giọng nói của trình duyệt; âm thanh có thể được gửi đến dịch vụ của nhà cung cấp trình duyệt.</label>
+        <p id="status" role="status">Đang mở cuộc hội thoại…</p>
+      </div>
+      <aside>
+        <p class="eyebrow">NHU CẦU ĐANG CHỌN</p>
+        <h2 id="candidate-title">Mình bắt đầu nhé.</h2>
+        <p id="candidate-description">Chọn đăng ký mới hoặc gia hạn. Chưa cần thông tin cá nhân.</p>
+        <div class="progress"><span>01</span><p>Làm rõ nhu cầu<strong>Đang thử nghiệm</strong></p></div>
+        <div class="progress muted"><span>02</span><p>Checklist có nguồn<strong>Chờ dữ liệu đã duyệt</strong></p></div>
+        <div class="progress muted"><span>03</span><p>Nhận báo cáo trên điện thoại<strong>Chưa kết nối</strong></p></div>
+        <p class="aside-note">Bản này chưa cung cấp giấy tờ, lệ phí hay biểu mẫu, và chưa truy cập hồ sơ cá nhân.</p>
+      </aside>
+    </section>
+    <footer>Không nhập số căn cước, số điện thoại hoặc thông tin thật trong bản thử nghiệm. Nội dung hội thoại chỉ hiển thị trong trang hiện tại; máy chủ không lưu lời nói hoặc bản chép lời.</footer>
+  </main>
+</body>
+</html>
