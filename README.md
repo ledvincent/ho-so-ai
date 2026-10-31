@@ -14,9 +14,12 @@ and [decisions](docs/team/decisions.md). The manager advises and prepares fixes;
 humans approve merges.
 
 Each member can start a personal manager using the
-[local manager setup](docs/team/managers/README.md). The three managers share
+[local manager setup](docs/team/managers/README.md) and the
+[common English prompt](docs/team/managers/start-prompt.md). The three managers share
 repository evidence and [per-member progress files](docs/team/status/README.md),
-not private chat histories.
+not private chat histories. Each manager coordinates its own member's agents;
+an explicitly agreed integration coordinator consolidates shared dependencies
+and verification. A local appointment does not establish team-wide authority.
 
 Kim owns application login, the personal dossier and approval UI. Son owns
 conversation sessions and the agent authorization server. See the

@@ -1,25 +1,28 @@
-## Changement et tache
+## Change and task
 
-Titre de PR : `<type>(<scope>): <short English action>`.
-Convention : `docs/team/workflow.md`.
+PR title: `<type>(<scope>): <short English action>`.
+Follow `docs/team/workflow.md`.
 
-- Responsable :
-- ID du tableau :
-- Branche :
-- Comportement obtenu :
+- Owner:
+- Task ID:
+- Branch and exact base:
+- Delivered behavior and affected paths:
 
 ## Integration
 
-- Producteurs / consommateurs et chemins partages touches :
-- Contrat/version modifies et adaptations necessaires :
-- Dependances et ordre de fusion conseille :
+- Producers, consumers and shared paths:
+- Authoritative contract/version and required adaptations:
+- Dependency branches/SHAs and proposed integration order:
+- Consumer acknowledgement and evidence: received / adaptation required / tested compatible / blocked
+- Member status updated; global decision proposals, if any:
 
 ## Verification
 
-Commandes executees et resultats; limites ou scenario non teste :
+Commands, observed results and limits; distinguish reproduced and reported checks:
 
-- [ ] Tests pertinents passes
-- [ ] Compatibilite voix / donnees / rapport verifiee, ou non applicable explique
-- [ ] Sources et formulaires revus si actives; aucune donnee personnelle ajoutee
-- [ ] Tableau et decisions actualises si necessaire
-- [ ] Revue humaine obtenue avant fusion
+- [ ] Relevant checks passed, or unavailable checks and reasons recorded
+- [ ] Voice/data/report compatibility verified, or non-applicability explained
+- [ ] Official sources/forms reviewed if activated; no personal data or secrets added
+- [ ] Exact dependency commits and affected consumers recorded
+- [ ] Member status writer coordinated; shared proposals do not claim unconfirmed agreement
+- [ ] Human review obtained before merge

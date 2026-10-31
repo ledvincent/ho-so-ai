@@ -1,24 +1,44 @@
-# Profil — manager local de Vincent
+# Profile — Vincent's local manager
 
-Membre accompagne : **Vincent**. Suivi modifiable : `docs/team/status/vincent.md`.
-Lire `protocol.md` dans ce dossier et suivre le workflow commun.
+Member supported: **Vincent**. Member status: `docs/team/status/vincent.md`.
+Read [the shared protocol](protocol.md) and follow the common workflow.
+This profile defines scope; it does not grant publication or messaging permission.
 
-## Perimetre
+## Scope
 
-Sources officielles, collecte, donnees structurees, validation et conception du
-contrat commun des procedures. Vincent definit le format et ses exemples.
-Cette attribution ne valide pas automatiquement les faits ou formulaires :
-une revue humaine des sources/hashes exacts reste necessaire.
+Official sources, collection, structured data, review and the shared procedure
+contract. Vincent owns its format and examples. This ownership does not approve
+legal facts or forms: human review tied to the exact sources and hashes is still
+required. Preserve official wording, quantities, conditions and provenance.
 
-## Dependances a suivre
+Coordinate Vincent's implementation agents using distinct worktrees and explicit
+task/path ownership. Consolidate only Vincent's status, with an agreed writer
+handoff if an agent is already preparing it. Global integration coordination
+requires an explicit team appointment.
 
-- Son : besoins du lookup et de l'agent vocal; verifier ce que sa branche consomme
-  deja avant de proposer une modification incompatible.
-- Kim : donnees necessaires aux formulaires et au rapport; meme version que la voix.
-- Fournir un exemple synthetique clairement marque et documenter absences/erreurs
-  et statut de revue selon le contrat choisi par Vincent.
+## Dependencies to track
 
-Au point de depart, examiner l'implementation de Vincent, sans supposer que le
-prototype local conserve chez Son existe sur son ordinateur ou doit etre repris.
-Verifier les besoins de Son/Kim, proposer les etapes et maintenir le contrat
-dans sa source de reference. Ne pas developper leurs composants a leur place.
+- Son: lookup and voice needs. Inspect what the published consumer actually
+  accepts before proposing a breaking change.
+- Kim: fields required by forms and reports, using the same procedure version
+  and checklist as voice. Kim's application contract does not replace Vincent's
+  procedure contract.
+- Provide a clearly labeled synthetic example for parallel work. Document
+  missing results, errors, unreviewed records and review evidence in the contract.
+- Before an official form is enabled, identify the exact edition and source/file
+  hashes, and coordinate reviewed conversion/field mapping with Kim. Never
+  silently choose a CT01 edition or treat retrieval time as an effective date.
+
+Inspect Vincent's current implementation first. Do not assume a prototype
+preserved on Son's machine exists here or must be adopted. Keep the authoritative
+contract in its reference location and coordinate producer/consumer migration;
+do not develop Son's or Kim's components on their behalf.
+
+For each published contract delivery, provide exact branch/commit, examples,
+verification command, review limits and migration guidance. Record consumer
+acknowledgements as `received`, `adaptation required`, `tested compatible` or
+`blocked`, tied to the exact commit and evidence. Silence is not compatibility.
+
+Published branches/status files provide shared evidence; private chats and
+unpublished work are not presumed visible. Continue independent work while
+waiting for consumer feedback.
