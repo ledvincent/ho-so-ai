@@ -116,6 +116,9 @@ const {chromium} = require("playwright");
       await page.waitForFunction(() => window.syntheticSent.some(item => item.item?.call_id === "synthetic_rag"));
       await page.getByRole("log").getByText("Synthetic sourced answer [s1]", {exact:true}).waitFor();
       await page.getByRole("log").getByText("SOURCE: Synthetic RAG source — https://example.org/source", {exact:true}).waitFor();
+      assert.equal(await page.getByRole("log").getByRole("link").getAttribute("href"), "https://example.org/source");
+      await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.output_audio_transcript.done", transcript:"SOURCE: untrusted spoken text — https://example.org/untrusted"})}));
+      assert.equal(await page.getByRole("log").getByRole("link").count(), 1, "Spoken prose must never create a source link");
       assert.equal(documentCalls, 0);
     } else {
       assert.equal(await page.evaluate(() => window.syntheticSent[0].session.tools), undefined);

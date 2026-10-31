@@ -377,14 +377,13 @@ async function realtimeHarness() {
         if (messages[state]) $("status").textContent = blocked ? messages.audio_blocked : messages[state];
         controls();
       },
-      onTranscript(text) {
+      onTranscript(text, metadata) {
         const element = document.createElement("p");
         element.className = "message";
         element.textContent = text;
-        if (text.startsWith("SOURCE: ")) {
-          const split = text.lastIndexOf(" — ");
+        if (metadata?.kind === "source") {
           try {
-            const url = new URL(text.slice(split + 3));
+            const url = new URL(metadata.source.url);
             if (["https:", "http:"].includes(url.protocol) && !url.username && !url.password) {
               const link = document.createElement("a");
               link.textContent = text;

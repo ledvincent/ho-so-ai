@@ -201,7 +201,7 @@ export class RealtimeVoiceClient {
                   if (output.context_reset) this.onContextReset();
                   this.onResult(output);
                   this.onTranscript(output.answer);
-                  for (const source of output.citations || []) this.onTranscript("SOURCE: " + source.title + " — " + source.url);
+                  for (const source of output.citations || []) this.onTranscript("SOURCE: " + source.title + " — " + source.url, {kind:"source", source});
                   this.onDiagnostic({event:"rag_result", status:output.status, procedureCode:output.procedure_code || null});
                 }
               }
