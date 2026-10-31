@@ -1,10 +1,10 @@
 # Kim — application integration checkpoint
 
 Owner: Kim; consolidated by Kim's local manager.
-Updated: 2026-10-31 12:43 Asia/Saigon (UTC+07:00); evidence snapshot.
+Updated: 2026-10-31 12:49 Asia/Saigon (UTC+07:00); evidence snapshot.
 Task: TEAM-05 — publish the APP-01, AUTH-01, FORM-02 and UI-01 integration checkpoint.
-State: Local components and synthetic integration are in review; the first combined
-UI mock is in progress. Live authentication/storage and team integration are not complete.
+State: Local components and synthetic integration are in review; a first runnable
+UI mock is available locally. Live authentication/storage and team integration are not complete.
 
 ## What teammates can access
 
@@ -92,8 +92,25 @@ Reproduction commands are recorded in the exact handoffs: from `api/`, run the
 owner's isolated Python environment with `-m pytest -q --tb=short --basetemp <fresh-test-dir>`,
 then `scripts/export_profile_contract.py --check`; the disposable SQL suite is
 `node --test --test-concurrency=1 tests/portal/postgres-policy.test.mjs` with the
-documented dependency paths. No current UI URL is certified by this checkpoint;
-the frontend owner must deliver a runnable mock and fresh browser evidence.
+documented dependency paths.
+
+### First visual checkpoint
+
+The manager inspected the frontend owner's desktop/mobile screenshots and checked
+the running local preview at `http://127.0.0.1:3014`. The home, `/workspace`,
+`/research`, `/portal` and `/sign-in` routes returned HTTP 200 with `no-store`.
+This URL runs on Kim's computer; it is not a hosted preview accessible to teammates.
+The screenshot evidence is `output/ui-01/forms-chat-desktop.jpg` and
+`output/ui-01/forms-chat-mobile.jpg` in the UI worktree, not published assets here.
+
+The first mock combines the branded navigation, profile/form components, mock
+research and a guided demo chat. The owner exercised chat-to-field updates, direct
+correction and ambiguous-date handling. The manager inspected those recorded
+actions and screenshots, but did not independently repeat the browser interaction.
+This checkpoint uses the synthetic draft; the official CT01 test overlay/export
+is still being connected. The UI remains uncommitted, so this is a visual checkpoint,
+not a source delivery or proof of live authentication/persistence. Review feedback
+asks for less header space and quicker access to the document and answer input.
 
 ## Official blank form used only for testing
 
@@ -125,8 +142,8 @@ the production registry. Preview and export must represent the same draft.
 
 ## Concrete prerequisites and next actions
 
-1. Frontend owner: deliver the first visible integrated mock, desktop/mobile
-   evidence, chat-to-field correction and matching preview/export behavior. Keep
+1. Frontend owner: finish the CT01 test overlay/export and compact layout, commit
+   the visible mock, reconcile backend dependencies and deliver fresh evidence. Keep
    mocks clear and product UI under one writer. Kim's manager reviews the result.
 2. Kim's manager: publish this status so teammates can see progress; prepare a
    separately reviewed application handoff with accessible code branches. Status
