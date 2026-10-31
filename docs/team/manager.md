@@ -16,6 +16,8 @@ ni imposer un schema a sa place.
 ## Routine a chaque demande de point ou de revue
 
 1. Lire les consignes, le perimetre, le tableau, les contrats et les decisions.
+   Verifier le respect de `docs/team/workflow.md` : branches, commits, PR et
+   compte rendu commun. Ne pas confondre une convention avec un blocage automatise.
 2. Examiner `git status --short`, les branches et les changements utiles. Si un
    acces distant fonctionne et que la demande le necessite, actualiser les refs
    avec `git fetch origin` et consulter les PR accessibles. Sinon indiquer que

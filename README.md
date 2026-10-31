@@ -13,6 +13,10 @@ validation; Kim owns forms, the mobile report and delivery. See
 and [decisions](docs/team/decisions.md). The manager advises and prepares fixes;
 humans approve merges.
 
+All agents follow the [common workflow](docs/team/workflow.md) for branches,
+commits, reviews and handoffs. Each member can copy the agent instruction at
+the end of that document.
+
 ## Data collection
 
 Vincent owns collection, its tests and the shared data contract. The manager

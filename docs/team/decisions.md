@@ -2,6 +2,11 @@
 
 ## Decisions confirmees — 31 octobre 2026
 
+- Les agents utilisent une convention commune de travail et de livraison :
+  `docs/team/workflow.md`. Elle couvre branches, commits, PR et comptes rendus;
+  aucun hook de blocage automatique n'est installe. Preuve : demande de Son
+  d'homogeneiser le travail et les commits de chaque agent.
+
 - A la demande de Son, laisser la collecte, ses tests et le contrat de donnees
   a Vincent. Retirer le prototype de collecte et sa CI de la branche du manager,
   en conservant les fichiers sur l'ordinateur. Le manager coordonne les besoins

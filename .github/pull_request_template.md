@@ -1,6 +1,12 @@
 ## Changement et tache
 
-Responsable, ID du tableau et comportement obtenu :
+Titre de PR : `<type>(<scope>): <short English action>`.
+Convention : `docs/team/workflow.md`.
+
+- Responsable :
+- ID du tableau :
+- Branche :
+- Comportement obtenu :
 
 ## Integration
 

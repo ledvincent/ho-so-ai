@@ -17,6 +17,15 @@ checklist -> mobile report. Read `docs/scope-and-ingestion.md` before extending 
 
 ## Working together
 
+- Follow `docs/team/workflow.md` for every task: branch naming, explicit staging,
+  commit/PR format, verification evidence and the common handoff report.
+- New branch format: `codex/<owner>/<task-id-lowercase>-<topic>`.
+  Commit and PR titles: `<type>(<scope>): <short English action>`; include
+  `Task: <ID>` in the commit body. Keep the legacy manager setup branch as is.
+- Stage only explicit task paths, inspect the staged diff, and never use
+  `git add .` or `git add -A`. Do not include preserved local prototypes from
+  another member. Use each member's own Git author identity.
+
 - Read `docs/team/board.md`, `docs/team/contracts.md` and
   `docs/team/decisions.md` before a cross-component change.
 - Keep one task per branch/PR; prefer `codex/` for agent-created branches.
