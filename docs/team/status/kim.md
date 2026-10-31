@@ -1,10 +1,12 @@
 # Kim — application integration checkpoint
 
 Owner: Kim; consolidated by Kim's local manager.
-Updated: 2026-10-31 12:49 Asia/Saigon (UTC+07:00); evidence snapshot.
+Updated: 2026-10-31 13:05 Asia/Saigon (UTC+07:00); evidence snapshot.
 Task: TEAM-05 — publish the APP-01, AUTH-01, FORM-02 and UI-01 integration checkpoint.
-State: Local components and synthetic integration are in review; a first runnable
-UI mock is available locally. Live authentication/storage and team integration are not complete.
+State: Backend/application contract published for consumer development. Background
+monitor and shared-backend implementation are paused for Kim's intermediary review;
+only the designated frontend owner is finishing the bounded NA5/admin demo.
+Live authentication/storage and team integration are not complete.
 
 ## What teammates can access
 
@@ -16,15 +18,21 @@ separate on `codex/kim/team-03-manager-protocol`, exact published commit
 [PR #3](https://github.com/ledvincent/ho-so-ai/pull/3). That PR is not changed by
 this checkpoint.
 
-**The application commits below are verified locally, but application branches
-have not been published by this workstream.** A SHA in this status does not make
-its code available on GitHub. The application contracts and handoff paths below
-refer to those local implementation commits, not this documentation branch.
-The next application publication must provide accessible producer branches and
-exact source commits before Son or Vincent can test them.
+**Application code and app.v1 are now published** on
+`codex/kim/app-01-profile-integration`, head
+`ae77fa8bd47d590a53d26690b687bcad80692a9b`.
+Its tested implementation checkpoint is
+`b07e28e74b4b9174979b7922ad3576d0562c778a`; the follow-up changes documentation only.
+[Consumer handoff](https://github.com/ledvincent/ho-so-ai/blob/ae77fa8bd47d590a53d26690b687bcad80692a9b/docs/team/handoffs/KIM-APP-01.md)
+and [actual app.v1 contract](https://github.com/ledvincent/ho-so-ai/blob/ae77fa8bd47d590a53d26690b687bcad80692a9b/docs/application-contract.md)
+were verified by GitHub read-back. Son can fetch the branch and build an adapter
+against the real models, auth boundary and profile service. The previous
+status-only publication blocker is resolved for this backend delivery.
+Latest UI-01 and separate FORM-02 source branches remain local; this is not a
+claim that the branded frontend has been published or all live inputs are ready.
 
 No application merge into main is claimed. The latest remote main observed by
-the manager was `60cb3be26e928cbef71cb636b8662e3a6cde693f`; local remote refs and
+the manager was `6e1d3aba342f61a5107cfa5507e4c15b7b07eb2f`; local remote refs and
 unpublished work are not treated as current remote state. This checkpoint does
 not edit Son's or Vincent's status or appoint a team-wide coordinator.
 
@@ -37,6 +45,13 @@ document left and chat right. Chat answers and direct field corrections update
 the same document draft. Highlight changes, clarify ambiguous answers, show
 missing values, and require final review before export. Document edits must not
 silently save changes to the user's profile.
+
+Kim's latest explicit priority is to match Vincent's existing backend and retrieved
+documents. The main preview now targets **NA5, procedure 1.001146**, consuming his
+exact published schema and blank PDF. CT01 is retained only as an earlier secondary
+test fixture. The bounded remaining UI task is `admin/admin` demo entry, Vincent's
+NA5 fields/conditions and consistent document/chat/research identity, then stop.
+The demo login is synthetic UI state, not a Clerk account or profile-API bypass.
 
 - One designated frontend workstream owns all pages, components, layout, styling
   and branding. Sites supplies visual design; the working UI remains in the
@@ -62,7 +77,7 @@ silently save changes to the user's profile.
 | APP-01 / `codex/kim/app-01-profile-integration` | Wiring `9cacda7320b5d18975a0bc2b62410eb74e45210f` | Actual profile routes and application lifespan use the portal service. |
 | AUTH-01 / `codex/kim/auth-01-storage-hardening` | Code `584e1ee9adbb5fd1f0a845c1357e204833202d6f`; evidence `def58b7d04667d1865e281391dc25ef1723aa0a2` | Registered-route tests, issuer-marker and role/column privilege guards, trusted TLS/GSS connection policy. |
 | APP-01 consumer acceptance | Evidence HEAD `b07e28e74b4b9174979b7922ad3576d0562c778a` on `codex/kim/app-01-profile-integration` | Consumed the hardening and handoff commits with their original SHAs and reran the integrated checks. |
-| UI-01 / `codex/kim/ui-01-site-design-integration` | Base `9cacda7320b5d18975a0bc2b62410eb74e45210f`; FORM-02 import `626ebc81fc2ee92c9b2a2f7504877fd1cdb54c59`; design source `9905bc008f0f373eed9ba2cb8e7c3aa12f0ce6b9` | The responsive workspace, mock chat/research and visual integration are uncommitted at this snapshot. No final UI delivery SHA or combined acceptance is claimed. |
+| UI-01 / `codex/kim/ui-01-site-design-integration` | UI `f666b633c70b3f65df3813efc42d3ddce58fc8be`; admin demo `d41ceaa970c7d9019bc04443649be923567efe23`; evidence `4f1e8d541ed542a594bda9f2a2d0113d1615a1b4` | Local checkpoint includes branded UI, synthetic/CT01 drafts and isolated admin login. Backend dependency patches are consumed. Vincent-aligned NA5 adaptation is currently in progress and still local. |
 
 The code and handoff commits were read directly from isolated local branches.
 No active implementation checkout was edited to prepare this status. The old
@@ -94,7 +109,7 @@ then `scripts/export_profile_contract.py --check`; the disposable SQL suite is
 `node --test --test-concurrency=1 tests/portal/postgres-policy.test.mjs` with the
 documented dependency paths.
 
-### First visual checkpoint
+### First visual checkpoint — historical 12:49 snapshot
 
 The manager inspected the frontend owner's desktop/mobile screenshots and checked
 the running local preview at `http://127.0.0.1:3014`. The home, `/workspace`,
@@ -112,7 +127,7 @@ is still being connected. The UI remains uncommitted, so this is a visual checkp
 not a source delivery or proof of live authentication/persistence. Review feedback
 asks for less header space and quicker access to the document and answer input.
 
-## Official blank form used only for testing
+## Earlier CT01 test fixture — superseded as the primary demo
 
 Kim requested a real online blank form as a UI test fixture. Research identified
 CT01, **Tờ khai thay đổi thông tin cư trú**, edition 53/2025/TT-BCA dated 1 July 2025,
@@ -124,8 +139,9 @@ there are no AcroForm fields, so overlays need filled-output layout validation.
 - Two-page fixture SHA256: `ba72c63d656c2b3b0702faaef3f7a51c0356847631f16b47e7c354b8f5965444`.
 - Research mapping SHA256: `8e15dbfcf082078182ce8d4f6aab55a7810e2bcf4bf25e93588f2f8c5e5b452a`.
 
-Only synthetic answers may populate this demo. The research fixture is local and
-is not yet a delivered UI asset. This is not production template approval, a
+Only synthetic answers may populate this demo. The fixture is in local UI commit
+`f666b633c70b3f65df3813efc42d3ddce58fc8be`, but Kim subsequently prioritized Vincent's
+NA5 workflow. This is not production template approval, a
 reviewed procedure record, a legal submission, or an activated official form in
 the production registry. Preview and export must represent the same draft.
 
@@ -136,18 +152,40 @@ the production registry. Preview and export must represent the same draft.
 | APP-01 routes -> AUTH-01 adaptation | Producer `9cacda7320b5d18975a0bc2b62410eb74e45210f`; consumer `584e1ee9adbb5fd1f0a845c1357e204833202d6f`; **tested compatible** for registered API/lifespan with synthetic identities/storage only | Preserve the unchanged contract; verify real storage separately. |
 | AUTH-01 hardening -> APP-01 integration | Producer `584e1ee9adbb5fd1f0a845c1357e204833202d6f`; consumer evidence `b07e28e74b4b9174979b7922ad3576d0562c778a`; **tested compatible** within the same synthetic boundary | Deliver the exact combined backend reference to the frontend owner. |
 | APP-01/FORM-02/design -> UI-01 | Exact inputs listed above; **received; adaptation required** | Sole frontend owner finishes the mock, reconciles the hardened backend input and returns code SHA, screenshots and browser results. |
-| Son's manager checkpoint -> Kim manager | Published `codex/son/team-04-manager-checkpoint`, `bad14859eebd9189d2df780b9fe1981e92a6fbd1`; **received** | Read status only. It acknowledges TEAM-03 and correct ownership; it is not published voice/access implementation or team coordinator appointment. |
+| Son's manager checkpoint -> Kim manager | Published `codex/son/team-04-manager-checkpoint`, latest inspected `59e162ca79a29b3bdf0773a625833b09b14796ad`; **received** | Son identifies procedure/version mismatches and needs actual Kim code; backend publication now resolves that source-access dependency. Voice/access implementation remains unreceived. |
 | Son voice/access -> Kim application | No published implementation received for testing | Later provide exact producer branch/SHA, session/consent/tool boundaries and verification instructions. Son reports local voice code and authorization work; absence of publication is not inactivity. |
-| Vincent retrieval/procedure contract -> Kim application | No exact implementation/contract delivery received for testing | Later provide authoritative path/version, producer SHA, reviewed example/provenance, lookup/errors and test instructions. Continue explicit UI mocks meanwhile. |
+| Vincent retrieval/procedure contract -> Kim application | Published `codex/procedure-foundation`, `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`; **received; adaptation required** | Exact NA5 schema/PDF and assistant/workflow endpoints inspected. Frontend adapts the intermediate mock to those shapes; no live runtime compatibility claimed. |
+
+## Cross-member alignment review
+
+Read Son's updated status above and Vincent's TEAM-06 status on main
+`6e1d3aba342f61a5107cfa5507e4c15b7b07eb2f`. Vincent's code publication at
+`9386f428...` is newer than his status's unpublished-code snapshot; the actual
+branch now supplies the implementation and authoritative interface documents.
+
+| Seam | Observed state / required adaptation |
+| --- | --- |
+| Shared procedure | Kim now follows Vincent's NA5 provincial stay-extension workflow `1.001146`. Son's reported intake still targets `1.004194`/`1.002755`; his consumer must explicitly align scope. No automatic code/form equivalence. |
+| NA5 document/schema | `data/forms/NA5/workflow.json` SHA256 `50fe2f675df97308aeafef25c791eada67ea857170c332f3aacd38d28fd3d5c3`; blank PDF SHA256 `7415719c6a301bc1340b10041afd48b70ff00d4cd9ec27d0b36536128d8680af`. Reuse 43 field definitions, conditional sponsor branches, fixed `stay_extension`, manual signatures and current `draft` review state. |
+| Workflow transport | Existing `/workflows/1.001146/schema`, `/preview`, `/download`; preview accepts `{values}`, returns PDF plus `X-Review-Token`; download requires the same values/token/confirmation and human-reviewed template. Local UI mocks must preserve these shapes/gates. |
+| Assistant versus form filling | `/assistant/chat` returns status/answer/citations/model. It supplies no validated field patch and cannot unlock form downloads. The UI's deterministic draft edits remain distinct from grounded answers; do not parse prose as authoritative form values. |
+| Voice/report identity | Chat responses have no direct immutable procedure/checklist-version field. Agree the canonical profile/context/baseline reference before claiming voice and report use the same reviewed checklist. |
+| Identity/consent | Kim's app.v1 code is available now. Shared real Clerk settings, Son's existing conversation binding, authenticated consent and expiry/revocation behavior still need exact producer/consumer tests. Demo admin is not this identity contract. |
+| Runtime/data | Vincent's repository excludes his running database; migrations produce an empty database. Embeddings/search calibration and source/form review remain separate gates. No live Vincent backend was started or tested by this review. |
+| Repository composition | Kim and Vincent both touch root `.env.example`, `.gitignore`, `README.md` and `compose.yaml`. Vincent's branch diverges from the older `25b89443...` base. Keep service/package/config ownership explicit; do not blindly merge or assume shared database/ports. File overlap is not a performed conflict resolution. |
+
+These findings establish received contracts and concrete adapter work, not
+end-to-end interconnectability. Implementation remains paused outside the single
+bounded frontend preview requested by Kim.
 
 ## Concrete prerequisites and next actions
 
-1. Frontend owner: finish the CT01 test overlay/export and compact layout, commit
-   the visible mock, reconcile backend dependencies and deliver fresh evidence. Keep
-   mocks clear and product UI under one writer. Kim's manager reviews the result.
-2. Kim's manager: publish this status so teammates can see progress; prepare a
-   separately reviewed application handoff with accessible code branches. Status
-   publication alone does not unblock code consumption on another machine.
+1. Frontend owner: finish only the Vincent-aligned NA5/admin preview, commit and
+   report the exact URL, source hashes, synthetic checks and remaining limits,
+   then pause for Kim. Do not activate reviewed downloads or start new backend work.
+2. Son can fetch the published application branch and inspect app.v1 now. Record
+   exact consumer/producer evidence; real Clerk, consent and revocation remain
+   distinct inputs. No status-only publication blocker remains for the backend.
 3. Real PostgreSQL acceptance needs an isolated PostgreSQL 16 runtime. Scaffold
    found no native server binaries; the Docker CLI exists but its local daemon
    is unreachable and the Docker WSL distro is stopped. No shared engine,
