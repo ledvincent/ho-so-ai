@@ -3,11 +3,18 @@
 Base preserved: `b4a3ebf2d208ad4533b2a50f69aec9462626145c`.
 Branch: `codex/kim/ui-02-guided-portal`, sole frontend owner.
 
-AUTH-02/CHAT-01 exact delivered commit and contract are pending from the manager.
+AUTH-02/CHAT-01 draft contract was forwarded by the manager and inspected:
+`feac4cf36bc8dd6367924712d790f85f81bb48bfe8636e3523dc25bc3e71a906`.
+The committed implementation delivery is still pending. Consumer mapping is
+prepared in `a05471c`: exact `/api/auth/*`, `/api/chat/schema` and
+`/api/chat/assist` routes, request identity/revision checks, validated proposals,
+schema version pinning and session checks before/after replies. Twelve focused
+consumer/NA5 tests and typecheck pass without network/provider calls.
+
 No new auth/API handler, database implementation or competing wire schema has
-been implemented here. The `GuidedAdapter` type is a provisional component
-view-model boundary, not a proposed API response format. It will be mapped to
-the scaffold's actual response and replaced where needed.
+been implemented here. `GuidedAdapter` remains an internal component view model;
+`api.ts` maps the exact producer contract. It is not attached to the primary
+route until the manager's verified implementation commit arrives.
 
 Prepared UI paths: `web/components/guided-portal/**`; compact document above
 conversation, bottom composer, optional manual editing, visible changes and
@@ -27,10 +34,11 @@ handler or identity scheme is attached. The separate `/demo/*` visual preview
 remains labeled synthetic/provisional and cannot establish real authentication.
 It must not be the primary path after AUTH-02 is consumed.
 
-Pending exact producer contract: login/session/logout paths and errors, server
-session guard/helper, cookie semantics and session discriminator, guided-turn
-request/response/statuses, validated draft changes, startup question behavior,
-provider configuration and isolated local database initialization instructions.
+Pending implementation handoff: server guard/helper, account fixtures, process
+ownership/configuration and final exact code SHA. Primary login UI is prepared
+at `/`; it is disabled and explicitly labeled until this delivery is consumed.
+Initial UI guidance is deterministic. No model call is made on mount, focus,
+retry or manual correction. Reserve at most one fictional live browser call.
 
 No shared root auth layout, proxy, application contract, generated profile types,
 manifests or lockfiles were edited independently. Manager remains sole writer
