@@ -56,7 +56,7 @@ def test_all_real_na5_anchors_accounted_for(mapped):
 def test_missing_anchor_rejected(mapped):
     result,measured=mapped
     result['fields'][0]['placements']=[]
-    with pytest.raises(ValueError,match='Unaccounted'):fm.validate_mapping(result,measured)
+    with pytest.raises(ValueError,match='Unaccounted|no measured placement'):fm.validate_mapping(result,measured)
 
 
 def test_reused_anchor_rejected(mapped):

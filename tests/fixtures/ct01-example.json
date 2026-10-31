@@ -1,0 +1,14 @@
+{
+  "residence_registration_authority": "EXAMPLE COMMUNE POLICE",
+  "applicant_full_name": "EXAMPLE NGUYEN AN",
+  "applicant_date_of_birth": "1994-02-01",
+  "applicant_gender": "FEMALE",
+  "applicant_personal_identification_number": "000000000001",
+  "applicant_contact_phone": "0000000000",
+  "applicant_email": "example@example.invalid",
+  "household_head_full_name": "EXAMPLE TRAN BINH",
+  "household_head_personal_identification_number": "000000000002",
+  "applicant_relationship_to_household_head": "EXAMPLE",
+  "residence_request_details": "FICTIONAL TEMPORARY RESIDENCE REGISTRATION AT AN EXAMPLE ADDRESS",
+  "submission_method": "In person"
+}

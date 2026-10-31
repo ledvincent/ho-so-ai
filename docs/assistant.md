@@ -61,7 +61,9 @@ retaining source-readiness checks. Follow-ups should retain the selected code or
 state. Conversation history alone does not establish a selected procedure.
 
 Responses contain `status`, `answer`, `citations` (ID, title, URL), `model`,
-`procedure_code`, `choices`, `retrieval_state`, and server-owned `documents`.
+`procedure_code`, `choices`, `retrieval_state`, `answer_basis`, and server-owned `documents`.
+`answer_basis` is `sources`, `general_guidance`, or `mixed`; general explanations
+do not invent citations. Exact procedural requirements still require source evidence.
 Cards include required/conditional status, original/copy counts, source IDs, and
 version-bound form actions when an installed workflow exists. Each action has a
 `document_id` and `schema_url`; the frontend must render that document's returned
@@ -71,11 +73,44 @@ can support the answer, the cards, or both. A follow-up question does not hide
 verified cards for an already selected procedure.
 Statuses include `answered`, `needs_clarification`, `insufficient_context` and
 `out_of_scope`. A model refusal, tool call or invalid answer fails closed with 502.
-No evidence returns `insufficient_context` without calling the model. The provider returns paragraphs with source IDs; the server renders inline
+Clarification and empty-search turns now call the model. Pending choices and
+candidate-specific verified sources allow comparisons and explanations without
+silently selecting a procedure. An answered comparison may still include `choices`
+and `retrieval_state`: render them regardless of `status`. Send the current message,
+history and state for follow-ups such as “what is the difference between these two?”
+Unverified source details allow general guidance but do not expose blocked facts.
+Stale or invalid signed state remains a recoverable 409.
+
+The complete captured primary procedure is supplied in its original section order;
+question keywords no longer discard requirements, exceptions or later steps.
+Broad questions explain the purpose and sequence of actions. Document cards are
+included for installed fillable forms without requiring keywords; the full checklist
+is included for explicit paperwork/form questions, with model-translated labels and
+conditions; identity, counts, classifications, citations and URLs stay server-owned.
+During clarification, verified candidate-specific draft forms can also appear.
+Their condition explicitly identifies the candidate and unresolved receiving office;
+opening a preview neither selects that procedure nor approves the template edition.
+The provider returns paragraphs with source IDs and a fact/general-guidance kind;
+the server renders inline
 `[source-id]` markers, avoiding failures caused by handwritten citation syntax. Render answers as text; use returned
 citation URLs for links, and do not treat model prose as trusted HTML or auto-link
 it. Model-generated URLs, HTML, code fences and invalid citation markers are
 rejected. This is a narrow output check, not a comprehensive malicious-text filter.
+
+Run `python -m scripts.evaluate_conversation --output output/conversation-eval.json`
+for live public-question regressions, including the uncertain-office comparison
+sequence. Review the actual answers against the source text; structural success
+alone is not a factual-accuracy guarantee.
+
+CT01 (three residence procedures) and the marriage declaration now have installed
+draft workflows in addition to NA5. They use the same schema/validation/preview
+routes. Blank table cells, whole dates, separate character boxes and raster
+checkboxes are supported. `schema.notes` and field `manual_reason` explain remaining
+limitations; CT01's narrow signing places/dates require manual completion. Templates
+remain draft and final downloads require human review. Other recovered forms need
+measured mappings and review before installation; merely downloading a file does
+not make it fillable. `scripts.install_document_workflow` installs an explicitly
+mapped, source-associated official copy as a draft without approving applicability.
 
 ## RAG handoff contract
 
@@ -125,7 +160,8 @@ the repetitive extraction audit payload.
 
 Sources and chat text are sent to the configured provider. No personal form
 values are loaded by the assistant, and it cannot fill forms or unlock downloads.
-The API does not persist chats. Prompt instructions restrict answers to sources;
+The API does not persist chats. Prompt instructions require source evidence for procedural facts while allowing
+clearly separated general explanations;
 citation checks verify source membership and required markers, not whether each
 claim is entailed. Grounded-answer quality still needs evaluation with real RAG
 results. This endpoint follows the existing local API deployment; add deployment

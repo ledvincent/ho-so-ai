@@ -6,6 +6,13 @@ Start with [Kim's integration guide](../kim-start-here.md).
 installed document discovery. Each action identifies its own `document_id` and
 `schema_url`; use that schema to build the fields. The NA5 schema is an example,
 not a universal field list. Unknown/uninstalled documents return 404.
+`ct01-1-004194-schema.json` and `marriage-declaration-1-000894-schema.json`
+illustrate actual additional documents with different fields and manual sections.
+
+Chat responses now include `answer_basis` (`sources`, `general_guidance`, `mixed`).
+Render returned choices even when status is `answered`: a comparison can answer
+the user's question while leaving procedure selection pending. Empty retrieval
+and ambiguous selection use model-generated guidance rather than a canned reply.
 
 `chat-request.json` and `chat-response.json` are a real public-question example
 with Sol medium. `retrieval_state` was removed and replaced with null; obtain a

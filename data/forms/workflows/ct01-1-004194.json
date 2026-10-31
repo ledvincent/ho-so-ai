@@ -1,0 +1,2735 @@
+{
+  "procedure_code": "1.004194",
+  "form_sha256": "d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163",
+  "pdf_path": "data/forms/_objects/d7840089f355b7d6b7a7fdd4a15ff3859fe0e92abd9c2c2d3995c7f728efe163/blank.pdf",
+  "pdf_sha256": "48f991a27af74c23aa32dbdf81e3d8e883521378e4e508c82939bcbfeaa61bec",
+  "review_status": "draft",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "revision_reference": "66/2023/TT-BCA",
+  "fields": [
+    {
+      "id": "residence_registration_authority",
+      "label": "Residence registration authority",
+      "type": "text",
+      "owner": "receiving_authority",
+      "group": "recipient",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Kính gửi(1)” and note (1): “Cơ quan đăng ký cư trú.”",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            168.6999969482422,
+            176.50076293945312,
+            499.49798583984375,
+            189.50076293945312
+          ],
+          "anchor_id": "p1_a1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_full_name",
+      "label": "Applicant's full name",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Item 1: “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            195.39999389648438,
+            199.40078735351562,
+            537.7940063476562,
+            212.40078735351562
+          ],
+          "anchor_id": "p1_a2",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_date_of_birth",
+      "label": "Applicant's date of birth",
+      "type": "date",
+      "owner": "applicant",
+      "group": "applicant_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Item 2: “Ngày, tháng, năm sinh”, followed by three slash-separated blanks.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            147.6999969482422,
+            219.60073852539062,
+            177.0430145263672,
+            226.60073852539062
+          ],
+          "anchor_id": "p1_a3",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            179.0,
+            219.60073852539062,
+            210.14999389648438,
+            226.60073852539062
+          ],
+          "anchor_id": "p1_a4",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            213.0,
+            219.60073852539062,
+            263.652099609375,
+            226.60073852539062
+          ],
+          "anchor_id": "p1_a5",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "applicant_gender",
+      "label": "Applicant's gender",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Item 3: “Giới tính”; a free-text blank, not printed choice controls.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            305.29998779296875,
+            219.60073852539062,
+            538.1327514648438,
+            226.60073852539062
+          ],
+          "anchor_id": "p1_a6",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_contact_phone",
+      "label": "Contact telephone number",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_contact",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Item 5: “Số điện thoại liên hệ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            208.3000030517578,
+            267.2007751464844,
+            365.20001220703125,
+            279.2007751464844
+          ],
+          "anchor_id": "p1_a7",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_email",
+      "label": "Email address",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_contact",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 150,
+      "evidence": "Item 6: “Email”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            412.5,
+            267.2007751464844,
+            538.66796875,
+            279.2007751464844
+          ],
+          "anchor_id": "p1_a8",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_head_full_name",
+      "label": "Household head's full name",
+      "type": "text",
+      "owner": "household_head",
+      "group": "household_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Item 7: “Họ, chữ đệm và tên chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            241.86300659179688,
+            287.3007507324219,
+            348.9049987792969,
+            300.3007507324219
+          ],
+          "anchor_id": "p1_a9",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_relationship_to_household_head",
+      "label": "Applicant's relationship to the household head",
+      "type": "text",
+      "owner": "applicant",
+      "group": "household_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Item 8's label wraps across lines: “Mối quan hệ với chủ” followed by “hộ:”; the blank belongs to that complete label.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            101.80099487304688,
+            302.3007507324219,
+            160.14498901367188,
+            315.3007507324219
+          ],
+          "anchor_id": "p1_a10",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "residence_request_details",
+      "label": "Details of the requested residence change or service",
+      "type": "text",
+      "owner": "applicant",
+      "group": "request",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 1000,
+      "evidence": "Item 10: “Nội dung đề nghị(2)” with a continuation line. Note (2) asks for clear, specific details and gives non-exhaustive examples: permanent residence registration, temporary residence registration, household separation and residence information confirmation.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            207.3000030517578,
+            355.9007568359375,
+            537.9883422851562,
+            364.9007568359375
+          ],
+          "anchor_id": "p1_a11",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            85.0999984741211,
+            375.10076904296875,
+            537.73828125,
+            384.10076904296875
+          ],
+          "anchor_id": "p1_a12",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_1_full_name",
+      "label": "Household member 1 - full name",
+      "type": "text",
+      "owner": "household_member_1",
+      "group": "household_member_1",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 1, “Họ, chữ đệm và tên”; household members changing residence information together.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            458.2,
+            239.2,
+            472.5
+          ],
+          "anchor_id": "p1_c1_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_1_date_of_birth",
+      "label": "Household member 1 - date of birth",
+      "type": "date",
+      "owner": "household_member_1",
+      "group": "household_member_1",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 1, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            458.2,
+            313.8,
+            472.5
+          ],
+          "anchor_id": "p1_c2_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_1_gender",
+      "label": "Household member 1 - gender",
+      "type": "text",
+      "owner": "household_member_1",
+      "group": "household_member_1",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 1, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            458.2,
+            350.3,
+            472.5
+          ],
+          "anchor_id": "p1_c3_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_1_personal_identification_number",
+      "label": "Household member 1 - personal identification number",
+      "type": "text",
+      "owner": "household_member_1",
+      "group": "household_member_1",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 1, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            458.2,
+            454.3,
+            472.5
+          ],
+          "anchor_id": "p1_c4_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_1_relationship_to_household_head",
+      "label": "Household member 1 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_1",
+      "group": "household_member_1",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 1, “Mối quan hệ với chủ hộ”; the relationship is to the household head, not necessarily the applicant.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            458.2,
+            528.8,
+            472.5
+          ],
+          "anchor_id": "p1_c5_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_2_full_name",
+      "label": "Household member 2 - full name",
+      "type": "text",
+      "owner": "household_member_2",
+      "group": "household_member_2",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 2, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            478.5,
+            239.2,
+            493.0
+          ],
+          "anchor_id": "p1_c6_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_2_date_of_birth",
+      "label": "Household member 2 - date of birth",
+      "type": "date",
+      "owner": "household_member_2",
+      "group": "household_member_2",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 2, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            478.5,
+            313.8,
+            493.0
+          ],
+          "anchor_id": "p1_c7_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_2_gender",
+      "label": "Household member 2 - gender",
+      "type": "text",
+      "owner": "household_member_2",
+      "group": "household_member_2",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 2, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            478.5,
+            350.3,
+            493.0
+          ],
+          "anchor_id": "p1_c8_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_2_personal_identification_number",
+      "label": "Household member 2 - personal identification number",
+      "type": "text",
+      "owner": "household_member_2",
+      "group": "household_member_2",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 2, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            478.5,
+            454.3,
+            493.0
+          ],
+          "anchor_id": "p1_c9_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_2_relationship_to_household_head",
+      "label": "Household member 2 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_2",
+      "group": "household_member_2",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 2, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            478.5,
+            528.8,
+            493.0
+          ],
+          "anchor_id": "p1_c10_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_3_full_name",
+      "label": "Household member 3 - full name",
+      "type": "text",
+      "owner": "household_member_3",
+      "group": "household_member_3",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 3, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            499.0,
+            239.2,
+            513.5
+          ],
+          "anchor_id": "p1_c11_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_3_date_of_birth",
+      "label": "Household member 3 - date of birth",
+      "type": "date",
+      "owner": "household_member_3",
+      "group": "household_member_3",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 3, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            499.0,
+            313.8,
+            513.5
+          ],
+          "anchor_id": "p1_c12_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_3_gender",
+      "label": "Household member 3 - gender",
+      "type": "text",
+      "owner": "household_member_3",
+      "group": "household_member_3",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 3, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            499.0,
+            350.3,
+            513.5
+          ],
+          "anchor_id": "p1_c13_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_3_personal_identification_number",
+      "label": "Household member 3 - personal identification number",
+      "type": "text",
+      "owner": "household_member_3",
+      "group": "household_member_3",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 3, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            499.0,
+            454.3,
+            513.5
+          ],
+          "anchor_id": "p1_c14_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_3_relationship_to_household_head",
+      "label": "Household member 3 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_3",
+      "group": "household_member_3",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 3, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            499.0,
+            528.8,
+            513.5
+          ],
+          "anchor_id": "p1_c15_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_4_full_name",
+      "label": "Household member 4 - full name",
+      "type": "text",
+      "owner": "household_member_4",
+      "group": "household_member_4",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 4, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            519.5,
+            239.2,
+            534.0
+          ],
+          "anchor_id": "p1_c16_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_4_date_of_birth",
+      "label": "Household member 4 - date of birth",
+      "type": "date",
+      "owner": "household_member_4",
+      "group": "household_member_4",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 4, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            519.5,
+            313.8,
+            534.0
+          ],
+          "anchor_id": "p1_c17_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_4_gender",
+      "label": "Household member 4 - gender",
+      "type": "text",
+      "owner": "household_member_4",
+      "group": "household_member_4",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 4, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            519.5,
+            350.3,
+            534.0
+          ],
+          "anchor_id": "p1_c18_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_4_personal_identification_number",
+      "label": "Household member 4 - personal identification number",
+      "type": "text",
+      "owner": "household_member_4",
+      "group": "household_member_4",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 4, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            519.5,
+            454.3,
+            534.0
+          ],
+          "anchor_id": "p1_c19_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_4_relationship_to_household_head",
+      "label": "Household member 4 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_4",
+      "group": "household_member_4",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 4, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            519.5,
+            528.8,
+            534.0
+          ],
+          "anchor_id": "p1_c20_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_5_full_name",
+      "label": "Household member 5 - full name",
+      "type": "text",
+      "owner": "household_member_5",
+      "group": "household_member_5",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 5, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            540.0,
+            239.2,
+            554.5
+          ],
+          "anchor_id": "p1_c21_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_5_date_of_birth",
+      "label": "Household member 5 - date of birth",
+      "type": "date",
+      "owner": "household_member_5",
+      "group": "household_member_5",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 5, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            540.0,
+            313.8,
+            554.5
+          ],
+          "anchor_id": "p1_c22_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_5_gender",
+      "label": "Household member 5 - gender",
+      "type": "text",
+      "owner": "household_member_5",
+      "group": "household_member_5",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 5, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            540.0,
+            350.3,
+            554.5
+          ],
+          "anchor_id": "p1_c23_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_5_personal_identification_number",
+      "label": "Household member 5 - personal identification number",
+      "type": "text",
+      "owner": "household_member_5",
+      "group": "household_member_5",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 5, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            540.0,
+            454.3,
+            554.5
+          ],
+          "anchor_id": "p1_c24_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_5_relationship_to_household_head",
+      "label": "Household member 5 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_5",
+      "group": "household_member_5",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 5, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            540.0,
+            528.8,
+            554.5
+          ],
+          "anchor_id": "p1_c25_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_6_full_name",
+      "label": "Household member 6 - full name",
+      "type": "text",
+      "owner": "household_member_6",
+      "group": "household_member_6",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 6, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            560.5,
+            239.2,
+            575.0
+          ],
+          "anchor_id": "p1_c26_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_6_date_of_birth",
+      "label": "Household member 6 - date of birth",
+      "type": "date",
+      "owner": "household_member_6",
+      "group": "household_member_6",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 6, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            560.5,
+            313.8,
+            575.0
+          ],
+          "anchor_id": "p1_c27_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_6_gender",
+      "label": "Household member 6 - gender",
+      "type": "text",
+      "owner": "household_member_6",
+      "group": "household_member_6",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 6, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            560.5,
+            350.3,
+            575.0
+          ],
+          "anchor_id": "p1_c28_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_6_personal_identification_number",
+      "label": "Household member 6 - personal identification number",
+      "type": "text",
+      "owner": "household_member_6",
+      "group": "household_member_6",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 6, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            560.5,
+            454.3,
+            575.0
+          ],
+          "anchor_id": "p1_c29_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_6_relationship_to_household_head",
+      "label": "Household member 6 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_6",
+      "group": "household_member_6",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 6, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            560.5,
+            528.8,
+            575.0
+          ],
+          "anchor_id": "p1_c30_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_7_full_name",
+      "label": "Household member 7 - full name",
+      "type": "text",
+      "owner": "household_member_7",
+      "group": "household_member_7",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 7, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            581.0,
+            239.2,
+            595.5
+          ],
+          "anchor_id": "p1_c31_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_7_date_of_birth",
+      "label": "Household member 7 - date of birth",
+      "type": "date",
+      "owner": "household_member_7",
+      "group": "household_member_7",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 7, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            581.0,
+            313.8,
+            595.5
+          ],
+          "anchor_id": "p1_c32_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_7_gender",
+      "label": "Household member 7 - gender",
+      "type": "text",
+      "owner": "household_member_7",
+      "group": "household_member_7",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 7, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            581.0,
+            350.3,
+            595.5
+          ],
+          "anchor_id": "p1_c33_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_7_personal_identification_number",
+      "label": "Household member 7 - personal identification number",
+      "type": "text",
+      "owner": "household_member_7",
+      "group": "household_member_7",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 7, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            581.0,
+            454.3,
+            595.5
+          ],
+          "anchor_id": "p1_c34_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_7_relationship_to_household_head",
+      "label": "Household member 7 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_7",
+      "group": "household_member_7",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 7, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            581.0,
+            528.8,
+            595.5
+          ],
+          "anchor_id": "p1_c35_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_8_full_name",
+      "label": "Household member 8 - full name",
+      "type": "text",
+      "owner": "household_member_8",
+      "group": "household_member_8",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 8, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            601.5,
+            239.2,
+            616.0
+          ],
+          "anchor_id": "p1_c36_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_8_date_of_birth",
+      "label": "Household member 8 - date of birth",
+      "type": "date",
+      "owner": "household_member_8",
+      "group": "household_member_8",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 8, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            601.5,
+            313.8,
+            616.0
+          ],
+          "anchor_id": "p1_c37_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_8_gender",
+      "label": "Household member 8 - gender",
+      "type": "text",
+      "owner": "household_member_8",
+      "group": "household_member_8",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 8, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            601.5,
+            350.3,
+            616.0
+          ],
+          "anchor_id": "p1_c38_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_8_personal_identification_number",
+      "label": "Household member 8 - personal identification number",
+      "type": "text",
+      "owner": "household_member_8",
+      "group": "household_member_8",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 8, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            601.5,
+            454.3,
+            616.0
+          ],
+          "anchor_id": "p1_c39_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_8_relationship_to_household_head",
+      "label": "Household member 8 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_8",
+      "group": "household_member_8",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 8, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            601.5,
+            528.8,
+            616.0
+          ],
+          "anchor_id": "p1_c40_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_9_full_name",
+      "label": "Household member 9 - full name",
+      "type": "text",
+      "owner": "household_member_9",
+      "group": "household_member_9",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Section 11, row 9, “Họ, chữ đệm và tên”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            116.7,
+            622.0,
+            239.2,
+            636.5
+          ],
+          "anchor_id": "p1_c41_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_9_date_of_birth",
+      "label": "Household member 9 - date of birth",
+      "type": "date",
+      "owner": "household_member_9",
+      "group": "household_member_9",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Section 11, row 9, “Ngày, tháng, năm sinh”; one undivided cell, to be printed as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            245.2,
+            622.0,
+            313.8,
+            636.5
+          ],
+          "anchor_id": "p1_c42_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_9_gender",
+      "label": "Household member 9 - gender",
+      "type": "text",
+      "owner": "household_member_9",
+      "group": "household_member_9",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 9, “Giới tính”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            319.8,
+            622.0,
+            350.3,
+            636.5
+          ],
+          "anchor_id": "p1_c43_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_9_personal_identification_number",
+      "label": "Household member 9 - personal identification number",
+      "type": "text",
+      "owner": "household_member_9",
+      "group": "household_member_9",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Section 11, row 9, “Số định danh cá nhân”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            356.3,
+            622.0,
+            454.3,
+            636.5
+          ],
+          "anchor_id": "p1_c44_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_9_relationship_to_household_head",
+      "label": "Household member 9 - relationship to household head",
+      "type": "text",
+      "owner": "household_member_9",
+      "group": "household_member_9",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Section 11, row 9, “Mối quan hệ với chủ hộ”.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            460.3,
+            622.0,
+            528.8,
+            636.5
+          ],
+          "anchor_id": "p1_c45_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_head_consent_method",
+      "label": "Household head's consent method",
+      "type": "choice",
+      "owner": "household_head",
+      "group": "household_head_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Synthetic control for note (3). Applicability is stated by reference to khoản 2, khoản 3, khoản 5, khoản 6 Điều 20; khoản 1 Điều 25; điểm a khoản 1 Điều 26 Luật Cư trú. Alternatives are consent written and signed on the form with full name, confirmation through VNeID or another online public service, or a separate consent document that does not require notarization or certification.",
+      "uncertainties": [
+        "Whether this consent applies depends on the circumstances and the printed legal references; it cannot be determined from the blank form."
+      ],
+      "when": {},
+      "options": [
+        "Not applicable",
+        "On this form",
+        "VNeID",
+        "Other online public service",
+        "Separate written consent"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "household_head_consent_place",
+      "label": "Household head's consent - place",
+      "type": "text",
+      "owner": "household_head",
+      "group": "household_head_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 150,
+      "evidence": "Locality blank before “ngày” above “Ý KIẾN CỦA CHỦ HỘ(3)”.",
+      "uncertainties": [
+        "Applicability for electronic or separate written consent is unspecified."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            33.900001525878906,
+            648.5007934570312,
+            48.345001220703125,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a13",
+          "component": "value"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "household_head_consent_date",
+      "label": "Household head's consent - date",
+      "type": "date",
+      "owner": "household_head",
+      "group": "household_head_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "“ngày ... tháng ... năm ...” above the household head's consent block.",
+      "uncertainties": [
+        "Applicability for electronic or separate written consent is unspecified."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            72.5,
+            648.5007934570312,
+            92.43399810791016,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a14",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            117.5999984741211,
+            649.30078125,
+            128.53399658203125,
+            660.30078125
+          ],
+          "anchor_id": "p1_a15",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            147.5,
+            648.5007934570312,
+            165.5,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a16",
+          "component": "year"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "accommodation_owner_consent_method",
+      "label": "Lawful accommodation owner's consent method",
+      "type": "choice",
+      "owner": "lawful_accommodation_owner",
+      "group": "accommodation_owner_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Synthetic control for note (4). Applicability is stated by reference to khoản 2, khoản 3, khoản 4, khoản 5, khoản 6 Điều 20; khoản 1 Điều 25 Luật Cư trú; điểm a khoản 1 Điều 26 Luật Cư trú. Consent may be written and signed on the form with full name, confirmed through VNeID or another online public service, or provided separately without notarization or certification. Notes (4) and (7) require the printed identity details for VNeID consent.",
+      "uncertainties": [
+        "Applicability depends on the circumstances and printed legal references.",
+        "Note (4) also covers multiple individual or organisational co-owners; additional consent or agreed representation may be needed."
+      ],
+      "when": {},
+      "options": [
+        "Not applicable",
+        "On this form",
+        "VNeID",
+        "Other online public service",
+        "Separate written consent"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "accommodation_owner_consent_place",
+      "label": "Lawful accommodation owner's consent - place",
+      "type": "text",
+      "owner": "lawful_accommodation_owner",
+      "group": "accommodation_owner_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 150,
+      "evidence": "Locality blank before “ngày” above “Ý KIẾN CỦA CHỦ SỞ HỮU CHỖ Ở HỢP PHÁP(4)”.",
+      "uncertainties": [
+        "Applicability for electronic or separate written consent is unspecified."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            179.0,
+            648.5007934570312,
+            193.44500732421875,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a17",
+          "component": "value"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "accommodation_owner_consent_date",
+      "label": "Lawful accommodation owner's consent - date",
+      "type": "date",
+      "owner": "lawful_accommodation_owner",
+      "group": "accommodation_owner_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "“ngày ... tháng ... năm ...” above the lawful accommodation owner's consent block.",
+      "uncertainties": [
+        "Applicability for electronic or separate written consent is unspecified."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            217.60000610351562,
+            648.5007934570312,
+            232.04501342773438,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a18",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            257.20001220703125,
+            649.30078125,
+            268.134033203125,
+            660.30078125
+          ],
+          "anchor_id": "p1_a19",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            287.1000061035156,
+            648.5007934570312,
+            296.1000061035156,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a20",
+          "component": "year"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "accommodation_owner_vneid_full_name",
+      "label": "Lawful accommodation owner's full name for VNeID consent",
+      "type": "text",
+      "owner": "lawful_accommodation_owner",
+      "group": "accommodation_owner_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“(7) Họ và tên” inside the lawful accommodation owner's block. Note (7) limits these identity details to requests for confirmation of consent through VNeID; note (4) explicitly requires the owner's full name and personal identification number in that case.",
+      "uncertainties": [],
+      "when": {
+        "accommodation_owner_consent_method": "VNeID"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            217.10000610351562,
+            688.80078125,
+            248.4040985107422,
+            695.80078125
+          ],
+          "anchor_id": "p1_a21",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "accommodation_owner_vneid_personal_identification_number",
+      "label": "Lawful accommodation owner's personal identification number for VNeID consent",
+      "type": "text",
+      "owner": "lawful_accommodation_owner",
+      "group": "accommodation_owner_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "“(7) Số định danh cá nhân” inside the lawful accommodation owner's block; notes (4) and (7) specify the VNeID consent branch.",
+      "uncertainties": [],
+      "when": {
+        "accommodation_owner_consent_method": "VNeID"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            252.8000030517578,
+            703.1207885742188,
+            280.92498779296875,
+            711.9007568359375
+          ],
+          "anchor_id": "p1_a22",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "parent_guardian_consent_method",
+      "label": "Parent or guardian's consent method",
+      "type": "choice",
+      "owner": "parent_or_guardian",
+      "group": "parent_guardian_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Synthetic control for note (5), applying to residence-information changes for minors and persons described as having limited or insufficient civil act capacity. A parent or guardian may write consent and sign with full name on the form, confirm through VNeID or another online public service, or provide separate written consent without notarization or certification.",
+      "uncertainties": [
+        "Applicability depends on the person's circumstances; it cannot be determined from the blank form."
+      ],
+      "when": {},
+      "options": [
+        "Not applicable",
+        "On this form",
+        "VNeID",
+        "Other online public service",
+        "Separate written consent"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "parent_guardian_consent_place",
+      "label": "Parent or guardian's consent - place",
+      "type": "text",
+      "owner": "parent_or_guardian",
+      "group": "parent_guardian_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 150,
+      "evidence": "Locality blank before “ngày” above “Ý KIẾN CỦA CHA, MẸ HOẶC NGƯỜI GIÁM HỘ(5)”.",
+      "uncertainties": [
+        "Applicability for electronic or separate written consent is unspecified."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            314.8999938964844,
+            648.5007934570312,
+            329.3450012207031,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a23",
+          "component": "value"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "parent_guardian_consent_date",
+      "label": "Parent or guardian's consent - date",
+      "type": "date",
+      "owner": "parent_or_guardian",
+      "group": "parent_guardian_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "“ngày ... tháng ... năm ...” above the parent or guardian's consent block.",
+      "uncertainties": [
+        "Applicability for electronic or separate written consent is unspecified."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            353.5,
+            648.5007934570312,
+            370.739013671875,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a24",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            395.7750244140625,
+            649.30078125,
+            404.0140380859375,
+            660.30078125
+          ],
+          "anchor_id": "p1_a25",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            423.0,
+            648.5007934570312,
+            432.0,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a26",
+          "component": "year"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "parent_guardian_vneid_full_name",
+      "label": "Parent or guardian's full name for VNeID consent",
+      "type": "text",
+      "owner": "parent_or_guardian",
+      "group": "parent_guardian_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“(7) Họ và tên” inside the parent or guardian's block. Note (7) says to provide these details only when requesting confirmation of consent through VNeID.",
+      "uncertainties": [],
+      "when": {
+        "parent_guardian_consent_method": "VNeID"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            353.0,
+            688.80078125,
+            384.3038330078125,
+            695.80078125
+          ],
+          "anchor_id": "p1_a27",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "parent_guardian_vneid_personal_identification_number",
+      "label": "Parent or guardian's personal identification number for VNeID consent",
+      "type": "text",
+      "owner": "parent_or_guardian",
+      "group": "parent_guardian_consent",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "“(7) Số định danh cá nhân” inside the parent or guardian's block; note (7) limits completion to the VNeID consent branch.",
+      "uncertainties": [],
+      "when": {
+        "parent_guardian_consent_method": "VNeID"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            388.70001220703125,
+            704.9007568359375,
+            414.80987548828125,
+            711.9007568359375
+          ],
+          "anchor_id": "p1_a28",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "submission_method",
+      "label": "Submission method",
+      "type": "choice",
+      "owner": "declarant",
+      "group": "declaration",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "Synthetic control for note (6): for direct submission, the declarant signs and gives their full name; submission through a public service portal or VNeID does not require signing this section.",
+      "uncertainties": [
+        "The declarant is a separate role and is not assumed to be the applicant."
+      ],
+      "when": {},
+      "options": [
+        "In person",
+        "Public service portal",
+        "VNeID"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "declaration_place",
+      "label": "Declaration place",
+      "type": "text",
+      "owner": "declarant",
+      "group": "declaration",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 150,
+      "evidence": "Locality blank before “ngày” above “NGƯỜI KÊ KHAI(6)”.",
+      "uncertainties": [
+        "Note (6) exempts electronic submissions from signing, but does not explicitly exempt this place entry."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            448.70001220703125,
+            648.5007934570312,
+            463.14501953125,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a29",
+          "component": "value"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "declaration_date",
+      "label": "Declaration date",
+      "type": "date",
+      "owner": "declarant",
+      "group": "declaration",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "“ngày ... tháng ... năm ...” above the declarant's block.",
+      "uncertainties": [
+        "Note (6) exempts electronic submissions from signing, but does not explicitly exempt this date entry."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            487.29998779296875,
+            649.30078125,
+            498.2340087890625,
+            660.30078125
+          ],
+          "anchor_id": "p1_a30",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            523.4000244140625,
+            649.30078125,
+            531.6390380859375,
+            660.30078125
+          ],
+          "anchor_id": "p1_a31",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            550.5999755859375,
+            648.5007934570312,
+            559.5999755859375,
+            660.5007934570312
+          ],
+          "anchor_id": "p1_a32",
+          "component": "year"
+        }
+      ],
+      "manual_reason": "The printed signing line is too narrow for legible typed text without covering official labels. Complete this place/date by hand when applicable."
+    },
+    {
+      "id": "applicant_personal_identification_number",
+      "label": "Applicant personal identification number",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Printed item 4 or 9; twelve character cells measured from the original grid edges and visually checked.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            265.29998779296875,
+            236.0,
+            524.0,
+            255.39999389648438
+          ],
+          "anchor_id": "p1_characters0",
+          "component": "value",
+          "boxes": [
+            [
+              265.3,
+              236.0,
+              281.4,
+              255.39999999999998
+            ],
+            [
+              287.4,
+              236.0,
+              303.5,
+              255.39999999999998
+            ],
+            [
+              309.5,
+              236.0,
+              325.5,
+              255.39999999999998
+            ],
+            [
+              331.5,
+              236.0,
+              347.6,
+              255.39999999999998
+            ],
+            [
+              353.6,
+              236.0,
+              369.6,
+              255.39999999999998
+            ],
+            [
+              375.6,
+              236.0,
+              391.7,
+              255.39999999999998
+            ],
+            [
+              397.7,
+              236.0,
+              413.7,
+              255.39999999999998
+            ],
+            [
+              419.7,
+              236.0,
+              435.8,
+              255.39999999999998
+            ],
+            [
+              441.8,
+              236.0,
+              457.8,
+              255.39999999999998
+            ],
+            [
+              463.8,
+              236.0,
+              479.9,
+              255.39999999999998
+            ],
+            [
+              485.9,
+              236.0,
+              501.9,
+              255.39999999999998
+            ],
+            [
+              507.9,
+              236.0,
+              524.0,
+              255.39999999999998
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "household_head_personal_identification_number",
+      "label": "Household head personal identification number",
+      "type": "text",
+      "owner": "household_head",
+      "group": "household_details",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 12,
+      "evidence": "Printed item 4 or 9; twelve character cells measured from the original grid edges and visually checked.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            289.70001220703125,
+            324.79998779296875,
+            530.5,
+            344.79998779296875
+          ],
+          "anchor_id": "p1_characters1",
+          "component": "value",
+          "boxes": [
+            [
+              289.7,
+              324.8,
+              304.3,
+              344.8
+            ],
+            [
+              310.3,
+              324.8,
+              324.9,
+              344.8
+            ],
+            [
+              330.9,
+              324.8,
+              345.5,
+              344.8
+            ],
+            [
+              351.5,
+              324.8,
+              366.1,
+              344.8
+            ],
+            [
+              372.1,
+              324.8,
+              386.7,
+              344.8
+            ],
+            [
+              392.7,
+              324.8,
+              407.2,
+              344.8
+            ],
+            [
+              413.2,
+              324.8,
+              427.8,
+              344.8
+            ],
+            [
+              433.8,
+              324.8,
+              448.3,
+              344.8
+            ],
+            [
+              454.3,
+              324.8,
+              468.9,
+              344.8
+            ],
+            [
+              474.9,
+              324.8,
+              489.4,
+              344.8
+            ],
+            [
+              495.4,
+              324.8,
+              510.0,
+              344.8
+            ],
+            [
+              516.0,
+              324.8,
+              530.5,
+              344.8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "household_member_01_row_number",
+      "label": "Household member 1: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_01",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            458.2,
+            110.7,
+            472.5
+          ],
+          "anchor_id": "p1_smallcell2_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_02_row_number",
+      "label": "Household member 2: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_02",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            478.5,
+            110.7,
+            493.0
+          ],
+          "anchor_id": "p1_smallcell3_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_03_row_number",
+      "label": "Household member 3: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_03",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            499.0,
+            110.7,
+            513.5
+          ],
+          "anchor_id": "p1_smallcell4_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_04_row_number",
+      "label": "Household member 4: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_04",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            519.5,
+            110.7,
+            534.0
+          ],
+          "anchor_id": "p1_smallcell5_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_05_row_number",
+      "label": "Household member 5: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_05",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            540.0,
+            110.7,
+            554.5
+          ],
+          "anchor_id": "p1_smallcell6_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_06_row_number",
+      "label": "Household member 6: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_06",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            560.5,
+            110.7,
+            575.0
+          ],
+          "anchor_id": "p1_smallcell7_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_07_row_number",
+      "label": "Household member 7: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_07",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            581.0,
+            110.7,
+            595.5
+          ],
+          "anchor_id": "p1_smallcell8_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_08_row_number",
+      "label": "Household member 8: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_08",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            601.5,
+            110.7,
+            616.0
+          ],
+          "anchor_id": "p1_smallcell9_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_member_09_row_number",
+      "label": "Household member 9: row number",
+      "type": "text",
+      "owner": "household_member",
+      "group": "household_member_09",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 2,
+      "evidence": "Serial-number column in section 11, measured between the existing grid borders.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            94.9,
+            622.0,
+            110.7,
+            636.5
+          ],
+          "anchor_id": "p1_smallcell10_0",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "household_head_signature",
+      "label": "Household head consent and signature",
+      "type": "manual",
+      "owner": "signatory",
+      "group": "manual_completion",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Printed signature/consent area. Complete by hand when applicable; no signature is generated.",
+      "uncertainties": [],
+      "when": {},
+      "manual": true,
+      "placements": []
+    },
+    {
+      "id": "accommodation_owner_signature",
+      "label": "Accommodation owner consent and signature",
+      "type": "manual",
+      "owner": "signatory",
+      "group": "manual_completion",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Printed signature/consent area. Complete by hand when applicable; no signature is generated.",
+      "uncertainties": [],
+      "when": {},
+      "manual": true,
+      "placements": []
+    },
+    {
+      "id": "parent_guardian_signature",
+      "label": "Parent or guardian consent and signature",
+      "type": "manual",
+      "owner": "signatory",
+      "group": "manual_completion",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Printed signature/consent area. Complete by hand when applicable; no signature is generated.",
+      "uncertainties": [],
+      "when": {},
+      "manual": true,
+      "placements": []
+    },
+    {
+      "id": "declarant_signature",
+      "label": "Declarant signature and full name",
+      "type": "manual",
+      "owner": "signatory",
+      "group": "manual_completion",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Printed signature/consent area. Complete by hand when applicable; no signature is generated.",
+      "uncertainties": [],
+      "when": {},
+      "manual": true,
+      "placements": []
+    }
+  ],
+  "notes": [
+    "Missing manual-area anchors: the household head, lawful accommodation owner, and parent or guardian consent blocks have no measured anchors for their on-form consent statements, signatures or signatory full names required by notes (3)-(5). These areas need manual completion or additional measured anchors; no unanchored writable fields have been invented.",
+    "Missing manual-area anchor: the declarant's signature and full-name area under “NGƯỜI KÊ KHAI(6)” is not anchored. Note (6) calls for signature and full name for in-person submission and exempts public-service-portal and VNeID submissions from signing this section.",
+    "The four identity blanks marked (7) are specifically for VNeID consent, not general on-form signature-name fields. They are conditionally mapped only to the corresponding VNeID branches.",
+    "The consent blocks' place/date lines have no explicit method-specific completion rule. They remain mapped without inferred conditions; whether they are completed for electronic or separately documented consent needs confirmation. Note (6) likewise does not expressly address the declarant's place/date for electronic submission.",
+    "Note (4) requires consent from all individual or organisational co-owners unless they have agreed to a representative giving consent. Only one owner's VNeID identity pair is printed. No additional co-owner or organisation-identity anchors are supplied.",
+    "The printed form does not establish a general requiredness rule for every blank. Consent applicability depends on notes (3)-(5), and unused household-member rows should not be treated as mandatory.",
+    "Several signatory date components, locality blanks and VNeID identity blanks are extremely narrow. Rendering requires fit review.",
+    "The recipient is a residence registration authority, not an official certification field. Household head, accommodation owner, parent or guardian, applicant and declarant roles are kept separate; no sponsor role or official certification, stamp or photograph field has been invented.",
+    "Signing places and dates are manual because the original dotted spaces cannot fit legible typed values; applicant birth dates and table dates remain fillable."
+  ],
+  "mapping_metadata": {
+    "provider": "openai",
+    "model": "gpt-6-astra",
+    "response_id": "resp_03a20ecd1970a817016ae5b56d21e087d2900bd3bd61a61a70",
+    "usage": {
+      "input_tokens": 15059,
+      "input_tokens_details": {
+        "cache_write_tokens": 15056,
+        "cached_tokens": 0
+      },
+      "output_tokens": 16190,
+      "output_tokens_details": {
+        "reasoning_tokens": 3542
+      },
+      "total_tokens": 31249
+    },
+    "reasoning_effort": "high",
+    "max_output_tokens": 64000,
+    "completed_at": "2026-10-31T09:33:57.062680+00:00",
+    "geometry_review": {
+      "status": "draft",
+      "reviewed_by": "coding-agent",
+      "note": "Added measured table serial cells, character grids or raster checkbox placements after visual inspection. No human approval or legal applicability review."
+    }
+  },
+  "source_provenance": {
+    "page_url": "https://conganthanhhoa.gov.vn/dich-vu-cong/dang-ky-quan-ly-cu-tru/dieu-chinh-thong-tin-ve-cu-tru-trong-co-so-du-lieu-ve-cu-tru.html",
+    "download_url": "https://conganthanhhoa.gov.vn/upload/81582/20240515/CT01_6595c.doc",
+    "summary": "Tờ khai thay đổi thông tin cư trú",
+    "matches": [
+      {
+        "procedure_code": "1.004194",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fea5ed7a4f41dd9",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004194",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fad12df551b4540",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004194",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb37c739834e86",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd12c68e67682f8",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe98705331925cf",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feaac47150fc1f2",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe8680df25c5851",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe3fbca2c54c1e3",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feca041203ea4aa",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fcbc69fd0705a90",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.004222",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb5cc79ba9a266",
+        "label": "Mẫu CT01 _66.doc"
+      },
+      {
+        "procedure_code": "1.010041",
+        "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdb7f60f5beac9e",
+        "label": "Mẫu CT01 _66.doc"
+      }
+    ]
+  }
+}

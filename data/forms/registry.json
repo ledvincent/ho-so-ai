@@ -6,5 +6,49 @@
     "name": "Application for a temporary stay extension",
     "spec_path": "data/forms/NA5/workflow.json",
     "applicability": "unresolved"
+  },
+  {
+    "document_id": "marriage-declaration-1-000894",
+    "form_id": "marriage-declaration",
+    "procedure_code": "1.000894",
+    "name": "Marriage registration declaration",
+    "spec_path": "data/forms/workflows/marriage-declaration-1-000894.json",
+    "applicability": "unresolved",
+    "requirement_names": [
+      "Tờ khai đăng ký kết hôn"
+    ]
+  },
+  {
+    "document_id": "ct01-1-004194",
+    "form_id": "CT01",
+    "procedure_code": "1.004194",
+    "name": "Declaration of changes to residence information",
+    "spec_path": "data/forms/workflows/ct01-1-004194.json",
+    "applicability": "unresolved",
+    "requirement_names": [
+      "Tờ khai thay đổi thông tin cư trú"
+    ]
+  },
+  {
+    "document_id": "ct01-1-004222",
+    "form_id": "CT01",
+    "procedure_code": "1.004222",
+    "name": "Declaration of changes to residence information",
+    "spec_path": "data/forms/workflows/ct01-1-004222.json",
+    "applicability": "unresolved",
+    "requirement_names": [
+      "Tờ khai thay đổi thông tin cư trú"
+    ]
+  },
+  {
+    "document_id": "ct01-1-010041",
+    "form_id": "CT01",
+    "procedure_code": "1.010041",
+    "name": "Declaration of changes to residence information",
+    "spec_path": "data/forms/workflows/ct01-1-010041.json",
+    "applicability": "unresolved",
+    "requirement_names": [
+      "Tờ khai thay đổi thông tin cư trú"
+    ]
   }
 ]

@@ -1,0 +1,2531 @@
+{
+  "inputs": {
+    "version": "visual-fields-3",
+    "sha256": "27b12f101e9f571592a7336ed857ef009e59b3d68a77ff8fbfdb05e27db0eb0d",
+    "pdf_sha256": "91ae1f1d399b93b7863af15253db8e0fd6672ec58679036ddc3a914e8b3d6165",
+    "context": "Tờ khai đăng ký kết hôn",
+    "hints": null,
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "provider": "openai"
+  },
+  "input_fingerprint": "d4e98ab7d537d6b7cabae2086b20d1518b277217fd9fec037c2e3bb0f46ce70d",
+  "result": {
+    "form_code": "",
+    "revision_reference": "",
+    "fields": [
+      {
+        "id": "marriage_registration_authority",
+        "label": "Marriage registration authority",
+        "type": "text",
+        "owner": "receiving_organisation",
+        "group": "recipient",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Kính gửi: (3)”; footnote (3) instructs the applicants to state the name of the marriage registration authority.",
+        "uncertainties": []
+      },
+      {
+        "id": "marriage_has_foreign_element",
+        "label": "Does the marriage registration involve a foreign element?",
+        "type": "choice",
+        "owner": "joint_applicants",
+        "group": "application_branch",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "yes",
+          "no"
+        ],
+        "placements": [],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "Footnotes (1) and (2) require photographs of both parties for marriage registration involving a foreign element. This is a synthetic branch control.",
+        "uncertainties": [
+          "Neither photograph box has a supplied anchor, so the conditional manual photograph attachments cannot be mapped."
+        ]
+      },
+      {
+        "id": "female_identity_information_status",
+        "label": "Female party: personal identification number or identity credential provided",
+        "type": "choice",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "provided",
+          "unavailable_or_not_provided"
+        ],
+        "placements": [],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "Footnote (4) says ethnicity, nationality and residence are entered only when the person does not have or does not provide a personal identification number, citizen identity card, identity card or electronic identity. This synthetic control applies that condition to the female party.",
+        "uncertainties": []
+      },
+      {
+        "id": "female_full_name",
+        "label": "Female party: full name",
+        "type": "text",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c1_1",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c1_2",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c1_3",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Họ, chữ đệm, tên” in the “Bên nữ” column. All three anchors belong to one undivided full-name cell.",
+        "uncertainties": []
+      },
+      {
+        "id": "female_date_of_birth",
+        "label": "Female party: date of birth",
+        "type": "date",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c3_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Ngày, tháng, năm sinh” in the female column has one undivided empty cell. Print the complete date as DD/MM/YYYY.",
+        "uncertainties": []
+      },
+      {
+        "id": "female_ethnicity",
+        "label": "Female party: ethnicity",
+        "type": "text",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [
+          {
+            "field": "female_identity_information_status",
+            "value": "unavailable_or_not_provided"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c5_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Dân tộc (4)” in the female column; completion is conditional under footnote (4).",
+        "uncertainties": []
+      },
+      {
+        "id": "female_nationality",
+        "label": "Female party: nationality",
+        "type": "text",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [
+          {
+            "field": "female_identity_information_status",
+            "value": "unavailable_or_not_provided"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c7_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Quốc tịch (4)” in the female column; completion is conditional under footnote (4).",
+        "uncertainties": []
+      },
+      {
+        "id": "female_residence",
+        "label": "Female party: residential address",
+        "type": "text",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [
+          {
+            "field": "female_identity_information_status",
+            "value": "unavailable_or_not_provided"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c9_1",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c9_2",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c9_3",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Nơi cư trú (4)” in the female column. Footnote (4) specifies registered permanent residence; if none, registered temporary residence; if neither exists, current residence. The three anchors form one address field.",
+        "uncertainties": []
+      },
+      {
+        "id": "female_identity_details",
+        "label": "Female party: personal identification number or identity document details",
+        "type": "text",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c11_1",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c11_2",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c11_3",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Giấy tờ tùy thân (5)” in the female column. Footnote (5) calls for personal identification number/citizen identity card/identity card information, with an example containing document number, issuing authority and issue date. If the listed identification credentials are unavailable, enter a valid substitute such as a passport. These details share one undivided cell.",
+        "uncertainties": [
+          "Footnote (5) gives an example rather than separately labelled document-detail slots; no independent document-number, issuer or issue-date fields are created."
+        ]
+      },
+      {
+        "id": "female_marriage_ordinal",
+        "label": "Female party: which numbered marriage is this?",
+        "type": "text",
+        "owner": "female_applicant",
+        "group": "female_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c13_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Kết hôn lần thứ mấy” in the female column asks the ordinal number of this marriage, not merely the number of previous marriages.",
+        "uncertainties": []
+      },
+      {
+        "id": "male_identity_information_status",
+        "label": "Male party: personal identification number or identity credential provided",
+        "type": "choice",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "provided",
+          "unavailable_or_not_provided"
+        ],
+        "placements": [],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "Footnote (4) says ethnicity, nationality and residence are entered only when the person does not have or does not provide a personal identification number, citizen identity card, identity card or electronic identity. This synthetic control applies that condition to the male party.",
+        "uncertainties": []
+      },
+      {
+        "id": "male_full_name",
+        "label": "Male party: full name",
+        "type": "text",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c2_1",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c2_2",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c2_3",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Họ, chữ đệm, tên” in the “Bên nam” column. All three anchors belong to one undivided full-name cell.",
+        "uncertainties": []
+      },
+      {
+        "id": "male_date_of_birth",
+        "label": "Male party: date of birth",
+        "type": "date",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c4_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Ngày, tháng, năm sinh” in the male column has one undivided empty cell. Print the complete date as DD/MM/YYYY.",
+        "uncertainties": []
+      },
+      {
+        "id": "male_ethnicity",
+        "label": "Male party: ethnicity",
+        "type": "text",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [
+          {
+            "field": "male_identity_information_status",
+            "value": "unavailable_or_not_provided"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c6_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Dân tộc (4)” in the male column; completion is conditional under footnote (4).",
+        "uncertainties": []
+      },
+      {
+        "id": "male_nationality",
+        "label": "Male party: nationality",
+        "type": "text",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [
+          {
+            "field": "male_identity_information_status",
+            "value": "unavailable_or_not_provided"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c8_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Quốc tịch (4)” in the male column; completion is conditional under footnote (4).",
+        "uncertainties": []
+      },
+      {
+        "id": "male_residence",
+        "label": "Male party: residential address",
+        "type": "text",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [
+          {
+            "field": "male_identity_information_status",
+            "value": "unavailable_or_not_provided"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c10_1",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c10_2",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c10_3",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Nơi cư trú (4)” in the male column. Footnote (4) specifies registered permanent residence; if none, registered temporary residence; if neither exists, current residence. The three anchors form one address field.",
+        "uncertainties": []
+      },
+      {
+        "id": "male_identity_details",
+        "label": "Male party: personal identification number or identity document details",
+        "type": "text",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c12_1",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c12_2",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_c12_3",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Giấy tờ tùy thân (5)” in the male column. Footnote (5) calls for personal identification number/citizen identity card/identity card information, with an example containing document number, issuing authority and issue date. If the listed identification credentials are unavailable, enter a valid substitute such as a passport. These details share one undivided cell.",
+        "uncertainties": [
+          "Footnote (5) gives an example rather than separately labelled document-detail slots; no independent document-number, issuer or issue-date fields are created."
+        ]
+      },
+      {
+        "id": "male_marriage_ordinal",
+        "label": "Male party: which numbered marriage is this?",
+        "type": "text",
+        "owner": "male_applicant",
+        "group": "male_party",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_c14_1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Kết hôn lần thứ mấy” in the male column asks the ordinal number of this marriage, not merely the number of previous marriages.",
+        "uncertainties": []
+      },
+      {
+        "id": "declaration_place",
+        "label": "Place of declaration",
+        "type": "text",
+        "owner": "joint_applicants",
+        "group": "declaration",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a2",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "The blank immediately before “, ngày ... tháng ... năm ...” is the place in the declaration's place-and-date line.",
+        "uncertainties": [
+          "The form does not specify the administrative level or format of the place name."
+        ]
+      },
+      {
+        "id": "declaration_date",
+        "label": "Date of declaration",
+        "type": "date",
+        "owner": "joint_applicants",
+        "group": "declaration",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a3",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a4",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a5",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "The declaration line explicitly prints separate “ngày”, “tháng” and “năm” slots.",
+        "uncertainties": []
+      },
+      {
+        "id": "female_signature_and_name",
+        "label": "Female party: signature and full name",
+        "type": "manual",
+        "owner": "female_signatory",
+        "group": "signatures",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a6",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Bên nữ (Ký, ghi rõ họ, chữ đệm, tên)” instructs the female applicant to sign and write her full name. This is manual, not an automatically repeated name field.",
+        "uncertainties": [
+          "The supplied anchor covers the dotted name line, not the open signing space above it."
+        ]
+      },
+      {
+        "id": "male_signature_and_name",
+        "label": "Male party: signature and full name",
+        "type": "manual",
+        "owner": "male_signatory",
+        "group": "signatures",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a7",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Bên nam (Ký, ghi rõ họ, chữ đệm, tên)” instructs the male applicant to sign and write his full name. This is manual, not an automatically repeated name field.",
+        "uncertainties": [
+          "The supplied anchor covers the dotted name line, not the open signing space above it."
+        ]
+      },
+      {
+        "id": "copies_requested",
+        "label": "Request copies",
+        "type": "choice",
+        "owner": "joint_applicants",
+        "group": "copies",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "yes",
+          "no"
+        ],
+        "placements": [],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Đề nghị cấp bản sao(6): Có, Không” has two visible checkboxes. Footnote (6) instructs applicants requesting copies to mark X and specify the quantity. A synthetic choice represents the mutually exclusive branches because checkbox anchors are missing.",
+        "uncertainties": [
+          "Neither the “Có” nor the “Không” checkbox has a supplied anchor; this control cannot place an X on the form."
+        ]
+      },
+      {
+        "id": "copy_quantity",
+        "label": "Number of copies requested",
+        "type": "text",
+        "owner": "joint_applicants",
+        "group": "copies",
+        "required": false,
+        "conditions": [
+          {
+            "field": "copies_requested",
+            "value": "yes"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a8",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 200,
+        "evidence": "“Số lượng:…….bản”; footnote (6) calls for the quantity when copies are requested.",
+        "uncertainties": []
+      }
+    ],
+    "excluded_anchors": [
+      {
+        "anchor_id": "p2_a1",
+        "reason": "The dots in “giấy tờ hợp lệ thay thế (hộ chiếu...)” are an explanatory ellipsis after the passport example in footnote (5), not a writable blank."
+      }
+    ],
+    "issues": [
+      "No form code or printed legal revision reference appears on either supplied page; both metadata values are left empty.",
+      "The two photograph boxes marked (1) and (2) on page 1 lack measured anchors. Footnotes (1) and (2) require manual attachment of both parties' photographs when marriage_has_foreign_element equals yes. No anchorless photograph fields or guessed placements have been created.",
+      "The printed photograph numbering does not explicitly identify which party belongs in each box; that association remains uncertain.",
+      "The page 1 “Có” and “Không” copy-request checkboxes lack measured anchors. copies_requested captures the choice synthetically, but checkbox placement remains unmapped.",
+      "The signature anchors cover only the dotted name lines; the open spaces for the actual handwritten signatures have no separate measured anchors. Both signature-and-name fields remain manual."
+    ]
+  },
+  "measured": {
+    "pages": [
+      {
+        "page": 1,
+        "width": 595.303955078125,
+        "height": 841.8897705078125,
+        "lines": [
+          {
+            "text": "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+            "bbox": [
+              172.60000610351562,
+              58.300758361816406,
+              422.74005126953125,
+              70.3007583618164
+            ]
+          },
+          {
+            "text": "Độc lập – Tự do – Hạnh phúc",
+            "bbox": [
+              236.8000030517578,
+              72.10074615478516,
+              387.60400390625,
+              84.10074615478516
+            ]
+          },
+          {
+            "text": "            ",
+            "bbox": [
+              56.79999923706055,
+              99.7007827758789,
+              92.80000305175781,
+              111.7007827758789
+            ]
+          },
+          {
+            "text": "TỜ KHAI ĐĂNG KÝ KẾT HÔN",
+            "bbox": [
+              184.1999969482422,
+              114.10075378417969,
+              411.2240905761719,
+              130.1007537841797
+            ]
+          },
+          {
+            "text": "Kính gửi: (3)................................................................................................",
+            "bbox": [
+              149.1999969482422,
+              149.60073852539062,
+              446.3999938964844,
+              162.30075073242188
+            ]
+          },
+          {
+            "text": "Thông tin",
+            "bbox": [
+              100.30000305175781,
+              195.90078735351562,
+              150.62802124023438,
+              207.90078735351562
+            ]
+          },
+          {
+            "text": "Bên nữ",
+            "bbox": [
+              269.0,
+              195.90078735351562,
+              305.864013671875,
+              207.90078735351562
+            ]
+          },
+          {
+            "text": "Bên nam",
+            "bbox": [
+              451.1000061035156,
+              195.90078735351562,
+              496.760009765625,
+              207.90078735351562
+            ]
+          },
+          {
+            "text": "Họ, chữ đệm, tên",
+            "bbox": [
+              62.20000076293945,
+              222.20077514648438,
+              144.9759979248047,
+              234.20077514648438
+            ]
+          },
+          {
+            "text": "Ngày, tháng, năm sinh",
+            "bbox": [
+              62.20000076293945,
+              274.3007507324219,
+              170.4759979248047,
+              286.3007507324219
+            ]
+          },
+          {
+            "text": "Dân tộc (4) ",
+            "bbox": [
+              62.20000076293945,
+              299.9007873535156,
+              114.0,
+              312.6007385253906
+            ]
+          },
+          {
+            "text": "Quốc tịch (4) ",
+            "bbox": [
+              62.20000076293945,
+              326.2007751464844,
+              122.0999984741211,
+              338.9007568359375
+            ]
+          },
+          {
+            "text": "Nơi cư trú (4) ",
+            "bbox": [
+              62.20000076293945,
+              352.5007629394531,
+              124.5999984741211,
+              365.2007751464844
+            ]
+          },
+          {
+            "text": "Giấy tờ tùy thân (5)",
+            "bbox": [
+              62.20000076293945,
+              400.60076904296875,
+              145.93199157714844,
+              413.3007507324219
+            ]
+          },
+          {
+            "text": "Kết hôn lần thứ mấy",
+            "bbox": [
+              62.20000076293945,
+              457.4007568359375,
+              160.6599884033203,
+              469.4007568359375
+            ]
+          },
+          {
+            "text": "     ",
+            "bbox": [
+              92.80000305175781,
+              477.7007751464844,
+              107.80000305175781,
+              489.7007751464844
+            ]
+          },
+          {
+            "text": "Chúng tôi cam đoan những lời khai trên đây là đúng sự thật, việc kết hôn của chúng tôi là tự",
+            "bbox": [
+              92.80000305175781,
+              493.5007629394531,
+              537.7241821289062,
+              505.5007629394531
+            ]
+          },
+          {
+            "text": "nguyện, không vi phạm quy định của Luật hôn nhân và gia đình Việt Nam.",
+            "bbox": [
+              56.79999923706055,
+              507.3007507324219,
+              396.01611328125,
+              519.30078125
+            ]
+          },
+          {
+            "text": "Chúng tôi chịu hoàn toàn trách nhiệm trước pháp luật về nội dung cam đoan của mình. ",
+            "bbox": [
+              92.80000305175781,
+              525.100830078125,
+              487.3243103027344,
+              537.100830078125
+            ]
+          },
+          {
+            "text": "Đề nghị Quý cơ quan đăng ký.",
+            "bbox": [
+              92.80000305175781,
+              542.9007568359375,
+              232.0119171142578,
+              554.9007568359375
+            ]
+          },
+          {
+            "text": "                  ...........................………., ngày ..........…tháng ............ năm............…",
+            "bbox": [
+              203.60000610351562,
+              560.30078125,
+              538.7999877929688,
+              572.30078125
+            ]
+          },
+          {
+            "text": "Bên nữ",
+            "bbox": [
+              289.79998779296875,
+              590.7008056640625,
+              326.66400146484375,
+              602.7008056640625
+            ]
+          },
+          {
+            "text": "(Ký, ghi rõ họ, chữ đệm, tên)",
+            "bbox": [
+              244.0,
+              604.4008178710938,
+              372.31494140625,
+              615.4008178710938
+            ]
+          },
+          {
+            "text": "....................................",
+            "bbox": [
+              254.3000030517578,
+              671.2008056640625,
+              362.29998779296875,
+              683.2008056640625
+            ]
+          },
+          {
+            "text": "Bên nam",
+            "bbox": [
+              457.79998779296875,
+              590.7008056640625,
+              503.4599914550781,
+              602.7008056640625
+            ]
+          },
+          {
+            "text": "(Ký, ghi rõ họ, chữ đệm, tên)",
+            "bbox": [
+              416.3999938964844,
+              604.4008178710938,
+              544.7149658203125,
+              615.4008178710938
+            ]
+          },
+          {
+            "text": "....................................",
+            "bbox": [
+              426.70001220703125,
+              671.2008056640625,
+              534.7000122070312,
+              683.2008056640625
+            ]
+          },
+          {
+            "text": "Đề nghị cấp bản sao(6): Có ",
+            "bbox": [
+              56.79999923706055,
+              721.3807983398438,
+              174.75099182128906,
+              733.0007934570312
+            ]
+          },
+          {
+            "text": ", Không ",
+            "bbox": [
+              189.10000610351562,
+              722.0007934570312,
+              227.2370147705078,
+              733.0007934570312
+            ]
+          },
+          {
+            "text": "Số lượng:…….bản",
+            "bbox": [
+              56.79999923706055,
+              749.80078125,
+              140.65298461914062,
+              760.80078125
+            ]
+          },
+          {
+            "text": "(1)",
+            "bbox": [
+              83.80000305175781,
+              123.10076904296875,
+              95.43000793457031,
+              133.10076904296875
+            ]
+          },
+          {
+            "text": "(2)",
+            "bbox": [
+              527.0999755859375,
+              123.4007568359375,
+              538.72998046875,
+              133.4007568359375
+            ]
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "width": 595.303955078125,
+        "height": 841.8897705078125,
+        "lines": [
+          {
+            "text": "Chú thích:",
+            "bbox": [
+              56.79999923706055,
+              58.500755310058594,
+              114.8969955444336,
+              71.5007553100586
+            ]
+          },
+          {
+            "text": "(1) (2) Trường hợp làm thủ tục đăng ký kết hôn có yếu tố nước ngoài, thì phải dán ảnh",
+            "bbox": [
+              92.80000305175781,
+              74.9007568359375,
+              537.2412109375,
+              88.60079193115234
+            ]
+          },
+          {
+            "text": "của hai bên nam, nữ.",
+            "bbox": [
+              56.79999923706055,
+              92.80074310302734,
+              164.75201416015625,
+              105.80074310302734
+            ]
+          },
+          {
+            "text": "(3) Ghi rõ tên cơ quan đăng ký kết hôn.",
+            "bbox": [
+              92.80000305175781,
+              109.20074462890625,
+              290.30999755859375,
+              122.9007797241211
+            ]
+          },
+          {
+            "text": "(4) Chỉ ghi trong trường hợp người có yêu cầu đăng ký hộ tịch chưa có/không cung",
+            "bbox": [
+              92.80000305175781,
+              126.30078125,
+              538.055908203125,
+              140.10079956054688
+            ]
+          },
+          {
+            "text": "cấp số định danh cá nhân/căn cước công dân/thẻ căn cước/căn cước điện tử. ",
+            "bbox": [
+              56.79999923706055,
+              144.20077514648438,
+              454.4380187988281,
+              157.20077514648438
+            ]
+          },
+          {
+            "text": "Trường hợp phải cung cấp thông tin “Nơi cư trú” thì ghi theo nơi đăng ký thường trú;",
+            "bbox": [
+              92.80000305175781,
+              161.40078735351562,
+              538.6310424804688,
+              174.40078735351562
+            ]
+          },
+          {
+            "text": "nếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú; trường hợp không có",
+            "bbox": [
+              56.79999923706055,
+              178.50076293945312,
+              538.4991455078125,
+              191.50076293945312
+            ]
+          },
+          {
+            "text": "nơi đăng ký thường trú và nơi đăng ký tạm trú thì ghi theo nơi ở hiện tại. ",
+            "bbox": [
+              56.79999923706055,
+              195.70077514648438,
+              438.5980529785156,
+              208.70077514648438
+            ]
+          },
+          {
+            "text": "(5) Ghi số định danh cá nhân/căn cước công dân/thẻ căn cước (ví dụ: Căn cước công",
+            "bbox": [
+              92.80000305175781,
+              215.10076904296875,
+              538.4949951171875,
+              228.80075073242188
+            ]
+          },
+          {
+            "text": "dân số 025188001010 do Cục Cảnh sát QLHC về TTXH cấp ngày 20/11/2021). Trường hợp",
+            "bbox": [
+              56.79999923706055,
+              233.00076293945312,
+              538.635009765625,
+              246.00076293945312
+            ]
+          },
+          {
+            "text": "không có số định danh cá nhân/căn cước công dân/thẻ căn cước/căn cước điện tử thì ghi",
+            "bbox": [
+              56.79999923706055,
+              250.10079956054688,
+              538.5760498046875,
+              263.1007995605469
+            ]
+          },
+          {
+            "text": "giấy tờ hợp lệ thay thế (hộ chiếu...). ",
+            "bbox": [
+              56.79999923706055,
+              267.3007507324219,
+              245.78099060058594,
+              280.3007507324219
+            ]
+          },
+          {
+            "text": "(6) Đề nghị đánh dấu X vào ô nếu có yêu cầu cấp bản sao và ghi rõ số lượng.",
+            "bbox": [
+              92.80000305175781,
+              283.70074462890625,
+              486.9070739746094,
+              297.4007873535156
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              56.79999923706055,
+              368.7007751464844,
+              59.29999923706055,
+              378.7007751464844
+            ]
+          }
+        ]
+      }
+    ],
+    "anchors": [
+      {
+        "id": "p1_a1",
+        "page": 1,
+        "bbox": [
+          206.39999389648438,
+          151.9007568359375,
+          446.3999938964844,
+          161.9007568359375
+        ],
+        "kind": "blank",
+        "line": "Kính gửi: (3)................................................................................................"
+      },
+      {
+        "id": "p1_a2",
+        "page": 1,
+        "bbox": [
+          248.60000610351562,
+          561.9007568359375,
+          348.6000061035156,
+          571.9007568359375
+        ],
+        "kind": "blank",
+        "line": "                  ...........................………., ngày ..........…tháng ............ năm............…"
+      },
+      {
+        "id": "p1_a3",
+        "page": 1,
+        "bbox": [
+          381.0,
+          561.9007568359375,
+          416.0,
+          571.9007568359375
+        ],
+        "kind": "blank",
+        "line": "                  ...........................………., ngày ..........…tháng ............ năm............…"
+      },
+      {
+        "id": "p1_a4",
+        "page": 1,
+        "bbox": [
+          445.6000061035156,
+          561.9007568359375,
+          475.6000061035156,
+          571.9007568359375
+        ],
+        "kind": "blank",
+        "line": "                  ...........................………., ngày ..........…tháng ............ năm............…"
+      },
+      {
+        "id": "p1_a5",
+        "page": 1,
+        "bbox": [
+          498.79998779296875,
+          561.9007568359375,
+          538.7999877929688,
+          571.9007568359375
+        ],
+        "kind": "blank",
+        "line": "                  ...........................………., ngày ..........…tháng ............ năm............…"
+      },
+      {
+        "id": "p1_a6",
+        "page": 1,
+        "bbox": [
+          254.3000030517578,
+          671.2008056640625,
+          362.29998779296875,
+          683.2008056640625
+        ],
+        "kind": "blank",
+        "line": "...................................."
+      },
+      {
+        "id": "p1_a7",
+        "page": 1,
+        "bbox": [
+          426.70001220703125,
+          671.2008056640625,
+          534.7000122070312,
+          683.2008056640625
+        ],
+        "kind": "blank",
+        "line": "...................................."
+      },
+      {
+        "id": "p1_a8",
+        "page": 1,
+        "bbox": [
+          99.97499084472656,
+          749.80078125,
+          124.72499084472656,
+          760.80078125
+        ],
+        "kind": "blank",
+        "line": "Số lượng:…….bản"
+      },
+      {
+        "id": "p1_c1_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          217.4,
+          377.8,
+          232.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 1, line 1/3",
+        "cell_bbox": [
+          196.9,
+          217.4,
+          377.8,
+          263.5
+        ]
+      },
+      {
+        "id": "p1_c1_2",
+        "page": 1,
+        "bbox": [
+          196.9,
+          232.4,
+          377.8,
+          247.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 1, line 2/3",
+        "cell_bbox": [
+          196.9,
+          217.4,
+          377.8,
+          263.5
+        ]
+      },
+      {
+        "id": "p1_c1_3",
+        "page": 1,
+        "bbox": [
+          196.9,
+          247.4,
+          377.8,
+          262.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 1, line 3/3",
+        "cell_bbox": [
+          196.9,
+          217.4,
+          377.8,
+          263.5
+        ]
+      },
+      {
+        "id": "p1_c2_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          217.4,
+          564.0,
+          232.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 2, line 1/3",
+        "cell_bbox": [
+          383.8,
+          217.4,
+          564.0,
+          263.5
+        ]
+      },
+      {
+        "id": "p1_c2_2",
+        "page": 1,
+        "bbox": [
+          383.8,
+          232.4,
+          564.0,
+          247.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 2, line 2/3",
+        "cell_bbox": [
+          383.8,
+          217.4,
+          564.0,
+          263.5
+        ]
+      },
+      {
+        "id": "p1_c2_3",
+        "page": 1,
+        "bbox": [
+          383.8,
+          247.4,
+          564.0,
+          262.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 2, line 3/3",
+        "cell_bbox": [
+          383.8,
+          217.4,
+          564.0,
+          263.5
+        ]
+      },
+      {
+        "id": "p1_c3_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          269.5,
+          377.8,
+          284.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 3, line 1/1",
+        "cell_bbox": [
+          196.9,
+          269.5,
+          377.8,
+          289.8
+        ]
+      },
+      {
+        "id": "p1_c4_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          269.5,
+          564.0,
+          284.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 4, line 1/1",
+        "cell_bbox": [
+          383.8,
+          269.5,
+          564.0,
+          289.8
+        ]
+      },
+      {
+        "id": "p1_c5_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          295.8,
+          377.8,
+          310.8
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 5, line 1/1",
+        "cell_bbox": [
+          196.9,
+          295.8,
+          377.8,
+          316.1
+        ]
+      },
+      {
+        "id": "p1_c6_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          295.8,
+          564.0,
+          310.8
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 6, line 1/1",
+        "cell_bbox": [
+          383.8,
+          295.8,
+          564.0,
+          316.1
+        ]
+      },
+      {
+        "id": "p1_c7_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          322.1,
+          377.8,
+          337.1
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 7, line 1/1",
+        "cell_bbox": [
+          196.9,
+          322.1,
+          377.8,
+          342.4
+        ]
+      },
+      {
+        "id": "p1_c8_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          322.1,
+          564.0,
+          337.1
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 8, line 1/1",
+        "cell_bbox": [
+          383.8,
+          322.1,
+          564.0,
+          342.4
+        ]
+      },
+      {
+        "id": "p1_c9_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          348.4,
+          377.8,
+          363.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 9, line 1/3",
+        "cell_bbox": [
+          196.9,
+          348.4,
+          377.8,
+          394.5
+        ]
+      },
+      {
+        "id": "p1_c9_2",
+        "page": 1,
+        "bbox": [
+          196.9,
+          363.4,
+          377.8,
+          378.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 9, line 2/3",
+        "cell_bbox": [
+          196.9,
+          348.4,
+          377.8,
+          394.5
+        ]
+      },
+      {
+        "id": "p1_c9_3",
+        "page": 1,
+        "bbox": [
+          196.9,
+          378.4,
+          377.8,
+          393.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 9, line 3/3",
+        "cell_bbox": [
+          196.9,
+          348.4,
+          377.8,
+          394.5
+        ]
+      },
+      {
+        "id": "p1_c10_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          348.4,
+          564.0,
+          363.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 10, line 1/3",
+        "cell_bbox": [
+          383.8,
+          348.4,
+          564.0,
+          394.5
+        ]
+      },
+      {
+        "id": "p1_c10_2",
+        "page": 1,
+        "bbox": [
+          383.8,
+          363.4,
+          564.0,
+          378.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 10, line 2/3",
+        "cell_bbox": [
+          383.8,
+          348.4,
+          564.0,
+          394.5
+        ]
+      },
+      {
+        "id": "p1_c10_3",
+        "page": 1,
+        "bbox": [
+          383.8,
+          378.4,
+          564.0,
+          393.4
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 10, line 3/3",
+        "cell_bbox": [
+          383.8,
+          348.4,
+          564.0,
+          394.5
+        ]
+      },
+      {
+        "id": "p1_c11_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          400.5,
+          377.8,
+          415.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 11, line 1/3",
+        "cell_bbox": [
+          196.9,
+          400.5,
+          377.8,
+          446.6
+        ]
+      },
+      {
+        "id": "p1_c11_2",
+        "page": 1,
+        "bbox": [
+          196.9,
+          415.5,
+          377.8,
+          430.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 11, line 2/3",
+        "cell_bbox": [
+          196.9,
+          400.5,
+          377.8,
+          446.6
+        ]
+      },
+      {
+        "id": "p1_c11_3",
+        "page": 1,
+        "bbox": [
+          196.9,
+          430.5,
+          377.8,
+          445.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 11, line 3/3",
+        "cell_bbox": [
+          196.9,
+          400.5,
+          377.8,
+          446.6
+        ]
+      },
+      {
+        "id": "p1_c12_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          400.5,
+          564.0,
+          415.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 12, line 1/3",
+        "cell_bbox": [
+          383.8,
+          400.5,
+          564.0,
+          446.6
+        ]
+      },
+      {
+        "id": "p1_c12_2",
+        "page": 1,
+        "bbox": [
+          383.8,
+          415.5,
+          564.0,
+          430.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 12, line 2/3",
+        "cell_bbox": [
+          383.8,
+          400.5,
+          564.0,
+          446.6
+        ]
+      },
+      {
+        "id": "p1_c12_3",
+        "page": 1,
+        "bbox": [
+          383.8,
+          430.5,
+          564.0,
+          445.5
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 12, line 3/3",
+        "cell_bbox": [
+          383.8,
+          400.5,
+          564.0,
+          446.6
+        ]
+      },
+      {
+        "id": "p1_c13_1",
+        "page": 1,
+        "bbox": [
+          196.9,
+          452.6,
+          377.8,
+          467.6
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 13, line 1/1",
+        "cell_bbox": [
+          196.9,
+          452.6,
+          377.8,
+          472.9
+        ]
+      },
+      {
+        "id": "p1_c14_1",
+        "page": 1,
+        "bbox": [
+          383.8,
+          452.6,
+          564.0,
+          467.6
+        ],
+        "kind": "cell",
+        "line": "Empty table cell 14, line 1/1",
+        "cell_bbox": [
+          383.8,
+          452.6,
+          564.0,
+          472.9
+        ]
+      },
+      {
+        "id": "p2_a1",
+        "page": 2,
+        "bbox": [
+          225.25399780273438,
+          267.3007507324219,
+          234.99099731445312,
+          280.3007507324219
+        ],
+        "kind": "blank",
+        "line": "giấy tờ hợp lệ thay thế (hộ chiếu...). "
+      }
+    ]
+  },
+  "metadata": {
+    "provider": "openai",
+    "model": "gpt-6-astra",
+    "response_id": "resp_086da3e0f6415474016ae5b5409aa487d29f56ec1feda98216",
+    "usage": {
+      "input_tokens": 9590,
+      "input_tokens_details": {
+        "cache_write_tokens": 9587,
+        "cached_tokens": 0
+      },
+      "output_tokens": 6472,
+      "output_tokens_details": {
+        "reasoning_tokens": 1376
+      },
+      "total_tokens": 16062
+    },
+    "reasoning_effort": "high",
+    "max_output_tokens": 64000,
+    "completed_at": "2026-10-31T09:31:42.365195+00:00"
+  },
+  "review_status": "draft",
+  "fields": [
+    {
+      "id": "marriage_registration_authority",
+      "label": "Marriage registration authority",
+      "type": "text",
+      "owner": "receiving_organisation",
+      "group": "recipient",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Kính gửi: (3)”; footnote (3) instructs the applicants to state the name of the marriage registration authority.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            206.39999389648438,
+            151.9007568359375,
+            446.3999938964844,
+            161.9007568359375
+          ],
+          "anchor_id": "p1_a1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "marriage_has_foreign_element",
+      "label": "Does the marriage registration involve a foreign element?",
+      "type": "choice",
+      "owner": "joint_applicants",
+      "group": "application_branch",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Footnotes (1) and (2) require photographs of both parties for marriage registration involving a foreign element. This is a synthetic branch control.",
+      "uncertainties": [
+        "Neither photograph box has a supplied anchor, so the conditional manual photograph attachments cannot be mapped."
+      ],
+      "when": {},
+      "options": [
+        "yes",
+        "no"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "female_identity_information_status",
+      "label": "Female party: personal identification number or identity credential provided",
+      "type": "choice",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Footnote (4) says ethnicity, nationality and residence are entered only when the person does not have or does not provide a personal identification number, citizen identity card, identity card or electronic identity. This synthetic control applies that condition to the female party.",
+      "uncertainties": [],
+      "when": {},
+      "options": [
+        "provided",
+        "unavailable_or_not_provided"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "female_full_name",
+      "label": "Female party: full name",
+      "type": "text",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Họ, chữ đệm, tên” in the “Bên nữ” column. All three anchors belong to one undivided full-name cell.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            217.4,
+            377.8,
+            232.4
+          ],
+          "anchor_id": "p1_c1_1",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            232.4,
+            377.8,
+            247.4
+          ],
+          "anchor_id": "p1_c1_2",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            247.4,
+            377.8,
+            262.4
+          ],
+          "anchor_id": "p1_c1_3",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "female_date_of_birth",
+      "label": "Female party: date of birth",
+      "type": "date",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Ngày, tháng, năm sinh” in the female column has one undivided empty cell. Print the complete date as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            269.5,
+            377.8,
+            284.5
+          ],
+          "anchor_id": "p1_c3_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "female_ethnicity",
+      "label": "Female party: ethnicity",
+      "type": "text",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Dân tộc (4)” in the female column; completion is conditional under footnote (4).",
+      "uncertainties": [],
+      "when": {
+        "female_identity_information_status": "unavailable_or_not_provided"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            295.8,
+            377.8,
+            310.8
+          ],
+          "anchor_id": "p1_c5_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "female_nationality",
+      "label": "Female party: nationality",
+      "type": "text",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Quốc tịch (4)” in the female column; completion is conditional under footnote (4).",
+      "uncertainties": [],
+      "when": {
+        "female_identity_information_status": "unavailable_or_not_provided"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            322.1,
+            377.8,
+            337.1
+          ],
+          "anchor_id": "p1_c7_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "female_residence",
+      "label": "Female party: residential address",
+      "type": "text",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Nơi cư trú (4)” in the female column. Footnote (4) specifies registered permanent residence; if none, registered temporary residence; if neither exists, current residence. The three anchors form one address field.",
+      "uncertainties": [],
+      "when": {
+        "female_identity_information_status": "unavailable_or_not_provided"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            348.4,
+            377.8,
+            363.4
+          ],
+          "anchor_id": "p1_c9_1",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            363.4,
+            377.8,
+            378.4
+          ],
+          "anchor_id": "p1_c9_2",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            378.4,
+            377.8,
+            393.4
+          ],
+          "anchor_id": "p1_c9_3",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "female_identity_details",
+      "label": "Female party: personal identification number or identity document details",
+      "type": "text",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Giấy tờ tùy thân (5)” in the female column. Footnote (5) calls for personal identification number/citizen identity card/identity card information, with an example containing document number, issuing authority and issue date. If the listed identification credentials are unavailable, enter a valid substitute such as a passport. These details share one undivided cell.",
+      "uncertainties": [
+        "Footnote (5) gives an example rather than separately labelled document-detail slots; no independent document-number, issuer or issue-date fields are created."
+      ],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            400.5,
+            377.8,
+            415.5
+          ],
+          "anchor_id": "p1_c11_1",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            415.5,
+            377.8,
+            430.5
+          ],
+          "anchor_id": "p1_c11_2",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            430.5,
+            377.8,
+            445.5
+          ],
+          "anchor_id": "p1_c11_3",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "female_marriage_ordinal",
+      "label": "Female party: which numbered marriage is this?",
+      "type": "text",
+      "owner": "female_applicant",
+      "group": "female_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Kết hôn lần thứ mấy” in the female column asks the ordinal number of this marriage, not merely the number of previous marriages.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            196.9,
+            452.6,
+            377.8,
+            467.6
+          ],
+          "anchor_id": "p1_c13_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_identity_information_status",
+      "label": "Male party: personal identification number or identity credential provided",
+      "type": "choice",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "Footnote (4) says ethnicity, nationality and residence are entered only when the person does not have or does not provide a personal identification number, citizen identity card, identity card or electronic identity. This synthetic control applies that condition to the male party.",
+      "uncertainties": [],
+      "when": {},
+      "options": [
+        "provided",
+        "unavailable_or_not_provided"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "male_full_name",
+      "label": "Male party: full name",
+      "type": "text",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Họ, chữ đệm, tên” in the “Bên nam” column. All three anchors belong to one undivided full-name cell.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            217.4,
+            564.0,
+            232.4
+          ],
+          "anchor_id": "p1_c2_1",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            232.4,
+            564.0,
+            247.4
+          ],
+          "anchor_id": "p1_c2_2",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            247.4,
+            564.0,
+            262.4
+          ],
+          "anchor_id": "p1_c2_3",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_date_of_birth",
+      "label": "Male party: date of birth",
+      "type": "date",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Ngày, tháng, năm sinh” in the male column has one undivided empty cell. Print the complete date as DD/MM/YYYY.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            269.5,
+            564.0,
+            284.5
+          ],
+          "anchor_id": "p1_c4_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_ethnicity",
+      "label": "Male party: ethnicity",
+      "type": "text",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Dân tộc (4)” in the male column; completion is conditional under footnote (4).",
+      "uncertainties": [],
+      "when": {
+        "male_identity_information_status": "unavailable_or_not_provided"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            295.8,
+            564.0,
+            310.8
+          ],
+          "anchor_id": "p1_c6_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_nationality",
+      "label": "Male party: nationality",
+      "type": "text",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Quốc tịch (4)” in the male column; completion is conditional under footnote (4).",
+      "uncertainties": [],
+      "when": {
+        "male_identity_information_status": "unavailable_or_not_provided"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            322.1,
+            564.0,
+            337.1
+          ],
+          "anchor_id": "p1_c8_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_residence",
+      "label": "Male party: residential address",
+      "type": "text",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Nơi cư trú (4)” in the male column. Footnote (4) specifies registered permanent residence; if none, registered temporary residence; if neither exists, current residence. The three anchors form one address field.",
+      "uncertainties": [],
+      "when": {
+        "male_identity_information_status": "unavailable_or_not_provided"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            348.4,
+            564.0,
+            363.4
+          ],
+          "anchor_id": "p1_c10_1",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            363.4,
+            564.0,
+            378.4
+          ],
+          "anchor_id": "p1_c10_2",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            378.4,
+            564.0,
+            393.4
+          ],
+          "anchor_id": "p1_c10_3",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_identity_details",
+      "label": "Male party: personal identification number or identity document details",
+      "type": "text",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Giấy tờ tùy thân (5)” in the male column. Footnote (5) calls for personal identification number/citizen identity card/identity card information, with an example containing document number, issuing authority and issue date. If the listed identification credentials are unavailable, enter a valid substitute such as a passport. These details share one undivided cell.",
+      "uncertainties": [
+        "Footnote (5) gives an example rather than separately labelled document-detail slots; no independent document-number, issuer or issue-date fields are created."
+      ],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            400.5,
+            564.0,
+            415.5
+          ],
+          "anchor_id": "p1_c12_1",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            415.5,
+            564.0,
+            430.5
+          ],
+          "anchor_id": "p1_c12_2",
+          "component": "value"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            430.5,
+            564.0,
+            445.5
+          ],
+          "anchor_id": "p1_c12_3",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_marriage_ordinal",
+      "label": "Male party: which numbered marriage is this?",
+      "type": "text",
+      "owner": "male_applicant",
+      "group": "male_party",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Kết hôn lần thứ mấy” in the male column asks the ordinal number of this marriage, not merely the number of previous marriages.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            383.8,
+            452.6,
+            564.0,
+            467.6
+          ],
+          "anchor_id": "p1_c14_1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "declaration_place",
+      "label": "Place of declaration",
+      "type": "text",
+      "owner": "joint_applicants",
+      "group": "declaration",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "The blank immediately before “, ngày ... tháng ... năm ...” is the place in the declaration's place-and-date line.",
+      "uncertainties": [
+        "The form does not specify the administrative level or format of the place name."
+      ],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            248.60000610351562,
+            561.9007568359375,
+            348.6000061035156,
+            571.9007568359375
+          ],
+          "anchor_id": "p1_a2",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "declaration_date",
+      "label": "Date of declaration",
+      "type": "date",
+      "owner": "joint_applicants",
+      "group": "declaration",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "The declaration line explicitly prints separate “ngày”, “tháng” and “năm” slots.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            381.0,
+            561.9007568359375,
+            416.0,
+            571.9007568359375
+          ],
+          "anchor_id": "p1_a3",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            445.6000061035156,
+            561.9007568359375,
+            475.6000061035156,
+            571.9007568359375
+          ],
+          "anchor_id": "p1_a4",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            498.79998779296875,
+            561.9007568359375,
+            538.7999877929688,
+            571.9007568359375
+          ],
+          "anchor_id": "p1_a5",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "female_signature_and_name",
+      "label": "Female party: signature and full name",
+      "type": "manual",
+      "owner": "female_signatory",
+      "group": "signatures",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Bên nữ (Ký, ghi rõ họ, chữ đệm, tên)” instructs the female applicant to sign and write her full name. This is manual, not an automatically repeated name field.",
+      "uncertainties": [
+        "The supplied anchor covers the dotted name line, not the open signing space above it."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            254.3000030517578,
+            671.2008056640625,
+            362.29998779296875,
+            683.2008056640625
+          ],
+          "anchor_id": "p1_a6",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "male_signature_and_name",
+      "label": "Male party: signature and full name",
+      "type": "manual",
+      "owner": "male_signatory",
+      "group": "signatures",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Bên nam (Ký, ghi rõ họ, chữ đệm, tên)” instructs the male applicant to sign and write his full name. This is manual, not an automatically repeated name field.",
+      "uncertainties": [
+        "The supplied anchor covers the dotted name line, not the open signing space above it."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            426.70001220703125,
+            671.2008056640625,
+            534.7000122070312,
+            683.2008056640625
+          ],
+          "anchor_id": "p1_a7",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "copies_requested",
+      "label": "Request copies",
+      "type": "choice",
+      "owner": "joint_applicants",
+      "group": "copies",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Đề nghị cấp bản sao(6): Có, Không” has two visible checkboxes. Footnote (6) instructs applicants requesting copies to mark X and specify the quantity. A synthetic choice represents the mutually exclusive branches because checkbox anchors are missing.",
+      "uncertainties": [
+        "Neither the “Có” nor the “Không” checkbox has a supplied anchor; this control cannot place an X on the form."
+      ],
+      "when": {},
+      "options": [
+        "yes",
+        "no"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "copy_quantity",
+      "label": "Number of copies requested",
+      "type": "text",
+      "owner": "joint_applicants",
+      "group": "copies",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 200,
+      "evidence": "“Số lượng:…….bản”; footnote (6) calls for the quantity when copies are requested.",
+      "uncertainties": [],
+      "when": {
+        "copies_requested": "yes"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            99.97499084472656,
+            749.80078125,
+            124.72499084472656,
+            760.80078125
+          ],
+          "anchor_id": "p1_a8",
+          "component": "value"
+        }
+      ]
+    }
+  ]
+}

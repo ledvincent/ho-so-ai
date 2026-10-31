@@ -23,7 +23,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from typing import Literal
 from api.config import ROOT
 
-VERSION = 'visual-fields-2'
+VERSION = 'visual-fields-4'
 MODEL_OUTPUT_TOKENS = 64000
 MODEL_RETRY_OUTPUT_TOKENS = 128000
 log = logging.getLogger(__name__)
@@ -89,7 +89,10 @@ anchors, uncertain semantics or unreadable parts in issues; never invent them.
 Give English UI labels and stable snake_case IDs. Existing ID hints are only for
 compatibility; they are NOT evidence of meaning or associations. Verify afresh.
 Use synthetic choice controls (no placements) for mutually exclusive branches.
-Conditions use equality to those controls. Dates must map day/month/year explicitly.
+Conditions use equality to those controls. Dates with printed day/month/year
+slots map those components explicitly. A date in ONE undivided empty cell uses
+one placement with component value; it will be printed as DD/MM/YYYY. Never
+create a writable field without an anchor, except a synthetic choice control.
 Checkbox placements have component choice and option equal to the choice value.
 For ordinary text use component value and empty option. Group multiline writable
 lines into ONE logical field; repeat=true only for duplicated values. Keep
@@ -100,6 +103,62 @@ across lines and extraction order may differ from visual order. The images gover
 Map request type explicitly if the form supports visa and stay extension. Preserve
 printed legal revision exactly; no legal currency claims from your memory.
 '''
+
+
+def empty_cells(page, minimum_width=25):
+    """Find empty grid cells from printed vector edges, not guessed coordinates.
+
+    Some converted Word PDFs expose the grid as separate open paths that table
+    detectors omit. Require all four borders and no printed content inside.
+    """
+    horizontal,vertical=[],[]
+    for drawing in page.get_drawings():
+        for item in drawing['items']:
+            if item[0]=='l':
+                a,b=item[1:3]
+                if abs(a.y-b.y)<0.5: horizontal.append((a.y,min(a.x,b.x),max(a.x,b.x)))
+                if abs(a.x-b.x)<0.5: vertical.append((a.x,min(a.y,b.y),max(a.y,b.y)))
+            elif item[0]=='re':
+                r=item[1]
+                horizontal.extend([(r.y0,r.x0,r.x1),(r.y1,r.x0,r.x1)])
+                vertical.extend([(r.x0,r.y0,r.y1),(r.x1,r.y0,r.y1)])
+    ys=sorted(set(round(h[0],1) for h in horizontal))
+    found=[]
+    for top,bottom in zip(ys,ys[1:]):
+        if bottom-top<14: continue
+        xs=sorted(set(round(v[0],1) for v in vertical if v[1]<=top+1.5 and v[2]>=bottom-1.5))
+        for left,right in zip(xs,xs[1:]):
+            if right-left<minimum_width: continue
+            if not all(any(abs(y-edge)<1.5 and start<=left+1.5 and end>=right-1.5
+                for y,start,end in horizontal) for edge in (top,bottom)): continue
+            rect=pymupdf.Rect(left+3,top+3,right-3,bottom-3)
+            if not page.get_textbox(rect).strip(): found.append(rect)
+    return found
+
+
+def extra_anchors(page, number):
+    """Measured character grids and small raster controls, to be visually classified."""
+    result=[]
+    small=[r for r in empty_cells(page,minimum_width=8) if r.width<19]
+    groups=[]
+    for rect in sorted(small,key=lambda r:(r.y0,r.x0)):
+        if groups and abs(groups[-1][-1].y0-rect.y0)<1 and abs(groups[-1][-1].y1-rect.y1)<1 and abs(rect.x0-groups[-1][-1].x1-6)<1:
+            groups[-1].append(rect)
+        else: groups.append([rect])
+    for index,group in enumerate(groups):
+        if len(group)>=4:
+            box=pymupdf.Rect(group[0]);box.include_rect(group[-1])
+            result.append(dict(id=f'p{number}_characters{index}',page=number,bbox=list(box),kind='character_boxes',
+                boxes=[list(r) for r in group],line=f'{len(group)} separate character boxes'))
+        else:
+            for offset,box in enumerate(group):
+                result.append(dict(id=f'p{number}_smallcell{index}_{offset}',page=number,bbox=list(box),kind='cell',line='Empty narrow table cell'))
+    for index,info in enumerate(page.get_image_info()):
+        box=pymupdf.Rect(info['bbox'])
+        if 6<=box.width<=18 and 6<=box.height<=18:
+            result.append(dict(id=f'p{number}_image{index}',page=number,bbox=list(box),kind='image_control',
+                line='Small raster image; inspect the page to determine whether this is a checkbox, otherwise exclude'))
+    return result
 
 
 def evidence(pdf_path, folder):
@@ -128,6 +187,13 @@ def evidence(pdf_path, folder):
                         anchors.append(dict(id=f'p{number}_a{sum(a["page"] == number for a in anchors)+1}', page=number, bbox=list(rect), kind='checkbox', line=''))
             for widget in page.widgets() or []:
                 anchors.append(dict(id=f'p{number}_w{widget.xref}', page=number, bbox=list(widget.rect), kind='native', line=widget.field_label or widget.field_name))
+            for cell_index,rect in enumerate(empty_cells(page),1):
+                count=max(1,int(rect.height//15))
+                for line_index in range(count):
+                    box=pymupdf.Rect(rect.x0,rect.y0+line_index*15,rect.x1,min(rect.y1,rect.y0+(line_index+1)*15))
+                    anchors.append(dict(id=f'p{number}_c{cell_index}_{line_index+1}',page=number,
+                        bbox=list(box),kind='cell',line=f'Empty table cell {cell_index}, line {line_index+1}/{count}',cell_bbox=list(rect)))
+            anchors.extend(extra_anchors(page,number))
             pages.append(dict(page=number, width=page.rect.width, height=page.rect.height, lines=lines))
             path = folder/f'page-{number}.png'
             page.get_pixmap(matrix=pymupdf.Matrix(1.6, 1.6)).save(path)
@@ -148,8 +214,10 @@ def validate_mapping(raw, measured):
             if not control or control['id'] == field['id'] or condition['value'] not in control['options']:
                 raise ValueError('Invalid field condition: '+field['id'])
         placements = field['placements']
-        if field['type'] == 'date' and sorted(p['component'] for p in placements) != ['day','month','year']:
-            raise ValueError('Date requires separate day/month/year: '+field['id'])
+        if field['type'] == 'date' and sorted(p['component'] for p in placements) not in (['day','month','year'],['value']):
+            raise ValueError('Date requires separate day/month/year or one full-date area: '+field['id'])
+        if not placements and field['type'] not in ('manual','choice'):
+            raise ValueError('Writable field has no measured placement: '+field['id'])
         for p in placements:
             anchor = anchors.get(p['anchor_id'])
             if not anchor or p['anchor_id'] in used:
@@ -185,6 +253,9 @@ def compile_fields(result, measured):
         for p in source['placements']:
             a = anchors[p['anchor_id']]
             placement = dict(page=a['page'], bbox=a['bbox'], anchor_id=a['id'], component=p['component'])
+            if a.get('boxes'):
+                placement['boxes']=a['boxes']
+                field['max_length']=min(field['max_length'],len(a['boxes']))
             if p['component'] == 'choice':
                 if p['option'] in marks:
                     raise ValueError('Repeated checkbox option needs renderer support')

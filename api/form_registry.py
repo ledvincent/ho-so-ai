@@ -30,6 +30,7 @@ class Document:
             fixed_values=self.mapping.get('fixed_values',{}),date_order=self.mapping.get('date_order',[]),
             template_version=version,template_sha256=self.mapping['form_sha256'],page_count=pages,
             download_available=self.mapping['review_status']=='reviewed',
+            notes=([self.mapping['notes']] if isinstance(self.mapping.get('notes'),str) else self.mapping.get('notes',[])),
             applicability=self.entry.get('applicability','unresolved'))
 
     def action(self):
@@ -78,3 +79,17 @@ def for_procedure(code):
 def for_form(code,form_id):
     found=[d for d in for_procedure(code) if d.entry['form_id'].casefold()==form_id.casefold()]
     return found[0] if len(found)==1 else None
+
+
+def for_requirement(code,name,quotes):
+    """Match recorded official names within one procedure, including uncoded forms."""
+    from api.rag import normalize
+    found=[]
+    for row in entries():
+        if row['procedure_code']!=code: continue
+        for label in row.get('requirement_names',[]):
+            value=normalize(label)
+            if value and value in normalize(name) and any(value in normalize(q) for q in quotes):
+                found.append(row['document_id'])
+                break
+    return get_document(found[0]) if len(found)==1 else None

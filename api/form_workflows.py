@@ -41,6 +41,7 @@ class DocumentSchema(BaseModel):
     fields:list[FormField]
     fixed_values:dict[str,str]
     date_order:list[list[str]]
+    notes:list[str]=Field(default_factory=list)
 
 
 def document(document_id:str):

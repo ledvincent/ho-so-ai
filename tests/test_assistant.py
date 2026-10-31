@@ -92,12 +92,16 @@ def test_expired_conversation_has_recoverable_message(client):
     (a.Retrieval(answer="An unsupported generated answer"), "insufficient_context"),
     (a.Retrieval(clarification="Which procedure?"), "needs_clarification"),
 ])
-def test_no_evidence_or_ambiguous_skips_provider(client, monkeypatch, retrieval, status):
-    calls = provider(monkeypatch)
+def test_no_evidence_or_ambiguous_still_uses_model(client, monkeypatch, retrieval, status):
+    calls = provider(monkeypatch, {'status':status,'paragraphs':[{
+        'text':'I can explain the options. What are you trying to arrange?',
+        'source_ids':[],'kind':'general_guidance'}]})
     app.dependency_overrides[a.get_retriever] = lambda: lambda request: retrieval
     response = client.post("/assistant/chat", json={"message": "Help me"})
     assert response.json()["status"] == status
-    assert calls == []
+    assert len(calls) == 1
+    assert response.json()['model']=='test-model'
+    assert response.json()['answer_basis']=='general_guidance'
 
 
 @pytest.mark.parametrize("content,finish", [
@@ -152,13 +156,16 @@ def test_explicit_procedure_bypasses_search(monkeypatch):
     assert "Complete requirements" in result.sources[0].text
 
 
-def test_ambiguous_search_never_loads_context(monkeypatch):
+def test_ambiguous_search_keeps_candidate_context_separate(monkeypatch):
     from api import rag
     candidates=[{'code':'1.001146','name':'One','profile':{}},{'code':'1.003342','name':'Two','profile':{}}]
     monkeypatch.setattr(rag, "search", lambda query: dict(results=candidates,status='found',release_id='release'))
     monkeypatch.setattr(rag, "members", lambda *args:candidates)
+    monkeypatch.setattr(rag, "evidence", lambda release,code,query:[dict(id='source',
+        title='Official source',url='https://example.test/'+code,text='Evidence for '+code)])
     result = a.retrieve(a.ChatRequest(message="Help"))
-    assert result.clarification and not result.sources
+    assert result.clarification and len(result.sources)==2 and result.procedure_code is None
+    assert len({s.id for s in result.sources})==2
 
 
 def test_validation_blocker_never_calls_model(client, monkeypatch):
@@ -224,7 +231,7 @@ def test_strict_schema_and_no_tools(client, monkeypatch):
 
 @pytest.mark.parametrize("status", ["needs_clarification", "insufficient_context", "out_of_scope"])
 def test_non_answer_decisions(client, monkeypatch, status):
-    provider(monkeypatch, {"status": status, "paragraphs": [{"text":"Please specify the procedure.","source_ids":[]}]})
+    provider(monkeypatch, {"status": status, "paragraphs": [{"text":"Please specify the procedure.","source_ids":[],"kind":"general_guidance"}]})
     response = client.post("/assistant/chat", json={"message": "Help me"})
     assert response.status_code == 200 and response.json()["status"] == status
 

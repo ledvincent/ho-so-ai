@@ -82,7 +82,7 @@ def render(values, mapping, draft=True):
         pieces=[]
         if field['type']=='date':
             day=date.fromisoformat(value)
-            components=dict(day=f'{day.day:02}',month=f'{day.month:02}',year=str(day.year))
+            components=dict(day=f'{day.day:02}',month=f'{day.month:02}',year=str(day.year),value=day.strftime('%d/%m/%Y'))
             pieces=[components[p.get('component',key)] for p,key in zip(field['placements'],['day','month','year'])]
         elif field['type']=='choice' and field.get('marks'):
             placement=field['marks'][value]
@@ -105,7 +105,15 @@ def render(values, mapping, draft=True):
             if len(lines)>len(field['placements']):
                 raise ValueError(field['label']+': text does not fit the official space')
             pieces=lines
+        rendered=[]
         for placement,piece in zip(field['placements'],pieces):
+            if placement.get('boxes'):
+                if len(piece)>len(placement['boxes']):
+                    raise ValueError(field['label']+': text exceeds the printed character boxes')
+                rendered.extend((dict(page=placement['page'],bbox=box),character)
+                    for box,character in zip(placement['boxes'],piece))
+            else: rendered.append((placement,piece))
+        for placement,piece in rendered:
             rect=pymupdf.Rect(placement['bbox'])
             size=10
             while size>7.5 and font.text_length(piece,fontsize=size)>rect.width-2:

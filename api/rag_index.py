@@ -12,6 +12,7 @@ from sqlalchemy import text
 from api.config import engine
 
 VERSION = 'rag-1'
+INDEX_VERSION = 'source-sections-2'
 
 
 def digest(value):
@@ -94,7 +95,7 @@ def build(config=None):
             WHERE p.active AND s.status IN ('parsed','needs_source_details') ORDER BY p.code''')).mappings())
         if not rows:
             raise RuntimeError('No active profiles to index')
-        fingerprint = digest(canonical([VERSION, space, [(r['code'],r['snapshot_id'],r['profile_id'],r['output_sha256']) for r in rows]]))
+        fingerprint = digest(canonical([INDEX_VERSION, VERSION, space, [(r['code'],r['snapshot_id'],r['profile_id'],r['output_sha256']) for r in rows]]))
         existing = db.execute(text('SELECT id FROM rag_release WHERE fingerprint=:f'),dict(f=fingerprint)).scalar()
         if existing:
             return str(existing)
@@ -124,6 +125,10 @@ def build(config=None):
                 item(row['code'],'routing',form_code)
             for source in row['sources']:
                 if source['kind']=='registry' or not source['text'].strip():
+                    continue
+                # Extraction row anchors duplicate the complete source sections.
+                # Keep them in profile provenance, not in the retrieval corpus.
+                if source['source_id']=='primary' and source['locator'].startswith(('requirement:','method:')):
                     continue
                 sid = 'src-' + digest(canonical([row['code'],source['source_id'],source['locator'],source['sha256']]))[:40]
                 title = (row['name']+' — '+source['source_id']+' — '+source['locator'])[:500]

@@ -1016,6 +1016,16 @@
             },
             "type": "array",
             "title": "Documents"
+          },
+          "answer_basis": {
+            "type": "string",
+            "enum": [
+              "sources",
+              "general_guidance",
+              "mixed"
+            ],
+            "title": "Answer Basis",
+            "default": "sources"
           }
         },
         "additionalProperties": false,
@@ -1251,6 +1261,13 @@
             },
             "type": "array",
             "title": "Date Order"
+          },
+          "notes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Notes"
           }
         },
         "type": "object",

@@ -38,6 +38,31 @@ def test_follow_up_keeps_verified_document_panel(monkeypatch):
     assert result.status=='needs_clarification' and result.documents[0].form.form_id=='NA5'
 
 
+def test_pending_office_still_returns_scoped_na5_without_selecting_it(monkeypatch):
+    scoped=sample()
+    scoped.sources[0].title='Procedure — primary — identity'
+    pending=a.Retrieval(sources=scoped.sources,clarification='Which office?',retrieval_state='pending',
+        candidates=[dict(code='1.001146',name='Provincial',profile=scoped.profile,
+                         source_ids=['s1'],evidence_available=True)])
+    def generate(request,evidence):
+        assert evidence.documents[0].form.form_id=='NA5'
+        assert evidence.documents[0].requirement=='unconfirmed'
+        assert 'not been selected' in evidence.documents[0].condition
+        return a.Generated(status='answered',answer='Open NA5 in the side panel. [s1]',source_ids=['s1']),'test'
+    monkeypatch.setattr(a,'generate',generate)
+    result=a.chat(a.ChatRequest(message='give me the na5 form'),retriever=lambda r:pending)
+    assert result.documents[0].form.schema_url.endswith('/schema')
+    assert result.procedure_code is None and result.retrieval_state=='pending'
+    assert result.citations[0].id==result.documents[0].source_ids[0]
+
+
+def test_selected_procedure_exposes_form_without_document_keywords(monkeypatch):
+    monkeypatch.setattr(a,'generate',lambda *args:(a.Generated(status='answered',
+        answer='Here are your next steps. [s1]',source_ids=['s1']),'test'))
+    result=a.chat(a.ChatRequest(message='What should I do next?'),retriever=lambda r:sample())
+    assert result.documents[0].form.form_id=='NA5'
+
+
 def test_shared_name_does_not_attach_workflow_to_another_procedure():
     assert document_cards(sample('1.003326'),'Show NA5')[0].form is None
 
@@ -128,5 +153,8 @@ def test_english_cards_and_citations_do_not_leak_untranslated_extraction_text():
     evidence=sample()
     evidence.profile['required_documents'][0]['name']['value']='Một câu tiếng Việt chưa được dịch'
     card=document_cards(evidence,'Which documents do I need?')[0]
-    assert card.title=='Additional requirement — needs confirmation'
+    assert card.title=='Supporting document'
+    assert card.requirement=='required'
+    assert card._source_context['name']=='Một câu tiếng Việt chưa được dịch'
+    assert '_source_context' not in card.model_dump()
     assert 'Vietnamese' not in citation_title(evidence.sources[0],'1.001146','Help me')

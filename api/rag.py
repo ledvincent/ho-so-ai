@@ -108,8 +108,8 @@ def members(release,codes):
 
 
 def choice_label(value):
-    return {'extend':'Extend my stay','issue':'Apply for a visa','cap tinh':'Provincial immigration office',
-            'trung uong':'Central immigration department'}.get(normalize(value),value)
+    return {'extend':'Extend an existing permission','issue':'Apply for a new document','cap tinh':'Provincial-level authority',
+            'trung uong':'Central-level authority'}.get(normalize(value),value)
 
 
 def related_codes(release, code):
@@ -133,10 +133,14 @@ def related_codes(release, code):
             ORDER BY m.code LIMIT 20'''),dict(r=release,code=code)).scalars())
 
 
-def match_choice(answer,choices):
+def match_choice(answer,choices, *, initial=False):
     exact=next((c for c in choices if answer==c['id'] or normalize(answer)==normalize(c['label'])),None)
     if exact:return exact
     value=normalize(answer)
+    # Mentioning an option while asking about it is not selecting that option.
+    if re.search(r'\b(difference|compare|versus|khac|giai thich)\b',value) or (not initial and
+        ('?' in answer or re.search(r'\b(explain|what|why|how|la gi)\b',value))):
+        return None
     if value in ("i don't know",'not sure','khong biet','toi khong biet','toi chua ro','chua ro'):
         return next((c for c in choices if c['id']=='unknown'),None)
     if re.search(r"\b(not|no|khong)\b|n't",value):return None
@@ -144,6 +148,10 @@ def match_choice(answer,choices):
              'apply for a visa':['issue','issuance','cap thi thuc'],
              'provincial immigration office':['provincial','province','cap tinh'],
              'central immigration department':['central','trung uong']}
+    aliases.update({'extend an existing permission':aliases['extend my stay'],
+        'apply for a new document':aliases['apply for a visa'],
+        'provincial-level authority':aliases['provincial immigration office'],
+        'central-level authority':aliases['central immigration department']})
     hits=[c for c in choices if any(re.search(r'\b'+re.escape(term)+r'\b',value)
           for term in aliases.get(normalize(c['label']),[]))]
     return hits[0] if len(hits)==1 else None
@@ -188,6 +196,10 @@ class ConversationStateError(ValueError):
     pass
 
 
+class EvidenceUnavailableError(RuntimeError):
+    """Selection is valid, but source verification does not permit factual answers."""
+
+
 def read_state(token):
     try:
         payload,signature=token.rsplit('.',1)
@@ -220,7 +232,12 @@ def evidence(release,code,query):
             JOIN procedure_analysis a ON a.snapshot_id=m.snapshot_id
             WHERE m.release_id=:r AND m.code=:c'''),dict(r=release,c=code)).mappings().first()
         from api.evidence_policy import allowed
-        if not ready or not allowed(ready['facts_ready'],ready['evidence_status'],ready['run_id'],ready['profile_id']): raise RuntimeError('Source is not ready or retrieval release is stale')
+        if not ready: raise RuntimeError('Retrieval release is stale')
+        if not allowed(ready['facts_ready'],ready['evidence_status'],ready['run_id'],ready['profile_id']):
+            raise EvidenceUnavailableError('Procedure source details are not yet verified')
+        # Row records give the extractor precise coverage anchors. Their text is
+        # already present in the complete primary sections; including both here
+        # duplicates the evidence and can exhaust the assistant's source budget.
         rows=[dict(r) for r in db.execute(text('''SELECT id,kind,title,url,locator,body FROM rag_source
             WHERE release_id=:r AND code=:c
             AND NOT (kind='procedure' AND (locator LIKE 'requirement:%' OR locator LIKE 'method:%'))
@@ -228,11 +245,7 @@ def evidence(release,code,query):
     if ready['evidence_status']:
         # Include all competing evidence for reviewed small procedures. Group by
         # original URL, preserving every locator and avoiding top-k conflict loss.
-        groups={}
-        for row in rows:
-            group=groups.setdefault(row['url'],dict(id=row['id'],title=row['title'],url=row['url'],text=''))
-            group['text']+=row['locator']+'\n'+row['body']+'\n\n'
-        sources=list(groups.values())
+        sources=grouped_sources(rows)
         if len(sources)>20 or sum(len(s['text']) for s in sources)>80000:
             raise RuntimeError('Reviewed evidence exceeds context budget')
         if sources:sources[0]['evidence_status']=ready['evidence_status']
@@ -257,7 +270,7 @@ def evidence(release,code,query):
     extra.sort(key=lambda r:(-vector_scores.get(r['id'],0),-len(words & set(terms(r['body']))),r['id']))
     chosen=primary+ [r for r in extra if r['id'] in vector_scores or words & set(terms(r['body']))][:min(5,max(0,20-len(primary)))]
     sources=grouped_sources(chosen)
-    if len(sources)>20 or sum(len(r['text']) for r in sources)>80000:
+    if len(sources)>20 or sum(len(s['text']) for s in sources)>80000:
         raise RuntimeError('Evidence exceeds context budget; narrow the request')
     return sources
 
@@ -280,7 +293,7 @@ def retrieve(request):
             while len(candidates)>1:
                 q=question(candidates,state['asked'])
                 if q['key']=='procedure':break
-                selected=match_choice(request.message,q['choices'])
+                selected=match_choice(request.message,q['choices'],initial=True)
                 if not selected or selected['id']=='unknown':break
                 state['codes']=selected['codes']
                 state['asked'].append(q['key'])
@@ -303,11 +316,41 @@ def retrieve(request):
         return clarification(state)
     if not current: return dict(sources=[])
     code=current[0]['code']
-    return dict(sources=evidence(state['release'],code,resolved_question),procedure_code=code,
+    try:
+        sources=evidence(state['release'],code,resolved_question)
+    except EvidenceUnavailableError:
+        return dict(sources=[],procedure_code=code,retrieval_state=sign_state(state),
+                    context_notice='This procedure is identified, but its source details are not verified. Only general guidance is available.')
+    return dict(sources=sources,procedure_code=code,
                 resolved_question=resolved_question,retrieval_state=sign_state(state),profile=current[0].get('profile',{}))
 
 
 def clarification(state):
     q=state['question']
+    current=members(state['release'],state['codes'])
+    if len(current)!=len(state['codes']):
+        raise RuntimeError('Procedure changed; restart selection using the current index')
+    # Selection stays server-owned, but the assistant needs evidence to explain
+    # the options. Keep each candidate separate; never merge their requirements.
+    sources=[]
+    candidates=[]
+    budget=80000
+    for member in current:
+        candidate=dict(code=member['code'],name=member['name'],source_ids=[],evidence_available=False,profile=member.get('profile',{}))
+        if len(current)<=5:
+            try:
+                captured=evidence(state['release'],member['code'],state['query'])
+            except RuntimeError:
+                captured=[]  # Unreviewed facts are not smuggled in through routing.
+            if len(sources)+len(captured)<=20 and sum(len(s['text']) for s in captured)<=budget:
+                for index,source in enumerate(captured):
+                    source={**source,'id':f"p{member['code'].replace('.','')}_{index}",
+                            'title':member['code']+' — '+source['title']}
+                    sources.append(source)
+                    candidate['source_ids'].append(source['id'])
+                    budget-=len(source['text'])
+                candidate['evidence_available']=bool(captured)
+        candidates.append(candidate)
     return dict(clarification=q['text'],choices=[dict(id=c['id'],label=c['label']) for c in q['choices']],
-                retrieval_state=sign_state(state),sources=[])
+                retrieval_state=sign_state(state),sources=sources,candidates=candidates,
+                original_question=state['query'])
