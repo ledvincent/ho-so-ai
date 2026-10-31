@@ -1,5 +1,45 @@
 # Kim — application integration checkpoint
 
+## Latest update — 31 October 2026: English guide and filling usability correction
+
+Published combined correction: `codex/kim/demo-integration-01-readable-guide` at
+`1078061fc96f3e35a93bc8c48b39d3b78f6048fc`. The same temporary HTTPS review
+service now runs this clean production build (`KfNyj9pcqRFMmU-W3YECm`).
+The prior combined branch remains preserved; no main merge occurred.
+
+English catalog/detail names, source-bound document lists, application steps and
+conditions now cover all four restored procedures. Original Vietnamese evidence,
+hashes and lengthy analysis are collapsed under Sources and details. The actual
+installed provincial NA5 has a Fill this form action directly below its title;
+other procedures retain useful guides without borrowing that workflow.
+
+Source-copy producer `1779a7e89eea982a24d4fc6d6c285539763c75c5` was consumed as
+`c533ec992f041ab30fe89c34a240f696734f18a6`. Manager checks matched four live
+source/profile identities, 14 requirement rows/counts, 12 steps and 12 condition
+clauses. Independent translation/source review found no material error. This is
+working display translation, not approval of current legal applicability.
+
+The manager reproduced the English catalog and the previously unreadable
+visa-exemption guide over HTTPS. In the English filling flow at `b943c133`,
+consented profile reuse worked; `2026-10-03` updated entry date and
+`Noi Bai International Airport` updated the entry port, followed by English
+questions. Natural sentence attempts requested clarification: extraction still
+requires explicit values, and dates must literally use YYYY-MM-DD. The final
+copy makes those constraints visible. No backend extraction or validation gate
+was weakened. Final changes after that test only move the action and add hints.
+
+Owner evidence: 207 frontend tests before the final completion-label correction,
+focused tests after it, and passing production builds. Independent source review
+passed; the final restart passed API health, public login, protected-page redirect
+and anonymous profile denial. Four bounded model calls were used in this review:
+two clarifications and two verified field updates. Earlier broader isolation and
+full PDF-preview evidence remains below. The original official PDF remains in
+its source language; the English UI does not alter the legal template.
+
+Implementation is frozen for the demo. Same hosting, draft-download and separate
+Son voice/identity limits apply. Read `docs/demo-guide-01-ui-handoff.md` and
+`docs/demo-guide-01-source-copy.md` on the correction branch.
+
 ## Latest update — 31 October 2026: combined text demo verified over HTTPS
 
 The combined Kim application is published on
