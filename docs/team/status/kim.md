@@ -1,5 +1,11 @@
 # Suivi — Kim
 
+> Historical pre-scaffold snapshot below. The current fetchable application
+> delivery is documented in [KIM-APP-01](../handoffs/KIM-APP-01.md), based on
+> `b07e28e74b4b9174979b7922ad3576d0562c778a`. Current consolidated progress is on
+> `codex/kim/team-05-integration-checkpoint:docs/team/status/kim.md`.
+> The old 501/not-committed statements below are not current delivery claims.
+
 Responsable : Kim
 Derniere mise a jour : 31 octobre 2026 (Asia/Saigon), avant le commit du socle APP-01
 Tache : APP-01 — socle et contrat applicatif; FORM-02 — formulaire et PDF synthetique; preparation AUTH-01
