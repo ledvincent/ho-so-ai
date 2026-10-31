@@ -9,9 +9,11 @@
   "pdf_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
   "pdf_sha256": "7415719c6a301bc1340b10041afd48b70ff00d4cd9ec27d0b36536128d8680af",
   "procedure_code": "1.001146",
+  "date_order": [["birth_date", "entry_date"], ["entry_date", "permitted_until"], ["permitted_until", "extension_until"], ["extension_until", "passport_expiry"]],
   "fields": [
     {
       "id": "applicant_full_name",
+      "uppercase": true,
       "label": "Full name (capital letters)",
       "type": "text",
       "owner": "applicant",

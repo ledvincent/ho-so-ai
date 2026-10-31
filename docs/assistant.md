@@ -1,19 +1,51 @@
 # Assistant integration
 
 `POST /assistant/chat` connects a configurable LLM to server-side retrieval. The
-existing search, context validation and form-filling code are unchanged. This is
+default adapter uses the [versioned RAG engine](rag.md). See the [local demo and document-panel walkthrough](assistant-demo.md). This is
 a stateless backend endpoint; the caller supplies up to 12 previous user/assistant
-turns. No chat UI, chat persistence or streaming is included yet.
+turns. Open `/assistant` for the local chat page, with procedure selection,
+clarification buttons, citations and follow-up questions. The page sends the last
+four turns and retains the selected procedure through signed retrieval state.
+Use **New conversation** to switch procedures. Conversations are kept in page
+memory only and clear on reload. No chat persistence or streaming is included.
 
 ## Configure and call
 
-The selected assistant model is `gpt-4o-mini`. Set `ASSISTANT_MODEL=gpt-4o-mini`
-and `ASSISTANT_API_KEY` (or `OPENAI_API_KEY`) in `.env`. The default
+The selected assistant model is `gpt-6.1-sol` with medium reasoning effort. Set
+`ASSISTANT_MODEL=gpt-6.1-sol` and `ASSISTANT_REASONING_EFFORT=medium`
+and supply `ASSISTANT_API_KEY` (or `OPENAI_API_KEY`) to the server process. A local
+`.env` is supported, but is not protected from coding tools with filesystem access.
+For credential isolation, use the separate-service approach below. The default
 `ASSISTANT_BASE_URL` is `https://api.openai.com/v1`; only that exact base may fall
 back to `OPENAI_API_KEY`. Custom providers must implement Chat Completions with
 strict JSON-schema responses, `max_completion_tokens` and `store: false`. Local providers
 that require no authentication can use a placeholder API key. Model choice is
 deliberately explicit. Restart the API after changing environment settings.
+
+### Credentials and tests
+
+`HOSO_LOAD_DOTENV=0` disables the application's `.env` loader. The unit suite sets
+this before importing application modules, removes inherited OpenAI/assistant
+keys from its own environment, mocks provider calls and blocks network access.
+This prevents routine unit tests from loading the real key; it is a development
+safeguard, not an access-control boundary. Live evaluation scripts need a real
+provider and must run separately under your control.
+
+For a stronger boundary, keep the real OpenAI key in a separately administered
+proxy service outside the coding environment. That service should expose only
+the required Chat Completions operation, fix the destination to OpenAI, restrict
+the configured model, impose request limits and never return credentials.
+Configure `ASSISTANT_BASE_URL` to that service and use its own limited client
+credential as `ASSISTANT_API_KEY`. The coding environment may see that client
+credential and make permitted requests, but must have no access to the service's
+files, process environment, logs, deployment controls or privileged Docker socket.
+Code changes to the secret-holding service require your independent review.
+
+Host-enforced Codex filesystem `deny` rules can additionally protect `.env` paths;
+ignore files do not deny reads. Such rules must apply to all execution paths,
+including tests, and must not be bypassable through unsandboxed commands.
+This repository does not install or verify that host policy. Do not inject the
+real key into an agent-accessible process environment as a workaround.
 
 ```json
 {
@@ -24,17 +56,25 @@ deliberately explicit. Restart the API after changing environment settings.
 ```
 
 Send this body to `/assistant/chat` using the local `/docs` interface. Omit
-`procedure_code` to route through existing search (requires a calibrated index).
-Multiple matches return `needs_clarification`; resubmit with the chosen code.
-An explicit code bypasses search but still calls the validated context loader.
-Every follow-up should retain the selected code. Retrieval uses the current
-message, not conversation history; custom RAG can use history to resolve follow-ups.
+`procedure_code` to use hybrid routing. Multiple matches return a focused question,
+`choices`, and signed `retrieval_state`. Send the state and a choice ID in
+`clarification_answer` on the next turn. An explicit code bypasses search while
+retaining source-readiness checks. Follow-ups should retain the selected code or
+state. Conversation history alone does not establish a selected procedure.
 
-Responses contain `status`, `answer`, `citations` (ID, title, URL) and `model`.
+Responses contain `status`, `answer`, `citations` (ID, title, URL), `model`,
+`procedure_code`, `choices`, `retrieval_state`, and server-owned `documents`.
+Cards include required/conditional status, original/copy counts, source IDs, and
+version-bound form actions when an installed workflow exists. Each action has a
+`document_id` and `schema_url`; the frontend must render that document's returned
+fields rather than assume an NA5 schema. Discover installed forms with
+`GET /procedures/{procedure_code}/documents`. Citation entries
+can support the answer, the cards, or both. A follow-up question does not hide
+verified cards for an already selected procedure.
 Statuses include `answered`, `needs_clarification`, `insufficient_context` and
 `out_of_scope`. A model refusal, tool call or invalid answer fails closed with 502.
-No evidence returns `insufficient_context` without calling the model. Generated
-answers have inline `[source-id]` markers. Render answers as text; use returned
+No evidence returns `insufficient_context` without calling the model. The provider returns paragraphs with source IDs; the server renders inline
+`[source-id]` markers, avoiding failures caused by handwritten citation syntax. Render answers as text; use returned
 citation URLs for links, and do not treat model prose as trusted HTML or auto-link
 it. Model-generated URLs, HTML, code fences and invalid citation markers are
 rejected. This is a narrow output check, not a comprehensive malicious-text filter.
@@ -74,7 +114,8 @@ and validated catalog labels. Never copy untrusted source instructions or an LLM
 draft into this field. Source URLs must come from the validated evidence registry;
 the assistant validates URL syntax, not the trustworthiness of the destination.
 Do not accept client-supplied evidence as validated retrieval. The default adapter
-preserves the entire existing procedure context rather than summarizing it.
+retains complete primary sections and selected supplementary evidence without
+the repetitive extraction audit payload.
 
 ## Failures and limits
 
@@ -82,7 +123,7 @@ preserves the entire existing procedure context rather than summarizing it.
 - 413: context plus history exceeds the 140,000-character budget (no truncation).
 - 422: invalid request; 503: missing LLM configuration or retrieval unavailable.
 - 502: provider error, malformed/incomplete output, or invalid citation IDs.
-- 504: provider timeout (60 seconds). Calls are not automatically retried.
+- 504: provider timeout (120 seconds). Calls are not automatically retried.
 
 Sources and chat text are sent to the configured provider. No personal form
 values are loaded by the assistant, and it cannot fill forms or unlock downloads.

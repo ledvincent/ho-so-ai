@@ -1,0 +1,126 @@
+{
+  "status": "insufficient_context",
+  "answer": "For the selected procedure—extending your temporary stay in Vietnam through the provincial immigration office—start with this checklist. The supplied government pages agree on the two main documents, but the accepted edition of the form still needs confirmation. [s1] [s2]\n\n1. Form NA5: prepare one original application, with no copy required. This is where you request the stay extension. There is an edition mismatch: the procedure page specifies a 2023 edition, while the supplied templates are marked 2015 and 2026. Before finalizing the form, ask the receiving provincial immigration office which edition it accepts; I cannot establish that from these materials. [s1] [s2] [s3] [s4]\n\n2. Your passport or international travel document: include the original, not just a photocopy. Both procedure pages list one original and no copies. Together with NA5 and any applicable supporting evidence, this makes up the single application set. [s1] [s2]\n\n3. Conditional supporting evidence: if a Vietnamese citizen is sponsoring you as a relative, they must present documents proving the family relationship. This is not an extra requirement for every applicant. The two pages differ on which relatives qualify, so the specific relationship may need checking before relying on that sponsorship route. [s1] [s2]\n\n4. If applying online: the procedure page says the original passport or travel document must still be sent to the receiving office through the public postal service. Other application documents require electronic certification; if they are not electronically certified, send them through that postal service too. Online filing therefore does not remove the need to provide physical documents. [s1]\n\nFor help with NA5, open its card in the document panel. We can use the fields and preview to work through the form without sharing personal values in chat. Enter those values only in the separate form workflow. The panel does not accept photo uploads, and final download remains subject to human review.\n\nAt a high level, NA5 separates your applicant information, the sponsoring organization or relative, your requested extension and reason, and any additional explanation. It also separates applicant, sponsor and certification signatures—do not sign on someone else’s behalf or fill the certification area as though you were the certifying official. We can go through individual fields once the accepted edition is confirmed. [s3] [s4]\n\nYour next step is to confirm the NA5 edition with the receiving office and identify the sponsorship section that applies. Are you applying with an organization as sponsor, with a family member as sponsor, or are you unsure? [s1] [s3] [s4]",
+  "citations": [
+    {
+      "id": "s1",
+      "title": "Official procedure page — Stay extension — provincial immigration office",
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146"
+    },
+    {
+      "id": "s2",
+      "title": "Additional official guidance — Stay extension — provincial immigration office",
+      "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=36272"
+    },
+    {
+      "id": "s3",
+      "title": "Official form — Stay extension — provincial immigration office",
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84"
+    },
+    {
+      "id": "s4",
+      "title": "Official form — Stay extension — provincial immigration office",
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_06/1655667280_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc"
+    }
+  ],
+  "model": "gpt-6.1-sol",
+  "choices": [],
+  "procedure_code": "1.001146",
+  "documents": [
+    {
+      "id": "648f003138d23412",
+      "title": "Form NA5",
+      "kind": "fillable_form",
+      "requirement": "required",
+      "condition": null,
+      "description": "Complete the application form. Confirm the accepted edition with the receiving office; the captured sources cite different versions.",
+      "originals": 1,
+      "copies": 0,
+      "source_ids": [
+        "s1",
+        "s2"
+      ],
+      "evidence_status": "conflict",
+      "form": {
+        "form_id": "NA5",
+        "document_id": "na5-provincial-stay-extension",
+        "procedure_code": "1.001146",
+        "template_sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+        "template_version": "0ea9956659b50098c275e687533954cfa68f1541eab40ad167cf8627def4014b",
+        "revision": "70/2026/TT-BCA",
+        "review_status": "draft",
+        "applicability": "unresolved",
+        "download_available": false,
+        "schema_url": "/documents/na5-provincial-stay-extension/schema",
+        "template_url": "/documents/na5-provincial-stay-extension/template",
+        "template_pages_url": "/documents/na5-provincial-stay-extension/template-pages",
+        "validate_url": "/documents/na5-provincial-stay-extension/validate",
+        "preview_url": "/documents/na5-provincial-stay-extension/preview",
+        "preview_pages_url": "/documents/na5-provincial-stay-extension/preview-pages",
+        "download_url": "/documents/na5-provincial-stay-extension/download",
+        "example_url": "/documents/na5-provincial-stay-extension/example"
+      }
+    },
+    {
+      "id": "20fb64212e4e735d",
+      "title": "Passport or international travel document",
+      "kind": "supporting_document",
+      "requirement": "required",
+      "condition": null,
+      "description": "",
+      "originals": 1,
+      "copies": 0,
+      "source_ids": [
+        "s1"
+      ],
+      "evidence_status": "supported",
+      "form": null
+    },
+    {
+      "id": "8855fef1f9bd3b19",
+      "title": "Proof of family relationship",
+      "kind": "supporting_document",
+      "requirement": "conditional",
+      "condition": "If a Vietnamese citizen sponsors their relative.",
+      "description": "",
+      "originals": null,
+      "copies": null,
+      "source_ids": [
+        "s1"
+      ],
+      "evidence_status": "supported",
+      "form": null
+    },
+    {
+      "id": "51425c619e8de38f",
+      "title": "Online filing",
+      "kind": "submission_instruction",
+      "requirement": "conditional",
+      "condition": "If you apply online.",
+      "description": "Send the passport or travel document to the receiving office by public postal service. Other documents need electronic certification; otherwise send them by public post.",
+      "originals": null,
+      "copies": null,
+      "source_ids": [
+        "s1"
+      ],
+      "evidence_status": "supported",
+      "form": null
+    },
+    {
+      "id": "3fdc08b57df62b0c",
+      "title": "One complete set",
+      "kind": "submission_instruction",
+      "requirement": "required",
+      "condition": null,
+      "description": "Submit one complete set of the required documents.",
+      "originals": null,
+      "copies": null,
+      "source_ids": [
+        "s2"
+      ],
+      "evidence_status": "supported",
+      "form": null
+    }
+  ],
+  "retrieval_state": null
+}

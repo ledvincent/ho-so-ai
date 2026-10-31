@@ -1,0 +1,18 @@
+[
+  {"split":"calibration","query":"extend my stay in Vietnam","codes":["1.001146","1.003326","1.000771"]},
+  {"split":"calibration","query":"gia han tam tru","codes":["1.001146","1.003326","1.000771"]},
+  {"split":"calibration","query":"visa issuance for foreigners in Vietnam","codes":["1.003342"]},
+  {"split":"calibration","query":"temporary stay extension with a visa exemption certificate","codes":["1.000771"]},
+  {"split":"calibration","query":"renew my driving licence","codes":[]},
+  {"split":"calibration","query":"register a company","codes":[]},
+  {"split":"calibration","query":"weather tomorrow in Bangkok","codes":[]},
+  {"split":"calibration","query":"replace a lost Vietnamese passport","codes":[]},
+  {"split":"test","query":"I need more time to stay in Vietnam","codes":["1.001146","1.003326","1.000771"]},
+  {"split":"test","query":"Tôi muốn gia hạn tạm trú","codes":["1.001146","1.003326","1.000771"]},
+  {"split":"test","query":"cấp thị thực cho người nước ngoài","codes":["1.003342"]},
+  {"split":"test","query":"1.001146","codes":["1.001146"]},
+  {"split":"test","query":"What is the fee for registering a marriage?","codes":[]},
+  {"split":"test","query":"I want to buy a house","codes":[]},
+  {"split":"test","query":"How do I apply for a work permit?","codes":[]},
+  {"split":"test","query":"9.999999","codes":[]}
+]

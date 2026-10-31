@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine
 
 ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(ROOT / ".env")
+# Tests and isolated deployments supply configuration without opening local secrets.
+if os.getenv("HOSO_LOAD_DOTENV", "1") != "0":
+    load_dotenv(ROOT / ".env")
 
 
 def coverage():

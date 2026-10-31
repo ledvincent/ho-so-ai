@@ -48,7 +48,7 @@ def get_procedure(code):
             return None
         result = dict(row)
         sid = row["id"]
-        analysis = db.execute(text("""SELECT a.readiness,a.facts_ready,a.issues,a.summary,r.report
+        analysis = db.execute(text("""SELECT a.readiness,a.facts_ready,a.evidence_status,a.issues,a.summary,r.report
             FROM procedure_analysis a JOIN analysis_run r ON r.id=a.run_id
             WHERE a.snapshot_id=:sid"""),dict(sid=sid)).mappings().first()
         result['analysis'] = dict(analysis) if analysis else None

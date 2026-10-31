@@ -1,0 +1,713 @@
+[
+  {
+    "code": "1.000771",
+    "snapshot_id": 22,
+    "policy": "scoped-evidence-1",
+    "access": "source_attributed",
+    "run_id": "92e728a5-6a0b-4cf0-9570-40122053c516",
+    "profile_id": 4,
+    "reviewed_at": "2026-10-31T06:23:06.443449+00:00",
+    "procedure_currency": "not_reverified",
+    "form_applicability": "unresolved",
+    "template_approval": "unchanged",
+    "conflicting_claims": [
+      {
+        "value": "Riêng trường hợp cấp thị thực rời, ghi chú tiếng Việt yêu cầu 01 ảnh, còn tiếng Anh yêu cầu 2 ảnh. Ảnh mới chụp, 4 cm x 6 cm, nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự. Chưa xác lập nhánh cấp thị thực rời áp dụng cho thủ tục gia hạn này.",
+        "status": "conflict",
+        "conflicts": [
+          "Cùng bản biểu mẫu: tiếng Việt ghi 01 ảnh; tiếng Anh ghi 2 ảnh."
+        ],
+        "source_refs": [
+          {
+            "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp, cỡ 4cm x 6cm, phông nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự.",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "in case of issue separate visa, enclose 2 recently taken photos in 4cm x 6cm size, with white background, face looking straight, no hat, no glasses, polite clothes.",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      },
+      {
+        "value": "01 ảnh theo tiếng Việt; 2 ảnh theo tiếng Anh.",
+        "status": "conflict",
+        "conflicts": [
+          "Số lượng ảnh trong hai ngôn ngữ không thống nhất; chưa lựa chọn một số lượng thay cho nguồn."
+        ],
+        "source_refs": [
+          {
+            "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "in case of issue separate visa, enclose 2 recently taken photos",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      },
+      {
+        "value": "Registry ghi nhận liên kết direct_download. Bản tải có đầu mẫu năm 2015, trong khi danh mục hồ sơ thủ tục chỉ định mẫu theo Thông tư 22/2023/TT-BCA; chưa xác lập bản tải năm 2015 là bản phải dùng.",
+        "status": "conflict",
+        "conflicts": [
+          "Bản biểu mẫu tải trực tiếp mang tham chiếu 04/2015/TT-BCA, khác với tham chiếu 22/2023/TT-BCA trong thành phần hồ sơ."
+        ],
+        "source_refs": [
+          {
+            "quote": "\"association_method\":\"direct_download\"",
+            "locator": "form-association",
+            "source_id": "registry:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+          },
+          {
+            "quote": "Ban hành kèm theo thông t s 04 /2015/TT-BCA ư ố ngày 05 tháng 01 năm 2015",
+            "locator": "page:1",
+            "source_id": "form:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+          },
+          {
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+            "locator": "section:9:Thành phần hồ sơ",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "10 USD; các nguồn thống nhất số tiền nhưng khác nhau về phân loại phí/lệ phí.",
+        "status": "conflict",
+        "conflicts": [
+          "Nguồn primary ghi lệ phí 10 USD; nguồn supplementary ghi phí 10 USD và lệ phí Không. Không có căn cứ cộng thành hai khoản thu."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trực tiếp\n5 Ngày làm việc\nLệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "10 USD",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "10 USD; các nguồn thống nhất số tiền nhưng khác nhau về phân loại phí/lệ phí.",
+        "status": "conflict",
+        "conflicts": [
+          "Nguồn primary ghi lệ phí 10 USD; nguồn supplementary ghi phí 10 USD và lệ phí Không."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trực tuyến\n5 Ngày làm việc\nLệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "10 USD",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "10 USD; các nguồn thống nhất số tiền nhưng khác nhau về phân loại phí/lệ phí.",
+        "status": "conflict",
+        "conflicts": [
+          "Nguồn primary ghi lệ phí 10 USD; nguồn supplementary ghi phí 10 USD và lệ phí Không."
+        ],
+        "source_refs": [
+          {
+            "quote": "Dịch vụ bưu chính\n5 Ngày làm việc\nLệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "10 USD",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      }
+    ],
+    "reason": "The legacy form-revision mismatch alone does not invalidate all captured procedure facts.",
+    "official_checks": [
+      {
+        "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-70-2026-tt-bca-469801.htm",
+        "finding": "Gazette records issue 2026-05-25 and effect 2026-07-01; this does not verify every procedure claim."
+      },
+      {
+        "url": "https://congan.cantho.gov.vn/thu-tuc-hanh-chinh/thutuc/gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-3.html",
+        "finding": "Provincial page explicitly names NA5 under 70/2026/TT-BCA; applicability is not generalized to all four procedures."
+      }
+    ]
+  },
+  {
+    "code": "1.001146",
+    "snapshot_id": 20,
+    "policy": "scoped-evidence-1",
+    "access": "source_attributed",
+    "run_id": "dcf16088-c129-4c22-a8c3-71e05edcdef5",
+    "profile_id": 2,
+    "reviewed_at": "2026-10-31T06:23:06.445722+00:00",
+    "procedure_currency": "not_reverified",
+    "form_applicability": "unresolved",
+    "template_approval": "unchanged",
+    "conflicting_claims": [
+      {
+        "value": "Đối với cơ quan, tổ chức đề nghị: nguồn primary yêu cầu đã có hồ sơ theo khoản 2 Điều 16 tại Phòng Quản lý xuất nhập cảnh Công an cấp tỉnh; nguồn supplementary yêu cầu đã có hồ sơ chứng minh tư cách pháp nhân tại Cục Quản lý xuất nhập cảnh - Bộ Công an.",
+        "status": "conflict",
+        "conflicts": [
+          "Khác nhau về nơi lưu hồ sơ tổ chức và cách mô tả hồ sơ; chưa xác định yêu cầu nào áp dụng."
+        ],
+        "source_refs": [
+          {
+            "quote": "Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam tại Phòng Quản lý xuất nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương.",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ chứng minh tư cách pháp nhân tại Cục Quản lý xuất nhập cảnh -Bộ Công an.",
+            "locator": "section:10:Yêu cầu - điều kiện",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Công dân Việt Nam đề nghị cho thân nhân phải có quan hệ thuộc danh sách được nguồn quy định và xuất trình giấy tờ chứng minh. Primary liệt kê ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột; supplementary chỉ liệt kê cha, mẹ, vợ, chồng, con. Chưa hợp nhất thành một tập quan hệ đủ điều kiện.",
+        "status": "conflict",
+        "conflicts": [
+          "Primary có thêm ông, bà, anh, chị, em ruột so với supplementary; không dùng sự thiếu vắng trong supplementary làm loại trừ độc lập."
+        ],
+        "source_refs": [
+          {
+            "quote": "Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ).",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ cha, mẹ, vợ, chồng, con với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ).",
+            "locator": "section:10:Yêu cầu - điều kiện",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế. Bản tiếng Anh thêm chỉ dẫn nộp trực tiếp; bản tiếng Việt của ghi chú này không nêu yêu cầu nộp trực tiếp.",
+        "status": "conflict",
+        "conflicts": [
+          "Bản tiếng Anh bổ sung Submit in person. Không dùng riêng câu này để loại bỏ các kênh nộp được nguồn thủ tục mô tả."
+        ],
+        "source_refs": [
+          {
+            "quote": "(1) Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "Submit in person one completed application form enclosed with passport or International Travel Document",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      },
+      {
+        "value": "Ảnh khi cấp thị thực rời: tiếng Việt yêu cầu 01 ảnh, tiếng Anh yêu cầu 2 ảnh; ảnh mới chụp 4 cm x 6 cm, nền trắng, nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự.",
+        "status": "conflict",
+        "conflicts": [
+          "Số lượng ảnh 01 và 2 không thống nhất. Không quy đổi số ảnh thành số bản chính/bản sao và không áp dụng mặc định cho yêu cầu chỉ gia hạn tạm trú."
+        ],
+        "source_refs": [
+          {
+            "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp, cỡ 4cm x 6cm, phông nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự.",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "in case of issue separate visa, enclose 2 recently taken photos in 4cm x 6cm size, with white background, face looking straight, no hat, no glasses, polite clothes.",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      },
+      {
+        "value": "Tờ khai NA5: primary ghi Tờ khai đề nghị cấp thị thực, gia hạn tạm trú, kèm Thông tư 22/2023/TT-BCA ngày 30/6/2023; supplementary ghi Tờ khai đề nghị cấp, bổ sung, sửa đổi thị thực và gia hạn tạm trú.",
+        "status": "conflict",
+        "conflicts": [
+          "Khác nhau về tên mô tả NA5; các tệp được cung cấp có thông tin phiên bản 2026 và 2015, chưa khớp được tệp cụ thể với bản 2023 mà primary yêu cầu."
+        ],
+        "source_refs": [
+          {
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+            "locator": "section:2:Thành phần hồ sơ",
+            "source_id": "primary"
+          },
+          {
+            "quote": "a) Tờ khai đề nghị cấp, bổ sung, sửa đổi thị thực và gia hạn tạm trú (mẫu NA5)",
+            "locator": "section:9:Thành phần hồ sơ",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Primary: lệ phí 10 USD. Supplementary: mục Phí và mục Lệ Phí đều ghi Không.",
+        "status": "conflict",
+        "conflicts": [
+          "Chưa xác định mức thu áp dụng: 10 USD hay không thu."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trực tiếp 5 Ngày làm việc Lệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Primary thu phí khi hồ sơ đầy đủ, hợp lệ và giao biên lai; supplementary thu lệ phí khi có kết quả gia hạn và người nhận ký nhận.",
+        "status": "conflict",
+        "conflicts": [
+          "Khác nhau về thời điểm thanh toán; supplementary tự mâu thuẫn với các mục phí và lệ phí ghi Không."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị gia hạn tạm trú; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "nếu có kết quả gia hạn tạm trú thì yêu cầu người đến nhận kết quả nộp lệ phí và ký nhận.",
+            "locator": "section:5:Trình tự thực hiện",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Primary: lệ phí 10 USD cho kênh trực tuyến; supplementary ghi Không tại mục lệ phí chung.",
+        "status": "conflict",
+        "conflicts": [
+          "Mức lệ phí giữa hai nguồn không thống nhất; supplementary không mô tả biểu phí riêng cho trực tuyến."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trực tuyến 5 Ngày làm việc Lệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Nộp qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. Cổng thông báo hoàn chỉnh hồ sơ, từ chối có lý do hoặc thanh toán trực tuyến và nhận biên lai điện tử. Primary mô tả dịch vụ một phần; supplementary ghi dịch vụ công trực tuyến toàn trình nhưng mục cách thức chỉ ghi trực tiếp.",
+        "status": "conflict",
+        "conflicts": [
+          "Mức độ trực tuyến một phần/toàn trình không thống nhất; giữ kênh trực tuyến theo mô tả rõ ràng của primary."
+        ],
+        "source_refs": [
+          {
+            "quote": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú hoàn chỉnh hồ sơ.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Một phần",
+            "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Dịch vụ công trực tuyến toàn trình",
+            "locator": "section:3:Mức độ cung cấp dịch vụ công trực tuyến",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Trực tiếp",
+            "locator": "section:4:Cách thức thực hiện",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "Primary: lệ phí 10 USD cho dòng dịch vụ bưu chính; supplementary ghi Không tại mục lệ phí chung.",
+        "status": "conflict",
+        "conflicts": [
+          "Mức lệ phí giữa hai nguồn không thống nhất; supplementary không có mô tả riêng cho kênh bưu chính."
+        ],
+        "source_refs": [
+          {
+            "quote": "Dịch vụ bưu chính 5 Ngày làm việc Lệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      }
+    ],
+    "reason": "The legacy form-revision mismatch alone does not invalidate all captured procedure facts.",
+    "official_checks": [
+      {
+        "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-70-2026-tt-bca-469801.htm",
+        "finding": "Gazette records issue 2026-05-25 and effect 2026-07-01; this does not verify every procedure claim."
+      },
+      {
+        "url": "https://congan.cantho.gov.vn/thu-tuc-hanh-chinh/thutuc/gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-3.html",
+        "finding": "Provincial page explicitly names NA5 under 70/2026/TT-BCA; applicability is not generalized to all four procedures."
+      }
+    ]
+  },
+  {
+    "code": "1.003326",
+    "snapshot_id": 19,
+    "policy": "scoped-evidence-1",
+    "access": "source_attributed",
+    "run_id": "7aca80ca-736c-4b81-80bc-9405f1fe27d1",
+    "profile_id": 1,
+    "reviewed_at": "2026-10-31T06:23:06.447327+00:00",
+    "procedure_currency": "not_reverified",
+    "form_applicability": "unresolved",
+    "template_approval": "unchanged",
+    "conflicting_claims": [
+      {
+        "value": "Mỗi người khai một bản, kèm hộ chiếu hoặc giấy tờ đi lại quốc tế. Bản tiếng Anh thêm yêu cầu “Submit in person”, trong khi bản tiếng Việt không nêu yêu cầu nộp trực tiếp ở ghi chú này.",
+        "status": "conflict",
+        "conflicts": [
+          "Ghi chú tiếng Anh thêm “Submit in person”; không được dùng để xóa kênh trực tuyến được thủ tục quy định."
+        ],
+        "source_refs": [
+          {
+            "quote": "Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "Submit in person one completed application form enclosed with passport or International Travel Document",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      {
+        "value": "Phiên bản biểu mẫu gắn với hash này chưa được xác nhận là phiên bản thủ tục chấp nhận: registry gắn bằng filename_fallback; thủ tục ghi 22/2023/TT-BCA, còn biểu mẫu ghi 70/2026/TT-BCA.",
+        "status": "conflict",
+        "conflicts": [
+          "Tham chiếu phiên bản của thủ tục và của tệp khác nhau; filename_fallback không chứng minh chấp nhận phiên bản 2026."
+        ],
+        "source_refs": [
+          {
+            "quote": "\"association_method\":\"filename_fallback\"",
+            "locator": "form-association",
+            "source_id": "registry:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023.",
+            "locator": "section:2:Thành phần hồ sơ",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Kèm theo Thông tư số 70/2026/TT-BCA ngày 25 tháng 5 năm 2026",
+            "locator": "page:1",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      },
+      {
+        "value": "01 ảnh theo tiếng Việt; 2 ảnh theo tiếng Anh.",
+        "status": "conflict",
+        "conflicts": [
+          "Hai ngôn ngữ trong cùng biểu mẫu nêu số lượng ảnh khác nhau; chưa xác định số lượng áp dụng."
+        ],
+        "source_refs": [
+          {
+            "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "in case of issue separate visa, enclose 2 recently taken photos",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      },
+      {
+        "value": "Registry xác lập liên kết direct_download, nhưng nội dung tệp ghi phiên bản 04/2015/TT-BCA trong khi trang thủ tục yêu cầu phiên bản 22/2023/TT-BCA.",
+        "status": "conflict",
+        "conflicts": [
+          "Liên kết tải trực tiếp và mô tả phiên bản trên trang thủ tục không thống nhất; chưa xác định phiên bản được chấp nhận."
+        ],
+        "source_refs": [
+          {
+            "quote": "\"association_method\":\"direct_download\"",
+            "locator": "form-association",
+            "source_id": "registry:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+          },
+          {
+            "quote": "Ban hành kèm theo thông t s 04 /2015/TT-BCA ư ố ngày 05 tháng 01 năm 2015",
+            "locator": "page:1",
+            "source_id": "form:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+          },
+          {
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023.",
+            "locator": "section:9:Thành phần hồ sơ",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "10 USD/lần; có bất đồng về phân loại phí/lệ phí.",
+        "status": "conflict",
+        "conflicts": [
+          "Primary ghi lệ phí 10 USD; supplementary ghi phí 10 USD/lần và lệ phí không. Số tiền thống nhất, phân loại không thống nhất."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trực tiếp 5 Ngày làm việc Lệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "10 USD/lần",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "10 USD/lần; có bất đồng về phân loại phí/lệ phí.",
+        "status": "conflict",
+        "conflicts": [
+          "Primary ghi lệ phí; supplementary ghi phí và không có lệ phí."
+        ],
+        "source_refs": [
+          {
+            "quote": "Trực tuyến 5 Ngày làm việc Lệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "10 USD/lần",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      },
+      {
+        "value": "10 USD/lần; có bất đồng về phân loại phí/lệ phí.",
+        "status": "conflict",
+        "conflicts": [
+          "Primary ghi lệ phí; supplementary ghi phí và không có lệ phí."
+        ],
+        "source_refs": [
+          {
+            "quote": "Dịch vụ bưu chính 5 Ngày làm việc Lệ phí: 10 USD",
+            "locator": "section:1:Cách thức thực hiện",
+            "source_id": "primary"
+          },
+          {
+            "quote": "10 USD/lần",
+            "locator": "section:7:Phí",
+            "source_id": "supplementary"
+          },
+          {
+            "quote": "Không",
+            "locator": "section:8:Lệ Phí",
+            "source_id": "supplementary"
+          }
+        ]
+      }
+    ],
+    "reason": "The legacy form-revision mismatch alone does not invalidate all captured procedure facts.",
+    "official_checks": [
+      {
+        "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-70-2026-tt-bca-469801.htm",
+        "finding": "Gazette records issue 2026-05-25 and effect 2026-07-01; this does not verify every procedure claim."
+      },
+      {
+        "url": "https://congan.cantho.gov.vn/thu-tuc-hanh-chinh/thutuc/gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-3.html",
+        "finding": "Provincial page explicitly names NA5 under 70/2026/TT-BCA; applicability is not generalized to all four procedures."
+      }
+    ]
+  },
+  {
+    "code": "1.003342",
+    "snapshot_id": 21,
+    "policy": "scoped-evidence-1",
+    "access": "source_attributed",
+    "run_id": "8a4b0af7-f2ba-41f8-a176-001f1b03bf4e",
+    "profile_id": 3,
+    "reviewed_at": "2026-10-31T06:23:06.448455+00:00",
+    "procedure_currency": "not_reverified",
+    "form_applicability": "unresolved",
+    "template_approval": "unchanged",
+    "conflicting_claims": [
+      {
+        "value": "Liên kết registry là direct_download. Bản tải về ghi tham chiếu 04/2015/TT-BCA, trong khi danh mục hồ sơ thủ tục yêu cầu NA5 theo 22/2023/TT-BCA; chưa xác lập việc chấp nhận chính xác bản này.",
+        "status": "conflict",
+        "conflicts": [
+          "Tham chiếu phiên bản của biểu mẫu tải trực tiếp khác tham chiếu trong danh mục hồ sơ thủ tục."
+        ],
+        "source_refs": [
+          {
+            "quote": "\"association_method\":\"direct_download\"",
+            "locator": "form-association",
+            "source_id": "registry:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5"
+          },
+          {
+            "quote": "04/2015/TT-BCA ngày 05-01-2015",
+            "locator": "page:1",
+            "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5"
+          },
+          {
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+            "locator": "section:2:Thành phần hồ sơ",
+            "source_id": "primary"
+          }
+        ]
+      },
+      {
+        "value": "Ghi chú bản này yêu cầu nộp trực tiếp một tờ khai, kèm hộ chiếu hoặc giấy tờ đi lại quốc tế và một ảnh mới 4 x 6 cm, nền trắng, nhìn thẳng, đầu để trần, không đeo kính màu. Ghi chú không giới hạn ảnh vào trường hợp thị thực rời. Hướng dẫn này khác hướng dẫn thủ tục về kênh trực tuyến và điều kiện nộp ảnh.",
+        "status": "conflict",
+        "conflicts": [
+          "Bản biểu mẫu hướng dẫn nộp trực tiếp, trong khi thủ tục còn cho phép nộp trực tuyến.",
+          "Bản biểu mẫu yêu cầu ảnh không kèm điều kiện thị thực rời; thủ tục chỉ yêu cầu ảnh khi cấp thị thực rời.",
+          "Bản biểu mẫu nói không đeo kính màu; thủ tục nói không đeo kính."
+        ],
+        "source_refs": [
+          {
+            "quote": "Submit in person one completed application form enclosed with passport or International Travel Document and One recently taken photo in 4x6cm size, with white background, front view, bare head without sunglasses at the Immigration Office.",
+            "locator": "page:2",
+            "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5"
+          },
+          {
+            "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời.",
+            "locator": "section:2:Thành phần hồ sơ",
+            "source_id": "primary"
+          },
+          {
+            "quote": "Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      {
+        "value": "Ghi chú tiếng Việt yêu cầu 01 ảnh khi cấp thị thực rời; bản tiếng Anh yêu cầu 2 ảnh và còn ghi nộp trực tiếp. Số ảnh giữa hai ngôn ngữ mâu thuẫn; cách nộp trực tiếp trong tiếng Anh khác các lựa chọn nộp của thủ tục.",
+        "status": "conflict",
+        "conflicts": [
+          "01 ảnh trong tiếng Việt so với 2 ảnh trong tiếng Anh.",
+          "Tiếng Anh hướng dẫn nộp trực tiếp; thủ tục có thêm kênh trực tuyến."
+        ],
+        "source_refs": [
+          {
+            "quote": "(1) Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế, nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp, cỡ 4cm x 6cm, phông nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự.",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "Submit in person one completed application form enclosed with passport or International Travel Document, in case of issue separate visa, enclose 2 recently taken photos in 4cm x 6cm size, with white background, face looking straight, no hat, no glasses, polite clothes.",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an",
+            "locator": "section:0:Trình tự thực hiện",
+            "source_id": "primary"
+          }
+        ]
+      },
+      {
+        "value": "01 ảnh theo tiếng Việt; 2 ảnh theo tiếng Anh.",
+        "status": "conflict",
+        "conflicts": [
+          "Hai ngôn ngữ của cùng biểu mẫu quy định số ảnh khác nhau; chưa chọn một số lượng để thay thế số còn lại."
+        ],
+        "source_refs": [
+          {
+            "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          },
+          {
+            "quote": "in case of issue separate visa, enclose 2 recently taken photos",
+            "locator": "page:2",
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+          }
+        ]
+      }
+    ],
+    "reason": "The legacy form-revision mismatch alone does not invalidate all captured procedure facts.",
+    "official_checks": [
+      {
+        "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-70-2026-tt-bca-469801.htm",
+        "finding": "Gazette records issue 2026-05-25 and effect 2026-07-01; this does not verify every procedure claim."
+      },
+      {
+        "url": "https://congan.cantho.gov.vn/thu-tuc-hanh-chinh/thutuc/gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-3.html",
+        "finding": "Provincial page explicitly names NA5 under 70/2026/TT-BCA; applicability is not generalized to all four procedures."
+      }
+    ]
+  }
+]

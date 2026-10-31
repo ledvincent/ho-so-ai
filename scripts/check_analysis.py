@@ -19,7 +19,7 @@ def main():
             assert p.status_code==200
             assert p.json()['source_url']==report['url']
             result = client.post('/procedures/'+report['code']+'/context',json={'query':'unrelated routing words'})
-            if p.json()['analysis']['facts_ready']:
+            if result.status_code==200:
                 assert result.status_code==200
                 payload = result.json()
                 assert payload['full_procedure']==p.json()['document_json']

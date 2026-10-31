@@ -73,7 +73,9 @@ def test_fetch_allowlist(url):
 
 def test_api_has_no_generated_answer_and_fails_closed(monkeypatch):
     from api.main import find, procedure, SearchRequest
-    monkeypatch.delenv("SEARCH_MIN_SIMILARITY", raising=False)
+    def unavailable(query):
+        raise RuntimeError('No published retrieval index')
+    monkeypatch.setattr('api.main.search',unavailable)
     with pytest.raises(HTTPException) as error:
         find(SearchRequest(query="temporary residence"))
     assert error.value.status_code == 503

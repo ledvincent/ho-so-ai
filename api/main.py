@@ -16,6 +16,8 @@ from sqlalchemy import text
 app = FastAPI(title="Hồ Sơ AI", version="0.1.0")
 from api.workflow import router as workflow_router
 app.include_router(workflow_router)
+from api.form_workflows import router as document_router
+app.include_router(document_router)
 from api.assistant import router as assistant_router
 app.include_router(assistant_router)
 
@@ -45,7 +47,7 @@ def procedure(code: str):
         raise HTTPException(503, "Database unavailable") from None
     if not result:
         raise HTTPException(404, "Procedure not covered")
-    # Incomplete data is inspectable but explicitly marked, and excluded from search.
+    # Routing can identify this record; factual evidence still requires readiness.
     return result
 
 

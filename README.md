@@ -1,5 +1,9 @@
 # Hồ Sơ AI backend
 
+For the assistant/document API handoff, start with [Kim's integration guide](docs/kim-start-here.md)
+and the checked-in [OpenAPI and response examples](docs/contracts/README.md). Form schemas
+are selected by document ID; NA5 is the first installed form.
+
 ## What exists today
 
 - A local PostgreSQL 16 database with pgvector, persisted in Docker's `hoso_pgdata` volume. Seven migrations define the schema.

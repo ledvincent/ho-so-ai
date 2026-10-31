@@ -20,6 +20,7 @@ def main():
         assert client.post('/workflows/1.001146/download',json=request).status_code==409
         current=na5.spec()
         with patch('api.na5.spec',return_value={**current,'review_status':'reviewed'}):
+            request['review_token']=client.post('/workflows/1.001146/preview',json={'values':values}).headers['X-Review-Token']
             response=client.post('/workflows/1.001146/download',json=request)
             assert response.status_code==200
             with pymupdf.open(stream=response.content,filetype='pdf') as pdf:

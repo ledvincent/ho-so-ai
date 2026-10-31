@@ -1,4 +1,12 @@
 services:
+  embeddings:
+    image: ollama/ollama@sha256:b2f0122c476bc9fe7ce679d8bb4bd555351e25e2554eefb156f61cb0a89cf429
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - hoso_models:/root/.ollama
+    environment:
+      OLLAMA_NUM_PARALLEL: 1
   db:
     image: pgvector/pgvector:pg16
     environment:
@@ -16,3 +24,4 @@ services:
       retries: 20
 volumes:
   hoso_pgdata:
+  hoso_models:

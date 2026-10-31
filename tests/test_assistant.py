@@ -46,7 +46,7 @@ def provider(monkeypatch, content=None, finish="stop"):
         calls.append((url, kwargs))
         return httpx.Response(200, request=httpx.Request("POST", url), json={"choices": [{
             "finish_reason": finish, "message": {"content": json.dumps(content or {
-                "status": "answered", "answer": "The fee is USD 10. [s1]", "source_ids": ["s1"]})}}]})
+                "status": "answered", "paragraphs": [{"text": "The fee is USD 10.", "source_ids": ["s1"]}]})}}]})
     monkeypatch.setattr(a.httpx, "post", post)
     return calls
 
@@ -68,6 +68,21 @@ def test_grounded_request_and_citations(client, monkeypatch):
 def test_route_registered():
     operation = app.openapi()["paths"]["/assistant/chat"]["post"]
     assert "200" in operation["responses"]
+    assert '/assistant' in app.openapi()['paths']
+    assert '/assistant/setup' in app.openapi()['paths']
+
+
+def test_chat_page_uses_text_rendering_and_memory_only():
+    page=a.assistant_page()+(a.ROOT/'api/static/assistant.js').read_text(encoding='utf-8')
+    assert 'textContent' in page and 'retrieval_state' in page
+    assert 'innerHTML' not in page and 'localStorage' not in page
+
+
+def test_expired_conversation_has_recoverable_message(client):
+    def expired(request):raise a.ConversationStateError('Conversation expired. Start a new conversation.')
+    app.dependency_overrides[a.get_retriever]=lambda:expired
+    response=client.post('/assistant/chat',json={'message':'Help me'})
+    assert response.status_code==409 and 'expired' in response.json()['detail']
 
 
 @pytest.mark.parametrize("retrieval,status", [
@@ -84,9 +99,9 @@ def test_no_evidence_or_ambiguous_skips_provider(client, monkeypatch, retrieval,
 
 
 @pytest.mark.parametrize("content,finish", [
-    ({"status": "answered", "answer": "Invented [fake]", "source_ids": ["fake"]}, "stop"),
-    ({"status": "answered", "answer": "No citation", "source_ids": []}, "stop"),
-    ({"status": "answered", "answer": "No marker", "source_ids": ["s1"]}, "stop"),
+    ({"status": "answered", "paragraphs": [{"text": "Invented", "source_ids": ["fake"]}]}, "stop"),
+    ({"status": "answered", "paragraphs": [{"text": "No citation", "source_ids": []}]}, "stop"),
+    ({"status": "answered", "paragraphs": []}, "stop"),
     ({"unexpected": True}, "stop"),
     (None, "length"),
 ])
@@ -123,19 +138,23 @@ def test_input_validation(client, payload):
 
 
 def test_explicit_procedure_bypasses_search(monkeypatch):
+    from api import rag
     def fail(*args):
         pytest.fail("Search must not run for an explicit procedure")
-    monkeypatch.setattr(a, "search", fail)
-    monkeypatch.setattr(a, "context", lambda code, query: {
-        "name": "Full procedure", "source": {"url": "https://example.test/source"},
-        "requirements": ["Complete requirements"], "code": code})
+    monkeypatch.setattr(rag, "search", fail)
+    monkeypatch.setattr(rag, "release_info", lambda: {'id':'release'})
+    monkeypatch.setattr(rag, "members", lambda r,c:[{'code':c[0]}])
+    monkeypatch.setattr(rag, "evidence", lambda *args: [dict(id='s1',title='Full procedure',
+        url='https://example.test/source',text='Complete requirements')])
     result = a.retrieve(a.ChatRequest(message="Help", procedure_code="1.001146"))
     assert "Complete requirements" in result.sources[0].text
 
 
 def test_ambiguous_search_never_loads_context(monkeypatch):
-    monkeypatch.setattr(a, "search", lambda query: {"results": [
-        {"code": "1.001146", "name": "One"}, {"code": "1.003342", "name": "Two"}]})
+    from api import rag
+    candidates=[{'code':'1.001146','name':'One','profile':{}},{'code':'1.003342','name':'Two','profile':{}}]
+    monkeypatch.setattr(rag, "search", lambda query: dict(results=candidates,status='found',release_id='release'))
+    monkeypatch.setattr(rag, "members", lambda *args:candidates)
     result = a.retrieve(a.ChatRequest(message="Help"))
     assert result.clarification and not result.sources
 
@@ -186,7 +205,7 @@ def test_untrusted_inputs_never_gain_message_authority(attack):
     ("Fee: USD 10 [s1]", ["s1", "s1"]),
 ])
 def test_output_boundary_rejects_injection_channels(client, monkeypatch, answer, ids):
-    provider(monkeypatch, {"status": "answered", "answer": answer, "source_ids": ids})
+    provider(monkeypatch, {"status": "answered", "paragraphs": [{"text":answer,"source_ids":ids}]})
     assert client.post("/assistant/chat", json={"message": "Fee?"}).status_code == 502
 
 
@@ -196,13 +215,29 @@ def test_strict_schema_and_no_tools(client, monkeypatch):
     body = calls[0][1]["json"]
     schema = body["response_format"]["json_schema"]
     assert schema["strict"] and schema["schema"]["additionalProperties"] is False
-    assert schema["schema"]["properties"]["source_ids"]["items"]["enum"] == ["s1"]
+    assert schema["schema"]["properties"]["paragraphs"]["items"]["properties"]["source_ids"]["items"]["enum"] == ["s1"]
     assert "tools" not in body and "functions" not in body
     assert "test-key" not in json.dumps(body)
 
 
 @pytest.mark.parametrize("status", ["needs_clarification", "insufficient_context", "out_of_scope"])
 def test_non_answer_decisions(client, monkeypatch, status):
-    provider(monkeypatch, {"status": status, "answer": "Please specify the procedure.", "source_ids": []})
+    provider(monkeypatch, {"status": status, "paragraphs": [{"text":"Please specify the procedure.","source_ids":[]}]})
     response = client.post("/assistant/chat", json={"message": "Help me"})
     assert response.status_code == 200 and response.json()["status"] == status
+
+
+def test_server_renders_citations_and_deduplicates_known_ids(client, monkeypatch):
+    provider(monkeypatch, {'status':'answered','paragraphs':[
+        {'text':'The fee is USD 10.','source_ids':['s1','s1']}]})
+    response=client.post('/assistant/chat',json={'message':'Fee?'})
+    assert response.status_code==200
+    assert response.json()['answer']=='The fee is USD 10. [s1]'
+
+
+def test_reasoning_effort_is_forwarded_without_credentials_in_body(client,monkeypatch):
+    monkeypatch.setenv('ASSISTANT_REASONING_EFFORT','medium')
+    calls=provider(monkeypatch)
+    assert client.post('/assistant/chat',json={'message':'Help me understand this procedure'}).status_code==200
+    assert calls[0][1]['json']['reasoning_effort']=='medium'
+    assert 'test-key' not in json.dumps(calls[0][1]['json'])

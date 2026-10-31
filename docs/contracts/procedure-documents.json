@@ -1,0 +1,23 @@
+{
+  "documents": [
+    {
+      "document_id": "na5-provincial-stay-extension",
+      "form_id": "NA5",
+      "procedure_code": "1.001146",
+      "template_sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+      "template_version": "0ea9956659b50098c275e687533954cfa68f1541eab40ad167cf8627def4014b",
+      "revision": "70/2026/TT-BCA",
+      "review_status": "draft",
+      "download_available": false,
+      "applicability": "unresolved",
+      "schema_url": "/documents/na5-provincial-stay-extension/schema",
+      "template_url": "/documents/na5-provincial-stay-extension/template",
+      "template_pages_url": "/documents/na5-provincial-stay-extension/template-pages",
+      "validate_url": "/documents/na5-provincial-stay-extension/validate",
+      "preview_url": "/documents/na5-provincial-stay-extension/preview",
+      "preview_pages_url": "/documents/na5-provincial-stay-extension/preview-pages",
+      "download_url": "/documents/na5-provincial-stay-extension/download",
+      "example_url": "/documents/na5-provincial-stay-extension/example"
+    }
+  ]
+}

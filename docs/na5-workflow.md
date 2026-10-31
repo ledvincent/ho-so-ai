@@ -16,7 +16,7 @@ The original Word file remains byte-identical. The PDF was regenerated with the 
 - Official attachment page: https://congan.cantho.gov.vn/thu-tuc-hanh-chinh/thutuc/gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-3.html
 - Download: https://congan.cantho.gov.vn/uploads/thu-tuc-hanh-chinh/na5_4.doc
 
-The downloaded file has a .doc URL but is actually DOCX, as verified by its ZIP/XML content. Its internal text names the 2026 circular. Earlier 2015 forms remain historical; matching the name NA5 is not sufficient to override a known superseded revision. The saved national portal snapshots still cite the 2023 form. RAG context is therefore gated until those facts are checked for currency; the current form-filling workflow is separate.
+The downloaded file has a .doc URL but is actually DOCX, as verified by its ZIP/XML content. Its internal text names the 2026 circular. Earlier 2015 forms remain historical; matching the name NA5 is not sufficient to override a known superseded revision. The saved national portal snapshots still cite the 2023 form. Scoped evidence reviews now permit source-attributed RAG answers while retaining unresolved currency/applicability claims; see [evidence access](evidence-access.md). The current form-filling workflow and its human template review remain separate.
 
 ## Review and release
 

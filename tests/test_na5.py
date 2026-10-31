@@ -78,6 +78,8 @@ def test_download_requires_template_review_and_exact_preview(values,monkeypatch)
     original=na5.spec()
     monkeypatch.setattr(na5,'spec',lambda:{**original,'review_status':'reviewed'})
     with pytest.raises(HTTPException):download(Download(values=values,review_token=t,confirmed=False))
+    # Approval changes the template version, so obtain a new preview token.
+    t=preview(Values(values=values)).headers['X-Review-Token']
     response=download(Download(values=values,review_token=t,confirmed=True))
     assert response.headers['content-disposition'].endswith('"NA5-filled.pdf"')
     with pymupdf.open(stream=response.body,filetype='pdf') as pdf:
