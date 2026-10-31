@@ -7,16 +7,18 @@ from a computer name, Git author or directory owner.
 
 | Member | Prompt substitution | Profile | Status file owned by that member |
 | --- | --- | --- | --- |
-| Son | `[MEMBER]` = `Son` | [son.md](son.md) | [son.md](../status/son.md) |
-| Vincent | `[MEMBER]` = `Vincent` | [vincent.md](vincent.md) | [vincent.md](../status/vincent.md) |
-| Kim | `[MEMBER]` = `Kim` | [kim.md](kim.md) | [kim.md](../status/kim.md) |
+| Son | `[MEMBER]` = `Son`; `[member-lowercase]` = `son` | [son.md](son.md) | [son.md](../status/son.md) |
+| Vincent | `[MEMBER]` = `Vincent`; `[member-lowercase]` = `vincent` | [vincent.md](vincent.md) | [vincent.md](../status/vincent.md) |
+| Kim | `[MEMBER]` = `Kim`; `[member-lowercase]` = `kim` | [kim.md](kim.md) | [kim.md](../status/kim.md) |
 
 ## Activate a manager
 
-1. Open a chat on the member's existing checkout. Preserve its current branch
-   and uncommitted work; do not switch an application branch to load guidance.
-2. Read the current published guidance. Before a documentation change is merged,
-   use `git show <published-ref>:docs/team/managers/protocol.md` after fetching.
+1. Use the member's existing manager chat, or open one if none exists, attached
+   to their repository checkout. Preserve its branch and uncommitted work;
+   do not start competing managers or switch branches to load guidance.
+2. For this rollout, fetch `origin codex/kim/team-03-manager-protocol`, resolve
+   its full SHA, and read guidance with `git show <SHA>:<path>`. After merge,
+   current main may be used if it contains the corrected ownership guidance.
    Record the exact reference used and any unavailable files.
 3. Copy the common prompt, replace its member placeholders, and review its bounded permission
    paragraph before sending it as a human instruction in that chat.
