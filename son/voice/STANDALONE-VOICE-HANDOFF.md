@@ -2,7 +2,9 @@
 
 Owner: Son. Branch: `codex/son/voice-01-browser-conversation`.
 Status: checkpoint; human microphone acceptance pending. No merge requested.
-Code revision: recorded in the publication follow-up below after the code commit.
+Component revision: `41ca7160a1b478947bcdbe0b85363087505259cb`
+(main stabilization: `d348618d32c517070c7eb4d3dc5e1ff9869bac10`).
+Live probe revision: `651cb6be2e06a5ac8e3d32684628d1ccdfee444d`.
 This supersedes older readiness statements in `RAG-VOICE-HANDOFF.md`.
 
 ## Scope and dependencies
@@ -122,13 +124,16 @@ await voice.resumeAudio(); // only after an autoplay-blocked user gesture
 await voice.stop();        // also aborts pending lookup and clears server session
 ```
 
-`onTranscript(text)` remains the legacy diagnostic text callback; it includes
+`onTranscript(text, metadata)` remains the legacy diagnostic text callback; it includes
 spoken assistant text plus full RAG answers/source lines. Prefer `onResult` and
 `onFinalTranscript` for a future chat adapter to avoid duplication. Final ASR
 events are asynchronous and deduplicated by item ID; final means transcription
 finished, not that all assistant audio was heard. State events track playout.
 Transcripts may contain personal speech: do not automatically persist or copy
 them into the RAG/history, analytics or a report.
+Only `{kind:'source', source}` metadata identifies a backend citation; a spoken
+string beginning with `SOURCE:` must remain plain text. A regression test checks
+this distinction. On `rag_http_409`, the host should clear the expired selection.
 
 Change language at call start (`en`/`vi`); a spoken language switch preserves
 conversation. Change procedure conversationally: the voice tool sends `reset:true`
@@ -191,8 +196,29 @@ not reach a procedure: the fixed scenario failed to answer Vincent's second
 clarification. The probe now chooses only from each actual returned option list.
 The voice prompt also forbids expanding the user's question with unasked topics.
 
-Real WebRTC probe result: pending at initial handoff drafting; updated below.
-Human microphone: **pending**, in both languages. No claim of acoustic success,
+Real VI WebRTC probe passes: two backend clarifications (3 then 2 choices),
+selected `1.001146`, sourced partial document answer (4 citations), sourced
+follow-up (2 citations), 8 displayed source links, 9 audio-drained events,
+no provider errors or incomplete/failed responses. Real OpenAI Realtime and
+Vincent generation were used, with silent synthetic mic, fictional text input
+and muted output. This proves transport/tool/audio-event behavior, not sound
+quality, spoken recognition accuracy or live acoustic interruption.
+Initial EN probes expired while waiting for playback after successful selection.
+The probe now correlates audio completion to the exact tool-response ID, without
+logging those IDs, and allows up to 120 seconds for a spoken response. Additional
+diagnostics observed a completed 1,963-output-token response: some spoken replies
+are long despite the concise prompt. The longer playback wait then advanced to
+the paperwork turn. Brevity and interruption comfort remain human review items;
+no smaller token cap was introduced that would cut sentences again.
+Final EN WebRTC probe passes: clarification (3 choices), selected `1.001146`,
+sourced partial paperwork answer (4 citations), sourced time follow-up (2
+citations), 10 displayed source links, 8 audio-drained events, no provider errors
+or failed/incomplete responses. Input remains fictional text with a silent
+synthetic microphone and muted output. Both language probes are transport/model
+tests; they do not replace Son's real microphone acceptance.
+Human microphone: Son reports that it "works approximately"; language and
+individual acceptance steps were not specified. Treat this as partial feedback,
+not completion of the EN/VI interruption/restart checklist. No claim of acoustic success,
 production readiness, legal/source approval, report delivery or Kim integration.
 
 ## Son's human microphone acceptance
@@ -218,3 +244,15 @@ consultable sources, explicit unresolved form/source conditions, interruption
 stops old speech, repetition preserves conditions, microphone turns off at End,
 fresh call does not retain the earlier procedure. Report failed step/language and
 what happened, without sending personal recordings or credentials.
+
+Additional fictional retrieval checks requested by Son (new call for each):
+
+| Query | Expected procedure identity, not an eligibility conclusion |
+| --- | --- |
+| I have a visa exemption certificate and want to extend my stay in Vietnam. What documents do I need? | `1.000771`, extension for visa-exemption certificate holders |
+| I want to apply for a new visa while in Vietnam, through the central Immigration Department. What documents do I need? | `1.003342`, central visa issuance |
+
+Answer any returned clarification before the factual follow-up. Ask processing
+times for the first and fees for the second; inspect the displayed SOURCE links.
+These additional spoken cases are proposed human checks, not newly executed
+live validations. No legal quantities, fees or eligibility are predetermined.
