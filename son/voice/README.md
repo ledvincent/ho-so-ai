@@ -1,5 +1,57 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Hồ Sơ AI conversation profile
+
+The voice now follows a project-specific intake: welcome -> understand the goal ->
+clarify initial registration versus renewal -> confirm understanding -> useful
+verbal recap and the next unresolved step -> close. It remembers answers within
+the call, handles corrections/language switches, and does not keep repeating the
+same menu or data-unavailable warning. This is a conversational plan in the prompt,
+not a deterministic server workflow, legal decision, persisted dossier or report.
+
+Canonical source: `src/voice_app/project_profile.json`. It contains VI/EN greetings,
+language rules, tone, scope, conversation stages, privacy and unavailable-action
+boundaries. It contains no official facts or personal data. The backend reads it;
+a marked generated block in the headless client carries the same profile for
+already-running local servers. No product HTML/CSS is changed by this profile.
+
+```powershell
+# After editing the canonical profile, from the repository root:
+son/voice/.venv/Scripts/python.exe -m voice_app.project_profile --write-client
+son/voice/.venv/Scripts/python.exe -m voice_app.project_profile
+```
+
+The check exits nonzero on drift. The client sends instructions/budget at channel
+open, waits for a matching `session.updated`, then enables outbound microphone
+tracks and starts the project greeting. A missing acknowledgement fails closed
+after eight seconds. Refresh and start a new call to use the new profile without
+re-entering the private server key. This is configuration synchronization, not
+an authorization or grounding guarantee. Optional `onDiagnostic` also receives
+`{event:'profile_applied', profileId:...}` without prompt/transcript text.
+
+22 handwritten synthetic acceptance scenarios live in
+`evals/intake-scenarios.json`, covering VI/EN new registration, renewal, correction,
+language switch, missing official facts, phone delivery, foreigner scope, personal
+access, fabricated-source pressure, project explanation and closure. They are not
+retrieval examples, official records, or a procedure/report contract. The whole
+catalog has not been run against the live model.
+
+An optional live pilot uses only synthetic text and a silent synthetic microphone,
+muted output and coarse observations. It never logs transcripts/keys/SDP, but it
+does make potentially billable Realtime requests. It does nothing without `--live`.
+
+```powershell
+node son/voice/evals/live-intake-smoke.cjs        # no paid call
+node son/voice/evals/live-intake-smoke.cjs --live # one English pilot
+node son/voice/evals/live-intake-smoke.cjs --live --vi
+```
+
+The agent explains the intended reviewed-checklist/form/mobile-report journey
+only as future functionality; no lookup, form, dossier or report tool is enabled.
+Those adapters must wait for Vincent's retrieval/data contract and Kim's app.v1 /
+Clerk integration agreement. The existing public demo cookie is not Clerk identity.
+No new producer schema, retrieval implementation or personal-data tool is supplied.
+
 ## Live voice call (current requested experience)
 
 The phone-like mode is **OpenAI Realtime over WebRTC**: one connection carries

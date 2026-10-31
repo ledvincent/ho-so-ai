@@ -38,7 +38,18 @@ const {chromium} = require("playwright");
       window.RTCPeerConnection = class {
         constructor() { window.syntheticPeer = this; }
         addTrack() {}
-        createDataChannel() { this.channel = {send:(value) => window.syntheticSent.push(JSON.parse(value)), close() {}}; return this.channel; }
+        createDataChannel() {
+          this.channel = {send:(value) => {
+            const message = JSON.parse(value);
+            window.syntheticSent.push(message);
+            if (message.type === "session.update") {
+              window.syntheticMicEnabledBeforeProfile = track.enabled;
+              window.syntheticGreetedBeforeProfile = window.syntheticSent.some(item => item.type === "response.create");
+              queueMicrotask(() => this.channel.onmessage?.({data:JSON.stringify({type:"session.updated", session:message.session})}));
+            }
+          }, close() {}};
+          return this.channel;
+        }
         async createOffer() { return {type:"offer", sdp:"v=0\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111\r\n"}; }
         async setLocalDescription() {}
         async setRemoteDescription() {
@@ -62,6 +73,9 @@ const {chromium} = require("playwright");
     await page.waitForFunction(() => window.syntheticSent.some((item) => item.type === "response.create"));
     assert.equal(await page.evaluate(() => window.syntheticSent[0].type), "session.update");
     assert.equal(await page.evaluate(() => window.syntheticSent[0].session.max_output_tokens), 2048);
+    assert.equal(await page.evaluate(() => window.syntheticSent[0].session.instructions.includes("ho-so-ai-intake-v1")), true);
+    assert.equal(await page.evaluate(() => window.syntheticMicEnabledBeforeProfile), false);
+    assert.equal(await page.evaluate(() => window.syntheticGreetedBeforeProfile), false);
     await page.evaluate(() => {
       const emit = (type, extra = {}) => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type, ...extra})});
       emit("input_audio_buffer.speech_started");

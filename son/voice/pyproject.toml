@@ -16,4 +16,4 @@ audio = ["httpx>=0.27,<1"]
 where = ["src"]
 
 [tool.setuptools.package-data]
-voice_app = ["static/*"]
+voice_app = ["static/*", "project_profile.json"]
