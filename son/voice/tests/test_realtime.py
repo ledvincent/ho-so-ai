@@ -43,7 +43,7 @@ class RealtimeApiTests(unittest.TestCase):
             self.assertEqual(result.status_code, 200)
             self.assertEqual(result.text, ANSWER)
             self.assertNotIn("rtc_", result.text)
-            self.assertEqual(result.headers["x-call-max-seconds"], "180")
+            self.assertEqual(result.headers["x-call-max-seconds"], "480")
             self.assertEqual(a.post("/api/voice/realtime", headers=HEADERS, content=OFFER).status_code, 429)
             b.post("/api/voice/session")
             b.delete("/api/voice/realtime")

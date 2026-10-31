@@ -1,11 +1,15 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+Current standalone milestone, SDK interface, evidence and human microphone
+scenarios: [STANDALONE-VOICE-HANDOFF.md](STANDALONE-VOICE-HANDOFF.md).
+The older modes below are historical diagnostics, not the connected RAG flow.
+
 ## Restored local backend on this machine
 
 Vincent's supplied bundle has been restored in WSL to PostgreSQL 16 with
 pgvector, port 55432, database `hoso_kim_demo`. Four direct source lookups and
-an HTTP clarification query pass. Full vector search awaits completion and
-digest verification of the BGE-M3 download.
+an HTTP clarification query pass. BGE-M3 is installed with the expected digest
+`7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab`.
 
 To activate answer generation, run in an interactive PowerShell terminal:
 
@@ -22,7 +26,8 @@ Restoration evidence and remaining checks: `LOCAL-VINCENT-RUNTIME.md`.
 
 ## Vincent's current RAG API: connected-mode implementation
 
-The `7c78ec4` contract adds `choices`, signed `retrieval_state`, selected
+The latest inspected contract at `61b99f3` is compatible with the running
+`7c78ec4` API. It includes `choices`, signed `retrieval_state`, selected
 `procedure_code` and `documents`. The new consumer preserves signed state and the
 last four conversational messages **server-side** per voice cookie. No token is
 returned to the voice model. It handles clarification IDs, explicit procedure
@@ -49,21 +54,23 @@ example, follow with “What documents do I need?” or explicitly change the re
 to a new visa. It never silently treats an incomplete spoken list as complete.
 Personal profile access, forms and delivery remain separate integrations.
 
-Validation: 62 offline Python tests and mocked browser coverage for ordinary,
-fixture and RAG modes. Signed-state continuity, wrong choices, missing citations,
-409 invalidation, cancellation and session isolation have offline coverage.
-No real RAG or live voice/RAG validation has run: its deployed URL is still
-unknown in this chat. This implementation is ready for that verification, not
-claimed live. Source-readiness enforcement remains upstream; citation membership
+Validation and precise live observations are recorded in the current handoff.
+Signed-state continuity, wrong choices, missing citations, 409 invalidation,
+cancellation, privacy rejection and session isolation have offline coverage.
+The real English HTTP journey passes against 8004 through the voice gateway.
+Source-readiness enforcement remains upstream; citation membership
 alone is not proof of legal correctness or human approval. The current chat
 response also does not establish the shared pinned checklist/report contract.
 
-RAG timeout is 125 seconds server-side and 130 seconds client-side, bounded by the
-existing three-minute call lease; no automatic retries. Interrupting a pending
-query aborts it. A disconnected lookup invalidates its server conversation so a
-new call may be needed. No transcripts, signed state or error bodies are logged.
-Questions sent upstream must be general and non-personal: there is no automatic
-PII redaction layer. The provider receives the question and bounded history.
+RAG timeout is 180 seconds server-side and 185 seconds client-side. Calls last
+at most eight minutes, with at most 12 RAG attempts per session; no automatic
+retries. Interrupting a pending query cancels it without deleting the previous
+completed context. Hangup releases the microphone, audio and both sessions.
+No transcripts, signed state or provider error bodies are logged.
+The voice prompt strips unnecessary personal values. A conservative server gate
+blocks recognizable identifiers/contact details rather than forwarding them.
+This is not comprehensive PII detection: general fictional questions only.
+Original microphone audio still reaches OpenAI while the call is connected.
 
 ## Try the fictional document API inside a voice call
 
@@ -242,7 +249,7 @@ Talk normally, pause for the agent's reply, or interrupt it by speaking. **End
 call** stops the microphone/peer and requests server hangup. If autoplay is
 blocked, **Enable sound** resumes it; End call remains available at the top.
 Nothing connects or transmits mic audio before the call button. Calls have a
-three-minute demo limit (also limited by public-session expiry). Use fictional
+eight-minute demo limit (also limited by public-session expiry). Use fictional
 needs, and headphones if speaker echo causes false interruptions.
 
 `RealtimeVoiceClient` in `/realtime-client.js` is headless for Kim's product UI.

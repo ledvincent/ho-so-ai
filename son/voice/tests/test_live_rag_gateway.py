@@ -14,6 +14,31 @@ finally:
     sys.path.pop(0)
 
 class LiveGatewayTests(unittest.TestCase):
+    def test_gateway_cookies_isolate_histories_and_new_call_resets_context(self):
+        received = []
+        tokens = []
+        def backend(request):
+            received.append(json.loads(request.content))
+            return httpx.Response(200,json={"status":"insufficient_context","answer":"Synthetic missing context","retrieval_state":"signed-context"})
+        def voice(request):
+            tokens.append(len(tokens))
+            return httpx.Response(200,json={},headers={"set-cookie":f"hoso_public_voice=synthetic_token_123456789_{len(tokens)}; Path=/api/voice; HttpOnly; SameSite=strict"})
+        app=create_app("https://example.org",transport=httpx.MockTransport(backend),voice_transport=httpx.MockTransport(voice))
+        with TestClient(app,headers={"Origin":"http://127.0.0.1:8003"}) as a, TestClient(app,headers={"Origin":"http://127.0.0.1:8003"}) as b:
+            a.post("/api/voice/session")
+            b.post("/api/voice/session")
+            a.post("/api/voice/rag",json={"question":"First fictional question"})
+            b.post("/api/voice/rag",json={"question":"Another fictional question"})
+            self.assertEqual(received[-1]["history"], [])
+            self.assertNotIn("retrieval_state",received[-1])
+            a.post("/api/voice/rag",json={"question":"Same procedure follow up"})
+            self.assertEqual(received[-1]["retrieval_state"], "signed-context")
+            a.delete("/api/voice/session")
+            a.post("/api/voice/session")
+            a.post("/api/voice/rag",json={"question":"A fresh question"})
+            self.assertEqual(received[-1]["history"], [])
+            self.assertNotIn("retrieval_state",received[-1])
+
     def test_session_origin_state_and_no_fixture_fallback(self):
         received=[]
         def backend(request):
@@ -33,5 +58,7 @@ class LiveGatewayTests(unittest.TestCase):
             self.assertEqual(client.post("/api/voice/fixture-document",json={"procedure_code":"1.001146"}).status_code,404)
             self.assertEqual(client.post("/assistant/chat",json={}).status_code,404)
             self.assertEqual(client.post("/api/voice/rag",json={"question":"Extend my stay"},headers={"Origin":"http://evil.example"}).status_code,403)
+            self.assertEqual(client.delete("/api/voice/realtime",headers={"Origin":"http://evil.example"}).status_code,403)
+            self.assertEqual(client.post("/api/voice/rag",json={"question":"Still my procedure"}).status_code,200)
             client.delete("/api/voice/realtime")
             self.assertEqual(client.post("/api/voice/rag",json={"question":"Extend my stay"}).status_code,401)

@@ -1,5 +1,25 @@
 # Local Vincent runtime — 31 October 2026
 
+## Current verification (supersedes the historical setup notes below)
+
+API 8004 is running after Son's private key entry. `/assistant/setup` reports
+generation configured and index ready. Installed BGE-M3 digest matches
+`7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab`.
+The bounded English journey through gateway 8003 passed clarification, exact
+choice ID, selected code `1.001146`, sourced document cards and a sourced
+processing-time follow-up. See `STANDALONE-VOICE-HANDOFF.md` for current results.
+
+An initial generation returned 502. The private launcher now exposes only the
+provider HTTP status and an allowlisted error code at `/voice-runtime/diagnostics`.
+After Son restarted it, provider status was 200. The original 502 cause is not
+known; it is not claimed to be a code fix. This wrapper does not alter upstream
+source or expose provider bodies, credentials, questions or signed state.
+
+The live runtime remains pinned at `7c78ec4a731a2200d834f40e530eb0f2b5b9d38e`.
+The fetched Vincent head `61b99f37dbb79409dba8a6d4027ce023a1dcf5c4` has compatible
+chat fields; removed demo/form-example routes are unused by voice. No database,
+index or upstream runtime was reinstalled in this task.
+
 ## Update: bundle restored locally
 
 User supplied root `kim-backend-demo.zip`. Its 400-entry manifest was checked:

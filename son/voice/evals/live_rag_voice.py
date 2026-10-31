@@ -1,6 +1,5 @@
 """Voice gateway for a separately running Vincent API. No credential loading."""
 import argparse
-import asyncio
 from http.cookies import SimpleCookie
 import time
 from fastapi import HTTPException, Request
@@ -23,6 +22,8 @@ def create_live_app(assistant_url, *, transport=None, voice_transport=None):
 
     @app.middleware("http")
     async def lifecycle(request, call_next):
+        if request.method in {"POST", "DELETE"} and request.headers.get("origin") not in {"http://127.0.0.1:8003", "http://localhost:8003"}:
+            return await call_next(request)  # Let the origin gate reject before mutation.
         now = time.monotonic()
         for token, (created, _) in list(conversations.items()):
             if now-created > 600:
@@ -62,21 +63,12 @@ def create_live_app(assistant_url, *, transport=None, voice_transport=None):
                 raise ValueError()
         except (ValueError, KeyError, TypeError):
             raise HTTPException(422) from None
-        task = asyncio.create_task(entry[1].ask(question, clarification_answer=choice, reset=args.get("reset", False)))
-        try:
-            while not task.done():
-                await asyncio.wait({task}, timeout=0.25)
-                if conversations.get(token) is not entry or await request.is_disconnected():
-                    task.cancel()
-                    # A disconnected request must not leave a newly committed
-                    # but unheard selection available to the next turn.
-                    if conversations.get(token) is entry:
-                        conversations.pop(token, None)
-                    raise HTTPException(409, "voice_turn_cancelled")
-            return await task
-        finally:
-            if not task.done():
-                task.cancel()
+        async def cancelled():
+            return conversations.get(token) is not entry or await request.is_disconnected()
+        # Cancellation is checked before state commits, under the conversation
+        # lock. Keep the last completed context so the next spoken turn works.
+        return await entry[1].ask(question, clarification_answer=choice,
+                                 reset=args.get("reset", False), cancelled=cancelled)
     # The concrete route precedes the diagnostic gateway's allowlisted fallback.
     app.router.routes.insert(0, app.router.routes.pop())
     return app

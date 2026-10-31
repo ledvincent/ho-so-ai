@@ -324,6 +324,7 @@ async function realtimeHarness() {
   const $ = (id) => document.getElementById(id);
   const language = new URLSearchParams(location.search).get("language") === "en" ? "en" : "vi";
   const en = language === "en";
+  const ragMode = new URLSearchParams(location.search).get("documents") === "rag";
   const consent = $("audio-consent");
   const call = $("microphone");
   let client, active = false, blocked = false;
@@ -334,6 +335,9 @@ async function realtimeHarness() {
   document.querySelector(".session-heading h2").textContent = en ? "Live voice call · English" : "Cuộc gọi trực tiếp · Tiếng Việt";
   $("candidate-title").textContent = en ? "Just talk." : "Bạn cứ nói nhé.";
   $("candidate-description").textContent = en ? "No recording or Send button. You can interrupt the agent. Official data is not connected." : "Không cần ghi âm rồi gửi. Bạn có thể ngắt lời trợ lý. Dữ liệu chính thức chưa được kết nối.";
+  if (ragMode) $("candidate-description").textContent = en
+    ? "Live document backend selected. Describe your goal; the agent will clarify it. Sources appear below each lookup."
+    : "Đã chọn kết nối kho tài liệu thật. Hãy nói nhu cầu để trợ lý hỏi rõ. Nguồn xuất hiện sau mỗi lần tra cứu.";
   consent.parentElement.lastChild.textContent = en
     ? " I agree to a live AI call: microphone audio and connection data go to OpenAI while connected. Calls may incur charges. Use fictional needs, no personal data."
     : " Tôi đồng ý gọi AI trực tiếp: âm thanh micro và dữ liệu kết nối được gửi đến OpenAI khi đang gọi. Có thể mất phí. Chỉ thử nhu cầu giả định, không dùng dữ liệu cá nhân.";
@@ -346,6 +350,10 @@ async function realtimeHarness() {
     ended: en ? "Call ended. Microphone released." : "Đã kết thúc. Micro đã tắt.",
     connection_error: en ? "Call failed. Check microphone permission, Realtime model access and API credits." : "Không gọi được. Kiểm tra quyền micro, quyền model Realtime và số dư API.",
     audio_blocked: en ? "Tap Enable sound to hear the call." : "Chọn Bật âm thanh để nghe cuộc gọi.",
+    reconnecting: en ? "Audio connection interrupted; waiting briefly…" : "Kết nối âm thanh bị gián đoạn; đang chờ…",
+    microphone_denied: en ? "Microphone permission denied. Allow it in your browser, then start again." : "Quyền micro bị từ chối. Cho phép trong trình duyệt rồi gọi lại.",
+    microphone_missing: en ? "No microphone found. Connect one, then start again." : "Không tìm thấy micro. Kết nối micro rồi gọi lại.",
+    microphone_busy: en ? "Microphone unavailable. Check other apps, then start again." : "Không dùng được micro. Kiểm tra ứng dụng khác rồi gọi lại.",
   };
   function controls() {
     call.disabled = !client || (!active && !consent.checked);
@@ -364,7 +372,7 @@ async function realtimeHarness() {
     const {RealtimeVoiceClient} = await import("/realtime-client.js");
     client = new RealtimeVoiceClient({
       onState(state) {
-        if (["ended", "connection_error"].includes(state)) { active = false; blocked = false; }
+        if (["ended", "connection_error", "microphone_denied", "microphone_missing", "microphone_busy"].includes(state)) { active = false; blocked = false; }
         if (state === "audio_blocked") blocked = true;
         if (messages[state]) $("status").textContent = blocked ? messages.audio_blocked : messages[state];
         controls();
@@ -373,8 +381,35 @@ async function realtimeHarness() {
         const element = document.createElement("p");
         element.className = "message";
         element.textContent = text;
+        if (text.startsWith("SOURCE: ")) {
+          const split = text.lastIndexOf(" — ");
+          try {
+            const url = new URL(text.slice(split + 3));
+            if (["https:", "http:"].includes(url.protocol) && !url.username && !url.password) {
+              const link = document.createElement("a");
+              link.textContent = text;
+              link.href = url.href;
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+              element.replaceChildren(link);
+            }
+          } catch {}
+        }
         $("messages").appendChild(element);
         element.scrollIntoView({block:"nearest"});
+      },
+      onError({code}) {
+        const descriptions = {
+          privacy_rephrase_required: en ? "Please ask a general question without personal details." : "Vui lòng hỏi chung, không kèm thông tin cá nhân.",
+          rag_http_409: en ? "Document context expired. Please describe your goal again." : "Ngữ cảnh tài liệu đã hết hạn. Vui lòng nói lại nhu cầu.",
+          rag_timeout: en ? "The document check timed out. You can ask to retry." : "Tra cứu quá thời gian. Bạn có thể yêu cầu thử lại.",
+          response_truncated: en ? "The spoken response was incomplete. Ask the agent to continue." : "Câu trả lời chưa hoàn tất. Bạn có thể yêu cầu nói tiếp.",
+        };
+        if (messages[code]) return;
+        const element = document.createElement("p");
+        element.className = "message error";
+        element.textContent = descriptions[code] || (en ? "This turn could not be completed. No verified answer is available; try again or restart the call." : "Chưa hoàn tất lượt này. Chưa có câu trả lời được xác minh; thử lại hoặc gọi lại.");
+        $("messages").appendChild(element);
       },
     });
     call.onclick = async () => {
@@ -385,9 +420,10 @@ async function realtimeHarness() {
       }
       if (active) { await client.stop(); return; }
       active = true;
+      $("messages").replaceChildren();
       controls();
       try { await client.start({language, consent:consent.checked, fixtureDocuments:new URLSearchParams(location.search).get("documents") === "fixture", ragDocuments:new URLSearchParams(location.search).get("documents") === "rag"}); }
-      catch { active = false; $("status").textContent = messages.connection_error; controls(); }
+      catch { active = false; controls(); }
     };
     $("restart").onclick = () => client.stop();
     consent.onchange = () => { if (!consent.checked) client.stop(); controls(); };

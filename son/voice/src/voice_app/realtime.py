@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from .sessions import MissingSession
 from .project_profile import project_instructions
 
-CALL_SECONDS = 180
+CALL_SECONDS = 480
 REPLY_TOKEN_BUDGET = 2048
 
 
