@@ -70,7 +70,9 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
       if (!codePattern.test(code)) throw invalid();
       const data = object(await request(`/api/discovery/procedures/${code}`, signal));
       if (data.code !== code || typeof data.name !== 'string' || !data.name || (expectedName !== undefined && data.name !== expectedName) || !Array.isArray(data.forms)) throw invalid();
-      const candidate: Candidate = { code, name: data.name };
+      const rawSections = data.document_json?.sections;
+      const sourceSections = Array.isArray(rawSections) && rawSections.length <= 200 ? rawSections.filter((section: any) => section && typeof section.heading === 'string' && typeof section.text_verbatim === 'string').map((section: any) => ({ heading: section.heading, text: section.text_verbatim })) : undefined;
+      const candidate: Candidate = { code, name: data.name, ...(typeof data.name_en === 'string' && data.name_en.trim() ? { nameEn: data.name_en } : {}) };
       const provenance = [`Danh mục Vincent · ${data.code}`];
       if (safeSourceUrl(data.source_url)) provenance.push(`Nguồn: ${data.source_url}`);
       if (typeof data.sha256 === 'string' && hashPattern.test(data.sha256)) provenance.push(`Bản chụp nguồn: ${data.sha256}`);
@@ -90,7 +92,7 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
         if (typeof item.revision_reference === 'string') provenance.push(`Phiên bản: ${item.revision_reference}`);
         if (typeof item.review_status === 'string') provenance.push(`Trạng thái mẫu: ${item.review_status}`);
       }
-      return { candidate, forms, provenance, fixture: false, factsReady, requirements: readRequirements(data.requirements, formIds), sourceVersion: typeof data.sha256 === 'string' ? data.sha256 : undefined, sourceUrl: safeSourceUrl(data.source_url) ? data.source_url : undefined, fetchedAt: typeof data.fetched_at === 'string' ? data.fetched_at : undefined, otherForms };
+      return { candidate, forms, provenance, fixture: false, factsReady, requirements: readRequirements(data.requirements, formIds), sourceVersion: typeof data.sha256 === 'string' ? data.sha256 : undefined, sourceUrl: safeSourceUrl(data.source_url) ? data.source_url : undefined, fetchedAt: typeof data.fetched_at === 'string' ? data.fetched_at : undefined, otherForms, sourceSections };
   }
   return {
     async chat(message, history, procedureCode, signal, turn) {
@@ -104,7 +106,7 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
       if (query.trim().length < 2 || query.trim().length > 1000) throw invalid();
       return readSearch(await request('/api/discovery/search', signal, { query: query.trim() }));
     },
-    async detail(candidate, signal) { return detailCode(candidate.code, signal, candidate.name); },
+    async detail(candidate, signal) { const detail = await detailCode(candidate.code, signal, candidate.name); return { ...detail, candidate: { ...detail.candidate, ...(candidate.nameEn ? { nameEn: candidate.nameEn } : {}) } }; },
     detailCode,
     async setup(signal) {
       const data = object(await request('/api/discovery/setup', signal));
