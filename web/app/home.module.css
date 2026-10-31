@@ -1,0 +1,24 @@
+.main{max-width:1240px;margin:0 auto;padding:58px 5% 24px}
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);gap:55px;align-items:center}
+.intro h1{font-size:clamp(36px,4.3vw,57px);line-height:1.12;letter-spacing:-2px;font-weight:600;margin:18px 0 22px}
+.intro>p:not(:first-child){font-size:15px;line-height:1.8;max-width:470px;color:var(--muted)}
+.features{display:flex;flex-direction:column;gap:12px;margin-top:28px;font-size:12px;color:var(--jade)}
+.features span{display:flex;gap:13px}.features b{font-size:9px;font-weight:500;align-self:center}
+.welcome{background:white;border:1px solid var(--line);padding:32px;border-radius:12px;box-shadow:0 12px 40px #28332705}
+.welcome>svg{display:block;color:var(--primary);width:46px;height:46px;margin-bottom:24px}
+.welcome h2{font-size:25px;letter-spacing:-.7px;line-height:1.3;margin:0 0 12px}
+.welcome p{font-size:13px;color:var(--muted);line-height:1.8}
+.welcome a{width:100%;margin-top:17px}
+.welcome .manual{margin-top:12px;background:white;color:var(--ink);font-size:12px;font-weight:500}
+.welcome .fine{border-top:1px solid var(--line);padding-top:17px;margin:23px 0 0;font-size:10px}
+.sectionHead{border-top:1px solid var(--line);margin:58px 0 24px;padding-top:28px;display:flex;justify-content:space-between;align-items:baseline;gap:15px}
+.sectionHead h2{font-size:22px;letter-spacing:-.6px;margin:0}.sectionHead p{font-size:11px;color:var(--muted);margin:0}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.step{padding:24px;border:1px solid var(--line);background:white;border-radius:9px}
+.step>span{display:block;font-size:10px;letter-spacing:1px;color:var(--jade);margin-bottom:25px}
+.step h3{font-size:16px;margin:0 0 12px;letter-spacing:-.3px}.step p{font-size:12px;color:var(--muted);line-height:1.8;margin:0}
+.note{display:flex;align-items:flex-start;gap:12px;padding:18px 20px;background:var(--surface);border-radius:7px;margin-top:25px;font-size:11px;line-height:1.8;color:var(--muted)}
+.note svg{flex-shrink:0;color:var(--jade);margin-top:3px}.note p{margin:0}
+@media(max-width:1100px){.hero{gap:30px}.welcome{padding:25px}.steps{gap:14px}.step{padding:20px}.intro h1{font-size:41px}}
+@media(max-width:950px){.hero{grid-template-columns:1fr}.intro{max-width:570px}.welcome{max-width:570px}.intro h1{font-size:45px}.steps{grid-template-columns:1fr}.step>span{margin-bottom:12px}.step{padding:22px}.sectionHead{margin-top:38px}}
+@media(max-width:760px){.main{padding:32px 20px 16px}.intro h1{font-size:37px;letter-spacing:-1.3px}.intro>p:not(:first-child){font-size:13px}.features{font-size:11px;margin-top:22px}.welcome{padding:25px}.welcome h2{font-size:24px}.sectionHead{align-items:flex-start;flex-direction:column;gap:7px}.sectionHead h2{font-size:21px}.note{padding:16px;font-size:10px}}

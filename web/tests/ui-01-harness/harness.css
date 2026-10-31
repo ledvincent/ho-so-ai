@@ -1,0 +1,15 @@
+/* Test-only defaults. Do not import the production Tailwind/global build. */
+:root { --primary:#9F2430;--jade:#245C4B;--ink:#282C2B;--muted:#59635F;--paper:#FFFCF7;--surface:#F2F5F1;--line:#D8DED6;--green:var(--primary);font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper); }
+* { box-sizing:border-box; } body { margin:0; } button,input,textarea,select { font:inherit; } a { color:inherit;text-decoration:none; } :focus-visible { outline:3px solid #245C4B;outline-offset:3px; }
+.eyebrow { color:var(--jade);font-size:10px;font-weight:600;letter-spacing:1.4px; }
+.harness-ribbon { position:sticky;top:0;z-index:100;background:#482100;color:#fff3d7;padding:12px 18px;text-align:center;font-size:12px;font-weight:700;letter-spacing:1px;line-height:1.5; }
+.harness-controls { padding:24px max(20px,calc((100vw - 1180px)/2));background:#fff2cb;border-bottom:3px solid #a56809; }
+.harness-title h1 { font-size:23px;line-height:1.3;margin:0 0 9px; }.harness-title p { margin:0 0 18px;max-width:900px;font-size:12px;line-height:1.7;color:#594921; }
+.harness-selectors { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px; }.harness-selectors label { display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700; }.harness-selectors select { min-height:44px;max-width:100%;padding:8px;border:1px solid #a78a4d;border-radius:4px;background:#fffdf7;font-size:14px; }
+.harness-checkbox { display:flex;align-items:flex-start;gap:10px;font-size:12px;line-height:1.7;margin:17px 0; }.harness-checkbox input { width:18px;height:18px;flex-shrink:0;margin:1px 0 0; }
+.harness-controls button { min-height:38px;padding:8px 11px;border:1px solid #9c7c3c;border-radius:4px;color:#482100;background:#fffdf7;font-size:11px;line-height:1.5;cursor:pointer; }.harness-controls button:hover { background:#fff8e8; }
+.harness-events { display:flex;flex-wrap:wrap;gap:8px; }.harness-pending { border:1px solid #a56809;border-radius:4px;padding:14px;margin-top:16px;background:#fffbec; }.harness-pending h2 { font-size:14px;margin:0 0 10px; }.harness-pending>div { display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;margin-top:8px; }
+.harness-log { margin-top:15px;font-size:11px;line-height:1.65; }.harness-log summary { cursor:pointer; }.harness-log ol { margin:10px 0;padding-left:25px;overflow-wrap:anywhere; }.harness-expectations { font-size:11px;line-height:1.7;color:#594921;margin:15px 0 0; }
+.harness-product { border:5px solid #e6c879;border-top:0;min-height:50vh; }
+@media(max-width:650px) { .harness-selectors { grid-template-columns:minmax(0,1fr); }.harness-controls { padding:22px 16px; }.harness-ribbon { font-size:9px;padding:9px; }.harness-selectors select { font-size:16px; }.harness-product { border-width:3px; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important;transition-duration:.01ms!important; } }

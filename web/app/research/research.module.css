@@ -1,0 +1,77 @@
+.shell { max-width: 1180px; margin: 0 auto; padding: 46px 5% 40px; }
+.heading { max-width: 720px; margin-bottom: 30px; }
+.eyebrow { color: var(--jade); font-size: 10px; font-weight: 700; letter-spacing: 1.6px; margin: 0 0 14px; }
+.heading h1 { font-size: clamp(33px, 4vw, 47px); font-weight: 600; line-height: 1.15; letter-spacing: -1.5px; margin: 0 0 17px; }
+.heading > p:last-child { max-width: 610px; font-size: 14px; line-height: 1.8; color: var(--muted); margin: 0; }
+.demoNotice { display: flex; align-items: flex-start; gap: 12px; border: 1px solid var(--line); background: var(--surface); padding: 17px 20px; border-radius: 8px; margin: 0 0 34px; }
+.demoNotice > svg { flex-shrink: 0; color: var(--jade); margin-top: 2px; }
+.demoNotice h2 { font-size: 13px; line-height: 1.6; font-weight: 600; margin: 0 0 4px; }
+.demoNotice p { color: var(--muted); font-size: 12px; line-height: 1.75; margin: 0; }
+.layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(265px, 1fr); align-items: start; gap: 28px; }
+.guideSection, .sidebar { min-width: 0; }
+.sectionHeading { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 18px; }
+.sectionHeading h2 { font-size: 20px; font-weight: 600; letter-spacing: -.5px; margin: 0; }
+.sectionHeading > span { color: var(--muted); font-size: 8px; letter-spacing: 1px; line-height: 1.6; }
+.searchArea label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 8px; }
+.searchBox { display: flex; align-items: center; gap: 10px; padding: 0 12px 0 15px; border: 1px solid #c7d0c8; border-radius: 7px; background: white; }
+.searchBox > svg { flex-shrink: 0; color: var(--muted); }
+.searchBox input { width: 100%; min-width: 0; min-height: 48px; padding: 10px 0; border: 0; background: transparent; font-size: 16px; line-height: 1.6; color: var(--ink); }
+.searchBox input::placeholder { font-size: 13px; color: #707971; }
+.searchBox input:focus-visible { outline-offset: 2px; }
+.searchBox input::-webkit-search-cancel-button { -webkit-appearance: none; }
+.clearButton { display: grid; place-items: center; flex-shrink: 0; width: 32px; height: 36px; border: 0; background: transparent; color: var(--muted); border-radius: 4px; cursor: pointer; }
+.clearButton:hover { background: var(--surface); }
+.searchArea > p { color: var(--muted); font-size: 10px; line-height: 1.75; margin: 9px 0 0; }
+.resultCount { color: var(--muted); font-size: 11px; margin: 21px 0 12px; }
+.results { display: grid; gap: 16px; }
+.guideCard { min-width: 0; padding: 24px; background: white; border: 1px solid var(--line); border-radius: 10px; }
+.guideHeading { display: flex; align-items: center; gap: 13px; }
+.guideIcon { display: grid; place-items: center; flex-shrink: 0; width: 43px; height: 43px; border-radius: 8px; background: var(--surface); color: var(--jade); }
+.topic { color: var(--muted); font-size: 8px; letter-spacing: 1.1px; line-height: 1.6; margin: 0 0 4px; }
+.guideHeading h3 { font-size: 20px; font-weight: 600; line-height: 1.35; letter-spacing: -.4px; margin: 0; }
+.description { color: var(--muted); font-size: 13px; line-height: 1.8; margin: 17px 0 12px; }
+.details { border-top: 1px solid var(--line); }
+.details summary { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 46px; padding: 11px 0; color: var(--ink); font-size: 12px; font-weight: 600; line-height: 1.65; cursor: pointer; list-style: none; }
+.details summary::-webkit-details-marker { display: none; }
+.details summary > svg { flex-shrink: 0; color: var(--muted); }
+.details[open] summary > svg { transform: rotate(180deg); }
+.details ol { padding-left: 20px; margin: 3px 0 18px; color: var(--muted); font-size: 12px; line-height: 1.85; }
+.details li { padding-left: 5px; margin-bottom: 8px; }
+.details li::marker { color: var(--jade); font-weight: 600; }
+.guideLink { min-height: 36px; display: inline-flex; align-items: center; gap: 9px; color: var(--primary); font-size: 12px; font-weight: 600; line-height: 1.65; text-decoration: underline; text-underline-offset: 4px; }
+.guideLink > svg { flex-shrink: 0; }
+.sidebar { display: grid; gap: 20px; }
+.sourceCard, .nextCard { border: 1px solid var(--line); border-radius: 10px; padding: 26px; }
+.sourceCard { background: var(--surface); }
+.sourceIcon { display: grid; place-items: center; width: 47px; height: 47px; background: #e3ece5; color: var(--jade); border-radius: 9px; margin-bottom: 22px; }
+.unavailable { display: inline-block; font-size: 9px; font-weight: 600; line-height: 1.6; color: var(--muted); padding: 4px 7px; border: 1px solid #cad4cb; border-radius: 4px; margin-bottom: 13px; }
+.sourceCard h2, .nextCard h2 { font-size: 23px; font-weight: 600; line-height: 1.3; letter-spacing: -.6px; margin: 0; }
+.sourceCard p, .nextCard p:not(.eyebrow) { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 15px 0 0; }
+.sourceCard .sourceNote { border-top: 1px solid var(--line); padding-top: 15px; font-size: 11px; }
+.nextCard { background: white; }
+.nextCard h2 { font-size: 21px; }
+.primary, .secondary { min-height: 44px; padding: 11px 14px; border: 1px solid var(--primary); border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; cursor: pointer; font-size: 12px; font-weight: 600; line-height: 1.65; text-align: center; }
+.primary { width: 100%; background: var(--primary); color: white; margin-top: 21px; }
+.primary > svg { flex-shrink: 0; }
+.primary:hover { background: #84202a; }
+.secondary { background: white; color: var(--ink); border-color: #cbd3cb; }
+.secondary:hover { background: var(--surface); }
+.empty { padding: 35px 25px; border: 1px dashed #c7d0c8; border-radius: 9px; text-align: center; }
+.empty > svg { color: var(--jade); margin-bottom: 13px; }
+.empty h3 { font-size: 19px; font-weight: 600; line-height: 1.45; margin: 0; }
+.empty p { max-width: 400px; margin: 12px auto 20px; font-size: 12px; line-height: 1.8; color: var(--muted); }
+@media (max-width: 900px) { .layout { grid-template-columns: minmax(0, 1fr); } .sidebar { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media (max-width: 600px) {
+  .shell { padding: 30px 20px 24px; }
+  .heading { margin-bottom: 25px; }
+  .heading h1 { letter-spacing: -1px; }
+  .heading > p:last-child { font-size: 13px; }
+  .demoNotice { padding: 16px; margin-bottom: 28px; }
+  .sidebar { grid-template-columns: minmax(0, 1fr); }
+  .guideCard, .sourceCard, .nextCard { padding: 21px 18px; }
+  .guideHeading { gap: 11px; }
+  .guideHeading h3 { font-size: 19px; }
+  .description { font-size: 12px; }
+  .sectionHeading > span { font-size: 8px; letter-spacing: .6px; }
+  .empty { padding: 28px 18px; }
+}

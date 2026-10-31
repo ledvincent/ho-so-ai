@@ -1,0 +1,16 @@
+{
+  "purpose": "Three-field document-local UI test. Not an approved production mapping.",
+  "fixture_sha256": "ba72c63d656c2b3b0702faaef3f7a51c0356847631f16b47e7c354b8f5965444",
+  "page_points": [595.32, 842.04],
+  "coordinate_system": "Top-left origin; rectangles in PDF points, [left, top, width, height].",
+  "mapped_page_zero_based": 0,
+  "full_name": [225, 226, 290, 14],
+  "birth_day": [190, 246, 47, 13],
+  "birth_month": [246, 246, 44, 13],
+  "birth_year": [302, 246, 83, 13],
+  "personal_id_digit_centers_x": [252.36, 274.44, 296.52, 318.60, 340.62, 362.64, 384.72, 406.80, 428.82, 450.84, 472.92, 495.00],
+  "personal_id_digit_center_y": 270.54,
+  "overlay_font": "Times New Roman, 11pt equivalent for name/date; 12pt for digits",
+  "page_2": "Unchanged official instructions; always included in printing.",
+  "production_approval": false
+}

@@ -1,22 +1,35 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import Link from 'next/link';
-import { ArrowDownToLine, ArrowLeft, ArrowRight, Check, ChevronRight, CircleCheck, FileText, LoaderCircle, LockKeyhole, PenLine, RefreshCw, ShieldCheck, UserRound } from 'lucide-react';
-import { EMPTY_PROFILE, type ProfileFields, type ProfileRecord } from '@/lib/contracts';
+import { ArrowDownToLine, ArrowLeft, ArrowRight, CircleCheck, FileText, LoaderCircle, PenLine, RefreshCw, ShieldCheck, UserRound } from 'lucide-react';
+import { EMPTY_PROFILE, type ProfileFields } from '@/lib/contracts';
 import { canDownload, captureRequest, clearDraft, editDraft, isCurrent, newDraft, prefillDraft, validateProfile, type Draft, type FieldId } from '@/lib/forms/draft';
+import { readProfile } from '@/components/portal/profile-state';
+import { listenForProfilePageLifecycle } from '@/components/portal/page-lifecycle';
+import { BrandMark } from '@/components/ui/brand';
+import { DraftChat } from './draft-chat';
 import styles from './form-workbench.module.css';
 
 type Props = { accountState: 'unconfigured' | 'signed-out' | 'signed-in'; accountKey?: string };
 const fields: { id: FieldId; label: string; placeholder: string; type?: string; wide?: boolean; hint?: string }[] = [
-  { id: 'full_name', label: 'Full name', placeholder: 'As shown on your identity document', wide: true },
-  { id: 'date_of_birth', label: 'Date of birth', placeholder: '', type: 'date' },
-  { id: 'nationality', label: 'Nationality', placeholder: 'Enter your nationality' },
-  { id: 'address', label: 'Residential address', placeholder: 'House number, street, ward and city', wide: true, hint: 'Long addresses wrap onto the next available line.' },
-  { id: 'phone_number', label: 'Phone number', placeholder: '+84 …', type: 'tel' },
-  { id: 'email', label: 'Email address', placeholder: 'you@example.com', type: 'email' },
+  { id: 'full_name', label: 'Họ và tên', placeholder: 'Nhập họ tên giả định', wide: true },
+  { id: 'date_of_birth', label: 'Ngày sinh', placeholder: '', type: 'date' },
+  { id: 'nationality', label: 'Quốc tịch', placeholder: 'Nhập quốc tịch' },
+  { id: 'address', label: 'Địa chỉ', placeholder: 'Số nhà, đường, phường và tỉnh/thành phố', wide: true, hint: 'Địa chỉ dài sẽ xuống dòng trong văn bản.' },
+  { id: 'phone_number', label: 'Số điện thoại', placeholder: '+84 …', type: 'tel' },
+  { id: 'email', label: 'Email', placeholder: 'mau@example.test', type: 'email' },
 ];
 const sample: ProfileFields = { full_name: 'Nguyễn Văn Mẫu', date_of_birth: '1994-05-16', nationality: 'Việt Nam', address: '123 Đường Mẫu, Phường Minh Họa, Thành phố Ví Dụ', phone_number: '+84 000 000 000', email: 'sample@example.test' };
+
+// Translate presentation only; the shared validator and generated limits stay authoritative.
+function vietnameseFieldErrors(values: ProfileFields): Partial<Record<FieldId, string>> {
+  return Object.fromEntries(Object.entries(validateProfile(values)).map(([field, message]) => {
+    const limit = /^Use (\d+) characters or fewer\.$/.exec(message);
+    return [field, limit ? `Tối đa ${limit[1]} ký tự.` : message === 'Use a valid date.' ? 'Nhập ngày hợp lệ.' : message === 'Enter a valid email address.' ? 'Nhập địa chỉ email hợp lệ.' : 'Kiểm tra lại thông tin này.'];
+  }));
+}
 
 export function FormWorkbench({ accountState, accountKey = 'anonymous' }: Props) {
   const [draft, setDraft] = useState<Draft>(newDraft);
@@ -30,9 +43,18 @@ export function FormWorkbench({ accountState, accountKey = 'anonymous' }: Props)
   const pending = useRef<AbortController | null>(null);
   const generation = useRef(0);
   const previousAccount = useRef(accountKey);
-  const errors = { ...validateProfile(draft.values), ...renderErrors };
+  const [activeField, setActiveField] = useState<FieldId | null>('full_name');
+  const [editingField, setEditingField] = useState<FieldId | null>(null);
+  const [changedField, setChangedField] = useState<FieldId | null>(null);
+  const [chatEpoch, setChatEpoch] = useState(0);
+  const [documentMode, setDocumentMode] = useState<'draft' | 'pdf'>('draft');
+  const [expanded, setExpanded] = useState(false);
+  const paperArea = useRef<HTMLDivElement | null>(null);
+  const fieldNodes = useRef<Partial<Record<FieldId, HTMLDivElement | null>>>({});
+  const errors = { ...vietnameseFieldErrors(draft.values), ...renderErrors };
   const valid = Object.keys(errors).length === 0;
   const filled = Object.values(draft.values).filter((value) => value?.trim()).length;
+  const missing = fields.filter(field => !draft.values[field.id]?.trim());
 
   function removePreview() {
     if (previewUrl.current) URL.revokeObjectURL(previewUrl.current);
@@ -40,22 +62,38 @@ export function FormWorkbench({ accountState, accountKey = 'anonymous' }: Props)
   }
   function update(next: Draft) {
     generation.current += 1; pending.current?.abort(); pending.current = null;
-    current.current = next; setDraft(next); removePreview(); setBusy(null); setFailure(''); setNotice(''); setRenderErrors({});
+    current.current = next; setDraft(next); removePreview(); setDocumentMode('draft'); setBusy(null); setFailure(''); setNotice(''); setRenderErrors({});
   }
-  function edit(id: FieldId, value: string) { update(editDraft(current.current, id, value)); }
+  function replaceDraft(next: Draft) { update(next); setChatEpoch(value => value + 1); setEditingField(null); setActiveField('full_name'); setChangedField(null); }
+  function edit(id: FieldId, value: string) { update(editDraft(current.current, id, value)); setChangedField(id); }
+  function selectField(id: FieldId) { setActiveField(id); setEditingField(null); setDocumentMode('draft'); }
+  useEffect(() => {
+    const id = changedField ?? activeField;
+    const node = id && fieldNodes.current[id]; const area = paperArea.current;
+    if (node && area && documentMode === 'draft') {
+      const top = node.getBoundingClientRect().top - area.getBoundingClientRect().top + area.scrollTop - 35;
+      if (top < area.scrollTop || top + node.offsetHeight > area.scrollTop + area.clientHeight) area.scrollTo({ top: Math.max(0, top), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    }
+    if (changedField) { const timer = setTimeout(() => setChangedField(null), 1500); return () => clearTimeout(timer); }
+  }, [activeField, changedField, documentMode]);
   useEffect(() => {
     if (previousAccount.current !== accountKey) {
       previousAccount.current = accountKey;
-      update(clearDraft(current.current));
+      replaceDraft(clearDraft(current.current));
     }
-  }, [accountKey]); // A changed authenticated identity clears the old user's draft.
+  }, [accountKey]);
   useEffect(() => {
-    const clear = () => {
-      generation.current += 1; pending.current?.abort(); removePreview();
-      const next = clearDraft(current.current); current.current = next; setDraft(next); setBusy(null);
+    const stopLifecycle = listenForProfilePageLifecycle(
+      window,
+      // Empty the visible inputs before a page-cache snapshot; clear again on restoration.
+      () => flushSync(() => replaceDraft(clearDraft(current.current))),
+      // Account prefill stays an explicit user action, including after restoration.
+      () => {},
+    );
+    return () => {
+      stopLifecycle(); generation.current += 1; pending.current?.abort();
+      if (previewUrl.current) URL.revokeObjectURL(previewUrl.current);
     };
-    window.addEventListener('pagehide', clear);
-    return () => { generation.current += 1; window.removeEventListener('pagehide', clear); pending.current?.abort(); if (previewUrl.current) URL.revokeObjectURL(previewUrl.current); };
   }, []);
 
   async function loadAccount() {
@@ -64,17 +102,23 @@ export function FormWorkbench({ accountState, accountKey = 'anonymous' }: Props)
     pending.current?.abort(); const controller = new AbortController(); pending.current = controller;
     setBusy('profile'); setFailure(''); setNotice('');
     try {
-      const response = await fetch('/api/profile', { cache: 'no-store', signal: controller.signal });
+      const response = await fetch('/api/profile', { cache: 'no-store', credentials: 'same-origin', redirect: 'error', signal: controller.signal });
       if (attempt !== generation.current || revision !== current.current.revision) return;
       if (!response.ok) {
-        setFailure(response.status === 501 ? 'Saved profiles are not connected yet. You can enter your details by hand.' : response.status === 404 ? 'Your account has no saved profile yet. Enter your details by hand.' : 'Your saved details could not be loaded. Please sign in again or enter them by hand.');
+        if (response.status === 401) {
+          replaceDraft(clearDraft(current.current));
+          setFailure('Phiên đăng nhập đã kết thúc. Bản nháp đã được xóa trên trang này. Hãy đăng nhập lại để lấy hồ sơ.');
+          return;
+        }
+        setFailure(response.status === 404 ? 'Tài khoản chưa có hồ sơ đã lưu. Bạn có thể nhập dữ liệu giả bằng tay hoặc mở trang hồ sơ.' : 'Chưa thể lấy thông tin đã lưu. Hãy thử lại sau hoặc tiếp tục nhập bằng tay. Các mục đang nhập được giữ nguyên.');
         return;
       }
-      const profile: ProfileRecord = await response.json();
+      const payload: unknown = await response.json();
       if (attempt !== generation.current || revision !== current.current.revision) return;
-      update(prefillDraft(current.current, { ...EMPTY_PROFILE, ...profile.fields }));
-      setNotice('Saved details copied. Changes here apply to this document; your account profile is unchanged.');
-    } catch (error) { if (!(error instanceof DOMException && error.name === 'AbortError') && attempt === generation.current) setFailure('Saved details are unavailable. Your current entries have been kept.'); }
+      const profile = readProfile(payload);
+      replaceDraft(prefillDraft(current.current, profile.fields));
+      setNotice('Đã sao chép thông tin. Chỉnh sửa ở đây chỉ áp dụng cho biểu mẫu, không thay đổi hồ sơ đã lưu.');
+    } catch (error) { if (!(error instanceof DOMException && error.name === 'AbortError') && attempt === generation.current) setFailure('Chưa thể đọc thông tin đã lưu. Các mục đang nhập được giữ nguyên. Hãy thử lại sau.'); }
     finally { if (attempt === generation.current) setBusy(null); }
   }
 
@@ -97,13 +141,13 @@ export function FormWorkbench({ accountState, accountKey = 'anonymous' }: Props)
         const code = error.detail?.code ?? error.code;
         const field = error.detail?.field;
         if (typeof field === 'string' && Object.hasOwn(EMPTY_PROFILE, field)) {
-          setRenderErrors({ [field]: code === 'text_overflow' ? 'This value is too long for the document. Shorten it; it will not be clipped.' : 'Check this value before preparing the document.' });
+          setRenderErrors({ [field]: code === 'text_overflow' ? 'Thông tin quá dài so với vùng điền. Hãy rút gọn; nội dung không bị cắt bớt.' : 'Kiểm tra lại thông tin này trước khi tạo văn bản.' });
         }
         if (response.status === 409) {
           removePreview(); const next = { ...current.current, previewRevision: null, acknowledged: false };
           current.current = next; setDraft(next);
         }
-        setFailure(code === 'text_overflow' ? 'Some text is too long for the document. Shorten it before previewing; nothing has been clipped.' : code === 'unsupported_glyph' ? 'A character cannot be rendered in the document font. Review the highlighted information.' : response.status === 404 || response.status === 503 ? 'The local document renderer is not available. Start the API with synthetic forms enabled.' : response.status === 409 ? 'The form version changed. Refresh your preview and check it again.' : 'The document could not be prepared. Check your entries and try again.');
+        setFailure(code === 'text_overflow' ? 'Một số thông tin quá dài so với vùng điền. Hãy rút gọn trước khi xem lại; nội dung không bị cắt bớt.' : code === 'unsupported_glyph' ? 'Có ký tự chưa thể hiển thị trong văn bản. Hãy kiểm tra mục được đánh dấu.' : response.status === 404 || response.status === 503 ? 'Chức năng tạo văn bản tạm thời chưa khả dụng. Các mục đang nhập được giữ nguyên; hãy thử lại sau.' : response.status === 409 ? 'Phiên bản biểu mẫu đã thay đổi. Hãy cập nhật bản xem trước và kiểm tra lại.' : 'Chưa thể tạo văn bản. Hãy kiểm tra thông tin rồi thử lại.');
         return;
       }
       const blob = await response.blob();
@@ -111,45 +155,53 @@ export function FormWorkbench({ accountState, accountKey = 'anonymous' }: Props)
       if (format === 'preview') {
         removePreview(); const url = URL.createObjectURL(blob); previewUrl.current = url; setPreview(url);
         const next = { ...current.current, previewRevision: snapshot.revision, acknowledged: false };
-        current.current = next; setDraft(next); setNotice('Preview updated. Check the document before downloading.');
+        current.current = next; setDraft(next); setDocumentMode('pdf'); setExpanded(true); setNotice('Đã cập nhật bản xem PDF. Kiểm tra thông tin trước khi tải xuống.');
       } else {
         const url = URL.createObjectURL(blob); const anchor = document.createElement('a');
-        anchor.href = url; anchor.download = 'ho-so-ai-synthetic-review.pdf'; anchor.click();
-        window.setTimeout(() => URL.revokeObjectURL(url), 1000); setNotice('Synthetic PDF downloaded. No information has been saved to your account.');
+        anchor.href = url; anchor.download = 'ho-so-ai-ban-thu-nghiem.pdf'; anchor.click();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000); setNotice('Đã tải PDF thử nghiệm. Thông tin không được lưu vào hồ sơ tài khoản.');
       }
-    } catch (error) { if (!(error instanceof DOMException && error.name === 'AbortError') && attempt === generation.current) setFailure('The document service could not be reached. Your entries are still in this tab.'); }
+    } catch (error) { if (!(error instanceof DOMException && error.name === 'AbortError') && attempt === generation.current) setFailure('Chưa thể kết nối dịch vụ tạo văn bản. Các mục đang nhập vẫn được giữ trong thẻ này. Hãy thử lại sau.'); }
     finally { if (attempt === generation.current) setBusy(null); }
   }
 
-  return <main className={styles.main}>
-    <div className={styles.breadcrumb}><Link href="/">Home</Link><ChevronRight size={13} /><span>Prepare a form</span></div>
-    <div className={styles.heading}><div><p className="eyebrow">A little preparation goes a long way</p><h1>Your details.<br className={styles.mobileBreak} /> Clearly on paper.</h1><p>Enter your information, check the preview, then download your document.</p></div><span className={styles.draftBadge}><span /> Draft · only in this tab</span></div>
-    <div className={styles.demoNotice}><FileText size={17} /><span><strong>Synthetic form preview.</strong> Use sample data only. Official CT01 export will be enabled after its exact template is reviewed.</span><button type="button" onClick={() => update({ ...prefillDraft(current.current, sample), source: 'manual' })}>Load sample <ArrowRight size={13} /></button></div>
+  return <main id="main-content" lang="vi" className={styles.main}>
+    <div className={styles.heading}><div><h1>Bản nháp của bạn</h1><p>Trả lời trong chat hoặc chạm vào văn bản để sửa.</p></div><span className={styles.draftBadge}>{filled} / 6 mục</span></div>
+    <div className={styles.demoNotice}><FileText size={16} aria-hidden="true" /><span><strong>Bản thử nghiệm.</strong> Chỉ dùng dữ liệu giả · Chat theo kịch bản · PDF không dùng để nộp.</span><Link href="/demo/ct01">Thử mẫu CT01 →</Link></div>
+    <div className={styles.sourceBar}>
+      {accountState === 'signed-in' && <button type="button" onClick={loadAccount} disabled={busy !== null}><UserRound size={15} aria-hidden="true" />{busy === 'profile' ? 'Đang lấy hồ sơ…' : 'Sao chép hồ sơ đã lưu'}</button>}
+      <button type="button" onClick={() => replaceDraft({ ...prefillDraft(current.current, sample), source: 'manual' })}>Dùng dữ liệu mẫu</button>
+      <button type="button" onClick={() => replaceDraft(clearDraft(current.current))}>Xóa bản nháp</button>
+    </div>
     <div className={styles.columns}>
-      <section className={styles.editor} aria-labelledby="details-title">
-        <div className={styles.sectionHeading}><span className={styles.step}>01</span><div><h2 id="details-title">Your information</h2><p>Choose how you would like to start.</p></div><span className={styles.count}>{filled} / 6 fields</span></div>
-        <div className={styles.sourceChoices}>
-          <button type="button" className={draft.source === 'manual' ? styles.selected : ''} onClick={() => { if (draft.source !== 'manual') update({ ...current.current, source: 'manual', revision: current.current.revision + 1, acknowledged: false, previewRevision: null }); }}><PenLine size={19} /><span><strong>Enter by hand</strong><small>Fill in your details below</small></span>{draft.source === 'manual' && <CircleCheck size={16} />}</button>
-          <button type="button" className={draft.source === 'account' ? styles.selected : ''} onClick={loadAccount} disabled={accountState !== 'signed-in' || busy === 'profile'}><UserRound size={19} /><span><strong>Use my account</strong><small>{busy === 'profile' ? 'Loading saved details…' : 'Start from your saved profile'}</small></span>{draft.source === 'account' ? <CircleCheck size={16} /> : <LockKeyhole size={14} />}</button>
+      <section id="document-preview" className={styles.review} aria-labelledby="review-title" aria-busy={busy === 'preview' || busy === 'pdf'}>
+        <div className={styles.sectionHeading}><div><h2 id="review-title">Văn bản của bạn</h2><p>{documentMode === 'pdf' ? 'Bản PDF từ dịch vụ tạo văn bản.' : 'Bản nháp cập nhật ngay khi bạn nhập.'}</p></div><button type="button" className={styles.expand} aria-expanded={expanded} onClick={() => setExpanded(value => !value)}>{expanded ? 'Thu gọn' : 'Mở rộng'}</button></div>
+        <div className={styles.previewBar}><div><button type="button" aria-pressed={documentMode === 'draft'} onClick={() => setDocumentMode('draft')}>Bản nháp trực tiếp</button><button type="button" aria-pressed={documentMode === 'pdf'} disabled={!preview} onClick={() => setDocumentMode('pdf')}>Bản PDF để rà soát</button></div><span>Thử nghiệm · A4</span></div>
+        <div ref={paperArea} className={`${styles.paperArea} ${expanded ? styles.expanded : ''}`}>
+          {documentMode === 'pdf' && preview ? <img src={preview} alt="Bản xem PDF thử nghiệm dùng đúng dữ liệu của bản nháp hiện tại." className={styles.document} /> : <div className={styles.livePaper}>
+            <BrandMark className={styles.paperLogo} /><p className={styles.paperEyebrow}>BẢN NHÁP THỬ NGHIỆM · KHÔNG DÙNG ĐỂ NỘP</p><h3>Thông tin cá nhân</h3><p className={styles.paperSub}>Chạm vào một mục để chỉnh sửa trực tiếp.</p>
+            <div className={styles.paperDivider} />
+            {fields.map(field => <div key={field.id} ref={node => { fieldNodes.current[field.id] = node; }} className={`${styles.paperField} ${activeField === field.id ? styles.activeField : ''} ${changedField === field.id ? styles.changedField : ''}`}>
+              <label htmlFor={`draft-${field.id}`}>{field.label}{activeField === field.id && <span>Đang điền</span>}</label>
+              {editingField === field.id ? <>
+                {field.id === 'address' ? <textarea autoFocus id={`draft-${field.id}`} rows={3} value={draft.values[field.id] ?? ''} onChange={event => edit(field.id, event.target.value)} autoComplete="off" aria-invalid={Boolean(errors[field.id])} aria-describedby={`hint-${field.id}`} /> : <input autoFocus id={`draft-${field.id}`} type={field.type ?? 'text'} value={draft.values[field.id] ?? ''} onChange={event => edit(field.id, event.target.value)} autoComplete="off" aria-invalid={Boolean(errors[field.id])} aria-describedby={`hint-${field.id}`} />}
+                <button type="button" className={styles.finishEdit} onClick={() => setEditingField(null)}>Xong</button>
+              </> : <button id={`draft-${field.id}`} type="button" className={styles.fieldValue} onClick={() => { setActiveField(field.id); setEditingField(field.id); }} aria-label={`Sửa ${field.label}`}><span>{draft.values[field.id] || 'Chưa điền'}</span><PenLine size={12} aria-hidden="true" /></button>}
+              <p id={`hint-${field.id}`} className={styles.fieldError}>{errors[field.id] ?? ''}</p>
+            </div>)}
+            <p className={styles.paperFoot}>Bố cục này giúp chỉnh sửa bản nháp. Hãy tạo và rà soát bản PDF trước khi tải xuống.</p>
+          </div>}
         </div>
-        {accountState !== 'signed-in' && <p className={styles.accountHint}>{accountState === 'unconfigured' ? 'Account prefill is ready to connect once Clerk and saved profiles are configured.' : <><Link href="/sign-in">Sign in</Link> to use your saved information.</>}</p>}
-        {draft.source === 'account' && <p className={styles.accountHint}>You can edit the copied values. Your saved account profile will stay unchanged.</p>}
-        <div className={styles.fields}>{fields.map((field) => <div key={field.id} className={field.wide ? styles.wide : ''}>
-          <label htmlFor={field.id}>{field.label}</label>
-          {field.id === 'address' ? <textarea id={field.id} rows={3} value={draft.values[field.id] ?? ''} onChange={(event) => edit(field.id, event.target.value)} placeholder={field.placeholder} autoComplete="off" aria-invalid={Boolean(errors[field.id])} aria-describedby={`${field.id}-hint`} /> : <input id={field.id} type={field.type ?? 'text'} value={draft.values[field.id] ?? ''} onChange={(event) => edit(field.id, event.target.value)} placeholder={field.placeholder} autoComplete="off" aria-invalid={Boolean(errors[field.id])} aria-describedby={`${field.id}-hint`} />}
-          <p id={`${field.id}-hint`} className={errors[field.id] ? styles.fieldError : styles.fieldHint}>{errors[field.id] ?? field.hint ?? ''}</p>
-        </div>)}</div>
-        <div className={styles.editorBottom}><button className={styles.clear} type="button" onClick={() => update(clearDraft(current.current))}>Clear details</button><button className="button primary" type="button" onClick={() => renderDocument('preview')} disabled={!valid || busy !== null}>{busy === 'preview' ? <LoaderCircle className={styles.spin} size={16} /> : <RefreshCw size={16} />}Update preview</button></div>
-        <div className={styles.privacy}><ShieldCheck size={18} /><p>Your entries stay in this tab until you request a preview or PDF. This demo renderer processes them temporarily and does not save a profile.</p></div>
       </section>
-      <section className={styles.review} aria-labelledby="review-title">
-        <div className={styles.sectionHeading}><span className={styles.step}>02</span><div><h2 id="review-title">Review your document</h2><p>What you see is what goes into the PDF.</p></div></div>
-        <div className={styles.previewBar}><span><FileText size={14} /> Personal details · A4</span><span>{preview ? 'Preview ready' : 'Awaiting preview'}</span></div>
-        <div className={styles.paperArea}>{preview ? <img src={preview} alt="Synthetic document preview showing the current entered details, with text above the dotted lines." className={styles.document} /> : <div className={styles.placeholderPaper}><div className={styles.paperLogo}>h.</div><p className={styles.paperEyebrow}>SYNTHETIC REVIEW COPY</p><h3>Personal information</h3><div className={styles.paperDivider} />{['Full name', 'Date of birth', 'Nationality', 'Residential address', 'Contact details'].map((label) => <div className={styles.paperField} key={label}><span>{label}</span><div /></div>)}<p className={styles.paperFoot}>Your preview will appear here after you enter your details.</p></div>}</div>
-        <div className={styles.reviewBottom}><label className={styles.confirm}><input type="checkbox" checked={draft.acknowledged} disabled={draft.previewRevision !== draft.revision || busy !== null} onChange={(event) => { const next = { ...current.current, acknowledged: event.target.checked }; current.current = next; setDraft(next); }} /><span>I have checked the information in this preview.</span></label><button className={`button primary ${styles.download}`} type="button" onClick={() => renderDocument('pdf')} disabled={!canDownload(draft) || busy !== null}>{busy === 'pdf' ? <LoaderCircle className={styles.spin} size={17} /> : <ArrowDownToLine size={17} />}Download PDF<ArrowRight size={16} /></button><p className={styles.downloadHint}><Check size={12} /> Edits always require a fresh preview.</p></div>
+      <div className={styles.chatColumn}><DraftChat key={chatEpoch} values={draft.values} onApply={edit} resetKey={chatEpoch} minimized={documentMode === 'pdf' || editingField !== null} activeField={activeField} onSelectField={selectField} /><p className={styles.privacy}><ShieldCheck size={14} aria-hidden="true" />Câu trả lời chỉ cập nhật bản nháp này. Hồ sơ tài khoản chỉ thay đổi khi bạn lưu ở trang hồ sơ.</p></div>
+      <section id="document-review" className={styles.reviewBottom} aria-label="Rà soát và tải PDF">
+          <div className={styles.reviewSummary}><b>{missing.length ? `${missing.length} mục còn trống` : 'Đã điền 6 mục'}</b><p>{missing.length ? `${missing.map(field => field.label).join(', ')}. Kiểm tra các mục này; thông tin không được tự suy đoán.` : 'Kiểm tra lại từng giá trị. Đã điền không có nghĩa là thông tin đã được xác minh.'}</p></div>
+          <button className={`button ${styles.renderButton}`} type="button" onClick={() => renderDocument('preview')} disabled={!valid || busy !== null}>{busy === 'preview' ? <LoaderCircle className={styles.spin} size={16} aria-hidden="true" /> : <RefreshCw size={16} aria-hidden="true" />}{busy === 'preview' ? 'Đang tạo bản xem…' : 'Tạo bản PDF để rà soát'}</button>
+          <label className={styles.confirm}><input type="checkbox" checked={draft.acknowledged} disabled={draft.previewRevision !== draft.revision || busy !== null} onChange={event => { const next = { ...current.current, acknowledged: event.target.checked }; current.current = next; setDraft(next); }} /><span>Tôi đã kiểm tra bản PDF, kể cả các mục còn trống.</span></label>
+          <button className={`button primary ${styles.download}`} type="button" onClick={() => renderDocument('pdf')} disabled={!canDownload(draft) || busy !== null}><ArrowDownToLine size={17} aria-hidden="true" />{busy === 'pdf' ? 'Đang tạo PDF…' : 'Tải PDF thử nghiệm'}<ArrowRight size={16} aria-hidden="true" /></button><p className={styles.downloadHint}>Mỗi lần sửa đều cần tạo và kiểm tra lại bản PDF.</p>
       </section>
     </div>
-    <div className={styles.feedback} aria-live="polite" role="status">{failure ? <p className={styles.failure}>{failure}</p> : notice ? <p><CircleCheck size={16} />{notice}</p> : null}</div>
-    <Link href="/" className={styles.back}><ArrowLeft size={14} /> Back to home</Link>
+    <div className={styles.feedback} aria-live="polite" role="status">{failure ? <p className={styles.failure}>{failure}</p> : notice ? <p><CircleCheck size={16} aria-hidden="true" />{notice}</p> : null}</div>
+    <Link href="/portal" prefetch={false} className={styles.back}><ArrowLeft size={14} aria-hidden="true" /> Mở hồ sơ tài khoản</Link>
   </main>;
 }
