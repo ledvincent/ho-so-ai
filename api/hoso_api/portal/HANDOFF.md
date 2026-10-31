@@ -10,6 +10,9 @@ form approval or live migration is authorized or performed by this delivery.
 
 - Producer APP-01: `dc0ea22265df27210d6375f1bb1a3e6d118d839b`.
 - Consumer branch: `codex/kim/auth-01-clerk-portal`.
+- Consumer implementation: `56ba98f244fa0533c2e000dc7683a47b946e8798`, committed
+  locally after the checks below; not pushed or merged. This follow-up changes
+  only the handoff to record that real commit, not application behavior.
 - Worktree: `.worktrees/kim-portal-clerk`; HEAD matched the producer SHA and the
   worktree was clean before implementation.
 - Contract: [app.v1](../../../docs/application-contract.md), generated six-field
@@ -189,8 +192,12 @@ PostgreSQL test environment before making this a portable CI check.
 PGlite evidence does not establish SQLAlchemy/psycopg wire integration, PostgreSQL
 multi-connection races, production routes, TLS, encrypted storage, live Clerk or
 two real accounts. No session/document ownership or Son authorization tests are
-claimed. No consumer commit is named until it actually exists; a subsequent
-evidence update can reference it without inventing its own commit hash.
+claimed. These checks cover the code committed as consumer
+`56ba98f244fa0533c2e000dc7683a47b946e8798` against producer
+`dc0ea22265df27210d6375f1bb1a3e6d118d839b`. The two HTTP smoke checks were also
+rerun after restarting that final production build and passed. Overall APP-01
+acknowledgment remains **adaptation required** because production route/service
+wiring is not delivered. No live or complete consumer compatibility is claimed.
 
 ## Next handoff
 
