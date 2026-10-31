@@ -1,0 +1,871 @@
+{
+  "schema_version": "display-guide.v1",
+  "producer_commit": "61b99f37dbb79409dba8a6d4027ce023a1dcf5c4",
+  "translation_status": "source_attributed_working_translation",
+  "procedures": {
+    "1.000771": {
+      "procedure_code": "1.000771",
+      "title": {
+        "en": "Stay extension using a visa exemption certificate",
+        "vi": "Gia hạn tạm trú cho người đã được cấp giấy miễn thị thực tại Cục Quản lý xuất nhập cảnh Bộ Công an"
+      },
+      "source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000771",
+        "sha256": "15079cc5be2bbc7bdfb54a0a046454e122a92db0b1c5b8499784ce2ca0e1beb9",
+        "retrieved_at": "2026-10-31T05:34:08.860562+00:00",
+        "snapshot_id": 22,
+        "parser_version": "vpcp-by-code-3",
+        "published_on": null,
+        "updated_on": null
+      },
+      "profile": {
+        "id": 4,
+        "run_id": "92e728a5-6a0b-4cf0-9570-40122053c516",
+        "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+        "output_sha256": "d91be0c827dea0b31812d59d07ed31d8054a630153b0f59b50a699172b5d4ee8"
+      },
+      "evidence": {
+        "access": "source_attributed",
+        "procedure_currency": "not_reverified",
+        "extraction_status": "validated_draft",
+        "template_approval": "unchanged",
+        "form_applicability": "unresolved"
+      },
+      "checklist": [
+        {
+          "id": "1.000771:requirement:114",
+          "kind": "document",
+          "title": {
+            "en": "Travel or permanent-residence document",
+            "vi": "Hộ chiếu hoặc giấy tờ thay thế"
+          },
+          "text": {
+            "en": "A passport, an international travel document, or a permanent-residence document issued by a competent foreign authority to an overseas Vietnamese person. Submit 1 original; 0 copies.",
+            "vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/0",
+            "quote_vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài."
+          }
+        },
+        {
+          "id": "1.000771:requirement:115",
+          "kind": "document",
+          "title": {
+            "en": "Visa exemption certificate",
+            "vi": "Giấy miễn thị thực"
+          },
+          "text": {
+            "en": "Visa exemption certificate. Submit 1 original; 0 copies.",
+            "vi": "Giấy miễn thị thực."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/1",
+            "quote_vi": "Giấy miễn thị thực."
+          }
+        },
+        {
+          "id": "1.000771:requirement:116",
+          "kind": "submission_instruction",
+          "title": {
+            "en": "Online submission: postal originals and electronic certification",
+            "vi": "Nộp trực tuyến: gửi giấy tờ và chứng thực điện tử"
+          },
+          "text": {
+            "en": "For an online application, send the passport, international travel document, or foreign-issued permanent-residence document for an overseas Vietnamese person to the receiving authority through the public postal service. Other application components must be electronically certified as required; if they are not electronically certified, send them to the receiving authority through the public postal service.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "condition": {
+            "en": "If applying online.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "originals": 0,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/2",
+            "quote_vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        },
+        {
+          "id": "1.000771:requirement:117",
+          "kind": "document",
+          "title": {
+            "en": "NA5 application form: source specifies the 2023 edition",
+            "vi": "Tờ khai NA5: nguồn dẫn bản năm 2023"
+          },
+          "text": {
+            "en": "Application form for visa issuance or temporary-stay extension (NA5), issued with Ministry of Public Security Circular 22/2023/TT-BCA dated 30 June 2023. Submit 1 original; 0 copies.",
+            "vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/3",
+            "quote_vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Prepare the application in accordance with the law.",
+            "vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "id": "step-1",
+          "title": {
+            "en": "Prepare the application",
+            "vi": "Chuẩn bị hồ sơ"
+          }
+        },
+        {
+          "text": {
+            "en": "Submit during office hours on working days at either Immigration Department, Ministry of Public Security office: 44–46 Tran Phu Street, Ba Dinh District, Hanoi; or 333–335–337 Nguyen Trai Street, District 1, Ho Chi Minh City.\n\nAlternatively, apply through the National Public Service Portal or the Ministry of Public Security Public Service Portal, and send additional documents through the public postal service if notified by the Immigration Department on either portal.\n\nOfficers check the legality and contents: a complete, valid application is accepted, an appointment slip is issued, and payment is requested with a paper receipt or online payment and electronic receipt; an incomplete or invalid application receives instructions to complete it; an ineligible application is not accepted and the reason is given in writing or through a portal notice.\n\nOnline applicants may request delivery of results by post and must pay the delivery charge.\n\nApplications are received Monday to Saturday morning, excluding Tet and public holidays.",
+            "vi": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-2",
+          "title": {
+            "en": "Submit and pay if accepted",
+            "vi": "Nộp hồ sơ và nộp phí nếu được tiếp nhận"
+          }
+        },
+        {
+          "text": {
+            "en": "Collect the result in person at the Immigration Department, bringing the appointment slip and identity document for checking.\n\nIf postal delivery was requested, follow the postal provider’s instructions.\n\nIf the temporary-stay extension is refused, the reason is given in writing or through the National Public Service Portal or the Ministry of Public Security Public Service Portal.\n\nResults are returned Monday to Friday, excluding Tet and public holidays.",
+            "vi": "Bước 3: Trả kết quả:\n+ Người đến nhận kết quả trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân để kiểm tra, đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 3: Trả kết quả:\n+ Người đến nhận kết quả trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân để kiểm tra, đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-3",
+          "title": {
+            "en": "Collect the result",
+            "vi": "Nhận kết quả"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "text": {
+            "en": "Have a passport or international travel document that remains valid for at least 1 year.",
+            "vi": "+ Có hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị ít nhất 01 năm."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Có hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị ít nhất 01 năm."
+          }
+        },
+        {
+          "text": {
+            "en": "Have entered using a visa exemption certificate, be sponsored by an agency, organization or individual in Vietnam, and have a legitimate reason.",
+            "vi": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+          }
+        },
+        {
+          "text": {
+            "en": "Not fall within the cases of denial of entry or temporary suspension of departure under Articles 21 and 28 of the Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam.",
+            "vi": "+ Không thuộc các trường hợp chưa cho nhập cảnh và tạm hoãn xuất cảnh theo quy định tại Điều 21 và Điều 28 của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Không thuộc các trường hợp chưa cho nhập cảnh và tạm hoãn xuất cảnh theo quy định tại Điều 21 và Điều 28 của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        }
+      ],
+      "notes": [
+        {
+          "en": "This is the visa-exemption-certificate extension route. It is not the ordinary visa-issuance route. The published conditions above are cumulative; missing information remains unknown, not automatically ineligible.",
+          "vi": "Đây là thủ tục gia hạn cho người nhập cảnh bằng giấy miễn thị thực, không phải thủ tục cấp thị thực thông thường. Các điều kiện công bố nêu trên được áp dụng đồng thời; thiếu thông tin phải giữ trạng thái chưa biết, không tự kết luận không đủ điều kiện."
+        },
+        {
+          "en": "The procedure checklist cites NA5 under Circular 22/2023/TT-BCA. The supplied 2026 form cites 70/2026/TT-BCA but its applicability to this procedure remains unconfirmed; the direct-download form cites 04/2015/TT-BCA. The accepted edition and any replacement relationship remain unconfirmed.",
+          "vi": "Danh mục thủ tục dẫn NA5 theo Thông tư 22/2023/TT-BCA. Bản năm 2026 dẫn 70/2026/TT-BCA nhưng chưa xác nhận áp dụng cho thủ tục này; bản tải trực tiếp dẫn 04/2015/TT-BCA. Chưa xác nhận bản được chấp nhận hoặc quan hệ thay thế."
+        },
+        {
+          "en": "The 2026 form’s separate-visa note says 1 photo in Vietnamese and 2 in English. This conflict is unresolved, and whether that separate-visa branch applies to this extension route is unknown; do not add a universal photo requirement.",
+          "vi": "Ghi chú cấp thị thực rời của bản năm 2026 ghi 01 ảnh bằng tiếng Việt nhưng 2 ảnh bằng tiếng Anh. Mâu thuẫn chưa được giải quyết và chưa rõ nhánh này áp dụng cho thủ tục gia hạn này; không thêm yêu cầu ảnh chung."
+        },
+        {
+          "en": "Form-specific family-sponsorship instructions mention proof of the relationship; foreign sponsors have residence-card fields. These are conditional instructions within that form, not confirmed extra requirements for every visa-exemption extension. Do not replace this procedure’s agency/organization/individual sponsorship condition with the ordinary visa procedure’s narrower sponsor branches.",
+          "vi": "Hướng dẫn riêng của biểu mẫu nêu giấy tờ chứng minh quan hệ trong nhánh thân nhân bảo lãnh; người nước ngoài bảo lãnh có mục thẻ cư trú. Đây là hướng dẫn có điều kiện của bản mẫu, chưa phải yêu cầu bổ sung cho mọi hồ sơ gia hạn miễn thị thực. Không thay điều kiện cơ quan, tổ chức hoặc cá nhân bảo lãnh của thủ tục này bằng các nhánh bảo lãnh hẹp hơn của thủ tục cấp thị thực thông thường."
+        },
+        {
+          "en": "The online-handling row has 0 originals and 0 copies: it is an instruction, not a fourth document. The English form note “Submit in person” does not remove the procedure’s published online and supplementary-postal options.",
+          "vi": "Dòng hướng dẫn nộp trực tuyến ghi 0 bản chính, 0 bản sao: đây không phải giấy tờ thứ tư. Ghi chú tiếng Anh “Submit in person” của biểu mẫu không loại bỏ các lựa chọn trực tuyến và gửi bổ sung qua bưu chính đã công bố."
+        },
+        {
+          "en": "The sources agree on 10 USD but differ on whether it is classified as a fee or levy; do not count it twice. This source-based translation does not establish current legal validity or approve a form.",
+          "vi": "Các nguồn cùng nêu 10 USD nhưng khác cách phân loại phí hoặc lệ phí; không cộng hai lần. Bản dịch theo nguồn này không xác lập hiệu lực pháp lý hiện hành hoặc phê duyệt biểu mẫu."
+        }
+      ],
+      "installed_documents": []
+    },
+    "1.001146": {
+      "procedure_code": "1.001146",
+      "title": {
+        "en": "Stay extension — provincial immigration office",
+        "vi": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp tỉnh)"
+      },
+      "source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146",
+        "sha256": "6f28545a46f4ff0022d95ae8b2e7c89121dcd68f7d6f04bb1d59e7f3cc406b09",
+        "retrieved_at": "2026-10-31T05:19:08.651869+00:00",
+        "snapshot_id": 20,
+        "parser_version": "vpcp-by-code-3",
+        "published_on": null,
+        "updated_on": null
+      },
+      "profile": {
+        "id": 2,
+        "run_id": "dcf16088-c129-4c22-a8c3-71e05edcdef5",
+        "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+        "output_sha256": "4cf9576904b7cb67896b1990cc381b5db9440068b80f83f4b563d435a34a3bf5"
+      },
+      "evidence": {
+        "access": "source_attributed",
+        "procedure_currency": "not_reverified",
+        "extraction_status": "validated_draft",
+        "template_approval": "unchanged",
+        "form_applicability": "unresolved"
+      },
+      "checklist": [
+        {
+          "id": "1.001146:requirement:107",
+          "kind": "document",
+          "title": {
+            "en": "NA5 application form",
+            "vi": "Tờ khai NA5"
+          },
+          "text": {
+            "en": "Application for visa issuance or extension of temporary residence (Form NA5), issued with Circular 22/2023/TT-BCA dated 30 June 2023 of the Ministry of Public Security. Table quantity: 1 original(s); 0 copies.",
+            "vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/0",
+            "quote_vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          }
+        },
+        {
+          "id": "1.001146:requirement:108",
+          "kind": "document",
+          "title": {
+            "en": "Passport or international travel document",
+            "vi": "Hộ chiếu hoặc giấy tờ đi lại quốc tế"
+          },
+          "text": {
+            "en": "The foreign national's passport OR international travel document. Table quantity: 1 original(s); 0 copies.",
+            "vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/1",
+            "quote_vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          }
+        },
+        {
+          "id": "1.001146:requirement:109",
+          "kind": "submission_instruction",
+          "title": {
+            "en": "Online application: send physical documents",
+            "vi": "Gửi giấy tờ khi nộp hồ sơ trực tuyến"
+          },
+          "text": {
+            "en": "If applying online, send the foreign national's passport or international travel document to the receiving authority through the public postal service. Other application documents must be electronically certified as prescribed; if they are not electronically certified, send the application dossier to the receiving authority through the public postal service. Table quantity: 0 original(s); 0 copies.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "condition": {
+            "en": "If applying online.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "originals": 0,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/2",
+            "quote_vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Prepare the application documents in accordance with the law.",
+            "vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "id": "step-1",
+          "title": {
+            "en": "Prepare your application",
+            "vi": "Chuẩn bị hồ sơ"
+          }
+        },
+        {
+          "text": {
+            "en": "Submit in person during office hours on working days to the provincial Police immigration authority, or apply through the National Public Service Portal or Ministry of Public Security portal.\n\nSend additional documents through the public postal service if the provincial immigration authority notifies you to do so on the online portal.\n\nThe receiving officer checks the application's legal compliance and contents.\n\nIf complete and valid, an appointment slip for collecting the result is issued.\n\nThe applicant is asked to pay the fee to the fee collector and receives a payment receipt, or is notified through the National Public Service Portal or Ministry of Public Security portal to pay online and receive an electronic receipt.\n\nIf documents are missing or invalid, the officer provides guidance, directly or through a portal notice, so the application can be completed.\n\nIf the application does not meet the conditions, it is not accepted and the reasons are given in writing or through a portal notice.\n\nFor an online application, the applicant may request postal delivery of the result and must pay the delivery-service charge.\n\nApplication reception: Monday through Saturday morning each week, excluding Tet and public holidays.",
+            "vi": "Bước 2:\n* Nộp hồ sơ trực tiếp vào giờ hành chính các ngày làm việc trong tuần tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh hoặc nộp hồ sơ qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị gia hạn tạm trú; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú hoàn chỉnh hồ sơ.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 2:\n* Nộp hồ sơ trực tiếp vào giờ hành chính các ngày làm việc trong tuần tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh hoặc nộp hồ sơ qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Trường hợp hồ sơ đã đầy đủ, hợp lệ thì cấp giấy hẹn trả kết quả cho người đề nghị gia hạn tạm trú; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Trường hợp hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú hoàn chỉnh hồ sơ.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-2",
+          "title": {
+            "en": "Submit the application and have it checked",
+            "vi": "Nộp hồ sơ và kiểm tra"
+          }
+        },
+        {
+          "text": {
+            "en": "Collect the result in person at the provincial Police immigration authority.\n\nBring the appointment slip for checking and comparison.\n\nIf postal return was requested, follow the postal service provider's instructions.\n\nIf the stay extension is refused, a written reply or a notice through the National Public Service Portal or Ministry of Public Security portal gives the reasons.\n\nResults are issued Monday to Friday, excluding Tet and public holidays.",
+            "vi": "Bước 3: Nhận kết quả:\n+ Người đề nghị gia hạn tạm trú đến nhận kết quả trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh. Khi đến nhận kết quả mang theo giấy hẹn trả kết quả để kiểm tra, đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 3: Nhận kết quả:\n+ Người đề nghị gia hạn tạm trú đến nhận kết quả trực tiếp nhận kết quả tại Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh. Khi đến nhận kết quả mang theo giấy hẹn trả kết quả để kiểm tra, đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-3",
+          "title": {
+            "en": "Collect the result",
+            "vi": "Nhận kết quả"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "text": {
+            "en": "For agencies or organizations requesting visa issuance, visa additions or amendments, or a stay extension for foreign nationals or Vietnamese people holding foreign passports: a dossier under Article 16(2) of the Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam must already be held at the Immigration Division of the provincial or centrally governed municipal Police.",
+            "vi": "+ Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam tại Phòng Quản lý xuất nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam tại Phòng Quản lý xuất nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương."
+          }
+        },
+        {
+          "text": {
+            "en": "Foreign nationals and Vietnamese people holding foreign passports must have a valid passport, a visa unless visa-exempt, temporary residence certification issued by a competent Vietnamese authority, and currently reside in Vietnam. The source then states: not subject to being refused entry into Vietnam OR not subject to a temporary suspension of exit. The scope of this 'or' clause remains unresolved.",
+            "vi": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          }
+        },
+        {
+          "text": {
+            "en": "A Vietnamese citizen making these requests for a foreign national or a Vietnamese person holding a foreign passport must be that person's grandparent, parent, spouse, child or biological sibling, and must present documents proving the relationship.",
+            "vi": "+ Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)."
+          }
+        }
+      ],
+      "notes": [
+        {
+          "en": "The captured primary and supplementary sources disagree about fees: 10 USD versus no charge, and about payment timing. No definitive fee amount or payment timing is selected here; confirm the applicable charge with the receiving authority.",
+          "vi": "Nguồn chính và nguồn bổ sung chưa thống nhất về phí, lệ phí: 10 USD hoặc không thu, cũng như thời điểm thanh toán. Hướng dẫn này không chọn một mức thu hoặc thời điểm thanh toán chắc chắn; cần xác nhận với cơ quan tiếp nhận."
+        },
+        {
+          "en": "The primary source places the organization's existing dossier under Article 16(2) at provincial immigration police. The supplementary source instead describes a legal-status dossier at the central Immigration Department. The location and dossier descriptions conflict and have not been reconciled.",
+          "vi": "Nguồn chính yêu cầu hồ sơ cơ quan/tổ chức theo khoản 2 Điều 16 tại Phòng Quản lý xuất nhập cảnh Công an cấp tỉnh. Nguồn bổ sung lại mô tả hồ sơ chứng minh tư cách pháp nhân tại Cục Quản lý xuất nhập cảnh. Chưa giải quyết khác biệt về nơi lưu và nội dung hồ sơ."
+        },
+        {
+          "en": "The primary family-sponsor list includes grandparents and biological siblings in addition to parents, spouses and children; the supplementary list is narrower. The primary list is translated here, but the supplementary omission is not treated as a separate exclusion. No original/copy quantity for relationship evidence is established in these snapshots.",
+          "vi": "Danh sách thân nhân ở nguồn chính có cả ông, bà và anh, chị, em ruột ngoài cha, mẹ, vợ, chồng, con; nguồn bổ sung nêu hẹp hơn. Bản dịch giữ danh sách nguồn chính, không coi phần thiếu ở nguồn bổ sung là một căn cứ loại trừ riêng. Các bản ghi này chưa xác lập số bản chính/bản sao của giấy tờ chứng minh quan hệ."
+        },
+        {
+          "en": "The primary procedure page names NA5 under Circular 22/2023/TT-BCA. Available form records also include the 2026 version under Circular 70/2026/TT-BCA and an older 2015 version. The exact edition accepted for this procedure remains unresolved; this guide does not approve a form edition.",
+          "vi": "Trang thủ tục chính nêu mẫu NA5 theo Thông tư 22/2023/TT-BCA. Hồ sơ biểu mẫu còn có bản năm 2026 theo Thông tư 70/2026/TT-BCA và bản cũ năm 2015. Chưa xác định chính xác phiên bản được thủ tục chấp nhận; hướng dẫn này không phê duyệt phiên bản biểu mẫu."
+        },
+        {
+          "en": "The entry/exit restriction clause uses 'or'. Its logical scope remains unclear; it is preserved below rather than turned into an automatic eligibility decision. A missing answer is unknown, not proof of ineligibility.",
+          "vi": "Mệnh đề về hạn chế nhập cảnh/xuất cảnh dùng từ “hoặc” nhưng phạm vi logic chưa rõ. Nội dung được giữ lại, không chuyển thành kết luận tự động về điều kiện. Thông tin còn thiếu là chưa biết, không phải bằng chứng không đủ điều kiện."
+        },
+        {
+          "en": "Visa exemption qualifies the visa requirement in the quoted condition; it is not presented as waiving the other listed conditions. Organization and Vietnamese-family sponsorship are role-specific branches, not requirements that every applicant must satisfy together.",
+          "vi": "Ngoại lệ miễn thị thực gắn với yêu cầu có thị thực, không được trình bày như việc miễn các điều kiện còn lại. Nhánh cơ quan/tổ chức và nhánh thân nhân là công dân Việt Nam áp dụng theo vai trò, không phải các yêu cầu mọi hồ sơ phải đồng thời đáp ứng."
+        },
+        {
+          "en": "Postal service is described for additional papers, physical papers in an online application, and requested return delivery. The source does not establish an independent right to submit the entire initial application by post.",
+          "vi": "Nguồn mô tả bưu chính để bổ sung hồ sơ, gửi giấy tờ của hồ sơ trực tuyến và nhận kết quả theo yêu cầu. Chưa có căn cứ coi bưu chính là một cách nộp toàn bộ hồ sơ ban đầu độc lập."
+        },
+        {
+          "en": "These translations preserve the captured primary source. Successful extraction and the retrieval date do not establish current legal effect or guarantee an outcome.",
+          "vi": "Bản dịch giữ nội dung nguồn chính đã ghi nhận. Việc trích xuất thành công và ngày truy xuất không xác lập hiệu lực pháp lý hiện tại hoặc bảo đảm kết quả."
+        },
+        {
+          "en": "The supplied 2026 form has conflicting separate-visa photo notes: 1 photo in Vietnamese and 2 in English. Whether that visa branch applies to this stay extension is unresolved; no photo is added to the extension checklist.",
+          "vi": "Ghi chú cấp thị thực rời của bản mẫu năm 2026 không thống nhất: tiếng Việt ghi 01 ảnh, tiếng Anh ghi 2 ảnh. Chưa xác định nhánh cấp thị thực này áp dụng cho thủ tục gia hạn; không bổ sung ảnh vào danh mục hồ sơ gia hạn."
+        },
+        {
+          "en": "Sources differ on whether online handling is partial or fully online. The captured primary instructions still require postal handling of original travel documents and uncertified application components; an online option does not mean every step can be completed online.",
+          "vi": "Các nguồn khác nhau về phân loại trực tuyến một phần hoặc toàn trình. Hướng dẫn nguồn chính vẫn yêu cầu gửi giấy tờ đi lại bản gốc và thành phần chưa được chứng thực điện tử qua bưu chính; có lựa chọn trực tuyến không có nghĩa mọi bước đều thực hiện trực tuyến."
+        }
+      ],
+      "installed_documents": [
+        {
+          "document_id": "na5-provincial-stay-extension",
+          "template_version": "0ea9956659b50098c275e687533954cfa68f1541eab40ad167cf8627def4014b",
+          "review_status": "draft",
+          "download_available": false
+        }
+      ]
+    },
+    "1.003326": {
+      "procedure_code": "1.003326",
+      "title": {
+        "en": "Stay extension — central Immigration Department",
+        "vi": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+      },
+      "source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003326",
+        "sha256": "8939584eb161b6a3702604fc145e60beae6c68974c20331c211b9c415a439994",
+        "retrieved_at": "2026-10-31T05:12:33.442395+00:00",
+        "snapshot_id": 19,
+        "parser_version": "vpcp-by-code-3",
+        "published_on": null,
+        "updated_on": null
+      },
+      "profile": {
+        "id": 1,
+        "run_id": "7aca80ca-736c-4b81-80bc-9405f1fe27d1",
+        "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+        "output_sha256": "6b52f545121b5d3a4a6f726cb7d25c095f39dbbc7a00534bc102733e7796fc87"
+      },
+      "evidence": {
+        "access": "source_attributed",
+        "procedure_currency": "not_reverified",
+        "extraction_status": "validated_draft",
+        "template_approval": "unchanged",
+        "form_applicability": "unresolved"
+      },
+      "checklist": [
+        {
+          "id": "1.003326:requirement:104",
+          "kind": "document",
+          "title": {
+            "en": "Passport or international travel document",
+            "vi": "Hộ chiếu hoặc giấy tờ đi lại quốc tế"
+          },
+          "text": {
+            "en": "The foreign national's passport OR international travel document. Table quantity: 1 original(s); 0 copies.",
+            "vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/0",
+            "quote_vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          }
+        },
+        {
+          "id": "1.003326:requirement:105",
+          "kind": "submission_instruction",
+          "title": {
+            "en": "Online application: send physical documents",
+            "vi": "Gửi giấy tờ khi nộp hồ sơ trực tuyến"
+          },
+          "text": {
+            "en": "If applying online, send the foreign national's passport or international travel document to the receiving authority through the public postal service. Other application documents must be electronically certified as prescribed; if they are not electronically certified, send the application dossier to the receiving authority through the public postal service. Table quantity: 0 original(s); 0 copies.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "condition": {
+            "en": "If applying online.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "originals": 0,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/1",
+            "quote_vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        },
+        {
+          "id": "1.003326:requirement:106",
+          "kind": "document",
+          "title": {
+            "en": "NA5 application form",
+            "vi": "Tờ khai NA5"
+          },
+          "text": {
+            "en": "Application for visa issuance or extension of temporary residence (Form NA5), issued with Circular 22/2023/TT-BCA dated 30 June 2023. Table quantity: 1 original(s); 0 copies.",
+            "vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/2",
+            "quote_vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Prepare the application documents in accordance with the law.",
+            "vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "id": "step-1",
+          "title": {
+            "en": "Prepare your application",
+            "vi": "Chuẩn bị hồ sơ"
+          }
+        },
+        {
+          "text": {
+            "en": "Submit during office hours on working days at either Immigration Department office of the Ministry of Public Security: 44-46 Tran Phu Street, Ba Dinh District, Hanoi; or 333-335-337 Nguyen Trai Street, District 1, Ho Chi Minh City.\n\nAlternatively, apply through the National Public Service Portal or Ministry of Public Security portal and send additional documents through the public postal service if the Immigration Department notifies you to do so on the online portal.\n\nThe receiving officer checks the application's legal compliance and contents.\n\nIf complete and valid, an appointment slip for collecting the result is issued.\n\nThe applicant is asked to pay the fee to the fee collector and receives a payment receipt, or is notified through the National Public Service Portal or Ministry of Public Security portal to pay online and receive an electronic receipt.\n\nIf documents are missing or invalid, the officer provides guidance, directly or through a portal notice, so the application can be completed.\n\nIf the application does not meet the conditions, it is not accepted and the reasons are given in writing or through a portal notice.\n\nFor an online application, the applicant may request postal delivery of the result and must pay the delivery-service charge.\n\nApplication reception: Monday through Saturday morning each week, excluding Tet and public holidays.",
+            "vi": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu tiền giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an đề người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu tiền giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an đề người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-2",
+          "title": {
+            "en": "Submit the application and have it checked",
+            "vi": "Nộp hồ sơ và kiểm tra"
+          }
+        },
+        {
+          "text": {
+            "en": "Collect the result in person at the Immigration Department, Ministry of Public Security.\n\nBring the appointment slip, an identity document and the payment receipt for checking and comparison.\n\nIf postal return was requested, follow the postal service provider's instructions.\n\nIf the stay extension is refused, a written reply or a notice through the National Public Service Portal or Ministry of Public Security portal gives the reasons.\n\nResults are issued Monday to Friday, excluding Tet and public holidays.",
+            "vi": "Bước 3: Nhận kết quả:\n+ Người đề nghị gia hạn tạm trú trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công trực quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 3: Nhận kết quả:\n+ Người đề nghị gia hạn tạm trú trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công trực quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-3",
+          "title": {
+            "en": "Collect the result",
+            "vi": "Nhận kết quả"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "text": {
+            "en": "Agencies or organizations requesting visa issuance, visa additions or amendments, or a stay extension for foreign nationals or Vietnamese people holding foreign passports must already have the dossier required by Article 16(2) of the Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam. This primary clause does not specify where that dossier is held.",
+            "vi": "+ Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        },
+        {
+          "text": {
+            "en": "Foreign nationals and Vietnamese people holding foreign passports must have a valid passport, a visa unless visa-exempt, temporary residence certification issued by a competent Vietnamese authority, and currently reside in Vietnam. The source then states: not subject to being refused entry into Vietnam OR not subject to a temporary suspension of exit. The scope of this 'or' clause remains unresolved.",
+            "vi": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          }
+        },
+        {
+          "text": {
+            "en": "A Vietnamese citizen permanently residing in Vietnam who makes these requests for a foreign national or a Vietnamese person holding a foreign passport must be that person's grandparent, parent, spouse, child or biological sibling, and present documents proving the relationship, as provided in Article 45(1)(b) of the Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam.",
+            "vi": "+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại điểm b khoản 1 Điều 45 Luật nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại điểm b khoản 1 Điều 45 Luật nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        }
+      ],
+      "notes": [
+        {
+          "en": "The captured sources use different fee classifications: the primary source labels 10 USD an administrative fee, while the supplementary source lists 10 USD per occasion as a fee and states no administrative fee. This classification difference has not been resolved; the collection procedure is translated without choosing a classification.",
+          "vi": "Các nguồn phân loại khoản thu khác nhau: nguồn chính ghi lệ phí 10 USD, nguồn bổ sung ghi phí 10 USD/lần và lệ phí không. Chưa giải quyết khác biệt này; phần quy trình thanh toán được dịch mà không chọn một cách phân loại."
+        },
+        {
+          "en": "The primary organization-sponsor clause cites Article 16(2) without stating a dossier location; the supplementary description refers to a legal-status dossier at the central Immigration Department. Preserve that source-specific detail rather than inserting it into the primary wording. The snapshots do not supply the full contents of the cited legal provisions.",
+          "vi": "Điều kiện cơ quan/tổ chức ở nguồn chính dẫn khoản 2 Điều 16 nhưng không nêu nơi lưu hồ sơ; mô tả bổ sung đề cập hồ sơ chứng minh tư cách pháp nhân tại Cục Quản lý xuất nhập cảnh. Cần giữ chi tiết riêng theo từng nguồn, không chèn vào nguyên văn nguồn chính. Các bản ghi chưa cung cấp đầy đủ nội dung các điều luật được dẫn."
+        },
+        {
+          "en": "The two office addresses describe submission locations; they do not establish a requirement to live in Hanoi or Ho Chi Minh City. The primary family-sponsor clause expressly says the Vietnamese citizen permanently resides in Vietnam; do not transfer this wording to a different procedure automatically.",
+          "vi": "Hai địa chỉ trụ sở mô tả nơi tiếp nhận, không xác lập yêu cầu cư trú tại Hà Nội hoặc Thành phố Hồ Chí Minh. Điều kiện thân nhân ở nguồn chính nêu rõ công dân Việt Nam thường trú ở trong nước; không tự chuyển cách diễn đạt này sang thủ tục khác."
+        },
+        {
+          "en": "The primary procedure page names NA5 under Circular 22/2023/TT-BCA. Available form records also include the 2026 version under Circular 70/2026/TT-BCA and an older 2015 version. The exact edition accepted for this procedure remains unresolved; this guide does not approve a form edition.",
+          "vi": "Trang thủ tục chính nêu mẫu NA5 theo Thông tư 22/2023/TT-BCA. Hồ sơ biểu mẫu còn có bản năm 2026 theo Thông tư 70/2026/TT-BCA và bản cũ năm 2015. Chưa xác định chính xác phiên bản được thủ tục chấp nhận; hướng dẫn này không phê duyệt phiên bản biểu mẫu."
+        },
+        {
+          "en": "The entry/exit restriction clause uses 'or'. Its logical scope remains unclear; it is preserved below rather than turned into an automatic eligibility decision. A missing answer is unknown, not proof of ineligibility.",
+          "vi": "Mệnh đề về hạn chế nhập cảnh/xuất cảnh dùng từ “hoặc” nhưng phạm vi logic chưa rõ. Nội dung được giữ lại, không chuyển thành kết luận tự động về điều kiện. Thông tin còn thiếu là chưa biết, không phải bằng chứng không đủ điều kiện."
+        },
+        {
+          "en": "Visa exemption qualifies the visa requirement in the quoted condition; it is not presented as waiving the other listed conditions. Organization and Vietnamese-family sponsorship are role-specific branches, not requirements that every applicant must satisfy together.",
+          "vi": "Ngoại lệ miễn thị thực gắn với yêu cầu có thị thực, không được trình bày như việc miễn các điều kiện còn lại. Nhánh cơ quan/tổ chức và nhánh thân nhân là công dân Việt Nam áp dụng theo vai trò, không phải các yêu cầu mọi hồ sơ phải đồng thời đáp ứng."
+        },
+        {
+          "en": "Postal service is described for additional papers, physical papers in an online application, and requested return delivery. The source does not establish an independent right to submit the entire initial application by post.",
+          "vi": "Nguồn mô tả bưu chính để bổ sung hồ sơ, gửi giấy tờ của hồ sơ trực tuyến và nhận kết quả theo yêu cầu. Chưa có căn cứ coi bưu chính là một cách nộp toàn bộ hồ sơ ban đầu độc lập."
+        },
+        {
+          "en": "These translations preserve the captured primary source. Successful extraction and the retrieval date do not establish current legal effect or guarantee an outcome.",
+          "vi": "Bản dịch giữ nội dung nguồn chính đã ghi nhận. Việc trích xuất thành công và ngày truy xuất không xác lập hiệu lực pháp lý hiện tại hoặc bảo đảm kết quả."
+        },
+        {
+          "en": "The supplied 2026 form has conflicting separate-visa photo notes: 1 photo in Vietnamese and 2 in English. Whether that visa branch applies to this stay extension is unresolved; no photo is added to the extension checklist.",
+          "vi": "Ghi chú cấp thị thực rời của bản mẫu năm 2026 không thống nhất: tiếng Việt ghi 01 ảnh, tiếng Anh ghi 2 ảnh. Chưa xác định nhánh cấp thị thực này áp dụng cho thủ tục gia hạn; không bổ sung ảnh vào danh mục hồ sơ gia hạn."
+        }
+      ],
+      "installed_documents": []
+    },
+    "1.003342": {
+      "procedure_code": "1.003342",
+      "title": {
+        "en": "Visa issuance — central Immigration Department",
+        "vi": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+      },
+      "source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+        "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+        "retrieved_at": "2026-10-31T05:24:34.951006+00:00",
+        "snapshot_id": 21,
+        "parser_version": "vpcp-by-code-3",
+        "published_on": null,
+        "updated_on": null
+      },
+      "profile": {
+        "id": 3,
+        "run_id": "8a4b0af7-f2ba-41f8-a176-001f1b03bf4e",
+        "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+        "output_sha256": "f5aa2cc6ae1ff8477bf75b60616b25dec506884ce730156cf76dabf58ec7732e"
+      },
+      "evidence": {
+        "access": "source_attributed",
+        "procedure_currency": "not_reverified",
+        "extraction_status": "validated_draft",
+        "template_approval": "unchanged",
+        "form_applicability": "unresolved"
+      },
+      "checklist": [
+        {
+          "id": "1.003342:requirement:110",
+          "kind": "document",
+          "title": {
+            "en": "NA5 application form: source specifies the 2023 edition",
+            "vi": "Tờ khai NA5: nguồn dẫn bản năm 2023"
+          },
+          "text": {
+            "en": "Application form for visa issuance or temporary-stay extension (NA5), issued with Ministry of Public Security Circular 22/2023/TT-BCA dated 30 June 2023. Submit 1 original; 0 copies.",
+            "vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/0",
+            "quote_vi": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          }
+        },
+        {
+          "id": "1.003342:requirement:111",
+          "kind": "document",
+          "title": {
+            "en": "One recent 4 × 6 cm photograph, if a separate visa is issued",
+            "vi": "Một ảnh mới chụp 4 × 6 cm nếu cấp thị thực rời"
+          },
+          "text": {
+            "en": "One recent 4 × 6 cm photograph, facing straight ahead, without a hat or glasses, in appropriate attire, against a white background. The primary checklist records 1 original; 0 copies.",
+            "vi": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+          },
+          "condition": {
+            "en": "Only if the case involves issuance of a separate visa.",
+            "vi": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+          },
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/1",
+            "quote_vi": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+          }
+        },
+        {
+          "id": "1.003342:requirement:112",
+          "kind": "document",
+          "title": {
+            "en": "Passport or international travel document",
+            "vi": "Hộ chiếu hoặc giấy tờ đi lại quốc tế"
+          },
+          "text": {
+            "en": "The foreign national’s passport or international travel document. Submit 1 original; 0 copies.",
+            "vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          },
+          "condition": null,
+          "originals": 1,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/2",
+            "quote_vi": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          }
+        },
+        {
+          "id": "1.003342:requirement:113",
+          "kind": "submission_instruction",
+          "title": {
+            "en": "Online submission: postal originals and electronic certification",
+            "vi": "Nộp trực tuyến: gửi giấy tờ và chứng thực điện tử"
+          },
+          "text": {
+            "en": "For an online application, send the passport or international travel document to the receiving authority through the public postal service. Other application components must be electronically certified as required; if they are not electronically certified, send them to the receiving authority through the public postal service.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "condition": {
+            "en": "If applying online.",
+            "vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          },
+          "originals": 0,
+          "copies": 0,
+          "source_ref": {
+            "json_pointer": "/requirements/3",
+            "quote_vi": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        }
+      ],
+      "steps": [
+        {
+          "text": {
+            "en": "Prepare the application in accordance with the law.",
+            "vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật."
+          },
+          "id": "step-1",
+          "title": {
+            "en": "Prepare the application",
+            "vi": "Chuẩn bị hồ sơ"
+          }
+        },
+        {
+          "text": {
+            "en": "Submit during office hours on working days at either Immigration Department, Ministry of Public Security office: 44–46 Tran Phu Street, Ba Dinh District, Hanoi; or 333–335–337 Nguyen Trai Street, District 1, Ho Chi Minh City.\n\nAlternatively, apply through the National Public Service Portal or the Ministry of Public Security Public Service Portal, and send additional documents through the public postal service if notified by the Immigration Department on the online public service portal.\n\nOfficers check the legality and contents: a complete, valid application is accepted, an appointment slip is issued, and payment is requested with a paper receipt or online payment and electronic receipt; an incomplete or invalid application receives instructions to complete it; an ineligible application is not accepted and the reason is given in writing or through a portal notice.\n\nOnline applicants may request delivery of results by post and must pay the delivery charge.\n\nApplications are received Monday to Saturday morning, excluding Tet and public holidays.",
+            "vi": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp thị thực hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp thị thực thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp thị thực hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp thị thực thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-2",
+          "title": {
+            "en": "Submit and pay if accepted",
+            "vi": "Nộp hồ sơ và nộp phí nếu được tiếp nhận"
+          }
+        },
+        {
+          "text": {
+            "en": "Collect the result in person at the Immigration Department, Ministry of Public Security, bringing the appointment slip, identity document and payment receipt for checking.\n\nIf postal delivery was requested, follow the postal provider’s instructions.\n\nIf a visa is not issued, the reason is given in writing or through the National Public Service Portal or the Ministry of Public Security Public Service Portal.\n\nResults are returned Monday to Friday, excluding Tet and public holidays.",
+            "vi": "Bước 3: Nhận kết quả:\n+ Người đề nghị cấp thị thực trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/0/text_verbatim",
+            "quote_vi": "Bước 3: Nhận kết quả:\n+ Người đề nghị cấp thị thực trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          "id": "step-3",
+          "title": {
+            "en": "Collect the result",
+            "vi": "Nhận kết quả"
+          }
+        }
+      ],
+      "conditions": [
+        {
+          "text": {
+            "en": "An agency or organization requesting a visa or temporary-stay extension for a foreign national or Vietnamese national holding a foreign passport must already have the dossier specified in Article 16(2) of the Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam.",
+            "vi": "+ Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        },
+        {
+          "text": {
+            "en": "The foreign national or Vietnamese national holding a foreign passport has a valid passport, a visa unless exempt, and a temporary-residence certification issued by a competent Vietnamese authority, and is residing in Vietnam. The source then states: “and is not subject to denial of entry into Vietnam OR is not subject to temporary suspension of departure.” The wording and combination of these legal checks require clarification; this translation does not turn OR into AND.",
+            "vi": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          }
+        },
+        {
+          "text": {
+            "en": "A Vietnamese citizen permanently residing in Vietnam who requests visa issuance, addition or amendment, or temporary-stay extension for a foreign national or Vietnamese national holding a foreign passport must be that person’s grandfather, grandmother, father, mother, wife, husband, child, biological brother or sister, and present documents proving the relationship, as cited in Article 45(1) of the Law on Entry, Exit, Transit and Residence of Foreigners in Vietnam.",
+            "vi": "+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại khoản 1 Điều 45 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          },
+          "source_ref": {
+            "json_pointer": "/document_json/sections/4/text_verbatim",
+            "quote_vi": "+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại khoản 1 Điều 45 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        }
+      ],
+      "notes": [
+        {
+          "en": "This procedure is visa issuance at central level. References to stay extension, addition or amendment in a condition or form do not change that procedure identity. The applicant, sponsor and visa recipient are distinct roles.",
+          "vi": "Thủ tục này là cấp thị thực tại cấp Trung ương. Việc phần điều kiện hoặc biểu mẫu nhắc gia hạn, bổ sung hay sửa đổi không thay đổi danh tính thủ tục. Người nộp hồ sơ, người bảo lãnh và người được cấp thị thực là các vai trò khác nhau."
+        },
+        {
+          "en": "Agency/organization sponsorship and Vietnamese-citizen family sponsorship are conditional branches; do not require every applicant to satisfy both branches simultaneously or assume these are the complete list of possible sponsors. For the Vietnamese-citizen family branch, present relationship evidence; the source does not specify a separate original/copy quantity or certification rule for that evidence.",
+          "vi": "Bảo lãnh bởi cơ quan, tổ chức và bảo lãnh thân nhân bởi công dân Việt Nam là các nhánh có điều kiện; không yêu cầu mọi hồ sơ đồng thời thỏa mãn cả hai hoặc mặc định đây là danh sách đầy đủ người bảo lãnh. Nhánh thân nhân do công dân Việt Nam bảo lãnh yêu cầu xuất trình giấy tờ chứng minh quan hệ; nguồn không nêu số bản chính, bản sao hoặc quy tắc chứng thực riêng cho giấy tờ này."
+        },
+        {
+          "en": "The procedure checklist cites NA5 under Circular 22/2023/TT-BCA, while supplied forms cite 04/2015/TT-BCA (direct download) and 70/2026/TT-BCA (filename fallback). The accepted edition and any replacement relationship remain unconfirmed. Form-specific supporting documents and certification instructions must stay with their own edition.",
+          "vi": "Danh mục thủ tục dẫn NA5 theo Thông tư 22/2023/TT-BCA, trong khi các bản được cung cấp dẫn 04/2015/TT-BCA (tải trực tiếp) và 70/2026/TT-BCA (filename_fallback). Chưa xác nhận bản được chấp nhận hoặc quan hệ thay thế. Giấy tờ kèm theo và hướng dẫn xác nhận riêng phải giữ trong phạm vi đúng bản mẫu."
+        },
+        {
+          "en": "The primary checklist requires 1 photograph only for a separate visa. The 2026 form says 1 photo in Vietnamese but 2 in English; the 2015 form has a broader photo instruction. These differences are unresolved: do not silently change the primary quantity or make the photo unconditional.",
+          "vi": "Danh mục nguồn chính yêu cầu 01 ảnh chỉ khi cấp thị thực rời. Bản năm 2026 ghi 01 ảnh bằng tiếng Việt nhưng 2 ảnh bằng tiếng Anh; bản năm 2015 có hướng dẫn ảnh rộng hơn. Các khác biệt chưa được giải quyết: không âm thầm đổi số lượng của nguồn chính hoặc biến ảnh thành yêu cầu vô điều kiện."
+        },
+        {
+          "en": "The online-handling row records 0 originals and 0 copies; it is a submission instruction, not an extra document and not a waiver of the passport original. Postal submission is described as additional documents supporting online submission, not a fully independent application channel. A form’s “Submit in person” wording does not remove the procedure’s published online option.",
+          "vi": "Dòng hướng dẫn trực tuyến ghi 0 bản chính, 0 bản sao; đây không phải giấy tờ bổ sung và không miễn bản chính hộ chiếu. Bưu chính được mô tả là gửi bổ sung hỗ trợ hồ sơ trực tuyến, chưa phải kênh khởi tạo độc lập hoàn toàn. Câu “Submit in person” của biểu mẫu không loại bỏ lựa chọn trực tuyến đã công bố của thủ tục."
+        },
+        {
+          "en": "The recipient condition contains ambiguous entry/exit wording. Missing, null or unknown answers remain unknown, not automatically ineligible. No complete Article 16(2) or Article 45(1) text is supplied here; this guide does not invent additional legal tests. This translation does not establish current legal validity or approve a form.",
+          "vi": "Điều kiện người được cấp có cách diễn đạt chưa rõ về nhập cảnh và xuất cảnh. Câu trả lời thiếu, null hoặc unknown phải giữ trạng thái chưa biết, không tự kết luận không đủ điều kiện. Nguồn ở đây không cung cấp toàn văn khoản 2 Điều 16 hoặc khoản 1 Điều 45; hướng dẫn không tự bổ sung phép thử pháp lý. Bản dịch không xác lập hiệu lực pháp lý hiện hành hoặc phê duyệt biểu mẫu."
+        }
+      ],
+      "installed_documents": []
+    }
+  }
+}
