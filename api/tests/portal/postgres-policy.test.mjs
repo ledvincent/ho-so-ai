@@ -70,6 +70,7 @@ test('restricted login passes guard; exact repository SQL isolates A/B and revis
   const db = await fixture();
   try {
     assert.equal(await allowed(db), true);
+    console.log(`Disposable engine PostgreSQL version: ${(await db.query('SHOW server_version')).rows[0].server_version}`);
     assert.equal((await query(db, 'namespace')).rows[0].issuer, issuer);
     await asUser(db, 'A', async (tx) => {
       assert.equal((await query(tx, 'create', payload('A'))).rows[0].revision, 1);
@@ -127,6 +128,103 @@ for (const role of ['pg_read_all_data', 'pg_write_all_data', 'pg_read_server_fil
     try { assert.equal(await allowed(db), false); } finally { await db.close(); }
   });
 }
+
+// All DDL/grants below exist only in a fresh in-memory engine per scenario.
+const forbiddenGrants = [
+  ['marker table INSERT', 'identity_namespace', 'INSERT'],
+  ['marker column INSERT', 'identity_namespace', 'INSERT (issuer)'],
+  ['marker table UPDATE', 'identity_namespace', 'UPDATE'],
+  ['marker column UPDATE', 'identity_namespace', 'UPDATE (issuer)'],
+  ['marker DELETE', 'identity_namespace', 'DELETE'],
+  ['marker TRUNCATE', 'identity_namespace', 'TRUNCATE'],
+  ['marker TRIGGER', 'identity_namespace', 'TRIGGER'],
+  ['profile owner UPDATE', 'profiles', 'UPDATE (owner_subject)'],
+  ['profile ID UPDATE', 'profiles', 'UPDATE (profile_id)'],
+  ['profile DELETE', 'profiles', 'DELETE'],
+  ['profile TRUNCATE', 'profiles', 'TRUNCATE'],
+  ['profile TRIGGER', 'profiles', 'TRIGGER'],
+];
+for (const mode of ['direct', 'inherited', 'set-only']) {
+  for (const [name, table, privilege] of forbiddenGrants) {
+    test(`guard rejects ${name} through ${mode} grants`, async () => {
+      const recipient = mode === 'direct' ? 'auth01_synthetic_login' : 'synthetic_mutator';
+      const role = mode === 'direct' ? '' : `
+        CREATE ROLE synthetic_mutator;
+        GRANT synthetic_mutator TO auth01_synthetic_login
+          WITH INHERIT ${mode === 'inherited' ? 'TRUE' : 'FALSE'}, SET TRUE;
+      `;
+      const db = await fixture(`${role} GRANT ${privilege} ON hoso_portal.${table} TO ${recipient};`);
+      try {
+        if (mode === 'set-only') {
+          const reach = (await db.query(`SELECT
+            pg_has_role(session_user, 'synthetic_mutator', 'MEMBER') AS member,
+            pg_has_role(session_user, 'synthetic_mutator', 'USAGE') AS inherited,
+            pg_has_role(session_user, 'synthetic_mutator', 'SET') AS switchable
+          `)).rows[0];
+          assert.deepEqual(reach, { member: true, inherited: false, switchable: true });
+        }
+        if (name === 'marker column INSERT' || name === 'marker column UPDATE') {
+          const permission = name.endsWith('INSERT') ? 'INSERT' : 'UPDATE';
+          const acl = (await db.query(`SELECT
+            has_table_privilege($1, 'hoso_portal.identity_namespace', $2) AS whole_table,
+            has_any_column_privilege($1, 'hoso_portal.identity_namespace', $2) AS any_column
+          `, [recipient, permission])).rows[0];
+          assert.deepEqual(acl, { whole_table: false, any_column: true });
+        }
+        assert.equal(await allowed(db), false);
+      } finally { await db.close(); }
+    });
+  }
+}
+
+for (const [name, table, privilege] of [
+  ['marker UPDATE', 'identity_namespace', 'UPDATE (issuer)'],
+  ['profile TRUNCATE', 'profiles', 'TRUNCATE'],
+]) {
+  test(`mixed SET-then-inherit chain cannot hide ${name}`, async () => {
+    const db = await fixture(`
+      CREATE ROLE synthetic_parent; CREATE ROLE synthetic_mutator;
+      GRANT synthetic_parent TO auth01_synthetic_login WITH INHERIT FALSE, SET TRUE;
+      GRANT synthetic_mutator TO synthetic_parent WITH INHERIT TRUE, SET FALSE;
+      GRANT ${privilege} ON hoso_portal.${table} TO synthetic_mutator;
+    `);
+    try {
+      const reach = (await db.query(`SELECT
+        pg_has_role(session_user, 'synthetic_mutator', 'MEMBER') AS member,
+        pg_has_role(session_user, 'synthetic_mutator', 'USAGE') AS inherited,
+        pg_has_role(session_user, 'synthetic_mutator', 'SET') AS switchable
+      `)).rows[0];
+      assert.deepEqual(reach, { member: true, inherited: false, switchable: false });
+      assert.equal(await allowed(db), false);
+    } finally { await db.close(); }
+  });
+}
+
+for (const membership of ['INHERIT TRUE, SET FALSE', 'INHERIT FALSE, SET TRUE']) {
+  test(`safe custom role passes with ${membership}`, async () => {
+    const db = await fixture(`
+      CREATE ROLE synthetic_safe;
+      GRANT SELECT ON hoso_portal.identity_namespace TO synthetic_safe;
+      GRANT UPDATE(full_name) ON hoso_portal.profiles TO synthetic_safe;
+      GRANT synthetic_safe TO auth01_synthetic_login WITH ${membership};
+    `);
+    try { assert.equal(await allowed(db), true); } finally { await db.close(); }
+  });
+}
+
+test('unsafe dormant membership is conservatively rejected too', async () => {
+  const db = await fixture(`
+    CREATE ROLE synthetic_dormant;
+    GRANT TRUNCATE ON hoso_portal.profiles TO synthetic_dormant;
+    GRANT synthetic_dormant TO auth01_synthetic_login WITH INHERIT FALSE, SET FALSE;
+  `);
+  try { assert.equal(await allowed(db), false); } finally { await db.close(); }
+});
+
+test('PUBLIC marker mutation grant cannot evade the guard', async () => {
+  const db = await fixture('GRANT UPDATE (issuer) ON hoso_portal.identity_namespace TO PUBLIC;');
+  try { assert.equal(await allowed(db), false); } finally { await db.close(); }
+});
 for (const [name, grant] of [
   ['schema creation', 'GRANT CREATE ON SCHEMA hoso_portal TO auth01_synthetic_login'],
   ['owner column changes', 'GRANT UPDATE(owner_subject) ON hoso_portal.profiles TO auth01_synthetic_login'],

@@ -11,36 +11,47 @@ from .repository import ProfileRepository, StorageUnavailable, require_verified_
 from .service import ProfileService
 
 
-# Check all reachable roles, including SET ROLE memberships, not just current_user.
-# A compromised provisioner must not accidentally be used as the application login.
+# MEMBER deliberately over-approximates usable PG16 roles: it includes INHERIT
+# FALSE / SET TRUE and mixed SET-then-inherit chains, even dormant memberships.
+# Check every candidate's ACLs, not just privileges inherited by current_user.
+# A provisioner must not accidentally be used as the application login.
 _ROLE_CHECK = text("""
+WITH runtime_roles AS (
+  SELECT r.* FROM pg_roles r
+  WHERE r.rolname IN (session_user, current_user)
+     OR pg_has_role(session_user, r.oid, 'MEMBER')
+     OR pg_has_role(current_user, r.oid, 'MEMBER')
+)
 SELECT
   NOT EXISTS (
-    SELECT 1 FROM pg_roles r
-    WHERE (r.rolname = session_user OR pg_has_role(session_user, r.oid, 'MEMBER'))
-      AND (r.rolsuper OR r.rolbypassrls OR r.rolcreaterole OR r.rolcreatedb
+    SELECT 1 FROM runtime_roles r
+    WHERE (r.rolsuper OR r.rolbypassrls OR r.rolcreaterole OR r.rolcreatedb
         OR r.rolname IN ('pg_read_all_data', 'pg_write_all_data',
           'pg_read_server_files', 'pg_write_server_files', 'pg_execute_server_program'))
   )
   AND NOT EXISTS (
     SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
     WHERE n.nspname = 'hoso_portal'
-      AND (pg_has_role(session_user, c.relowner, 'MEMBER')
+      AND (EXISTS (SELECT 1 FROM runtime_roles r WHERE r.oid = c.relowner)
         OR (c.relname = 'profiles' AND (NOT c.relrowsecurity OR NOT c.relforcerowsecurity)))
   )
   AND NOT EXISTS (
-    SELECT 1 FROM pg_roles r
-    WHERE (r.rolname = session_user OR pg_has_role(session_user, r.oid, 'MEMBER'))
-      AND has_schema_privilege(r.oid, 'hoso_portal', 'CREATE')
+    SELECT 1 FROM runtime_roles r
+    WHERE has_schema_privilege(r.oid, 'hoso_portal', 'CREATE')
   )
   AND EXISTS (
     SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
     WHERE n.nspname = 'hoso_portal' AND c.relname = 'profiles'
       AND c.relkind = 'r' AND c.relrowsecurity AND c.relforcerowsecurity
   )
-  AND NOT has_column_privilege(current_user, 'hoso_portal.profiles', 'owner_subject', 'UPDATE')
-  AND NOT has_column_privilege(current_user, 'hoso_portal.profiles', 'profile_id', 'UPDATE')
-  AND NOT has_table_privilege(current_user, 'hoso_portal.profiles', 'DELETE,TRUNCATE,TRIGGER')
+  AND NOT EXISTS (
+    SELECT 1 FROM runtime_roles r
+    WHERE has_column_privilege(r.oid, 'hoso_portal.profiles', 'owner_subject', 'UPDATE')
+       OR has_column_privilege(r.oid, 'hoso_portal.profiles', 'profile_id', 'UPDATE')
+       OR has_table_privilege(r.oid, 'hoso_portal.profiles', 'DELETE,TRUNCATE,TRIGGER')
+       OR has_any_column_privilege(r.oid, 'hoso_portal.identity_namespace', 'INSERT,UPDATE')
+       OR has_table_privilege(r.oid, 'hoso_portal.identity_namespace', 'DELETE,TRUNCATE,TRIGGER')
+  )
 """)
 _NAMESPACE = text("SELECT issuer FROM hoso_portal.identity_namespace WHERE singleton = true")
 _CONTEXT = text("SELECT set_config('hoso_portal.subject', :subject, true)")
@@ -71,6 +82,7 @@ class PostgresTransactions:
                 connect_args={
                     "sslmode": "verify-full",
                     "ssl_min_protocol_version": "TLSv1.2",
+                    "gssencmode": "disable",
                     "connect_timeout": 5,
                     "application_name": "hoso-auth01",
                 },

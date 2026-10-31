@@ -12,7 +12,13 @@ portal-owned until a new exact delivery is received and reviewed. Son owns voice
 conversation sessions and tool authorization; Vincent owns retrieval/RAG, official
 sources and the procedure-data contract. No procedure schema is defined here.
 
-## Review findings to resolve before acceptance
+## Findings at the input baseline
+
+The findings below are the inputs to the backend adaptation on exact APP-01
+`9cacda7320b5d18975a0bc2b62410eb74e45210f`. They are addressed in the portal
+provider/tests on `codex/kim/auth-01-storage-hardening`; the implementation and
+offline evidence are described next. Real PostgreSQL16 wire/TLS acceptance is
+still pending. This is not evidence of an unsafe live database.
 
 The proposed SQL currently gives narrow grants. The following findings concern
 the runtime guard's ability to reject unsafe provisioning or transport drift;
@@ -36,6 +42,51 @@ libpq can prefer working GSSAPI encryption regardless of `sslmode`; forcing TLS
 also requires disabling GSS encryption. Psycopg accepts libpq connection options
 and keyword arguments override conninfo options. [libpq transport options](https://www.postgresql.org/docs/16/libpq-connect.html),
 [Psycopg connection parameters](https://www.psycopg.org/psycopg3/docs/api/connections.html).
+
+## Backend adaptation and PostgreSQL16 privilege semantics
+
+`api/hoso_api/portal/postgres.py` now builds one candidate-role set from
+`session_user`, `current_user`, and all direct/indirect `MEMBER` roles of either.
+Every role in that set is checked for marker mutation, forbidden profile grants,
+schema creation, elevated attributes and ownership. This deliberately retains
+the conservative membership policy; unsafe dormant memberships are rejected too.
+
+In PostgreSQL16, `MEMBER` includes membership regardless of its INHERIT/SET
+options. `USAGE` tests immediately available role privileges, while `SET` tests
+the ability to assume a role. A login can SET a parent and then inherit another
+role's privileges even when neither direct inquiry identifies that child as
+usable from the original login. Considering every MEMBER avoids overlooking
+this mixed path. Per-role privilege inquiries also account for inherited grants
+and PUBLIC privileges. [PG16 privilege inquiries](https://www.postgresql.org/docs/16/functions-info.html),
+[role membership](https://www.postgresql.org/docs/16/role-membership.html).
+
+For each candidate, `has_any_column_privilege(..., 'INSERT,UPDATE')` rejects
+both whole-table and column-only writes to `identity_namespace`. A separate
+table check rejects DELETE/TRUNCATE/TRIGGER. The same candidate set is checked
+for UPDATE of profile owner/ID and profile DELETE/TRUNCATE/TRIGGER. The proposal's
+normal profile-field updates remain allowed. Table-only inspection would miss
+column-only grants; TRUNCATE does not use RLS. [Column/table privilege functions](https://www.postgresql.org/docs/16/functions-info.html),
+[RLS limits](https://www.postgresql.org/docs/16/ddl-rowsecurity.html).
+
+Trusted connection arguments now include `gssencmode=disable` alongside
+`sslmode=verify-full` and `ssl_min_protocol_version=TLSv1.2`. Environment defaults
+cannot select GSS encryption in place of the intended TLS path; DSN attempts to
+override GSS mode or lower the protocol remain rejected. libpq otherwise prefers
+working GSS encryption even with verify-full; explicit Psycopg arguments override
+connection defaults. [PG16 libpq transport options](https://www.postgresql.org/docs/16/libpq-connect.html),
+[Psycopg connection parameters](https://www.psycopg.org/psycopg3/docs/api/connections.html).
+
+The offline test matrix adds direct, inherited and `INHERIT FALSE, SET TRUE`
+custom-role grants for every forbidden marker/profile operation, including
+column-only INSERT/UPDATE. It also covers mixed SET-then-inherit chains, PUBLIC
+mutation grants, conservative dormant-role rejection and safe custom-role controls.
+Its disposable PGlite0.3.16 engine reports PostgreSQL17.5. These SQL checks exercise
+the stated membership options but are not a PostgreSQL16 or network-driver test.
+The connection test reaches a patched `psycopg.connect` through the real SQLAlchemy
+dialect and checks arguments plus sanitized failure, without opening a socket.
+Exact result counts and consumer commit are recorded in the portal
+[handoff](../api/hoso_api/portal/HANDOFF.md). The acceptance matrix below remains
+pending on the real isolated PostgreSQL16/TLS environment.
 
 ## Isolated environment candidate
 
