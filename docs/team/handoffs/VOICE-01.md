@@ -1,5 +1,9 @@
 # VOICE-01 — livraison du socle public de conversation
 
+Suivi : ce compte rendu decrit le socle initial et sa clarification UI. La suite
+bilingue/audio et les dernieres preuves figurent dans
+`docs/team/handoffs/VOICE-01-bilingual-audio.md` (34 tests, deux suites navigateur).
+
 Responsable : Son
 
 Tache : VOICE-01 — parcours vocal vietnamien dans l'application navigateur.

@@ -2,6 +2,13 @@
 
 ## Decisions confirmees — 31 octobre 2026
 
+- Son demande de poursuivre l'agent vocal en vietnamien et en anglais. Les
+  messages de dialogue seront bilingues; cela n'autorise pas la traduction des
+  faits officiels ni un ajout de procedures. Aucun changement de responsabilite
+  UI : Kim conserve l'interface produit. Preuve : demande explicite dans le chat
+  VOICE-01. Adaptateur OpenAI audio optionnel en cours, pas un accord de fournisseur
+  definitif avec Kim; aucune cle disponible dans l'environnement observe.
+
 - Kim possede l'interface produit, y compris l'ecran de conversation, le bouton
   micro et leur presentation. Son livre le backend de recherche/voix, le dialogue,
   les sessions et l'autorisation serveur. La page statique de VOICE-01 reste un
