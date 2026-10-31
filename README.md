@@ -6,11 +6,11 @@ are selected by document ID; NA5 is the first installed form.
 
 ## What exists today
 
-- A local PostgreSQL 16 database with pgvector, persisted in Docker's `hoso_pgdata` volume. Seven migrations define the schema.
+- A local PostgreSQL 16 database with pgvector, persisted in Docker's `hoso_pgdata` volume. Nine migrations define the schema.
 - Four ingested procedures, full source evidence, shared form versions, structured profiles and six catalog comparisons.
 - A procedure ingestion agent with versioned prompts, schemas, model settings and recorded validation results.
 - A FastAPI backend and a draft NA5 filling/preview workflow. Final form downloads remain gated on template review.
-- An assistant endpoint and retrieval scaffolding. Embeddings and retrieval calibration still need configuration before search is operational.
+- An assistant API and versioned hybrid RAG engine with an embedding queue and signed clarification state. See [RAG setup and evaluation](docs/rag.md).
 
 The Git repository contains code, migrations, public source/form artifacts and analysis records. It does **not** contain the running database or credentials: a fresh clone starts with an empty database after migrations. The existing local database is preserved. Generated previews in `output/`, temporary files and caches stay local.
 
@@ -18,7 +18,7 @@ The first form workflow is at http://127.0.0.1:8000/workflows/1.001146. It uses 
 
 Start with [the active data index](data/README.md). Each procedure folder contains source HTML, the full captured procedure, internal analysis and references to the shared forms store. Distinct form versions, PDFs and field maps live once under `data/forms/`.
 
-Procedure 1.002411 is inactive. Historical exploration is in `data/archive/`. The four active procedures retain all visible primary content and submission descriptions. Fee-detail controls are internal provenance and do not block visible facts. Exact successful attachment downloads take precedence over inferred filename fallback. Known source-currency conflicts remain review blockers.
+Procedure 1.002411 is inactive. Historical exploration is in `data/archive/`. The four active procedures retain all visible primary content and submission descriptions. Fee-detail controls are internal provenance and do not block visible facts. Exact successful attachment downloads take precedence over inferred filename fallback. Claim-specific source conflicts are retained; reviewed procedures can supply source-attributed answers. See [scoped evidence access](docs/evidence-access.md).
 
 Start at [NA5](data/forms/NA5/README.md) for its workflow and revisions. The 2026 draft has 43 logical fields covering 61 measured writable areas. Older downloaded versions remain traceable in the shared object store; the same filename does not establish version equivalence.
 

@@ -6,13 +6,12 @@ from typing import Literal
 
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
-from fastapi.responses import HTMLResponse, FileResponse
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl, field_validator
 from sqlalchemy.exc import SQLAlchemyError
 
 from api.assistant_policy import PROMPT
 from api.rag import ConversationStateError
-from api.config import ROOT,engine
+from api.config import engine
 from sqlalchemy import text
 from api.assistant_documents import DocumentCard, document_cards, wants_documents, is_vietnamese, procedure_name, citation_title
 
@@ -127,16 +126,6 @@ def retrieve(request: ChatRequest) -> Retrieval:
 
 def get_retriever():
     return retrieve
-
-
-@router.get('', response_class=HTMLResponse)
-def assistant_page():
-    return (ROOT/'api/static/assistant.html').read_text(encoding='utf-8')
-
-
-@router.get('/demo.js', include_in_schema=False)
-def demo_script():
-    return FileResponse(ROOT/'api/static/assistant.js', media_type='text/javascript', headers={'Cache-Control':'no-store'})
 
 
 @router.get('/setup')

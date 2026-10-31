@@ -4,7 +4,11 @@ from fastapi import HTTPException
 from api import assistant as a
 from api.assistant_documents import document_cards, citation_title
 from api.config import ROOT
-from api.workflow import Values, schema, validate_partial, preview, fictional_example, filled_pages
+from api.workflow import Values, schema, validate_partial, preview, filled_pages
+
+
+def fictional_example():
+    return dict(fictional=True,values=json.loads((ROOT/'tests/fixtures/na5-example.json').read_text(encoding='utf-8')))
 
 
 def sample(code='1.001146', condition=None):

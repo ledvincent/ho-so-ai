@@ -41,7 +41,6 @@ class Document:
         for key,path in [('schema','schema'),('template','template'),('template_pages','template-pages'),
                          ('validate','validate'),('preview','preview'),('preview_pages','preview-pages'),
                          ('download','download')]:result[key+'_url']=base+'/'+path
-        result['example_url']=base+'/example' if self.entry.get('example_path') else None
         return result
 
 

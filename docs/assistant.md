@@ -1,13 +1,11 @@
 # Assistant integration
 
 `POST /assistant/chat` connects a configurable LLM to server-side retrieval. The
-default adapter uses the [versioned RAG engine](rag.md). See the [local demo and document-panel walkthrough](assistant-demo.md). This is
-a stateless backend endpoint; the caller supplies up to 12 previous user/assistant
-turns. Open `/assistant` for the local chat page, with procedure selection,
-clarification buttons, citations and follow-up questions. The page sends the last
-four turns and retains the selected procedure through signed retrieval state.
-Use **New conversation** to switch procedures. Conversations are kept in page
-memory only and clear on reload. No chat persistence or streaming is included.
+default adapter uses the [versioned RAG engine](rag.md). See the
+[integration guide](kim-start-here.md) and [API contracts](contracts/README.md).
+This is a stateless backend endpoint; the caller supplies up to 12 previous
+user/assistant turns and retains signed retrieval state for follow-ups. Start
+without state to switch procedures. No chat persistence or streaming is included.
 
 ## Configure and call
 

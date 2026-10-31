@@ -1,29 +1,20 @@
 # Kim: start integrating here
 
-See the [frontend compatibility check](kim-integration-check.md) for the exact
-adapter changes still needed and why the current proxy setup does not need CORS.
-
 The backend owns procedure selection, RAG, answers, citations and document
 requirements. Kim's adapter proposes form-field changes. Son's finalized voice
 transcript enters the same routing as typed text. Do not send form values to chat.
 
 ## Files you can use immediately
 
-- `openapi.json`: exact current HTTP schemas, including validation/error shapes.
-- `chat-request.json`: working public question for the shared provincial demo.
-- `chat-documents-response.json`: actual Sol answer, citations and document cards.
-- `chat-processing-response.json`: actual sourced processing-time answer.
-- `chat-clarification-response.json`: natural clarification and choice IDs.
-- `na5-schema.json`: the NA5 example's 43 logical field definitions, types, conditions, required
-  flags, choices, roles/manual areas and PDF placements. Render applicable
-  writable fields; do not assume all 43 are user-entry fields.
-- `na5-fields.csv`: a flat field inventory for quick adapter implementation.
-- `fictional-values.json`: explicitly fictional complete example for previews.
-- `live-smoke.json`: 10/10 passing live cases, no mocked model or template approval.
-- `restore-smoke.json`: 8/8 checks passed after restoring the dump into a separate
-  fresh database, including a real Sol answer and the actual preview/download gate.
-  This restore used the existing machine and model service, not a second computer.
-- `manifest.json`: exact file hashes, model/effort, base branch/SHA and snapshot status.
+The checked-in [contracts directory](contracts/README.md) contains:
+
+- `openapi.json`: current request/response schemas and validation errors.
+- `chat-request.json` and `chat-response.json`: a public question and a recorded
+  Sol answer with citations and document cards. Answer wording can vary.
+- `procedure-documents.json`: installed form discovery with document-specific URLs.
+- `na5-provincial-stay-extension-schema.json`: NA5's fields, conditions, roles,
+  manual areas and PDF placements. Render applicable writable fields; do not
+  assume all fields are user-entry fields or reuse this schema for other forms.
 
 The examples omit live signed conversation state (shown as null). In real
 responses preserve the opaque `retrieval_state` and return it on follow-ups.
@@ -100,27 +91,28 @@ context; 422 input; 502 invalid/provider output; 503 unavailable/configuration;
 Forms: 422 invalid values; 409 stale template or download not approved. Inspect
 OpenAPI for the full request shapes. Error strings are not stable error codes.
 
-## Run the full backend bundle
+## Run the backend on your machine
 
 The source/API contract is on branch `codex/procedure-foundation`. Fetch and
 check out the delivered commit (see the handoff message). The checked-in
 `docs/contracts/` directory contains OpenAPI, a real example response and the
 current document schema. A Git clone does not include the populated database.
 
-Unzip `kim-backend-demo.zip` into a new folder for the public procedure artifacts
-(including ignored `data/_store`) and `handoff/procedure-db.dump`, preserving the
-reviewed index and source IDs. Use the pushed source commit with this data; the
-archive manifest identifies its own source snapshot. No credentials are included.
+Load the separately supplied data snapshot: `handoff/procedure-db.dump`,
+`data/_store/` and `data/archive/raw/`. The database dump and shared object store
+are not in Git. The dump preserves the published index, source IDs and reviews.
+Keep the current Git code and `data/forms/` definitions. Model weights, `.env`,
+credentials and signing secrets are also not included in Git.
 
 Requires Python 3.12+, uv and Docker Desktop. Use a Git checkout for the latest
-source, and copy only the database/public data from the earlier bundle:
+source, and copy the database/public data into that checkout:
 
 ```powershell
 git clone --branch codex/procedure-foundation https://github.com/ledvincent/ho-so-ai.git
 cd ho-so-ai
 # Copy handoff/procedure-db.dump, data/_store/ and data/archive/raw/ from
-# the supplied ZIP into matching paths here. Keep the checked-out source
-# and data/forms/ workflow definitions; do not replace them with older ZIP files.
+# the data snapshot into matching paths here. Keep the checked-out source
+# and data/forms/ workflow definitions.
 ```
 
 Then run from the checkout root:
@@ -129,9 +121,9 @@ Then run from the checkout root:
 uv sync --locked
 Copy-Item .env.example .env
 docker compose up -d --wait
-docker compose exec -T db createdb -U hoso hoso_kim_demo
-docker compose cp handoff/procedure-db.dump db:/tmp/hoso-demo.dump
-docker compose exec -T db pg_restore -U hoso -d hoso_kim_demo --no-owner --no-acl --exit-on-error /tmp/hoso-demo.dump
+docker compose exec -T db createdb -U hoso hoso_integration
+docker compose cp handoff/procedure-db.dump db:/tmp/hoso-data.dump
+docker compose exec -T db pg_restore -U hoso -d hoso_integration --no-owner --no-acl --exit-on-error /tmp/hoso-data.dump
 docker compose exec embeddings ollama pull bge-m3
 ```
 
@@ -139,7 +131,7 @@ The restore command intentionally targets a newly created database. Do not run
 it over an existing database. Set these values in the new local `.env`:
 
 ```dotenv
-DATABASE_URL=postgresql+psycopg://hoso:hoso_local@localhost:55432/hoso_kim_demo
+DATABASE_URL=postgresql+psycopg://hoso:hoso_local@localhost:55432/hoso_integration
 ASSISTANT_BASE_URL=https://api.openai.com/v1
 ASSISTANT_MODEL=gpt-6.1-sol
 ASSISTANT_REASONING_EFFORT=medium
@@ -159,17 +151,25 @@ The saved index expects BGE-M3 digest
 requires the matching model or an evaluated rebuild, not a silent substitution.
 
 ```powershell
-uv run alembic current
+uv run alembic upgrade head
 uv run uvicorn api.main:app --host 127.0.0.1 --port 8001
 # In another shell:
-uv run python -m scripts.check_assistant_demo --output output/kim-smoke
+uv run python -m scripts.check_frontend_handoff --live-assistant
 ```
 
-Expected migration: `0009`. Local UI: `http://127.0.0.1:8001/assistant`.
-OpenAPI: `http://127.0.0.1:8001/docs`. No HTTPS server is deployed. A localhost
-URL on Tanguy's machine is not accessible remotely; run this bundle locally.
+Expected migration: `0009`. OpenAPI: `http://127.0.0.1:8001/docs`.
+The smoke command exercises the app directly, including one paid model request;
+its report records the exact commit, working-tree status and checks. A fresh
+ingestion or changed embedding model requires rebuilding and evaluating the
+index using [the RAG workflow](rag.md). No HTTPS server is deployed.
 
 ## Integration boundaries and remaining limits
+
+Backend and frontend belong to the same repository and run on the same host.
+Use the portal's existing backend connection; no person-specific API URL or
+remote service is required. With a same-origin server proxy, browser CORS is
+unnecessary. Proxy these routes under the authenticated portal and forward
+PDF bytes, content type, status codes and `X-Review-Token` without altering them.
 
 Use one authenticated portal UI. Procedure questions call chat. In form mode,
 Kim's adapter proposes field changes and the portal calls validation/preview.
@@ -184,14 +184,14 @@ an explicit origin allowlist and `X-Review-Token` exposed via CORS.
 NA5 revision `70/2026/TT-BCA` is **draft**. Preview works; final download returns
 409 until human template review. Accepted-edition applicability is also unresolved
 in the captured sources. No photo upload, voice service or government submission
-is implemented. Answers, RAG, validation and PDF previews are real. Example
-applicant values are the only intentionally fictional data.
+is implemented. Answers, RAG, validation and PDF previews are real. Tests use
+fictional applicant values; the API does not supply prefilled applicant data.
 
 ## Adding another document
 
 Add its own PDF and workflow definition, then an entry in
 `data/forms/registry.json` with a unique `document_id`, `procedure_code`, `form_id`,
-name, `spec_path`, optional fictional `example_path`, and applicability status.
+name, `spec_path`, and applicability status.
 The workflow defines its own `fields`, `fixed_values`, optional `date_order`,
 field-level `uppercase`, placements, PDF hash and review status. Draft ingestion
 results must be validated before installation; downloads still require review.

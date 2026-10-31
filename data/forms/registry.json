@@ -5,7 +5,6 @@
     "procedure_code": "1.001146",
     "name": "Application for a temporary stay extension",
     "spec_path": "data/forms/NA5/workflow.json",
-    "example_path": "tests/fixtures/na5-example.json",
     "applicability": "unresolved"
   }
 ]

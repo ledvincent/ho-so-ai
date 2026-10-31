@@ -1,7 +1,6 @@
 from fastapi import APIRouter,HTTPException
 from fastapi.responses import HTMLResponse,Response,FileResponse,JSONResponse
 from pydantic import BaseModel,ConfigDict,Field
-import json
 from api.config import ROOT
 from api import na5
 
@@ -47,11 +46,6 @@ def blank_pages():
     version=na5.template_digest(mapping)
     return JSONResponse(dict(pages=na5.page_previews((ROOT/mapping['pdf_path']).read_bytes()),template_version=version),
                         headers={'Cache-Control':'no-store'})
-
-
-@router.get('/example')
-def fictional_example():
-    return dict(fictional=True,values=json.loads((ROOT/'tests/fixtures/na5-example.json').read_text(encoding='utf-8')))
 
 
 @router.post('/validate')

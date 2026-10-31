@@ -15,3 +15,14 @@ data/archive/raw/*
 !data/archive/raw/1.*.html
 !data/archive/raw/manifest.json
 data/raw/probe.html
+
+# Local assistant refinement UI and historical demo artifacts.
+api/static/assistant.html
+api/static/assistant.js
+scripts/serve_assistant_demo.py
+scripts/check_assistant_demo.py
+scripts/package_frontend_demo.py
+scripts/export_frontend_contract.py
+docs/assistant-demo.md
+docs/frontend-handoff.md
+docs/kim-integration-check.md

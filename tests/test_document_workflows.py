@@ -36,7 +36,7 @@ def test_each_document_exposes_its_own_fields_and_actions(documents):
     assert second.form_id=='TEST-COMPANY' and second.fixed_values=={}
     action=routes.procedure_documents('9.000001')['documents'][0]
     assert action['schema_url']=='/documents/test-company/schema'
-    assert action['example_url'] is None
+    assert 'example_url' not in action
     with pytest.raises(HTTPException) as error:routes.document('uninstalled')
     assert error.value.status_code==404
     assert routes.procedure_documents('9.999999')=={'documents':[]}

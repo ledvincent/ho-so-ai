@@ -68,14 +68,16 @@ def test_grounded_request_and_citations(client, monkeypatch):
 def test_route_registered():
     operation = app.openapi()["paths"]["/assistant/chat"]["post"]
     assert "200" in operation["responses"]
-    assert '/assistant' in app.openapi()['paths']
+    assert '/assistant' not in app.openapi()['paths']
     assert '/assistant/setup' in app.openapi()['paths']
 
 
-def test_chat_page_uses_text_rendering_and_memory_only():
-    page=a.assistant_page()+(a.ROOT/'api/static/assistant.js').read_text(encoding='utf-8')
-    assert 'textContent' in page and 'retrieval_state' in page
-    assert 'innerHTML' not in page and 'localStorage' not in page
+def test_backend_does_not_register_local_demo_routes():
+    from api import form_workflows, workflow
+    paths={route.path for router in (a.router,form_workflows.router,workflow.router)
+           for route in router.routes}
+    assert paths.isdisjoint({'/assistant','/assistant/demo.js',
+        '/documents/{document_id}/example','/workflows/1.001146/example'})
 
 
 def test_expired_conversation_has_recoverable_message(client):

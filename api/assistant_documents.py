@@ -25,7 +25,6 @@ class FormAction(BaseModel):
     preview_url: str
     preview_pages_url: str
     download_url: str
-    example_url: str | None = None
 
 
 class DocumentCard(BaseModel):
@@ -163,8 +162,8 @@ def document_cards(evidence, query):
             title = say('Proof of family relationship', 'Giấy tờ chứng minh quan hệ gia đình')
         elif re.search(r'\banh\b', normalized):
             title = say('Photographs', 'Ảnh')
-            description = say('Check the applicable branch and photo count with the receiving office. No photo upload is needed in this demo.',
-                'Xác nhận trường hợp áp dụng và số lượng ảnh với cơ quan tiếp nhận. Bản thử nghiệm này không yêu cầu tải ảnh lên.')
+            description = say('Check the applicable branch and photo count with the receiving office. You do not need to upload a photo here.',
+                'Xác nhận trường hợp áp dụng và số lượng ảnh với cơ quan tiếp nhận. Bạn không cần tải ảnh lên đây.')
         else:
             title, requirement = say('Additional requirement — needs confirmation',name), 'unconfirmed'
             description=say('This extracted item needs clarification before it can be presented as a requirement. Check the cited source with the receiving office.', '')

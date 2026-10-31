@@ -1,5 +1,4 @@
 """Document-specific schema, validation and PDF routes for all installed forms."""
-import json
 from fastapi import APIRouter,Depends,HTTPException
 from fastapi.responses import Response,FileResponse,JSONResponse
 from pydantic import BaseModel,ConfigDict,Field
@@ -80,12 +79,6 @@ def template_pages(doc=Depends(document)):
     current=version(doc)
     return JSONResponse(dict(pages=engine.page_previews((ROOT/doc.mapping['pdf_path']).read_bytes()),template_version=current),
                         headers={'Cache-Control':'no-store'})
-
-
-@router.get('/documents/{document_id}/example')
-def example(doc=Depends(document)):
-    if not doc.entry.get('example_path'):raise HTTPException(404,'No fictional example is installed for this document')
-    return dict(fictional=True,values=json.loads(registry.local_file(doc.entry['example_path']).read_text(encoding='utf-8')))
 
 
 @router.post('/documents/{document_id}/validate')

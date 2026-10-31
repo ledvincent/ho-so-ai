@@ -71,22 +71,6 @@
         }
       }
     },
-    "/workflows/1.001146/example": {
-      "get": {
-        "summary": "Fictional Example",
-        "operationId": "fictional_example_workflows_1_001146_example_get",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {}
-              }
-            }
-          }
-        }
-      }
-    },
     "/workflows/1.001146/validate": {
       "post": {
         "summary": "Validate Partial",
@@ -393,46 +377,6 @@
         }
       }
     },
-    "/documents/{document_id}/example": {
-      "get": {
-        "tags": [
-          "documents"
-        ],
-        "summary": "Example",
-        "operationId": "example_documents__document_id__example_get",
-        "parameters": [
-          {
-            "name": "document_id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "title": "Document Id"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "application/json": {
-                "schema": {}
-              }
-            }
-          },
-          "422": {
-            "description": "Validation Error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/documents/{document_id}/validate": {
       "post": {
         "tags": [
@@ -626,27 +570,6 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/HTTPValidationError"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/assistant": {
-      "get": {
-        "tags": [
-          "assistant"
-        ],
-        "summary": "Assistant Page",
-        "operationId": "assistant_page_assistant_get",
-        "responses": {
-          "200": {
-            "description": "Successful Response",
-            "content": {
-              "text/html": {
-                "schema": {
-                  "type": "string"
                 }
               }
             }
@@ -1455,17 +1378,6 @@
           "download_url": {
             "type": "string",
             "title": "Download Url"
-          },
-          "example_url": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "Example Url"
           }
         },
         "additionalProperties": false,

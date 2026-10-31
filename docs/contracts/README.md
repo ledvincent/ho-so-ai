@@ -12,6 +12,7 @@ with Sol medium. `retrieval_state` was removed and replaced with null; obtain a
 live signed value from the endpoint for conversation follow-ups. Source answers
 reflect captured evidence and relevant uncertainty, not a current-law guarantee.
 
-Regenerate with `python -m scripts.export_frontend_contract` against the local
-API after running `scripts.check_assistant_demo`. No credentials or applicant
-records belong in these files.
+Fetch `/openapi.json`, `/procedures/1.001146/documents` and each action's
+`schema_url` to refresh the structural contracts. Check the response example
+against the current `ChatResponse` schema when the API changes. No credentials,
+signed tokens or applicant records belong in these files.
