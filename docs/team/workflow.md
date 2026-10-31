@@ -30,6 +30,8 @@ la PR. Un nom de dossier ne constitue pas une preuve de responsabilite.
    Pour une tache existante, reprendre sa branche au lieu d'en recreer une.
 5. Declarer ID, responsable, branche, chemins touches et dependances dans le tableau.
    Pour un nouvel ID, suivre le prefixe du composant et verifier qu'il est libre.
+   Avec un manager local, declarer le travail dans `docs/team/status/<membre>.md`;
+   le manager commun consolide le tableau pour limiter les conflits d'edition.
 
 Format des branches : `codex/<responsable>/<id-en-minuscules>-<sujet>`.
 Responsables : `son`, `vincent`, `kim`, `manager`.
@@ -45,9 +47,9 @@ codex/manager/team-01-agent-workflow
 
 Une tache, une branche, une PR. La branche historique `codex/hackathon-manager`
 est conservee pour la configuration initiale; appliquer ce format aux nouvelles.
-Tant que cette configuration n'est pas fusionnee dans main, chaque membre doit
-la consulter sur cette branche. Ne pas demarrer une tache applicative sur la
-branche du manager pour recuperer les consignes.
+La configuration initiale est fusionnee dans main par la PR #1 (`97e8461`).
+Pour les ajouts en attente de fusion, consulter leur branche sans demarrer une
+tache applicative sur la branche du manager pour recuperer les consignes.
 
 ## 3. Developper et verifier
 
@@ -132,7 +134,9 @@ Git : hash du commit; pousse oui/non; lien PR si creee
 Prochaine action : action concrete et responsable
 ```
 
-Reporter les faits utiles dans le tableau. `En revue` signifie pret pour une
+Avec un manager local, reporter les faits utiles dans son fichier de suivi;
+le manager commun consolide le tableau et les decisions partagees.
+`En revue` signifie pret pour une
 revue; `Termine` signifie criteres verifies et fusion confirmee. Un commit ou un
 push seul ne signifie pas que la tache est terminee. Le manager verifie ces
 conventions lors des revues; aucun hook de blocage automatique n'est installe.

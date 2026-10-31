@@ -3,6 +3,9 @@
 Ce chat Codex sert de manager du checkout local relie a
 `https://github.com/ledvincent/ho-so-ai.git`.
 Les consignes persistantes sont dans `AGENTS.md`; ce document est son mode d'emploi.
+Pour les managers personnels de Son, Vincent et Kim, utiliser les profils et le
+protocole de `docs/team/managers/README.md`. Le manager commun coordonne le
+tableau et les decisions; chaque manager local maintient son seul suivi personnel.
 
 ## Mandat
 
@@ -52,7 +55,10 @@ Le manager fonctionne a la demande dans ce chat, sans daemon ni surveillance
 periodique. Il voit ce checkout et les sources distantes effectivement accessibles,
 pas les changements non publies des autres ordinateurs.
 
-La configuration est publiee sur `codex/hackathon-manager`, sans fusion dans main.
+La configuration initiale de `codex/hackathon-manager` a ete fusionnee dans main
+par la PR #1, commit `97e8461`, observe apres fetch le 31 octobre 2026.
+Les profils locaux sont livres separement sur
+`codex/manager/team-02-local-managers`, soumis a revue humaine avant fusion.
 Le collecteur, ses tests et sa CI ont ete retires de cette branche pour laisser
 Vincent livrer sa partie. Aucune CI ni protection de branche n'est activee par
 la configuration du manager. Les controles automatiques seront adaptes aux

@@ -13,6 +13,11 @@ validation; Kim owns forms, the mobile report and delivery. See
 and [decisions](docs/team/decisions.md). The manager advises and prepares fixes;
 humans approve merges.
 
+Each member can start a personal manager using the
+[local manager setup](docs/team/managers/README.md). The three managers share
+repository evidence and [per-member progress files](docs/team/status/README.md),
+not private chat histories.
+
 Kim owns application login, the personal dossier and approval UI. Son owns
 conversation sessions and the agent authorization server. See the
 [identity and security plan](docs/team/identity-and-security.md) for boundaries
