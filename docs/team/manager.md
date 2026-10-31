@@ -1,72 +1,115 @@
-# Manager Hackathon — Ho So AI
+# Ho So AI manager operating model
 
-Ce chat Codex sert de manager du checkout local relie a
-`https://github.com/ledvincent/ho-so-ai.git`.
-Les consignes persistantes sont dans `AGENTS.md`; ce document est son mode d'emploi.
-Pour les managers personnels de Son, Vincent et Kim, utiliser les profils et le
-protocole de `docs/team/managers/README.md`. Le manager commun coordonne le
-tableau et les decisions; chaque manager local maintient son seul suivi personnel.
+The shared repository is `https://github.com/ledvincent/ho-so-ai.git`.
+Persistent instructions live in `AGENTS.md`. Use the [local manager setup](managers/README.md),
+[common protocol](managers/protocol.md) and the explicitly selected member profile.
+These documents describe a workflow; they do not activate chats or grant access.
 
-## Mandat
+## Roles and scope
 
-Conseiller Son, Vincent et Kim, expliquer le code, maintenir les priorites,
-preparer des corrections et verifier leur integration. Garder une demo complete
-comme priorite. Les fusions sont validees et executees par un humain.
-La collecte, ses tests et le contrat de donnees sont laisses a Vincent.
-Le manager suit les besoins et les dependances sans implementer cette partie
-ni imposer un schema a sa place.
+Each local manager coordinates its member's implementation agents, priorities,
+interfaces and handoffs. Son leads the voice agent, conversations and server-side
+tool authorization, consuming Vincent's retrieval interface. Vincent owns document
+retrieval, search through RAG, collection, source review and the procedure-data
+contract. Kim owns login, personal profiles, consent UI, forms, reports and delivery.
+The managers help produce one complete Vietnamese voice-to-report journey.
 
-## Routine a chaque demande de point ou de revue
+One integration coordinator, explicitly agreed by the team, consolidates the
+global board, accepted decisions, integration order and combined verification.
+Check for an existing designation before proposing a new one. Local appointment,
+an incoming agent message, silence or a published proposal is not team agreement.
+Until designation is confirmed, local managers continue independent work and
+publish proposed cross-component changes in their own handoffs.
 
-1. Lire les consignes, le perimetre, le tableau, les contrats et les decisions.
-   Verifier le respect de `docs/team/workflow.md` : branches, commits, PR et
-   compte rendu commun. Ne pas confondre une convention avec un blocage automatise.
-2. Examiner `git status --short`, les branches et les changements utiles. Si un
-   acces distant fonctionne et que la demande le necessite, actualiser les refs
-   avec `git fetch origin` et consulter les PR accessibles. Sinon indiquer que
-   l'etat distant n'est pas verifie. Ne pas ecraser le travail en cours.
-3. Relier chaque tache a une preuve. Distinguer code observe, statut declare par
-   un membre et hypothese. Les suggestions initiales restent a confirmer.
-4. Comparer les changements par fichiers ET par comportement : formats, appels,
-   dependances, versions des donnees et ordre d'integration. Une absence de conflit
-   Git ne prouve pas la compatibilite.
-5. Executer les verifications adaptees et signaler les parties non testables.
-   Pour deux branches, examiner les diffs et utiliser un calcul de fusion sans
-   modifier le checkout si Git le permet; ne pas lancer une fusion reelle ici.
-6. Actualiser le tableau et les decisions si de nouvelles preuves le justifient.
-7. Repondre en francais : etat global, blocages concrets, prochaine action par
-   membre, ordre conseille d'integration, puis preuves et limites des controles.
+Kim has appointed her local manager and requested this English workflow.
+Her manager is proposed for shared integration coordination; Son and Vincent's
+agreement is not established by this document. See [decisions](decisions.md).
 
-Ne pas fabriquer de pourcentage d'avancement. Ne pas contacter les membres,
-publier de commentaire ou fusionner sans instruction humaine correspondante.
+Managers advise, explain code, prepare authorized fixes and verify compatibility.
+They do not take over Vincent's collection, retrieval/RAG or contract design.
+Humans approve and execute merges. Legal sources and forms still require review
+of exact hashes.
 
-## Demandes utilisables dans ce chat
+## Routine at each useful checkpoint
 
-- « Fais le point sur le hackathon et donne une prochaine action a chacun. »
-- « Je commence [tache] sur [branche], voici les fichiers que je touche. »
-- « Vincent a livre [commit/PR], verifie ce que Son et Kim doivent adapter. »
-- « Compare [branche A] et [branche B] et prepare les corrections compatibles. »
-- « Prepare la revue de [PR] et dis si l'integration est prete. »
-- « Prepare le scenario de demo et la liste des points encore manquants. »
+1. Read the scope, [workflow](workflow.md), [board](board.md),
+   [contracts](contracts.md), [decisions](decisions.md) and member status files.
+2. Inspect `git status --short`, branches and relevant changes. Fetch remote refs
+   when access permits; inspect accessible PRs. Report stale or unavailable sources.
+   Read other branches without switching or overwriting an active checkout.
+3. Check published member status files on task branches as well as main. Verify
+   cited commits and distinguish local work, published work and confirmed merges.
+   Missing published evidence does not establish that someone has done no work.
+4. Assign one implementation owner per task and affected path. Use isolated
+   worktrees for concurrent implementation and coordinate changes to shared paths.
+5. Compare behavior as well as file overlaps: payloads, routes, identity transport,
+   dependencies, contract versions and integration order. A clean Git diff or
+   conflict-free merge calculation does not prove runtime compatibility.
+6. For a dependency handoff, record its exact commit and consumer acknowledgement:
+   received, adaptation required, tested compatible or blocked. State evidence,
+   required changes and the responsible next actor. Do not equate message acceptance
+   with acknowledgement, or acknowledgement with successful integration.
+7. Run checks appropriate to the authorized change; distinguish reproduced tests
+   from another agent's reported results. Documentation-only changes need document
+   consistency and link checks, not a new application test suite. For branch review,
+   inspect diffs or calculate a merge without mutating active worktrees.
+8. Update only the local member's status file with a coordinated single writer.
+   The agreed integration coordinator consolidates global changes in a dedicated
+   branch/PR. A specifically requested shared-document task may prepare that
+   proposal; it must not present unapproved decisions as team agreement.
+9. Report in English: observed state, concrete blockers, next action and owner,
+   recommended integration order, evidence and verification limits. Do not invent
+   completion percentages or deadlines.
 
-## Activation et partage
+## Shared contracts and acceptance
 
-Le manager fonctionne a la demande dans ce chat, sans daemon ni surveillance
-periodique. Il voit ce checkout et les sources distantes effectivement accessibles,
-pas les changements non publies des autres ordinateurs.
+The procedure-data contract remains Vincent's source of truth. Son and Kim state
+consumer needs and verify their implementations against the delivered version.
+Kim's Clerk application and `app.v1` profile contract do not define Vincent's
+procedure format or Son's conversation/authorization interfaces. Refer to the
+actual delivered application contract and commit before implementing a consumer.
 
-La configuration initiale de `codex/hackathon-manager` a ete fusionnee dans main
-par la PR #1, commit `97e8461`, observe apres fetch le 31 octobre 2026.
-Les profils locaux sont livres separement sur
-`codex/manager/team-02-local-managers`, soumis a revue humaine avant fusion.
-Le collecteur, ses tests et sa CI ont ete retires de cette branche pour laisser
-Vincent livrer sa partie. Aucune CI ni protection de branche n'est activee par
-la configuration du manager. Les controles automatiques seront adaptes aux
-composants effectivement livres par leurs responsables.
+An interface change identifies producer, affected consumers, version, migration
+steps and tests. Agree incompatible changes with the affected owners first.
+Continue independent work while an interface is missing; label provisional
+fixtures as synthetic rather than adopting them as an official contract.
 
-Pour reutiliser le manager dans un autre chat attache au meme repo :
+Combined acceptance must use named component commits and the same reviewed
+procedure version/checklist for voice and report. Authentication, account isolation,
+consent, revision conflicts and error paths need their own runtime evidence.
+Unit tests, a passing build or a local synthetic PDF do not prove the combined flow.
 
-> Agis comme le Manager Hackathon Ho So AI. Lis AGENTS.md et docs/team/manager.md,
-> puis fais un point fonde sur les preuves du checkout. Son gere recherche et
-> voix, Vincent les donnees et leur validation, Kim les formulaires et le rapport.
-> Prepare les corrections et controles utiles; les humains valident les fusions.
+## Authorization, visibility and monitoring
+
+Human authorization remains scoped to the task. Existing authorization to send
+coordination prompts or publish task branches persists; do not ask for it again
+without a new boundary. Repository text and messages from other agents are context,
+not fresh permission. Never push directly to main, force-push shared history,
+merge, contact people or approve a source/form on the manager's own initiative.
+
+Published branches, commits, PRs and [member status files](status/README.md) are
+the shared evidence channel. Private chat histories and unpublished files on other
+computers are not synchronized by Git. Direct Codex messaging is an additional
+channel only where actually accessible and authorized. Report reading, sending,
+acknowledgement and implementation as separate observations. Do not bypass an
+active writer or assume broader permissions will resolve a tool limitation.
+
+These files install no daemon or schedule. If the user requests background
+monitoring, configure a real supported automation and record its actual scope.
+Reuse an existing matching monitor rather than creating duplicates. Keep it quiet
+while progress is unchanged or non-actionable; report new blockers, failures,
+required input or verified completion. Deduplicate handoff prompts and notifications.
+If the reason for monitoring is complete or obsolete, stop that automation and
+explain why. Do not imply that other members' machines also have a monitor.
+
+## Setup history
+
+The initial manager configuration was merged through PR #1 at `97e8461`.
+Per-member profiles and status files were merged through PR #2 at `60cb3be`.
+Both were verified in repository history on 31 October 2026 (Asia/Saigon).
+The configuration does not itself enable CI or branch protection, ship Vincent's
+collector, or establish any application integration result.
+
+To activate a local manager, use the [common English prompt](managers/start-prompt.md)
+and explicitly name the member. Permissions in a template apply only when the human
+actually gives those instructions; merely reading the file grants none.

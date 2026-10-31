@@ -1,41 +1,63 @@
-# Un manager local par membre
+# One local manager per team member
 
-Chacun ouvre son propre chat Codex attache a sa copie du depot et lui donne
-l'instruction correspondante. Les profils et les fichiers de suivi sont livres
-par le depot; aucun chat n'est cree ou active sur l'ordinateur des autres membres.
+Son, Vincent and Kim each use a manager chat attached to their own repository
+checkout. All three follow the [shared protocol](protocol.md) and the same
+[start prompt](start-prompt.md). Select the member explicitly; do not infer it
+from a computer name, Git author or directory owner.
 
-| Membre | Instruction a copier dans son chat |
-| --- | --- |
-| Son | Agis comme mon manager local. Lis AGENTS.md, docs/team/manager.md, docs/team/managers/protocol.md et docs/team/managers/son.md, puis fais mon point de depart. |
-| Vincent | Agis comme mon manager local. Lis AGENTS.md, docs/team/manager.md, docs/team/managers/protocol.md et docs/team/managers/vincent.md, puis fais mon point de depart. |
-| Kim | Agis comme mon manager local. Lis AGENTS.md, docs/team/manager.md, docs/team/managers/protocol.md et docs/team/managers/kim.md, puis fais mon point de depart. |
+| Member | Prompt substitution | Profile | Status file owned by that member |
+| --- | --- | --- | --- |
+| Son | `[MEMBER]` = `Son`; `[member-lowercase]` = `son` | [son.md](son.md) | [son.md](../status/son.md) |
+| Vincent | `[MEMBER]` = `Vincent`; `[member-lowercase]` = `vincent` | [vincent.md](vincent.md) | [vincent.md](../status/vincent.md) |
+| Kim | `[MEMBER]` = `Kim`; `[member-lowercase]` = `kim` | [kim.md](kim.md) | [kim.md](../status/kim.md) |
 
-## Installation
+## Activate a manager
 
-1. Recuperer la configuration une fois fusionnee dans main, sans ecraser le
-   travail en cours. Un nouveau clone peut partir directement de main.
-2. Ouvrir un chat dans ce depot et copier l'instruction de son profil.
-3. Le manager lit les regles, actualise les references Git et presente ce qui est
-   observe, inconnu et necessaire pour avancer. Il ne choisit pas son membre a
-   partir du nom du PC, de l'auteur d'un commit ou du proprietaire d'un dossier.
+1. Use the member's existing manager chat, or open one if none exists, attached
+   to their repository checkout. Preserve its branch and uncommitted work;
+   do not start competing managers or switch branches to load guidance.
+2. For this rollout, fetch `origin codex/kim/team-03-manager-protocol`, resolve
+   its full SHA, and read guidance with `git show <SHA>:<path>`. After merge,
+   current main may be used if it contains the corrected ownership guidance.
+   Record the exact reference used and any unavailable files.
+3. Copy the common prompt, replace its member placeholders, and review its bounded permission
+   paragraph before sending it as a human instruction in that chat.
+4. The manager establishes current owners, branches, evidence and next actions.
+   It coordinates existing work before proposing new implementation.
 
-Avant fusion, configuration disponible sur
-`codex/manager/team-02-local-managers`. Le manager peut lire les fichiers de
-cette reference avec `git show origin/codex/manager/team-02-local-managers:<chemin>`
-apres fetch; il ne doit pas changer la branche applicative pour charger un profil.
+Reading these files alone does not activate a manager, authorize messages or
+pushes, create another person's chat, or install a monitor. Human instructions
+and existing authorizations govern actions; the prompt grants its stated scope
+only when the person actually sends it.
 
-## Utilisation
+## Shared coordination
 
-- « Qu'est-ce que Son a publie et qu'est-ce que ca change pour moi ? »
-- « De quoi Kim a besoin de ma part ? »
-- « Compare ma branche avec celle de Vincent; y a-t-il une incompatibilite ? »
-- « Mets a jour mon suivi avec le commit et les tests que je viens de faire. »
-- « Prepare ma prochaine tache sans toucher au perimetre des autres. »
+Each local manager coordinates its member's implementation chats and maintains
+only that member's status file. Contract owners retain their interfaces. One
+explicitly designated integration coordinator consolidates the global board,
+shared decisions, dependency order and combined verification.
 
-Les chats ne partagent pas leur historique automatiquement. Le suivi partage,
-les commits et les PR sont leur memoire commune. Sans push, les autres managers
-ne voient pas les changements locaux. Aucun suivi periodique n'est active.
+If no designation is already recorded with evidence, propose Kim's manager for
+that role and record it as pending Son's and Vincent's agreement. The proposal
+does not give Kim's manager authority over their work. Continue independent
+local tasks while agreement or an interface delivery is pending.
 
-Les managers lisent tous les fichiers de [suivi](../status/README.md), mais
-chacun met a jour uniquement celui de son membre. Le [protocole](protocol.md)
-precise comment lire les suivis publies sur les branches avant leur fusion.
+Use English for shared manager guidance, status updates and handoffs. Preserve
+official Vietnamese source wording and form content; do not translate legal
+requirements as part of a manager-documentation update.
+
+## What managers can observe
+
+Git branches, commits, contracts and [member status files](../status/README.md)
+are the shared record. A pushed task branch is readable before merging into
+main. Unpublished work on another computer remains invisible through Git.
+Chats do not synchronize automatically across accounts or computers.
+
+Where local chat tools are available and human-authorized, a manager can inspect
+and message relevant local chats. Report tool limitations and distinguish a
+message accepted for delivery from an acknowledgement or completed change.
+
+Periodic checks require an explicitly requested, actually configured monitor.
+Reuse a suitable existing monitor; do not create duplicates. Report only
+meaningful changes, completion, failure or required action unless the user asks
+for periodic summaries. These files install no monitoring on any machine.

@@ -32,7 +32,8 @@
   exemples et maintenance. Son et Kim valident les besoins de leurs composants.
   Preuve : attribution confirmee par Son dans le chat du manager.
 
-- Son : recherche et agent vocal. Vincent : sources, collecte, donnees structurees
+- Historical allocation, superseded by Kim's ownership correction below:
+  Son : recherche et agent vocal. Vincent : sources, collecte, donnees structurees
   et validation. Kim : formulaires, rapport mobile et envoi.
   Preuve : repartition confirmee par Son dans le chat de configuration.
 - Le manager conseille, prepare les corrections et verifie l'integration;
@@ -52,3 +53,36 @@
 
 Pour chaque nouvelle decision, ajouter date, decision, justification, preuve et
 composants touches. Ne pas transformer une proposition du manager en accord equipe.
+
+## Kim's manager adoption and shared workflow proposal — 31 October 2026
+
+- Confirmed by Kim: this manager acts as Kim's local coordinator and applies the
+  common English workflow. Kim explicitly requested updating the shared manager
+  documents so Son and Vincent can use the same approach. This is the scope of
+  TEAM-03 on `codex/kim/team-03-manager-protocol`.
+- The proposed shared workflow uses each member's published status file, exact
+  delivery commits and explicit consumer acknowledgements. Local managers retain
+  their respective implementation ownership and preserve active worktrees.
+- Proposed integration coordinator: Kim's manager. Son and Vincent's agreement
+  has not been recorded here. Check for an existing designation and record each
+  member's response before presenting this as a collective decision. Independent
+  work and Kim's already authorized local coordination can continue meanwhile.
+- Kim's local monitoring was explicitly requested and configured in her own chat.
+  The repository instructions do not activate schedules or grant access on Son's
+  or Vincent's machines. Private chat routing and automation state remain local.
+- This entry does not approve new procedure facts, legal forms, authentication
+  compatibility or a successful combined demo. Existing technical boundaries remain.
+
+## Ownership correction from Kim — 31 October 2026
+
+- Son focuses primarily on the voice agent, conversation sessions and its
+  server-side tool authorization. The voice agent consumes Vincent's retrieval
+  interface; Son does not own document retrieval or the RAG/search service.
+- Vincent owns document retrieval and search through RAG, alongside official
+  sources, collection, structured data, source review and the shared procedure
+  contract. He provides the retrieval interface needed by Son and Kim.
+- Evidence: Kim explicitly corrected the ownership guidance while reviewing
+  TEAM-03 / PR #3. This supersedes the earlier allocation of search to Son;
+  it does not claim a delivered retrieval service or tested integration.
+- Kim's application/profile/forms/report scope and the existing Son/Kim security
+  responsibilities remain unchanged.

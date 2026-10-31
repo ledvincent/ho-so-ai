@@ -1,12 +1,13 @@
 # Contrat de donnees — responsable : Vincent
 
-Vincent definit, documente et maintient le format des donnees, le moyen de les
-recuperer et les exemples utilisables. Aucun schema technique n'est impose par
-le manager. La proposition initiale est retiree pour lui laisser cette conception.
+Vincent owns document retrieval and search through RAG. He defines, documents
+and maintains the retrieval interface, procedure-data format and usable examples.
+The manager imposes no technical schema; the original proposal was removed to
+leave this design with Vincent.
 
-Son precise les besoins de recherche et de voix; Kim ceux des formulaires et du
-rapport. Ils verifient la compatibilite de leurs composants avec la proposition
-de Vincent avant integration.
+Son defines the voice agent's retrieval needs and consumes Vincent's interface;
+Kim defines form/report needs. Both verify their consumers against Vincent's
+delivered contract before integration. Son does not own the retrieval/RAG service.
 
 Points a clarifier avec Vincent :
 
