@@ -1,5 +1,40 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Try the fictional document API inside a voice call
+
+With the existing private voice server on 8001 and the fixture on 8002 running,
+open `http://127.0.0.1:8002/?audio=realtime&language=en&documents=fixture`
+(or `language=vi`). Accept audio disclosure, start the call, then ask:
+“For this test, fetch the document for provincial-level temporary-stay extension
+for a foreign national and tell me its title.” It should invoke the fixture,
+identify the document and captured section count, and display `TEST SOURCE` in
+the diagnostic transcript. Other explicitly named catalog variants work too.
+
+This opt-in mode adds one Realtime tool, `inspect_test_document`, limited to four
+codes. The fixture bridge invokes `/assistant/chat` in-process through the actual
+consumer, then exposes only document identity/section metadata to the voice model.
+Raw draft legal requirements, fees and deadlines never enter the tool output.
+This is a connection demonstration, not a legal answer, semantic document search,
+report or review approval. The ordinary 8001 call is unchanged.
+
+The fixture reuses the same diagnostic HTML/assets; this is not a product UI.
+Only allowlisted session/call routes are relayed to fixed localhost:8001 with
+isolated `hoso_fixture_voice` cookies, bounded bodies and origin checks. No API
+key moves to the fixture/browser. One tool call has an eight-second deadline;
+hangup/interruption abort pending lookups, stale speech is suppressed, duplicate
+call IDs are ignored and calls are capped at eight lookups. Sources render as
+plain text. Server/UI callbacks do not log transcripts or document bodies.
+
+Verification: 56 offline Python tests; mocked browser with/without fixture mode;
+four real local HTTP fixture checks; one opt-in live English Realtime pilot using
+fictional text, synthetic silent mic and muted output. The pilot observed a tool
+call, result, displayed source and resumed audio. This does not evaluate real
+microphone recognition, all languages or legal correctness. No VI live pilot ran.
+
+Official implementation reference: [OpenAI Realtime function calling](https://developers.openai.com/api/docs/guides/realtime-conversations).
+To repeat the potentially billable pilot deliberately (bundled Playwright needed):
+`node son/voice/evals/live-intake-smoke.cjs --live --fixture`.
+
 ## Running a fictional document API while Vincent finishes his service
 
 ```powershell
@@ -28,8 +63,8 @@ empty context and HTTP 409. Fixture responses have `X-HoSo-Synthetic-Fixture: 1`
 
 The actual consumer has passed real local HTTP tests for all four codes and
 these failure branches. This is not compatibility evidence for Vincent's running
-service. The Realtime call on 8001 remains unchanged: it does not yet call this
-fixture or speak document excerpts. No draft is enabled for live legal advice.
+service. Use the opt-in 8002 voice URL above for the connection demo; the ordinary
+8001 call stays unchanged. No draft is enabled for live legal advice.
 Stop only this fixture with Ctrl+C in its terminal; leave other servers intact.
 
 ## Four-document consumer test

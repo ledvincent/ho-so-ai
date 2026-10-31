@@ -8,23 +8,33 @@ const {chromium} = require("playwright");
 
 (async () => {
   const language = process.argv.includes("--vi") ? "vi" : "en";
+  const fixture = process.argv.includes("--fixture");
   const browser = await chromium.launch({headless:true, channel:process.env.VOICE_BROWSER_CHANNEL || "msedge", args:["--autoplay-policy=no-user-gesture-required"]});
   let page;
   try {
     page = await browser.newPage();
     await page.addInitScript(() => {
-      window.probe = {replies:[], done:0, played:0, profile:false};
+      window.probe = {replies:[], done:0, played:0, profile:false, toolCalled:false, toolReturned:false};
       const create = RTCPeerConnection.prototype.createDataChannel;
       RTCPeerConnection.prototype.createDataChannel = function(...args) {
         window.probePeer = this;
         const channel = create.apply(this, args);
         window.probeChannel = channel;
+        const send = channel.send.bind(channel);
+        channel.send = value => {
+          try {
+            const event = JSON.parse(value);
+            if (event.item?.type === "function_call_output") window.probe.toolReturned = JSON.parse(event.item.output).synthetic === true;
+          } catch {}
+          return send(value);
+        };
         channel.addEventListener("message", event => {
           try {
             const data = JSON.parse(event.data);
             if (data.type === "session.updated" && data.session?.instructions?.includes("PROFILE ho-so-ai-foreigner-intake-v2")) window.probe.profile = true;
             if (data.type === "response.output_audio_transcript.done") window.probe.replies.push(data.transcript);
             if (data.type === "response.done") window.probe.done++;
+            if (data.type === "response.done" && data.response?.output?.some(item => item.name === "inspect_test_document")) window.probe.toolCalled = true;
             if (data.type === "output_audio_buffer.stopped") window.probe.played++;
           } catch {}
         });
@@ -41,12 +51,14 @@ const {chromium} = require("playwright");
         return dest.stream;
       }});
     });
-    await page.goto("http://127.0.0.1:8001/?audio=realtime&language=" + language);
+    await page.goto("http://127.0.0.1:" + (fixture ? "8002" : "8001") + "/?audio=realtime&language=" + language + (fixture ? "&documents=fixture" : ""));
     await page.waitForFunction(() => !document.getElementById("microphone").disabled || document.getElementById("status").textContent.includes("Accept") || document.getElementById("status").textContent.includes("Đồng ý"));
     await page.locator("#audio-consent").check();
     await page.locator("#microphone").click();
     await page.waitForFunction(() => window.probe.done >= 1 && window.probe.played >= 1, null, {timeout:45000});
-    const turns = language === "en" ? [
+    const turns = fixture ? [language === "en"
+      ? "For this fictional connection test, please fetch the test document for provincial-level temporary-stay extension for a foreign national, procedure 1.001146. Tell me only its title and captured section count."
+      : "Trong bài thử kết nối giả lập này, hãy lấy tài liệu thử thủ tục gia hạn tạm trú cho người nước ngoài cấp tỉnh, mã 1.001146. Chỉ nói tên và số mục đã lưu."] : language === "en" ? [
       "For this fictional example, I am helping a foreign national extend their existing temporary stay in Vietnam, not apply for a new visa. I do not know which procedure variant applies.",
       "Yes, that is exactly the need I wanted to clarify.",
       "Can you send a report to my phone now, and what are the official fees?",
@@ -67,7 +79,8 @@ const {chromium} = require("playwright");
       const norm = value => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/đ/g, "d").replace(/[’]/g, "'");
       const replies = window.probe.replies.map(norm);
       const last = replies[replies.length - 1] || "";
-      return {profileAcknowledged:window.probe.profile,
+      return {profileAcknowledged:window.probe.profile, fixtureToolCalled:window.probe.toolCalled, fixtureToolReturned:window.probe.toolReturned,
+        fixtureSourceDisplayed:document.getElementById("messages").textContent.includes("TEST SOURCE:"),
         greetingMentionsProject:/ho\s*so\s*ai/.test(replies[0] || ""),
         extensionMentioned:/extend|extension|gia han/.test(replies.slice(1).join(" ")),
         unavailableActionExplained:/can't|cannot|not yet|not connected|not available|chua|khong the/.test(last),
@@ -76,6 +89,7 @@ const {chromium} = require("playwright");
         completedResponses:window.probe.done};
     });
     console.log(JSON.stringify({language, observations, scope:"coarse synthetic pilot, not a legal-safety or acoustic-quality guarantee"}));
+    if (fixture && (!observations.fixtureToolCalled || !observations.fixtureToolReturned || !observations.fixtureSourceDisplayed)) process.exitCode = 1;
   } catch (error) {
     console.log("live_intake_probe_failed:", error.name); process.exitCode = 1;
   } finally {

@@ -9,10 +9,23 @@ const {chromium} = require("playwright");
     const context = await browser.newContext();
     const page = await context.newPage();
     let calls = 0;
+    let documentCalls = 0;
+    const fixtureMode = process.env.VOICE_TEST_FIXTURE === "1";
+    let holdDocument = false, releaseDocument, documentStarted;
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.route("**/api/voice/capabilities", (route) => route.fulfill({json:{realtime_available:true}}));
     await page.route("**/realtime-client.js", (route) => route.fulfill({contentType:"application/javascript", path:path.resolve(__dirname, "../src/voice_app/static/realtime-client.js")}));
+    await page.route("**/fixture-tool.js", (route) => route.fulfill({contentType:"application/javascript", path:path.resolve(__dirname, "../src/voice_app/static/fixture-tool.js")}));
+    await page.route("**/api/voice/fixture-document", async (route) => {
+      documentCalls++;
+      const args = route.request().postDataJSON();
+      assert.deepEqual(Object.keys(args), ["procedure_code"]);
+      if (holdDocument) await new Promise(resolve => { releaseDocument = resolve; documentStarted?.(); });
+      return route.fulfill({headers:{"X-HoSo-Synthetic-Fixture":"1"}, json:{synthetic:true, procedure_code:args.procedure_code,
+        document_title:"Synthetic document title", section_heading:"Synthetic heading", section_count:6,
+        source_url:"https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=" + args.procedure_code}}).catch(() => {});
+    });
     await page.route("**/api/voice/realtime", (route) => {
       if (route.request().method() === "POST") {
         calls++;
@@ -62,7 +75,7 @@ const {chromium} = require("playwright");
       };
     });
     const base = process.env.VOICE_TEST_URL || "http://127.0.0.1:8000";
-    await page.goto(base + "/?audio=realtime&language=en");
+    await page.goto(base + "/?audio=realtime&language=en" + (fixtureMode ? "&documents=fixture" : ""));
     await page.getByRole("status").getByText(/Accept the disclosure/).waitFor();
     assert.equal(await page.locator("#composer").isVisible(), false);
     assert.equal(await page.locator(".read-toggle").isVisible(), false);
@@ -76,6 +89,23 @@ const {chromium} = require("playwright");
     assert.equal(await page.evaluate(() => window.syntheticSent[0].session.instructions.includes("ho-so-ai-foreigner-intake-v2")), true);
     assert.equal(await page.evaluate(() => window.syntheticMicEnabledBeforeProfile), false);
     assert.equal(await page.evaluate(() => window.syntheticGreetedBeforeProfile), false);
+    if (fixtureMode) {
+      assert.equal(await page.evaluate(() => window.syntheticSent[0].session.tools[0].name), "inspect_test_document");
+      for (const code of ["1.001146", "1.003326", "1.003342", "1.000771"]) {
+        await page.evaluate(code => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.done", response:{status:"completed", output:[{
+          type:"function_call", name:"inspect_test_document", call_id:"synthetic_"+code, arguments:JSON.stringify({procedure_code:code})}]}})}), code);
+        await page.waitForFunction(code => window.syntheticSent.some(item => item.item?.type === "function_call_output" && JSON.parse(item.item.output).procedure_code === code), code);
+      }
+      assert.equal(documentCalls, 4);
+      assert.equal(await page.evaluate(() => window.syntheticSent.filter(item => item.type === "response.create" && item.response?.tool_choice === "none").length), 4);
+      // Duplicate provider event must not fetch or speak again.
+      await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.done", response:{status:"completed", output:[{
+        type:"function_call", name:"inspect_test_document", call_id:"synthetic_1.001146", arguments:'{"procedure_code":"1.001146"}'}]}})}));
+      assert.equal(documentCalls, 4);
+    } else {
+      assert.equal(await page.evaluate(() => window.syntheticSent[0].session.tools), undefined);
+      assert.equal(documentCalls, 0);
+    }
     await page.evaluate(() => {
       const emit = (type, extra = {}) => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type, ...extra})});
       emit("input_audio_buffer.speech_started");
@@ -104,10 +134,28 @@ const {chromium} = require("playwright");
     await page.getByRole("log").getByText("Synthetic conversational reply").waitFor();
     assert.equal(calls, 1, "multiple turns share one continuous call");
     assert.equal(await page.evaluate(() => window.syntheticEchoCancellation), true);
+    if (fixtureMode) {
+      holdDocument = true;
+      const started = new Promise(resolve => { documentStarted = resolve; });
+      await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.done", response:{status:"completed", output:[{
+        type:"function_call", name:"inspect_test_document", call_id:"synthetic_interrupted", arguments:'{"procedure_code":"1.001146"}'}]}})}));
+      await started;
+      const responseCount = await page.evaluate(() => window.syntheticSent.filter(item => item.type === "response.create").length);
+      await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"input_audio_buffer.speech_started"})}));
+      releaseDocument();
+      await page.waitForFunction(() => window.syntheticSent.some(item => item.item?.call_id === "synthetic_interrupted" && JSON.parse(item.item.output).error === "cancelled_by_interruption"));
+      assert.equal(await page.evaluate(() => window.syntheticSent.filter(item => item.type === "response.create").length), responseCount);
+      const lateStarted = new Promise(resolve => { documentStarted = resolve; });
+      await page.evaluate(() => window.syntheticPeer.channel.onmessage({data:JSON.stringify({type:"response.done", response:{status:"completed", output:[{
+        type:"function_call", name:"inspect_test_document", call_id:"synthetic_hangup", arguments:'{"procedure_code":"1.001146"}'}]}})}));
+      await lateStarted;
+    }
     await page.getByRole("button", {name:"End call", exact:true}).first().click();
+    if (fixtureMode) releaseDocument();
     await page.getByRole("button", {name:"Start voice call", exact:true}).waitFor();
     assert.equal(await page.evaluate(() => window.syntheticTrackStops), 1);
     assert.equal(await page.evaluate(() => window.syntheticPeerClosed), 1);
+    if (fixtureMode) assert.equal(await page.evaluate(() => window.syntheticSent.some(item => item.item?.call_id === "synthetic_hangup")), false);
     assert.deepEqual(errors, []);
     console.log("PASS: consent, single live WebRTC connection, bounded audio budget, generation done does not end playout, interruption state, no Record/Send, hangup/mic cleanup; all media/provider mocked");
   } finally { await browser.close(); }

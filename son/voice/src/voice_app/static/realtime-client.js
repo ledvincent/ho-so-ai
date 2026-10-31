@@ -50,9 +50,10 @@ export class RealtimeVoiceClient {
     this.pending = null;
     this.timer = null;
     this.profileTimer = null;
+    this.toolPending = null;
   }
 
-  async start({language = "vi", consent = false} = {}) {
+  async start({language = "vi", consent = false, fixtureDocuments = false} = {}) {
     if (!consent) throw new Error("audio_consent_required");
     if (!["vi", "en"].includes(language)) throw new Error("unsupported_language");
     if (!globalThis.RTCPeerConnection || !navigator.mediaDevices?.getUserMedia) throw new Error("webrtc_unavailable");
@@ -62,6 +63,7 @@ export class RealtimeVoiceClient {
     this.pending = controller;
     this.onState("connecting");
     try {
+      const fixture = fixtureDocuments ? await import("./fixture-tool.js") : null;
       const session = await fetch(`/api/voice/session?language=${language}`, {method:"POST", credentials:"same-origin", signal:controller.signal});
       if (!session.ok) throw new Error(`voice_http_${session.status}`);
       const stream = await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true, noiseSuppression:true, autoGainControl:true}});
@@ -70,7 +72,9 @@ export class RealtimeVoiceClient {
       const peer = new RTCPeerConnection();
       this.peer = peer;
       let profileApplied = false;
-      const instructions = PROJECT_VOICE_PROFILE.language_instructions[language] + "\n\n" + PROJECT_VOICE_PROFILE.instructions.join("\n\n");
+      const instructions = PROJECT_VOICE_PROFILE.language_instructions[language] + "\n\n" + PROJECT_VOICE_PROFILE.instructions.join("\n\n") + (fixture?.FIXTURE_INSTRUCTIONS || "");
+      const completedTools = new Set();
+      let speechEpoch = 0;
       // Do not stream the caller's speech before project instructions are acknowledged.
       for (const track of stream.getAudioTracks()) track.enabled = false;
       const audio = new Audio();
@@ -99,7 +103,8 @@ export class RealtimeVoiceClient {
         this.profileTimer = setTimeout(() => {
           if (version === this.version && !profileApplied) this.stop(false).finally(() => this.onState("connection_error"));
         }, 8000);
-        channel.send(JSON.stringify({type:"session.update", session:{type:"realtime", max_output_tokens:2048, instructions}}));
+        channel.send(JSON.stringify({type:"session.update", session:{type:"realtime", max_output_tokens:2048, instructions,
+          ...(fixture ? {tools:fixture.FIXTURE_TOOLS, tool_choice:"auto"} : {})}}));
       };
       channel.onmessage = (event) => {
         if (version !== this.version || typeof event.data !== "string" || event.data.length > 65536) return;
@@ -112,9 +117,10 @@ export class RealtimeVoiceClient {
           this.onState("listening");
           this.onDiagnostic({event:"profile_applied", profileId:PROJECT_VOICE_PROFILE.id});
           channel.send(JSON.stringify({type:"response.create", response:{instructions:
-            "Open the call using the following project greeting in a natural voice, without extra disclaimers. " + PROJECT_VOICE_PROFILE.greetings[language]}}));
+            "Open the call using the following project greeting in a natural voice. " + PROJECT_VOICE_PROFILE.greetings[language]
+            + (fixture ? (language === "en" ? " Also briefly say this call can test a fictional document API." : " Nói ngắn gọn rằng cuộc gọi này có thể thử API tài liệu giả lập.") : "")}}));
         }
-        if (data.type === "input_audio_buffer.speech_started") { callerSpeaking = true; this.onState("hearing"); }
+        if (data.type === "input_audio_buffer.speech_started") { speechEpoch++; this.toolPending?.abort(); callerSpeaking = true; this.onState("hearing"); }
         if (data.type === "input_audio_buffer.speech_stopped") { callerSpeaking = false; this.onState(playing ? "speaking" : "thinking"); }
         if (data.type === "response.created" && !callerSpeaking && !playing) this.onState("thinking");
         if (data.type === "output_audio_buffer.started") { playing = true; if (!callerSpeaking) this.onState("speaking"); }
@@ -123,6 +129,40 @@ export class RealtimeVoiceClient {
           this.onState(callerSpeaking ? "hearing" : "listening");
         }
         if (data.type === "response.done") {
+          const toolCalls = fixture && data.response?.status === "completed"
+            ? (data.response.output || []).filter(item => item.type === "function_call") : [];
+          if (toolCalls.length) {
+            const epoch = speechEpoch;
+            const runTools = async () => {
+              let delivered = false;
+              for (const item of toolCalls) {
+                if (version !== this.version || completedTools.has(item.call_id)) continue;
+                if (typeof item.call_id !== "string" || item.call_id.length > 128) continue;
+                completedTools.add(item.call_id);
+                let output = {error:"unsupported_test_tool"};
+                if (item.name === "inspect_test_document" && typeof item.arguments === "string" && item.arguments.length < 256 && completedTools.size <= 8) {
+                  const request = new AbortController();
+                  this.toolPending?.abort();
+                  this.toolPending = request;
+                  const timeout = setTimeout(() => request.abort(), 8000);
+                  this.onState("thinking");
+                  try { output = await fixture.inspectFixtureDocument(item.arguments, request.signal); }
+                  catch { output = {error:"fixture_unavailable"}; }
+                  finally { clearTimeout(timeout); if (this.toolPending === request) this.toolPending = null; }
+                }
+                if (version !== this.version) return;
+                if (epoch !== speechEpoch) output = {error:"cancelled_by_interruption"};
+                channel.send(JSON.stringify({type:"conversation.item.create", item:{type:"function_call_output", call_id:item.call_id, output:JSON.stringify(output)}}));
+                delivered = true;
+                if (output.synthetic && epoch === speechEpoch) {
+                  this.onDiagnostic({event:"fixture_document", procedureCode:output.procedure_code});
+                  this.onTranscript("TEST SOURCE: " + output.document_title + " — " + output.source_url);
+                }
+              }
+              if (delivered && version === this.version && epoch === speechEpoch && !callerSpeaking) channel.send(JSON.stringify({type:"response.create", response:{tool_choice:"none"}}));
+            };
+            runTools().catch(() => {});
+          }
           // Generation can finish before WebRTC has played the queued audio.
           // Never invite the next turn until output_audio_buffer.stopped.
           const allowedStatuses = ["completed", "cancelled", "failed", "incomplete"];
@@ -169,6 +209,8 @@ export class RealtimeVoiceClient {
     clearTimeout(this.timer);
     clearTimeout(this.profileTimer);
     this.pending?.abort();
+    this.toolPending?.abort();
+    this.toolPending = null;
     this.pending = null;
     if (this.channel) { this.channel.onopen = null; this.channel.onmessage = null; this.channel.close(); this.channel = null; }
     if (this.peer) { this.peer.ontrack = null; this.peer.onconnectionstatechange = null; this.peer.close(); this.peer = null; }

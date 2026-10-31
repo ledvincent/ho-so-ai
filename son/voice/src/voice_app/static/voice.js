@@ -386,13 +386,14 @@ async function realtimeHarness() {
       if (active) { await client.stop(); return; }
       active = true;
       controls();
-      try { await client.start({language, consent:consent.checked}); }
+      try { await client.start({language, consent:consent.checked, fixtureDocuments:new URLSearchParams(location.search).get("documents") === "fixture"}); }
       catch { active = false; $("status").textContent = messages.connection_error; controls(); }
     };
     $("restart").onclick = () => client.stop();
     consent.onchange = () => { if (!consent.checked) client.stop(); controls(); };
     window.addEventListener("pagehide", () => client.stop());
     $("status").textContent = en ? "Accept the disclosure, then Start voice call. No audio is sent before you start." : "Đồng ý thông báo rồi chọn Bắt đầu cuộc gọi. Chưa gửi âm thanh trước khi bắt đầu.";
+    if (new URLSearchParams(location.search).get("documents") === "fixture") $("status").textContent += en ? " Fictional document API test; no legal advice." : " Thử API tài liệu giả lập; không phải tư vấn pháp lý.";
     controls();
   } catch {
     $("status").textContent = messages.connection_error;
