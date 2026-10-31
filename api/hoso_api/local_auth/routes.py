@@ -7,7 +7,7 @@ from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_valida
 from starlette.concurrency import run_in_threadpool
 
 from ..auth import AuthenticationUnavailable, InvalidSession
-from .runtime import is_loopback, valid_local_origin
+from .runtime import is_loopback, valid_auth_origin
 from .store import InvalidCredentials, LocalAuthStore, RateLimited
 
 
@@ -70,8 +70,8 @@ def bearer_token(request: Request) -> str:
     return token
 
 
-def create_router(*, public_origin: str | None) -> APIRouter:
-    configured = valid_local_origin(public_origin)
+def create_router(*, public_origin: str | None, deployment_mode: str = "local") -> APIRouter:
+    configured = valid_auth_origin(public_origin, deployment_mode)
     router = APIRouter(prefix="/v1/auth", tags=["local checkpoint auth"])
 
     def configured_store(request: Request) -> LocalAuthStore:

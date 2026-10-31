@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { identityFrom, isLocalProvider, isPrivatePage, localOrigin, validSessionToken } from './local-auth-policy';
+import { identityFrom, isLocalProvider, isPrivatePage, localCookieOptions, localOrigin, validSessionToken } from './local-auth-policy';
 
 function withEnvironment(values: Record<string, string | undefined>, action: () => void) {
   const previous = Object.fromEntries(Object.keys(values).map((key) => [key, process.env[key]]));
@@ -92,4 +92,34 @@ test('LOCAL is an explicit provider choice and invalid values never enable it', 
   for (const provider of [undefined, '', 'clerk', 'LOCAL', ' local', 'local ', 'unknown']) {
     withEnvironment({ HOSO_AUTH_PROVIDER: provider }, () => assert.equal(isLocalProvider(), false));
   }
+});
+
+test('hosted local auth requires explicit mode and one canonical public HTTPS origin', () => {
+  const origin = 'https://synthetic-jury.trycloudflare.com';
+  withEnvironment({ HOSO_DEPLOYMENT_MODE: undefined, HOSO_PUBLIC_ORIGIN: origin }, () => assert.throws(() => localOrigin()));
+  withEnvironment({ HOSO_DEPLOYMENT_MODE: 'hosted-demo', HOSO_PUBLIC_ORIGIN: origin, HOSO_LOCAL_DEMO_SEED: 'false' }, () => {
+    assert.equal(localOrigin().origin, origin);
+    assert.deepEqual(localCookieOptions(), { httpOnly: true, secure: true, sameSite: 'lax', path: '/' });
+  });
+});
+
+test('hosted origin refuses HTTP, loopback, ambiguous hosts and weak demonstration seeds', () => {
+  for (const origin of ['http://synthetic-jury.trycloudflare.com', 'https://localhost', 'https://127.0.0.1',
+    'https://[::1]', 'https://192.168.1.1', 'https://demo.localhost', 'https://*.example.invalid',
+    'https://user:password@jury.example.invalid', 'https://jury.example.invalid/',
+    'https://jury.example.invalid/path', 'https://jury.example.invalid?next=private',
+    'https://jury.example.invalid#fragment', 'https://UPPER.example.invalid',
+    'https://jury.example.invalid:443', 'https://-jury.example.invalid']) {
+    withEnvironment({ HOSO_DEPLOYMENT_MODE: 'hosted-demo', HOSO_PUBLIC_ORIGIN: origin }, () => assert.throws(() => localOrigin()));
+  }
+  for (const mode of ['', 'unknown', 'HOSTED-DEMO']) {
+    withEnvironment({ HOSO_DEPLOYMENT_MODE: mode, HOSO_PUBLIC_ORIGIN: 'https://jury.example.invalid' }, () => assert.throws(() => localOrigin()));
+  }
+  withEnvironment({ HOSO_DEPLOYMENT_MODE: 'hosted-demo', HOSO_PUBLIC_ORIGIN: 'https://jury.example.invalid', HOSO_LOCAL_DEMO_SEED: 'true' }, () => assert.throws(() => localOrigin()));
+});
+
+test('local HTTP retains its development cookie without relaxing hosted HTTPS cookies', () => {
+  withEnvironment({ HOSO_DEPLOYMENT_MODE: 'local', HOSO_PUBLIC_ORIGIN: 'http://127.0.0.1:3025' }, () => {
+    assert.deepEqual(localCookieOptions(), { httpOnly: true, secure: false, sameSite: 'lax', path: '/' });
+  });
 });

@@ -3,12 +3,12 @@ import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { apiUrl, privateHeaders, sameOriginJson } from './api';
 import { BodyTooLargeError, InvalidRequestBodyError, readRequestBody } from '../request-body';
-import { identityFrom, isLocalProvider, localOrigin, LOCAL_COOKIE, validSessionToken } from '../local-auth-policy';
+import { identityFrom, isLocalProvider, localOrigin, localCookieOptions, LOCAL_COOKIE, validSessionToken } from '../local-auth-policy';
 import { lookupLocalSession } from './local-session';
 
 const failure = (code: string, status: number, retryAfter?: string | null) => NextResponse.json({ detail: { code } }, { status, headers: { ...privateHeaders, ...(retryAfter && /^\d{1,5}$/.test(retryAfter) ? { 'Retry-After': retryAfter } : {}) } });
 function cookieOptions() {
-  return { httpOnly: true, secure: localOrigin().protocol === 'https:', sameSite: 'lax' as const, path: '/' };
+  return localCookieOptions();
 }
 function clearCookie(response: NextResponse) {
   response.cookies.set(LOCAL_COOKIE, '', { ...cookieOptions(), expires: new Date(0), maxAge: 0 });

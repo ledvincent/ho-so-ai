@@ -33,6 +33,7 @@ class Settings:
     demo_forms_enabled: bool = False
     database_url: str | None = field(default=None, repr=False)
     auth_provider: str = "clerk"
+    deployment_mode: str = "local"
     public_origin: str | None = None
     local_db_path: str | None = None
     local_api_host: str = "127.0.0.1"
@@ -53,6 +54,11 @@ class Settings:
         demo_seed = os.getenv("HOSO_LOCAL_DEMO_SEED", "false").lower()
         if demo_seed not in {"true", "false"}:
             raise ValueError("HOSO_LOCAL_DEMO_SEED must be true or false.")
+        mode = os.getenv("HOSO_DEPLOYMENT_MODE", "local")
+        if mode not in {"local", "hosted-demo"}:
+            raise ValueError("Unsupported deployment mode.")
+        if mode == "hosted-demo" and demo_seed == "true":
+            raise ValueError("Weak demonstration seeding is unavailable in hosted mode.")
         origin = os.getenv("HOSO_PUBLIC_ORIGIN") or None
         if origin:
             _origins(origin)
@@ -67,6 +73,7 @@ class Settings:
             demo_forms_enabled=flag == "true",
             database_url=os.getenv("DATABASE_URL") or None,
             auth_provider=provider,
+            deployment_mode=mode,
             public_origin=origin,
             local_db_path=os.getenv("HOSO_LOCAL_DB_PATH") or None,
             local_api_host=os.getenv("HOSO_LOCAL_API_HOST", "127.0.0.1"),

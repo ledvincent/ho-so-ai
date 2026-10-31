@@ -4,6 +4,7 @@ from contextlib import contextmanager
 from dataclasses import dataclass
 import ipaddress
 from pathlib import Path
+import re
 from urllib.parse import urlsplit
 
 from sqlalchemy import create_engine, event, text
@@ -33,6 +34,37 @@ def valid_local_origin(origin: str) -> bool:
             and not parsed.username and not parsed.password
             and not parsed.path and not parsed.query and not parsed.fragment
         )
+    except (ValueError, TypeError):
+        return False
+
+
+def valid_auth_origin(origin: str | None, deployment_mode: str = "local") -> bool:
+    """One explicit origin; hosted mode never changes the API peer boundary."""
+    if deployment_mode == "local":
+        return valid_local_origin(origin)
+    if deployment_mode != "hosted-demo" or not isinstance(origin, str):
+        return False
+    try:
+        parsed = urlsplit(origin)
+        host, port = parsed.hostname, parsed.port
+        if (
+            parsed.scheme != "https" or not host or not 1 <= len(host) <= 253
+            or parsed.username is not None or parsed.password is not None
+            or parsed.path or parsed.query or parsed.fragment
+            or host == "localhost" or host.endswith(".localhost")
+            or len(host.split(".")) < 2
+            or any(re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?", label, re.ASCII) is None
+                   for label in host.split("."))
+        ):
+            return False
+        try:
+            ipaddress.ip_address(host)
+        except ValueError:
+            pass
+        else:
+            return False
+        canonical = "https://" + host + (f":{port}" if port is not None and port != 443 else "")
+        return canonical == origin
     except (ValueError, TypeError):
         return False
 
@@ -85,10 +117,12 @@ class LocalServices:
 def build_local_services(settings) -> LocalServices | None:
     if settings.auth_provider != "local":
         return None
+    deployment_mode = getattr(settings, "deployment_mode", "local")
     if (
         not settings.local_db_path or not Path(settings.local_db_path).is_absolute()
         or not is_loopback(settings.local_api_host)
-        or not valid_local_origin(settings.public_origin)
+        or not valid_auth_origin(settings.public_origin, deployment_mode)
+        or (deployment_mode == "hosted-demo" and settings.local_demo_seed)
     ):
         raise AuthenticationUnavailable()
     try:
@@ -96,6 +130,15 @@ def build_local_services(settings) -> LocalServices | None:
     except Exception:
         raise AuthenticationUnavailable() from None
     try:
+        if deployment_mode == "hosted-demo":
+            # Refuse legacy demo accounts even when the seed flag is now off.
+            # This applies to direct ASGI startup as well as the jury launcher.
+            with store.connection() as connection:
+                reserved = connection.execute(
+                    "SELECT 1 FROM local_auth_users WHERE username IN ('admin', 'reviewer') LIMIT 1"
+                ).fetchone()
+            if reserved is not None:
+                raise AuthenticationUnavailable()
         if settings.local_demo_seed:
             store.create_user("admin", "admin", demo_password=True)
             store.create_user("reviewer", "reviewer-demo", demo_password=True)

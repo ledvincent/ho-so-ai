@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createDiscoveryHandler, createRequestLimiter, chatRequest } from './handler';
+import { createDiscoveryHandler, createRequestLimiter, createReviewBindings, chatRequest, documentRequest } from './handler';
 import { DiscoveryError } from './upstream';
 
 // Synthetic transport/account fixtures. No producer, database or model is called.
@@ -15,6 +15,10 @@ function harness(overrides: Partial<Deps> = {}) {
     return name === 'original' ? { bytes: new Uint8Array([1, 2, 3]), contentType: 'application/octet-stream', filename: 'synthetic.docx' } : { synthetic: true, action: name };
   };
   const client = {
+    setup: operation('setup'), documents: operation('documents'), documentSchema: operation('documentSchema'),
+    documentTemplate: operation('original'), documentPages: operation('documentPages'), documentValidate: operation('documentValidate'),
+    documentPreview: async () => ({ data: { pages: [], template_version: HASH }, contentType: 'application/json', reviewToken: 'synthetic-signed-token' }),
+    documentDownload: operation('original'),
     search: operation('search'), chat: operation('chat'), procedure: operation('procedure'), profile: operation('profile'),
     analysis: operation('analysis'), schema: operation('schema'), original: operation('original'),
   } as unknown as ReturnType<Deps['client']>;
@@ -173,4 +177,69 @@ test('limiter bounds each verified user, chat/search calls and bucket memory', (
   assert.throws(() => limit('C', 'chat'), DiscoveryError);
   clock = 60001;
   limit('C', 'chat');
+});
+
+test('hosted discovery requires explicit HTTPS mode and exact Origin', async () => {
+  const origin = 'https://jury.example.test';
+  const h = harness({ publicOrigin: () => origin, deploymentMode: () => 'hosted-demo' });
+  const req = new Request(`${origin}/api/discovery/chat`, { method: 'POST', headers: { Origin: origin, 'Content-Type': 'application/json' }, body: JSON.stringify({ message: 'Which documents?' }) });
+  assert.equal((await h.handle(req, ['chat'])).status, 200);
+  await error(await h.handle(request('chat', { message: 'Which documents?' }), ['chat']), 403, 'ORIGIN_FORBIDDEN');
+  const insecure = harness({ publicOrigin: () => 'http://jury.example.test', deploymentMode: () => 'hosted-demo' });
+  await error(await insecure.handle(request('setup'), ['setup']), 503, 'AUTH_UNAVAILABLE');
+});
+
+test('opaque retrieval state and clarification survive without local interpretation', () => {
+  const payload = { message: 'This choice please', retrieval_state: 'opaque.signed_state-123', clarification_answer: 'choice-7', history: [] };
+  assert.deepEqual(chatRequest(payload), payload);
+  assert.throws(() => chatRequest({ ...payload, procedure_code: '1.001146' }), DiscoveryError);
+  assert.throws(() => chatRequest({ ...payload, retrieval_state: null }), DiscoveryError);
+  assert.throws(() => chatRequest({ ...payload, retrieval_state: 'x'.repeat(12001) }), DiscoveryError);
+  assert.throws(() => chatRequest({ message: 'hello', values: { passport: 'private' } }), DiscoveryError);
+});
+
+test('generic document routes use only validated identifiers and strict versioned values', async () => {
+  const h = harness();
+  const id = 'na5-provincial-stay-extension';
+  assert.equal((await h.handle(request('setup'), ['setup'])).status, 200);
+  assert.equal((await h.handle(request('procedures/1.001146/documents'), ['procedures', '1.001146', 'documents'])).status, 200);
+  assert.equal((await h.handle(request(`documents/${id}/schema`), ['documents', id, 'schema'])).status, 200);
+  const body = { values: { applicant_full_name: 'FICTIONAL JURY' }, template_version: HASH };
+  assert.equal((await h.handle(request(`documents/${id}/validate`, body), ['documents', id, 'validate'])).status, 200);
+  assert.deepEqual(h.calls.at(-1), ['documentValidate', [id, body]]);
+  for (const invalid of [{ values: {} }, { ...body, owner: 'someone-else' }, { ...body, values: { x: 123 } }, { ...body, template_version: 'old' }]) {
+    await error(await h.handle(request(`documents/${id}/validate`, invalid), ['documents', id, 'validate']), 422, 'INVALID_REQUEST');
+  }
+  await error(await h.handle(request('documents/../schema'), ['documents', '..', 'schema']), 404, 'DISCOVERY_NOT_FOUND');
+});
+
+test('document review is bound to owner, values, version, document and expiry', () => {
+  let now = 0;
+  const bindings = createReviewBindings(() => now);
+  const values = { values: { full_name: 'FICTIONAL' }, template_version: HASH };
+  const download = { ...values, confirmed: true as const, review_token: 'synthetic-token' };
+  bindings.issue('owner-a', 'doc-a', values, download.review_token);
+  bindings.verify('owner-a', 'doc-a', download);
+  assert.throws(() => bindings.verify('owner-b', 'doc-a', download), DiscoveryError);
+  assert.throws(() => bindings.verify('owner-a', 'doc-b', download), DiscoveryError);
+  assert.throws(() => bindings.verify('owner-a', 'doc-a', { ...download, template_version: 'b'.repeat(64) }), DiscoveryError);
+  assert.throws(() => bindings.verify('owner-a', 'doc-a', { ...download, values: { full_name: 'EDITED' } }), DiscoveryError);
+  // Equal upstream tokens for identical fictional values cannot replace another owner's binding.
+  bindings.issue('owner-b', 'doc-a', values, download.review_token);
+  bindings.verify('owner-a', 'doc-a', download);
+  now = 900001;
+  assert.throws(() => bindings.verify('owner-a', 'doc-a', download), DiscoveryError);
+});
+
+test('download requires this session owner preview and explicit boolean confirmation', async () => {
+  const h = harness();
+  const id = 'na5-provincial-stay-extension';
+  const values = { values: { applicant_full_name: 'FICTIONAL JURY' }, template_version: HASH };
+  const download = { ...values, review_token: 'synthetic-signed-token', confirmed: true };
+  await error(await h.handle(request(`documents/${id}/download`, download), ['documents', id, 'download']), 409, 'REVIEW_REQUIRED');
+  const preview = await h.handle(request(`documents/${id}/preview-pages`, values), ['documents', id, 'preview-pages']);
+  assert.equal(preview.status, 200);
+  assert.equal(preview.headers.get('x-review-token'), download.review_token);
+  assert.equal((await h.handle(request(`documents/${id}/download`, download), ['documents', id, 'download'])).status, 200);
+  assert.throws(() => documentRequest({ ...download, confirmed: 'true' }, true), DiscoveryError);
 });
