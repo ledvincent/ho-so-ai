@@ -172,3 +172,42 @@ use Kim's report to refine the precise identity/profile/consent requests, withou
 inventing her unpublished contract. Sending is not acknowledgement or execution.
 Requests to Kim/Vincent remain copy-ready in this file, not directly sent to
 their inaccessible chats. No backend was started, migrated or publicly exposed.
+
+## Update — 2026-10-31 13:33 Asia/Saigon
+
+Remote refs refreshed. Main now resolves to `44b24a2` with Vincent's status;
+his status describes an older unpublished snapshot, while actual backend code
+is fetchable at `9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`. The code publication
+is not undone by a stale work log. No new Vincent backend SHA was observed.
+
+- **Voice local progress:** code `346c013ffea49ff15cc529672bdff446a59be0f5`,
+  handoff HEAD `cad8198`, same local Son voice branch, scoped voice paths clean.
+  The intervening work aligns intake with the four foreigner catalog codes and
+  adds an assistant consumer plus an opt-in fictional document tool in Realtime.
+  `son/voice/FIXTURE-VOICE-HANDOFF.md` reports 56 unit tests, profile parity,
+  mocked browser/tool checks and one live English pilot with synthetic silent
+  microphone/muted playback. These results were read, not reproduced by manager.
+  It is a metadata-only development fixture path, not Vincent's running backend,
+  reviewed legal advice or real personal-data access. Voice remains local/unpushed.
+- **Kim backend received:** producer `ae77fa8bd47d590a53d26690b687bcad80692a9b`
+  on `codex/kim/app-01-profile-integration`. Inspected the actual app.v1 contract,
+  Clerk configuration manifest and KIM-APP-01 handoff. The earlier source-access
+  blocker is resolved. Consumer acknowledgement: `received; adaptation required`.
+  Shared real Clerk values, consent routes and revocation tests remain pending;
+  no tested compatibility is claimed by Son.
+- **Kim UI reported:** latest inspected status SHA
+  `06ab1eb0403da53591eab0bedd5879ff8b74432c` reports local UI code `a8dd757...`
+  and handoff `b4a3ebf...`: NA5 fields/blank-document mock, synthetic admin entry
+  and bounded checks. The UI branch is not published here. Kim's implementation
+  is paused for her review; this status does not resume it. Real Clerk/storage,
+  profile-to-form and voice-to-report acceptance remain unverified.
+- **ACCESS-01 local:** base HEAD remains `60cb3be`; implementation and handoff
+  still uncommitted/unpushed in its isolated worktree. The earlier 24-test result
+  remains reported synthetic evidence, not a newly executed test or app adapter.
+
+Next priorities: review/publish Son's scoped implementation, adapt personal-access
+consumers to actual Kim app.v1 without inventing consent routes, and replace the
+fictional document path with Vincent's delivered runtime after review/data and
+configuration gates are satisfied. Preserve procedure/checklist identity into the
+report. No complete three-component journey or new paid/provider test was run by
+this manager checkpoint. Only Son's status is modified for publication.
