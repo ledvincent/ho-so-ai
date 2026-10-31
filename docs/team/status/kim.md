@@ -1,5 +1,24 @@
 # Kim — application integration checkpoint
 
+## Latest update — 31 October 2026: simplified live document chat
+
+Published `codex/kim/demo-integration-01-simple-rag-chat` at
+`a1b1978b412ac6dd4ee66fadc60d0ee29eb9cc90`; production build
+`R19xfWTIZkrl4QLUTX4uK` runs on the existing temporary HTTPS demo.
+The conversation stays visible, guides open on request, follow-ups preserve
+procedure context, and typing cannot cancel a pending reply. Existing login
+and Vincent retrieval/model adapters remain; no new RAG or identity contract.
+
+Owner reports 16 checks and production build passed. Manager reproduced an
+English document question, procedure clarification, a cited English checklist,
+and a contextual online-application follow-up with three steps and a source link.
+The guide stayed closed. API health, public login, anonymous workspace redirect
+and anonymous profile API rejection passed. GitHub SHA read-back matched.
+
+Implementation frozen for submission review; preview services stay running.
+The link depends on Kim's laptop. Optional form restrictions remain; this is
+not proof of Son voice/ACCESS integration or official form approval.
+
 ## Latest update — 31 October 2026: English guide and filling usability correction
 
 Published combined correction: `codex/kim/demo-integration-01-readable-guide` at
