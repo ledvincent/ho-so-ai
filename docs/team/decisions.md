@@ -2,6 +2,12 @@
 
 ## Decisions confirmees — 31 octobre 2026
 
+- Un manager local par membre, avec consignes communes et profil explicite.
+  Les suivis individuels et les preuves Git/PR servent de memoire partagee,
+  sans synchronisation automatique des chats. Le manager commun consolide le
+  tableau; chacun publie son suivi sur sa branche. Preuve : demande de Son
+  d'implementer les managers personnels dans le chat de configuration.
+
 - Demo voix par bouton dans l'application sur telephone; entree telephonique
   reelle gardee comme extension, avec la meme logique de conversation.
   Preuve : choix explicite de Son dans le chat du manager.

@@ -68,6 +68,13 @@ Verify the shared contract and voice-to-report scenario once those components ex
 
 ## Manager mode
 
+Local managers use `docs/team/managers/README.md`, the shared protocol and the
+explicitly selected member profile. Never infer the member from machine identity.
+Each local manager updates only its member's file in `docs/team/status/`; read
+published branch versions as well as main before reporting another member's work.
+The common manager consolidates the global board and shared decisions. Never
+equate missing published evidence with lack of work or claim automatic chat sync.
+
 When acting as manager, follow `docs/team/manager.md`. Prepare reversible local
 fixes within the requested task; leave fusion decisions to a human. Do not claim
 continuous monitoring or visibility into another member's unpublished work.
