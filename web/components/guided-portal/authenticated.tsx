@@ -1,11 +1,13 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
+import { ProfileEditor } from '@/components/portal/profile-editor';
 import { createGuidedAdapter, logoutRequest, sameSession, sessionRequest, verifySchema, type LocalSession } from './api';
 import { GuidedWorkbench } from './workbench';
 import styles from './portal.module.css';
 
 /** Server guard supplies this public session view; it contains no credential. */
-export function AuthenticatedPortal({ session }: { session: LocalSession }) {
+export function AuthenticatedPortal({ session, view = 'workspace' }: { session: LocalSession; view?: 'workspace' | 'profile' }) {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const live = useRef(true);
@@ -33,5 +35,6 @@ export function AuthenticatedPortal({ session }: { session: LocalSession }) {
     return () => { live.current = false; controller.abort(); clearTimeout(timer); window.removeEventListener('focus', focus); document.removeEventListener('visibilitychange', focus); };
   }, [session.user.id, session.expires_at]);
   if (!ready) return <main className={styles.loginPage}><section className={styles.loginCard}><h1>{failed ? 'Chưa thể kiểm tra phiên.' : 'Đang mở không gian của bạn…'}</h1>{failed && <><p>Bản nháp đã được xóa khỏi màn hình. Kiểm tra lại kết nối.</p><button type="button" className={styles.primary} onClick={() => window.location.reload()}>Thử lại</button></>}</section></main>;
+  if (view === 'profile') return <main id="main-content" className={styles.profilePage}><Link href="/workspace" prefetch={false}>← Trợ lý hồ sơ</Link><h1>Hồ sơ của bạn</h1><ProfileEditor key={`${session.user.id}:${session.expires_at}`} formHref="/workspace" prefillAvailable={false} onLogout={async () => { setReady(false); try { await logoutRequest(); expire(); } catch { setFailed(true); } }} /></main>;
   return <GuidedWorkbench key={`${session.user.id}:${session.expires_at}`} username={session.user.username} adapter={adapter} logout={logoutRequest} onExpired={expire} />;
 }

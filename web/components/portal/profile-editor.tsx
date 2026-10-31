@@ -58,7 +58,7 @@ export function PortalSession() {
   return <ProfileEditor key={`${userId}:${sessionId}`} onLogout={logout} />;
 }
 
-function ProfileEditor({ onLogout }: { onLogout: () => Promise<void> }) {
+export function ProfileEditor({ onLogout, formHref = '/forms/demo', prefillAvailable = true }: { onLogout: () => Promise<void>; formHref?: string; prefillAvailable?: boolean }) {
   const [controller] = useState(() => new ProfileController());
   const state = useSyncExternalStore(controller.subscribe, controller.snapshot, controller.snapshot);
   const [confirmReload, setConfirmReload] = useState(false);
@@ -145,9 +145,9 @@ function ProfileEditor({ onLogout }: { onLogout: () => Promise<void> }) {
           <span className={styles.cardIcon}><FileText size={23} aria-hidden="true" /></span>
           <p className={styles.eyebrow}>BƯỚC TIẾP THEO</p>
           <h2 id="next-step-title">Chuẩn bị biểu mẫu</h2>
-          <p id="form-profile-note">Trong biểu mẫu, bạn có thể nhập tay hoặc chọn sao chép thông tin từ hồ sơ đã lưu. Bạn sẽ kiểm tra lại trước khi xuất bản nháp.</p>
+          <p id="form-profile-note">{prefillAvailable ? 'Trong biểu mẫu, bạn có thể nhập tay hoặc chọn sao chép thông tin từ hồ sơ đã lưu. Bạn sẽ kiểm tra lại trước khi xuất bản nháp.' : 'Trợ lý chuẩn bị bản nháp NA5 riêng. Thông tin trong hồ sơ này chưa được sao chép sang NA5.'}</p>
           {state.dirty && <p className={styles.unsavedNote} id="unsaved-profile-note">Bạn có thay đổi chưa lưu. Nếu rời trang, các thay đổi này sẽ không được giữ lại hoặc chuyển sang biểu mẫu. Chỉ hồ sơ đã lưu mới được sao chép.</p>}
-          <Link className={styles.primary} href="/forms/demo" prefetch={false} aria-describedby={state.dirty ? 'unsaved-profile-note' : 'form-profile-note'}>{state.dirty ? 'Mở biểu mẫu, không lưu thay đổi' : 'Tiếp tục đến biểu mẫu'} <ArrowRight size={16} aria-hidden="true" /></Link>
+          <Link className={styles.primary} href={formHref} prefetch={false} aria-describedby={state.dirty ? 'unsaved-profile-note' : 'form-profile-note'}>{state.dirty ? 'Mở biểu mẫu, không lưu thay đổi' : 'Tiếp tục đến biểu mẫu'} <ArrowRight size={16} aria-hidden="true" /></Link>
           <p className={styles.demoNote}>Chỉ dùng dữ liệu giả lập. Đây chưa phải biểu mẫu chính thức.</p>
         </section>
         <section className={styles.noteCard}>
