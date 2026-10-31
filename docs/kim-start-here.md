@@ -93,42 +93,29 @@ OpenAPI for the full request shapes. Error strings are not stable error codes.
 
 ## Run the backend on your machine
 
-The source/API contract is on branch `codex/procedure-foundation`. Fetch and
-check out the delivered commit (see the handoff message). The checked-in
-`docs/contracts/` directory contains OpenAPI, a real example response and the
-current document schema. A Git clone does not include the populated database.
+The backend and its tested data are on branch `codex/procedure-foundation`.
+The [checked-in snapshot](../data/bootstrap/README.md) contains **only the four
+initial tested procedures**, their required source files and the published
+205-item RAG index. No separate ZIP transfer or hosted service is required.
+The 15 newer procedures are deliberately excluded from this handoff.
 
-Load the separately supplied data snapshot: `handoff/procedure-db.dump`,
-`data/_store/` and `data/archive/raw/`. The database dump and shared object store
-are not in Git. The dump preserves the published index, source IDs and reviews.
-Keep the current Git code and `data/forms/` definitions. Model weights, `.env`,
-credentials and signing secrets are also not included in Git.
-
-Requires Python 3.12+, uv and Docker Desktop. Use a Git checkout for the latest
-source, and copy the database/public data into that checkout:
-
-```powershell
-git clone --branch codex/procedure-foundation https://github.com/ledvincent/ho-so-ai.git
-cd ho-so-ai
-# Copy handoff/procedure-db.dump, data/_store/ and data/archive/raw/ from
-# the data snapshot into matching paths here. Keep the checked-out source
-# and data/forms/ workflow definitions.
-```
-
-Then run from the checkout root:
+Requires Python 3.12+, uv and Docker Desktop. Merge/pull the backend branch into
+the shared repository, then run from its root:
 
 ```powershell
 uv sync --locked
-Copy-Item .env.example .env
+if (!(Test-Path .env)) { Copy-Item .env.example .env }
 docker compose up -d --wait
-docker compose exec -T db createdb -U hoso hoso_integration
-docker compose cp handoff/procedure-db.dump db:/tmp/hoso-data.dump
-docker compose exec -T db pg_restore -U hoso -d hoso_integration --no-owner --no-acl --exit-on-error /tmp/hoso-data.dump
+uv run python -m scripts.restore_backend_data --database hoso_integration
 docker compose exec embeddings ollama pull bge-m3
 ```
 
-The restore command intentionally targets a newly created database. Do not run
-it over an existing database. Set these values in the new local `.env`:
+The restore command verifies the archive and each source file, restores the
+schema/data/index in one transaction, and refuses to overwrite a populated
+database or differing source files. No new ingestion or embedding rebuild is
+needed. It does not read or change `.env`.
+
+Set these values in your local `.env` before starting the API:
 
 ```dotenv
 DATABASE_URL=postgresql+psycopg://hoso:hoso_local@localhost:55432/hoso_integration
@@ -144,7 +131,7 @@ FORM_REVIEW_SECRET=<generate a different value privately>
 
 For each signing secret, `uv run python -c "import secrets; print(secrets.token_hex(32))"`
 generates a value locally. Neither signing token is caller authentication.
-Do not send keys through Git or chat. Ollama model weights are not in the ZIP.
+Do not send keys through Git or chat. Credentials and Ollama model weights are not in Git.
 The saved index expects BGE-M3 digest
 `7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab`; check
 `docker compose exec embeddings ollama list` (the ID is its prefix). A mismatch
@@ -157,7 +144,9 @@ uv run uvicorn api.main:app --host 127.0.0.1 --port 8001
 uv run python -m scripts.check_frontend_handoff --live-assistant
 ```
 
-Expected migration: `0009`. OpenAPI: `http://127.0.0.1:8001/docs`.
+Expected migration: `0009`. **API base URL on Kim's PC: `http://127.0.0.1:8001`.**
+OpenAPI: `http://127.0.0.1:8001/docs`; chat: `POST /assistant/chat`.
+This URL becomes available when the startup command is running on his machine.
 The smoke command exercises the app directly, including one paid model request;
 its report records the exact commit, working-tree status and checks. A fresh
 ingestion or changed embedding model requires rebuilding and evaluating the
