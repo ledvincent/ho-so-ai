@@ -6,6 +6,7 @@ Les taches proposees ne signifient pas que leur responsable les a commencees.
 
 | ID | Priorite | Responsable | Tache / critere de fin | Etat | Dependances | Fichiers / preuve |
 | --- | --- | --- | --- | --- | --- | --- |
+| TEAM-02 | P0 | Manager | Profils locaux Son/Vincent/Kim, suivis individuels et protocole de lecture des branches | En revue | Revue humaine avant fusion | `docs/team/managers/`, `docs/team/status/`; aucun chat distant active |
 | AUTH-01 | P0 | Kim | Connexion/deconnexion, session applicative et protection serveur du dossier par proprietaire | A faire | Choix fournisseur avec Son | `docs/team/identity-and-security.md`; implementation non verifiee |
 | CONSENT-01 | P0 | Kim | Ecran accepter/refuser une demande liee a la conversation et decision authentifiee | A faire | AUTH-01 + accord d'interface avec Son | `docs/team/identity-and-security.md` |
 | ACCESS-01 | P0 | Son | Sessions voix et serveur d'autorisation; blocage des outils sans accord valide | A faire | AUTH-01 + accord d'interface avec Kim | `docs/team/identity-and-security.md` |
