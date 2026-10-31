@@ -22,6 +22,7 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
   const [answer, setAnswer] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const [logoutFailed, setLogoutFailed] = useState(false);
   const [undoValues, setUndoValues] = useState<Values | null>(null);
   const [reviewOpen, setReviewOpen] = useState(false);
   const [review, setReview] = useState<Review | null>(null);
@@ -54,7 +55,7 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
     const history: Message[] = [...messages.map(({ role, content }) => ({ role, content })), { role: 'user', content: text }];
     setMessages(history); setAnswer(''); setError(''); setBusy(true);
     try {
-      const response = await adapter({ message: text, values: { ...values }, revision: baseRevision, history, signal: controller.signal });
+      const response = await adapter({ message: text, values: { ...values }, revision: baseRevision, focusField: activeId, history, signal: controller.signal });
       if (attempt !== current.current.generation || baseRevision !== current.current.revision || controller.signal.aborted) return;
       const next = checkedValues(response.values); const changes = changesBetween(values, next);
       if (changes.length) { setUndoValues({ ...values }); setValues(next); current.current.revision += 1; setRevision(current.current.revision); setReview(null); setAck(false); }
@@ -71,10 +72,11 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
     setMessages(previous => [...previous, { role: 'assistant', content: 'Đã áp dụng chỉnh sửa của bạn vào cùng bản nháp.', changes: changesBetween(values, next) }]);
   }
   function undo() { if (!undoValues) return; invalidate(); const restored = undoValues; setValues(restored); setUndoValues(null); setActiveId(nextMissing(restored)?.id ?? null); setMessages(previous => [...previous, { role: 'assistant', content: 'Đã hoàn tác thay đổi cuối cùng và khôi phục bản nháp trước đó.' }]); }
-  async function leave() { flushSync(clear); try { await logout(); } finally { onExpired(); } }
+  async function leave() { flushSync(clear); try { await logout(); onExpired(); } catch { setLogoutFailed(true); } }
   const validation = issues(values);
   for (const field of activeFields(values)) if (parts(field, values[field.id] ?? '').some(part => part.overflow)) validation[field.id] = 'Nội dung chưa vừa vùng điền.';
   const remaining = Object.keys(validation).length;
+  if (logoutFailed) return <main className={styles.loginPage}><section className={styles.loginCard}><BrandMark /><h1>Chưa xác nhận được đăng xuất.</h1><p>Bản nháp đã được xóa khỏi màn hình. Hãy thử lại để kết thúc phiên trên máy chủ.</p><button type="button" className={styles.primary} onClick={leave}>Thử đăng xuất lại</button></section></main>;
   return <main id="main-content" className={`${styles.app} ${manualMode ? styles.manualMode : ''}`} style={viewportStyle}>
     <header className={styles.topbar}><div className={styles.logo}><BrandMark /><span>Hồ Sơ <b>AI</b></span></div><nav aria-label="Không gian cá nhân"><Link href="/research" prefetch={false}>Tra cứu</Link><Link href="/portal" prefetch={false}>Hồ sơ</Link><button type="button" onClick={() => setReviewOpen(true)}>Tài liệu</button></nav><button type="button" onClick={leave} className={styles.logout} aria-label="Đăng xuất"><span>{username}</span><LogOut size={16} /></button></header>
     <div className={styles.content}><div className={styles.procedure}><div><h1>Gia hạn tạm trú</h1><p>NA5 · Cấp tỉnh · 1.001146</p></div><button type="button" onClick={() => setReviewOpen(true)}>{remaining ? `${remaining} mục cần bổ sung` : 'Rà soát bản nháp'}</button></div>

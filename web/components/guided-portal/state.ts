@@ -4,7 +4,7 @@ export type Message = { role: 'user' | 'assistant'; content: string };
 export type Change = { id: string; before: string; after: string };
 /** UI view model only. AUTH-02/CHAT-01 owns the eventual HTTP contract. */
 export type GuidedReply = { values: Values; answer: string; nextField: string | null };
-export type GuidedAdapter = (input: { message: string; values: Values; revision: number; history: Message[]; signal: AbortSignal }) => Promise<GuidedReply>;
+export type GuidedAdapter = (input: { message: string; values: Values; revision: number; focusField: string | null; history: Message[]; signal: AbortSignal }) => Promise<GuidedReply>;
 
 export function nextMissing(values: Values) {
   return editableFields(values).find(field => field.required && fieldIssue(field, values[field.id] ?? '')) ?? null;
