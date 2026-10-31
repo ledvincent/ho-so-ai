@@ -1,13 +1,17 @@
-"""FastAPI application factory. No database or identity calls during startup."""
+"""FastAPI composition with lazy profile storage and application-lifetime cleanup."""
+
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
+from starlette.concurrency import run_in_threadpool
 
 from .auth import ClerkSessionVerifier, CurrentUser, SessionVerifier
 from .profile import router as profile_router
+from .portal.service import ProfileService
 from .settings import Settings
 
 
@@ -19,9 +23,41 @@ def create_app(
     settings: Settings | None = None,
     *,
     session_verifier: SessionVerifier | None = None,
+    profile_service: ProfileService | None = None,
 ) -> FastAPI:
     config = settings if settings is not None else Settings.from_env()
-    app = FastAPI(title="Ho So AI application API", version="0.1.0")
+
+    @asynccontextmanager
+    async def lifespan(app: FastAPI):
+        from .portal.postgres import build_profile_service
+        from .portal.repository import StorageUnavailable
+
+        service = profile_service
+        owned = service is None
+        if owned:
+            try:
+                # Engine construction is lazy: no connection, schema or migration.
+                service = build_profile_service(config)
+            except StorageUnavailable:
+                # Keep the process available; protected profile requests return 503.
+                # Never log connection strings or underlying driver exceptions.
+                service = None
+        app.state.profile_service = service
+        try:
+            yield
+        finally:
+            app.state.profile_service = None
+            if owned and service is not None:
+                try:
+                    # Public lifecycle API supplied by the portal owner.
+                    await run_in_threadpool(service.close)
+                except Exception:
+                    raise RuntimeError("Profile storage cleanup failed.") from None
+
+    app = FastAPI(title="Ho So AI application API", version="0.1.0", lifespan=lifespan)
+    # Explicit injection is caller-owned. The production service is only built in
+    # lifespan, so importing this module cannot allocate a database engine.
+    app.state.profile_service = profile_service
     app.state.settings = config
     app.state.session_verifier = (
         session_verifier if session_verifier is not None else ClerkSessionVerifier(config)

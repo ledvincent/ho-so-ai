@@ -1,4 +1,4 @@
-"""Profile contract checks only; no persistence or authorization claims."""
+"""Shared profile contract and unconfigured-storage checks."""
 
 from fastapi.testclient import TestClient
 from pydantic import ValidationError
@@ -82,15 +82,15 @@ def test_profile_routes_require_authentication():
     assert api.put("/v1/profile", json={"expected_revision": 0, "fields": {}}).status_code == 401
 
 
-def test_authenticated_profile_routes_are_explicitly_unimplemented():
+def test_authenticated_profile_routes_report_unavailable_storage():
     api = client()
     headers = {"Authorization": "Bearer synthetic-test-only"}
-    assert api.get("/v1/profile", headers=headers).status_code == 501
+    assert api.get("/v1/profile", headers=headers).status_code == 503
     response = api.put(
         "/v1/profile", headers=headers, json={"expected_revision": 0, "fields": {"full_name": "Synthetic"}}
     )
-    assert response.status_code == 501
-    assert response.json() == {"detail": "Profile persistence is not implemented."}
+    assert response.status_code == 503
+    assert response.json() == {"detail": {"code": "PROFILE_UNAVAILABLE"}}
 
 
 def test_invalid_request_does_not_echo_profile_values_or_validation_exception():

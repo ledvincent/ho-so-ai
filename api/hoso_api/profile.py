@@ -6,7 +6,7 @@ These fields are application data, not an approved mapping to an official form.
 from datetime import date
 import re
 
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, Request
 from pydantic import BaseModel, ConfigDict, Field, ValidationInfo, field_validator
 
 from .auth import CurrentUser
@@ -64,18 +64,15 @@ router = APIRouter(prefix="/v1", tags=["profile"])
 
 
 @router.get("/profile", response_model=ProfileResponse)
-def get_profile(user: CurrentUser) -> ProfileResponse:
-    # No profile ID/user ID is supplied by the browser. The future repository
-    # resolves the current subject and enforces ownership on every operation.
-    raise HTTPException(
-        status_code=status.HTTP_501_NOT_IMPLEMENTED,
-        detail="Profile persistence is not implemented.",
-    )
+def get_profile(request: Request, user: CurrentUser) -> ProfileResponse:
+    # Local imports avoid a cycle: the portal consumes these shared models.
+    from .portal.handlers import read_profile
+
+    return read_profile(request, user)
 
 
 @router.put("/profile", response_model=ProfileResponse)
-def put_profile(payload: ProfileUpdate, user: CurrentUser) -> ProfileResponse:
-    raise HTTPException(
-        status_code=status.HTTP_501_NOT_IMPLEMENTED,
-        detail="Profile persistence is not implemented.",
-    )
+def put_profile(request: Request, payload: ProfileUpdate, user: CurrentUser) -> ProfileResponse:
+    from .portal.handlers import write_profile
+
+    return write_profile(request, user, payload)

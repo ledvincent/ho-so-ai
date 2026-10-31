@@ -21,15 +21,17 @@ the actual Clerk instance and issuer remain unset.
 | `web/` | One Next application, Clerk integration, same-origin API proxies and shared application types |
 | `web/lib/contracts.ts` | `app.v1` profile and transient form request types |
 | `api/hoso_api/auth.py` | Clerk Bearer-session verification using a configured local public key |
-| `api/hoso_api/profile.py` | Nullable profile schema and authenticated 501 storage seam |
+| `api/hoso_api/profile.py` | Nullable profile schema and authenticated portal-service handlers |
 | `api/hoso_api/forms/` | Explicitly synthetic, feature-gated PNG/PDF renderer; no official template |
 | `compose.yaml` | Optional local PostgreSQL provisioning; no schema or migration is applied |
 | `docs/application-contract.md` | App-owned identity/profile/forms transport and error behavior |
 | `docs/team/contracts.md` | Vincent's procedure-contract ownership, unchanged |
 
 `GET /health` checks the API process only. It does not check Clerk, database readiness,
-legal sources or integration. Profile storage, owner-isolation tests, conversation
-authorization and voice-to-report integration remain work for their assigned tasks.
+legal sources or integration. APP-01 now wires the portal service with lifecycle
+cleanup; production-route tests use isolated synthetic repository fixtures. Real
+PostgreSQL/TLS, live Clerk, conversation authorization and voice-to-report integration
+remain separate verification tasks. See `profile-integration-handoff.md`.
 Docker was unavailable in the scaffold setup environment; no database startup or
 migration is established. No configured Clerk credential or live sign-in result is
 included. FORM-02 supplies the polished form UI as a separate change from this baseline.
@@ -37,7 +39,9 @@ included. FORM-02 supplies the polished form UI as a separate change from this b
 ## Local setup
 
 Prerequisites: Python 3.12+, uv, Node.js 22+, and the pnpm version in `package.json`.
-Docker is optional until PostgreSQL-backed persistence is implemented. Each worktree
+The current Compose file lacks the TLS required by the portal provider; do not
+point the application at its plaintext/provisioner configuration. Review
+`profile-storage-test-plan.md` before preparing an isolated database. Each worktree
 needs its own ignored local configuration and any installed dependencies.
 
 From the repository root, install the web workspace and copy its blank configuration

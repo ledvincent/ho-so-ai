@@ -66,14 +66,32 @@ type ProfileUpdate = {
 
 | FastAPI route | Next proxy | Current behavior |
 | --- | --- | --- |
-| `GET /v1/profile` | `GET /api/profile` | Authenticates, then returns 501: persistence is not implemented |
-| `PUT /v1/profile` | `PUT /api/profile` | Validates/authenticates, then returns 501; no save occurs |
+| `GET /v1/profile` | `GET /api/profile` | Returns the verified subject's profile; missing record returns 404 |
+| `PUT /v1/profile` | `PUT /api/profile` | Explicit creation/update with atomic expected-revision check |
 
-The future repository resolves ownership from the verified server-side subject on
-every operation. The browser supplies neither an owner nor a profile ID to these
-routes. Planned persistence semantics are 404 when no profile exists, revision 0 for
-first creation, a positive revision thereafter, and 409 on an expected-revision
-conflict. These outcomes are not implemented by the 501 scaffold.
+The registered production handlers delegate to the portal service. The repository
+resolves ownership from the verified server-side subject on every operation. The
+browser supplies neither an owner nor a profile ID. GET has no creation side effect.
+PUT replaces the six fields (omitted values become null); `expected_revision: 0`
+creates only if absent. A successful create returns revision 1; a positive expected
+revision updates only that owner's matching revision and increments once.
+
+| Status | Profile error body | Meaning |
+| --- | --- | --- |
+| 404 | `{"detail":{"code":"PROFILE_NOT_FOUND"}}` | No profile for the verified subject, including an update with a positive revision |
+| 409 | `{"detail":{"code":"PROFILE_REVISION_CONFLICT"}}` | A create already exists or an update's expected revision is stale |
+| 503 | `{"detail":{"code":"PROFILE_UNAVAILABLE"}}` | Storage configuration is missing/invalid, or storage fails |
+
+`create_app` constructs production storage only in application lifespan using
+`portal.postgres.build_profile_service(config)`. Missing database/issuer config
+or sanitized `StorageUnavailable` leaves the service unavailable; it never selects
+another store or downgrades TLS. Engine construction is lazy, without schema creation
+or migration. The application closes the factory-owned service through its public
+`close()` during shutdown and clears the state reference. An explicitly injected
+service is caller-owned and is not closed by the application. `/health` remains only
+a process health check. See `profile-storage-test-plan.md` for the isolated database
+proposal and outstanding provider review items; no live database is provisioned by
+this integration.
 
 Form prefill copies the profile into a local form draft. Editing that draft must not
 silently update the saved account profile. Saving a profile is a separate explicit
@@ -130,11 +148,10 @@ and download rules before handling personal data.
 | 400 | `INVALID_REQUEST_BODY`: malformed UTF-8 or unreadable request stream |
 | 401 | Missing or invalid authenticated session on a protected route |
 | 403 | Next mutation proxy rejects non-matching origin or non-JSON content type |
-| 404 | Unknown form, or synthetic form disabled |
-| 409 | `template_version_changed` or `template_not_reviewed` |
+| 404 | `PROFILE_NOT_FOUND`, unknown form, or synthetic form disabled |
+| 409 | `PROFILE_REVISION_CONFLICT`, `template_version_changed` or `template_not_reviewed` |
 | 413 | Next proxy rejects request content larger than its 8192-byte limit |
 | 422 | Request validation, missing acknowledgement or field/render validation |
-| 501 | Profile persistence deliberately not implemented |
 | 503 | Authentication, upstream/profile/renderer, or Unicode font unavailable |
 
 FastAPI request validation returns top-level `code: "VALIDATION_ERROR"`, a generic
@@ -143,7 +160,7 @@ Form rendering errors use `detail: { code, field? }`; examples include `text_ove
 `unsupported_glyph`, `single_line_required` and `review_acknowledgement_required`.
 Next proxy failures use their own top-level `code` (for example `AUTH_UNAVAILABLE`,
 `PROFILE_UNAVAILABLE` or `RENDERER_UNAVAILABLE`). Consumers must handle these shapes
-explicitly, and must not display raw upstream errors or imply that a 501 request saved.
+explicitly, and must not display raw upstream errors or imply that a failed request saved.
 Mutation checks compare the browser's Origin with configured `HOSO_PUBLIC_ORIGIN`,
 not the internal Request URL, which Next/proxies can rewrite. Set the portal's exact
 origin to port 3001; do not trust a caller-supplied forwarded-host header.
