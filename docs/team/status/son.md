@@ -211,3 +211,40 @@ fictional document path with Vincent's delivered runtime after review/data and
 configuration gates are satisfied. Preserve procedure/checklist identity into the
 report. No complete three-component journey or new paid/provider test was run by
 this manager checkpoint. Only Son's status is modified for publication.
+
+## Publication and demo preparation — 2026-10-31 13:40 Asia/Saigon
+
+Son explicitly authorized component publication and a separate first-demo
+integration branch. The following inputs are now fetchable on GitHub:
+
+- VOICE-01: `codex/son/voice-01-browser-conversation`,
+  `cad8198107ce7a38269834bf0c73522dad0348ba`.
+- ACCESS-01: `codex/son/access-01-tool-authorization`,
+  `64d0d88d7656e6dff00d909c2790d3243e7133cc`. Only eight explicit component/
+  handoff paths were committed; the older board/status edits in that worktree
+  remain uncommitted and preserved. No root collection prototype was published.
+- Integration preparation: `codex/son/integration-01-demo-assembly`,
+  `99aa859` contains `docs/team/handoffs/INTEGRATION-01.md` and a JSON input
+  manifest. It is based on main `44b24a220f8f88556617e5d3fc993e0c4465aad2`;
+  it pins all four published component sources but does not yet combine them.
+
+Manager reproduced before publication: voice 56 offline unit tests; ACCESS core
+24 synthetic tests; ACCESS profile consumer 28 contract tests against Kim producer
+`ae77fa8bd47d590a53d26690b687bcad80692a9b` and actual registered API/models with
+synthetic JWTs/SQLite. Consumer `64d0d88...` is `tested compatible` only within
+this bounded profile-read contract scenario. Live Clerk, consent UI/routes,
+canonical voice-session lifecycle and complete report integration remain pending.
+Starlette/httpx deprecation warnings were visible, not suppressed.
+
+A read-only merge-tree calculation for Vincent + Kim reports conflicts in
+`.env.example`, `.gitignore`, `README.md`, `compose.yaml`. No checkout merge or
+shared-file resolution was performed. The integration handoff requests agreed
+service/config/database ownership and Kim's frontend publication after her review,
+then records the assembly/check order. No shared coordinator appointment is claimed.
+
+The existing Son implementation chats were notified of this publication review;
+their worktrees and local demo servers were preserved. Kim/Vincent chats are not
+accessible here: their exact copy-ready requests are published in INTEGRATION-01,
+not directly messaged or acknowledged by them. Each manager must read the pinned
+inputs and report received/adaptation required/tested compatible/blocked.
+No main merge, backend deployment, migration, source approval or monitor activated.
