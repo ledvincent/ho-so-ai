@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <title>Cổng Dịch vụ c&ocirc;ng Quốc gia</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />  
+  <meta name="description" content="Cổng Dịch vụ c&ocirc;ng Quốc gia hỗ trợ th&ocirc;ng tin, đăng k&yacute; thủ tục h&agrave;nh ch&iacute;nh như đổi giấy ph&eacute;p l&aacute;i xe, nộp thuế điện tử, th&ocirc;ng b&aacute;o khuyến mại, cấp lại thẻ BHYT, cấp điện mới..." /> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />  
+  <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />  
+  <meta content="index, follow" name="ROBOTS" /> 
+  <link rel="stylesheet" href="theme/vendor/font-awesome/css/font-awesome.min.css" /> 
+  <link rel="stylesheet" href="theme/vendor/iconsax/style.css" /> 
+  <!-- <link rel="stylesheet" href="../vendor/iconsax/style.css"> --> 
+  <link rel="stylesheet" type="text/css" href="theme/vendor/ap8/css/style.css" /> 
+  <link rel="stylesheet" type="text/css" href="theme/vendor/slick/slick.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="theme/vendor/typeahead/style.css" /> 
+  <link rel="stylesheet" href="vendor/toastr/toastr.min.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrapValidator.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="theme/vendor/swiper/css/swiper.min.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap-timepicker/css/timepicker.css" /> 
+  <link rel="stylesheet" href="theme/css/style.css?version=9" /> 
+  <link rel="shortcut icon" href="img/header/quoc_huy.png" /> 
+  <script type="text/javascript" src="theme/vendor/jquery/jquery.2.1.1.min.js"></script> 
+  <script type="text/javascript" src="theme/vendor/bootstrap/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrapValidator.js"></script> 
+  <script type="text/javascript" src="theme/vendor/slick/slick.min.js"></script> 
+  <script type="text/javascript" src="theme/vendor/highchart/highcharts.js"></script> 
+  <script type="text/javascript" src="theme/vendor/highchart/modules/variable-pie.js"></script> 
+  <script type="text/javascript" src="theme/vendor/highchart/highcharts-more.js"></script> 
+  <script type="text/javascript" src="vendor/toastr/toastr.min.js"></script> 
+  <script type="text/javascript" src="vendor/slimscroll/jquery.slimscroll.min.js"></script> 
+  <script type="text/javascript" src="vendor/jq-paginator.js"></script> 
+  <script type="text/javascript" src="vendor/bootbox.all.min.js"></script> 
+  <script type="text/javascript" src="vendor/select2.min.js"></script> 
+  <script type="text/javascript" src="vendor/mime.js"></script> 
+  <script type="text/javascript" src="vendor/jquery/jquery-iframe-auto-height.min.js"></script> 
+  <script type="text/javascript" src="vendor/jquery/jquery.browser.js"></script> 
+  <link rel="stylesheet" href="vendor/select2.min.css" /> 
+  <script src="./js/ApiService.js?version=18"></script> 
+  <script src="./js/CommonUtil.js?version=16"></script> 
+  <script src="./js/Constants.js"></script> 
+  <script type="text/javascript" src="vendor/typeahead/index.js"></script> 
+  <script type="text/javascript" src="vendor/typeahead/handlebars.js"></script> 
+  <script type="text/javascript" src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script> 
+  <script type="text/javascript" src="vendor/bootstrap-timepicker/js/bootstrap-timepicker.js"></script> 
+  <script src="./js/base64.js"></script> 
+  <script type="text/javascript" src="vendor/d3.v4.min.js"></script> 
+  <script>
+		initApiService();
+	</script> 
+ </head> 
+ <body> 
+  <div class="loading-all" id="loading-all" style="display:none"> 
+   <div class="icon"> 
+    <img src="img/loading.png" alt="" /> 
+    <span style="color:blue">Đang xử l&yacute;...<span> </span></span>
+   </div> 
+   <style type="text/css">
+			.loading-all {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 10000;
+				background: #dbdcdc40;
+			}
+			.loading-all .icon {
+				width: 100px;
+				position: absolute;
+				top: 0px;
+				height: 100px;
+				bottom: 0px;
+				right: 0px;
+				margin: auto;
+				left: 0px;
+			}
+
+		</style> 
+  </div> 
+  <!--DEFINE CONSTANT --> 
+  <!--END CONSTANT--> 
+  <div class="overlay-common"></div> 
+  <!-- /mtv/ Log propertise--> 
+  <div class="header"> 
+   <div class="container"> 
+    <div class="relative content"> 
+     <div class="logo-text"> 
+      <a href="dvc-trang-chu.html" class="logo"> <img src="theme/img/header/logo.png" alt="" /> </a> 
+     </div> 
+     <div class="nav-toggle"> 
+      <span class="-ap icon icon-menu"></span> 
+     </div> 
+     <div class="header-account"> 
+      <div class="buttons"> 
+       <a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-login">Đăng k&yacute;</a> 
+       <a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&amp;client_id=0vFpdFtniMwmiWOUnWfOFYZcNdAa&amp;scope=openid&amp;redirect_uri=https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="btn btn-register">Đăng nhập</a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <nav class="header-nav"> 
+   <div class="container"> 
+    <ul id="main-menu" class="pull-left menus"> 
+     <li class="active" id="home-page"><a href="dvc-trang-chu.html"><span class="-ap icon icon-home4"></span></a></li> 
+     <!-- <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li> --> 
+     <li> <a href="#">Th&ocirc;ng tin v&agrave; dịch vụ</a> 
+      <ul class="dropdown-menu"> 
+       <!-- <li><a href="dvc-trang-chu-cong-dan.html">Công dân</a></li> --> 
+       <!-- <li><a href="dvc-trang-chu-doanh-nghiep.html">Doanh nghiệp</a></li> --> 
+       <!-- <li>
+							<a href="#">Thủ tục hành chính</a>
+							<ul class="dropdown-menu">
+								<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li>
+								<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục hành chính</a></li>
+								<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục hành chính liên thông</a></li>
+								<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết định công bố</a></li>
+								<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a></li>
+							</ul>
+						</li> --> 
+       <!-- <li><a href="dvc-dich-vu-cong-truc-tuyen.html">Dịch vụ công trực tuyến</a></li> --> 
+       <!-- <li><a href="dvc-dich-vu-cong-noi-bat.html">Dịch vụ công nổi bật</a></li> --> 
+       <li><a href="dvc-tra-cuu-ho-so.html">Tra cứu hồ sơ</a></li> 
+       <li><a href="dvc-tra-cuu-ban-an.html">T&ograve;a &aacute;n nh&acirc;n d&acirc;n</a></li> 
+       <li><a href="dvc-cau-hoi-pho-bien.html">C&acirc;u hỏi thường gặp</a></li> 
+      </ul> </li> 
+     <li> <a href="">Thanh to&aacute;n trực tuyến</a> 
+      <!-- <a href="dvc-thanh-toan-truc-tuyen.html">Thanh toán trực tuyến</a> --> 
+      <!-- <ul class="dropdown-menu">
+						<li><a href="dvc-thanh-toan.html">Nộp thuế doanh nghiệp</a></li>
+						<li><a href="dvc-thanh-toan-thue-ca-nhan.html">Nộp thuế cá nhân/Trước bạ</a></li>
+						<li>
+							<a href="#">Thanh toán vi phạm hành chính</a>
+							<ul class="dropdown-menu">
+								<li><a href="dvc-thanh-toan-vi-pham-giao-thong.html">Tra cứu/Thanh toán vi phạm giao thông</a></li>
+								<li><a href="dvc-thanh-toan-vi-pham-xay-dung.html">Tra cứu/Thanh toán vi phạm xây dựng</a></li>
+							</ul>
+						</li>
+						<li><a href="dvc-thanh-toan-phi-le-phi-ho-so.html">Thanh toán phí/lệ phí dịch vụ công</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-bhyt.html">Đóng tiếp BHXH tự nguyện, gia hạn BHYT</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-doanh-nghiep.html">Đóng BHXH, BHYT, BHTN, BHTNLĐ-BNN</a></li>
+						<li><a href="dvc-thanh-toan-thue-dat-dai.html">Thanh toán nghĩa vụ tài chính về đất đai</a></li>
+						<li><a href="dvc-thanh-toan-dien.html">Thanh toán tiền điện</a></li>
+						<li><a href="dvc-thanh-toan-vien-phi.html">Thanh toán viện phí</a></li>
+						<li><a href="dvc-thanh-toan-an-phi.html">Thanh toán tạm ứng án phí</a></li>
+					</ul> --> </li> 
+     <li> <a href="#">Phản &aacute;nh kiến nghị</a> 
+      <ul class="dropdown-menu"> 
+       <!-- <li><a href="/p/phananhkiennghi/pakn-gui-pakn.html">Gửi PAKN</a></li> --> 
+       <li><a href="/p/phananhkiennghi/pakn-search.html">Tra cứu kết quả trả lời</a></li> 
+      </ul> </li> 
+     <li><a href="dvc-index-tinhthanhpho-tonghop.html">Đ&aacute;nh gi&aacute; chất lượng phục vụ</a></li> 
+     <!-- <li>
+				  <a href="#">Thủ tục hành chính</a>
+				  <ul class="dropdown-menu">
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục hành chính</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục hành chính liên thông</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết định công bố</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a></li>
+				  </ul>
+				</li> --> 
+     <li class=""> <a href="#">Hỗ trợ</a> 
+      <ul class="dropdown-menu"> 
+       <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li> 
+       <li><a href="dvc-dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li> 
+       <li><a href="dvc-huong-dan-cong-dan-doanh-nghiep.html">Hướng dẫn sử dụng</a></li> 
+       <li><a href="dvc-tin-tuc.html">Th&ocirc;ng b&aacute;o</a></li> 
+      </ul> </li> 
+    </ul> 
+    <div class="header-account mobile-ds"> 
+     <div class="buttons"> 
+      <a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&amp;client_id=0vFpdFtniMwmiWOUnWfOFYZcNdAa&amp;scope=openid&amp;redirect_uri=https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="btn btn-login">Đăng nhập</a> 
+      <a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-register">Đăng k&yacute;</a> 
+     </div> 
+    </div> 
+   </div> 
+  </nav> 
+  <div class="header-bottom"> 
+   <div class="container"> 
+    <ul id="list-dropdown"> 
+    </ul> 
+   </div> 
+  </div> 
+ </body>
+</html><html>
+ <head></head> 
+ <body> 
+  <style>
+    /* .list-expand > .item > .content {
+        padding-bottom: 50px;
+    } */
+
+    .tphs {
+        margin-left: 20px;
+    }
+
+    .ttth {
+        margin-left: 20px;
+    }
+</style> 
+  <div class="tthc"> 
+   <div class="section-tthc"> 
+    <div class="container"> 
+     <ul class="breadcrumb"> 
+      <li><a href="dvc-trang-chu.html">Trang chủ</a></li> 
+      <li><a href="dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục h&agrave;nh ch&iacute;nh</a></li> 
+      <li><a href="#">Chi tiết thủ tục</a></li> 
+     </ul> 
+     <div class="row"> 
+      <div class="col-sm-9 col-xs-12"> 
+       <h1 class="main-title -none" style="margin-bottom: 10px;"> Đăng k&yacute; tạm tr&uacute; </h1> 
+       <div class="box-form-result"> 
+        <div class="pull-left"> 
+         <a class="url thick" data-toggle="modal" href="#popupChitietTTHC">Xem chi tiết</a> 
+        </div> 
+        <div class="pull-right"> 
+         <div class="text-result"> 
+          <a href="/jsp/tthc/export/export_word_detail_tthc.jsp?maTTHC=1.004194&amp;idTTHC=5974" title="Tải xuống chi tiết thủ tục"><i class="fa fa-2x fa-file-word-o" aria-hidden="true" style="color:red"></i></a> 
+         </div> 
+        </div> 
+        <div class="clearfix"></div> 
+        <div id="dataList"></div> 
+       </div> 
+       <div class="divider-gray"></div> 
+       <h2 class="main-title-sub">C&aacute;ch thức thực hiện</h2> 
+       <table class="table-data" style="width:100%;"> 
+        <thead> 
+         <tr> 
+          <th style="width:10%;">H&igrave;nh thức nộp</th> 
+          <th style="width:15%;">Thời hạn giải quyết</th> 
+          <th style="width:25%;">Ph&iacute;, lệ ph&iacute;</th> 
+          <th style="width:50%;">M&ocirc; tả</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr> 
+          <td data-title="H&igrave;nh thức nộp">Trực tiếp</td> 
+          <td data-title="Thời hạn giải quyết"> 03 Ng&agrave;y l&agrave;m việc </td> 
+          <td data-title="Ph&iacute;, lệ ph&iacute;"> Ph&iacute; : 10.000 Đồng <br /> (- Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch: + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ trực tiếp thu 10.000 đồng/người/lần đăng k&yacute;;) <br /> Ph&iacute; : 15.000 Đồng <br /> (Đăng k&yacute; tạm tr&uacute; (c&aacute; nh&acirc;n, hộ gia đ&igrave;nh): + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ trực tiếp thu 15.000 đồng/lần đăng k&yacute;;) <br /> Ph&iacute; : Miễn ph&iacute; Đồng <br /> (- Trường hợp c&ocirc;ng d&acirc;n thuộc diện được miễn ph&iacute; theo quy định tại Điều 4 Th&ocirc;ng tư số 75/2022/TT-BTC ng&agrave;y 22/12/2022 quy định mức thu, chế độ thu, nộp v&agrave; quản l&yacute; lệ ph&iacute; đăng k&yacute; cư tr&uacute; th&igrave; c&ocirc;ng d&acirc;n phải xuất tr&igrave;nh giấy tờ chứng minh thuộc diện được miễn trừ trường hợp th&ocirc;ng tin đ&atilde; c&oacute; trong Cơ sở dữ liệu quốc gia về d&acirc;n cư hoặc Cơ sở dữ liệu quốc gia, Cơ sở dữ liệu chuy&ecirc;n ng&agrave;nh m&agrave; đ&atilde; được kết nối với Cơ sở dữ liệu quốc gia về d&acirc;n cư.) <br /> </td> 
+          <td data-title="M&ocirc; tả">- Nộp hồ sơ trực tiếp tại C&ocirc;ng an cấp x&atilde;. Thời gian tiếp nhận hồ sơ: Giờ h&agrave;nh ch&iacute;nh c&aacute;c ng&agrave;y l&agrave;m việc từ thứ 2 đến thứ 6 v&agrave; s&aacute;ng thứ 7 h&agrave;ng tuần (trừ c&aacute;c ng&agrave;y nghỉ lễ, tết theo quy định của ph&aacute;p luật).</td> 
+         </tr> 
+         <tr> 
+          <td data-title="H&igrave;nh thức nộp">Trực tuyến</td> 
+          <td data-title="Thời hạn giải quyết"> 03 Ng&agrave;y l&agrave;m việc </td> 
+          <td data-title="Ph&iacute;, lệ ph&iacute;"> Ph&iacute; : 5.000 Đồng <br /> (- Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch: + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ qua cổng dịch vụ c&ocirc;ng trực tuyến thu 5.000 đồng/người/lần đăng k&yacute;.) <br /> Ph&iacute; : 7.000 Đồng <br /> (- Đăng k&yacute; tạm tr&uacute; (c&aacute; nh&acirc;n, hộ gia đ&igrave;nh): + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ qua cổng dịch vụ c&ocirc;ng trực tuyến thu 7.000 đồng/lần đăng k&yacute;.) <br /> Ph&iacute; : Miễn ph&iacute; Đồng <br /> (- Trường hợp c&ocirc;ng d&acirc;n thuộc diện được miễn ph&iacute; theo quy định tại Điều 4 Th&ocirc;ng tư số 75/2022/TT-BTC ng&agrave;y 22/12/2022 quy định mức thu, chế độ thu, nộp v&agrave; quản l&yacute; lệ ph&iacute; đăng k&yacute; cư tr&uacute; th&igrave; c&ocirc;ng d&acirc;n phải xuất tr&igrave;nh giấy tờ chứng minh thuộc diện được miễn trừ trường hợp th&ocirc;ng tin đ&atilde; c&oacute; trong Cơ sở dữ liệu quốc gia về d&acirc;n cư hoặc Cơ sở dữ liệu quốc gia, Cơ sở dữ liệu chuy&ecirc;n ng&agrave;nh m&agrave; đ&atilde; được kết nối với Cơ sở dữ liệu quốc gia về d&acirc;n cư.) <br /> </td> 
+          <td data-title="M&ocirc; tả">- Nộp hồ sơ trực tuyến qua c&aacute;c cổng cung cấp dịch vụ c&ocirc;ng trực tuyến như: Trực tuyến qua Cổng dịch vụ c&ocirc;ng quốc gia, Cổng dịch vụ c&ocirc;ng Bộ C&ocirc;ng an, ứng dụng VNeID hoặc dịch vụ c&ocirc;ng trực tuyến kh&aacute;c theo quy định của ph&aacute;p luật. Thời gian tiếp nhận hồ sơ: Giờ h&agrave;nh ch&iacute;nh c&aacute;c ng&agrave;y l&agrave;m việc từ thứ 2 đến thứ 6 v&agrave; s&aacute;ng thứ 7 h&agrave;ng tuần (trừ c&aacute;c ng&agrave;y nghỉ lễ, tết theo quy định của ph&aacute;p luật).</td> 
+         </tr> 
+        </tbody> 
+       </table> 
+       <div class="divider-gray"></div> 
+       <h2 class="main-title-sub">Th&agrave;nh phần hồ sơ</h2> 
+       <!-- Doan nay da duoc fix --> 
+       <div class="list-expand"> 
+        <div class="item"> 
+         <div class="title f18 tphs" title="* Hồ sơ đăng k&yacute; tạm tr&uacute; gồm: " style="font-size: 17px; font-weight: 400;">
+           * Hồ sơ đăng k&yacute; tạm tr&uacute; gồm: 
+         </div> 
+         <div class="content"> 
+          <table class="table-data tphs" style="width:fit-content;"> 
+           <thead> 
+            <tr> 
+             <th>Loại giấy tờ</th> 
+             <th>Bản ch&iacute;nh</th> 
+             <th>Bản sao</th> 
+             <th>Mẫu đơn, tờ khai</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Tờ khai thay đổi th&ocirc;ng tin cư tr&uacute; (Mẫu CT01 ban h&agrave;nh k&egrave;m theo Th&ocirc;ng tư số 53/2025/TT-BCA); đối với người đăng k&yacute; tạm tr&uacute; l&agrave; người chưa th&agrave;nh ni&ecirc;n th&igrave; trong tờ khai phải ghi r&otilde; &yacute; kiến đồng &yacute; của cha, mẹ hoặc người gi&aacute;m hộ, trừ trường hợp đ&atilde; c&oacute; &yacute; kiến đồng &yacute; bằng văn bản;</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3fb578283553a318')">1.MuCT01banhnhkmtheoThngts53.doc</span><br /> </td> 
+            </tr> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Th&ocirc;ng tin chứng minh về chỗ ở hợp ph&aacute;p được khai th&aacute;c trong căn cước điện tử, t&agrave;i khoản định danh điện tử tr&ecirc;n hệ thống định danh v&agrave; x&aacute;c thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về d&acirc;n cư, Cơ sở dữ liệu về cư tr&uacute;, Kho quản l&yacute; dữ liệu điện tử tổ chức, c&aacute; nh&acirc;n tr&ecirc;n Cổng dịch vụ c&ocirc;ng quốc gia, Hệ thống th&ocirc;ng tin giải quyết thủ tục h&agrave;nh ch&iacute;nh cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuy&ecirc;n ng&agrave;nh kh&aacute;c. Trường hợp kh&ocirc;ng khai th&aacute;c được th&ocirc;ng tin th&igrave; c&ocirc;ng d&acirc;n xuất tr&igrave;nh giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p theo quy định tại khoản 3 Điều 5 Nghị định 154/2024/NĐ-CP ng&agrave;y 26/11/2024 của Ch&iacute;nh phủ.</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> </td> 
+            </tr> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">V&iacute; dụ: Trường hợp giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p l&agrave; giấy tờ, t&agrave;i liệu chứng nhận về quyền sử dụng đất, quyền sở hữu t&agrave;i sản gắn liền với đất do cơ quan c&oacute; thẩm quyền cấp qua c&aacute;c thời kỳ theo quy định của ph&aacute;p luật về đất đai v&agrave; nh&agrave; ở được khai th&aacute;c trong Cơ sở dữ liệu quốc gia về đất đai th&igrave; kh&ocirc;ng phải xuất tr&igrave;nh giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p.</td> 
+             <td data-title="Bản ch&iacute;nh">0</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> </td> 
+            </tr> 
+           </tbody> 
+          </table> 
+         </div> 
+        </div> 
+       </div> 
+       <!-- Doan nay da duoc fix --> 
+       <div class="list-expand"> 
+        <div class="item"> 
+         <div class="title f18 tphs" title="* Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch, hồ sơ gồm:" style="font-size: 17px; font-weight: 400;">
+           * Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch, hồ sơ gồm: 
+         </div> 
+         <div class="content"> 
+          <table class="table-data tphs" style="width:fit-content;"> 
+           <thead> 
+            <tr> 
+             <th>Loại giấy tờ</th> 
+             <th>Bản ch&iacute;nh</th> 
+             <th>Bản sao</th> 
+             <th>Mẫu đơn, tờ khai</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Tờ khai thay đổi th&ocirc;ng tin cư tr&uacute; (của từng người) (Mẫu CT01 ban h&agrave;nh k&egrave;m theo Th&ocirc;ng tư số 53/2025/TT-BCA).</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3f9cff910bbd16e0')">1.MuCT01banhnhkmtheoThngts53.doc</span><br /> </td> 
+            </tr> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Văn bản đề nghị đăng k&yacute; tạm tr&uacute;, trong đ&oacute; ghi r&otilde; th&ocirc;ng tin về chỗ ở hợp ph&aacute;p k&egrave;m danh s&aacute;ch người tạm tr&uacute;. Danh s&aacute;ch bao gồm những th&ocirc;ng tin cơ bản của từng người: họ, chữ đệm v&agrave; t&ecirc;n; ng&agrave;y, th&aacute;ng, năm sinh; giới t&iacute;nh; số định danh c&aacute; nh&acirc;n v&agrave; thời hạn tạm tr&uacute;.</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">1</td> 
+             <td data-title="Mẫu đơn, tờ khai"> </td> 
+            </tr> 
+           </tbody> 
+          </table> 
+         </div> 
+        </div> 
+       </div> 
+       <!-- Doan nay da duoc fix --> 
+       <div class="list-expand"> 
+        <div class="item"> 
+         <div class="title f18 tphs" title="Đăng k&yacute; tạm tr&uacute; tại nơi đơn vị đ&oacute;ng qu&acirc;n trong C&ocirc;ng an nh&acirc;n d&acirc;n, Qu&acirc;n đội nh&acirc;n nh&acirc;n (đơn vị đ&oacute;ng qu&acirc;n, nh&agrave; ở c&ocirc;ng vụ) hồ sơ gồm:" style="font-size: 17px; font-weight: 400;">
+           Đăng k&yacute; tạm tr&uacute; tại nơi đơn vị đ&oacute;ng qu&acirc;n trong C&ocirc;ng an nh&acirc;n d&acirc;n, Qu&acirc;n đội nh&acirc;n nh&acirc;n (đơn.. 
+         </div> 
+         <div class="content"> 
+          <table class="table-data tphs" style="width:fit-content;"> 
+           <thead> 
+            <tr> 
+             <th>Loại giấy tờ</th> 
+             <th>Bản ch&iacute;nh</th> 
+             <th>Bản sao</th> 
+             <th>Mẫu đơn, tờ khai</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Tờ khai thay đổi th&ocirc;ng tin cư tr&uacute; (Mẫu CT01 ban h&agrave;nh k&egrave;m theo Th&ocirc;ng tư số 53/2025/TT-BCA).</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3fb604bf0a130628')">1.MuCT01banhnhkmtheoThngts53.doc</span><br /> </td> 
+            </tr> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Đối với C&ocirc;ng an nh&acirc;n d&acirc;n: Giấy giới thiệu của Thủ trưởng đơn vị quản l&yacute; trực tiếp ghi r&otilde; nội dung để l&agrave;m thủ tục đăng k&yacute; tạm tr&uacute; v&agrave; đơn vị c&oacute; chỗ ở cho c&aacute;n bộ chiến sĩ (k&yacute; t&ecirc;n, đ&oacute;ng dấu).</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> </td> 
+            </tr> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">Đối với Qu&acirc;n đội nh&acirc;n d&acirc;n: Giấy giới thiệu đăng k&yacute; tạm tr&uacute; của đơn vị cấp trung đo&agrave;n v&agrave; tương đương trở l&ecirc;n.</td> 
+             <td data-title="Bản ch&iacute;nh">1</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> </td> 
+            </tr> 
+           </tbody> 
+          </table> 
+         </div> 
+        </div> 
+       </div> 
+       <!-- Doan nay da duoc fix --> 
+       <div class="list-expand"> 
+        <div class="item"> 
+         <div class="title f18 tphs" title="" style="font-size: 17px; font-weight: 400;">
+           Bao gồm 
+         </div> 
+         <div class="content"> 
+          <table class="table-data tphs" style="width:fit-content;"> 
+           <thead> 
+            <tr> 
+             <th>Loại giấy tờ</th> 
+             <th>Bản ch&iacute;nh</th> 
+             <th>Bản sao</th> 
+             <th>Mẫu đơn, tờ khai</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td data-title="Loại giấy tờ" class="justify">*Lưu &yacute;: - Trường hợp giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p để đăng k&yacute; tạm tr&uacute; l&agrave; văn bản cho thu&ecirc;, cho mượn, cho ở nhờ nh&agrave; ở, nh&agrave; kh&aacute;c của c&aacute; nh&acirc;n, tổ chức th&igrave; văn bản đ&oacute; kh&ocirc;ng bắt buộc phải c&ocirc;ng chứng hoặc chứng thực. - Người nước ngo&agrave;i được nhập quốc tịch Việt Nam khi đăng k&yacute; tạm tr&uacute; lần đầu phải c&oacute; Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi đăng k&yacute; tạm tr&uacute; lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải c&oacute; Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đ&atilde; khai th&aacute;c được th&ocirc;ng tin trong Cơ sở dữ liệu quốc tịch. - C&ocirc;ng d&acirc;n đăng k&yacute; tạm tr&uacute; về với hộ gia đ&igrave;nh thuộc trường hợp quy định tại khoản 2 Điều 20 Luật Cư tr&uacute; khi chủ hộ, chủ sở hữu chỗ ở hợp ph&aacute;p đồng &yacute; v&agrave; kh&ocirc;ng phải xuất tr&igrave;nh, cung cấp giấy tờ chứng minh chỗ ở hợp ph&aacute;p. - Trong thời hạn tối đa 60 ng&agrave;y kể từ ng&agrave;y người chưa th&agrave;nh ni&ecirc;n được đăng k&yacute; khai sinh th&igrave; phải thực hiện thủ tục đăng k&yacute; cư tr&uacute;.</td> 
+             <td data-title="Bản ch&iacute;nh">0</td> 
+             <td data-title="Bản sao">0</td> 
+             <td data-title="Mẫu đơn, tờ khai"> </td> 
+            </tr> 
+           </tbody> 
+          </table> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="divider-gray"></div> 
+       <h2 class="main-title-sub">Tr&igrave;nh tự thực hiện</h2> 
+       <div class="cls-impl-orders"> 
+       </div> 
+       <div class="divider-gray" style="margin: 20px 0px 0px 0px;"></div> 
+       <div class="list-expand"> 
+        <div class="item"> 
+         <div class="title">
+           Cơ quan thực hiện 
+         </div> 
+         <div class="content"> 
+          <div class="article">
+            C&ocirc;ng an X&atilde; 
+          </div> 
+         </div> 
+        </div> 
+        <div class="item"> 
+         <div class="title">
+           Y&ecirc;u cầu, điều kiện 
+         </div> 
+         <div class="content"> 
+          <div class="article cls-requires" style="white-space: pre-wrap;"> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+       <h2 class="main-title-sub -none">Thủ tục h&agrave;nh ch&iacute;nh li&ecirc;n quan</h2> 
+       <ul id="list-related-procedures" class="links"> 
+       </ul> 
+      </div> 
+      <div class="col-sm-3 col-xs-12"> 
+       <div class="sidebar"> 
+        <div class="head">
+         T&igrave;m kiếm nhiều nhất
+        </div> 
+        <div class="body"> 
+         <ul class="links"> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1480" title="Cấp Giấy x&aacute;c nhận nh&acirc;n sự của c&ocirc;ng d&acirc;n Việt Nam ở nước ngo&agrave;i (thực hiện tại cấp Trung ương)">Cấp Giấy x&aacute;c nhận nh&acirc;n sự của c&ocirc;ng d&acirc;n Việt Nam ở nước ngo&agrave;i (thực hiện tại cấp Trung ương)</a> <p class="unit">Bộ C&ocirc;ng an</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1399" title="Cấp lại Giấy ph&eacute;p th&agrave;nh lập Văn ph&ograve;ng đại diện của thương nh&acirc;n nước ngo&agrave;i tại Việt Nam">Cấp lại Giấy ph&eacute;p th&agrave;nh lập Văn ph&ograve;ng đại diện của thương nh&acirc;n nước ngo&agrave;i tại Việt Nam</a> <p class="unit">Bộ C&ocirc;ng thương</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1393" title="Cấp lại giấy ph&eacute;p hoạt động dự b&aacute;o, cảnh b&aacute;o kh&iacute; tượng thủy văn (cấp tỉnh)">Cấp lại giấy ph&eacute;p hoạt động dự b&aacute;o, cảnh b&aacute;o kh&iacute; tượng thủy văn (cấp tỉnh)</a> <p class="unit">Bộ N&ocirc;ng nghiệp v&agrave; M&ocirc;i trường</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1243" title="Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với m&ocirc;n Judo">Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với m&ocirc;n Judo</a> <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1241" title="Thủ tục cấp Giấy miễn thị thực tại Cơ quan đại diện VIệt Nam ở nước ngo&agrave;i">Thủ tục cấp Giấy miễn thị thực tại Cơ quan đại diện VIệt Nam ở nước ngo&agrave;i</a> <p class="unit">Bộ Ngoại giao</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1535" title="Thủ tục cấp giấy ph&eacute;p đủ điều kiện kinh doanh dịch vụ karaoke">Thủ tục cấp giấy ph&eacute;p đủ điều kiện kinh doanh dịch vụ karaoke</a> <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1484" title="Thủ tục gia hạn Giấy chứng nhận đăng k&yacute; th&agrave;nh lập v&agrave; hoạt động của cơ sở văn h&oacute;a nước ngo&agrave;i tại Việt Nam">Thủ tục gia hạn Giấy chứng nhận đăng k&yacute; th&agrave;nh lập v&agrave; hoạt động của cơ sở văn h&oacute;a nước ngo&agrave;i tại Việt Nam</a> <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1338" title="Thủ tục ph&ecirc; duyệt cho hộ ngh&egrave;o, hộ cận ngh&egrave;o, hộ mới tho&aacute;t ngh&egrave;o bị rủi ro do nguy&ecirc;n nh&acirc;n kh&aacute;ch quan vay bổ sung vốn để kh&ocirc;i phục sản xuất, kinh doanh">Thủ tục ph&ecirc; duyệt cho hộ ngh&egrave;o, hộ cận ngh&egrave;o, hộ mới tho&aacute;t ngh&egrave;o bị rủi ro do nguy&ecirc;n nh&acirc;n kh&aacute;ch quan vay bổ sung vốn để kh&ocirc;i phục sản xuất, kinh doanh</a> <p class="unit">Ng&acirc;n h&agrave;ng Ch&iacute;nh s&aacute;ch x&atilde; hội</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1483" title="Thủ tục trả nợ, trả l&atilde;i trực tiếp bằng tiền mặt của người vay l&agrave; tổ vi&ecirc;n Tổ Tiết kiệm v&agrave; vay vốn">Thủ tục trả nợ, trả l&atilde;i trực tiếp bằng tiền mặt của người vay l&agrave; tổ vi&ecirc;n Tổ Tiết kiệm v&agrave; vay vốn</a> <p class="unit">Ng&acirc;n h&agrave;ng Ch&iacute;nh s&aacute;ch x&atilde; hội</p> </li> 
+          <li> <a class="link" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1392" title="Trả lại giấy ph&eacute;p nhận ch&igrave;m (cấp tỉnh)">Trả lại giấy ph&eacute;p nhận ch&igrave;m (cấp tỉnh)</a> <p class="unit">Bộ N&ocirc;ng nghiệp v&agrave; M&ocirc;i trường</p> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <!-- <div class="sidebar -statis">
+    <div class="head">Số liệu thống kê </div>
+    <div class="body">
+                <div class="info">
+            <span class="value" style="color: #7C964C;">
+                                5290
+                            </span>
+            <div class="key">Tổng số TTHC</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                2593
+                            </span>
+            <div class="key">TTHC thực hiện tại Bộ, cơ quan</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                894
+                            </span>
+            <div class="key">TTHC thực hiện tại địa phương</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                1439
+                            </span>
+            <div class="key">TTHC ngành dọc tại địa phương</div>
+        </div>
+    </div>
+</div> --> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="popupChitietTTHC" class="modal fade popupChitietTTHC box-chitiettthc-phienban" role="dialog"> 
+    <div class="modal-dialog" style="max-width: 991px;width: 100%;"> 
+     <div class="modal-content"> 
+      <div class="modal-body"> 
+       <div class="close" data-dismiss="modal"> 
+        <span id="btnCLOSE_POPUP" class="-ap icon icon-close"></span> 
+       </div> 
+       <h2 class="main-title">Chi tiết thủ tục h&agrave;nh ch&iacute;nh:</h2> 
+       <div class="content"> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           M&atilde; thủ tục: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           1.004194 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Số quyết định: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           370/QĐ-BCA-C06 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           T&ecirc;n thủ tục: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Đăng k&yacute; tạm tr&uacute; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Cấp thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Cấp X&atilde; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Loại thủ tục: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           TTHC được luật giao quy định chi tiết 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Lĩnh vực: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Đăng k&yacute;, quản l&yacute; cư tr&uacute; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Tr&igrave;nh tự thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12 cls-impl-orders" style="white-space: pre-wrap;"> 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           C&aacute;ch thức thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12"> 
+          <div class="table-content"> 
+           <table class="table-data"> 
+            <thead> 
+             <tr> 
+              <th style="width:10%;">H&igrave;nh thức nộp</th> 
+              <th style="width:15%;">Thời hạn giải quyết</th> 
+              <th style="width:25%;">Ph&iacute;, lệ ph&iacute;</th> 
+              <th style="width:50%;">M&ocirc; tả</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr> 
+              <td>Trực tiếp</td> 
+              <td> 03 Ng&agrave;y l&agrave;m việc </td> 
+              <td> Ph&iacute; : 10.000 Đồng - Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch: + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ trực tiếp thu 10.000 đồng/người/lần đăng k&yacute;; <br /> Ph&iacute; : 15.000 Đồng Đăng k&yacute; tạm tr&uacute; (c&aacute; nh&acirc;n, hộ gia đ&igrave;nh): + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ trực tiếp thu 15.000 đồng/lần đăng k&yacute;; <br /> Ph&iacute; : Miễn ph&iacute; Đồng - Trường hợp c&ocirc;ng d&acirc;n thuộc diện được miễn ph&iacute; theo quy định tại Điều 4 Th&ocirc;ng tư số 75/2022/TT-BTC ng&agrave;y 22/12/2022 quy định mức thu, chế độ thu, nộp v&agrave; quản l&yacute; lệ ph&iacute; đăng k&yacute; cư tr&uacute; th&igrave; c&ocirc;ng d&acirc;n phải xuất tr&igrave;nh giấy tờ chứng minh thuộc diện được miễn trừ trường hợp th&ocirc;ng tin đ&atilde; c&oacute; trong Cơ sở dữ liệu quốc gia về d&acirc;n cư hoặc Cơ sở dữ liệu quốc gia, Cơ sở dữ liệu chuy&ecirc;n ng&agrave;nh m&agrave; đ&atilde; được kết nối với Cơ sở dữ liệu quốc gia về d&acirc;n cư. <br /> </td> 
+              <td style="white-space: pre-wrap;" class="content">- Nộp hồ sơ trực tiếp tại C&ocirc;ng an cấp x&atilde;. Thời gian tiếp nhận hồ sơ: Giờ h&agrave;nh ch&iacute;nh c&aacute;c ng&agrave;y l&agrave;m việc từ thứ 2 đến thứ 6 v&agrave; s&aacute;ng thứ 7 h&agrave;ng tuần (trừ c&aacute;c ng&agrave;y nghỉ lễ, tết theo quy định của ph&aacute;p luật).</td> 
+             </tr> 
+             <tr> 
+              <td>Trực tuyến</td> 
+              <td> 03 Ng&agrave;y l&agrave;m việc </td> 
+              <td> Ph&iacute; : 5.000 Đồng - Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch: + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ qua cổng dịch vụ c&ocirc;ng trực tuyến thu 5.000 đồng/người/lần đăng k&yacute;. <br /> Ph&iacute; : 7.000 Đồng - Đăng k&yacute; tạm tr&uacute; (c&aacute; nh&acirc;n, hộ gia đ&igrave;nh): + Trường hợp c&ocirc;ng d&acirc;n nộp hồ sơ qua cổng dịch vụ c&ocirc;ng trực tuyến thu 7.000 đồng/lần đăng k&yacute;. <br /> Ph&iacute; : Miễn ph&iacute; Đồng - Trường hợp c&ocirc;ng d&acirc;n thuộc diện được miễn ph&iacute; theo quy định tại Điều 4 Th&ocirc;ng tư số 75/2022/TT-BTC ng&agrave;y 22/12/2022 quy định mức thu, chế độ thu, nộp v&agrave; quản l&yacute; lệ ph&iacute; đăng k&yacute; cư tr&uacute; th&igrave; c&ocirc;ng d&acirc;n phải xuất tr&igrave;nh giấy tờ chứng minh thuộc diện được miễn trừ trường hợp th&ocirc;ng tin đ&atilde; c&oacute; trong Cơ sở dữ liệu quốc gia về d&acirc;n cư hoặc Cơ sở dữ liệu quốc gia, Cơ sở dữ liệu chuy&ecirc;n ng&agrave;nh m&agrave; đ&atilde; được kết nối với Cơ sở dữ liệu quốc gia về d&acirc;n cư. <br /> </td> 
+              <td style="white-space: pre-wrap;" class="content">- Nộp hồ sơ trực tuyến qua c&aacute;c cổng cung cấp dịch vụ c&ocirc;ng trực tuyến như: Trực tuyến qua Cổng dịch vụ c&ocirc;ng quốc gia, Cổng dịch vụ c&ocirc;ng Bộ C&ocirc;ng an, ứng dụng VNeID hoặc dịch vụ c&ocirc;ng trực tuyến kh&aacute;c theo quy định của ph&aacute;p luật. Thời gian tiếp nhận hồ sơ: Giờ h&agrave;nh ch&iacute;nh c&aacute;c ng&agrave;y l&agrave;m việc từ thứ 2 đến thứ 6 v&agrave; s&aacute;ng thứ 7 h&agrave;ng tuần (trừ c&aacute;c ng&agrave;y nghỉ lễ, tết theo quy định của ph&aacute;p luật).</td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Th&agrave;nh phần hồ sơ: 
+         </div> 
+         <div class="col-sm-9 col-xs-12"> 
+          <!-- Doan nay da duoc fix --> 
+          <div class="key">
+            * Hồ sơ đăng k&yacute; tạm tr&uacute; gồm: 
+          </div> 
+          <table class="table-data" style="width:100%;"> 
+           <thead> 
+            <tr> 
+             <th style="width:65%;">T&ecirc;n giấy tờ</th> 
+             <th style="width:15%;">Mẫu đơn, tờ khai</th> 
+             <th style="width:20%;">Số lượng</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td class="justify">Tờ khai thay đổi th&ocirc;ng tin cư tr&uacute; (Mẫu CT01 ban h&agrave;nh k&egrave;m theo Th&ocirc;ng tư số 53/2025/TT-BCA); đối với người đăng k&yacute; tạm tr&uacute; l&agrave; người chưa th&agrave;nh ni&ecirc;n th&igrave; trong tờ khai phải ghi r&otilde; &yacute; kiến đồng &yacute; của cha, mẹ hoặc người gi&aacute;m hộ, trừ trường hợp đ&atilde; c&oacute; &yacute; kiến đồng &yacute; bằng văn bản;</td> 
+             <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3fb578283553a318');">1.MuCT01banhnhkmtheoThngts53.doc</span><br /> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td> 
+            </tr> 
+            <tr> 
+             <td class="justify">Th&ocirc;ng tin chứng minh về chỗ ở hợp ph&aacute;p được khai th&aacute;c trong căn cước điện tử, t&agrave;i khoản định danh điện tử tr&ecirc;n hệ thống định danh v&agrave; x&aacute;c thực điện tử qua Ứng dụng định danh quốc gia hoặc trong Cơ sở dữ liệu quốc gia về d&acirc;n cư, Cơ sở dữ liệu về cư tr&uacute;, Kho quản l&yacute; dữ liệu điện tử tổ chức, c&aacute; nh&acirc;n tr&ecirc;n Cổng dịch vụ c&ocirc;ng quốc gia, Hệ thống th&ocirc;ng tin giải quyết thủ tục h&agrave;nh ch&iacute;nh cấp bộ, cấp tỉnh hoặc cơ sở dữ liệu quốc gia, cơ sở dữ liệu chuy&ecirc;n ng&agrave;nh kh&aacute;c. Trường hợp kh&ocirc;ng khai th&aacute;c được th&ocirc;ng tin th&igrave; c&ocirc;ng d&acirc;n xuất tr&igrave;nh giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p theo quy định tại khoản 3 Điều 5 Nghị định 154/2024/NĐ-CP ng&agrave;y 26/11/2024 của Ch&iacute;nh phủ.</td> 
+             <td> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td> 
+            </tr> 
+            <tr> 
+             <td class="justify">V&iacute; dụ: Trường hợp giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p l&agrave; giấy tờ, t&agrave;i liệu chứng nhận về quyền sử dụng đất, quyền sở hữu t&agrave;i sản gắn liền với đất do cơ quan c&oacute; thẩm quyền cấp qua c&aacute;c thời kỳ theo quy định của ph&aacute;p luật về đất đai v&agrave; nh&agrave; ở được khai th&aacute;c trong Cơ sở dữ liệu quốc gia về đất đai th&igrave; kh&ocirc;ng phải xuất tr&igrave;nh giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p.</td> 
+             <td> </td> 
+             <td>Bản ch&iacute;nh: 0<br />Bản sao: 0</td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <br /> 
+          <!-- Doan nay da duoc fix --> 
+          <div class="key">
+            * Đăng k&yacute; tạm tr&uacute; theo danh s&aacute;ch, hồ sơ gồm: 
+          </div> 
+          <table class="table-data" style="width:100%;"> 
+           <thead> 
+            <tr> 
+             <th style="width:65%;">T&ecirc;n giấy tờ</th> 
+             <th style="width:15%;">Mẫu đơn, tờ khai</th> 
+             <th style="width:20%;">Số lượng</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td class="justify">Tờ khai thay đổi th&ocirc;ng tin cư tr&uacute; (của từng người) (Mẫu CT01 ban h&agrave;nh k&egrave;m theo Th&ocirc;ng tư số 53/2025/TT-BCA).</td> 
+             <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3f9cff910bbd16e0');">1.MuCT01banhnhkmtheoThngts53.doc</span><br /> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td> 
+            </tr> 
+            <tr> 
+             <td class="justify">Văn bản đề nghị đăng k&yacute; tạm tr&uacute;, trong đ&oacute; ghi r&otilde; th&ocirc;ng tin về chỗ ở hợp ph&aacute;p k&egrave;m danh s&aacute;ch người tạm tr&uacute;. Danh s&aacute;ch bao gồm những th&ocirc;ng tin cơ bản của từng người: họ, chữ đệm v&agrave; t&ecirc;n; ng&agrave;y, th&aacute;ng, năm sinh; giới t&iacute;nh; số định danh c&aacute; nh&acirc;n v&agrave; thời hạn tạm tr&uacute;.</td> 
+             <td> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 1</td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <br /> 
+          <!-- Doan nay da duoc fix --> 
+          <div class="key">
+            Đăng k&yacute; tạm tr&uacute; tại nơi đơn vị đ&oacute;ng qu&acirc;n trong C&ocirc;ng an nh&acirc;n d&acirc;n, Qu&acirc;n đội nh&acirc;n nh&acirc;n (đơn vị đ&oacute;ng qu&acirc;n, nh&agrave; ở c&ocirc;ng vụ) hồ sơ gồm: 
+          </div> 
+          <table class="table-data" style="width:100%;"> 
+           <thead> 
+            <tr> 
+             <th style="width:65%;">T&ecirc;n giấy tờ</th> 
+             <th style="width:15%;">Mẫu đơn, tờ khai</th> 
+             <th style="width:20%;">Số lượng</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td class="justify">Tờ khai thay đổi th&ocirc;ng tin cư tr&uacute; (Mẫu CT01 ban h&agrave;nh k&egrave;m theo Th&ocirc;ng tư số 53/2025/TT-BCA).</td> 
+             <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3fb604bf0a130628');">1.MuCT01banhnhkmtheoThngts53.doc</span><br /> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td> 
+            </tr> 
+            <tr> 
+             <td class="justify">Đối với C&ocirc;ng an nh&acirc;n d&acirc;n: Giấy giới thiệu của Thủ trưởng đơn vị quản l&yacute; trực tiếp ghi r&otilde; nội dung để l&agrave;m thủ tục đăng k&yacute; tạm tr&uacute; v&agrave; đơn vị c&oacute; chỗ ở cho c&aacute;n bộ chiến sĩ (k&yacute; t&ecirc;n, đ&oacute;ng dấu).</td> 
+             <td> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td> 
+            </tr> 
+            <tr> 
+             <td class="justify">Đối với Qu&acirc;n đội nh&acirc;n d&acirc;n: Giấy giới thiệu đăng k&yacute; tạm tr&uacute; của đơn vị cấp trung đo&agrave;n v&agrave; tương đương trở l&ecirc;n.</td> 
+             <td> </td> 
+             <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <br /> 
+          <!-- Doan nay da duoc fix --> 
+          <div class="key">
+            Bao gồm 
+          </div> 
+          <table class="table-data" style="width:100%;"> 
+           <thead> 
+            <tr> 
+             <th style="width:65%;">T&ecirc;n giấy tờ</th> 
+             <th style="width:15%;">Mẫu đơn, tờ khai</th> 
+             <th style="width:20%;">Số lượng</th> 
+            </tr> 
+           </thead> 
+           <tbody> 
+            <tr> 
+             <td class="justify">*Lưu &yacute;: - Trường hợp giấy tờ, t&agrave;i liệu chứng minh chỗ ở hợp ph&aacute;p để đăng k&yacute; tạm tr&uacute; l&agrave; văn bản cho thu&ecirc;, cho mượn, cho ở nhờ nh&agrave; ở, nh&agrave; kh&aacute;c của c&aacute; nh&acirc;n, tổ chức th&igrave; văn bản đ&oacute; kh&ocirc;ng bắt buộc phải c&ocirc;ng chứng hoặc chứng thực. - Người nước ngo&agrave;i được nhập quốc tịch Việt Nam khi đăng k&yacute; tạm tr&uacute; lần đầu phải c&oacute; Quyết định của Chủ tịch nước về việc cho nhập quốc tịch Việt Nam. Người gốc Việt Nam được trở lại quốc tịch Việt Nam khi đăng k&yacute; tạm tr&uacute; lần đầu sau khi được cho trở lại quốc tịch Việt Nam phải c&oacute; Quyết định của Chủ tịch nước về việc cho trở lại quốc tịch Việt Nam trừ trường hợp đ&atilde; khai th&aacute;c được th&ocirc;ng tin trong Cơ sở dữ liệu quốc tịch. - C&ocirc;ng d&acirc;n đăng k&yacute; tạm tr&uacute; về với hộ gia đ&igrave;nh thuộc trường hợp quy định tại khoản 2 Điều 20 Luật Cư tr&uacute; khi chủ hộ, chủ sở hữu chỗ ở hợp ph&aacute;p đồng &yacute; v&agrave; kh&ocirc;ng phải xuất tr&igrave;nh, cung cấp giấy tờ chứng minh chỗ ở hợp ph&aacute;p. - Trong thời hạn tối đa 60 ng&agrave;y kể từ ng&agrave;y người chưa th&agrave;nh ni&ecirc;n được đăng k&yacute; khai sinh th&igrave; phải thực hiện thủ tục đăng k&yacute; cư tr&uacute;.</td> 
+             <td> </td> 
+             <td>Bản ch&iacute;nh: 0<br />Bản sao: 0</td> 
+            </tr> 
+           </tbody> 
+          </table> 
+          <br /> 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Đối tượng thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           C&ocirc;ng d&acirc;n Việt Nam, Doanh nghiệp, Tổ chức (kh&ocirc;ng bao gồm doanh nghiệp, HTX), Hợp t&aacute;c x&atilde; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Cơ quan thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           C&ocirc;ng an X&atilde; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Cơ quan c&oacute; thẩm quyền: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           C&ocirc;ng an X&atilde; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Địa chỉ tiếp nhận HS: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           C&ocirc;ng an cấp x&atilde; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Cơ quan được ủy quyền: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Kh&ocirc;ng c&oacute; th&ocirc;ng tin 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Cơ quan phối hợp: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Kh&ocirc;ng c&oacute; th&ocirc;ng tin 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Kết quả thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Cập nhật th&ocirc;ng tin trong Cơ sở dữ liệu quốc gia về d&acirc;n cư, Th&ocirc;ng b&aacute;o kết quả giải quyết thủ tục về cư tr&uacute;, hủy bỏ thủ tục về cư tr&uacute;, Cập nhật th&ocirc;ng tin trong Cơ sở dữ liệu về cư tr&uacute;, Phiếu từ chối tiếp nhận, giải quyết hồ sơ (lĩnh vực cư tr&uacute;) 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Căn cứ ph&aacute;p l&yacute;: 
+         </div> 
+         <div class="col-sm-9 col-xs-12"> 
+          <div class="table-content"> 
+           <table class="table-data" style="width: 100%;"> 
+            <thead> 
+             <tr> 
+              <th style="width: 20%;">Số k&yacute; hiệu</th> 
+              <th style="width: 45%;">Tr&iacute;ch yếu</th> 
+              <th style="width: 10%;">Ng&agrave;y ban h&agrave;nh</th> 
+              <th style="width: 25%;">Cơ quan ban h&agrave;nh</th> 
+             </tr> 
+            </thead> 
+            <tbody> 
+             <tr> 
+              <td>68/2020/QH14</td> 
+              <td>Luật 68/2020/QH14</td> 
+              <td>13-11-2020</td> 
+              <td></td> 
+             </tr> 
+             <tr> 
+              <td>55/2021/TT-BCA</td> 
+              <td>Th&ocirc;ng tư 55/2021/TT-BCA</td> 
+              <td>15-05-2021</td> 
+              <td></td> 
+             </tr> 
+             <tr> 
+              <td>56/2021/TT-BCA</td> 
+              <td>Th&ocirc;ng tư 56/2021/TT-BCA</td> 
+              <td>15-05-2021</td> 
+              <td></td> 
+             </tr> 
+             <tr> 
+              <td>57/2021/TT-BCA</td> 
+              <td>Th&ocirc;ng tư 57/2021/TT-BCA</td> 
+              <td>15-05-2021</td> 
+              <td></td> 
+             </tr> 
+             <tr> 
+              <td>85/2019/TT-BTC</td> 
+              <td>Th&ocirc;ng tư 85/2019/TT-BTC</td> 
+              <td>29-11-2019</td> 
+              <td></td> 
+             </tr> 
+             <tr> 
+              <td>66/2023/TT-BCA</td> 
+              <td>Th&ocirc;ng tư số 66/2023/TT-BCA Sửa đổi, bổ sung một số điều của Th&ocirc;ng tư số 55/2021/TT-BCA ng&agrave;y 15/5/2021 quy định chi tiết một số điều v&agrave; biện ph&aacute;p thi h&agrave;nh Luật Cư tr&uacute;; Th&ocirc;ng tư số 56/2021/TT-BCA ng&agrave;y 15/5/2021 của Bộ trưởng Bộ C&ocirc;ng an quy định về biểu mẫu trong đăng k&yacute;, quản l&yacute; cư tr&uacute;; Th&ocirc;ng tư số 57/2021/TT-BCA ng&agrave;y 15/5/2021 của Bộ trưởng Bộ C&ocirc;ng an quy định về quy tr&igrave;nh đăng k&yacute; cư tr&uacute;.</td> 
+              <td>17-11-2023</td> 
+              <td>Bộ C&ocirc;ng an</td> 
+             </tr> 
+             <tr> 
+              <td>75/2022/TT-BTC</td> 
+              <td>Th&ocirc;ng tư số 75/2022/TT-BTC của Bộ T&agrave;i ch&iacute;nh: Quy định mức thu, chế độ thu, nộp v&agrave; quản l&yacute; lệ ph&iacute; đăng k&yacute; cư tr&uacute;</td> 
+              <td>22-12-2022</td> 
+              <td>Bộ T&agrave;i ch&iacute;nh</td> 
+             </tr> 
+             <tr> 
+              <td>154/2024/NĐ-CP</td> 
+              <td>Nghị định quy định chi tiết một số điều v&agrave; biện ph&aacute;p thi h&agrave;nh Luật Cư tr&uacute;</td> 
+              <td>26-11-2024</td> 
+              <td>Ch&iacute;nh phủ</td> 
+             </tr> 
+             <tr> 
+              <td>53/2025/TT-BCA</td> 
+              <td>Th&ocirc;ng tư số 53/2025/TT-BCAng&agrave;y 01/7/2025 của Bộ C&ocirc;ng an sửa đổi, bổ sung một số điều của Th&ocirc;ng tư số 55/2021/TT-BCA ng&agrave;y 15 th&aacute;ng 5 năm 2021 của Bộ trưởng Bộ C&ocirc;ng an quy định chi tiết một số điều v&agrave; biện ph&aacute;p thi h&agrave;nh Luật Cư tr&uacute; được sửa đổi, bổ sung bởi Th&ocirc;ng tư số 66/2023/TT-BCA ng&agrave;y 17 th&aacute;ng 11 năm 2023; Th&ocirc;ng tư số 56/2021/TT-BCA ng&agrave;y 15 th&aacute;ng 5 năm 2021 của Bộ trưởng Bộ C&ocirc;ng an quy định về biểu mẫu trong đăng k&yacute;, quản l&yacute; cư tr&uacute; được sửa đổi, bổ sung bởi Th&ocirc;ng tư số 66/2023/TT-BCA ng&agrave;y 17 th&aacute;ng 11 năm 2023; Th&ocirc;ng tư số 17/2024/TT-BCA ng&agrave;y 15 th&aacute;ng 5 năm 2024 của Bộ trưởng Bộ C&ocirc;ng an quy định chi tiết một số điều v&agrave; biện ph&aacute;p thi h&agrave;nh Luật Căn cước.</td> 
+              <td>01-07-2025</td> 
+              <td>Bộ C&ocirc;ng an</td> 
+             </tr> 
+             <tr> 
+              <td>66.7/2025/NQ-CP</td> 
+              <td>66.7/2025/NQ-CP</td> 
+              <td>15-11-2025</td> 
+              <td>Văn ph&ograve;ng Ch&iacute;nh phủ</td> 
+             </tr> 
+             <tr> 
+              <td>54/2025/TT-BCA</td> 
+              <td>Th&ocirc;ng tư số 54/2025/TT-BCA ng&agrave;y 01/7/2025 của Bộ trưởng Bộ C&ocirc;ng an quy định về quy tr&igrave;nh đăng k&yacute; cư tr&uacute;.</td> 
+              <td>01-07-2025</td> 
+              <td>Bộ C&ocirc;ng an</td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Y&ecirc;u cầu, điều kiện thực hiện: 
+         </div> 
+         <div class="col-sm-9 col-xs-12 cls-requires" style="white-space: pre-wrap;"> 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           Từ kh&oacute;a: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Đăng k&yacute; tạm tr&uacute; 
+         </div> 
+        </div> 
+        <div class="row info-row"> 
+         <div class="col-sm-3 col-xs-12 key">
+           M&ocirc; tả: 
+         </div> 
+         <div class="col-sm-9 col-xs-12">
+           Kh&ocirc;ng c&oacute; th&ocirc;ng tin 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script>
+    $(document).ready(() => {
+
+        $("#li-tthc").addClass("active");
+
+        loadImplOrders();
+        loadRequires();
+        loadRelatedProcedures();
+
+        // open pop-up after loading page
+        if (getUrlParameter("open_popup") == 1) {
+            $('#popupChitietTTHC').modal('show');
+
+            // $('#btnCLOSE_POPUP').click(() => {
+            //     window.location.replace('dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=' + '1.004194');
+            // });
+
+            // $('#popupChitietTTHC').on('hidden.bs.modal', function () {
+            //     $('#btnCLOSE_POPUP').click();
+            // });
+        }
+
+        $(".list-expand .item .title").unbind().click(function(){
+                    if($(this).parent().hasClass("active")){
+                        // $(this).parent().siblings().removeClass("active");
+                        $(this).parent().removeClass("active");
+                    }else{
+                        $(this).parent().addClass("active");
+                        // $(this).parent().siblings().removeClass("active");
+                    }
+
+        });
+
+    });
+
+    let searchParams = new URLSearchParams(window.location.search);
+    function getUrlParameter(sParam) {
+        return searchParams.get(sParam);
+    }
+
+    function loadImplOrders() {
+
+        var obj = new Object();
+        obj.service = "procedure_get_impl_orders_by_proc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = '5974';
+        obj.parent_id = '';
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        var listScenario = [];
+        if (result && result.length > 0) {
+            result.forEach(item => {
+                // if (item.SCENARIO) {
+                    if (!listScenario.includes(item.SCENARIO))
+                        listScenario.push(item.SCENARIO);
+                // }
+            });
+        }
+
+        if (result && result.length > 0) {
+
+            if (listScenario.length == 0) {
+
+                var htmlText = '';
+
+                htmlText += `<div style="white-space: pre-wrap;">`;
+                result.forEach(item => {
+                    htmlText += item.CONTENT + '<br />';
+                });
+                htmlText += `</div>`;
+
+                $(".cls-impl-orders").html(htmlText);
+            
+            } else {
+
+                var htmlText = '';
+                var htmlTextPopup = '';
+
+                htmlText += '<div class="list-expand">';
+                listScenario.forEach(item => {
+
+                    var htmlContent = '';
+                    result.forEach(e => {
+                        if (e.SCENARIO == item)
+                            htmlContent += e.CONTENT + '<br />';
+                    });
+
+                    if (item) {
+                        htmlText += `<div class="item">
+                                    <div class="title f18 ttth" title="${item}" style="font-size: 17px; font-weight: 400;">${item}</div>
+                                    <div class="content ttth" style="white-space: pre-line;">
+                                        ${htmlContent}
+                                    </div>
+                                </div>`;
+
+                        htmlTextPopup += `<div class="key">${item}</div><div style="white-space: pre-wrap;">${htmlContent}</div><br />`;
+                    
+                    } else {
+                        htmlText += `<div class="ttth" style="white-space: pre-line;">
+                                        ${htmlContent}
+                                    </div>`;
+
+                        htmlTextPopup += `<div style="white-space: pre-wrap;">${htmlContent}</div><br />`;
+                    
+                    }
+
+                });
+                htmlText += '</div>';
+
+                $(".cls-impl-orders").html(htmlText);
+
+                $(".info-row > .cls-impl-orders").html(htmlTextPopup);
+
+            }
+
+        } else {
+            $(".cls-impl-orders").html("Không có thông tin");
+        }
+
+    }
+
+    function loadRequires() {
+
+        var obj = new Object();
+        obj.service = "procedure_get_requires_by_procedure_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = '5974';
+        obj.parent_id = '';
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        if(result == undefined){
+            console.log("oke");
+        }
+        if (result && result.length > 0) {
+
+            var htmlText = '';
+            result.forEach(item => {
+
+                htmlText += item.REQUIRE_NAME;
+            });
+            $(".cls-requires").html(htmlText);
+        
+        } else {
+            $(".cls-requires").html("Không có thông tin");
+        }
+    }
+
+    function loadRelatedProcedures() {
+
+        var obj = new Object();
+        obj.service = "procedure_get_related_procedures_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = '5974';
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        if (result && result.length > 0) {
+
+            var htmlText = '';
+            result.forEach(item => {
+
+                if (item.ISLIENTHONG == 1)
+                    htmlText += '<li><a href="dvc-tthc-thu-tuc-hanh-chinh-lien-thong-chi-tiet.html?ma_thu_tuc=' + item.ID + '" class="link f16">' + item.PROCEDURE_NAME + '</a></li>';
+                else
+                    htmlText += '<li><a href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=' + item.ID + '" class="link f16">' + item.PROCEDURE_NAME + '</a></li>';
+
+            });
+            $("#list-related-procedures").html(htmlText);
+
+        } else {
+            $("#list-related-procedures").html("Không có thông tin");
+        }
+    }
+
+    function getUrlDownload(procedureCode) {
+
+        var obj = new Object();
+        obj.service = "get_url_downfile";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+        return result[0].URL_DOWNLOAD;
+       
+    }
+
+    function downloadMaudon(code){
+		// if (id == '' || id == undefined) return;
+		// var obj = {
+		// 	id: base64.encode(id)
+		// };
+		// var url = "http://10.193.72.20:7005/web/jsp/download_file.jsp?ma=" + $.param(obj);
+        // var url = "https://csdltest.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=" +code;
+        var url = getUrlDownload() + "?ma=" +code;
+		window.open(url, '_blank');
+	}
+
+    // phản ánh kiến nghị
+    function sendPAKN(id, code, name) {
+        submissionCodePA = code;
+        var orgCode = extractAgencyCode(submissionCodePA);
+        var title = 'Phản ánh kiến nghị về hồ sơ: "' + submissionCodePA + '"';
+        var url = '/jsp/reflection.jsp?';
+        url += '&title=' + title;
+        url += '&orgCode=' + orgCode;
+        url += '&orgName=' + name;
+        url += '&object=' + "";
+        url += '&address=' + "";
+        url += '&name=' + "";
+        url += '&email=' + "";
+        url += '&phone=' + "";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                var result = JSON.parse(response);
+                if (result.error_code != "-1") {
+                    window.location.href = "/p/phananhkiennghi/pakn-gui-pakn.html";
+                } else {
+                    toastr.error('Thực hiện không thành công.');
+                }
+            },
+            error: function (error) {
+                toastr.error('Thực hiện không thành công.');
+            }
+        });
+    }
+
+    function extractAgencyCode(input) {
+        //V1V2V3.Z1Z2.Y1Y2.MX1X2-YYMMDD-XXXX
+        if (input !== "") {
+            var str = input.split("-");
+            return str[0];
+        }
+
+        return "";
+    }
+    // phản ánh kiến nghị: end
+</script>  
+ </body>
+</html><html>
+ <head></head>
+ <body>
+  <div class="loading" id="loading" style="display:none"> 
+   <div class="icon"> 
+    <img src="img/loading.svg" alt="" /> 
+   </div> 
+   <style type="text/css">
+			.loading {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 1000;
+			}
+			.loading .icon {
+				width: 100px;
+				position: absolute;
+				top: 0px;
+				height: 100px;
+				bottom: 0px;
+				right: 0px;
+				margin: auto;
+				left: 0px;
+			}
+
+		</style> 
+  </div> 
+  <footer class="footer"> 
+   <div class="footer-bottom"> 
+    <div class="container"> 
+     <div class="add"> 
+      <p>Cơ quan chủ quản: Văn ph&ograve;ng Ch&iacute;nh phủ</p> 
+     </div> 
+     <div class="add"> 
+      <p>www.dichvucong.gov.vn</p> 
+     </div> 
+     <div class="add"> 
+      <p>Tổng đ&agrave;i hỗ trợ: 18001096</p> 
+     </div> 
+     <div class="add"> 
+      <p> Email: dichvucong@chinhphu.vn</p> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <script type="text/javascript" src="theme/vendor/typeahead/index.js"></script> 
+  <script type="text/javascript" src="theme/vendor/typeahead/handlebars.js"></script> 
+  <script type="text/javascript" src="theme/js/custom.js"></script> 
+  <script type="text/javascript">
+    function showLoading() {
+        $("#loading-all").show();
+    }
+    function hideLoading(){
+        $("#loading-all").hide();
+    }
+
+    function goToPage(url){
+        window.location.href = url;
+    }
+
+    function goToPage_blank(url){
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    $(".targetgroup-box .btn-readmore").click(function(e){
+        e.preventDefault();
+        if($(this).hasClass("active")){
+            $(this).html('Xem tiếp <span class="-ap icon-chevron-thin-down icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"250px"});
+            $(this).removeClass("active");
+        }else{
+            $(this).html('Thu gọn <span class="-ap icon-chevron-thin-up icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"auto"});
+            $(this).addClass("active");
+        }
+    });
+    var links = [
+            
+        ];
+
+
+    function searchProcedure(){
+        var key = getWords($("#searchKeyWord").val(), 100);
+		console.log(key);
+        // if($("#searchKeyWord").val()) {
+        var href = 'dvc-ket-qua-thu-tuc.html?originKey=' + encodeURIComponent(key) + '&tukhoa=' + key.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g, ' ').trim() + '&tinh_thanh=';
+        window.location.href = href;
+        //}
+    }
+
+function showAdvSearch() {
+    getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+}
+
+function doAdvSearch(){
+
+    let mess = '';
+    let keyWord = $('#txtKEYWORD').val().trim();
+    keyWord = getWords(keyWord, 100);
+    if (!keyWord) {
+        mess += 'Bạn vui lòng nhập từ khóa tìm kiếm!\n';
+    }
+    let tinhThanhValue = $('#cboTINH_THANH').val();
+    let boNganhValue = $('#cboBO_NGANH').val();
+    var rdoBO = $("input[name='cap_thuc_hien']:checked").val();
+
+    if (((!tinhThanhValue || '-1' == tinhThanhValue) && rdoBO != 'bonganh') || (rdoBO == 'bonganh' && (!boNganhValue || '-1' == boNganhValue))) {
+        mess += 'Bạn phải chọn ít nhất một Tỉnh/ Thành phố hoặc một Bộ ngành!\n';
+    }
+
+    if (mess) {
+        toastr.warning(mess);
+        return;
+    }
+
+    var rdoSO = $("input[name='quan_huyen_or_so']:checked").val();
+    if (rdoBO != 'bonganh' && $('#cboTINH_THANH').val() && $('#cboTINH_THANH').val() != '-1' && ($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val()) && ($('#cboSO').val() == '-1' || !$('#cboSO').val()) && ($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val())) {
+
+        var params = 'originKey=' + encodeURIComponent(keyWord) + '&tukhoa=' + keyWord.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g,' ').trim()
+        params+= "&tinh_thanh="+(($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val()  || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        window.location = 'dvc-ket-qua-thu-tuc.html?' + params;
+    } else {
+
+        var params = "tu_khoa=" + keyWord;
+        //params += "&bo_nganh="+(($('#cboBO').val() != '-1' || !$('#cboBO').val() || rdoBO != 'bonganh') ? "" : $('#cboBO option:selected').text());
+        params += "&bo_nganh=" + ($('#cboBO_NGANH option:selected').text());
+        params += "&tinh_thanh=" + (($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val() || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        params += "&so=" + (($('#cboSO').val() == '-1' || !$('#cboSO').val() || rdoSO != 'so') ? "" : $('#cboSO option:selected').text());
+        params += "&quan_huyen=" + (($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val() || rdoSO == 'so') ? "" : $('#cboQUAN_HUYEN option:selected').text());
+        params += "&phuong_xa=" + (($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val() || rdoSO == 'so') ? "" : $('#cboPHUONG_XA option:selected').text());
+        params += "&id_tinh_thanh=" + $('#cboTINH_THANH').val();
+        params += "&id_quan_huyen=" + $('#cboQUAN_HUYEN').val();
+        params += "&id_phuong_xa=" + $('#cboPHUONG_XA').val();
+        params += "&id_so=" + $('#cboSO').val();
+        params += "&id_bo_nganh=" + $('#cboBO_NGANH').val();
+        window.location = 'dvc-danh-sach-dich-vu-cong.html?' + params;
+    }
+
+    $('#advsearch').modal('hide');
+}
+$(document).ready(function(){
+    $("#searchKeyWord").keyup(function (e){
+        if (e.which == 13) {
+            searchProcedure();
+        }
+    });
+    bindEvent();
+});
+
+function changeHeight(){
+    var vl = 1 - $('#popupChange').attr('height');
+    $('#popupChange').attr('height', vl);
+    $('#popupChange').css('height', vl + "px");
+}
+
+function bindEvent(){
+    $('#searchKeyWord').keydown(function(e){
+        if (e.keyCode == 13) {
+            searchProcedure();
+        }
+    });
+    $('#advsearch').on('hidden.bs.modal', function () {
+        $('#divClosePopupSearch').click();
+    });
+    $('#divClosePopupSearch').click(function(){
+        $("#txtKEYWORD").val('');
+        $('#rdoTINH_THANH').click();
+        $('#rdoQUAN_HUYEN').click();
+        $("#cboTINH_THANH").change();
+        getLocation("dvcqg_get_phuong_xa_by_selected", "huyen_id", -1, "cboPHUONG_XA");
+        $('#advsearch').modal('hide');
+
+    });
+
+    $('#rdoTINH_THANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').show();
+        $('#cboBO_NGANH').select2().next().hide();
+        $('#cboTINH_THANH').select2().next().show();
+        getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", -1, "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", -1, "cboSO");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+    });
+    $('#rdoBO_NGANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').hide();
+        $('#cboBO_NGANH').select2().next().show();
+        $('#cboTINH_THANH').select2().next().hide();
+        getLocation("dvcqg_get_bo_nganh_by_selected_v2", null, null, "cboBO_NGANH");
+    });
+
+    $('#rdoQUAN_HUYEN').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+        $('#cboSO').select2().next().hide();
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+    });
+
+    $('#rdoSO').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+        $('#cboSO').select2().next().show();
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+    });
+
+    $("#cboTINH_THANH,#cboQUAN_HUYEN,#cboPHUONG_XA,#cboSO,#cboBO_NGANH").select2({
+        allowClear: true,
+        width: "100%",
+    });
+    $('#cboSO,#cboBO_NGANH').select2().next().hide();
+
+    $("#cboTINH_THANH").change(function () {
+        getLocation("dvcqg_get_so_by_selected", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+
+    });
+    $("#cboQUAN_HUYEN").change(function () {
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN").val(), "cboPHUONG_XA");
+    });
+}
+
+//suggestion search
+function sugggestProcedure(keyword) {
+    var obj = new Object();
+    obj.key_search = 'al:"' + keyword +'"~5';
+    obj.page_size = 5;
+    obj.start_row = 0;
+    obj.source_data = "thu_tuc_v1";
+    obj.type = "fts";
+    var result = apiservice.AjaxJson.executeQuery(obj);
+    var dataMap = result.response.docs.map(function (i) {
+        return {
+            name: i.ten_thu_tuc,
+            link: i.ten_thu_tuc,
+            id: i.ma_thu_tuc
+        }
+    });
+
+    return dataMap;
+}
+
+jQuery(document).ready(function($) {
+
+    var engine = new Bloodhound({
+        remote: {
+            url: '/jsp/procedure-typehead.jsp?keyword=al:"%QUERY%"~5',
+            wildcard: '%QUERY%'
+        },
+        datumTokenizer: Bloodhound.tokenizers.whitespace('keyword'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace
+    });
+
+    $(".search-input").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 3
+    }, {
+        source: engine.ttAdapter(),
+        displayKey: 'ten_thu_tuc',
+        name: 'usersList',
+        templates: {
+            empty: [
+                '<div class="list-group search-results-dropdown"><div class="list-group-item">Không có kết quả phù hợp.</div></div>'
+            ],
+            header: [
+                '<div class="list-group search-results-dropdown">'
+            ],
+            suggestion: function (data) {
+                console.log(data);
+                if (data.isnganhdoc == 1) {
+                    return '<a href="dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }else if(data.isdungchung == 1){
+                    return '<a href="dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }else{
+                    return '<a href="dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }
+                
+            }
+        }
+    });
+    $('#searchKeyWord:text:visible:first').focus();
+});
+
+</script> 
+  <script type="text/javascript">
+
+    //
+    function autoSetmenu() {
+        var path = window.location.pathname;
+        var isRemoveDropdown = false;
+
+        // Cau hoi
+        if (path == '/p/home/dvc-chi-tiet-cau-hoi.html'){
+            path = '/p/home/dvc-cau-hoi-pho-bien.html';
+        }
+
+        // Huong dan su dung
+        if (path == '/p/home/dvc-huong-dan-bo-nganh-dia-phuong.html' || path == '/p/home/dvc-phan-mem-ho-tro.html' || path == '/p/home/dvc-thiet-ke-giao-dien.html' ||
+            path == '/p/home/dvc-nop-tien-dien.html' || path == '/p/home/dvc-liet-ket-giao-duc.html'
+            ){
+            path = '/p/dvc-huong-dan-cong-dan-doanh-nghiep.html';
+        }
+
+        // Thu tuc hanh hinh cong dan - doanh nghiep
+        if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-cong-dan.html'
+            ){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }else if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-doanh-nghiep.html'
+            ){
+            path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+        }else if (path == '/p/home/dvc-danh-sach-thu-tuc-theo-nhom-su-kien.html'
+                || path == '/p/home/dvc-danh-sach-cau-hoi-theo-nhom-su-kien.html'
+            ) {
+            var objectId = GetURLParameter('objectId');
+            if (objectId == 1){
+                path = '/p/home/dvc-trang-chu-cong-dan.html';
+            }else if(objectId == 5){
+                path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+            }
+        }
+
+        // DVC trực tuyến & đăng ký xe
+        if (path == '/p/home/dvc-dich-vu-cong-truc-tuyen-ds.html'
+                || path == '/p/home/dvc-dich-vu-cong-truc-tuyen.html'
+                || path == '/p/home/dvc-dang-ky-xe.html'
+            ) {
+            path = '/p/home/dvc-dich-vu-cong-truc-tuyen.html';
+        }
+
+        // Chi tiet TTHC va DVC
+        if (path == '/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html' 
+                || path == '/p/home/dvc-danh-sach-dich-vu-cong.html'
+                || path == '/p/home/dvc-danh-sach-thu-tuc-theo-su-kien.html'
+                || path == '/p/home/dvc-ket-qua-thu-tuc.html'
+            ) {
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+            isRemoveDropdown = true;
+        }
+
+        // module TTHC
+        if (path == '/p/home/dvc-tthc-category.html') {
+            path = '/p/home/dvc-tthc-trang-chu.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html';
+        }
+        if (path == '/p/home/dvc-tthc-quyet-dinh-cong-bo-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-quyet-dinh-cong-bo.html';
+        }
+        if (path == '/p/home/dvc-tthc-bonganh-tinhtp.html') {
+            path = '/p/home/dvc-tthc-co-quan.html';
+        }
+
+        if (path == '/p/home/dvc-chi-tiet-tin-tuc.html') {
+            path = '/p/home/dvc-tin-tuc.html';
+        }
+
+        // dvc-cap-ban-sao-tu-ban-chinh
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh.html'){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }
+        //  Đặt lịch hẹn
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh-dlh.html'){
+            path = '/p/home/dvc-tra-cuu-ho-so.html';
+        }
+        // Active main menu
+        $("#main-menu li").each(function () {
+            var link = $(this).find(">a").attr("href");
+            if (path.indexOf(link) != -1) {
+                $(this).parents('li').siblings().removeClass("active");
+                $(this).parents('li').addClass("active");
+                $(this).parents('li').find("li").removeClass("active");
+                $(this).addClass("active");
+            }
+        });
+
+        // Active dropdownmenu
+        $("#main-menu > li").each(function () {
+            if ($(this).hasClass("active")) {
+                var html = $(this).find(">ul").html();
+                $(this).addClass("active");
+                $(this).find(">ul").addClass("hidden");
+                $("#list-dropdown").html(html);
+                if($("#bn-ttp").hasClass("active")){
+                    $("#coquan").addClass("active");
+                }
+            }
+        });
+
+        // Remove
+        if (isRemoveDropdown) {
+            $('#list-dropdown > li').removeClass('active');
+        }
+    }
+
+    var pathHDSD = window.location.pathname;
+    $("#regionleft-introduce li").removeClass('active');
+    $("#left-introduce li a").each(function () {
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+    $('#left-introduce li:first-child').removeClass('active');
+    $('.child-menus a').each(function(){
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+
+    $(document).ready(function(){
+        autoSetmenu();
+    })
+
+
+</script> 
+  <style>
+    .bootbox .modal-footer .btn + .btn {
+        margin-bottom: 0;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .input-captcha .code .number {
+        height: 100%;
+        padding: 2px;
+    }
+</style>   
+ </body>
+</html>

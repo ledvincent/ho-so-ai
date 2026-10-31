@@ -1,0 +1,7 @@
+{
+  "procedures": [
+    {"code": "1.004194", "name": "Đăng ký tạm trú", "tier": "core"},
+    {"code": "1.002755", "name": "Gia hạn tạm trú", "tier": "core"},
+    {"code": "1.001146", "name": "Gia hạn tạm trú cho người nước ngoài", "tier": "stretch"}
+  ]
+}
