@@ -13,6 +13,11 @@ validation; Kim owns forms, the mobile report and delivery. See
 and [decisions](docs/team/decisions.md). The manager advises and prepares fixes;
 humans approve merges.
 
+Kim owns application login, the personal dossier and approval UI. Son owns
+conversation sessions and the agent authorization server. See the
+[identity and security plan](docs/team/identity-and-security.md) for boundaries
+and demo evidence to produce; controls are not yet verified.
+
 All agents follow the [common workflow](docs/team/workflow.md) for branches,
 commits, reviews and handoffs. Each member can copy the agent instruction at
 the end of that document.

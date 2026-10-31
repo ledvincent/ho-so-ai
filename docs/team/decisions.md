@@ -2,6 +2,16 @@
 
 ## Decisions confirmees — 31 octobre 2026
 
+- Demo voix par bouton dans l'application sur telephone; entree telephonique
+  reelle gardee comme extension, avec la meme logique de conversation.
+  Preuve : choix explicite de Son dans le chat du manager.
+- A la demande de Son, repartition de la connexion et de l'autorisation entre
+  Son et Kim : Kim prend connexion/session applicative, dossier et ecran d'accord;
+  Son prend sessions de conversation et serveur d'autorisation des outils.
+  Ils testent ensemble les controles de securite decrits dans
+  `docs/team/identity-and-security.md`. Il s'agit d'une attribution, pas d'une
+  implementation ou d'un resultat de test.
+
 - Les agents utilisent une convention commune de travail et de livraison :
   `docs/team/workflow.md`. Elle couvre branches, commits, PR et comptes rendus;
   aucun hook de blocage automatique n'est installe. Preuve : demande de Son

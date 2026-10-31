@@ -8,9 +8,9 @@ sous la responsabilite de Vincent.
 
 | Agent | Travail principal | Coordination necessaire |
 | --- | --- | --- |
-| Son | Recherche et agent vocal | Consommer le contrat de Vincent; transmettre a Kim le contexte du rapport |
+| Son | Recherche, voix, sessions de conversation et serveur d'autorisation de l'agent | Consommer le contrat de Vincent; verifier avec Kim identite, accord et acces au dossier |
 | Vincent | Collecte, donnees, validation, contrat commun et tests associes | Documenter le format et fournir des exemples a Son et Kim |
-| Kim | Formulaires, rapport mobile et envoi | Consommer les memes donnees/version que la voix |
+| Kim | Connexion, dossier et controles proprietaire, ecran d'accord, formulaires, rapport et envoi | Transmettre a Son une decision authentifiee; consommer les memes donnees/version que la voix |
 | Manager | Suivi, revue, compatibilite et corrections demandees | Ne pas implementer la partie donnees a la place de Vincent |
 
 L'agent modifie les fichiers necessaires a sa tache. S'il faut intervenir dans
@@ -79,7 +79,7 @@ Format obligatoire du titre : `<type>(<scope>): <action courte en anglais>`.
 | `chore` | Configuration et maintenance |
 
 Scopes communs : `data`, `contract`, `search`, `voice`, `forms`, `report`,
-`delivery`, `team`, `ci`. Choisir le scope principal; separer les travaux sans lien.
+`delivery`, `auth`, `access`, `security`, `team`, `ci`. Choisir le scope principal; separer les travaux sans lien.
 Pour un changement incompatible, ajouter `!` avant `:` et expliquer la migration
 dans le corps du commit et la PR.
 

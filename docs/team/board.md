@@ -6,6 +6,10 @@ Les taches proposees ne signifient pas que leur responsable les a commencees.
 
 | ID | Priorite | Responsable | Tache / critere de fin | Etat | Dependances | Fichiers / preuve |
 | --- | --- | --- | --- | --- | --- | --- |
+| AUTH-01 | P0 | Kim | Connexion/deconnexion, session applicative et protection serveur du dossier par proprietaire | A faire | Choix fournisseur avec Son | `docs/team/identity-and-security.md`; implementation non verifiee |
+| CONSENT-01 | P0 | Kim | Ecran accepter/refuser une demande liee a la conversation et decision authentifiee | A faire | AUTH-01 + accord d'interface avec Son | `docs/team/identity-and-security.md` |
+| ACCESS-01 | P0 | Son | Sessions voix et serveur d'autorisation; blocage des outils sans accord valide | A faire | AUTH-01 + accord d'interface avec Kim | `docs/team/identity-and-security.md` |
+| SECURITY-01 | P0 | Son + Kim | Demontrer acces autorise, refus, isolement entre comptes, expiration et anti-rejeu | A faire | AUTH-01 + CONSENT-01 + ACCESS-01 | Scenarios documentes, aucun test execute |
 | TEAM-01 | P0 | Manager | Documenter un format commun de travail, branches, commits, PR et comptes rendus | En revue | Revue humaine puis fusion de la configuration | `docs/team/workflow.md`, `AGENTS.md`, modele de PR |
 | DATA-01 | P0 | Vincent | Definir et livrer la collecte avec provenance, gestion des erreurs et tests | Laisse a Vincent; avancement a confirmer | Aucune | Ancien prototype conserve localement, retire de la branche du manager |
 | CONTRACT-01 | P0 | Vincent | Definir et maintenir le format commun et un exemple synthetique; Son et Kim valident les besoins consommateurs | En attente de la proposition de Vincent | Aucune | `docs/team/contracts.md`; aucun schema impose par le manager |
