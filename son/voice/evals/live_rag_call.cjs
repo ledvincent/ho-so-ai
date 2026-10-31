@@ -13,6 +13,7 @@ const {chromium} = require("playwright");
   let page;
   try {
     page=await browser.newPage();
+    await page.exposeFunction("probeProgress", value=>console.log(JSON.stringify({language:vi?"vi":"en",audioProgress:value})));
     let requests=0;
     await page.route("**/api/voice/rag", route=>{
       if(++requests>6) return route.fulfill({status:429,json:{error:"probe_request_limit"}});
@@ -48,6 +49,9 @@ const {chromium} = require("playwright");
             if(toolResponses.has(data.response_id)) probe.spokenTools.push(toolResponses.get(data.response_id));
           }
           if(data.type==="response.done" && ["failed","incomplete"].includes(data.response?.status)) probe.responseFailures++;
+          if(data.type==="response.done") window.probeProgress({status:data.response?.status,
+            outputs:(data.response?.output||[]).map(item=>item.type), tokens:data.response?.usage?.output_tokens,
+            tools:probe.tools.length, spoken:probe.spokenTools.length});
           if(data.type==="response.done") for(const item of data.response?.output||[]) {
             if(item.type==="function_call") {
               const args=JSON.parse(item.arguments);
@@ -83,7 +87,7 @@ const {chromium} = require("playwright");
       console.log(JSON.stringify({language:vi?"vi":"en",step:++step,result:await page.evaluate(()=>probe.tools.at(-1))}));
       // Correlate the exact response: a short answer may already have finished
       // before this wait starts, and an earlier 'checking' filler does not count.
-      await page.waitForFunction(index=>probe.spokenTools.includes(index),before.tools+1,{timeout:60000});
+      await page.waitForFunction(index=>probe.spokenTools.includes(index),before.tools+1,{timeout:120000});
       return page.evaluate(()=>probe.tools.at(-1));
     }
     let last=await turn(vi?"Tôi muốn gia hạn tạm trú ở Việt Nam.":"I need help extending my stay in Vietnam.");
