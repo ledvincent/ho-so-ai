@@ -1,5 +1,6 @@
 import { sameSession, sessionRequest, SessionExpired, ServiceUnavailable, type LocalSession } from '@/components/guided-portal/api';
-import { schema } from '@/components/na5-demo/model';
+import { schema, payloadValues } from '@/components/na5-demo/model';
+import { checkedValues } from '@/components/guided-portal/state';
 import type { Candidate, DiscoveryAdapter, FormReference, ProcedureAnswer } from './model';
 import { readRequirements } from './dossier-model';
 import { readDocumentCards, readFormAction } from './document-model';
@@ -56,15 +57,15 @@ const canonical = (value: any): string => JSON.stringify(value && typeof value =
 
 /** Exact DISCOVERY-01 browser routes; session credentials never leave the BFF. */
 export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof fetch = fetch): DiscoveryAdapter {
-  async function request(path: string, signal: AbortSignal, body?: unknown) {
+  async function requestResponse(path: string, signal: AbortSignal, body?: unknown) {
     if (!sameSession(identity, await sessionRequest(signal, fetcher))) throw new SessionExpired();
     const response = await fetcher(path, { method: body ? 'POST' : 'GET', credentials: 'same-origin', cache: 'no-store', signal, ...(body ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : {}) });
     if (response.status === 401) throw new SessionExpired();
-    if (!response.ok) throw new DiscoveryRequestError(response.status);
-    const data = await response.json();
     if (!sameSession(identity, await sessionRequest(signal, fetcher))) throw new SessionExpired();
-    return data;
+    if (!response.ok) throw new DiscoveryRequestError(response.status);
+    return response;
   }
+  async function request(path: string, signal: AbortSignal, body?: unknown) { return (await requestResponse(path, signal, body)).json(); }
   async function detailCode(code: string, signal: AbortSignal, expectedName?: string) {
       if (!codePattern.test(code)) throw invalid();
       const data = object(await request(`/api/discovery/procedures/${code}`, signal));
@@ -125,6 +126,26 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
       const workflow = readDocumentSchema(await request(checked.schema_url, signal), checked);
       const pages = readDocumentPages(await request(checked.template_pages_url, signal), workflow);
       return { action: checked, schema: workflow, pages };
+    },
+    async validateDocument(workflow, values, signal) {
+      const action = readFormAction(workflow.action, workflow.schema.procedure_code);
+      const normalized = payloadValues(values, workflow.schema);
+      const data = object(await request(action.validate_url, signal, { values: normalized, template_version: action.template_version }));
+      if (data.template_version !== action.template_version || !Array.isArray(data.missing_fields) || data.missing_fields.length > workflow.schema.fields.length || typeof data.ready_for_preview !== 'boolean' || typeof data.note !== 'string') throw invalid();
+      const checked = checkedValues(object(data.values), workflow.schema);
+      if (canonical(checked) !== canonical(normalized)) throw invalid();
+      const seen = new Set<string>();
+      const missing = data.missing_fields.map((raw: unknown) => { const item = object(raw); const field = workflow.schema.fields.find(field => field.id === item.id); if (!field || field.label !== item.label || seen.has(field.id)) throw invalid(); seen.add(field.id); return { id: field.id, label: field.label }; });
+      if (data.ready_for_preview !== (missing.length === 0)) throw invalid();
+      return { values: checked, missing, ready: data.ready_for_preview, note: data.note };
+    },
+    async previewDocument(workflow, values, signal) {
+      const action = readFormAction(workflow.action, workflow.schema.procedure_code);
+      const response = await requestResponse(action.preview_pages_url, signal, { values: payloadValues(values, workflow.schema), template_version: action.template_version });
+      const reviewToken = response.headers.get('X-Review-Token');
+      if (!reviewToken || reviewToken.length > 200000 || /[\r\n]/.test(reviewToken)) throw invalid();
+      // Download remains locked in this draft UI; do not retain or expose its value-bearing token.
+      return readDocumentPages(await response.json(), workflow.schema);
     },
     async verifyWorkflow(candidate, formSha, signal) {
       if (!codePattern.test(candidate.code) || !hashPattern.test(formSha)) throw invalid();

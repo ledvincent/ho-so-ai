@@ -22,6 +22,7 @@ export type DocumentPresentation = { action: FormAction; schema: DocumentSchema;
 export type Clarification = { id: string; label: string };
 export type RetrievalTurn = { retrievalState: string | null; clarificationAnswer?: string | null };
 export type DocumentEvidence = { documents: DocumentCard[]; citations: Citation[] };
+export type DocumentValidation = { values: Record<string, string>; missing: { id: string; label: string }[]; ready: boolean; note: string };
 
 const object = (value: unknown): Record<string, any> => {
   if (!value || typeof value !== 'object' || Array.isArray(value)) throw new Error('Invalid document response');

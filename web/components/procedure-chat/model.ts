@@ -1,5 +1,5 @@
 /** Internal UI view models, not an invented Vincent wire response. */
-import type { Clarification, DocumentCard, DocumentPresentation, FormAction, RetrievalTurn } from './document-model';
+import type { Clarification, DocumentCard, DocumentPresentation, DocumentValidation, FormAction, RetrievalTurn } from './document-model';
 export type Candidate = { code: string; name: string; nameEn?: string };
 export type FormReference = { id?: number; sha256: string; label: string; href?: string; reviewStatus?: string; revision?: string };
 export type SourceRequirement = { id: number; position: number; groupHeading: string; text: string; originals: number | null; copies: number | null; formIds: number[] };
@@ -17,6 +17,8 @@ export type DiscoveryAdapter = {
   detailCode?: (code: string, signal: AbortSignal) => Promise<ProcedureDetail>;
   documents?: (code: string, signal: AbortSignal) => Promise<FormAction[]>;
   document?: (action: FormAction, signal: AbortSignal) => Promise<DocumentPresentation>;
+  validateDocument?: (workflow: DocumentPresentation, values: Record<string, string>, signal: AbortSignal) => Promise<DocumentValidation>;
+  previewDocument?: (workflow: DocumentPresentation, values: Record<string, string>, signal: AbortSignal) => Promise<DocumentPresentation['pages']>;
 };
 export const NA5_CODE = '1.001146';
 export const NA5_FORM = 'a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751';
