@@ -1,7 +1,8 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { ProfileEditor } from '@/components/portal/profile-editor';
+import { RichProfileEditor } from '@/components/saved-profile/editor';
+import { createProfileClient } from '@/components/saved-profile/api';
 import { createGuidedAdapter, logoutRequest, sameSession, sessionRequest, type LocalSession } from './api';
 import { ProcedureChat } from '@/components/procedure-chat/chat';
 import { createDiscoveryAdapter } from '@/components/procedure-chat/api';
@@ -14,6 +15,7 @@ export function AuthenticatedPortal({ session, view = 'workspace', fixtures = fa
   const live = useRef(true);
   const adapter = useMemo(() => createGuidedAdapter(session), [session.user.id, session.expires_at]);
   const discovery = useMemo(() => createDiscoveryAdapter(session), [session.user.id, session.expires_at]);
+  const profile = useMemo(() => createProfileClient(session), [session.user.id, session.expires_at]);
   const expire = () => { if (!live.current) return; live.current = false; setReady(false); window.location.replace('/login'); };
   useEffect(() => {
     live.current = true; const controller = new AbortController();
@@ -36,6 +38,6 @@ export function AuthenticatedPortal({ session, view = 'workspace', fixtures = fa
     return () => { live.current = false; controller.abort(); clearTimeout(timer); window.removeEventListener('focus', focus); document.removeEventListener('visibilitychange', focus); };
   }, [session.user.id, session.expires_at]);
   if (!ready) return <main className={styles.loginPage}><section className={styles.loginCard}><h1>{failed ? 'Chưa thể kiểm tra phiên.' : 'Đang mở không gian của bạn…'}</h1>{failed && <><p>Bản nháp đã được xóa khỏi màn hình. Kiểm tra lại kết nối.</p><button type="button" className={styles.primary} onClick={() => window.location.reload()}>Thử lại</button></>}</section></main>;
-  if (view === 'profile') return <main id="main-content" className={styles.profilePage}><Link href="/workspace" prefetch={false}>← Trợ lý hồ sơ</Link><h1>Hồ sơ của bạn</h1><ProfileEditor key={`${session.user.id}:${session.expires_at}`} formHref="/workspace" prefillAvailable={false} onLogout={async () => { setReady(false); try { await logoutRequest(); expire(); } catch { setFailed(true); } }} /></main>;
-  return <ProcedureChat key={`${session.user.id}:${session.expires_at}`} username={session.user.username} formAdapter={adapter} discovery={discovery} logout={logoutRequest} onExpired={expire} fixtures={fixtures} />;
+  if (view === 'profile') return <main id="main-content" className={styles.profilePage}><Link href="/workspace" prefetch={false}>← Trợ lý hồ sơ</Link><h1>Hồ sơ của bạn</h1><RichProfileEditor key={`${session.user.id}:${session.expires_at}`} client={profile} onExpired={expire} onLogout={async () => { setReady(false); try { await logoutRequest(); expire(); } catch { setFailed(true); } }} /></main>;
+  return <ProcedureChat key={`${session.user.id}:${session.expires_at}`} username={session.user.username} formAdapter={adapter} discovery={discovery} profile={{ client: profile.prefill, session: `${session.user.id}:${session.expires_at}` }} logout={logoutRequest} onExpired={expire} fixtures={fixtures} />;
 }

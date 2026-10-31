@@ -1,6 +1,7 @@
 import { sameSession, sessionRequest, SessionExpired, ServiceUnavailable, type LocalSession } from '@/components/guided-portal/api';
 import { schema } from '@/components/na5-demo/model';
 import type { Candidate, DiscoveryAdapter, FormReference, ProcedureAnswer } from './model';
+import { readRequirements } from './dossier-model';
 
 const codePattern = /^\d\.\d{6}$/;
 const hashPattern = /^[a-f0-9]{64}$/;
@@ -70,16 +71,19 @@ export function createDiscoveryAdapter(identity: LocalSession, fetcher: typeof f
       const factsReady = data.analysis?.facts_ready === true;
       provenance.push(factsReady ? 'Dữ liệu thủ tục có thể được kiểm tra tiếp. Mẫu vẫn giữ trạng thái duyệt riêng.' : 'Dữ liệu phân tích chưa sẵn sàng; chỉ xem tài liệu gốc.');
       const forms: FormReference[] = [];
+      const formIds: number[] = []; const otherForms: { id: number; label: string }[] = [];
       for (const raw of data.forms) {
-        const item = object(raw); if (item.form_sha256 === null) { provenance.push('Có tài liệu chưa tải xuống; chưa thể xác nhận quy trình điền.'); continue; }
+        const item = object(raw);
+        if (Number.isSafeInteger(item.id) && item.id > 0) formIds.push(item.id);
+        if (item.form_sha256 === null) { provenance.push('Có tài liệu chưa tải xuống; chưa thể xác nhận quy trình điền.'); if (Number.isSafeInteger(item.id)) otherForms.push({ id: item.id, label: typeof item.label === 'string' ? item.label : 'Tài liệu nguồn' }); continue; }
         if (typeof item.form_sha256 !== 'string' || !hashPattern.test(item.form_sha256)) throw invalid();
         const href = `/api/discovery/procedures/${candidate.code}/forms/${item.form_sha256}/original`;
         if (item.original_download_url != null && item.original_download_url !== href) throw invalid();
-        forms.push({ sha256: item.form_sha256, label: typeof item.label === 'string' ? item.label : 'Tài liệu gốc', ...(item.original_download_url ? { href } : {}) });
+        forms.push({ id: item.id, sha256: item.form_sha256, label: typeof item.label === 'string' ? item.label : 'Tài liệu gốc', reviewStatus: typeof item.review_status === 'string' ? item.review_status : undefined, revision: typeof item.revision_reference === 'string' ? item.revision_reference : undefined, ...(item.original_download_url ? { href } : {}) });
         if (typeof item.revision_reference === 'string') provenance.push(`Phiên bản: ${item.revision_reference}`);
         if (typeof item.review_status === 'string') provenance.push(`Trạng thái mẫu: ${item.review_status}`);
       }
-      return { candidate, forms, provenance, fixture: false, factsReady };
+      return { candidate, forms, provenance, fixture: false, factsReady, requirements: readRequirements(data.requirements, formIds), sourceVersion: typeof data.sha256 === 'string' ? data.sha256 : undefined, otherForms };
     },
     async verifyWorkflow(candidate, formSha, signal) {
       if (!codePattern.test(candidate.code) || !hashPattern.test(formSha)) throw invalid();
