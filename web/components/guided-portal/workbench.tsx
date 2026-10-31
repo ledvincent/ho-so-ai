@@ -11,6 +11,7 @@ import { activeFields, captureReview, emptyValues, issues, payloadValues, update
 import type { Clarification, DocumentEvidence, DocumentPresentation, DocumentValidation } from '@/components/procedure-chat/document-model';
 import { DocumentCards } from '@/components/procedure-chat/document-cards';
 import { DiscoveryRequestError } from '@/components/procedure-chat/api';
+import { supportsNa5Profile } from '@/components/procedure-chat/document-compat';
 import { GuidedDocument } from './document';
 import { parts } from './document-layout';
 import { ConsentedPrefill } from '@/components/saved-profile/prefill';
@@ -97,7 +98,7 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
       const response = await adapter({ message: text, values: { ...values }, revision: baseRevision, focusField: activeId, history, signal: controller.signal });
       if (attempt !== current.current.generation || baseRevision !== current.current.revision || controller.signal.aborted) return;
       const next = checkedValues(response.values, schema); const changes = changesBetween(values, next);
-      if (changes.length) { setUndoValues({ ...values }); valuesRef.current = next; setValues(next); current.current.revision += 1; setRevision(current.current.revision); setReview(null); setAck(false); }
+      if (changes.length) { setUndoValues({ ...values }); valuesRef.current = next; setValues(next); current.current.revision += 1; setRevision(current.current.revision); setReview(null); setServerValidation(null); setServerPreview(null); setReviewProblem(''); setAck(false); }
       setActiveId(response.nextField ?? nextMissing(next, schema)?.id ?? null);
       setMessages(previous => [...previous, { role: 'assistant', content: response.answer, ui: response.ui, changes }]);
     } catch (failure) {
@@ -143,7 +144,7 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
     if (!workflow || !procedureQA?.client.validateDocument || !procedureQA.client.previewDocument || busy) return;
     const baseRevision = current.current.revision; const attempt = ++current.current.generation;
     const snapshot = payloadValues(valuesRef.current, schema); const controller = new AbortController(); request.current?.abort(); request.current = controller;
-    setBusy(true); setReviewProblem(''); setServerPreview(null); setReview(null); setAck(false);
+    setBusy(true); setReviewProblem(''); setServerValidation(null); setServerPreview(null); setReview(null); setAck(false);
     try {
       const result = await procedureQA.client.validateDocument(workflow, snapshot, controller.signal);
       if (attempt !== current.current.generation || baseRevision !== current.current.revision || controller.signal.aborted) return;
@@ -161,7 +162,7 @@ export function GuidedWorkbench({ username, adapter, logout, onExpired, provisio
   async function leave() { flushSync(clear); try { await logout(); onExpired(); } catch { setLogoutFailed(true); } }
   const visibleMessages: Entry[] = stream === 'procedure' ? procedureMessages : messages;
   const validation = issues(values, schema);
-  for (const field of activeFields(values, schema)) if (parts(field, values[field.id] ?? '').some(part => part.overflow)) validation[field.id] = 'Nội dung chưa vừa vùng điền.';
+  if (!workflow || supportsNa5Profile(workflow)) for (const field of activeFields(values, schema)) if (parts(field, values[field.id] ?? '').some(part => part.overflow)) validation[field.id] = 'Nội dung chưa vừa vùng điền.';
   const remaining = Object.keys(validation).length;
   if (logoutFailed) return <main className={styles.loginPage}><section className={styles.loginCard}><BrandMark /><h1>{t("Chưa xác nhận được đăng xuất.")}</h1><p>{t("Bản nháp đã được xóa khỏi màn hình. Hãy thử lại để kết thúc phiên trên máy chủ.")}</p><button type="button" className={styles.primary} onClick={leave}>{t("Thử đăng xuất lại")}</button></section></main>;
   return <main id="main-content" className={`${styles.app} ${manualMode ? styles.manualMode : ''}`} style={viewportStyle}>

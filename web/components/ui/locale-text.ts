@@ -28,7 +28,7 @@ export function translate(locale: Locale, text: string): string {
   const fixtureUpdate = /^Tình huống UI · Đã cập nhật bản nháp\.(?: Mục tiếp theo: (.*)\.)?$/.exec(key);
   if (fixtureUpdate) result = locale === 'en' ? `UI scenario · Draft updated.${fixtureUpdate[1] ? ` Next field: ${field(fixtureUpdate[1])}.` : ''}` : `Tình huống UI · Đã cập nhật bản nháp.${fixtureUpdate[1] ? ` Mục tiếp theo: ${field(fixtureUpdate[1])}.` : ''}`;
   if (locale === 'en') {
-    const count = /^([0-9]+) mục của NA5 cần bổ sung$/.exec(key); if (count) result = `${count[1]} NA5 fields need details`;
+    const count = /^([0-9]+) mục của (.+) cần bổ sung$/.exec(key); if (count) result = `${count[1]} ${count[2]} fields need details`;
     const max = /^Tối đa ([0-9]+) ký tự theo schema\.$/.exec(key); if (max) result = `Up to ${max[1]} characters for this field.`;
     const page = /^NA5 trang ([0-9]+) · bản nháp đang chờ duyệt$/.exec(key); if (page) result = `NA5 page ${page[1]} · draft awaiting review`;
     const preparation = /^Chuẩn bị mục nguồn ([0-9]+)$/.exec(key); if (preparation) result = `Prepare source entry ${preparation[1]}`;
