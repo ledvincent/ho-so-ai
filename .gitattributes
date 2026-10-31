@@ -1,2 +1,3 @@
 # Preserve Vincent's hash-pinned source bytes across platforms and Git settings.
 api/hoso_api/chat/assets/na5-workflow.json -text whitespace=cr-at-eol
+api/hoso_api/chat/assets/na5-document-e162.json -text whitespace=cr-at-eol

@@ -137,11 +137,14 @@ export function pagesResult(value: unknown, schema: DiscoveryDocumentSchema): Di
   return { template_version: schema.template_version, pages: pages.map((value, index) => {
     const page = record(value);
     if (page.page_number !== index + 1) invalid();
-    const data = text(page.image_data_url, 12 * 1024 * 1024);
+    const data = page.image_data_url;
+    // This is an ASCII data URL, not prose: avoid expanding megabytes into a
+    // code-point array and avoid repeated-group regex backtracking on image data.
+    if (typeof data !== 'string' || data.length > 12 * 1024 * 1024) invalid();
     const prefix = 'data:image/png;base64,';
     if (!data.startsWith(prefix)) invalid();
     const encoded = data.slice(prefix.length);
-    if (!/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/u.test(encoded)) invalid();
+    if (encoded.length % 4 !== 0 || !/^[A-Za-z0-9+/]*={0,2}$/u.test(encoded)) invalid();
     const bytes = Buffer.from(encoded, 'base64');
     if (bytes.length > 10 * 1024 * 1024 || !bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) invalid();
     return { page_number: index + 1, image_data_url: data };

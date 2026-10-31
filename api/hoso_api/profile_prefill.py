@@ -6,6 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_valida
 
 from .chat.workflow import FIELDS, PROCEDURE_CODE, WORKFLOW, WORKFLOW_SHA256, InvalidDraft, editable, validate_draft, validate_value
 from .portal.repository import RevisionConflict
+from .profile_prefill_compat import supports_prefill_schema, validate_compatible_date_order
 from .profile_v2_models import ProfileV2Response
 
 
@@ -100,13 +101,14 @@ def build_prefill(profile: ProfileV2Response, payload: PrefillRequest) -> Prefil
     if payload.consent is not True or payload.applicant_confirmed is not True:
         raise ValueError("Explicit consent and applicant confirmation are required.")
     if (payload.procedure_code != PROCEDURE_CODE or payload.form_sha256 != WORKFLOW["form_sha256"]
-            or payload.schema_version != WORKFLOW_SHA256 or WORKFLOW["review_status"] != "draft" or len(FIELDS) != 43):
+            or not supports_prefill_schema(payload.schema_version) or WORKFLOW["review_status"] != "draft" or len(FIELDS) != 43):
         raise PrefillUnsupported()
     if profile.revision != payload.expected_revision:
         raise RevisionConflict()
     try:
         saved = ProfileV2Response.model_validate(profile.model_dump())
         values = validate_draft(payload.values)
+        validate_compatible_date_order(payload.schema_version, values)
     except (ValidationError, InvalidDraft, TypeError, ValueError):
         raise ValueError("Profile or draft values are invalid.") from None
 

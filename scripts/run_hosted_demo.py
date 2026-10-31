@@ -24,7 +24,10 @@ def main():
     parser.add_argument('--api-port', type=int, default=8030)
     parser.add_argument('--vincent-url', default='http://127.0.0.1:8001')
     parser.add_argument('--pid-file', type=Path)
+    parser.add_argument('--stop-file', type=Path, help='Create this file to stop both owned process trees cleanly.')
     args = parser.parse_args()
+    if args.stop_file and (not args.stop_file.is_absolute() or args.stop_file.exists()):
+        parser.error('Use an absolute, initially absent stop-file path.')
     root = Path(__file__).resolve().parents[1]
     sys.path.insert(0, str(root / 'api'))
     from hoso_api.local_auth.runtime import valid_auth_origin
@@ -90,14 +93,20 @@ def main():
             args.pid_file.write_text(json.dumps({'launcher': os.getpid(), 'api': processes[0].pid,
                 'web': processes[1].pid, 'web_port': args.web_port, 'api_port': args.api_port}), encoding='utf-8')
         print('Protected loopback processes started; verify health/auth before sharing the link.', flush=True)
-        while not stopping:
+        while not stopping and not (args.stop_file and args.stop_file.exists()):
             if any(process.poll() is not None for process in processes):
                 raise RuntimeError('A demo service exited. Both owned services will stop.')
             time.sleep(0.5)
     finally:
         for process in processes:
             if process.poll() is None:
-                process.terminate()
+                if os.name == 'nt':
+                    # Windows virtual-environment launchers may have a real Python
+                    # child. Stop only the tree rooted at our still-running child.
+                    subprocess.run(['taskkill', '/PID', str(process.pid), '/T', '/F'],
+                                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                else:
+                    process.terminate()
         for process in processes:
             try:
                 process.wait(timeout=5)

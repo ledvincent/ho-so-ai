@@ -243,3 +243,16 @@ test('download requires this session owner preview and explicit boolean confirma
   assert.equal((await h.handle(request(`documents/${id}/download`, download), ['documents', id, 'download'])).status, 200);
   assert.throws(() => documentRequest({ ...download, confirmed: 'true' }, true), DiscoveryError);
 });
+
+test('generic request bounds match transport while prototype keys remain forbidden', () => {
+  const values = { 'Applicant.Name:legal': 'A'.repeat(16000), field_2: 'fictional' };
+  assert.deepEqual(documentRequest({ values, template_version: HASH }), { values, template_version: HASH });
+  const token = 'x'.repeat(131072);
+  assert.equal((documentRequest({ values: {}, template_version: HASH, review_token: token, confirmed: true }, true) as { review_token: string }).review_token, token);
+  for (const key of ['__proto__', 'prototype', 'constructor']) {
+    const payload = JSON.parse(`{"values":{"${key}":"unsafe"},"template_version":"${HASH}"}`);
+    assert.throws(() => documentRequest(payload), DiscoveryError);
+  }
+  assert.throws(() => documentRequest({ values: { name: 'A'.repeat(16001) }, template_version: HASH }), DiscoveryError);
+  assert.throws(() => documentRequest({ values: Object.fromEntries(Array.from({ length: 2001 }, (_, i) => [`field_${i}`, ''])), template_version: HASH }), DiscoveryError);
+});
