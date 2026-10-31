@@ -1,5 +1,37 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Running a fictional document API while Vincent finishes his service
+
+```powershell
+son/voice/.venv/Scripts/python.exe son/voice/evals/fake_assistant_api.py
+# In another terminal, with the fixture running:
+son/voice/.venv/Scripts/python.exe son/voice/evals/fixture_http_smoke.py
+```
+
+The fixture binds only `127.0.0.1:8002`; `/docs` offers the request editor and
+`/health` lists the four codes. It reads pinned upstream files via Git without
+importing or modifying Vincent's data. No keys, LLM, database or paid requests.
+No request access logs or chat persistence. Use fictional inputs only.
+
+Example POST to `/assistant/chat`:
+
+```json
+{"message":"Fictional test: show a document excerpt", "procedure_code":"1.001146", "history":[]}
+```
+
+Each selected code returns a clearly marked unreviewed fixed excerpt, original
+title/URL and citation. The message does not drive relevance search, translation
+or an answer; the excerpt is limited to 2000 characters and marked as potentially
+incomplete. Omit the code for clarification; an unsupported code returns
+`out_of_scope`. Reserved messages `[test:no-context]` and `[test:unready]` exercise
+empty context and HTTP 409. Fixture responses have `X-HoSo-Synthetic-Fixture: 1`.
+
+The actual consumer has passed real local HTTP tests for all four codes and
+these failure branches. This is not compatibility evidence for Vincent's running
+service. The Realtime call on 8001 remains unchanged: it does not yet call this
+fixture or speak document excerpts. No draft is enabled for live legal advice.
+Stop only this fixture with Ctrl+C in its terminal; leave other servers intact.
+
 ## Four-document consumer test
 
 `assistant_client.py` now provides an explicit local-server consumer for Vincent's
