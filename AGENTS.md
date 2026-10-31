@@ -8,6 +8,8 @@ checklist -> mobile report. Read `docs/scope-and-ingestion.md` before extending 
 - Son: search/retrieval and voice agent.
 - Vincent: official sources, capture, structured parsing, source validation and
   ownership of the shared data contract. Son and Kim validate consumer needs.
+  Leave collection implementation, its tests and contract design to Vincent;
+  do not implement or publish that work unless explicitly requested.
 - Kim: forms, mobile report and delivery.
 - Manager: advise, track dependencies, prepare fixes and verify integration.
   Humans approve merges. Never merge, push directly to main, approve a legal
@@ -31,12 +33,10 @@ checklist -> mobile report. Read `docs/scope-and-ingestion.md` before extending 
 
 ## Verification
 
-Python 3.12+. Install with `python -m pip install -e .` in a virtual environment.
-Run `python -m unittest discover -s tests -v`; on this Windows checkout use
-`.\.venv\Scripts\python.exe -m unittest discover -s tests -v`.
-Tests use saved public fixtures, without network. Running the live fetcher is not
-an integration test. For new components, add meaningful checks for their shared
-contracts and a voice-to-report scenario when those components exist.
+Use the verification commands documented by each component owner once delivered.
+Collection code, its tests and its CI are left to Vincent and are not shipped
+with the manager. Running a live collector does not establish integration.
+Verify the shared contract and voice-to-report scenario once those components exist.
 
 ## Code Review Rules
 

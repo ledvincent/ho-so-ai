@@ -2,6 +2,11 @@
 
 Date : 31 octobre 2026, Asia/Saigon. Observation du checkout local uniquement.
 
+Note ulterieure : ce point est historique. Le prototype de collecte, ses tests
+et sa CI ont ensuite ete retires de la branche du manager a la demande de Son.
+Ces fichiers sont conserves localement; Vincent gere leur implementation et le
+contrat de donnees. Les propositions techniques ci-dessous ne lui sont pas imposees.
+
 ## Resultats verifies
 
 - Remote configure : `https://github.com/ledvincent/ho-so-ai.git`.

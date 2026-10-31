@@ -1,2 +1,0 @@
-# Preserve captured public HTML bytes and their provenance hashes across platforms.
-tests/fixtures/*.html -text -whitespace

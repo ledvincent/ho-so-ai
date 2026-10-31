@@ -3,6 +3,10 @@
 This is a proposed reduction of the original charter to make room for voice and
 phone delivery. It is a product recommendation, not a claim about legal eligibility.
 
+Collection implementation, its tests and the shared data contract belong to
+Vincent. Prototype observations below are background from an earlier local
+experiment; the manager branch does not ship or prescribe that implementation.
+
 ## One complete journey first
 
 Caller describes a residence task -> agent clarifies registration versus renewal

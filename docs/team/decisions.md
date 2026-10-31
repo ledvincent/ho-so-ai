@@ -2,6 +2,11 @@
 
 ## Decisions confirmees — 31 octobre 2026
 
+- A la demande de Son, laisser la collecte, ses tests et le contrat de donnees
+  a Vincent. Retirer le prototype de collecte et sa CI de la branche du manager,
+  en conservant les fichiers sur l'ordinateur. Le manager coordonne les besoins
+  et verifie la compatibilite des livraisons de Vincent.
+
 - Vincent est responsable du contrat de donnees commun : definition, documentation,
   exemples et maintenance. Son et Kim valident les besoins de leurs composants.
   Preuve : attribution confirmee par Son dans le chat du manager.

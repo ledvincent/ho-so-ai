@@ -6,8 +6,8 @@ Les taches proposees ne signifient pas que leur responsable les a commencees.
 
 | ID | Priorite | Responsable | Tache / critere de fin | Etat | Dependances | Fichiers / preuve |
 | --- | --- | --- | --- | --- | --- | --- |
-| DATA-01 | P0 | Vincent | Collecter les procedures autorisees avec provenance et erreurs | Code local present; 5 tests passes | Aucune | `src/hoso_ai/fetch.py`, `tests/test_fetch.py`; sortie toujours draft; voir `initial-review.md` |
-| CONTRACT-01 | P0 | Vincent | Definir et maintenir le format commun et un exemple synthetique; Son et Kim valident les besoins consommateurs | Proposition a valider | Aucune | `docs/team/contracts.md`; pas d'API partagee observee |
+| DATA-01 | P0 | Vincent | Definir et livrer la collecte avec provenance, gestion des erreurs et tests | Laisse a Vincent; avancement a confirmer | Aucune | Ancien prototype conserve localement, retire de la branche du manager |
+| CONTRACT-01 | P0 | Vincent | Definir et maintenir le format commun et un exemple synthetique; Son et Kim valident les besoins consommateurs | En attente de la proposition de Vincent | Aucune | `docs/team/contracts.md`; aucun schema impose par le manager |
 | DATA-02 | P0 | Vincent | Produire un enregistrement structure, valide par un humain pour un hash precis | A faire / non observe | CONTRACT-01 | `docs/scope-and-ingestion.md`; capture brute insuffisante |
 | VOICE-01 | P0 | Son | Parcours vocal vietnamien : intention, lookup, checklist sourcee; refus explicite si hors perimetre | A confirmer; code non observe ici | CONTRACT-01; DATA-02 pour donnees reelles | Aucun composant voix observe |
 | REPORT-01 | P0 | Kim | Rapport mobile affichant exactement la version et la checklist du parcours vocal | A confirmer; code non observe ici | CONTRACT-01; DATA-02 pour donnees reelles | Aucun composant rapport observe |

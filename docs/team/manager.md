@@ -9,6 +9,9 @@ Les consignes persistantes sont dans `AGENTS.md`; ce document est son mode d'emp
 Conseiller Son, Vincent et Kim, expliquer le code, maintenir les priorites,
 preparer des corrections et verifier leur integration. Garder une demo complete
 comme priorite. Les fusions sont validees et executees par un humain.
+La collecte, ses tests et le contrat de donnees sont laisses a Vincent.
+Le manager suit les besoins et les dependances sans implementer cette partie
+ni imposer un schema a sa place.
 
 ## Routine a chaque demande de point ou de revue
 
@@ -47,12 +50,11 @@ Le manager fonctionne a la demande dans ce chat, sans daemon ni surveillance
 periodique. Il voit ce checkout et les sources distantes effectivement accessibles,
 pas les changements non publies des autres ordinateurs.
 
-Les fichiers prepares ici doivent etre relus, committes et pousses pour etre
-partages avec Vincent et Kim. Le workflow `.github/workflows/tests.yml` s'executera
-sur GitHub apres publication si Actions est active. Il ne remplace pas une
-protection de branche : un administrateur doit rendre son check `unit-tests`
-obligatoire sur main et demander une revue humaine avant fusion. Ces reglages
-distants et la revue automatique Codex ne sont pas actives par ces fichiers.
+La configuration est publiee sur `codex/hackathon-manager`, sans fusion dans main.
+Le collecteur, ses tests et sa CI ont ete retires de cette branche pour laisser
+Vincent livrer sa partie. Aucune CI ni protection de branche n'est activee par
+la configuration du manager. Les controles automatiques seront adaptes aux
+composants effectivement livres par leurs responsables.
 
 Pour reutiliser le manager dans un autre chat attache au meme repo :
 
