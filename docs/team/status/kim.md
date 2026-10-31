@@ -1,6 +1,65 @@
 # Kim — application integration checkpoint
 
-## Latest update — 31 October 2026: profile published; live integration underway
+## Latest update — 31 October 2026: combined text demo verified over HTTPS
+
+The combined Kim application is published on
+`codex/kim/demo-integration-01-live-retrieval` at
+`8c8743e80d1a67bbbaa4e99c8b0b88e6a6503c3d`. This branch includes the backend
+integration; consume this combined branch rather than applying both producer and
+consumer commits. Backend producer `codex/kim/demo-integration-01-jury` is published
+at `cee62535a221414536924a5f259d6225446dbd22`. No main merge occurred.
+Read `docs/demo-integration-01-ui-handoff.md`,
+`docs/demo-integration-01-handoff.md` and
+`docs/demo-integration-01-runtime.md` at the combined commit.
+
+Vincent dependency `61b99f37dbb79409dba8a6d4027ce023a1dcf5c4` is **tested
+compatible for the text discovery and provincial NA5 demonstration below**.
+The archive and all 41 asset hashes were checked; the isolated PostgreSQL 16
+restore contains four procedures, 205 index items and migration 0009. The exact
+producer BGE-M3 weights were installed. Real semantic search returned results
+without degraded mode; no replacement ingestion or index rebuild was performed.
+
+Manager-reproduced acceptance over the public HTTPS origin:
+
+- 28 HTTP checks passed: database login, protected pages/APIs, Secure/HttpOnly
+  cookies, origin checks, two-account isolation, owner injection rejection,
+  revision conflict, real catalog/schema/pages/search and logout/access denial.
+- Actual browser login -> real assistant clarification -> catalog/procedure and
+  document confirmation -> field-level profile consent -> real field answer ->
+  manual correction -> procedural question with citations and no draft mutation.
+- Completed fictional provincial NA5 values passed Vincent's validation and
+  produced all three service-rendered PDF preview pages. Signatures stayed blank;
+  the draft watermark and final-download lock remained in place.
+- Form changes did not overwrite the saved profile. Logout denied direct protected
+  navigation. A planned application restart preserved database login and profiles.
+- Final document sizing/readiness-copy fixes were checked on desktop and mobile;
+  VI/EN switching preserved the selected document. The corrected build runs from
+  detached `10fd60b353d284c631ed72b3773f5db0286c3429`, source tree
+  `cf7fc5c403cdc38f111afb9291a21e9f22197634`, identical to application commit
+  `8fa10995a039dd2b314a66f2e6ad698909256c0b` on the published branch.
+
+Core browser acceptance was at `9202cbb0b676a48c1eb5909eafc67aca3f73d80e`;
+the final changes affect layout and explanatory text only. Independent source
+review found no auth/contract/state-boundary regression. Owner evidence includes
+200 frontend tests, 16 focused final-fix tests and a passing production build.
+Manager producer checks include 128 offline tests plus three restore tests.
+Five bounded live model calls were used across direct and browser acceptance.
+
+The review link is a temporary HTTPS tunnel to a running Next application, with
+private Python services, persistent local SQLite users/profiles and Vincent's
+isolated PostgreSQL/Ollama runtime. It is not hosted by ChatGPT Sites and depends
+on the host computer, network and processes staying running. Demo login details
+are shared privately; no credentials or user database are committed.
+
+Limits: four procedures are discoverable, but the installed fill/preview workflow
+is provincial NA5 (`1.001146`). Template edition `70/2026/TT-BCA` remains draft
+with unresolved applicability; this test is not legal approval and final download
+is locked. Son's voice/ACCESS-01 code is separately published and has not been
+connected to this local database identity. The prototype is ready for Kim's text
+demo review, not a claim that all team components or production hosting are done.
+Implementation is paused for review; required demo services remain running.
+
+## Previous update — 31 October 2026: profile published; live integration underway
 
 Kim authorized publication of the completed app and the current integration
 checkpoints. A brief credit-related pause was cancelled; implementation continues.
