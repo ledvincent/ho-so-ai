@@ -1,5 +1,24 @@
 # VOICE-01: public Vietnamese / English voice dialogue
 
+## Four-document consumer test
+
+`assistant_client.py` now provides an explicit local-server consumer for Vincent's
+`POST /assistant/chat`. It accepts the four published codes, preserves statuses
+and citations, bounds input, does not retry errors or forward history, and returns
+unreviewed drafts only. It is not wired into the live Realtime call. The response
+contract still cannot establish pinned human review or a shared report checklist.
+
+```powershell
+son/voice/.venv/Scripts/python.exe son/voice/evals/four_documents_smoke.py
+```
+
+This reads the actual four `procedure.json` files directly from Git commit
+`9386f428e6794acd0a8b9e4cb3cc759bf5c989b4`, preserves upstream files, and checks
+explicit requests and citations through a **mocked** assistant API carrying a real
+document excerpt. No database, model, legal interpretation or real-time voice is
+tested. It does not import documents into a new corpus or mark them reviewed.
+Run the component unit suite for status/error/timeout/invalid-input checks.
+
 ## Current first-test scope: foreigner temporary-stay extension
 
 Son explicitly chose alignment with Vincent's published catalog for the first
