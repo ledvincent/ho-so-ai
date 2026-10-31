@@ -9,3 +9,4 @@
 @media(max-height:580px){.paperViewport{height:75px}.procedure{padding:8px 0}.procedure h1{font-size:15px}.document>footer{display:none}.thread{padding-top:12px}.composerNote{display:none}}
 .document:has(.directEditor) .paperViewport,.document:has(.directEditor)>footer{display:none}.document:has(.directEditor) .directEditor{position:static;border:0;box-shadow:none;border-radius:0}.manualMode .composerArea{display:none}
 .profilePage{max-width:1000px;margin:30px auto;padding:0 24px 40px}.profilePage>a{font-size:12px;color:var(--jade)}.profilePage>h1{font-size:24px;font-weight:500;margin:25px 0}
+.inputModes{display:flex;align-items:center;gap:12px;margin-bottom:8px}.inputModes button{font-size:10px;color:var(--muted);border:0;background:none;padding:3px 0;cursor:pointer}.inputModes button[aria-pressed=true]{color:var(--jade);font-weight:600}.modeNotice{font-size:11px;color:var(--muted);margin:0 0 9px}.composer textarea:disabled{opacity:.5}

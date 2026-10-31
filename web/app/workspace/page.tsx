@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { verifiedSession } from '@/lib/server/clerk';
+import { verifiedSession as appSession } from '@/lib/server/session';
+import { identityFrom, isLocalProvider } from '@/lib/local-auth-policy';
+import { AuthenticatedPortal } from '@/components/guided-portal/authenticated';
 import { AccountWorkbench } from '@/components/forms/account-workbench';
 import { BrandMark } from '@/components/ui/brand';
 
 export const dynamic = 'force-dynamic';
 export default async function Workspace() {
+  if (isLocalProvider()) {
+    const local = await appSession();
+    const identity = identityFrom(local);
+    if (local.status === 'signed-out') redirect('/login');
+    if (local.status !== 'signed-in' || !identity) return <main className="auth-panel"><section className="card"><h1>Chưa thể kiểm tra phiên.</h1><a href="/workspace">Thử lại</a></section></main>;
+    // Pick only the public identity view; never serialize the server token.
+    return <AuthenticatedPortal session={identity} />;
+  }
   let session: Awaited<ReturnType<typeof verifiedSession>>;
   try { session = await verifiedSession(); }
   catch { return <main id="main-content" className="auth-panel"><section className="card auth-unavailable"><BrandMark /><h1>Chưa thể kiểm tra phiên đăng nhập.</h1><p>Hồ sơ tài khoản chưa được tải. Hãy thử lại khi dịch vụ sẵn sàng.</p><a className="button primary" href="/workspace">Thử lại</a><Link className="auth-back" href="/demo/ct01" prefetch={false}>Mở không gian thử nghiệm riêng</Link></section></main>; }

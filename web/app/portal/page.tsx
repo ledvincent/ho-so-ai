@@ -1,12 +1,23 @@
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import { ArrowRight, FileText, RefreshCw, UserRound } from 'lucide-react';
 import { verifiedSession } from '@/lib/server/clerk';
+import { verifiedSession as appSession } from '@/lib/server/session';
+import { identityFrom, isLocalProvider } from '@/lib/local-auth-policy';
+import { AuthenticatedPortal } from '@/components/guided-portal/authenticated';
 import { PortalSession } from '@/components/portal/profile-editor';
 import { JourneyNav } from '@/components/ui/journey-nav';
 import styles from '@/components/portal/portal.module.css';
 
 export const dynamic = 'force-dynamic';
 export default async function Portal() {
+  if (isLocalProvider()) {
+    const local = await appSession();
+    const identity = identityFrom(local);
+    if (local.status === 'signed-out') redirect('/login');
+    if (local.status !== 'signed-in' || !identity) return <main className="auth-panel"><section className="card"><h1>Chưa thể kiểm tra phiên.</h1><a href="/portal">Thử lại</a></section></main>;
+    return <AuthenticatedPortal session={identity} view="profile" />;
+  }
   let session: Awaited<ReturnType<typeof verifiedSession>>;
   try {
     session = await verifiedSession();

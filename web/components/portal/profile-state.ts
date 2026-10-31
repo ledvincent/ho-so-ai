@@ -57,7 +57,7 @@ export class ProfileController {
   private pending: AbortController | null = null;
   private listeners = new Set<() => void>();
 
-  constructor(private readonly request: FetchProfile = fetch) {}
+  constructor(private readonly request: FetchProfile = (url, init) => fetch(url, init)) {}
 
   snapshot = (): ProfileState => this.state;
   subscribe = (listener: () => void): (() => void) => {

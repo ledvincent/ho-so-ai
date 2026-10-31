@@ -1,13 +1,14 @@
 import { schema, updateValue, type Values } from '@/components/na5-demo/model';
 import { checkedValues, type GuidedAdapter } from './state';
+import { identityFrom, type LocalIdentity } from '@/lib/local-auth-policy';
 
-export type LocalSession = { user: { id: string; username: string; identity_provider: 'local' }; expires_at: number };
+export type LocalSession = LocalIdentity;
 export class SessionExpired extends Error { constructor() { super('Session expired'); this.name = 'SessionExpired'; } }
 export class ServiceUnavailable extends Error { constructor() { super('Service unavailable'); this.name = 'ServiceUnavailable'; } }
 type Fetcher = typeof fetch;
 export function parseSession(raw: unknown): LocalSession {
-  const value = raw as LocalSession;
-  if (!value?.user || typeof value.user.id !== 'string' || !value.user.id || typeof value.user.username !== 'string' || value.user.identity_provider !== 'local' || !Number.isFinite(value.expires_at) || value.expires_at <= 0) throw new ServiceUnavailable();
+  const value = identityFrom(raw);
+  if (!value) throw new ServiceUnavailable();
   return value;
 }
 export const sameSession = (left: LocalSession, right: LocalSession) => left.user.id === right.user.id && left.expires_at === right.expires_at;

@@ -9,6 +9,19 @@ const record = (name = 'Synthetic account A', revision = 1) => ({
   profile_id: 'synthetic-profile-a', revision, fields: { ...EMPTY_PROFILE, full_name: name },
 });
 const json = (value: unknown, status = 200) => Response.json(value, { status });
+test('default browser fetch is not invoked with the profile controller as its receiver', async () => {
+  const original = globalThis.fetch;
+  globalThis.fetch = async function (this: unknown) {
+    assert.equal(this instanceof ProfileController, false);
+    return json({ detail: { code: 'PROFILE_NOT_FOUND' } }, 404);
+  } as typeof fetch;
+  try {
+    const controller = new ProfileController();
+    await controller.load();
+    assert.equal(controller.snapshot().phase, 'ready');
+    assert.equal(controller.snapshot().revision, 0);
+  } finally { globalThis.fetch = original; }
+});
 function deferred<T>() {
   let resolve!: (value: T) => void;
   const promise = new Promise<T>((done) => { resolve = done; });
