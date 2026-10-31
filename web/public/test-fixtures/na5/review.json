@@ -1,0 +1,17 @@
+{
+  "template_sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+  "spec_sha256": "50fe2f675df97308aeafef25c791eada67ea857170c332f3aacd38d28fd3d5c3",
+  "packet_sha256": "647ac39508b95e91d269757ce8531f0682ddc631820ba1d0c5cd2b27f6f08342",
+  "cases": [
+    "organisation",
+    "foreign family sponsor"
+  ],
+  "manual_areas": [
+    "certification/stamp",
+    "sponsor signature",
+    "applicant signature"
+  ],
+  "status": "awaiting human review",
+  "prior_spec_sha256": "9790d1bd329b1652f4dacebe3756e689fb3fdcc007b7699bf6fec24833e41ef4",
+  "storage_relocation": "Only storage references changed; field placements and reviewed PDF bytes unchanged."
+}

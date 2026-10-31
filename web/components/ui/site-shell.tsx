@@ -16,14 +16,15 @@ const destinations = [
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const isWorkspace = pathname === '/forms/demo' || pathname.startsWith('/demo/') || pathname === '/workspace';
-  const activeDestination = isWorkspace ? '/workspace' : pathname;
+  const activeDestination = pathname === '/demo/research' ? '/research' : isWorkspace ? '/workspace' : pathname;
+  const destinationHref = (href: string) => pathname.startsWith('/demo/') && (href === '/workspace' || href === '/research') ? `/demo${href}` : href;
   return <div className={`${styles.frame} ${isWorkspace ? styles.compactWorkspace : ''}`}>
     <a className={styles.skip} href="#main-content">Đến nội dung chính</a>
     <aside className={styles.sidebar}>
       <Link className={styles.brandLink} href="/" aria-label="Hồ Sơ AI — trang bắt đầu"><Brand /></Link>
       <p className={styles.navLabel}>KHÔNG GIAN CỦA BẠN</p>
       <nav className={styles.navigation} aria-label="Điều hướng chính">
-        {destinations.map(({ href, label, icon: Icon }) => <Link key={href} href={href} prefetch={false} aria-current={activeDestination === href ? 'page' : undefined} className={activeDestination === href ? styles.active : ''}><Icon size={19} aria-hidden="true" /><span>{label}</span></Link>)}
+        {destinations.map(({ href, label, icon: Icon }) => <Link key={href} href={destinationHref(href)} prefetch={false} aria-current={activeDestination === href ? 'page' : undefined} className={activeDestination === href ? styles.active : ''}><Icon size={19} aria-hidden="true" /><span>{label}</span></Link>)}
       </nav>
       <div className={styles.sideNote}><span className={styles.noteLine} /><b>Từng bước, theo cách của bạn.</b><p>Lưu hồ sơ để dùng lại, hoặc nhập trực tiếp vào một bản nháp.</p></div>
       <div className={styles.sideFoot}><span className={styles.dot} />Không gian thử nghiệm</div>
