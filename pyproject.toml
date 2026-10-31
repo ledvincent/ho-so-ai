@@ -1,0 +1,25 @@
+[project]
+name = "ho-so-ai"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy>=2,<3",
+    "psycopg[binary]",
+    "alembic",
+    "pgvector",
+    "beautifulsoup4",
+    "httpx",
+    "pyyaml",
+    "python-dotenv",
+    "pymupdf>=2.0",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["database: requires a local PostgreSQL database"]

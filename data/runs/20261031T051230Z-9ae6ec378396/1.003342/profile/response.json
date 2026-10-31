@@ -1,0 +1,3128 @@
+{
+  "procedure_code": {
+    "value": "1.003342",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "procedure_code: 1.003342"
+      }
+    ],
+    "conflicts": []
+  },
+  "official_name": {
+    "value": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "official_name: Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+      }
+    ],
+    "conflicts": []
+  },
+  "purpose": {
+    "value": "Cấp thị thực cho người nước ngoài tại Việt Nam thông qua thủ tục thực hiện tại cấp Trung ương.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+      }
+    ],
+    "conflicts": []
+  },
+  "outcome": {
+    "value": "Thị thực loại dán hoặc rời.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "supplementary",
+        "locator": "section:13:Kết quả thực hiện",
+        "quote": "Thị thực loại dán hoặc rời"
+      }
+    ],
+    "conflicts": []
+  },
+  "action_type": [
+    {
+      "value": "issue",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "aliases": [
+    {
+      "text": "Xin cấp thị thực tại Việt Nam ở Cục Quản lý xuất nhập cảnh",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Cấp visa cho người nước ngoài đang ở Việt Nam, cấp Trung ương",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Visa issuance for foreigners in Vietnam at central level",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "In-country visa application at the Immigration Department",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "example_requests": [
+    {
+      "text": "Tôi đang ở Việt Nam và muốn xin cấp thị thực tại Cục Quản lý xuất nhập cảnh.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Tổ chức của tôi muốn bảo lãnh cấp visa cho người nước ngoài đang ở Việt Nam.",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Xin cấp thị thực trực tuyến thì phải gửi hộ chiếu thế nào?",
+      "language": "vi",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "I am in Vietnam and want to apply for a visa at the Immigration Department.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "Our organization wants to sponsor a visa for a foreigner living in Vietnam.",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    },
+    {
+      "text": "How do I send my passport when applying for a visa online?",
+      "language": "en",
+      "origin": "generated",
+      "source_refs": []
+    }
+  ],
+  "applicant_categories": [
+    {
+      "value": "Người Việt Nam định cư ở nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Người Việt Nam định cư ở nước ngoài; Người nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX); Tổ chức nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Người Việt Nam định cư ở nước ngoài; Người nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX); Tổ chức nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Tổ chức (không bao gồm doanh nghiệp, HTX)",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Người Việt Nam định cư ở nước ngoài; Người nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX); Tổ chức nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Tổ chức nước ngoài",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:5:Thông tin dịch vụ và đối tượng thực hiện",
+          "quote": "Đối tượng thực hiện: Người Việt Nam định cư ở nước ngoài; Người nước ngoài; Tổ chức (không bao gồm doanh nghiệp, HTX); Tổ chức nước ngoài"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Người Việt Nam mang hộ chiếu nước ngoài được nêu trong các điều kiện đối với người được đề nghị cấp thị thực.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "value": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp thị thực cho thân nhân thuộc các quan hệ được liệt kê.",
+      "status": "supported",
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+        }
+      ],
+      "conflicts": []
+    }
+  ],
+  "eligibility_rules": [
+    {
+      "rule_id": "recipient_requirements",
+      "statement": {
+        "value": "Người nước ngoài hoặc người Việt Nam mang hộ chiếu nước ngoài phải có hộ chiếu hợp lệ, có thị thực trừ trường hợp miễn thị thực, có chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp và đang cư trú tại Việt Nam. Nguồn còn ghi nguyên văn điều kiện “không thuộc diện chưa cho nhập cảnh Việt Nam hoặc không thuộc diện tạm hoãn xuất cảnh”; phạm vi logic của điều kiện này chưa được xác lập để tự động đánh giá.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "passport_valid",
+            "values": ["yes"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "có hộ chiếu hợp lệ"
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "current_stay_basis",
+            "values": ["visa", "visa_exemption"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "temporary_residence_certification",
+            "values": ["issued_by_vietnamese_authority"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "residence_location",
+            "values": ["vietnam"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "đang cư trú tại Việt Nam"
+              }
+            ]
+          },
+          {
+            "operator": "unknown",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "visa_requirement_with_exemption",
+      "statement": {
+        "value": "Yêu cầu có thị thực được miễn đối với trường hợp miễn thị thực; ngoại lệ này chỉ áp dụng cho yêu cầu có thị thực.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "current_stay_basis",
+        "values": ["visa"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+          }
+        ]
+      },
+      "exceptions": [
+        {
+          "operator": "eq",
+          "criterion_key": "current_stay_basis",
+          "values": ["visa_exemption"],
+          "children": [],
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rule_id": "organization_sponsor_branch",
+      "statement": {
+        "value": "Trong nhánh cơ quan, tổ chức đề nghị cấp thị thực, cơ quan hoặc tổ chức phải đã có hồ sơ theo khoản 2 Điều 16 của Luật được dẫn chiếu. Nội dung hồ sơ theo điều khoản này không có trong nguồn cung cấp.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "sponsor_type",
+            "values": ["agency_or_organization"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "organization_article16_dossier",
+            "values": ["already_has_required_dossier"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        ]
+      },
+      "exceptions": []
+    },
+    {
+      "rule_id": "vietnamese_family_sponsor_branch",
+      "statement": {
+        "value": "Trong nhánh công dân Việt Nam bảo lãnh thân nhân, người bảo lãnh thường trú ở trong nước, có một trong các quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị hoặc em ruột với người được đề nghị và xuất trình giấy tờ chứng minh quan hệ theo khoản 1 Điều 45 được dẫn chiếu.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại khoản 1 Điều 45 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        ],
+        "conflicts": []
+      },
+      "condition": {
+        "operator": "and",
+        "criterion_key": null,
+        "values": [],
+        "children": [
+          {
+            "operator": "eq",
+            "criterion_key": "sponsor_type",
+            "values": ["vietnamese_citizen"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Công dân Việt Nam thường trú ở trong nước"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "sponsor_permanent_residence",
+            "values": ["vietnam"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Công dân Việt Nam thường trú ở trong nước"
+              }
+            ]
+          },
+          {
+            "operator": "in",
+            "criterion_key": "family_relationship",
+            "values": [
+              "grandfather",
+              "grandmother",
+              "father",
+              "mother",
+              "wife",
+              "husband",
+              "child",
+              "older_brother",
+              "older_sister",
+              "younger_sibling"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài"
+              }
+            ]
+          },
+          {
+            "operator": "eq",
+            "criterion_key": "family_relationship_evidence",
+            "values": ["documents_presented"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "(xuất trình giấy tờ chứng minh quan hệ)"
+              }
+            ]
+          }
+        ],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại khoản 1 Điều 45 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        ]
+      },
+      "exceptions": []
+    }
+  ],
+  "exclusions": [],
+  "jurisdiction": {
+    "value": "Người được đề nghị cấp thị thực đang cư trú tại Việt Nam; nguồn không nêu giới hạn theo tỉnh hoặc thành phố.",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+        "quote": "đang cư trú tại Việt Nam"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority": {
+    "value": "Cục Quản lý xuất nhập cảnh - Bộ Công an",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "section:0:Trình tự thực hiện",
+        "quote": "Cục Quản lý xuất nhập cảnh - Bộ Công an"
+      },
+      {
+        "source_id": "supplementary",
+        "locator": "section:2:Cơ quan thực hiện",
+        "quote": "Cục quản lý xuất nhập cảnh"
+      }
+    ],
+    "conflicts": []
+  },
+  "authority_level": {
+    "value": "Trung ương",
+    "status": "supported",
+    "source_refs": [
+      {
+        "source_id": "primary",
+        "locator": "identity",
+        "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+      }
+    ],
+    "conflicts": []
+  },
+  "submission_channels": [
+    {
+      "channel": {
+        "value": "Trực tiếp",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:4:Cách thức thực hiện",
+            "quote": "Trực tiếp"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Nộp vào giờ hành chính; thời gian tiếp nhận từ thứ 2 đến sáng thứ 7, trừ ngày Tết và ngày lễ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp tại một trong hai trụ sở Cục Quản lý xuất nhập cảnh: 44-46 Trần Phú, quận Ba Đình, Hà Nội; hoặc 333-335-337 Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh. Hồ sơ đầy đủ, hợp lệ được tiếp nhận, cấp giấy hẹn và yêu cầu nộp phí, nhận biên lai. Hồ sơ thiếu hoặc không hợp lệ được hướng dẫn hoàn chỉnh. Hồ sơ không đủ điều kiện không được tiếp nhận và được trả lời kèm lý do. Nhận kết quả trực tiếp tại Cục, mang giấy hẹn, giấy tờ tùy thân và biên lai để đối chiếu. Trả kết quả từ thứ 2 đến thứ 6, trừ ngày Tết và ngày lễ; nếu chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên cổng dịch vụ công, nêu rõ lý do.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an: + Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội. + Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp thị thực hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp thị thực thanh toán trực tuyến và nhận biên lai điện tử."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh. + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Người đề nghị cấp thị thực trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Trường hợp chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. + Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:6:Thời hạn giải quyết",
+            "quote": "Trực tiếp 5 Ngày làm việc nộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh. không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "5 USD: chuyển ngang giá trị thị thực, thẻ tạm trú, thời hạn tạm trú còn giá trị từ hộ chiếu cũ sang hộ chiếu mới.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 5 USD (Chuyển ngang giá trị thị thực, thẻ tạm trú, thời hạn tạm trú còn giá trị từ hộ chiếu cũ sang hộ chiếu mới)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "5 USD: chuyển ngang giá trị thị thực, thời hạn tạm trú còn giá trị từ thị thực rời cũ đã hết chỗ đóng dấu kiểm chứng nhập cảnh, kiểm chứng xuất cảnh, chứng nhận tạm trú hoặc gia hạn tạm trú sang thị thực rời mới.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 5 USD (Chuyển ngang giá trị thị thực, thời hạn tạm trú còn giá trị từ thị thực rời cũ (đã hết chỗ đóng dấu: kiểm chứng nhập cảnh, kiểm chứng xuất cảnh, chứng nhận tạm trú, gia hạn tạm trú) sang thị thực rời mới)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "25 USD: thị thực có giá trị một lần.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 25 USD (Cấp thị thực có giá trị một lần)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "25 USD: thị thực cấp cho người dưới 14 tuổi, không phân biệt thời hạn.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 25 USD (Thị thực cấp cho người dưới 14 tuổi (không phân biệt thời hạn))"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "50 USD: thị thực nhiều lần có giá trị không quá 90 ngày.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 50 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị không quá 90 ngày)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "95 USD: thị thực nhiều lần có giá trị trên 90 ngày đến 180 ngày.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 95 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 90 ngày đến 180 ngày)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "135 USD: thị thực nhiều lần có giá trị trên 180 ngày đến 01 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 135 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 180 ngày đến 01 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "145 USD: thị thực nhiều lần có giá trị trên 12 tháng đến 02 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 145 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 12 tháng đến 02 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "155 USD: thị thực nhiều lần có giá trị trên 02 năm đến 05 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 155 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 02 năm đến 05 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Lệ phí: Không.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:8:Lệ Phí",
+              "quote": "Không"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Trực tuyến",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:4:Cách thức thực hiện",
+            "quote": "Trực tuyến"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Dịch vụ công trực tuyến một phần. Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích; các thành phần khác phải được chứng thực điện tử, hoặc gửi qua dịch vụ bưu chính công ích nếu chưa được chứng thực điện tử.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:3:Mức độ cung cấp dịch vụ công trực tuyến",
+            "quote": "Dịch vụ công trực tuyến một phần"
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Nộp qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an, bổ sung hồ sơ bằng bưu chính công ích theo thông báo nếu có. Hồ sơ đầy đủ, hợp lệ được tiếp nhận và cấp giấy hẹn; có thể thanh toán trực tuyến theo thông báo và nhận biên lai điện tử. Hồ sơ thiếu hoặc không hợp lệ được thông báo để hoàn chỉnh; hồ sơ không đủ điều kiện bị từ chối tiếp nhận kèm lý do. Người nộp trực tuyến có thể yêu cầu nhận kết quả qua bưu chính và trả phí chuyển phát; làm theo hướng dẫn của đơn vị bưu chính. Nếu nhận trực tiếp phải mang giấy hẹn, giấy tờ tùy thân, biên lai. Tiếp nhận từ thứ 2 đến sáng thứ 7; trả kết quả từ thứ 2 đến thứ 6, trừ ngày Tết và ngày lễ. Nếu chưa cấp thị thực, cơ quan trả lời bằng văn bản hoặc thông báo trên cổng kèm lý do.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có)."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp thị thực hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp thị thực thanh toán trực tuyến và nhận biên lai điện tử."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh. + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát. * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ)."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "+ Người đề nghị cấp thị thực trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính. + Trường hợp chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. + Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:6:Thời hạn giải quyết",
+            "quote": "Trực tuyến 5 Ngày làm việc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "5 USD: chuyển ngang giá trị thị thực, thẻ tạm trú, thời hạn tạm trú còn giá trị từ hộ chiếu cũ sang hộ chiếu mới.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 5 USD (Chuyển ngang giá trị thị thực, thẻ tạm trú, thời hạn tạm trú còn giá trị từ hộ chiếu cũ sang hộ chiếu mới)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "5 USD: chuyển ngang giá trị thị thực, thời hạn tạm trú còn giá trị từ thị thực rời cũ đã hết chỗ đóng dấu kiểm chứng nhập cảnh, kiểm chứng xuất cảnh, chứng nhận tạm trú hoặc gia hạn tạm trú sang thị thực rời mới.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 5 USD (Chuyển ngang giá trị thị thực, thời hạn tạm trú còn giá trị từ thị thực rời cũ (đã hết chỗ đóng dấu: kiểm chứng nhập cảnh, kiểm chứng xuất cảnh, chứng nhận tạm trú, gia hạn tạm trú) sang thị thực rời mới)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "25 USD: thị thực có giá trị một lần.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 25 USD (Cấp thị thực có giá trị một lần)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "25 USD: thị thực cấp cho người dưới 14 tuổi, không phân biệt thời hạn.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 25 USD (Thị thực cấp cho người dưới 14 tuổi (không phân biệt thời hạn))"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "50 USD: thị thực nhiều lần có giá trị không quá 90 ngày.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 50 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị không quá 90 ngày)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "95 USD: thị thực nhiều lần có giá trị trên 90 ngày đến 180 ngày.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 95 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 90 ngày đến 180 ngày)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "135 USD: thị thực nhiều lần có giá trị trên 180 ngày đến 01 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 135 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 180 ngày đến 01 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "145 USD: thị thực nhiều lần có giá trị trên 12 tháng đến 02 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 145 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 12 tháng đến 02 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "155 USD: thị thực nhiều lần có giá trị trên 02 năm đến 05 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 155 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 02 năm đến 05 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Lệ phí: Không.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:8:Lệ Phí",
+              "quote": "Không"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Người nộp trực tuyến yêu cầu nhận kết quả qua bưu chính phải trả phí dịch vụ chuyển phát; nguồn không nêu số tiền.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "channel": {
+        "value": "Dịch vụ bưu chính",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:4:Cách thức thực hiện",
+            "quote": "Dịch vụ bưu chính"
+          }
+        ],
+        "conflicts": []
+      },
+      "conditions": {
+        "value": "Kênh bổ sung hồ sơ qua bưu chính công ích theo thông báo của Cục trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an, nếu có. Khi nộp trực tuyến, phải gửi hộ chiếu hoặc giấy tờ đi lại quốc tế; thành phần khác chưa được chứng thực điện tử cũng phải gửi qua bưu chính công ích.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:6:Thời hạn giải quyết",
+            "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có)."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        ],
+        "conflicts": []
+      },
+      "description": {
+        "value": "Gửi bổ sung hồ sơ đến cơ quan tiếp nhận qua dịch vụ bưu chính công ích theo thông báo. Người nộp trực tuyến có thể yêu cầu nhận kết quả qua bưu chính, làm theo hướng dẫn của đơn vị cung cấp dịch vụ và trả phí chuyển phát.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:6:Thời hạn giải quyết",
+            "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có)."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát."
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:0:Trình tự thực hiện",
+            "quote": "Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính."
+          }
+        ],
+        "conflicts": []
+      },
+      "processing_time": {
+        "value": "Không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:6:Thời hạn giải quyết",
+            "quote": "Dịch vụ bưu chính 5 Ngày làm việc nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có). không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ."
+          }
+        ],
+        "conflicts": []
+      },
+      "fees": [
+        {
+          "value": "5 USD: chuyển ngang giá trị thị thực, thẻ tạm trú, thời hạn tạm trú còn giá trị từ hộ chiếu cũ sang hộ chiếu mới.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 5 USD (Chuyển ngang giá trị thị thực, thẻ tạm trú, thời hạn tạm trú còn giá trị từ hộ chiếu cũ sang hộ chiếu mới)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "5 USD: chuyển ngang giá trị thị thực, thời hạn tạm trú còn giá trị từ thị thực rời cũ đã hết chỗ đóng dấu kiểm chứng nhập cảnh, kiểm chứng xuất cảnh, chứng nhận tạm trú hoặc gia hạn tạm trú sang thị thực rời mới.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 5 USD (Chuyển ngang giá trị thị thực, thời hạn tạm trú còn giá trị từ thị thực rời cũ (đã hết chỗ đóng dấu: kiểm chứng nhập cảnh, kiểm chứng xuất cảnh, chứng nhận tạm trú, gia hạn tạm trú) sang thị thực rời mới)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "25 USD: thị thực có giá trị một lần.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 25 USD (Cấp thị thực có giá trị một lần)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "25 USD: thị thực cấp cho người dưới 14 tuổi, không phân biệt thời hạn.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 25 USD (Thị thực cấp cho người dưới 14 tuổi (không phân biệt thời hạn))"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "50 USD: thị thực nhiều lần có giá trị không quá 90 ngày.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 50 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị không quá 90 ngày)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "95 USD: thị thực nhiều lần có giá trị trên 90 ngày đến 180 ngày.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 95 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 90 ngày đến 180 ngày)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "135 USD: thị thực nhiều lần có giá trị trên 180 ngày đến 01 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 135 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 180 ngày đến 01 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "145 USD: thị thực nhiều lần có giá trị trên 12 tháng đến 02 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 145 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 12 tháng đến 02 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "155 USD: thị thực nhiều lần có giá trị trên 02 năm đến 05 năm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:7:Phí",
+              "quote": "Phí: 155 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị trên 02 năm đến 05 năm)"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Lệ phí: Không.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:8:Lệ Phí",
+              "quote": "Không"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Phí chuyển phát kết quả do người nộp trực tuyến yêu cầu nhận qua bưu chính chi trả; số tiền không được nêu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát."
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ],
+  "required_documents": [
+    {
+      "name": {
+        "value": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an. NA5.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an. NA5.doc Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Khi nộp trực tuyến, phải được chứng thực điện tử; nếu chưa được chứng thực điện tử thì gửi qua dịch vụ bưu chính công ích.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Bao gồm Tên giấy tờ Mẫu đơn, tờ khai Số lượng Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Ảnh mới chụp 4 x 6 cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, nền trắng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Quy định chung cho thành phần hồ sơ khác khi nộp trực tuyến: chứng thực điện tử hoặc gửi qua bưu chính công ích nếu chưa được chứng thực điện tử.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "visa_format",
+        "values": ["separate"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài."
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "1",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài. Bản chính: 1 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Khi nộp trực tuyến, gửi hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế qua dịch vụ bưu chính công ích về cơ quan tiếp nhận.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài. Bản chính: 1 - Bản sao: 0"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Dòng hướng dẫn xử lý hồ sơ trực tuyến; không phải tên một giấy tờ riêng.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích. Bản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích. Bản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "copies": {
+        "value": "0",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích. Bản chính: 0 - Bản sao: 0"
+          }
+        ],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Hộ chiếu hoặc giấy tờ đi lại quốc tế gửi bằng bưu chính công ích; các thành phần khác phải chứng thực điện tử, nếu chưa chứng thực điện tử thì gửi bằng bưu chính công ích.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "submission_channel",
+        "values": ["online"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Giấy tờ chứng minh quan hệ giữa công dân Việt Nam bảo lãnh và người được đề nghị cấp thị thực.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+          }
+        ],
+        "conflicts": []
+      },
+      "originals": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "copies": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "certification": {
+        "value": "Xuất trình giấy tờ chứng minh quan hệ; nguồn không quy định riêng việc chứng thực hoặc số lượng giấy tờ này.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "(xuất trình giấy tờ chứng minh quan hệ)"
+          }
+        ],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "eq",
+        "criterion_key": "sponsor_type",
+        "values": ["vietnamese_citizen"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+          }
+        ]
+      }
+    }
+  ],
+  "effective_from": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "effective_to": {
+    "value": null,
+    "status": "unknown",
+    "source_refs": [],
+    "conflicts": []
+  },
+  "supersedes": [],
+  "decision_criteria": [
+    {
+      "criterion_key": "requested_action",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "identity",
+            "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+          }
+        ]
+      },
+      "question": "Are you applying to have a visa issued while you are in Vietnam?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "issue",
+          "label": "Visa issuance",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "identity",
+              "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "identity",
+          "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "residence_location",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "đang cư trú tại Việt Nam"
+          }
+        ]
+      },
+      "question": "Is the person applying for the visa currently residing in Vietnam?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnam",
+          "label": "Currently residing in Vietnam",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "đang cư trú tại Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "đang cư trú tại Việt Nam"
+        }
+      ]
+    },
+    {
+      "criterion_key": "passport_valid",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ"
+          }
+        ]
+      },
+      "question": "Does the person applying for the visa have a valid passport?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "yes",
+          "label": "Has a valid passport",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "có hộ chiếu hợp lệ"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "có hộ chiếu hợp lệ"
+        }
+      ]
+    },
+    {
+      "criterion_key": "current_stay_basis",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+          }
+        ]
+      },
+      "question": "Does the applicant currently hold a visa or qualify for visa exemption?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "visa",
+          "label": "Holds a visa",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+            }
+          ]
+        },
+        {
+          "value": "visa_exemption",
+          "label": "Qualifies for visa exemption",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "có thị thực (trừ trường hợp miễn thị thực)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "temporary_residence_certification",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp"
+          }
+        ]
+      },
+      "question": "Does the applicant have temporary residence certification issued by a competent Vietnamese authority?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "issued_by_vietnamese_authority",
+          "label": "Has certification issued by a competent Vietnamese authority",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp"
+        }
+      ]
+    },
+    {
+      "criterion_key": "sponsor_type",
+      "condition": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài"
+          },
+          {
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+            "locator": "page:2",
+            "quote": "(4) Đối với trường hợp người nước ngoài bảo lãnh cho thân nhân."
+          }
+        ]
+      },
+      "question": "Who is sponsoring the application?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "agency_or_organization",
+          "label": "An agency or organization",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Cơ quan, tổ chức đề nghị cấp thị thực"
+            }
+          ]
+        },
+        {
+          "value": "vietnamese_citizen",
+          "label": "A Vietnamese citizen sponsoring a relative",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Công dân Việt Nam thường trú ở trong nước"
+            }
+          ]
+        },
+        {
+          "value": "foreigner_with_temporary_resident_card",
+          "label": "A foreigner with a temporary resident card; applicability requires form review",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:3",
+              "quote": "Trường hợp do cơ quan, tổ chức mời, bảo lãnh, hoặc người nước ngoài có thẻ tạm trú mời, bảo lãnh thì thủ trưởng cơ quan, tổ chức xác nhận."
+            }
+          ]
+        },
+        {
+          "value": "foreigner_with_permanent_resident_card",
+          "label": "A foreigner with a permanent resident card; applicability requires form review",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Be cerified by the Chief of the local Ward/Commune Public Security where the sponsor is residing permanently if the sponsor is a Vietnamese citizen or a foreigner with Permanent Resident Card."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+        },
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "organization_article16_dossier",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "sponsor_type",
+        "values": ["agency_or_organization"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+          }
+        ]
+      },
+      "question": "Does the sponsoring agency or organization already have the dossier required by Article 16(2) cited in the procedure?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "already_has_required_dossier",
+          "label": "Already has the required dossier",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+        }
+      ]
+    },
+    {
+      "criterion_key": "sponsor_permanent_residence",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "sponsor_type",
+        "values": ["vietnamese_citizen"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Công dân Việt Nam thường trú ở trong nước"
+          }
+        ]
+      },
+      "question": "Does the Vietnamese citizen sponsor permanently reside in Vietnam?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "vietnam",
+          "label": "Permanently resides in Vietnam",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "Công dân Việt Nam thường trú ở trong nước"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "Công dân Việt Nam thường trú ở trong nước"
+        }
+      ]
+    },
+    {
+      "criterion_key": "family_relationship",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "sponsor_type",
+        "values": ["vietnamese_citizen"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài"
+          }
+        ]
+      },
+      "question": "What is the Vietnamese citizen sponsor's relationship to the visa applicant?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "grandfather",
+          "label": "Grandfather",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "grandmother",
+          "label": "Grandmother",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "father",
+          "label": "Father",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "mother",
+          "label": "Mother",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "wife",
+          "label": "Wife",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "husband",
+          "label": "Husband",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "child",
+          "label": "Child",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "older_brother",
+          "label": "Older brother by blood",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "older_sister",
+          "label": "Older sister by blood",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "younger_sibling",
+          "label": "Younger sibling by blood",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "anh, chị, em ruột"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "family_relationship_evidence",
+      "condition": {
+        "operator": "eq",
+        "criterion_key": "sponsor_type",
+        "values": ["vietnamese_citizen"],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+          }
+        ]
+      },
+      "question": "Are documents proving the family relationship being presented?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "documents_presented",
+          "label": "Relationship documents are being presented",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+              "quote": "(xuất trình giấy tờ chứng minh quan hệ)"
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+          "quote": "(xuất trình giấy tờ chứng minh quan hệ)"
+        }
+      ]
+    },
+    {
+      "criterion_key": "submission_channel",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:4:Cách thức thực hiện",
+            "quote": "Trực tiếp Trực tuyến Dịch vụ bưu chính"
+          }
+        ]
+      },
+      "question": "How will you submit the application or supplementary documents?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "in_person",
+          "label": "In person at the Immigration Department",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:6:Thời hạn giải quyết",
+              "quote": "nộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh."
+            }
+          ]
+        },
+        {
+          "value": "online",
+          "label": "Online, with required documents sent by public postal service",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận"
+            }
+          ]
+        },
+        {
+          "value": "postal_supplement",
+          "label": "Supplementary documents by public postal service as notified",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:6:Thời hạn giải quyết",
+              "quote": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có)."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích."
+        }
+      ]
+    },
+    {
+      "criterion_key": "visa_format",
+      "condition": {
+        "operator": "true",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "supplementary",
+            "locator": "section:13:Kết quả thực hiện",
+            "quote": "Thị thực loại dán hoặc rời"
+          }
+        ]
+      },
+      "question": "Will the visa be a sticker visa or a separate visa?",
+      "question_origin": "generated",
+      "answer_options": [
+        {
+          "value": "sticker",
+          "label": "Sticker visa",
+          "source_refs": [
+            {
+              "source_id": "supplementary",
+              "locator": "section:13:Kết quả thực hiện",
+              "quote": "Thị thực loại dán hoặc rời"
+            }
+          ]
+        },
+        {
+          "value": "separate",
+          "label": "Separate visa",
+          "source_refs": [
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+            }
+          ]
+        },
+        {
+          "value": "unknown",
+          "label": "I'm not sure",
+          "source_refs": []
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "primary",
+          "locator": "section:2:Thành phần hồ sơ",
+          "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+        }
+      ]
+    }
+  ],
+  "form_relationships": [
+    {
+      "file_hash": "3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+      "form_code": {
+        "value": "NA5",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+            "locator": "page:1",
+            "quote": "M u (Form) NA5"
+          }
+        ],
+        "conflicts": []
+      },
+      "official_title": {
+        "value": "APPLICATION FORM FOR VISA ISSUANCE, STAY EXTENSION",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+            "locator": "page:1",
+            "quote": "APPLICATION FORM FOR VISA ISSUANCE, STAY EXTENSION"
+          }
+        ],
+        "conflicts": []
+      },
+      "aliases": [
+        {
+          "text": "Tờ khai NA5 theo Thông tư 04/2015/TT-BCA",
+          "language": "vi",
+          "origin": "generated",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "04/2015/TT-BCA ngày 05-01-2015"
+            }
+          ]
+        },
+        {
+          "text": "NA5 visa issuance and stay extension form, 2015 reference",
+          "language": "en",
+          "origin": "generated",
+          "source_refs": []
+        }
+      ],
+      "version": {
+        "value": "04/2015/TT-BCA ngày 05-01-2015",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+            "locator": "page:1",
+            "quote": "04/2015/TT-BCA ngày 05-01-2015"
+          }
+        ],
+        "conflicts": []
+      },
+      "effective_from": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "effective_to": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "registry:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+            "locator": "form-association",
+            "quote": "\"association_method\":\"direct_download\""
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          },
+          {
+            "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+            "locator": "page:1",
+            "quote": "04/2015/TT-BCA ngày 05-01-2015"
+          }
+        ]
+      },
+      "completed_by": [
+        {
+          "value": "Người đề nghị đang tạm trú ở Việt Nam; mỗi người khai một bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "For temporary residence foreigners in Viet Nam"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Submit in person one completed application form enclosed with passport or International Travel Document and One recently taken photo in 4x6cm size, with white background, front view, bare head without sunglasses at the Immigration Office."
+            }
+          ],
+          "conflicts": []
+        }
+      ],
+      "signed_by": [
+        {
+          "value": "Người đề nghị ký và ghi rõ họ tên.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "The applicant’s signature and full name"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Người bảo lãnh ký và ghi rõ họ tên.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "The sponsor’s signature and full name"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Người xác nhận ký, ghi rõ họ tên, chức vụ và đóng dấu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Signature, full name, title and stamp"
+            }
+          ],
+          "conflicts": []
+        }
+      ],
+      "certified_by": [
+        {
+          "value": "Thủ trưởng cơ quan, tổ chức xác nhận khi bên mời, bảo lãnh là cơ quan, tổ chức hoặc người nước ngoài có thẻ tạm trú.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Be cerified by the head of the organization if the sponsor is an organisation or a foreigner with Temporary Resident Card."
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Nếu bên mời, bảo lãnh là công dân Việt Nam hoặc người nước ngoài có thẻ thường trú, Trưởng Công an phường, xã xác nhận nội dung tại điểm 2 Mục II; bản tiếng Anh xác định cơ quan nơi người bảo lãnh thường trú.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Tr ng h p công dân Vi t Nam, ng i n c ngoài có th th ng trú m i, b o lãnh, thì Tr ng Công an ph ng, xã ườ ợ ệ ườ ướ ẻ ườ ờ ả ưở ườ xác nh n các n i dung t i đi m 2 M c II. ậ ộ ạ ể ụ"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Be cerified by the Chief of the local Ward/Commune Public Security where the sponsor is residing permanently if the sponsor is a Vietnamese citizen or a foreigner with Permanent Resident Card."
+            }
+          ],
+          "conflicts": []
+        }
+      ],
+      "instructions": [
+        {
+          "value": "Liên kết registry là direct_download. Bản tải về ghi tham chiếu 04/2015/TT-BCA, trong khi danh mục hồ sơ thủ tục yêu cầu NA5 theo 22/2023/TT-BCA; chưa xác lập việc chấp nhận chính xác bản này.",
+          "status": "conflict",
+          "source_refs": [
+            {
+              "source_id": "registry:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "form-association",
+              "quote": "\"association_method\":\"direct_download\""
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "04/2015/TT-BCA ngày 05-01-2015"
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+            }
+          ],
+          "conflicts": [
+            "Tham chiếu phiên bản của biểu mẫu tải trực tiếp khác tham chiếu trong danh mục hồ sơ thủ tục."
+          ]
+        },
+        {
+          "value": "Khai họ tên bằng chữ in hoa; ghi rõ loại hộ chiếu phổ thông, công vụ, ngoại giao hoặc tên giấy tờ có giá trị đi lại quốc tế.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "Full name (in Capital letters)"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Specify type of passport whether it is Ordinary, Official or Diplomatic; or specify name of the International Travel Document."
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Khai thông tin người đề nghị và cơ quan, tổ chức hoặc thân nhân mời, bảo lãnh; đối với thân nhân có thông tin giấy chứng minh nhân dân, hộ chiếu, thẻ thường trú hoặc thẻ tạm trú, quan hệ, địa chỉ và liên hệ.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "Hosting organisation/family relative in Viet Nam"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "Identity Card/Passport/Permanent/ Temporary Resident Card Number"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:1",
+              "quote": "Relationship to the applicant"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Permanent/temporary residential address in Viet Nam"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Contact telephone number/Email"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Biểu mẫu có phần đề nghị cấp thị thực một lần hoặc nhiều lần, ngày hết giá trị; phần gia hạn tạm trú đến ngày; lý do và nội dung trình bày thêm. Các mục dùng chung này không tự mở rộng phạm vi thủ tục 1.003342.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "To issue a visa Singie Multiple Valid to (Day, Month, Year)"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "To extend the duration of stay until (Day, Month, Year)"
+            },
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Additional statements:"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Ghi chú bản này yêu cầu nộp trực tiếp một tờ khai, kèm hộ chiếu hoặc giấy tờ đi lại quốc tế và một ảnh mới 4 x 6 cm, nền trắng, nhìn thẳng, đầu để trần, không đeo kính màu. Ghi chú không giới hạn ảnh vào trường hợp thị thực rời. Hướng dẫn này khác hướng dẫn thủ tục về kênh trực tuyến và điều kiện nộp ảnh.",
+          "status": "conflict",
+          "source_refs": [
+            {
+              "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+              "locator": "page:2",
+              "quote": "Submit in person one completed application form enclosed with passport or International Travel Document and One recently taken photo in 4x6cm size, with white background, front view, bare head without sunglasses at the Immigration Office."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:2:Thành phần hồ sơ",
+              "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an"
+            }
+          ],
+          "conflicts": [
+            "Bản biểu mẫu hướng dẫn nộp trực tiếp, trong khi thủ tục còn cho phép nộp trực tuyến.",
+            "Bản biểu mẫu yêu cầu ảnh không kèm điều kiện thị thực rời; thủ tục chỉ yêu cầu ảnh khi cấp thị thực rời.",
+            "Bản biểu mẫu nói không đeo kính màu; thủ tục nói không đeo kính."
+          ]
+        }
+      ],
+      "supporting_documents": [
+        {
+          "name": {
+            "value": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "Submit in person one completed application form enclosed with passport or International Travel Document"
+              }
+            ],
+            "conflicts": []
+          },
+          "originals": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "required_when": {
+            "operator": "true",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "Submit in person one completed application form enclosed with passport or International Travel Document"
+              }
+            ]
+          }
+        },
+        {
+          "name": {
+            "value": "Một ảnh mới chụp 4 x 6 cm, nền trắng, nhìn thẳng, đầu để trần, không đeo kính màu.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "One recently taken photo in 4x6cm size, with white background, front view, bare head without sunglasses"
+              }
+            ],
+            "conflicts": []
+          },
+          "originals": {
+            "value": "1 photo",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "One recently taken photo in 4x6cm size"
+              }
+            ],
+            "conflicts": []
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "required_when": {
+            "operator": "true",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "Submit in person one completed application form enclosed with passport or International Travel Document and One recently taken photo in 4x6cm size, with white background, front view, bare head without sunglasses at the Immigration Office."
+              }
+            ]
+          }
+        },
+        {
+          "name": {
+            "value": "Giấy tờ chứng minh quan hệ thân nhân.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "Enclose supporting documents to prove the family relationship"
+              }
+            ],
+            "conflicts": []
+          },
+          "originals": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "required_when": {
+            "operator": "in",
+            "criterion_key": "sponsor_type",
+            "values": [
+              "vietnamese_citizen",
+              "foreigner_with_temporary_resident_card",
+              "foreigner_with_permanent_resident_card"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:1",
+                "quote": "Hosting family relative (full name)"
+              },
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "Enclose supporting documents to prove the family relationship"
+              },
+              {
+                "source_id": "form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+                "locator": "page:2",
+                "quote": "Be cerified by the head of the organization if the sponsor is an organisation or a foreigner with Temporary Resident Card. Tr ng h p công dân Vi t Nam, ng i n c ngoài có th th ng trú m i, b o lãnh, thì Tr ng Công an ph ng, xã ườ ợ ệ ườ ướ ẻ ườ ờ ả ưở ườ xác nh n các n i dung t i đi m 2 M c II. ậ ộ ạ ể ụ Be cerified by the Chief of the local Ward/Commune Public Security where the sponsor is residing permanently if the sponsor is a Vietnamese citizen or a foreigner with Permanent Resident Card."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "file_hash": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+      "form_code": {
+        "value": "NA5",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+            "locator": "page:1",
+            "quote": "Mẫu (Form) NA5"
+          }
+        ],
+        "conflicts": []
+      },
+      "official_title": {
+        "value": "TỜ KHAI ĐỀ NGHỊ CẤP THỊ THỰC, GIA HẠN TẠM TRÚ",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+            "locator": "page:1",
+            "quote": "TỜ KHAI ĐỀ NGHỊ CẤP THỊ THỰC, GIA HẠN TẠM TRÚ (1)"
+          }
+        ],
+        "conflicts": []
+      },
+      "aliases": [
+        {
+          "text": "APPLICATION FORM FOR VISA ISSUANCE, STAY EXTENSION",
+          "language": "en",
+          "origin": "source",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:1",
+              "quote": "APPLICATION FORM FOR VISA ISSUANCE, STAY EXTENSION"
+            }
+          ]
+        },
+        {
+          "text": "Mẫu NA5 theo Thông tư 70/2026/TT-BCA",
+          "language": "vi",
+          "origin": "generated",
+          "source_refs": []
+        },
+        {
+          "text": "NA5 visa issuance and temporary stay extension form, 2026 reference",
+          "language": "en",
+          "origin": "generated",
+          "source_refs": []
+        }
+      ],
+      "version": {
+        "value": "70/2026/TT-BCA ngày 25 tháng 5 năm 2026",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+            "locator": "page:1",
+            "quote": "Kèm theo Thông tư số 70/2026/TT-BCA ngày 25 tháng 5 năm 2026"
+          }
+        ],
+        "conflicts": []
+      },
+      "effective_from": {
+        "value": "2026-07-01",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "registry:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+            "locator": "form-association",
+            "quote": "\"effective_from\":\"2026-07-01\""
+          }
+        ],
+        "conflicts": []
+      },
+      "effective_to": {
+        "value": null,
+        "status": "unknown",
+        "source_refs": [],
+        "conflicts": []
+      },
+      "required_when": {
+        "operator": "unknown",
+        "criterion_key": null,
+        "values": [],
+        "children": [],
+        "source_refs": [
+          {
+            "source_id": "registry:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+            "locator": "form-association",
+            "quote": "\"association_method\":\"filename_fallback\""
+          },
+          {
+            "source_id": "primary",
+            "locator": "section:2:Thành phần hồ sơ",
+            "quote": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an."
+          }
+        ]
+      },
+      "completed_by": [
+        {
+          "value": "Người nước ngoài đang tạm trú ở Việt Nam; mỗi người khai một bản.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:1",
+              "quote": "Dùng cho người nước ngoài đang tạm trú ở Việt Nam"
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "(1) Mỗi người khai 1 bản"
+            }
+          ],
+          "conflicts": []
+        }
+      ],
+      "signed_by": [
+        {
+          "value": "Người đề nghị ký, ghi rõ họ tên.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "Người đề nghị The applicant (ký, ghi rõ họ tên) Signature, full name"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Người bảo lãnh ký, ghi rõ họ tên.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "Người bảo lãnh The sponsor (ký, ghi rõ họ tên) Signature, full name"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Người xác nhận ký, ghi rõ họ tên, chức vụ và đóng dấu.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "Xác nhận (6) Certified by (ký, ghi rõ họ tên, chức vụ, đóng dấu) Signature, full name, title and stamp"
+            }
+          ],
+          "conflicts": []
+        }
+      ],
+      "certified_by": [
+        {
+          "value": "Thủ trưởng cơ quan, tổ chức xác nhận khi bên mời, bảo lãnh là cơ quan, tổ chức hoặc người nước ngoài có thẻ tạm trú.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:3",
+              "quote": "(6) Trường hợp do cơ quan, tổ chức mời, bảo lãnh, hoặc người nước ngoài có thẻ tạm trú mời, bảo lãnh thì thủ trưởng cơ quan, tổ chức xác nhận."
+            }
+          ],
+          "conflicts": []
+        }
+      ],
+      "instructions": [
+        {
+          "value": "Registry liên kết bản này bằng filename_fallback; việc thủ tục chấp nhận đúng bản 70/2026/TT-BCA chưa được xác lập.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "registry:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "form-association",
+              "quote": "\"association_method\":\"filename_fallback\""
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Khai họ tên bằng chữ in hoa; ghi rõ loại hộ chiếu phổ thông, công vụ, ngoại giao hoặc giấy tờ có giá trị đi lại quốc tế.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:1",
+              "quote": "1. Họ tên (chữ in hoa):"
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "(3) Ghi rõ loại hộ chiếu phổ thông, công vụ, ngoại giao hoặc giấy tờ có giá trị đi lại quốc tế."
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Mỗi người khai một bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế. Khi cấp thị thực rời, ảnh mới phải có cỡ 4 x 6 cm, nền trắng, nhìn thẳng, không đội mũ, không đeo kính và trang phục lịch sự.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "(1) Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế, nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp, cỡ 4cm x 6cm, phông nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự."
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Ghi chú quốc tịch hiện nay dẫn quy định chỉ công nhận quốc tịch Việt Nam đối với công dân Việt Nam đồng thời có quốc tịch nước ngoài trong quan hệ với cơ quan có thẩm quyền Việt Nam trên lãnh thổ Việt Nam, trừ điều ước quốc tế có quy định khác; đồng thời dẫn nghĩa vụ sử dụng giấy tờ xuất nhập cảnh do cơ quan có thẩm quyền Việt Nam cấp để xuất cảnh, nhập cảnh.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "“Trên lãnh thổ Việt Nam, Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam chỉ công nhận quốc tịch Việt Nam đối với công dân Việt Nam đồng thời có quốc tịch nước ngoài trong quan hệ với cơ quan có thẩm quyền của Việt Nam, trừ trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác.”"
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "công dân Việt Nam có nghĩa vụ: “Sử dụng giấy tờ xuất nhập cảnh do cơ quan có thẩm quyền của Việt Nam cấp để xuất cảnh, nhập cảnh.”."
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Khai thông tin cơ quan, tổ chức hoặc thân nhân mời, bảo lãnh. Mục số thẻ thường trú hoặc thẻ tạm trú cùng ngày cấp, cơ quan cấp áp dụng khi người nước ngoài bảo lãnh thân nhân; mục quan hệ yêu cầu kèm giấy tờ chứng minh.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:1",
+              "quote": "II. Cơ quan/tổ chức hoặc thân nhân ở Việt Nam mời, bảo lãnh:"
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:1",
+              "quote": "Thẻ thường trú/Thẻ tạm trú số (4):"
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "(4) Đối với trường hợp người nước ngoài bảo lãnh cho thân nhân. In cases of foreigners sponsoring family members. (5) Kèm theo giấy tờ chứng minh quan hệ."
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Biểu mẫu có lựa chọn cấp thị thực một lần hoặc nhiều lần và ngày hết giá trị; có mục gia hạn tạm trú đến ngày, lý do và nội dung trình bày thêm.",
+          "status": "supported",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "1. Cấp thị thực: một lần nhiều lần có giá trị đến ngày: ......../........./..........."
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "2. Gia hạn tạm trú đến ngày: ........../............/............."
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "IV. Những điều cần trình bày thêm:"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "value": "Ghi chú tiếng Việt yêu cầu 01 ảnh khi cấp thị thực rời; bản tiếng Anh yêu cầu 2 ảnh và còn ghi nộp trực tiếp. Số ảnh giữa hai ngôn ngữ mâu thuẫn; cách nộp trực tiếp trong tiếng Anh khác các lựa chọn nộp của thủ tục.",
+          "status": "conflict",
+          "source_refs": [
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "(1) Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế, nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp, cỡ 4cm x 6cm, phông nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự."
+            },
+            {
+              "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+              "locator": "page:2",
+              "quote": "Submit in person one completed application form enclosed with passport or International Travel Document, in case of issue separate visa, enclose 2 recently taken photos in 4cm x 6cm size, with white background, face looking straight, no hat, no glasses, polite clothes."
+            },
+            {
+              "source_id": "primary",
+              "locator": "section:0:Trình tự thực hiện",
+              "quote": "Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an"
+            }
+          ],
+          "conflicts": [
+            "01 ảnh trong tiếng Việt so với 2 ảnh trong tiếng Anh.",
+            "Tiếng Anh hướng dẫn nộp trực tiếp; thủ tục có thêm kênh trực tuyến."
+          ]
+        }
+      ],
+      "supporting_documents": [
+        {
+          "name": {
+            "value": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "(1) Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế"
+              }
+            ],
+            "conflicts": []
+          },
+          "originals": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "required_when": {
+            "operator": "true",
+            "criterion_key": null,
+            "values": [],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "(1) Mỗi người khai 1 bản, kèm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế"
+              }
+            ]
+          }
+        },
+        {
+          "name": {
+            "value": "Ảnh mới chụp 4 x 6 cm, nền trắng, nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "ảnh mới chụp, cỡ 4cm x 6cm, phông nền trắng, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự."
+              }
+            ],
+            "conflicts": []
+          },
+          "originals": {
+            "value": "01 ảnh theo tiếng Việt; 2 ảnh theo tiếng Anh.",
+            "status": "conflict",
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp"
+              },
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "in case of issue separate visa, enclose 2 recently taken photos"
+              }
+            ],
+            "conflicts": [
+              "Hai ngôn ngữ của cùng biểu mẫu quy định số ảnh khác nhau; chưa chọn một số lượng để thay thế số còn lại."
+            ]
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "required_when": {
+            "operator": "eq",
+            "criterion_key": "visa_format",
+            "values": ["separate"],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01 ảnh mới chụp"
+              },
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "in case of issue separate visa, enclose 2 recently taken photos"
+              }
+            ]
+          }
+        },
+        {
+          "name": {
+            "value": "Giấy tờ chứng minh quan hệ thân nhân.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "(5) Kèm theo giấy tờ chứng minh quan hệ."
+              }
+            ],
+            "conflicts": []
+          },
+          "originals": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "copies": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "certification": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [],
+            "conflicts": []
+          },
+          "required_when": {
+            "operator": "in",
+            "criterion_key": "sponsor_type",
+            "values": [
+              "vietnamese_citizen",
+              "foreigner_with_temporary_resident_card",
+              "foreigner_with_permanent_resident_card"
+            ],
+            "children": [],
+            "source_refs": [
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:1",
+                "quote": "2. Thân nhân bảo lãnh (Họ tên):"
+              },
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:1",
+                "quote": "Thẻ thường trú/Thẻ tạm trú số (4):"
+              },
+              {
+                "source_id": "form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+                "locator": "page:2",
+                "quote": "(4) Đối với trường hợp người nước ngoài bảo lãnh cho thân nhân. In cases of foreigners sponsoring family members. (5) Kèm theo giấy tờ chứng minh quan hệ."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "missing_information": [
+    "Ngày bắt đầu và kết thúc hiệu lực của chính thủ tục chưa được cung cấp; ngày truy xuất và ngày hiệu lực của biểu mẫu không xác lập hiệu lực thủ tục.",
+    "Chưa xác lập bản NA5 cụ thể được chấp nhận: thủ tục dẫn 22/2023/TT-BCA, bản direct_download ghi 04/2015/TT-BCA, bản filename_fallback ghi 70/2026/TT-BCA.",
+    "Không có nội dung đầy đủ của khoản 2 Điều 16 hoặc khoản 1 Điều 45 được dẫn chiếu; không tự bổ sung yêu cầu từ trí nhớ pháp luật.",
+    "Cần làm rõ phạm vi và cách kết hợp của cụm “và không thuộc diện chưa cho nhập cảnh Việt Nam hoặc không thuộc diện tạm hoãn xuất cảnh” trước khi xây dựng phép đánh giá tự động.",
+    "Chưa có căn cứ để coi hai nhánh bảo lãnh trong điều kiện thủ tục là danh sách đầy đủ, hoặc để kết hợp mọi nhánh thành các điều kiện đồng thời bắt buộc.",
+    "Nguồn thủ tục yêu cầu hộ chiếu hợp lệ nhưng danh mục hồ sơ chấp nhận hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế; cần xác nhận cách áp dụng điều kiện hợp lệ đối với giấy tờ thay thế.",
+    "Không nêu số lượng bản chính, bản sao hoặc yêu cầu chứng thực riêng của giấy tờ chứng minh quan hệ.",
+    "Không nêu số tiền phí chuyển phát hoặc thời gian vận chuyển bưu chính.",
+    "Chưa nêu quy tắc lựa chọn mức phí khi nhiều mô tả cùng áp dụng, chẳng hạn người dưới 14 tuổi đồng thời xin thị thực nhiều lần.",
+    "Bản NA5 tham chiếu 70/2026/TT-BCA không cung cấp nhánh xác nhận cho công dân Việt Nam hoặc người nước ngoài có thẻ thường trú; không chuyển hướng dẫn của bản 2015 sang bản này.",
+    "Không có bằng chứng về việc một biểu mẫu thay thế biểu mẫu khác, hoặc về thủ tục bị thay thế.",
+    "Các điều kiện định lượng thời hạn trong bảng phí không tự xác lập quyền được cấp thị thực với thời hạn tương ứng."
+  ],
+  "issues": [
+    "Đây là hồ sơ trích xuất dự thảo để xác thực và rà soát; việc trích xuất thành công không xác nhận các nguồn còn hiệu lực tại thời điểm hiện tại.",
+    "Các giá trị unknown, null hoặc câu trả lời bị thiếu phải giữ trạng thái chưa biết khi đánh giá; không được tự chuyển thành không đủ điều kiện.",
+    "Điều kiện recipient_requirements giữ phần kiểm tra pháp lý nhập cảnh/xuất cảnh ở trạng thái unknown; không sửa từ “hoặc” thành “và” hoặc suy diễn thứ tự ưu tiên toán tử.",
+    "Các rule organization_sponsor_branch và vietnamese_family_sponsor_branch mô tả từng nhánh có điều kiện; không yêu cầu một hồ sơ đồng thời thỏa mãn cả hai nhánh.",
+    "Không tạo loại trừ chung từ điều kiện khẳng định hoặc từ phủ định của một điều kiện. Cụm “không bao gồm doanh nghiệp, HTX” được giữ trong đúng nhãn đối tượng tổ chức; nguồn không đủ rõ để suy ra lệnh cấm bảo lãnh chung cho doanh nghiệp hoặc HTX.",
+    "Danh mục đối tượng thực hiện và các vai trò bảo lãnh trong phần điều kiện có phạm vi diễn đạt khác nhau; không đồng nhất người nộp, người bảo lãnh và người được cấp thị thực.",
+    "Chỉ xác định action_type là issue theo danh tính thủ tục. Các mục gia hạn tạm trú, bổ sung, sửa đổi và chuyển ngang xuất hiện trong điều kiện, biểu mẫu hoặc bảng phí được giữ theo ngữ cảnh, không tự mở rộng danh tính thủ tục.",
+    "Danh mục phí có hai khoản 5 USD và hai khoản 25 USD với căn cứ khác nhau; các khoản này được giữ riêng, không khử trùng lặp hoặc cộng tất cả thành tổng phí.",
+    "Lệ phí “Không” không có nghĩa toàn bộ thủ tục miễn phí; biểu phí và phí chuyển phát được giữ riêng.",
+    "Kênh bưu chính được mô tả là gửi bổ sung hồ sơ và hỗ trợ hồ sơ trực tuyến; chưa có căn cứ để coi đây là kênh khởi tạo hồ sơ độc lập hoàn toàn.",
+    "Dòng hồ sơ trực tuyến có số lượng 0 bản chính, 0 bản sao là dòng hướng dẫn vận chuyển và chứng thực; không làm mất yêu cầu 1 bản chính hộ chiếu hoặc giấy tờ đi lại quốc tế.",
+    "Không suy ra giới hạn địa lý từ hai địa chỉ tiếp nhận hoặc cấp Trung ương. Điều kiện hiện diện/cư trú tại Việt Nam có căn cứ riêng trong phần yêu cầu.",
+    "Bản direct_download tham chiếu 2015 có hướng dẫn ảnh và nộp trực tiếp khác mô tả thủ tục. Bản filename_fallback tham chiếu 2026 có mâu thuẫn nội bộ 01 ảnh tiếng Việt và 2 ảnh tiếng Anh.",
+    "Ghi chú quốc tịch kép của bản 2026 được giữ như hướng dẫn riêng của bản đó, bao gồm ngoại lệ điều ước quốc tế; không dùng ghi chú này để tự tạo loại trừ đối với người Việt Nam mang hộ chiếu nước ngoài.",
+    "Văn bản tiếng Việt của bản 2015 bị lỗi trích xuất ký tự; tên tiếng Anh và các đoạn tiếng Anh nguyên văn được sử dụng khi có thể, không tạo lại trích dẫn tiếng Việt đã sửa.",
+    "Các yêu cầu supporting_documents trong mỗi form_relationship chỉ mô tả nội dung của chính biểu mẫu đó; required_when của toàn bộ quan hệ biểu mẫu vẫn unknown cho đến khi xác nhận phiên bản được chấp nhận."
+  ]
+}

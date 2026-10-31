@@ -1,0 +1,13 @@
+{
+  "sha256": "3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+  "family": "NA5",
+  "original": "data/forms/_objects/3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5/NA5--3939f22cebb5.doc",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": null,
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {},
+  "mapping_metadata": {},
+  "superseded_by_sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+}

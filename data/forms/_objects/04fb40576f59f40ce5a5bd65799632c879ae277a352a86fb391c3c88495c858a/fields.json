@@ -1,0 +1,407 @@
+[
+  {
+    "bbox": [
+      221.0,
+      258.500732421875,
+      443.29626125759546,
+      272.500732421875
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "..........................................................2. Gi i tính: ",
+    "field_id": "p1_f1",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      159.46170261928012,
+      294.70074462890625,
+      186.8822711762928,
+      308.70074462890625
+    ],
+    "page": 1,
+    "label": "3. Sinh ngày",
+    "owner": "unknown",
+    "evidence": "3. Sinh ngày……..tháng….. năm……….N i sinh (",
+    "field_id": "p1_f2",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      221.1579818725586,
+      294.70074462890625,
+      241.72340829031808,
+      308.70074462890625
+    ],
+    "page": 1,
+    "label": "3. Sinh ngày……..tháng",
+    "owner": "unknown",
+    "evidence": "3. Sinh ngày……..tháng….. năm……….N i sinh (",
+    "field_id": "p1_f3",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      269.1439768473307,
+      294.70074462890625,
+      296.5645454043434,
+      308.70074462890625
+    ],
+    "page": 1,
+    "label": "3. Sinh ngày……..tháng….. năm",
+    "owner": "unknown",
+    "evidence": "3. Sinh ngày……..tháng….. năm……….N i sinh (",
+    "field_id": "p1_f4",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      310.80078125,
+      189.1999969482422,
+      324.80078125
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "………………........",
+    "field_id": "p1_f5",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      136.6257054255559,
+      347.0007629394531,
+      162.09386620154748,
+      361.0007629394531
+    ],
+    "page": 1,
+    "label": "c p:……/",
+    "owner": "unknown",
+    "evidence": "c p:……/…../……",
+    "field_id": "p1_f6",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      388.3007507324219,
+      451.70001220703125,
+      402.3007507324219
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "………...............................................................................................",
+    "field_id": "p1_f7",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      408.4007568359375,
+      570.7000122070312,
+      422.4007568359375
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "……….................................................................................................................................",
+    "field_id": "p1_f8",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      444.60076904296875,
+      472.70001220703125,
+      458.60076904296875
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "………………………………………………………………………….",
+    "field_id": "p1_f9",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      364.97055796030406,
+      484.8007507324219,
+      508.27001953125,
+      498.8007507324219
+    ],
+    "page": 1,
+    "label": "chi u",
+    "owner": "unknown",
+    "evidence": "chi u..............................……",
+    "field_id": "p1_f10",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      106.78047090418198,
+      500.9007568359375,
+      129.5812582876168,
+      514.9007568359375
+    ],
+    "page": 1,
+    "label": "c p",
+    "owner": "unknown",
+    "evidence": "c p…….../…........./…..............................",
+    "field_id": "p1_f11",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      134.14141576430376,
+      500.9007568359375,
+      179.7429905311734,
+      514.9007568359375
+    ],
+    "page": 1,
+    "label": "c p…….../",
+    "owner": "unknown",
+    "evidence": "c p…….../…........./…..............................",
+    "field_id": "p1_f12",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      184.3031480078604,
+      500.9007568359375,
+      325.66802978515625,
+      514.9007568359375
+    ],
+    "page": 1,
+    "label": "c p…….../…........./",
+    "owner": "unknown",
+    "evidence": "c p…….../…........./…..............................",
+    "field_id": "p1_f13",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      338.15482230808425,
+      521.0007934570312,
+      393.848644754161,
+      535.0007934570312
+    ],
+    "page": 1,
+    "label": "h n",
+    "owner": "unknown",
+    "evidence": "h n..…….../….……/………...C",
+    "field_id": "p1_f14",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      401.80490510360056,
+      521.0007934570312,
+      433.6299465013587,
+      535.0007934570312
+    ],
+    "page": 1,
+    "label": "h n..…….../",
+    "owner": "unknown",
+    "evidence": "h n..…….../….……/………...C",
+    "field_id": "p1_f15",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      441.58620685079825,
+      521.0007934570312,
+      489.3237689474355,
+      535.0007934570312
+    ],
+    "page": 1,
+    "label": "h n..…….../….……/",
+    "owner": "unknown",
+    "evidence": "h n..…….../….……/………...C",
+    "field_id": "p1_f16",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      107.91936707078365,
+      537.1007690429688,
+      304.2760009765625,
+      551.1007690429688
+    ],
+    "page": 1,
+    "label": "c p:",
+    "owner": "unknown",
+    "evidence": "c p:.....................................................",
+    "field_id": "p1_f17",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.0999984741211,
+      577.3007202148438,
+      570.5999755859375,
+      591.3007202148438
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": ".............................................................................................................................................",
+    "field_id": "p1_f18",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.0999984741211,
+      597.4007568359375,
+      570.5999755859375,
+      611.4007568359375
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": ".............................................................................................................................................",
+    "field_id": "p1_f19",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      617.5007934570312,
+      570.7000122070312,
+      631.5007934570312
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": ".............................................................................................................................................",
+    "field_id": "p1_f20",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      633.6007690429688,
+      570.7000122070312,
+      647.6007690429688
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": ".............................................................................................................................................",
+    "field_id": "p1_f21",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      649.7007446289062,
+      570.7000122070312,
+      663.7007446289062
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": ".............................................................................................................................................",
+    "field_id": "p1_f22",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      77.19999694824219,
+      665.8007202148438,
+      570.7000122070312,
+      679.8007202148438
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": ".............................................................................................................................................",
+    "field_id": "p1_f23",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      334.32252502441406,
+      738.30078125,
+      365.17153015136716,
+      752.30078125
+    ],
+    "page": 1,
+    "label": "Làm t i",
+    "owner": "unknown",
+    "evidence": "   Làm t i…………, ngày…….tháng…..…năm………….",
+    "field_id": "p1_f24",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      411.4450378417969,
+      738.30078125,
+      434.58179168701173,
+      752.30078125
+    ],
+    "page": 1,
+    "label": "Làm t i…………, ngày",
+    "owner": "unknown",
+    "evidence": "   Làm t i…………, ngày…….tháng…..…năm………….",
+    "field_id": "p1_f25",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      473.14304809570314,
+      738.30078125,
+      503.99205322265624,
+      752.30078125
+    ],
+    "page": 1,
+    "label": "Làm t i…………, ngày…….tháng",
+    "owner": "unknown",
+    "evidence": "   Làm t i…………, ngày…….tháng…..…năm………….",
+    "field_id": "p1_f26",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      527.1288070678711,
+      738.30078125,
+      565.6900634765625,
+      752.30078125
+    ],
+    "page": 1,
+    "label": "Làm t i…………, ngày…….tháng…..…năm",
+    "owner": "unknown",
+    "evidence": "   Làm t i…………, ngày…….tháng…..…năm………….",
+    "field_id": "p1_f27",
+    "field_type": "text",
+    "requiredness": "unknown"
+  }
+]

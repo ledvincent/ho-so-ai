@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.env
+tmp/
+output/
+data/parsed/
+data/derived/
+data/inbox/
+data/_store/
+data/archive/*
+!data/archive/raw/
+data/archive/raw/*
+!data/archive/raw/1.*.html
+!data/archive/raw/manifest.json
+data/raw/probe.html

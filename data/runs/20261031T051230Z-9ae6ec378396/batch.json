@@ -1,0 +1,227 @@
+{
+  "batch_id": "089742a3-2445-454e-8837-73856748abab",
+  "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+  "status": "complete",
+  "selected_codes": [
+    "1.003326",
+    "1.001146",
+    "1.003342",
+    "1.000771"
+  ],
+  "procedures": [
+    {
+      "code": "1.003326",
+      "status": "blocked",
+      "run_id": "7aca80ca-736c-4b81-80bc-9405f1fe27d1",
+      "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+      "issues": [
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      ],
+      "acquisition": [
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003326",
+          "mode": "live",
+          "sha256": "8939584eb161b6a3702604fc145e60beae6c68974c20331c211b9c415a439994"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26283",
+          "mode": "live",
+          "sha256": "05bb60b24cc46a874d74a495149194b9eb5946baf640ec97cb5b508a1abd52b6"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_07/1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+          "mode": "live_download",
+          "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+        }
+      ],
+      "changed_paths": [
+        "/document/sections",
+        "/profile"
+      ],
+      "source_changed": false,
+      "full_procedure_changed": true,
+      "aliases": 4,
+      "examples": 6,
+      "criteria": 14,
+      "citations": 239,
+      "facts_ready": false,
+      "parser_before": "vpcp-by-code-2",
+      "parser_after": "vpcp-by-code-3",
+      "existing_sections_changed": [],
+      "added_sections": [
+        "Thông tin dịch vụ và đối tượng thực hiện"
+      ],
+      "supported_facts": 71,
+      "unknown_facts": 20,
+      "conflicting_facts": 7
+    },
+    {
+      "code": "1.001146",
+      "status": "blocked",
+      "run_id": "dcf16088-c129-4c22-a8c3-71e05edcdef5",
+      "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+      "issues": [
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      ],
+      "acquisition": [
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146",
+          "mode": "live",
+          "sha256": "6f28545a46f4ff0022d95ae8b2e7c89121dcd68f7d6f04bb1d59e7f3cc406b09"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=36272",
+          "mode": "live",
+          "sha256": "e7094f3817b239dc302785b118fe2ce4c4272bc4b38f44ca0a6ed908fbe0dbdf"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_06/1655667280_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+          "mode": "live_download",
+          "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+        }
+      ],
+      "changed_paths": [
+        "/document/sections",
+        "/forms",
+        "/profile"
+      ],
+      "source_changed": false,
+      "full_procedure_changed": true,
+      "aliases": 4,
+      "examples": 6,
+      "criteria": 10,
+      "citations": 208,
+      "facts_ready": false,
+      "parser_before": "vpcp-by-code-2",
+      "parser_after": "vpcp-by-code-3",
+      "existing_sections_changed": [],
+      "added_sections": [
+        "Thông tin dịch vụ và đối tượng thực hiện"
+      ],
+      "supported_facts": 65,
+      "unknown_facts": 19,
+      "conflicting_facts": 10
+    },
+    {
+      "code": "1.003342",
+      "status": "blocked",
+      "run_id": "8a4b0af7-f2ba-41f8-a176-001f1b03bf4e",
+      "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+      "issues": [
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
+        "Attachment failed https://dichvucong.bocongan.gov.vn/public_dir/tttl/10/giayto/2020_11/1604957136_6-Mau_NA5.doc: Date requires separate day/month/year: applicant_date_of_birth",
+        "Required form codes not found in downloaded files: NA5",
+        "Stored form mapping failed 3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5: Date requires separate day/month/year: applicant_date_of_birth"
+      ],
+      "acquisition": [
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+          "mode": "live",
+          "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26284",
+          "mode": "live",
+          "sha256": "286ba2e7860fe2a2632cefe3e4359448e892a392d01875393c56adb79806471c"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/10/giayto/2020_11/1604957136_6-Mau_NA5.doc",
+          "mode": "live_download",
+          "sha256": "3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5"
+        }
+      ],
+      "changed_paths": [
+        "/document/sections",
+        "/forms",
+        "/profile"
+      ],
+      "source_changed": false,
+      "full_procedure_changed": true,
+      "aliases": 4,
+      "examples": 6,
+      "criteria": 12,
+      "citations": 248,
+      "facts_ready": false,
+      "parser_before": "vpcp-by-code-2",
+      "parser_after": "vpcp-by-code-3",
+      "existing_sections_changed": [],
+      "added_sections": [
+        "Thông tin dịch vụ và đối tượng thực hiện"
+      ],
+      "supported_facts": 114,
+      "unknown_facts": 23,
+      "conflicting_facts": 4
+    },
+    {
+      "code": "1.000771",
+      "status": "blocked",
+      "run_id": "92e728a5-6a0b-4cf0-9570-40122053c516",
+      "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+      "issues": [
+        "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+      ],
+      "acquisition": [
+        {
+          "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000771",
+          "mode": "live",
+          "sha256": "15079cc5be2bbc7bdfb54a0a046454e122a92db0b1c5b8499784ce2ca0e1beb9"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26248",
+          "mode": "live",
+          "sha256": "3435565dd8530f2eb1ce92fe40ae2245361b8336e1fd9449e92a69de9caaa12a"
+        },
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780",
+          "mode": "download_failed",
+          "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+        },
+        {
+          "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_07/1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+          "mode": "live_download",
+          "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+        }
+      ],
+      "changed_paths": [
+        "/document/sections",
+        "/forms",
+        "/profile"
+      ],
+      "source_changed": false,
+      "full_procedure_changed": true,
+      "aliases": 6,
+      "examples": 6,
+      "criteria": 7,
+      "citations": 189,
+      "facts_ready": false,
+      "parser_before": "vpcp-by-code-2",
+      "parser_after": "vpcp-by-code-3",
+      "existing_sections_changed": [],
+      "added_sections": [
+        "Thông tin dịch vụ và đối tượng thực hiện"
+      ],
+      "supported_facts": 69,
+      "unknown_facts": 16,
+      "conflicting_facts": 6
+    }
+  ],
+  "started_at": "2026-10-31T05:12:30.123104+00:00",
+  "comparisons": 6,
+  "comparison_citations": 60,
+  "completed_at": "2026-10-31T05:42:13.212340+00:00"
+}

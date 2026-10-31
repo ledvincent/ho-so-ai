@@ -1,0 +1,647 @@
+[
+  {
+    "bbox": [
+      283.8811120605469,
+      188.49996948242188,
+      536.7479858398438,
+      200.49996948242188
+    ],
+    "page": 1,
+    "label": "1- H tên (ch in hoa):",
+    "owner": "unknown",
+    "evidence": "1- H tên (ch in hoa): …………………………………………………………………………",
+    "field_id": "p1_f1",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      511.16083984375,
+      216.10000610351562,
+      558.0760498046875,
+      228.10000610351562
+    ],
+    "page": 1,
+    "label": "3- Sinh ngày …. tháng …. năm",
+    "owner": "unknown",
+    "evidence": "3- Sinh ngày …. tháng …. năm…………………",
+    "field_id": "p1_f2",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      203.54358793559828,
+      243.69998168945312,
+      309.41110363341215,
+      255.69998168945312
+    ],
+    "page": 1,
+    "label": "ố t ch g c:",
+    "owner": "unknown",
+    "evidence": "ố t ch g c: ……………………………………5- Qu c t ch hi n nay: ………………….",
+    "field_id": "p1_f3",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      483.33630799410633,
+      243.69998168945312,
+      543.83203125,
+      255.69998168945312
+    ],
+    "page": 1,
+    "label": "ố t ch g c: ……………………………………5- Qu c t ch hi n nay:",
+    "owner": "unknown",
+    "evidence": "ố t ch g c: ……………………………………5- Qu c t ch hi n nay: ………………….",
+    "field_id": "p1_f4",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      281.9731825286267,
+      271.29998779296875,
+      541.3560180664062,
+      283.29998779296875
+    ],
+    "page": 1,
+    "label": "6- Ngh nghi p/ch c v :",
+    "owner": "unknown",
+    "evidence": "6- Ngh nghi p/ch c v :………………………………………………………………………..",
+    "field_id": "p1_f5",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      374.89509773254395,
+      298.8999938964844,
+      439.2717867957221,
+      310.8999938964844
+    ],
+    "page": 1,
+    "label": "7- H chi u/gi y t có giá tr đi l i qu c t s :",
+    "owner": "unknown",
+    "evidence": "7- H chi u/gi y t có giá tr đi l i qu c t s :……………….……… lo i (2):……………….",
+    "field_id": "p1_f6",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      503.64847585890027,
+      298.8999938964844,
+      548.712158203125,
+      310.8999938964844
+    ],
+    "page": 1,
+    "label": "7- H chi u/gi y t có giá tr đi l i qu c t s :……………….……… lo i (2):",
+    "owner": "unknown",
+    "evidence": "7- H chi u/gi y t có giá tr đi l i qu c t s :……………….……… lo i (2):……………….",
+    "field_id": "p1_f7",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      166.16071565689577,
+      326.5,
+      276.5616957141507,
+      338.5
+    ],
+    "page": 1,
+    "label": "C quan c p:",
+    "owner": "unknown",
+    "evidence": "C quan c p:……………………………………. có giá tr đ n ngày :………../…./…………..",
+    "field_id": "p1_f8",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      431.1230677943076,
+      326.5,
+      467.92339448005924,
+      338.5
+    ],
+    "page": 1,
+    "label": "C quan c p:……………………………………. có giá tr đ n ngày :",
+    "owner": "unknown",
+    "evidence": "C quan c p:……………………………………. có giá tr đ n ngày :………../…./…………..",
+    "field_id": "p1_f9",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      497.3636558286605,
+      326.5,
+      541.5240478515625,
+      338.5
+    ],
+    "page": 1,
+    "label": "C quan c p:……………………………………. có giá tr đ n ngày :………../…./",
+    "owner": "unknown",
+    "evidence": "C quan c p:……………………………………. có giá tr đ n ngày :………../…./…………..",
+    "field_id": "p1_f10",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      250.5680131178636,
+      354.1000061035156,
+      280.09801600529596,
+      366.1000061035156
+    ],
+    "page": 1,
+    "label": "8- Nh p c nh Vi t Nam ngày:",
+    "owner": "unknown",
+    "evidence": "8- Nh p c nh Vi t Nam ngày: …….../….../………….              qua c a kh u:…………………",
+    "field_id": "p1_f11",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      286.00401658278247,
+      354.1000061035156,
+      309.6280188927284,
+      366.1000061035156
+    ],
+    "page": 1,
+    "label": "8- Nh p c nh Vi t Nam ngày: …….../",
+    "owner": "unknown",
+    "evidence": "8- Nh p c nh Vi t Nam ngày: …….../….../………….              qua c a kh u:…………………",
+    "field_id": "p1_f12",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      315.53401947021484,
+      354.1000061035156,
+      345.0640223576472,
+      366.1000061035156
+    ],
+    "page": 1,
+    "label": "8- Nh p c nh Vi t Nam ngày: …….../….../",
+    "owner": "unknown",
+    "evidence": "8- Nh p c nh Vi t Nam ngày: …….../….../………….              qua c a kh u:…………………",
+    "field_id": "p1_f13",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      504.52603794978216,
+      354.1000061035156,
+      545.8680419921875,
+      366.1000061035156
+    ],
+    "page": 1,
+    "label": "8- Nh p c nh Vi t Nam ngày: …….../….../………….              qua c a kh u:",
+    "owner": "unknown",
+    "evidence": "8- Nh p c nh Vi t Nam ngày: …….../….../………….              qua c a kh u:…………………",
+    "field_id": "p1_f14",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      262.50488094407683,
+      381.6999816894531,
+      542.4599609375,
+      393.6999816894531
+    ],
+    "page": 1,
+    "label": "M c đích nh p c nh:",
+    "owner": "unknown",
+    "evidence": "M c đích nh p c nh:………………………………………………………………….…………",
+    "field_id": "p1_f15",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      260.7866637067097,
+      409.29998779296875,
+      283.95310732213466,
+      421.29998779296875
+    ],
+    "page": 1,
+    "label": "c phép t m trú đ n ngày:",
+    "owner": "unknown",
+    "evidence": "c phép t m trú đ n ngày:……../…..…/……..…..",
+    "field_id": "p1_f16",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      289.7447182259908,
+      409.29998779296875,
+      312.9111618414158,
+      421.29998779296875
+    ],
+    "page": 1,
+    "label": "c phép t m trú đ n ngày:……../",
+    "owner": "unknown",
+    "evidence": "c phép t m trú đ n ngày:……../…..…/……..…..",
+    "field_id": "p1_f17",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      318.702772745272,
+      409.29998779296875,
+      359.2440490722656,
+      421.29998779296875
+    ],
+    "page": 1,
+    "label": "c phép t m trú đ n ngày:……../…..…/",
+    "owner": "unknown",
+    "evidence": "c phép t m trú đ n ngày:……../…..…/……..…..",
+    "field_id": "p1_f18",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      332.8407634388317,
+      436.8999938964844,
+      539.2080688476562,
+      448.8999938964844
+    ],
+    "page": 1,
+    "label": "- Đ a ch t m trú t i Vi t Nam:",
+    "owner": "unknown",
+    "evidence": "- Đ a ch t m trú t i Vi t Nam:…………………………………………………………………",
+    "field_id": "p1_f19",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      214.60000610351562,
+      464.5,
+      538.5999755859375,
+      476.5
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "………………………………………………………………………",
+    "field_id": "p1_f20",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      85.19999694824219,
+      533.5,
+      535.2000122070312,
+      545.5
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "…………………………………………………………………………………………………..",
+    "field_id": "p1_f21",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      211.92260875701905,
+      547.300048828125,
+      537.9000244140625,
+      559.300048828125
+    ],
+    "page": 1,
+    "label": "ỉAddress",
+    "owner": "unknown",
+    "evidence": "ỉAddress …………………………………………………………………………………",
+    "field_id": "p1_f22",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      438.7399990505642,
+      561.1000366210938,
+      541.5,
+      573.1000366210938
+    ],
+    "page": 1,
+    "label": "Contact telephone number/Email",
+    "owner": "unknown",
+    "evidence": "Contact telephone number/Email ……………………………………",
+    "field_id": "p1_f23",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      245.89999389648438,
+      574.9000244140625,
+      536.9000244140625,
+      586.9000244140625
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "……………………………………………………………….",
+    "field_id": "p1_f24",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      147.52499437332153,
+      602.5,
+      168.29999351501465,
+      614.5
+    ],
+    "page": 1,
+    "label": "Sinh ngày",
+    "owner": "unknown",
+    "evidence": "Sinh ngày………tháng……..năm ……. …… ",
+    "field_id": "p1_f25",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      202.92499208450317,
+      602.5,
+      230.624990940094,
+      614.5
+    ],
+    "page": 1,
+    "label": "Sinh ngày………tháng",
+    "owner": "unknown",
+    "evidence": "Sinh ngày………tháng……..năm ……. …… ",
+    "field_id": "p1_f26",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      258.3249897956848,
+      602.5,
+      279.09998893737793,
+      614.5
+    ],
+    "page": 1,
+    "label": "Sinh ngày………tháng……..năm",
+    "owner": "unknown",
+    "evidence": "Sinh ngày………tháng……..năm ……. …… ",
+    "field_id": "p1_f27",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      462.71947719029015,
+      630.1000366210938,
+      550.9442138671875,
+      642.1000366210938
+    ],
+    "page": 1,
+    "label": "ng trú/th t m trú s :",
+    "owner": "unknown",
+    "evidence": "ng trú/th t m trú s : …………………………...",
+    "field_id": "p1_f28",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      155.83033752441406,
+      657.7000122070312,
+      205.27157592773438,
+      669.7000122070312
+    ],
+    "page": 1,
+    "label": "C p ngày:",
+    "owner": "unknown",
+    "evidence": "C p ngày: …………………c quan c p: ",
+    "field_id": "p1_f29",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      290.1000061035156,
+      657.7000122070312,
+      542.0999755859375,
+      669.7000122070312
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "………………………………………………………",
+    "field_id": "p1_f30",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      266.443347507053,
+      685.300048828125,
+      472.7150243123372,
+      697.300048828125
+    ],
+    "page": 1,
+    "label": "i đ ngh :",
+    "owner": "unknown",
+    "evidence": "i đ ngh : ………………………………………………………..(3)",
+    "field_id": "p1_f31",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      291.29998779296875,
+      712.9000244140625,
+      543.2999877929688,
+      724.9000244140625
+    ],
+    "page": 1,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "………………………………………………………",
+    "field_id": "p1_f32",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      214.60000610351562,
+      72.10001373291016,
+      541.5999755859375,
+      84.10001373291016
+    ],
+    "page": 2,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "…………………………………………………………………….....",
+    "field_id": "p2_f33",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      455.95643005371096,
+      113.4999771118164,
+      486.3429313659668,
+      125.4999771118164
+    ],
+    "page": 2,
+    "label": "ầ      có giá tr đ n ngày:",
+    "owner": "unknown",
+    "evidence": "ầ      có giá tr đ n ngày: ……….…/ …….…/",
+    "field_id": "p2_f34",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      498.49753189086914,
+      113.4999771118164,
+      522.8067329406738,
+      125.4999771118164
+    ],
+    "page": 2,
+    "label": "ầ      có giá tr đ n ngày: ……….…/",
+    "owner": "unknown",
+    "evidence": "ầ      có giá tr đ n ngày: ……….…/ …….…/",
+    "field_id": "p2_f35",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      528.9000244140625,
+      113.4999771118164,
+      546.9000244140625,
+      125.4999771118164
+    ],
+    "page": 2,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "…..",
+    "field_id": "p2_f36",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      251.62137315538195,
+      141.10000610351562,
+      274.5760457356771,
+      153.10000610351562
+    ],
+    "page": 2,
+    "label": "2- Gia h n t m trú đ n ngày:",
+    "owner": "unknown",
+    "evidence": "2- Gia h n t m trú đ n ngày: ……../….. /…………. ",
+    "field_id": "p2_f37",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      280.3147138807509,
+      141.10000610351562,
+      297.5307183159722,
+      153.10000610351562
+    ],
+    "page": 2,
+    "label": "2- Gia h n t m trú đ n ngày: ……../",
+    "owner": "unknown",
+    "evidence": "2- Gia h n t m trú đ n ngày: ……../….. /…………. ",
+    "field_id": "p2_f38",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      309.0080546061198,
+      141.10000610351562,
+      337.7013953314887,
+      153.10000610351562
+    ],
+    "page": 2,
+    "label": "2- Gia h n t m trú đ n ngày: ……../….. /",
+    "owner": "unknown",
+    "evidence": "2- Gia h n t m trú đ n ngày: ……../….. /…………. ",
+    "field_id": "p2_f39",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      253.70391965379903,
+      168.69998168945312,
+      537.5,
+      180.69998168945312
+    ],
+    "page": 2,
+    "label": "3- Lý do Reason(s)",
+    "owner": "unknown",
+    "evidence": "3- Lý do Reason(s) ……………………………………………………………………………...",
+    "field_id": "p2_f40",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      448.6919077280405,
+      182.49996948242188,
+      544.4000244140625,
+      194.49996948242188
+    ],
+    "page": 2,
+    "label": "Additional statements:",
+    "owner": "unknown",
+    "evidence": " Additional statements: …………………………………",
+    "field_id": "p2_f41",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      85.19999694824219,
+      196.30001831054688,
+      538.2000122070312,
+      208.30001831054688
+    ],
+    "page": 2,
+    "label": "Unlabelled writable area",
+    "owner": "unknown",
+    "evidence": "…………………………………………………………………………………………………...",
+    "field_id": "p2_f42",
+    "field_type": "text",
+    "requiredness": "unknown"
+  },
+  {
+    "bbox": [
+      437.2176554361979,
+      235.89999389648438,
+      455.992866007487,
+      247.89999389648438
+    ],
+    "page": 2,
+    "label": "Làm t i:……ngày",
+    "owner": "unknown",
+    "evidence": "Làm t i:……ngày…..tháng….năm ….",
+    "field_id": "p2_f43",
+    "field_type": "text",
+    "requiredness": "unknown"
+  }
+]

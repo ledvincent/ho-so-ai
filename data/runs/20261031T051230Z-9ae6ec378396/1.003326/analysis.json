@@ -1,0 +1,179 @@
+{
+  "run_id": "7aca80ca-736c-4b81-80bc-9405f1fe27d1",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003326",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26283",
+  "documents": [
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_07/1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec",
+      "original": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/NA5--c66455c8eee0.doc",
+      "original_filename": "1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "pdf": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/blank.pdf",
+      "field_count": 39,
+      "observed_form_codes": [
+        "NA5"
+      ],
+      "status": "draft",
+      "mapping_metadata": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "completed_at": "2026-10-31T05:10:01.596531+00:00",
+        "cache_path": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/mappings/6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce.json",
+        "input_fingerprint": "6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce"
+      }
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502",
+      "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+      "original": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+      "pdf": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
+      "field_count": 43,
+      "observed_form_codes": [
+        "NA5"
+      ],
+      "status": "draft",
+      "acquisition": "stored_filename_fallback",
+      "mapping_metadata": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "completed_at": "2026-10-31T04:54:09.421376+00:00",
+        "cache_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/mappings/8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26.json",
+        "input_fingerprint": "8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26"
+      }
+    }
+  ],
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003326",
+      "mode": "live",
+      "sha256": "8939584eb161b6a3702604fc145e60beae6c68974c20331c211b9c415a439994"
+    },
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26283",
+      "mode": "live",
+      "sha256": "05bb60b24cc46a874d74a495149194b9eb5946baf640ec97cb5b508a1abd52b6"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_07/1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "mode": "live_download",
+      "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+    }
+  ],
+  "code": "1.003326",
+  "name": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003326",
+    "sha256": "8939584eb161b6a3702604fc145e60beae6c68974c20331c211b9c415a439994",
+    "raw_path": "data/_store/html/8939584eb161b6a3702604fc145e60beae6c68974c20331c211b9c415a439994",
+    "fetched_at": "2026-10-31T05:12:33.442395+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fd27ca760c23502",
+      "label": "NA5.doc"
+    }
+  ],
+  "attachment_source": {
+    "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26283",
+    "sha256": "05bb60b24cc46a874d74a495149194b9eb5946baf640ec97cb5b508a1abd52b6",
+    "raw_path": "data/_store/html/05bb60b24cc46a874d74a495149194b9eb5946baf640ec97cb5b508a1abd52b6",
+    "fetched_at": "2026-10-31T05:12:37.370527+00:00"
+  },
+  "attachment_document": {
+    "name": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+    "sections": [
+      {
+        "heading": "Mã thủ tục",
+        "text_verbatim": "1.003326"
+      },
+      {
+        "heading": "Lĩnh vực",
+        "text_verbatim": "Quản lý xuất nhập cảnh"
+      },
+      {
+        "heading": "Cơ quan thực hiện",
+        "text_verbatim": "Cục quản lý xuất nhập cảnh"
+      },
+      {
+        "heading": "Mức độ cung cấp dịch vụ công trực tuyến",
+        "text_verbatim": "Dịch vụ công trực tuyến một phần"
+      },
+      {
+        "heading": "Cách thức thực hiện",
+        "text_verbatim": "Trực tiếp\nTrực tuyến\nDịch vụ bưu chính"
+      },
+      {
+        "heading": "Trình tự thực hiện",
+        "text_verbatim": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu tiền giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an đề người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ).\nBước 3: Nhận kết quả:\n+ Người đề nghị gia hạn tạm trú trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công trực quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+      },
+      {
+        "heading": "Thời hạn giải quyết",
+        "text_verbatim": "Trực tiếp\n5 Ngày làm việc\nnộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh.\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\nTrực tuyến\n5 Ngày làm việc\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\nDịch vụ bưu chính\n5 Ngày làm việc\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ."
+      },
+      {
+        "heading": "Phí",
+        "text_verbatim": "10 USD/lần"
+      },
+      {
+        "heading": "Lệ Phí",
+        "text_verbatim": "Không"
+      },
+      {
+        "heading": "Thành phần hồ sơ",
+        "text_verbatim": "Tên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nHộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài.\nBản chính: 1\nBản sao: 0\nTrường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0\nBản sao: 0\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023.\nNA5.doc\nBản chính: 1\nBản sao: 0"
+      },
+      {
+        "heading": "Yêu cầu - điều kiện",
+        "text_verbatim": "+ Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam. + Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”. + Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại điểm b khoản 1 Điều 45 Luật nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+      },
+      {
+        "heading": "Căn cứ pháp lý",
+        "text_verbatim": "Luật 47/2014/QH13\nSố: 47/2014/QH13\nLuật 51/2019/QH14\nSố: 51/2019/QH14\nThông tư 25/2021/TT-BTC\nSố: 25/2021/TT-BTC\nLuật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023\nSố: 23/2023/QH15\nThông tư số 22/2023/TT-BCA\nSố: 22/2023/TT-BCA"
+      },
+      {
+        "heading": "Biểu mẫu",
+        "text_verbatim": "File mẫu:\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5).\nTải về"
+      },
+      {
+        "heading": "Kết quả thực hiện",
+        "text_verbatim": "Gia hạn chứng nhận tạm trú"
+      }
+    ]
+  },
+  "form_association_policy": "Filename fallback to preferred shared family version",
+  "profile": {
+    "profile_id": 1,
+    "path": "data/runs/20261031T051230Z-9ae6ec378396/1.003326/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 239,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "6b52f545121b5d3a4a6f726cb7d25c095f39dbbc7a00534bc102733e7796fc87"
+  },
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "facts_ready": false,
+  "status": "blocked"
+}

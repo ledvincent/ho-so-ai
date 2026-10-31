@@ -1,0 +1,5592 @@
+{
+  "inputs": {
+    "version": "visual-fields-2",
+    "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec",
+    "pdf_sha256": "2b84e6b701a8dac4ca01af70d0977894adb392bded4fa2fce5b8c8b3e9788137",
+    "context": "{\"name\": \"Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)\", \"sections\": [{\"heading\": \"Trình tự thực hiện\", \"text_verbatim\": \"Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\\nBước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu tiền giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an đề người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ).\\nBước 3: Nhận kết quả:\\n+ Người đề nghị gia hạn tạm trú trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công trực quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).\"}, {\"heading\": \"Cách thức thực hiện\", \"text_verbatim\": \"Hình thức nộp\\nThời hạn giải quyết\\nPhí, lệ phí\\nMô tả\\nTrực tiếp\\n5 Ngày làm việc\\nLệ phí: 10 USD\\nnộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh.\\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\\nTrực tuyến\\n5 Ngày làm việc\\nLệ phí: 10 USD\\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\\nDịch vụ bưu chính\\n5 Ngày làm việc\\nLệ phí: 10 USD\\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\"}, {\"heading\": \"Thành phần hồ sơ\", \"text_verbatim\": \"Bao gồm\\nTên giấy tờ\\nMẫu đơn, tờ khai\\nSố lượng\\nHộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài.\\nBản chính: 1 - Bản sao: 0\\nTrường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\\nBản chính: 0 - Bản sao: 0\\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023.\\nNA5.doc\\nBản chính: 1 - Bản sao: 0\"}, {\"heading\": \"Cơ quan thực hiện\", \"text_verbatim\": \"Cục quản lý xuất nhập cảnh\"}, {\"heading\": \"Yêu cầu, điều kiện thực hiện\", \"text_verbatim\": \"+ Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam.\\n+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \\\"chưa cho nhập cảnh Việt Nam\\\" hoặc không thuộc diện “tạm hoãn xuất cảnh”.\\n+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại điểm b khoản 1 Điều 45 Luật nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam.\"}]}",
+    "hints": null,
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "provider": "codex"
+  },
+  "input_fingerprint": "6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce",
+  "result": {
+    "form_code": "NA5",
+    "revision_reference": "Ban hành kèm theo thông tư số 04 /2015/TT-BCA ngày 05 tháng 01 năm 2015",
+    "fields": [
+      {
+        "id": "applicant_full_name",
+        "label": "Applicant full name (capital letters)",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 113,
+        "evidence": "I.1: Họ tên (chữ in hoa) / Full name (in capital letters)",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_sex",
+        "label": "Applicant sex",
+        "type": "choice",
+        "owner": "applicant",
+        "group": "applicant",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "male",
+          "female"
+        ],
+        "placements": [
+          {
+            "anchor_id": "p1_a27",
+            "component": "choice",
+            "option": "male"
+          },
+          {
+            "anchor_id": "p1_a28",
+            "component": "choice",
+            "option": "female"
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 1,
+        "evidence": "I.2: Giới tính: Nam / Nữ; Male / Female",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_date_of_birth",
+        "label": "Applicant date of birth",
+        "type": "date",
+        "owner": "applicant",
+        "group": "applicant",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a2",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a3",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a4",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "I.3: Sinh ngày...tháng...năm... / Date of birth (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_nationality_at_birth",
+        "label": "Nationality at birth",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a5",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 26,
+        "evidence": "I.4: Quốc tịch gốc / Nationality at birth",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_current_nationality",
+        "label": "Current nationality",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a6",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 25,
+        "evidence": "I.5: Quốc tịch hiện nay / Current nationality",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_occupation_position",
+        "label": "Occupation or position",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a7",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 78,
+        "evidence": "I.6: Nghề nghiệp/chức vụ / Occupation/position",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_travel_document_number",
+        "label": "Passport or international travel document number",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_travel_document",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a8",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 25,
+        "evidence": "I.7: Hộ chiếu/giấy tờ có giá trị đi lại quốc tế số",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_travel_document_type",
+        "label": "Passport or international travel document type",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_travel_document",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a9",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 21,
+        "evidence": "I.7: loại (2) / Type",
+        "uncertainties": [
+          "Footnote (2) is referenced but its explanatory text is not supplied; permitted type terminology cannot be established."
+        ]
+      },
+      {
+        "id": "applicant_travel_document_issuing_authority",
+        "label": "Travel document issuing authority",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_travel_document",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a10",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 35,
+        "evidence": "I.7: Cơ quan cấp / Issuing authority",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_travel_document_expiry_date",
+        "label": "Travel document expiry date",
+        "type": "date",
+        "owner": "applicant",
+        "group": "applicant_travel_document",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a11",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a12",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a13",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "I.7: có giá trị đến ngày / Expiry date (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_latest_entry_date",
+        "label": "Latest entry date into Vietnam",
+        "type": "date",
+        "owner": "applicant",
+        "group": "applicant_entry_and_stay",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a14",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a15",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a16",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "I.8: Nhập cảnh Việt Nam ngày / Date of the latest entry into Viet Nam (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_entry_port",
+        "label": "Entry port",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_entry_and_stay",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a17",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 28,
+        "evidence": "I.8: qua cửa khẩu / via entry port. Its writable line wraps to the left margin below the entry-date row.",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_entry_purpose",
+        "label": "Purpose of entry",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_entry_and_stay",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a18",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 110,
+        "evidence": "I.8: Mục đích nhập cảnh / Purpose of entry",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_current_stay_permitted_until",
+        "label": "Currently permitted to remain until",
+        "type": "date",
+        "owner": "applicant",
+        "group": "applicant_entry_and_stay",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a19",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a20",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p1_a21",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "I.9: Được phép tạm trú đến ngày / Permitted to remain until (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_temporary_address_vietnam",
+        "label": "Temporary residential address in Vietnam",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_contact",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a22",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 92,
+        "evidence": "I.9: Địa chỉ tạm trú tại Việt Nam; the label wraps before Nam.",
+        "uncertainties": []
+      },
+      {
+        "id": "applicant_phone_email",
+        "label": "Applicant contact telephone number or email",
+        "type": "text",
+        "owner": "applicant",
+        "group": "applicant_contact",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a23",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 100,
+        "evidence": "I.9: Điện thoại liên hệ/Email / Contact telephone number/Email",
+        "uncertainties": [
+          "The form provides one shared blank and does not specify whether telephone, email, or both must be supplied."
+        ]
+      },
+      {
+        "id": "sponsor_type",
+        "label": "Sponsor type",
+        "type": "choice",
+        "owner": "applicant",
+        "group": "sponsor",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "organisation",
+          "family_relative"
+        ],
+        "placements": [],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 1,
+        "evidence": "II: Cơ quan/tổ chức hoặc thân nhân ở Việt Nam mời, bảo lãnh; separate subsections for hosting organisation and hosting family relative.",
+        "uncertainties": [
+          "Synthetic branch selector; no printed selector is present."
+        ]
+      },
+      {
+        "id": "organisation_name",
+        "label": "Hosting organisation name",
+        "type": "text",
+        "owner": "organisation",
+        "group": "organisation_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "organisation"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a24",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 151,
+        "evidence": "II.1: Tên cơ quan, tổ chức / Name of hosting organisation",
+        "uncertainties": []
+      },
+      {
+        "id": "organisation_address",
+        "label": "Hosting organisation address",
+        "type": "text",
+        "owner": "organisation",
+        "group": "organisation_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "organisation"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a25",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 121,
+        "evidence": "II.1: Địa chỉ / Address",
+        "uncertainties": []
+      },
+      {
+        "id": "organisation_phone_email",
+        "label": "Hosting organisation contact telephone number or email",
+        "type": "text",
+        "owner": "organisation",
+        "group": "organisation_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "organisation"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p1_a26",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 49,
+        "evidence": "II.1: Điện thoại liên hệ/Email; the writable line is below the bilingual label.",
+        "uncertainties": [
+          "One shared blank is provided for telephone/email."
+        ]
+      },
+      {
+        "id": "family_sponsor_full_name",
+        "label": "Hosting family relative full name",
+        "type": "text",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a1",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 94,
+        "evidence": "II.2: Thân nhân bảo lãnh (Họ tên) / Hosting family relative (full name)",
+        "uncertainties": []
+      },
+      {
+        "id": "family_sponsor_date_of_birth",
+        "label": "Hosting family relative date of birth",
+        "type": "date",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a2",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a3",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a4",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "II.2: Sinh ngày...tháng...năm... / Date of birth (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "family_sponsor_identity_document_number",
+        "label": "Family sponsor identity card, passport or residence card number",
+        "type": "text",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a5",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 25,
+        "evidence": "II.2: Giấy chứng minh nhân dân/hộ chiếu/thẻ thường trú/thẻ tạm trú số",
+        "uncertainties": [
+          "The form lists alternative document categories but provides only a number blank, without a separate document-type control."
+        ]
+      },
+      {
+        "id": "family_sponsor_document_issue_date",
+        "label": "Family sponsor document issue date (manual)",
+        "type": "manual",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a6",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 20,
+        "evidence": "II.2: Cấp ngày: ... immediately precedes cơ quan, whose label continues as cấp on the following line.",
+        "uncertainties": [
+          "Only one undivided anchor is supplied for the complete issue date. Separate measured day, month and year anchors are unavailable; automatic component placement cannot be mapped."
+        ]
+      },
+      {
+        "id": "family_sponsor_document_issuing_authority",
+        "label": "Family sponsor document issuing authority",
+        "type": "text",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a7",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 84,
+        "evidence": "II.2: cơ quan cấp is split across two lines. The long blank after cấp belongs to the issuing authority despite the displaced English Issuing date label.",
+        "uncertainties": []
+      },
+      {
+        "id": "family_sponsor_relationship",
+        "label": "Family sponsor relationship to applicant",
+        "type": "text",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a8",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 47,
+        "evidence": "II.2: Quan hệ với người đề nghị ... (3) / Relationship to the applicant",
+        "uncertainties": [
+          "Footnote (3) explanatory text is not supplied; the printed form does not enumerate relationship choices."
+        ]
+      },
+      {
+        "id": "family_sponsor_address_vietnam",
+        "label": "Family sponsor permanent or temporary residential address in Vietnam",
+        "type": "text",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a9",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 72,
+        "evidence": "II.2: Địa chỉ thường trú/tạm trú tại Việt Nam",
+        "uncertainties": []
+      },
+      {
+        "id": "family_sponsor_phone_email",
+        "label": "Family sponsor contact telephone number or email",
+        "type": "text",
+        "owner": "family_sponsor",
+        "group": "family_sponsor",
+        "required": false,
+        "conditions": [
+          {
+            "field": "sponsor_type",
+            "value": "family_relative"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a10",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 101,
+        "evidence": "II.2: Điện thoại liên hệ/Email / Contact telephone number/Email",
+        "uncertainties": [
+          "One shared blank is provided for telephone/email."
+        ]
+      },
+      {
+        "id": "request_type",
+        "label": "Request type",
+        "type": "choice",
+        "owner": "applicant",
+        "group": "request",
+        "required": false,
+        "conditions": [],
+        "options": [
+          "visa_issuance",
+          "stay_extension"
+        ],
+        "placements": [],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 1,
+        "evidence": "Title and section III distinguish Cấp thị thực / To issue a visa and Gia hạn tạm trú / To extend the duration of stay.",
+        "uncertainties": [
+          "Synthetic branch selector; no printed request-type checkbox is present. The supplied pages do not explicitly state whether both requests may be made together."
+        ]
+      },
+      {
+        "id": "requested_visa_entries",
+        "label": "Requested visa entry type",
+        "type": "choice",
+        "owner": "applicant",
+        "group": "visa_request",
+        "required": false,
+        "conditions": [
+          {
+            "field": "request_type",
+            "value": "visa_issuance"
+          }
+        ],
+        "options": [
+          "single",
+          "multiple"
+        ],
+        "placements": [
+          {
+            "anchor_id": "p2_a27",
+            "component": "choice",
+            "option": "single"
+          },
+          {
+            "anchor_id": "p2_a26",
+            "component": "choice",
+            "option": "multiple"
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 1,
+        "evidence": "III.1: một lần / Single and nhiều lần / Multiple",
+        "uncertainties": []
+      },
+      {
+        "id": "requested_visa_valid_until",
+        "label": "Requested visa valid until",
+        "type": "date",
+        "owner": "applicant",
+        "group": "visa_request",
+        "required": false,
+        "conditions": [
+          {
+            "field": "request_type",
+            "value": "visa_issuance"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a11",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a12",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a13",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "III.1: có giá trị đến ngày / Valid to (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "requested_stay_extension_until",
+        "label": "Requested stay extension until",
+        "type": "date",
+        "owner": "applicant",
+        "group": "stay_extension_request",
+        "required": false,
+        "conditions": [
+          {
+            "field": "request_type",
+            "value": "stay_extension"
+          }
+        ],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a14",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a15",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a16",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "III.2: Gia hạn tạm trú đến ngày / To extend the duration of stay until (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "request_reasons",
+        "label": "Reasons for request",
+        "type": "text",
+        "owner": "applicant",
+        "group": "request",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a17",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 121,
+        "evidence": "III.3: Lý do / Reason(s)",
+        "uncertainties": []
+      },
+      {
+        "id": "additional_statements",
+        "label": "Additional statements",
+        "type": "text",
+        "owner": "applicant",
+        "group": "additional_statements",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a18",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a19",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a20",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 198,
+        "evidence": "IV: Những điều cần trình bày thêm / Additional statements. Two adjacent dotted segments continue onto the next writable line.",
+        "uncertainties": []
+      },
+      {
+        "id": "execution_place",
+        "label": "Place of signing",
+        "type": "text",
+        "owner": "applicant",
+        "group": "execution",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a21",
+            "component": "value",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a25",
+            "component": "value",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": true,
+        "max_length": 11,
+        "evidence": "Làm tại ... and its English translation Done at ... each contain a blank for the same place.",
+        "uncertainties": [
+          "Both bilingual blanks are mapped to the same value; the form does not explain whether both must be completed."
+        ]
+      },
+      {
+        "id": "execution_date",
+        "label": "Date of signing",
+        "type": "date",
+        "owner": "applicant",
+        "group": "execution",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [
+          {
+            "anchor_id": "p2_a22",
+            "component": "day",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a23",
+            "component": "month",
+            "option": ""
+          },
+          {
+            "anchor_id": "p2_a24",
+            "component": "year",
+            "option": ""
+          }
+        ],
+        "multiline": false,
+        "repeat": false,
+        "max_length": 10,
+        "evidence": "Làm tại ... ngày...tháng...năm... / date (Day, Month, Year)",
+        "uncertainties": []
+      },
+      {
+        "id": "official_certification",
+        "label": "Official certification: signature, full name, title and stamp",
+        "type": "manual",
+        "owner": "certifying_official",
+        "group": "certification",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 1000,
+        "evidence": "Xác nhận (4) / Certified by; ký, ghi rõ họ tên, chức vụ, đóng dấu / Signature, full name, title and stamp",
+        "uncertainties": [
+          "No measured anchor is supplied for the certification area.",
+          "Footnote (4) is absent; the certifying authority and circumstances requiring certification cannot be established."
+        ]
+      },
+      {
+        "id": "sponsor_signature_full_name",
+        "label": "Sponsor signature and full name",
+        "type": "manual",
+        "owner": "sponsor_signatory",
+        "group": "signatures",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 1000,
+        "evidence": "Người bảo lãnh (ký, ghi rõ họ tên) / The sponsor’s signature and full name",
+        "uncertainties": [
+          "No measured anchor is supplied for the sponsor signature area.",
+          "The signature heading does not specify its applicability to organisation versus family sponsorship; no branch restriction is inferred."
+        ]
+      },
+      {
+        "id": "applicant_signature_full_name",
+        "label": "Applicant signature and full name",
+        "type": "manual",
+        "owner": "applicant",
+        "group": "signatures",
+        "required": false,
+        "conditions": [],
+        "options": [],
+        "placements": [],
+        "multiline": true,
+        "repeat": false,
+        "max_length": 1000,
+        "evidence": "Người đề nghị (ký, ghi rõ họ tên) / The applicant’s signature and full name",
+        "uncertainties": [
+          "No measured anchor is supplied for the applicant signature area."
+        ]
+      }
+    ],
+    "excluded_anchors": [],
+    "issues": [
+      "The supplied form prints Circular 04 /2015/TT-BCA dated 05 January 2015, while the procedure context references Circular 22/2023/TT-BCA dated 30 June 2023. This mapping describes the supplied images and makes no claim about current legal applicability.",
+      "Footnote markers (1), (2), (3) and (4) are visible, but their explanatory instructions are absent from both supplied pages.",
+      "The family sponsor document issue date has only one undivided anchor, p2_a6. Measured day, month and year component anchors are missing, so this field is manual pending component measurements.",
+      "The certification, sponsor signature and applicant signature areas have no measured anchors. Their manual fields are retained without invented placements.",
+      "Request-type exclusivity is a UI branch assumption; the supplied pages list visa issuance and stay extension separately without explicit instructions about simultaneous requests.",
+      "The supplied pages do not establish general requiredness. Visible blanks alone must not be treated as mandatory.",
+      "All 55 supplied anchors are assigned exactly once."
+    ]
+  },
+  "measured": {
+    "pages": [
+      {
+        "page": 1,
+        "width": 595.303955078125,
+        "height": 841.8897705078125,
+        "lines": [
+          {
+            "text": "M u (Form) NA5",
+            "bbox": [
+              477.6000061035156,
+              29.500757217407227,
+              538.6639404296875,
+              37.500755310058594
+            ]
+          },
+          {
+            "text": "ẫ",
+            "bbox": [
+              485.1000061035156,
+              29.500757217407227,
+              490.2760009765625,
+              37.500755310058594
+            ]
+          },
+          {
+            "text": "Ban hành kèm theo thông  t  s 04 /2015/TT-BCA",
+            "bbox": [
+              386.0,
+              38.700767517089844,
+              552.80810546875,
+              46.700767517089844
+            ]
+          },
+          {
+            "text": "ư",
+            "bbox": [
+              474.3999938964844,
+              38.700767517089844,
+              479.552001953125,
+              46.700767517089844
+            ]
+          },
+          {
+            "text": "ố",
+            "bbox": [
+              486.6960144042969,
+              38.700767517089844,
+              491.5840148925781,
+              46.700767517089844
+            ]
+          },
+          {
+            "text": "ngày 05 tháng  01 năm  2015  ",
+            "bbox": [
+              452.5,
+              47.900779724121094,
+              549.5799560546875,
+              55.900779724121094
+            ]
+          },
+          {
+            "text": "T",
+            "bbox": [
+              134.89999389648438,
+              76.10079193115234,
+              143.55799865722656,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": " KHAI Đ NGH C P TH TH",
+            "bbox": [
+              154.88099670410156,
+              76.10079193115234,
+              334.9179992675781,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "C, GIA H N T M TRÚ",
+            "bbox": [
+              346.2019958496094,
+              76.10079193115234,
+              484.32696533203125,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ờ",
+            "bbox": [
+              143.60000610351562,
+              76.10079193115234,
+              154.92300415039062,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ề",
+            "bbox": [
+              205.38900756835938,
+              76.10079193115234,
+              215.29501342773438,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ị",
+            "bbox": [
+              248.17201232910156,
+              76.10079193115234,
+              254.24301147460938,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ấ",
+            "bbox": [
+              266.85302734375,
+              76.10079193115234,
+              276.92803955078125,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ị",
+            "bbox": [
+              306.9450378417969,
+              76.10079193115234,
+              313.01605224609375,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ự",
+            "bbox": [
+              335.0380554199219,
+              76.10079193115234,
+              346.3740539550781,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ạ",
+            "bbox": [
+              400.1290588378906,
+              76.10079193115234,
+              410.2040710449219,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "Ạ",
+            "bbox": [
+              431.5110778808594,
+              76.10079193115234,
+              441.5860900878906,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": " (1) ",
+            "bbox": [
+              484.79998779296875,
+              76.10079193115234,
+              506.20001220703125,
+              89.10079193115234
+            ]
+          },
+          {
+            "text": "APPLICATION FORM FOR VISA ISSUANCE, STAY EXTENSION",
+            "bbox": [
+              157.5,
+              90.90079498291016,
+              480.26416015625,
+              102.90079498291016
+            ]
+          },
+          {
+            "text": "Dùng cho ng",
+            "bbox": [
+              185.6999969482422,
+              104.7007827758789,
+              247.69200134277344,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "i n",
+            "bbox": [
+              262.5840148925781,
+              104.7007827758789,
+              274.968017578125,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "c ngoài đang t m trú  Vi t Nam",
+            "bbox": [
+              289.8600158691406,
+              104.7007827758789,
+              452.2080993652344,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              247.6999969482422,
+              104.7007827758789,
+              262.62799072265625,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "ướ",
+            "bbox": [
+              274.98797607421875,
+              104.7007827758789,
+              289.9159851074219,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              357.4759826660156,
+              104.7007827758789,
+              364.62799072265625,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "ở",
+            "bbox": [
+              393.36798095703125,
+              104.7007827758789,
+              400.59197998046875,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              415.55596923828125,
+              104.7007827758789,
+              422.6479797363281,
+              116.7007827758789
+            ]
+          },
+          {
+            "text": "For temporary residence foreigners in Viet Nam ",
+            "bbox": [
+              202.6999969482422,
+              118.50077056884766,
+              438.29998779296875,
+              130.50076293945312
+            ]
+          },
+          {
+            "text": "I- Ng",
+            "bbox": [
+              85.19999694824219,
+              138.6007843017578,
+              115.88800048828125,
+              152.6007843017578
+            ]
+          },
+          {
+            "text": "i đ ngh ",
+            "bbox": [
+              135.37600708007812,
+              138.6007843017578,
+              194.33001708984375,
+              152.6007843017578
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              115.9000015258789,
+              138.6007843017578,
+              135.41600036621094,
+              152.6007843017578
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              150.5780029296875,
+              138.6007843017578,
+              159.4820098876953,
+              152.6007843017578
+            ]
+          },
+          {
+            "text": "ịThe applicant:",
+            "bbox": [
+              185.5640106201172,
+              138.6007843017578,
+              267.36199951171875,
+              152.6007843017578
+            ]
+          },
+          {
+            "text": "1- H tên (ch in ",
+            "bbox": [
+              85.19999694824219,
+              160.7007598876953,
+              187.76402282714844,
+              174.7007598876953
+            ]
+          },
+          {
+            "text": "ọ",
+            "bbox": [
+              110.4000015258789,
+              160.7007598876953,
+              118.8280029296875,
+              174.7007598876953
+            ]
+          },
+          {
+            "text": "ữ",
+            "bbox": [
+              160.88400268554688,
+              160.7007598876953,
+              169.90000915527344,
+              174.7007598876953
+            ]
+          },
+          {
+            "text": "hoa):.................................................................................................................",
+            "bbox": [
+              85.19999694824219,
+              176.80079650878906,
+              452.8999938964844,
+              190.80079650878906
+            ]
+          },
+          {
+            "text": "Full name (in capital letters)",
+            "bbox": [
+              99.4000015258789,
+              198.60073852539062,
+              237.916015625,
+              210.60073852539062
+            ]
+          },
+          {
+            "text": "2- Gi i tính:   Nam      N  ",
+            "bbox": [
+              85.19999694824219,
+              218.7007598876953,
+              240.61404418945312,
+              232.7007598876953
+            ]
+          },
+          {
+            "text": "ớ",
+            "bbox": [
+              114.30000305175781,
+              218.7007598876953,
+              122.7280044555664,
+              232.7007598876953
+            ]
+          },
+          {
+            "text": "ữ",
+            "bbox": [
+              224.69000244140625,
+              218.7007598876953,
+              233.7060089111328,
+              232.7007598876953
+            ]
+          },
+          {
+            "text": "3- Sinh ngày.......tháng.......năm..........",
+            "bbox": [
+              262.3999938964844,
+              218.7007598876953,
+              461.1000061035156,
+              232.7007598876953
+            ]
+          },
+          {
+            "text": "Sex               Male  ",
+            "bbox": [
+              99.4000015258789,
+              240.50076293945312,
+              193.8000030517578,
+              252.50076293945312
+            ]
+          },
+          {
+            "text": "Female",
+            "bbox": [
+              212.8000030517578,
+              240.50076293945312,
+              248.70401000976562,
+              252.50076293945312
+            ]
+          },
+          {
+            "text": "Date of birth (Day, Month, Year)",
+            "bbox": [
+              276.6000061035156,
+              240.50076293945312,
+              435.5160827636719,
+              252.50076293945312
+            ]
+          },
+          {
+            "text": "4- Qu c t ch g c:",
+            "bbox": [
+              85.19999694824219,
+              260.60076904296875,
+              186.4340057373047,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": "ố",
+            "bbox": [
+              117.4000015258789,
+              260.60076904296875,
+              125.9540023803711,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              139.58999633789062,
+              260.60076904296875,
+              144.05599975585938,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": "ố",
+            "bbox": [
+              167.77200317382812,
+              260.60076904296875,
+              176.3260040283203,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": " ..........................5- Qu c t ch hi n nay:",
+            "bbox": [
+              186.5,
+              260.60076904296875,
+              396.8319396972656,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": "ố",
+            "bbox": [
+              299.70001220703125,
+              260.60076904296875,
+              308.2539978027344,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              321.8899841308594,
+              260.60076904296875,
+              326.3559875488281,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              353.9779968261719,
+              260.60076904296875,
+              362.2519836425781,
+              274.60076904296875
+            ]
+          },
+          {
+            "text": ".........................",
+            "bbox": [
+              396.8999938964844,
+              262.2007751464844,
+              471.8999938964844,
+              274.2007751464844
+            ]
+          },
+          {
+            "text": "Nationality at birth",
+            "bbox": [
+              99.4000015258789,
+              282.4007873535156,
+              191.9560089111328,
+              294.4007873535156
+            ]
+          },
+          {
+            "text": "Current nationality",
+            "bbox": [
+              276.6000061035156,
+              282.4007873535156,
+              369.4681091308594,
+              294.4007873535156
+            ]
+          },
+          {
+            "text": "6- Ngh nghi p/ch c v :",
+            "bbox": [
+              85.19999694824219,
+              302.500732421875,
+              232.30604553222656,
+              316.500732421875
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              124.4000015258789,
+              302.500732421875,
+              133.010009765625,
+              316.500732421875
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              161.3880157470703,
+              302.500732421875,
+              169.66201782226562,
+              316.500732421875
+            ]
+          },
+          {
+            "text": "ứ",
+            "bbox": [
+              193.77001953125,
+              302.500732421875,
+              202.78602600097656,
+              316.500732421875
+            ]
+          },
+          {
+            "text": "ụ ..............................................................................",
+            "bbox": [
+              219.46002197265625,
+              302.500732421875,
+              469.5,
+              316.500732421875
+            ]
+          },
+          {
+            "text": "Occupation/position",
+            "bbox": [
+              99.4000015258789,
+              324.3007507324219,
+              197.27999877929688,
+              336.3007507324219
+            ]
+          },
+          {
+            "text": "7- H chi u/gi y t có giá tr đi l i qu c t s :",
+            "bbox": [
+              85.19999694824219,
+              344.4007568359375,
+              358.61407470703125,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ộ",
+            "bbox": [
+              110.4000015258789,
+              344.4007568359375,
+              118.8280029296875,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ế",
+            "bbox": [
+              139.3800048828125,
+              344.4007568359375,
+              147.99000549316406,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ấ",
+            "bbox": [
+              169.760009765625,
+              344.4007568359375,
+              178.3280029296875,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ờ",
+            "bbox": [
+              192.7480010986328,
+              344.4007568359375,
+              201.17599487304688,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              250.5399932861328,
+              344.4007568359375,
+              255.00599670410156,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              276.7200012207031,
+              344.4007568359375,
+              285.0639953613281,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ố",
+            "bbox": [
+              306.5119934082031,
+              344.4007568359375,
+              315.06597900390625,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ếố .........................lo i (2):",
+            "bbox": [
+              328.70196533203125,
+              344.4007568359375,
+              483.7459716796875,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              447.8999938964844,
+              344.4007568359375,
+              456.2439880371094,
+              358.4007568359375
+            ]
+          },
+          {
+            "text": " .....................",
+            "bbox": [
+              483.79998779296875,
+              345.60076904296875,
+              550.0,
+              358.10076904296875
+            ]
+          },
+          {
+            "text": "Passport or International Travel Document number                        Type                ",
+            "bbox": [
+              99.4000015258789,
+              360.30078125,
+              493.18756103515625,
+              372.80078125
+            ]
+          },
+          {
+            "text": "  ",
+            "bbox": [
+              517.2000122070312,
+              360.30078125,
+              523.4249877929688,
+              372.80078125
+            ]
+          },
+          {
+            "text": "C quan c p",
+            "bbox": [
+              99.4000015258789,
+              380.9007568359375,
+              173.15199279785156,
+              394.9007568359375
+            ]
+          },
+          {
+            "text": "ơ",
+            "bbox": [
+              108.69999694824219,
+              380.9007568359375,
+              117.12799835205078,
+              394.9007568359375
+            ]
+          },
+          {
+            "text": "ấ:  ................................... có giá tr đ n ngày",
+            "bbox": [
+              157.58799743652344,
+              380.9007568359375,
+              397.8420104980469,
+              394.9007568359375
+            ]
+          },
+          {
+            "text": "ịế",
+            "bbox": [
+              336.6000061035156,
+              380.9007568359375,
+              360.09197998046875,
+              394.9007568359375
+            ]
+          },
+          {
+            "text": ":........./............./.....................",
+            "bbox": [
+              397.8999938964844,
+              380.9007568359375,
+              538.0,
+              394.9007568359375
+            ]
+          },
+          {
+            "text": "Issuing authority:                                Expiry date (Day, Month, Year)",
+            "bbox": [
+              99.4000015258789,
+              402.30078125,
+              437.5321044921875,
+              414.80078125
+            ]
+          },
+          {
+            "text": "8- Nh p c nh Vi t Nam ngày:",
+            "bbox": [
+              85.19999694824219,
+              422.8007507324219,
+              258.60400390625,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "ậ",
+            "bbox": [
+              116.30000305175781,
+              422.8007507324219,
+              124.64400482177734,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "ả",
+            "bbox": [
+              141.38800048828125,
+              422.8007507324219,
+              149.73199462890625,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              181.17599487304688,
+              422.8007507324219,
+              189.4499969482422,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "......./....../........ ",
+            "bbox": [
+              258.70001220703125,
+              424.4007568359375,
+              331.300048828125,
+              436.4007568359375
+            ]
+          },
+          {
+            "text": "qua c a kh u: ",
+            "bbox": [
+              386.70001220703125,
+              422.8007507324219,
+              472.26800537109375,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "ử",
+            "bbox": [
+              416.6000061035156,
+              422.8007507324219,
+              425.6159973144531,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "ẩ",
+            "bbox": [
+              449.2900085449219,
+              422.8007507324219,
+              457.8580017089844,
+              436.8007507324219
+            ]
+          },
+          {
+            "text": "…........................ ",
+            "bbox": [
+              85.19999694824219,
+              438.60076904296875,
+              172.1999969482422,
+              450.60076904296875
+            ]
+          },
+          {
+            "text": "Date of the latest entry into Viet Nam (Day, Month, Year)",
+            "bbox": [
+              99.4000015258789,
+              458.4007568359375,
+              375.8680419921875,
+              470.4007568359375
+            ]
+          },
+          {
+            "text": "via entry port ",
+            "bbox": [
+              386.70001220703125,
+              456.8007507324219,
+              455.5,
+              470.8007507324219
+            ]
+          },
+          {
+            "text": "M c đích nh p c nh:",
+            "bbox": [
+              99.4000015258789,
+              478.5007629394531,
+              223.42601013183594,
+              492.5007629394531
+            ]
+          },
+          {
+            "text": "ụ",
+            "bbox": [
+              111.80000305175781,
+              478.5007629394531,
+              120.81600189208984,
+              492.5007629394531
+            ]
+          },
+          {
+            "text": "ậ",
+            "bbox": [
+              172.1820068359375,
+              478.5007629394531,
+              180.5260009765625,
+              492.5007629394531
+            ]
+          },
+          {
+            "text": "ả",
+            "bbox": [
+              197.1719970703125,
+              478.5007629394531,
+              205.5159912109375,
+              492.5007629394531
+            ]
+          },
+          {
+            "text": "..............................................................................................................",
+            "bbox": [
+              85.19999694824219,
+              494.3007507324219,
+              415.20001220703125,
+              506.3007507324219
+            ]
+          },
+          {
+            "text": "Purpose of entry ",
+            "bbox": [
+              99.4000015258789,
+              514.100830078125,
+              182.343994140625,
+              526.100830078125
+            ]
+          },
+          {
+            "text": "9- Đ",
+            "bbox": [
+              85.19999694824219,
+              534.2007446289062,
+              110.41400146484375,
+              548.2007446289062
+            ]
+          },
+          {
+            "text": "c phép t m trú đ n ngày:",
+            "bbox": [
+              127.88600158691406,
+              534.2007446289062,
+              271.1200256347656,
+              548.2007446289062
+            ]
+          },
+          {
+            "text": "ượ",
+            "bbox": [
+              110.4000015258789,
+              534.2007446289062,
+              127.91400146484375,
+              548.2007446289062
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              172.16799926757812,
+              534.2007446289062,
+              180.51199340820312,
+              548.2007446289062
+            ]
+          },
+          {
+            "text": "ế",
+            "bbox": [
+              220.95799255371094,
+              534.2007446289062,
+              229.5679931640625,
+              548.2007446289062
+            ]
+          },
+          {
+            "text": " ......../........../................    ",
+            "bbox": [
+              271.20001220703125,
+              534.2007446289062,
+              396.8999938964844,
+              548.2007446289062
+            ]
+          },
+          {
+            "text": "     Permitted to remain until (Day, Month, Year)",
+            "bbox": [
+              85.19999694824219,
+              555.2007446289062,
+              319.89605712890625,
+              568.2007446289062
+            ]
+          },
+          {
+            "text": "-",
+            "bbox": [
+              99.4000015258789,
+              576.1007690429688,
+              104.06200408935547,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              129.6820068359375,
+              576.1007690429688,
+              133.1820068359375,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "Đ a",
+            "bbox": [
+              158.87200927734375,
+              576.1007690429688,
+              179.66200256347656,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              205.3520050048828,
+              576.1007690429688,
+              208.8520050048828,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "ch",
+            "bbox": [
+              234.54200744628906,
+              576.1007690429688,
+              247.8280029296875,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              277.91400146484375,
+              576.1007690429688,
+              281.41400146484375,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "t m",
+            "bbox": [
+              307.10400390625,
+              576.1007690429688,
+              330.27398681640625,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              355.9779968261719,
+              576.1007690429688,
+              359.4779968261719,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "trú",
+            "bbox": [
+              385.1679992675781,
+              576.1007690429688,
+              400.6659851074219,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              426.3559875488281,
+              576.1007690429688,
+              429.8559875488281,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "t i",
+            "bbox": [
+              455.5459899902344,
+              576.1007690429688,
+              471.7159729003906,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              497.32196044921875,
+              576.1007690429688,
+              500.82196044921875,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "Vi t",
+            "bbox": [
+              526.511962890625,
+              576.1007690429688,
+              552.6638793945312,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              169.0,
+              576.1007690429688,
+              173.46600341796875,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "ỉ",
+            "bbox": [
+              247.8900146484375,
+              576.1007690429688,
+              252.35601806640625,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              311.072021484375,
+              576.1007690429688,
+              319.416015625,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              459.5560302734375,
+              576.1007690429688,
+              467.9000244140625,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              540.64404296875,
+              576.1007690429688,
+              548.9180297851562,
+              590.1007690429688
+            ]
+          },
+          {
+            "text": "Nam: ............................................................................................",
+            "bbox": [
+              85.19999694824219,
+              592.2007446289062,
+              395.29998779296875,
+              606.2007446289062
+            ]
+          },
+          {
+            "text": "Temporary residential address in Viet Nam ",
+            "bbox": [
+              99.4000015258789,
+              614.0007934570312,
+              310.70001220703125,
+              626.0007934570312
+            ]
+          },
+          {
+            "text": "- Đi n tho i liên ",
+            "bbox": [
+              99.4000015258789,
+              634.1007690429688,
+              197.23204040527344,
+              648.1007690429688
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              120.4000015258789,
+              634.1007690429688,
+              128.6739959716797,
+              648.1007690429688
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              157.0800018310547,
+              634.1007690429688,
+              165.4239959716797,
+              648.1007690429688
+            ]
+          },
+          {
+            "text": "h /Email",
+            "bbox": [
+              85.19999694824219,
+              650.2007446289062,
+              137.7420196533203,
+              664.2007446289062
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              92.19999694824219,
+              650.2007446289062,
+              100.4739990234375,
+              664.2007446289062
+            ]
+          },
+          {
+            "text": " ....................................................................................................",
+            "bbox": [
+              137.8000030517578,
+              651.80078125,
+              440.79998779296875,
+              663.80078125
+            ]
+          },
+          {
+            "text": "Contact telephone number/Email ",
+            "bbox": [
+              99.4000015258789,
+              672.0007934570312,
+              261.70001220703125,
+              684.0007934570312
+            ]
+          },
+          {
+            "text": "II- C quan/t ch c ho c thân nhân  Vi t Nam m i, b o lãnh:",
+            "bbox": [
+              85.19999694824219,
+              692.1007690429688,
+              477.25592041015625,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ơ",
+            "bbox": [
+              114.30000305175781,
+              692.1007690429688,
+              123.6240005493164,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ổ",
+            "bbox": [
+              166.08599853515625,
+              692.1007690429688,
+              175.41000366210938,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ứ",
+            "bbox": [
+              192.86801147460938,
+              692.1007690429688,
+              203.04600524902344,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ặ",
+            "bbox": [
+              227.5600128173828,
+              692.1007690429688,
+              236.61801147460938,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ở",
+            "bbox": [
+              310.94403076171875,
+              692.1007690429688,
+              320.2680358886719,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              337.7260437011719,
+              692.1007690429688,
+              346.6300354003906,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ờ",
+            "bbox": [
+              398.71002197265625,
+              692.1007690429688,
+              408.0340270996094,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "ả",
+            "bbox": [
+              426.6960144042969,
+              692.1007690429688,
+              435.7540283203125,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              477.5,
+              692.1007690429688,
+              481.0,
+              706.1007690429688
+            ]
+          },
+          {
+            "text": "     Hosting organisation/ family relative in Viet Nam ",
+            "bbox": [
+              85.19999694824219,
+              707.9008178710938,
+              348.5,
+              719.9008178710938
+            ]
+          },
+          {
+            "text": "1- Tên c quan, t ch c",
+            "bbox": [
+              85.19999694824219,
+              728.000732421875,
+              222.343994140625,
+              742.000732421875
+            ]
+          },
+          {
+            "text": "ơ",
+            "bbox": [
+              131.8000030517578,
+              728.000732421875,
+              140.22799682617188,
+              742.000732421875
+            ]
+          },
+          {
+            "text": "ổ",
+            "bbox": [
+              181.89199829101562,
+              728.000732421875,
+              190.4459991455078,
+              742.000732421875
+            ]
+          },
+          {
+            "text": "ứ Name of hosting organisation:     ",
+            "bbox": [
+              207.0780029296875,
+              728.000732421875,
+              387.3999938964844,
+              742.000732421875
+            ]
+          },
+          {
+            "text": "……………………………………………………………………………………………….......",
+            "bbox": [
+              99.4000015258789,
+              743.80078125,
+              552.4000244140625,
+              755.80078125
+            ]
+          },
+          {
+            "text": "Đ a ch ",
+            "bbox": [
+              99.4000015258789,
+              757.9007568359375,
+              144.87200927734375,
+              771.9007568359375
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              109.5,
+              757.9007568359375,
+              113.96600341796875,
+              771.9007568359375
+            ]
+          },
+          {
+            "text": "ỉAddress ......................................................................................................................... ",
+            "bbox": [
+              136.88400268554688,
+              757.9007568359375,
+              552.5,
+              771.9007568359375
+            ]
+          },
+          {
+            "text": "Đi n tho i liên h /Email",
+            "bbox": [
+              99.4000015258789,
+              780.000732421875,
+              242.77407836914062,
+              794.000732421875
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              113.4000015258789,
+              780.000732421875,
+              121.67400360107422,
+              794.000732421875
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              150.0800018310547,
+              780.000732421875,
+              158.4239959716797,
+              794.000732421875
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              197.25999450683594,
+              780.000732421875,
+              205.53399658203125,
+              794.000732421875
+            ]
+          },
+          {
+            "text": " Contact telephone number/Email",
+            "bbox": [
+              242.89999389648438,
+              781.6007690429688,
+              405.1080627441406,
+              793.6007690429688
+            ]
+          },
+          {
+            "text": ".................................................",
+            "bbox": [
+              85.19999694824219,
+              795.80078125,
+              232.1999969482422,
+              807.80078125
+            ]
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "width": 595.303955078125,
+        "height": 841.8897705078125,
+        "lines": [
+          {
+            "text": "2- Thân nhân b o lãnh (H ",
+            "bbox": [
+              85.19999694824219,
+              30.300792694091797,
+              243.47000122070312,
+              44.3007926940918
+            ]
+          },
+          {
+            "text": "ả",
+            "bbox": [
+              170.3000030517578,
+              30.300792694091797,
+              178.6439971923828,
+              44.3007926940918
+            ]
+          },
+          {
+            "text": "ọ",
+            "bbox": [
+              231.47999572753906,
+              30.300792694091797,
+              239.90798950195312,
+              44.3007926940918
+            ]
+          },
+          {
+            "text": "tên): ..............................................................................................",
+            "bbox": [
+              85.19999694824219,
+              46.4007682800293,
+              395.79998779296875,
+              60.4007682800293
+            ]
+          },
+          {
+            "text": "     Hosting family relative (full name)",
+            "bbox": [
+              85.19999694824219,
+              68.2007827758789,
+              266.70001220703125,
+              80.2007827758789
+            ]
+          },
+          {
+            "text": "Sinh ngày.......tháng.......năm..............",
+            "bbox": [
+              99.4000015258789,
+              88.30079650878906,
+              295.0,
+              102.30079650878906
+            ]
+          },
+          {
+            "text": "Date of birth (Day, Month, Year) ",
+            "bbox": [
+              99.4000015258789,
+              104.10074615478516,
+              261.3999938964844,
+              116.10074615478516
+            ]
+          },
+          {
+            "text": "Gi y ch ng minh nhân dân/h chi u/th th",
+            "bbox": [
+              99.4000015258789,
+              124.20075988769531,
+              348.2919921875,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ng trú/th t m trú ",
+            "bbox": [
+              365.67999267578125,
+              124.20075988769531,
+              470.9039611816406,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ấ",
+            "bbox": [
+              113.4000015258789,
+              124.20075988769531,
+              121.96800231933594,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ứ",
+            "bbox": [
+              145.6840057373047,
+              124.20075988769531,
+              154.70001220703125,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ộ",
+            "bbox": [
+              266.2660217285156,
+              124.20075988769531,
+              274.69403076171875,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ế",
+            "bbox": [
+              295.24603271484375,
+              124.20075988769531,
+              303.85601806640625,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ẻ",
+            "bbox": [
+              325.6260070800781,
+              124.20075988769531,
+              333.8999938964844,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              348.3059997558594,
+              124.20075988769531,
+              365.7359924316406,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "ẻạ",
+            "bbox": [
+              413.5879821777344,
+              124.20075988769531,
+              437.6119689941406,
+              138.2007598876953
+            ]
+          },
+          {
+            "text": "s :",
+            "bbox": [
+              85.19999694824219,
+              140.30079650878906,
+              103.06399536132812,
+              154.30079650878906
+            ]
+          },
+          {
+            "text": "ố .........................",
+            "bbox": [
+              90.5999984741211,
+              140.30079650878906,
+              181.10000610351562,
+              154.30079650878906
+            ]
+          },
+          {
+            "text": "Identity Card/Passport/Permanent/ Temporary Resident Card Number",
+            "bbox": [
+              99.4000015258789,
+              156.10073852539062,
+              438.8081359863281,
+              168.10073852539062
+            ]
+          },
+          {
+            "text": "     C p ngày: ",
+            "bbox": [
+              85.19999694824219,
+              176.2007598876953,
+              163.18600463867188,
+              190.2007598876953
+            ]
+          },
+          {
+            "text": "ấ",
+            "bbox": [
+              109.5,
+              176.2007598876953,
+              118.06800079345703,
+              190.2007598876953
+            ]
+          },
+          {
+            "text": "....................c quan ",
+            "bbox": [
+              163.1999969482422,
+              176.2007598876953,
+              271.989990234375,
+              190.2007598876953
+            ]
+          },
+          {
+            "text": "ơ",
+            "bbox": [
+              229.39999389648438,
+              176.2007598876953,
+              237.82798767089844,
+              190.2007598876953
+            ]
+          },
+          {
+            "text": "c p: .",
+            "bbox": [
+              85.19999694824219,
+              192.30079650878906,
+              117.8759994506836,
+              206.30079650878906
+            ]
+          },
+          {
+            "text": "ấ",
+            "bbox": [
+              91.4000015258789,
+              192.30079650878906,
+              99.96800231933594,
+              206.30079650878906
+            ]
+          },
+          {
+            "text": ".................................................................................... Issuing date                 Issuing ",
+            "bbox": [
+              117.9000015258789,
+              193.90078735351562,
+              521.7840576171875,
+              205.90078735351562
+            ]
+          },
+          {
+            "text": "authority ",
+            "bbox": [
+              85.19999694824219,
+              208.10073852539062,
+              132.1999969482422,
+              220.10073852539062
+            ]
+          },
+          {
+            "text": "Quan h v i ng",
+            "bbox": [
+              99.4000015258789,
+              228.2007598876953,
+              188.76202392578125,
+              242.2007598876953
+            ]
+          },
+          {
+            "text": "i đ ngh :",
+            "bbox": [
+              206.1500244140625,
+              228.2007598876953,
+              261.9820251464844,
+              242.2007598876953
+            ]
+          },
+          {
+            "text": "ệớ",
+            "bbox": [
+              140.1999969482422,
+              228.2007598876953,
+              167.41600036621094,
+              242.2007598876953
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              188.77999877929688,
+              228.2007598876953,
+              206.20999145507812,
+              242.2007598876953
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              220.57398986816406,
+              228.2007598876953,
+              229.18399047851562,
+              242.2007598876953
+            ]
+          },
+          {
+            "text": "ị ............................................... (3)",
+            "bbox": [
+              253.75399780273438,
+              228.2007598876953,
+              425.36798095703125,
+              242.2007598876953
+            ]
+          },
+          {
+            "text": "Relationship to the applicant ",
+            "bbox": [
+              99.4000015258789,
+              250.00076293945312,
+              241.39999389648438,
+              262.0007629394531
+            ]
+          },
+          {
+            "text": "Đ a ch th",
+            "bbox": [
+              99.4000015258789,
+              270.10076904296875,
+              155.76402282714844,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ng trú/t m trú t i Vi t ",
+            "bbox": [
+              173.1520233154297,
+              270.10076904296875,
+              304.9620666503906,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              109.5,
+              270.10076904296875,
+              113.96600341796875,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ỉ",
+            "bbox": [
+              136.88400268554688,
+              270.10076904296875,
+              141.35000610351562,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              155.77000427246094,
+              270.10076904296875,
+              173.1999969482422,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              213.95399475097656,
+              270.10076904296875,
+              222.29798889160156,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              259.635986328125,
+              270.10076904296875,
+              267.97998046875,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              289.427978515625,
+              270.10076904296875,
+              297.70196533203125,
+              284.10076904296875
+            ]
+          },
+          {
+            "text": "Nam: ........................................................................",
+            "bbox": [
+              85.19999694824219,
+              286.20074462890625,
+              335.29998779296875,
+              300.20074462890625
+            ]
+          },
+          {
+            "text": "     Permanent/temporary residential address in Viet Nam ",
+            "bbox": [
+              85.19999694824219,
+              302.0007629394531,
+              363.9600830078125,
+              314.0007629394531
+            ]
+          },
+          {
+            "text": "     Đi n tho i liên ",
+            "bbox": [
+              85.19999694824219,
+              322.10076904296875,
+              191.03204345703125,
+              336.10076904296875
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              114.19999694824219,
+              322.10076904296875,
+              122.4739990234375,
+              336.10076904296875
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              150.8800048828125,
+              322.10076904296875,
+              159.2239990234375,
+              336.10076904296875
+            ]
+          },
+          {
+            "text": "h /Email:",
+            "bbox": [
+              85.19999694824219,
+              338.20074462890625,
+              141.634033203125,
+              352.20074462890625
+            ]
+          },
+          {
+            "text": "ệ",
+            "bbox": [
+              92.19999694824219,
+              338.20074462890625,
+              100.4739990234375,
+              352.20074462890625
+            ]
+          },
+          {
+            "text": " .....................................................................................................",
+            "bbox": [
+              141.6999969482422,
+              339.8007507324219,
+              447.70001220703125,
+              351.8007507324219
+            ]
+          },
+          {
+            "text": "Contact telephone number/Email ",
+            "bbox": [
+              99.4000015258789,
+              360.0007629394531,
+              261.70001220703125,
+              372.0007629394531
+            ]
+          },
+          {
+            "text": "III- N i dung đ ngh",
+            "bbox": [
+              85.19999694824219,
+              380.10076904296875,
+              213.0760040283203,
+              394.10076904296875
+            ]
+          },
+          {
+            "text": "ộ",
+            "bbox": [
+              119.80000305175781,
+              380.10076904296875,
+              129.12400817871094,
+              394.10076904296875
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              178.1800079345703,
+              380.10076904296875,
+              187.08401489257812,
+              394.10076904296875
+            ]
+          },
+          {
+            "text": "ị Requests: ",
+            "bbox": [
+              213.06802368164062,
+              380.10076904296875,
+              273.0,
+              394.10076904296875
+            ]
+          },
+          {
+            "text": "1-  C p ",
+            "bbox": [
+              85.19999694824219,
+              402.20074462890625,
+              131.19200134277344,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ấth th c:",
+            "bbox": [
+              112.0999984741211,
+              402.20074462890625,
+              180.0320281982422,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ị",
+            "bbox": [
+              142.10000610351562,
+              402.20074462890625,
+              146.56600952148438,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ự   m t l n       nhi u l n ",
+            "bbox": [
+              160.8880157470703,
+              402.20074462890625,
+              321.1499938964844,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ộ",
+            "bbox": [
+              201.5,
+              402.20074462890625,
+              209.92799377441406,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ầ",
+            "bbox": [
+              221.18399047851562,
+              402.20074462890625,
+              229.75198364257812,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              279.073974609375,
+              402.20074462890625,
+              287.6839599609375,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ầ    có giá tr đ n ngày: ",
+            "bbox": [
+              302.15997314453125,
+              402.20074462890625,
+              451.7340087890625,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "ịế",
+            "bbox": [
+              383.1000061035156,
+              402.20074462890625,
+              406.59197998046875,
+              416.20074462890625
+            ]
+          },
+          {
+            "text": "......../........./...........",
+            "bbox": [
+              451.79998779296875,
+              403.8007507324219,
+              542.4000244140625,
+              415.8007507324219
+            ]
+          },
+          {
+            "text": "To issue a visa    Single      ",
+            "bbox": [
+              99.4000015258789,
+              424.0007629394531,
+              232.39999389648438,
+              436.0007629394531
+            ]
+          },
+          {
+            "text": "Multiple ",
+            "bbox": [
+              255.3000030517578,
+              424.0007629394531,
+              298.8840637207031,
+              436.0007629394531
+            ]
+          },
+          {
+            "text": "Valid to (Day, Month, Year) ",
+            "bbox": [
+              340.29998779296875,
+              424.0007629394531,
+              478.70001220703125,
+              436.0007629394531
+            ]
+          },
+          {
+            "text": "2- Gia h n t m trú đ n ngày: ",
+            "bbox": [
+              85.19999694824219,
+              444.10076904296875,
+              255.71804809570312,
+              458.10076904296875
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              130.5,
+              444.10076904296875,
+              138.843994140625,
+              458.10076904296875
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              153.17999267578125,
+              444.10076904296875,
+              161.52398681640625,
+              458.10076904296875
+            ]
+          },
+          {
+            "text": "ế",
+            "bbox": [
+              201.96998596191406,
+              444.10076904296875,
+              210.57998657226562,
+              458.10076904296875
+            ]
+          },
+          {
+            "text": "........../............/............. ",
+            "bbox": [
+              255.8000030517578,
+              445.7007751464844,
+              370.4000244140625,
+              457.7007751464844
+            ]
+          },
+          {
+            "text": "To extend the duration of stay until (Day, Month, Year) ",
+            "bbox": [
+              99.4000015258789,
+              465.9007568359375,
+              368.0,
+              477.9007568359375
+            ]
+          },
+          {
+            "text": "3- Lý do Reason(s).........................................................................................................................",
+            "bbox": [
+              85.19999694824219,
+              486.0007629394531,
+              546.9000244140625,
+              500.0007629394531
+            ]
+          },
+          {
+            "text": "IV- Nh ng đi u c n trình bày thêm ",
+            "bbox": [
+              85.19999694824219,
+              508.10076904296875,
+              306.427978515625,
+              522.1007690429688
+            ]
+          },
+          {
+            "text": "ữ",
+            "bbox": [
+              126.80000305175781,
+              508.10076904296875,
+              136.97799682617188,
+              522.1007690429688
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              166.8820037841797,
+              508.10076904296875,
+              175.7860107421875,
+              522.1007690429688
+            ]
+          },
+          {
+            "text": "ầ",
+            "bbox": [
+              193.27200317382812,
+              508.10076904296875,
+              202.3300018310547,
+              522.1007690429688
+            ]
+          },
+          {
+            "text": "Additional ",
+            "bbox": [
+              306.6000061035156,
+              509.7007751464844,
+              361.56005859375,
+              521.7008056640625
+            ]
+          },
+          {
+            "text": "statements: ........................................... ............................................................................................",
+            "bbox": [
+              85.19999694824219,
+              523.9007568359375,
+              552.2000122070312,
+              535.9007568359375
+            ]
+          },
+          {
+            "text": "...............................................................",
+            "bbox": [
+              85.19999694824219,
+              537.7008056640625,
+              274.20001220703125,
+              549.7008056640625
+            ]
+          },
+          {
+            "text": "Làm t i ……... ngày.......tháng........ năm..........",
+            "bbox": [
+              301.20001220703125,
+              571.4007568359375,
+              546.1980590820312,
+              584.4007568359375
+            ]
+          },
+          {
+            "text": "ạ",
+            "bbox": [
+              331.8999938964844,
+              571.4007568359375,
+              339.6479797363281,
+              584.4007568359375
+            ]
+          },
+          {
+            "text": "         ",
+            "bbox": [
+              85.19999694824219,
+              586.2008056640625,
+              112.19999694824219,
+              598.2008056640625
+            ]
+          },
+          {
+            "text": " Done at ............. date (Day, Month, Year) ",
+            "bbox": [
+              301.20001220703125,
+              586.2008056640625,
+              508.20001220703125,
+              598.2008056640625
+            ]
+          },
+          {
+            "text": "                      ",
+            "bbox": [
+              85.19999694824219,
+              600.0007934570312,
+              151.1999969482422,
+              612.0007934570312
+            ]
+          },
+          {
+            "text": "Xác nh n",
+            "bbox": [
+              79.0999984741211,
+              620.30078125,
+              134.08999633789062,
+              633.30078125
+            ]
+          },
+          {
+            "text": "ậ (4)  Certified by ",
+            "bbox": [
+              118.5,
+              619.5007934570312,
+              217.6999969482422,
+              633.5007934570312
+            ]
+          },
+          {
+            "text": "(ký, ghi rõ h tên, ch c v , đóng",
+            "bbox": [
+              61.0,
+              635.2007446289062,
+              235.5640106201172,
+              648.2007446289062
+            ]
+          },
+          {
+            "text": "ọ",
+            "bbox": [
+              125.19999694824219,
+              635.2007446289062,
+              133.0260009765625,
+              648.2007446289062
+            ]
+          },
+          {
+            "text": "ứ",
+            "bbox": [
+              170.9860076904297,
+              635.2007446289062,
+              179.35800170898438,
+              648.2007446289062
+            ]
+          },
+          {
+            "text": "ụ",
+            "bbox": [
+              194.7760009765625,
+              635.2007446289062,
+              203.1479949951172,
+              648.2007446289062
+            ]
+          },
+          {
+            "text": "d u) ",
+            "bbox": [
+              134.10000610351562,
+              650.2007446289062,
+              162.62200927734375,
+              663.2007446289062
+            ]
+          },
+          {
+            "text": "ấ",
+            "bbox": [
+              140.60000610351562,
+              650.2007446289062,
+              148.55599975585938,
+              663.2007446289062
+            ]
+          },
+          {
+            "text": "Signature, full name, title and stamp",
+            "bbox": [
+              60.900001525878906,
+              665.0007934570312,
+              235.82400512695312,
+              677.0007934570312
+            ]
+          },
+          {
+            "text": "Ng",
+            "bbox": [
+              277.5,
+              620.9007568359375,
+              293.385986328125,
+              633.9007568359375
+            ]
+          },
+          {
+            "text": "i b o lãnh",
+            "bbox": [
+              311.468994140625,
+              620.9007568359375,
+              368.2660217285156,
+              633.9007568359375
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              293.3999938964844,
+              620.9007568359375,
+              311.45697021484375,
+              633.9007568359375
+            ]
+          },
+          {
+            "text": "ả",
+            "bbox": [
+              325.5879821777344,
+              620.9007568359375,
+              333.9989929199219,
+              633.9007568359375
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              368.3999938964844,
+              620.9007568359375,
+              371.6499938964844,
+              633.9007568359375
+            ]
+          },
+          {
+            "text": "(ký, ghi rõ h tên)",
+            "bbox": [
+              275.29998779296875,
+              635.80078125,
+              370.7850341796875,
+              648.80078125
+            ]
+          },
+          {
+            "text": "ọ",
+            "bbox": [
+              339.5,
+              635.80078125,
+              347.32598876953125,
+              648.80078125
+            ]
+          },
+          {
+            "text": " ",
+            "bbox": [
+              370.79998779296875,
+              636.600830078125,
+              373.79998779296875,
+              648.600830078125
+            ]
+          },
+          {
+            "text": "The sponsor’s signature and",
+            "bbox": [
+              256.1000061035156,
+              650.600830078125,
+              392.99603271484375,
+              662.600830078125
+            ]
+          },
+          {
+            "text": "full name ",
+            "bbox": [
+              302.1000061035156,
+              664.4007568359375,
+              350.1000061035156,
+              676.4007568359375
+            ]
+          },
+          {
+            "text": "Ng",
+            "bbox": [
+              431.70001220703125,
+              627.80078125,
+              447.58599853515625,
+              640.80078125
+            ]
+          },
+          {
+            "text": "i đ ngh",
+            "bbox": [
+              465.66900634765625,
+              627.80078125,
+              512.1700439453125,
+              640.80078125
+            ]
+          },
+          {
+            "text": "ườ",
+            "bbox": [
+              447.6000061035156,
+              627.80078125,
+              465.656982421875,
+              640.80078125
+            ]
+          },
+          {
+            "text": "ề",
+            "bbox": [
+              479.7879943847656,
+              627.80078125,
+              488.0559997558594,
+              640.80078125
+            ]
+          },
+          {
+            "text": "ị ",
+            "bbox": [
+              512.2750244140625,
+              627.80078125,
+              520.5499877929688,
+              640.80078125
+            ]
+          },
+          {
+            "text": "(ký, ghi rõ h tên)",
+            "bbox": [
+              428.29998779296875,
+              642.7007446289062,
+              523.7849731445312,
+              655.7007446289062
+            ]
+          },
+          {
+            "text": "ọ",
+            "bbox": [
+              492.5,
+              642.7007446289062,
+              500.32598876953125,
+              655.7007446289062
+            ]
+          },
+          {
+            "text": "The applicant’s signature and ",
+            "bbox": [
+              404.0,
+              657.5007934570312,
+              551.196044921875,
+              669.5007934570312
+            ]
+          },
+          {
+            "text": "full name ",
+            "bbox": [
+              453.6000061035156,
+              671.30078125,
+              501.6000061035156,
+              683.30078125
+            ]
+          }
+        ]
+      }
+    ],
+    "anchors": [
+      {
+        "id": "p1_a1",
+        "page": 1,
+        "bbox": [
+          113.9000015258789,
+          178.40078735351562,
+          452.8999938964844,
+          190.40078735351562
+        ],
+        "kind": "blank",
+        "line": "hoa):................................................................................................................."
+      },
+      {
+        "id": "p1_a2",
+        "page": 1,
+        "bbox": [
+          333.8999938964844,
+          220.30075073242188,
+          354.8999938964844,
+          232.30075073242188
+        ],
+        "kind": "blank",
+        "line": "3- Sinh ngày.......tháng.......năm.........."
+      },
+      {
+        "id": "p1_a3",
+        "page": 1,
+        "bbox": [
+          386.0,
+          220.30075073242188,
+          407.0,
+          232.30075073242188
+        ],
+        "kind": "blank",
+        "line": "3- Sinh ngày.......tháng.......năm.........."
+      },
+      {
+        "id": "p1_a4",
+        "page": 1,
+        "bbox": [
+          431.1000061035156,
+          220.30075073242188,
+          461.1000061035156,
+          232.30075073242188
+        ],
+        "kind": "blank",
+        "line": "3- Sinh ngày.......tháng.......năm.........."
+      },
+      {
+        "id": "p1_a5",
+        "page": 1,
+        "bbox": [
+          189.5,
+          262.2007751464844,
+          267.5,
+          274.2007751464844
+        ],
+        "kind": "blank",
+        "line": " ..........................5- Qu c t ch hi n nay:"
+      },
+      {
+        "id": "p1_a6",
+        "page": 1,
+        "bbox": [
+          396.8999938964844,
+          262.2007751464844,
+          471.8999938964844,
+          274.2007751464844
+        ],
+        "kind": "blank",
+        "line": "........................."
+      },
+      {
+        "id": "p1_a7",
+        "page": 1,
+        "bbox": [
+          235.5,
+          304.1007385253906,
+          469.5,
+          316.1007385253906
+        ],
+        "kind": "blank",
+        "line": "ụ .............................................................................."
+      },
+      {
+        "id": "p1_a8",
+        "page": 1,
+        "bbox": [
+          362.0,
+          346.0007629394531,
+          437.0,
+          358.0007629394531
+        ],
+        "kind": "blank",
+        "line": "ếố .........................lo i (2):"
+      },
+      {
+        "id": "p1_a9",
+        "page": 1,
+        "bbox": [
+          487.0,
+          346.0007629394531,
+          550.0,
+          358.0007629394531
+        ],
+        "kind": "blank",
+        "line": " ....................."
+      },
+      {
+        "id": "p1_a10",
+        "page": 1,
+        "bbox": [
+          182.5,
+          382.5007629394531,
+          287.5,
+          394.5007629394531
+        ],
+        "kind": "blank",
+        "line": "ấ:  ................................... có giá tr đ n ngày"
+      },
+      {
+        "id": "p1_a11",
+        "page": 1,
+        "bbox": [
+          401.20001220703125,
+          382.5007629394531,
+          428.20001220703125,
+          394.5007629394531
+        ],
+        "kind": "blank",
+        "line": ":........./............./....................."
+      },
+      {
+        "id": "p1_a12",
+        "page": 1,
+        "bbox": [
+          432.1000061035156,
+          382.5007629394531,
+          471.1000061035156,
+          394.5007629394531
+        ],
+        "kind": "blank",
+        "line": ":........./............./....................."
+      },
+      {
+        "id": "p1_a13",
+        "page": 1,
+        "bbox": [
+          475.0,
+          382.5007629394531,
+          538.0,
+          394.5007629394531
+        ],
+        "kind": "blank",
+        "line": ":........./............./....................."
+      },
+      {
+        "id": "p1_a14",
+        "page": 1,
+        "bbox": [
+          258.70001220703125,
+          424.4007568359375,
+          279.70001220703125,
+          436.4007568359375
+        ],
+        "kind": "blank",
+        "line": "......./....../........ "
+      },
+      {
+        "id": "p1_a15",
+        "page": 1,
+        "bbox": [
+          283.0000305175781,
+          424.4007568359375,
+          301.0000305175781,
+          436.4007568359375
+        ],
+        "kind": "blank",
+        "line": "......./....../........ "
+      },
+      {
+        "id": "p1_a16",
+        "page": 1,
+        "bbox": [
+          304.300048828125,
+          424.4007568359375,
+          328.300048828125,
+          436.4007568359375
+        ],
+        "kind": "blank",
+        "line": "......./....../........ "
+      },
+      {
+        "id": "p1_a17",
+        "page": 1,
+        "bbox": [
+          85.19999694824219,
+          438.60076904296875,
+          169.1999969482422,
+          450.60076904296875
+        ],
+        "kind": "blank",
+        "line": "…........................ "
+      },
+      {
+        "id": "p1_a18",
+        "page": 1,
+        "bbox": [
+          85.19999694824219,
+          494.3007507324219,
+          415.20001220703125,
+          506.3007507324219
+        ],
+        "kind": "blank",
+        "line": ".............................................................................................................."
+      },
+      {
+        "id": "p1_a19",
+        "page": 1,
+        "bbox": [
+          274.20001220703125,
+          535.80078125,
+          298.20001220703125,
+          547.80078125
+        ],
+        "kind": "blank",
+        "line": " ......../........../................    "
+      },
+      {
+        "id": "p1_a20",
+        "page": 1,
+        "bbox": [
+          301.5000305175781,
+          535.80078125,
+          331.5000305175781,
+          547.80078125
+        ],
+        "kind": "blank",
+        "line": " ......../........../................    "
+      },
+      {
+        "id": "p1_a21",
+        "page": 1,
+        "bbox": [
+          334.800048828125,
+          535.80078125,
+          382.800048828125,
+          547.80078125
+        ],
+        "kind": "blank",
+        "line": " ......../........../................    "
+      },
+      {
+        "id": "p1_a22",
+        "page": 1,
+        "bbox": [
+          119.30000305175781,
+          593.80078125,
+          395.29998779296875,
+          605.80078125
+        ],
+        "kind": "blank",
+        "line": "Nam: ............................................................................................"
+      },
+      {
+        "id": "p1_a23",
+        "page": 1,
+        "bbox": [
+          140.8000030517578,
+          651.80078125,
+          440.79998779296875,
+          663.80078125
+        ],
+        "kind": "blank",
+        "line": " ...................................................................................................."
+      },
+      {
+        "id": "p1_a24",
+        "page": 1,
+        "bbox": [
+          99.4000015258789,
+          743.80078125,
+          552.4000244140625,
+          755.80078125
+        ],
+        "kind": "blank",
+        "line": "………………………………………………………………………………………………......."
+      },
+      {
+        "id": "p1_a25",
+        "page": 1,
+        "bbox": [
+          186.5,
+          759.5007934570312,
+          549.5,
+          771.5007934570312
+        ],
+        "kind": "blank",
+        "line": "ỉAddress ......................................................................................................................... "
+      },
+      {
+        "id": "p1_a26",
+        "page": 1,
+        "bbox": [
+          85.19999694824219,
+          795.80078125,
+          232.1999969482422,
+          807.80078125
+        ],
+        "kind": "blank",
+        "line": "................................................."
+      },
+      {
+        "id": "p1_a27",
+        "page": 1,
+        "bbox": [
+          198.0,
+          219.9007568359375,
+          207.0,
+          228.9007568359375
+        ],
+        "kind": "checkbox",
+        "line": ""
+      },
+      {
+        "id": "p1_a28",
+        "page": 1,
+        "bbox": [
+          234.75,
+          219.9007568359375,
+          243.75,
+          228.9007568359375
+        ],
+        "kind": "checkbox",
+        "line": ""
+      },
+      {
+        "id": "p2_a1",
+        "page": 2,
+        "bbox": [
+          113.80000305175781,
+          48.000770568847656,
+          395.79998779296875,
+          60.000770568847656
+        ],
+        "kind": "blank",
+        "line": "tên): .............................................................................................."
+      },
+      {
+        "id": "p2_a2",
+        "page": 2,
+        "bbox": [
+          155.8000030517578,
+          89.90079498291016,
+          176.8000030517578,
+          101.90079498291016
+        ],
+        "kind": "blank",
+        "line": "Sinh ngày.......tháng.......năm.............."
+      },
+      {
+        "id": "p2_a3",
+        "page": 2,
+        "bbox": [
+          207.89999389648438,
+          89.90079498291016,
+          228.89999389648438,
+          101.90079498291016
+        ],
+        "kind": "blank",
+        "line": "Sinh ngày.......tháng.......năm.............."
+      },
+      {
+        "id": "p2_a4",
+        "page": 2,
+        "bbox": [
+          253.0,
+          89.90079498291016,
+          295.0,
+          101.90079498291016
+        ],
+        "kind": "blank",
+        "line": "Sinh ngày.......tháng.......năm.............."
+      },
+      {
+        "id": "p2_a5",
+        "page": 2,
+        "bbox": [
+          106.0999984741211,
+          141.90078735351562,
+          181.10000610351562,
+          153.90078735351562
+        ],
+        "kind": "blank",
+        "line": "ố ........................."
+      },
+      {
+        "id": "p2_a6",
+        "page": 2,
+        "bbox": [
+          163.1999969482422,
+          177.80075073242188,
+          223.1999969482422,
+          189.80075073242188
+        ],
+        "kind": "blank",
+        "line": "....................c quan "
+      },
+      {
+        "id": "p2_a7",
+        "page": 2,
+        "bbox": [
+          117.9000015258789,
+          193.90078735351562,
+          369.8999938964844,
+          205.90078735351562
+        ],
+        "kind": "blank",
+        "line": ".................................................................................... Issuing date                 Issuing "
+      },
+      {
+        "id": "p2_a8",
+        "page": 2,
+        "bbox": [
+          265.1000061035156,
+          229.80075073242188,
+          406.1000061035156,
+          241.80075073242188
+        ],
+        "kind": "blank",
+        "line": "ị ............................................... (3)"
+      },
+      {
+        "id": "p2_a9",
+        "page": 2,
+        "bbox": [
+          119.30000305175781,
+          287.8007507324219,
+          335.29998779296875,
+          299.8007507324219
+        ],
+        "kind": "blank",
+        "line": "Nam: ........................................................................"
+      },
+      {
+        "id": "p2_a10",
+        "page": 2,
+        "bbox": [
+          144.6999969482422,
+          339.8007507324219,
+          447.70001220703125,
+          351.8007507324219
+        ],
+        "kind": "blank",
+        "line": " ....................................................................................................."
+      },
+      {
+        "id": "p2_a11",
+        "page": 2,
+        "bbox": [
+          451.79998779296875,
+          403.8007507324219,
+          475.79998779296875,
+          415.8007507324219
+        ],
+        "kind": "blank",
+        "line": "......../........./..........."
+      },
+      {
+        "id": "p2_a12",
+        "page": 2,
+        "bbox": [
+          479.1000061035156,
+          403.8007507324219,
+          506.1000061035156,
+          415.8007507324219
+        ],
+        "kind": "blank",
+        "line": "......../........./..........."
+      },
+      {
+        "id": "p2_a13",
+        "page": 2,
+        "bbox": [
+          509.4000244140625,
+          403.8007507324219,
+          542.4000244140625,
+          415.8007507324219
+        ],
+        "kind": "blank",
+        "line": "......../........./..........."
+      },
+      {
+        "id": "p2_a14",
+        "page": 2,
+        "bbox": [
+          255.8000030517578,
+          445.7007751464844,
+          285.79998779296875,
+          457.7007751464844
+        ],
+        "kind": "blank",
+        "line": "........../............/............. "
+      },
+      {
+        "id": "p2_a15",
+        "page": 2,
+        "bbox": [
+          289.1000061035156,
+          445.7007751464844,
+          325.1000061035156,
+          457.7007751464844
+        ],
+        "kind": "blank",
+        "line": "........../............/............. "
+      },
+      {
+        "id": "p2_a16",
+        "page": 2,
+        "bbox": [
+          328.4000244140625,
+          445.7007751464844,
+          367.4000244140625,
+          457.7007751464844
+        ],
+        "kind": "blank",
+        "line": "........../............/............. "
+      },
+      {
+        "id": "p2_a17",
+        "page": 2,
+        "bbox": [
+          183.89999389648438,
+          487.60076904296875,
+          546.9000244140625,
+          499.60076904296875
+        ],
+        "kind": "blank",
+        "line": "3- Lý do Reason(s)........................................................................................................................."
+      },
+      {
+        "id": "p2_a18",
+        "page": 2,
+        "bbox": [
+          144.1999969482422,
+          523.9007568359375,
+          273.20001220703125,
+          535.9007568359375
+        ],
+        "kind": "blank",
+        "line": "statements: ........................................... ............................................................................................"
+      },
+      {
+        "id": "p2_a19",
+        "page": 2,
+        "bbox": [
+          276.20001220703125,
+          523.9007568359375,
+          552.2000122070312,
+          535.9007568359375
+        ],
+        "kind": "blank",
+        "line": "statements: ........................................... ............................................................................................"
+      },
+      {
+        "id": "p2_a20",
+        "page": 2,
+        "bbox": [
+          85.19999694824219,
+          537.7008056640625,
+          274.20001220703125,
+          549.7008056640625
+        ],
+        "kind": "blank",
+        "line": "..............................................................."
+      },
+      {
+        "id": "p2_a21",
+        "page": 2,
+        "bbox": [
+          346.4660339355469,
+          571.4007568359375,
+          382.2030334472656,
+          584.4007568359375
+        ],
+        "kind": "blank",
+        "line": "Làm t i ……... ngày.......tháng........ năm.........."
+      },
+      {
+        "id": "p2_a22",
+        "page": 2,
+        "bbox": [
+          410.634033203125,
+          571.4007568359375,
+          433.34503173828125,
+          584.4007568359375
+        ],
+        "kind": "blank",
+        "line": "Làm t i ……... ngày.......tháng........ năm.........."
+      },
+      {
+        "id": "p2_a23",
+        "page": 2,
+        "bbox": [
+          462.2700500488281,
+          571.4007568359375,
+          488.1790466308594,
+          584.4007568359375
+        ],
+        "kind": "blank",
+        "line": "Làm t i ……... ngày.......tháng........ năm.........."
+      },
+      {
+        "id": "p2_a24",
+        "page": 2,
+        "bbox": [
+          513.8020629882812,
+          571.4007568359375,
+          546.1980590820312,
+          584.4007568359375
+        ],
+        "kind": "blank",
+        "line": "Làm t i ……... ngày.......tháng........ năm.........."
+      },
+      {
+        "id": "p2_a25",
+        "page": 2,
+        "bbox": [
+          345.4920349121094,
+          586.2008056640625,
+          384.4920349121094,
+          598.2008056640625
+        ],
+        "kind": "blank",
+        "line": " Done at ............. date (Day, Month, Year) "
+      },
+      {
+        "id": "p2_a26",
+        "page": 2,
+        "bbox": [
+          308.25,
+          407.35076904296875,
+          317.25,
+          416.35076904296875
+        ],
+        "kind": "checkbox",
+        "line": ""
+      },
+      {
+        "id": "p2_a27",
+        "page": 2,
+        "bbox": [
+          234.75,
+          407.35076904296875,
+          243.75,
+          416.35076904296875
+        ],
+        "kind": "checkbox",
+        "line": ""
+      }
+    ]
+  },
+  "metadata": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "completed_at": "2026-10-31T05:10:01.596531+00:00"
+  },
+  "review_status": "draft",
+  "fields": [
+    {
+      "id": "applicant_full_name",
+      "label": "Applicant full name (capital letters)",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 113,
+      "evidence": "I.1: Họ tên (chữ in hoa) / Full name (in capital letters)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            113.9000015258789,
+            178.40078735351562,
+            452.8999938964844,
+            190.40078735351562
+          ],
+          "anchor_id": "p1_a1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_sex",
+      "label": "Applicant sex",
+      "type": "choice",
+      "owner": "applicant",
+      "group": "applicant",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 1,
+      "evidence": "I.2: Giới tính: Nam / Nữ; Male / Female",
+      "uncertainties": [],
+      "when": {},
+      "options": [
+        "male",
+        "female"
+      ],
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            198.0,
+            219.9007568359375,
+            207.0,
+            228.9007568359375
+          ],
+          "anchor_id": "p1_a27",
+          "component": "choice"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            234.75,
+            219.9007568359375,
+            243.75,
+            228.9007568359375
+          ],
+          "anchor_id": "p1_a28",
+          "component": "choice"
+        }
+      ],
+      "marks": {
+        "male": {
+          "page": 1,
+          "bbox": [
+            198.0,
+            219.9007568359375,
+            207.0,
+            228.9007568359375
+          ],
+          "anchor_id": "p1_a27",
+          "component": "choice"
+        },
+        "female": {
+          "page": 1,
+          "bbox": [
+            234.75,
+            219.9007568359375,
+            243.75,
+            228.9007568359375
+          ],
+          "anchor_id": "p1_a28",
+          "component": "choice"
+        }
+      }
+    },
+    {
+      "id": "applicant_date_of_birth",
+      "label": "Applicant date of birth",
+      "type": "date",
+      "owner": "applicant",
+      "group": "applicant",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "I.3: Sinh ngày...tháng...năm... / Date of birth (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            333.8999938964844,
+            220.30075073242188,
+            354.8999938964844,
+            232.30075073242188
+          ],
+          "anchor_id": "p1_a2",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            386.0,
+            220.30075073242188,
+            407.0,
+            232.30075073242188
+          ],
+          "anchor_id": "p1_a3",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            431.1000061035156,
+            220.30075073242188,
+            461.1000061035156,
+            232.30075073242188
+          ],
+          "anchor_id": "p1_a4",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "applicant_nationality_at_birth",
+      "label": "Nationality at birth",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 26,
+      "evidence": "I.4: Quốc tịch gốc / Nationality at birth",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            189.5,
+            262.2007751464844,
+            267.5,
+            274.2007751464844
+          ],
+          "anchor_id": "p1_a5",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_current_nationality",
+      "label": "Current nationality",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 25,
+      "evidence": "I.5: Quốc tịch hiện nay / Current nationality",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            396.8999938964844,
+            262.2007751464844,
+            471.8999938964844,
+            274.2007751464844
+          ],
+          "anchor_id": "p1_a6",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_occupation_position",
+      "label": "Occupation or position",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 78,
+      "evidence": "I.6: Nghề nghiệp/chức vụ / Occupation/position",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            235.5,
+            304.1007385253906,
+            469.5,
+            316.1007385253906
+          ],
+          "anchor_id": "p1_a7",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_travel_document_number",
+      "label": "Passport or international travel document number",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_travel_document",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 25,
+      "evidence": "I.7: Hộ chiếu/giấy tờ có giá trị đi lại quốc tế số",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            362.0,
+            346.0007629394531,
+            437.0,
+            358.0007629394531
+          ],
+          "anchor_id": "p1_a8",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_travel_document_type",
+      "label": "Passport or international travel document type",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_travel_document",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 21,
+      "evidence": "I.7: loại (2) / Type",
+      "uncertainties": [
+        "Footnote (2) is referenced but its explanatory text is not supplied; permitted type terminology cannot be established."
+      ],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            487.0,
+            346.0007629394531,
+            550.0,
+            358.0007629394531
+          ],
+          "anchor_id": "p1_a9",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_travel_document_issuing_authority",
+      "label": "Travel document issuing authority",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_travel_document",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 35,
+      "evidence": "I.7: Cơ quan cấp / Issuing authority",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            182.5,
+            382.5007629394531,
+            287.5,
+            394.5007629394531
+          ],
+          "anchor_id": "p1_a10",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_travel_document_expiry_date",
+      "label": "Travel document expiry date",
+      "type": "date",
+      "owner": "applicant",
+      "group": "applicant_travel_document",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "I.7: có giá trị đến ngày / Expiry date (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            401.20001220703125,
+            382.5007629394531,
+            428.20001220703125,
+            394.5007629394531
+          ],
+          "anchor_id": "p1_a11",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            432.1000061035156,
+            382.5007629394531,
+            471.1000061035156,
+            394.5007629394531
+          ],
+          "anchor_id": "p1_a12",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            475.0,
+            382.5007629394531,
+            538.0,
+            394.5007629394531
+          ],
+          "anchor_id": "p1_a13",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "applicant_latest_entry_date",
+      "label": "Latest entry date into Vietnam",
+      "type": "date",
+      "owner": "applicant",
+      "group": "applicant_entry_and_stay",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "I.8: Nhập cảnh Việt Nam ngày / Date of the latest entry into Viet Nam (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            258.70001220703125,
+            424.4007568359375,
+            279.70001220703125,
+            436.4007568359375
+          ],
+          "anchor_id": "p1_a14",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            283.0000305175781,
+            424.4007568359375,
+            301.0000305175781,
+            436.4007568359375
+          ],
+          "anchor_id": "p1_a15",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            304.300048828125,
+            424.4007568359375,
+            328.300048828125,
+            436.4007568359375
+          ],
+          "anchor_id": "p1_a16",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "applicant_entry_port",
+      "label": "Entry port",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_entry_and_stay",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 28,
+      "evidence": "I.8: qua cửa khẩu / via entry port. Its writable line wraps to the left margin below the entry-date row.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            85.19999694824219,
+            438.60076904296875,
+            169.1999969482422,
+            450.60076904296875
+          ],
+          "anchor_id": "p1_a17",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_entry_purpose",
+      "label": "Purpose of entry",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_entry_and_stay",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 110,
+      "evidence": "I.8: Mục đích nhập cảnh / Purpose of entry",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            85.19999694824219,
+            494.3007507324219,
+            415.20001220703125,
+            506.3007507324219
+          ],
+          "anchor_id": "p1_a18",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_current_stay_permitted_until",
+      "label": "Currently permitted to remain until",
+      "type": "date",
+      "owner": "applicant",
+      "group": "applicant_entry_and_stay",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "I.9: Được phép tạm trú đến ngày / Permitted to remain until (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            274.20001220703125,
+            535.80078125,
+            298.20001220703125,
+            547.80078125
+          ],
+          "anchor_id": "p1_a19",
+          "component": "day"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            301.5000305175781,
+            535.80078125,
+            331.5000305175781,
+            547.80078125
+          ],
+          "anchor_id": "p1_a20",
+          "component": "month"
+        },
+        {
+          "page": 1,
+          "bbox": [
+            334.800048828125,
+            535.80078125,
+            382.800048828125,
+            547.80078125
+          ],
+          "anchor_id": "p1_a21",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "applicant_temporary_address_vietnam",
+      "label": "Temporary residential address in Vietnam",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_contact",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 92,
+      "evidence": "I.9: Địa chỉ tạm trú tại Việt Nam; the label wraps before Nam.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            119.30000305175781,
+            593.80078125,
+            395.29998779296875,
+            605.80078125
+          ],
+          "anchor_id": "p1_a22",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "applicant_phone_email",
+      "label": "Applicant contact telephone number or email",
+      "type": "text",
+      "owner": "applicant",
+      "group": "applicant_contact",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 100,
+      "evidence": "I.9: Điện thoại liên hệ/Email / Contact telephone number/Email",
+      "uncertainties": [
+        "The form provides one shared blank and does not specify whether telephone, email, or both must be supplied."
+      ],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            140.8000030517578,
+            651.80078125,
+            440.79998779296875,
+            663.80078125
+          ],
+          "anchor_id": "p1_a23",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "sponsor_type",
+      "label": "Sponsor type",
+      "type": "choice",
+      "owner": "applicant",
+      "group": "sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 1,
+      "evidence": "II: Cơ quan/tổ chức hoặc thân nhân ở Việt Nam mời, bảo lãnh; separate subsections for hosting organisation and hosting family relative.",
+      "uncertainties": [
+        "Synthetic branch selector; no printed selector is present."
+      ],
+      "when": {},
+      "options": [
+        "organisation",
+        "family_relative"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "organisation_name",
+      "label": "Hosting organisation name",
+      "type": "text",
+      "owner": "organisation",
+      "group": "organisation_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 151,
+      "evidence": "II.1: Tên cơ quan, tổ chức / Name of hosting organisation",
+      "uncertainties": [],
+      "when": {
+        "sponsor_type": "organisation"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            99.4000015258789,
+            743.80078125,
+            552.4000244140625,
+            755.80078125
+          ],
+          "anchor_id": "p1_a24",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "organisation_address",
+      "label": "Hosting organisation address",
+      "type": "text",
+      "owner": "organisation",
+      "group": "organisation_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 121,
+      "evidence": "II.1: Địa chỉ / Address",
+      "uncertainties": [],
+      "when": {
+        "sponsor_type": "organisation"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            186.5,
+            759.5007934570312,
+            549.5,
+            771.5007934570312
+          ],
+          "anchor_id": "p1_a25",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "organisation_phone_email",
+      "label": "Hosting organisation contact telephone number or email",
+      "type": "text",
+      "owner": "organisation",
+      "group": "organisation_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 49,
+      "evidence": "II.1: Điện thoại liên hệ/Email; the writable line is below the bilingual label.",
+      "uncertainties": [
+        "One shared blank is provided for telephone/email."
+      ],
+      "when": {
+        "sponsor_type": "organisation"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 1,
+          "bbox": [
+            85.19999694824219,
+            795.80078125,
+            232.1999969482422,
+            807.80078125
+          ],
+          "anchor_id": "p1_a26",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_full_name",
+      "label": "Hosting family relative full name",
+      "type": "text",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 94,
+      "evidence": "II.2: Thân nhân bảo lãnh (Họ tên) / Hosting family relative (full name)",
+      "uncertainties": [],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            113.80000305175781,
+            48.000770568847656,
+            395.79998779296875,
+            60.000770568847656
+          ],
+          "anchor_id": "p2_a1",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_date_of_birth",
+      "label": "Hosting family relative date of birth",
+      "type": "date",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "II.2: Sinh ngày...tháng...năm... / Date of birth (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            155.8000030517578,
+            89.90079498291016,
+            176.8000030517578,
+            101.90079498291016
+          ],
+          "anchor_id": "p2_a2",
+          "component": "day"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            207.89999389648438,
+            89.90079498291016,
+            228.89999389648438,
+            101.90079498291016
+          ],
+          "anchor_id": "p2_a3",
+          "component": "month"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            253.0,
+            89.90079498291016,
+            295.0,
+            101.90079498291016
+          ],
+          "anchor_id": "p2_a4",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_identity_document_number",
+      "label": "Family sponsor identity card, passport or residence card number",
+      "type": "text",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 25,
+      "evidence": "II.2: Giấy chứng minh nhân dân/hộ chiếu/thẻ thường trú/thẻ tạm trú số",
+      "uncertainties": [
+        "The form lists alternative document categories but provides only a number blank, without a separate document-type control."
+      ],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            106.0999984741211,
+            141.90078735351562,
+            181.10000610351562,
+            153.90078735351562
+          ],
+          "anchor_id": "p2_a5",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_document_issue_date",
+      "label": "Family sponsor document issue date (manual)",
+      "type": "manual",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 20,
+      "evidence": "II.2: Cấp ngày: ... immediately precedes cơ quan, whose label continues as cấp on the following line.",
+      "uncertainties": [
+        "Only one undivided anchor is supplied for the complete issue date. Separate measured day, month and year anchors are unavailable; automatic component placement cannot be mapped."
+      ],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": true,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            163.1999969482422,
+            177.80075073242188,
+            223.1999969482422,
+            189.80075073242188
+          ],
+          "anchor_id": "p2_a6",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_document_issuing_authority",
+      "label": "Family sponsor document issuing authority",
+      "type": "text",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 84,
+      "evidence": "II.2: cơ quan cấp is split across two lines. The long blank after cấp belongs to the issuing authority despite the displaced English Issuing date label.",
+      "uncertainties": [],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            117.9000015258789,
+            193.90078735351562,
+            369.8999938964844,
+            205.90078735351562
+          ],
+          "anchor_id": "p2_a7",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_relationship",
+      "label": "Family sponsor relationship to applicant",
+      "type": "text",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 47,
+      "evidence": "II.2: Quan hệ với người đề nghị ... (3) / Relationship to the applicant",
+      "uncertainties": [
+        "Footnote (3) explanatory text is not supplied; the printed form does not enumerate relationship choices."
+      ],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            265.1000061035156,
+            229.80075073242188,
+            406.1000061035156,
+            241.80075073242188
+          ],
+          "anchor_id": "p2_a8",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_address_vietnam",
+      "label": "Family sponsor permanent or temporary residential address in Vietnam",
+      "type": "text",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 72,
+      "evidence": "II.2: Địa chỉ thường trú/tạm trú tại Việt Nam",
+      "uncertainties": [],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            119.30000305175781,
+            287.8007507324219,
+            335.29998779296875,
+            299.8007507324219
+          ],
+          "anchor_id": "p2_a9",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "family_sponsor_phone_email",
+      "label": "Family sponsor contact telephone number or email",
+      "type": "text",
+      "owner": "family_sponsor",
+      "group": "family_sponsor",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 101,
+      "evidence": "II.2: Điện thoại liên hệ/Email / Contact telephone number/Email",
+      "uncertainties": [
+        "One shared blank is provided for telephone/email."
+      ],
+      "when": {
+        "sponsor_type": "family_relative"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            144.6999969482422,
+            339.8007507324219,
+            447.70001220703125,
+            351.8007507324219
+          ],
+          "anchor_id": "p2_a10",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "request_type",
+      "label": "Request type",
+      "type": "choice",
+      "owner": "applicant",
+      "group": "request",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 1,
+      "evidence": "Title and section III distinguish Cấp thị thực / To issue a visa and Gia hạn tạm trú / To extend the duration of stay.",
+      "uncertainties": [
+        "Synthetic branch selector; no printed request-type checkbox is present. The supplied pages do not explicitly state whether both requests may be made together."
+      ],
+      "when": {},
+      "options": [
+        "visa_issuance",
+        "stay_extension"
+      ],
+      "manual": false,
+      "placements": []
+    },
+    {
+      "id": "requested_visa_entries",
+      "label": "Requested visa entry type",
+      "type": "choice",
+      "owner": "applicant",
+      "group": "visa_request",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 1,
+      "evidence": "III.1: một lần / Single and nhiều lần / Multiple",
+      "uncertainties": [],
+      "when": {
+        "request_type": "visa_issuance"
+      },
+      "options": [
+        "single",
+        "multiple"
+      ],
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            234.75,
+            407.35076904296875,
+            243.75,
+            416.35076904296875
+          ],
+          "anchor_id": "p2_a27",
+          "component": "choice"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            308.25,
+            407.35076904296875,
+            317.25,
+            416.35076904296875
+          ],
+          "anchor_id": "p2_a26",
+          "component": "choice"
+        }
+      ],
+      "marks": {
+        "single": {
+          "page": 2,
+          "bbox": [
+            234.75,
+            407.35076904296875,
+            243.75,
+            416.35076904296875
+          ],
+          "anchor_id": "p2_a27",
+          "component": "choice"
+        },
+        "multiple": {
+          "page": 2,
+          "bbox": [
+            308.25,
+            407.35076904296875,
+            317.25,
+            416.35076904296875
+          ],
+          "anchor_id": "p2_a26",
+          "component": "choice"
+        }
+      }
+    },
+    {
+      "id": "requested_visa_valid_until",
+      "label": "Requested visa valid until",
+      "type": "date",
+      "owner": "applicant",
+      "group": "visa_request",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "III.1: có giá trị đến ngày / Valid to (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {
+        "request_type": "visa_issuance"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            451.79998779296875,
+            403.8007507324219,
+            475.79998779296875,
+            415.8007507324219
+          ],
+          "anchor_id": "p2_a11",
+          "component": "day"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            479.1000061035156,
+            403.8007507324219,
+            506.1000061035156,
+            415.8007507324219
+          ],
+          "anchor_id": "p2_a12",
+          "component": "month"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            509.4000244140625,
+            403.8007507324219,
+            542.4000244140625,
+            415.8007507324219
+          ],
+          "anchor_id": "p2_a13",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "requested_stay_extension_until",
+      "label": "Requested stay extension until",
+      "type": "date",
+      "owner": "applicant",
+      "group": "stay_extension_request",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "III.2: Gia hạn tạm trú đến ngày / To extend the duration of stay until (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {
+        "request_type": "stay_extension"
+      },
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            255.8000030517578,
+            445.7007751464844,
+            285.79998779296875,
+            457.7007751464844
+          ],
+          "anchor_id": "p2_a14",
+          "component": "day"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            289.1000061035156,
+            445.7007751464844,
+            325.1000061035156,
+            457.7007751464844
+          ],
+          "anchor_id": "p2_a15",
+          "component": "month"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            328.4000244140625,
+            445.7007751464844,
+            367.4000244140625,
+            457.7007751464844
+          ],
+          "anchor_id": "p2_a16",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "request_reasons",
+      "label": "Reasons for request",
+      "type": "text",
+      "owner": "applicant",
+      "group": "request",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 121,
+      "evidence": "III.3: Lý do / Reason(s)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            183.89999389648438,
+            487.60076904296875,
+            546.9000244140625,
+            499.60076904296875
+          ],
+          "anchor_id": "p2_a17",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "additional_statements",
+      "label": "Additional statements",
+      "type": "text",
+      "owner": "applicant",
+      "group": "additional_statements",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 198,
+      "evidence": "IV: Những điều cần trình bày thêm / Additional statements. Two adjacent dotted segments continue onto the next writable line.",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            144.1999969482422,
+            523.9007568359375,
+            273.20001220703125,
+            535.9007568359375
+          ],
+          "anchor_id": "p2_a18",
+          "component": "value"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            276.20001220703125,
+            523.9007568359375,
+            552.2000122070312,
+            535.9007568359375
+          ],
+          "anchor_id": "p2_a19",
+          "component": "value"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            85.19999694824219,
+            537.7008056640625,
+            274.20001220703125,
+            549.7008056640625
+          ],
+          "anchor_id": "p2_a20",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "execution_place",
+      "label": "Place of signing",
+      "type": "text",
+      "owner": "applicant",
+      "group": "execution",
+      "required": false,
+      "multiline": false,
+      "repeat": true,
+      "max_length": 11,
+      "evidence": "Làm tại ... and its English translation Done at ... each contain a blank for the same place.",
+      "uncertainties": [
+        "Both bilingual blanks are mapped to the same value; the form does not explain whether both must be completed."
+      ],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            346.4660339355469,
+            571.4007568359375,
+            382.2030334472656,
+            584.4007568359375
+          ],
+          "anchor_id": "p2_a21",
+          "component": "value"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            345.4920349121094,
+            586.2008056640625,
+            384.4920349121094,
+            598.2008056640625
+          ],
+          "anchor_id": "p2_a25",
+          "component": "value"
+        }
+      ]
+    },
+    {
+      "id": "execution_date",
+      "label": "Date of signing",
+      "type": "date",
+      "owner": "applicant",
+      "group": "execution",
+      "required": false,
+      "multiline": false,
+      "repeat": false,
+      "max_length": 10,
+      "evidence": "Làm tại ... ngày...tháng...năm... / date (Day, Month, Year)",
+      "uncertainties": [],
+      "when": {},
+      "manual": false,
+      "placements": [
+        {
+          "page": 2,
+          "bbox": [
+            410.634033203125,
+            571.4007568359375,
+            433.34503173828125,
+            584.4007568359375
+          ],
+          "anchor_id": "p2_a22",
+          "component": "day"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            462.2700500488281,
+            571.4007568359375,
+            488.1790466308594,
+            584.4007568359375
+          ],
+          "anchor_id": "p2_a23",
+          "component": "month"
+        },
+        {
+          "page": 2,
+          "bbox": [
+            513.8020629882812,
+            571.4007568359375,
+            546.1980590820312,
+            584.4007568359375
+          ],
+          "anchor_id": "p2_a24",
+          "component": "year"
+        }
+      ]
+    },
+    {
+      "id": "official_certification",
+      "label": "Official certification: signature, full name, title and stamp",
+      "type": "manual",
+      "owner": "certifying_official",
+      "group": "certification",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 1000,
+      "evidence": "Xác nhận (4) / Certified by; ký, ghi rõ họ tên, chức vụ, đóng dấu / Signature, full name, title and stamp",
+      "uncertainties": [
+        "No measured anchor is supplied for the certification area.",
+        "Footnote (4) is absent; the certifying authority and circumstances requiring certification cannot be established."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": []
+    },
+    {
+      "id": "sponsor_signature_full_name",
+      "label": "Sponsor signature and full name",
+      "type": "manual",
+      "owner": "sponsor_signatory",
+      "group": "signatures",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 1000,
+      "evidence": "Người bảo lãnh (ký, ghi rõ họ tên) / The sponsor’s signature and full name",
+      "uncertainties": [
+        "No measured anchor is supplied for the sponsor signature area.",
+        "The signature heading does not specify its applicability to organisation versus family sponsorship; no branch restriction is inferred."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": []
+    },
+    {
+      "id": "applicant_signature_full_name",
+      "label": "Applicant signature and full name",
+      "type": "manual",
+      "owner": "applicant",
+      "group": "signatures",
+      "required": false,
+      "multiline": true,
+      "repeat": false,
+      "max_length": 1000,
+      "evidence": "Người đề nghị (ký, ghi rõ họ tên) / The applicant’s signature and full name",
+      "uncertainties": [
+        "No measured anchor is supplied for the applicant signature area."
+      ],
+      "when": {},
+      "manual": true,
+      "placements": []
+    }
+  ]
+}

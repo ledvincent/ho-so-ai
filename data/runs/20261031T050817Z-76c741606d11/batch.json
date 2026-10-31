@@ -1,0 +1,14 @@
+{
+  "batch_id": "edb91a10-e1a2-4924-89e9-416f44bae20d",
+  "baseline_id": "76c741606d11455e0b02ab54dbfbbe86883f5001ca3c89292a642b9daa6d890b",
+  "status": "interrupted",
+  "selected_codes": [
+    "1.003326",
+    "1.001146",
+    "1.003342",
+    "1.000771"
+  ],
+  "procedures": [],
+  "started_at": "2026-10-31T05:08:17.310767+00:00",
+  "reason": "Preflight found official applicant/authority metadata outside the main sections; parser expanded before the final common-baseline rerun"
+}

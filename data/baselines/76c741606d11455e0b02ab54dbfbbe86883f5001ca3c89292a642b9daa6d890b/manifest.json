@@ -1,0 +1,48 @@
+{
+  "id": "76c741606d11455e0b02ab54dbfbbe86883f5001ca3c89292a642b9daa6d890b",
+  "version": "procedure-baseline-1",
+  "provider": "codex",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "field_model": "gpt-6-astra",
+  "field_reasoning": "high",
+  "profile_version": "procedure-profile-1",
+  "profile_schema_sha256": "e4a73f2d63af6f2c4f651c4cb99961174e6ed1ff933433903f465fafe889a9f6",
+  "profile_prompt_sha256": "a5572d573572b46a68d5e1c0978438e9b7395d05e2f209b7f278dfba191bbb87",
+  "field_mapping_version": "visual-fields-2",
+  "field_schema_sha256": "249d43eb25128658aec7258905d7c357679b2d9f0a62e4833b6b4aa012c95c0b",
+  "field_prompt_sha256": "33054c592c6225fcea24f986ad65748d0961b74d9efc5a77d7a140819aa15a1f",
+  "comparison_schema_sha256": "d0fc6b72482b502cf8f3ca5ca70e1dcab475dea0b8a1c9052c05cfecb3c6a2c6",
+  "comparison_prompt_sha256": "2db8e50a7437cfef2a40c2b2e99275d551b99b3a9e51c2f3b23c34e4b7e8328e",
+  "criterion_vocabulary": [
+    "requested_action",
+    "applicant_category",
+    "current_stay_basis",
+    "authority_level",
+    "submission_channel",
+    "sponsor_type",
+    "nationality",
+    "residence_location",
+    "requested_duration"
+  ],
+  "retrieval_policy": "Attempt live primary, supplementary pages and each attachment. Replay explicitly identified last-known evidence on failure; never relabel replay as a fresh fetch.",
+  "association_policy": "Successful exact fingerprint takes precedence; filename fallback only without a successful download.",
+  "validations": [
+    "strict schema",
+    "exact identity",
+    "verbatim citation membership",
+    "condition structure",
+    "known form hashes",
+    "unknown is not ineligible"
+  ],
+  "source_code_sha256": {
+    "api/analysis.py": "e4c73e8ab1f1813871f048dd905021d7e3a5fd2dd7610a692ea296d04a011459",
+    "api/profiles.py": "6e0c7699f1d65bfd1f96c8167861e911e7769ada61147a3e225abd52a6e3097e",
+    "api/field_mapping.py": "4616c75f21aa43d08bd9ff9de43f89bfdcf35bcfd60378db2df8f51a2ce8db7d",
+    "api/comparisons.py": "78562fa90e33d9850cbed5052f79ea676795e728c5087449d879a822185199f6",
+    "api/parse.py": "346a2f2d4ae67030c5439289aacbabec8a8de05e046b4054eee2c376d68029e5",
+    "api/attachments.py": "3e259b1098dcd2488f3a240ff49098a1bc24632d4446939f1de1a42227cd56c6",
+    "api/documents.py": "4ed27018b100b2cd232a100b5ed79b3eb254377f775d60e5480d758c4b3ca6fe"
+  },
+  "profile_validation_attempts": 2
+}

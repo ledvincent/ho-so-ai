@@ -1,0 +1,28 @@
+{
+  "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+  "family": "NA5",
+  "original": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+  "preferred": true,
+  "review_status": "draft",
+  "revision_reference": "70/2026/TT-BCA",
+  "issued_on": "2026-05-25",
+  "effective_from": "2026-07-01",
+  "source_metadata": {
+    "fetched_at": "2026-10-31T04:23:48.244461+00:00",
+    "source_url": "https://congan.cantho.gov.vn/thu-tuc-hanh-chinh/thutuc/gia-han-tam-tru-cho-nguoi-nuoc-ngoai-tai-viet-nam-3.html",
+    "updated_on": null,
+    "verified_on": "2026-10-31",
+    "download_url": "https://congan.cantho.gov.vn/uploads/thu-tuc-hanh-chinh/na5_4.doc",
+    "published_on": null,
+    "legal_source_url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-70-2026-tt-bca-469801.htm"
+  },
+  "mapping_metadata": {
+    "model": "gpt-6-astra",
+    "provider": "codex",
+    "cache_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/mappings/8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26.json",
+    "completed_at": "2026-10-31T04:54:09.421376+00:00",
+    "reasoning_effort": "high",
+    "input_fingerprint": "8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26"
+  },
+  "superseded_by_sha256": null
+}

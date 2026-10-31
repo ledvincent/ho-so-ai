@@ -1,0 +1,3 @@
+# Evidence and baseline fingerprints depend on exact bytes, including newlines.
+data/** -text -whitespace
+api/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

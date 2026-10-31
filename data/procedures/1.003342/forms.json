@@ -1,0 +1,22 @@
+[
+  {
+    "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+    "family": "NA5",
+    "original": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+    "pdf": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
+    "fields": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50",
+    "source_label": "NA5.doc",
+    "association_method": "filename_fallback"
+  },
+  {
+    "sha256": "3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+    "family": "NA5",
+    "original": "data/forms/_objects/3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5/NA5--3939f22cebb5.doc",
+    "pdf": "data/forms/_objects/3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5/blank.pdf",
+    "fields": "data/forms/_objects/3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5/fields.json",
+    "source_url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/10/giayto/2020_11/1604957136_6-Mau_NA5.doc",
+    "source_label": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (Mẫu NA5) Tải về",
+    "association_method": "direct_download"
+  }
+]

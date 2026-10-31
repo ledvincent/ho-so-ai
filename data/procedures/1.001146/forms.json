@@ -1,0 +1,22 @@
+[
+  {
+    "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+    "family": "NA5",
+    "original": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+    "pdf": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
+    "fields": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/fields.json",
+    "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84",
+    "source_label": "NA5.doc",
+    "association_method": "filename_fallback"
+  },
+  {
+    "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec",
+    "family": "NA5",
+    "original": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/NA5--c66455c8eee0.doc",
+    "pdf": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/blank.pdf",
+    "fields": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/fields.json",
+    "source_url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_06/1655667280_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+    "source_label": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5); Tải về",
+    "association_method": "direct_download"
+  }
+]

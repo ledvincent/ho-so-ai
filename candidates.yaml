@@ -1,0 +1,20 @@
+catalog_url: https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html
+# Primary facts always come from this portal. Attachments are supplementary,
+# with matching national codes; file versions must be reviewed before release.
+procedures:
+  - code: "1.003326"
+    name: Gia hạn tạm trú cho người nước ngoài (cấp trung ương)
+    expected_name: Gia hạn tạm trú cho người nước ngoài
+    attachment_page: https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26283
+  - code: "1.001146"
+    name: Gia hạn tạm trú cho người nước ngoài (cấp tỉnh)
+    expected_name: Gia hạn tạm trú cho người nước ngoài
+    attachment_page: https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=36272
+  - code: "1.003342"
+    name: Cấp thị thực cho người nước ngoài tại Việt Nam (cấp trung ương)
+    expected_name: Cấp thị thực cho người nước ngoài tại Việt Nam
+    attachment_page: https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26284
+  - code: "1.000771"
+    name: Gia hạn tạm trú cho người đã được cấp giấy miễn thị thực (cấp trung ương)
+    expected_name: Gia hạn tạm trú cho người đã được cấp giấy miễn thị thực
+    attachment_page: https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26248

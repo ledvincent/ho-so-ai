@@ -1,0 +1,179 @@
+{
+  "run_id": "dcf16088-c129-4c22-a8c3-71e05edcdef5",
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "attachment_page": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=36272",
+  "documents": [
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_06/1655667280_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec",
+      "original": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/NA5--c66455c8eee0.doc",
+      "original_filename": "1655667280_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "pdf": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/blank.pdf",
+      "field_count": 39,
+      "observed_form_codes": [
+        "NA5"
+      ],
+      "status": "draft",
+      "mapping_metadata": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "completed_at": "2026-10-31T05:10:01.596531+00:00",
+        "cache_path": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/mappings/6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce.json",
+        "input_fingerprint": "6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce"
+      }
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84",
+      "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+      "original": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+      "pdf": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
+      "field_count": 43,
+      "observed_form_codes": [
+        "NA5"
+      ],
+      "status": "draft",
+      "acquisition": "stored_filename_fallback",
+      "mapping_metadata": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "high",
+        "completed_at": "2026-10-31T04:54:09.421376+00:00",
+        "cache_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/mappings/8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26.json",
+        "input_fingerprint": "8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26"
+      }
+    }
+  ],
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146",
+      "mode": "live",
+      "sha256": "6f28545a46f4ff0022d95ae8b2e7c89121dcd68f7d6f04bb1d59e7f3cc406b09"
+    },
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=36272",
+      "mode": "live",
+      "sha256": "e7094f3817b239dc302785b118fe2ce4c4272bc4b38f44ca0a6ed908fbe0dbdf"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_06/1655667280_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "mode": "live_download",
+      "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+    }
+  ],
+  "code": "1.001146",
+  "name": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp tỉnh)",
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146",
+    "sha256": "6f28545a46f4ff0022d95ae8b2e7c89121dcd68f7d6f04bb1d59e7f3cc406b09",
+    "raw_path": "data/_store/html/6f28545a46f4ff0022d95ae8b2e7c89121dcd68f7d6f04bb1d59e7f3cc406b09",
+    "fetched_at": "2026-10-31T05:19:08.651869+00:00"
+  },
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe9f1715001aa84",
+      "label": "NA5.doc"
+    }
+  ],
+  "attachment_source": {
+    "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=36272",
+    "sha256": "e7094f3817b239dc302785b118fe2ce4c4272bc4b38f44ca0a6ed908fbe0dbdf",
+    "raw_path": "data/_store/html/e7094f3817b239dc302785b118fe2ce4c4272bc4b38f44ca0a6ed908fbe0dbdf",
+    "fetched_at": "2026-10-31T05:19:11.352239+00:00"
+  },
+  "attachment_document": {
+    "name": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp tỉnh)",
+    "sections": [
+      {
+        "heading": "Mã thủ tục",
+        "text_verbatim": "1.001146"
+      },
+      {
+        "heading": "Lĩnh vực",
+        "text_verbatim": "Quản lý xuất nhập cảnh"
+      },
+      {
+        "heading": "Cơ quan thực hiện",
+        "text_verbatim": "Phòng xuất nhập cảnh"
+      },
+      {
+        "heading": "Mức độ cung cấp dịch vụ công trực tuyến",
+        "text_verbatim": "Dịch vụ công trực tuyến toàn trình"
+      },
+      {
+        "heading": "Cách thức thực hiện",
+        "text_verbatim": "Trực tiếp"
+      },
+      {
+        "heading": "Trình tự thực hiện",
+        "text_verbatim": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Nộp hồ sơ: 1. Cơ quan, tổ chức Việt Nam, công dân Việt Nam và người nước ngoài cư trú hợp pháp tại Việt Nam nộp hồ sơ tại trụ sở làm việc của Phòng Quản lý xuất nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương. 2. Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ: + Nếu đầy đủ, hợp lệ, thì nhận hồ sơ, in và trao giấy biên nhận, hẹn ngày trả kết quả. + Nếu hồ sơ chưa hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn người nộp bổ sung hồ sơ cho đầy đủ. * Thời gian nộp hồ sơ: từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày tết, ngày lễ và chủ nhật).\nBước 3: Nhận kết quả: a) Người đến nhận kết quả đưa giấy biên nhận cho cán bộ trả kết quả kiểm tra, đối chiếu, nếu có kết quả gia hạn tạm trú thì yêu cầu người đến nhận kết quả nộp lệ phí và ký nhận. b) Thời gian: từ thứ 2 đến thứ 6 hàng tuần (trừ ngày tết, ngày lễ và thứ 7, chủ nhật)."
+      },
+      {
+        "heading": "Thời hạn giải quyết",
+        "text_verbatim": "Trực tiếp\n5 Ngày\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ."
+      },
+      {
+        "heading": "Phí",
+        "text_verbatim": "Không"
+      },
+      {
+        "heading": "Lệ Phí",
+        "text_verbatim": "Không"
+      },
+      {
+        "heading": "Thành phần hồ sơ",
+        "text_verbatim": "Tên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\na) Tờ khai đề nghị cấp, bổ sung, sửa đổi thị thực và gia hạn tạm trú (mẫu NA5)\n6-Mẫu NA5.doc\nBản chính: 1\nBản sao: 0\nb) Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài\nBản chính: 1\nBản sao: 0\nSố bộ hồ sơ 01 (một) bộ.\nBản chính: 0\nBản sao: 0"
+      },
+      {
+        "heading": "Yêu cầu - điều kiện",
+        "text_verbatim": "1. Cơ quan, tổ chức đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ chứng minh tư cách pháp nhân tại Cục Quản lý xuất nhập cảnh -Bộ Công an. 2. Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa được nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”. 3. Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ cha, mẹ, vợ, chồng, con với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)."
+      },
+      {
+        "heading": "Căn cứ pháp lý",
+        "text_verbatim": "Thông tư 113/2009/TT-BTC\nSố: 113/2009/TT-BTC\nThông tư 190/2012/TT-BTC\nSố: 190/2012/TT-BTC\nLuật 47/2014/QH13\nSố: 47/2014/QH13\nThông tư 04/2015/TT-BCA\nSố: 04/2015/TT-BCA"
+      },
+      {
+        "heading": "Biểu mẫu",
+        "text_verbatim": "File mẫu:\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5);\nTải về"
+      },
+      {
+        "heading": "Kết quả thực hiện",
+        "text_verbatim": "Chứng nhận tạm trú (được gia hạn)"
+      }
+    ]
+  },
+  "form_association_policy": "Filename fallback to preferred shared family version",
+  "profile": {
+    "profile_id": 2,
+    "path": "data/runs/20261031T051230Z-9ae6ec378396/1.001146/profile/profile.json",
+    "validation": {
+      "schema": true,
+      "citations_verified": 208,
+      "identity": true,
+      "form_hashes": true,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "validated"
+        }
+      ]
+    },
+    "output_sha256": "4cf9576904b7cb67896b1990cc381b5db9440068b80f83f4b563d435a34a3bf5"
+  },
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "facts_ready": false,
+  "status": "blocked"
+}

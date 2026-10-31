@@ -1,0 +1,179 @@
+{
+  "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000771",
+  "code": "1.000771",
+  "name": "Gia hạn tạm trú cho người đã được cấp giấy miễn thị thực tại Cục Quản lý xuất nhập cảnh Bộ Công an",
+  "issues": [
+    "Attachment failed https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780: Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+  ],
+  "run_id": "92e728a5-6a0b-4cf0-9570-40122053c516",
+  "status": "blocked",
+  "profile": {
+    "path": "data/runs/20261031T051230Z-9ae6ec378396/1.000771/profile/profile.json",
+    "profile_id": 4,
+    "validation": {
+      "schema": true,
+      "attempts": [
+        {
+          "status": "validated",
+          "attempt": 1
+        }
+      ],
+      "identity": true,
+      "form_hashes": true,
+      "citations_verified": 189
+    },
+    "output_sha256": "d91be0c827dea0b31812d59d07ed31d8054a630153b0f59b50a699172b5d4ee8"
+  },
+  "documents": [
+    {
+      "pdf": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/blank.pdf",
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_07/1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec",
+      "status": "draft",
+      "original": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/NA5--c66455c8eee0.doc",
+      "field_count": 39,
+      "mapping_metadata": {
+        "model": "gpt-6-astra",
+        "provider": "codex",
+        "cache_path": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/mappings/6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce.json",
+        "completed_at": "2026-10-31T05:10:01.596531+00:00",
+        "reasoning_effort": "high",
+        "input_fingerprint": "6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce"
+      },
+      "original_filename": "1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "observed_form_codes": [
+        "NA5"
+      ]
+    },
+    {
+      "pdf": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780",
+      "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+      "status": "draft",
+      "original": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+      "acquisition": "stored_filename_fallback",
+      "field_count": 43,
+      "mapping_metadata": {
+        "model": "gpt-6-astra",
+        "provider": "codex",
+        "cache_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/mappings/8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26.json",
+        "completed_at": "2026-10-31T04:54:09.421376+00:00",
+        "reasoning_effort": "high",
+        "input_fingerprint": "8e193db17dd100ee81d9a0f5362ba5f83172d1072b9754b55b3e6b789e045b26"
+      },
+      "observed_form_codes": [
+        "NA5"
+      ]
+    }
+  ],
+  "freshness": {
+    "status": "requires_recheck",
+    "procedure_updated_on": null
+  },
+  "acquisition": [
+    {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000771",
+      "mode": "live",
+      "sha256": "15079cc5be2bbc7bdfb54a0a046454e122a92db0b1c5b8499784ce2ca0e1beb9"
+    },
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26248",
+      "mode": "live",
+      "sha256": "3435565dd8530f2eb1ce92fe40ae2245361b8336e1fd9449e92a69de9caaa12a"
+    },
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780",
+      "mode": "download_failed",
+      "error": "Server error '503 Service Temporarily Unavailable' for url 'https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503"
+    },
+    {
+      "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/01/giayto/2022_07/1658255460_Mau-NA5--Don-xin-cap-visa-thi-thuc-Viet-Nam-2.doc",
+      "mode": "live_download",
+      "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+    }
+  ],
+  "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+  "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "facts_ready": false,
+  "primary_forms": [
+    {
+      "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fb44fa49058e780",
+      "label": "NA5.doc"
+    }
+  ],
+  "primary_source": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.000771",
+    "sha256": "15079cc5be2bbc7bdfb54a0a046454e122a92db0b1c5b8499784ce2ca0e1beb9",
+    "raw_path": "data/_store/html/15079cc5be2bbc7bdfb54a0a046454e122a92db0b1c5b8499784ce2ca0e1beb9",
+    "fetched_at": "2026-10-31T05:34:08.860562+00:00"
+  },
+  "attachment_page": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26248",
+  "attachment_source": {
+    "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26248",
+    "sha256": "3435565dd8530f2eb1ce92fe40ae2245361b8336e1fd9449e92a69de9caaa12a",
+    "raw_path": "data/_store/html/3435565dd8530f2eb1ce92fe40ae2245361b8336e1fd9449e92a69de9caaa12a",
+    "fetched_at": "2026-10-31T05:34:12.202582+00:00"
+  },
+  "attachment_document": {
+    "name": "Gia hạn tạm trú cho người đã được cấp giấy miễn thị thực tại Cục Quản lý xuất nhập cảnh Bộ Công an",
+    "sections": [
+      {
+        "heading": "Mã thủ tục",
+        "text_verbatim": "1.000771"
+      },
+      {
+        "heading": "Lĩnh vực",
+        "text_verbatim": "Quản lý xuất nhập cảnh"
+      },
+      {
+        "heading": "Cơ quan thực hiện",
+        "text_verbatim": "Cục quản lý xuất nhập cảnh"
+      },
+      {
+        "heading": "Mức độ cung cấp dịch vụ công trực tuyến",
+        "text_verbatim": "Dịch vụ công trực tuyến một phần"
+      },
+      {
+        "heading": "Cách thức thực hiện",
+        "text_verbatim": "Trực tiếp\nTrực tuyến\nDịch vụ bưu chính"
+      },
+      {
+        "heading": "Trình tự thực hiện",
+        "text_verbatim": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị gia hạn tạm trú thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị gia hạn tạm trú có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ).\nBước 3: Trả kết quả:\n+ Người đến nhận kết quả trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân để kiểm tra, đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp không đồng ý gia hạn tạm trú thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+      },
+      {
+        "heading": "Thời hạn giải quyết",
+        "text_verbatim": "Trực tiếp\n5 Ngày làm việc\nnộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh.\nkhông quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ.\nTrực tuyến\n5 Ngày làm việc\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nkhông quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ.\nDịch vụ bưu chính\n5 Ngày làm việc\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\nkhông quá 05 ngày làm việc kể từ ngày nhận đủ hồ sơ."
+      },
+      {
+        "heading": "Phí",
+        "text_verbatim": "10 USD"
+      },
+      {
+        "heading": "Lệ Phí",
+        "text_verbatim": "Không"
+      },
+      {
+        "heading": "Thành phần hồ sơ",
+        "text_verbatim": "Tên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nGiấy miễn thị thực.\nBản chính: 1\nBản sao: 0\nHộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài.\nBản chính: 1\nBản sao: 0\nTrường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế hoặc giấy tờ cho phép thường trú do cơ quan có thẩm quyền của nước ngoài cấp cho người Việt Nam định cư ở nước ngoài phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0\nBản sao: 0\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.\nNA5.doc\nBản chính: 1\nBản sao: 0"
+      },
+      {
+        "heading": "Yêu cầu - điều kiện",
+        "text_verbatim": "+ Có hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị ít nhất 01 năm.\n+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng.\n+ Không thuộc các trường hợp chưa cho nhập cảnh và tạm hoãn xuất cảnh theo quy định tại Điều 21 và Điều 28 của Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+      },
+      {
+        "heading": "Căn cứ pháp lý",
+        "text_verbatim": "Luật 47/2014/QH13\nSố: 47/2014/QH13\nLuật 51/2019/QH14\nSố: 51/2019/QH14\nNghị định 82/2015/NĐ-CP\nSố: 82/2015/NĐ-CP\nThông tư 04/2015/TT-BCA\nSố: 04/2015/TT-BCA\nThông tư 25/2021/TT-BTC\nSố: 25/2021/TT-BTC\nLuật Xuất cảnh, nhập cảnh của công dân Việt Nam và Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam sửa đổi 2023\nSố: 23/2023/QH15\nThông tư số 22/2023/TT-BCA\nSố: 22/2023/TT-BCA"
+      },
+      {
+        "heading": "Biểu mẫu",
+        "text_verbatim": "File mẫu:\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5).\nTải về"
+      },
+      {
+        "heading": "Kết quả thực hiện",
+        "text_verbatim": "Gia hạn tạm trú (không quá 06 tháng)"
+      }
+    ]
+  },
+  "form_association_policy": "Filename fallback to preferred shared family version"
+}

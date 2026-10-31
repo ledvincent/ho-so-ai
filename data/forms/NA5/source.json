@@ -1,0 +1,11 @@
+{
+  "source": {
+    "url": "https://congan.cantho.gov.vn/uploads/thu-tuc-hanh-chinh/na5_4.doc",
+    "sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+    "raw_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+    "fetched_at": "2026-10-31T04:23:48.244461+00:00"
+  },
+  "analysis": {
+    "pdf_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf"
+  }
+}

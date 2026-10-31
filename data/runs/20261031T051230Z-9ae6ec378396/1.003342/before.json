@@ -1,0 +1,846 @@
+{
+  "code": "1.003342",
+  "audience": "foreigner",
+  "id": 16,
+  "procedure_code": "1.003342",
+  "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+  "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+  "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+  "raw_path": "data/archive/raw/22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+  "parser_version": "vpcp-by-code-2",
+  "name": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+  "status": "parsed",
+  "issues": [],
+  "document_json": {
+    "name": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+    "sections": [
+      {
+        "heading": "Trình tự thực hiện",
+        "text_verbatim": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật.\nBước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:\n+ Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội.\n+ Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh.\nHoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có).\n* Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ:\n+ Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp thị thực hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp thị thực thanh toán trực tuyến và nhận biên lai điện tử.\n+ Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh.\n+ Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n* Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát.\n* Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ).\nBước 3: Nhận kết quả:\n+ Người đề nghị cấp thị thực trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính.\n+ Trường hợp chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do.\n+ Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ)."
+      },
+      {
+        "heading": "Cách thức thực hiện",
+        "text_verbatim": "Hình thức nộp\nThời hạn giải quyết\nPhí, lệ phí\nMô tả\nTrực tiếp\n5 Ngày làm việc\nPhí: 5 USD\nPhí: 5 USD\nPhí: 25 USD\nPhí: 25 USD\nPhí: 50 USD\nPhí: 95 USD\nPhí: 135 USD\nPhí: 145 USD\nPhí: 155 USD\nnộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh.\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\nTrực tuyến\n5 Ngày làm việc\nPhí: 5 USD\nPhí: 5 USD\nPhí: 25 USD\nPhí: 25 USD\nPhí: 50 USD\nPhí: 95 USD\nPhí: 135 USD\nPhí: 145 USD\nPhí: 155 USD\nnộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.\nDịch vụ bưu chính\n5 Ngày làm việc\nPhí: 5 USD\nPhí: 5 USD\nPhí: 25 USD\nPhí: 25 USD\nPhí: 50 USD\nPhí: 95 USD\nPhí: 135 USD\nPhí: 145 USD\nPhí: 155 USD\nnộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có).\nkhông quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ."
+      },
+      {
+        "heading": "Thành phần hồ sơ",
+        "text_verbatim": "Bao gồm\nTên giấy tờ\nMẫu đơn, tờ khai\nSố lượng\nTờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.\nNA5.doc\nBản chính: 1 - Bản sao: 0\n01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời.\nBản chính: 1 - Bản sao: 0\nHộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài.\nBản chính: 1 - Bản sao: 0\nTrường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.\nBản chính: 0 - Bản sao: 0"
+      },
+      {
+        "heading": "Cơ quan thực hiện",
+        "text_verbatim": "Cục quản lý xuất nhập cảnh"
+      },
+      {
+        "heading": "Yêu cầu, điều kiện thực hiện",
+        "text_verbatim": "+ Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam.\n+ Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”.\n+ Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại khoản 1 Điều 45 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam."
+      }
+    ]
+  },
+  "published_on": null,
+  "updated_on": null,
+  "analysis": {
+    "readiness": "needs_review",
+    "facts_ready": false,
+    "issues": [],
+    "summary": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+    "report": {
+      "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "code": "1.003342",
+      "name": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)",
+      "issues": [],
+      "run_id": "8d6332e1-614e-4d1e-8044-ba2efedd5475",
+      "status": "needs_review",
+      "documents": [
+        {
+          "pdf": "data/forms/_objects/3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5/blank.pdf",
+          "url": "https://dichvucong.bocongan.gov.vn/public_dir/tttl/10/giayto/2020_11/1604957136_6-Mau_NA5.doc",
+          "sha256": "3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5",
+          "status": "draft",
+          "field_count": 43,
+          "observed_form_codes": [
+            "NA5"
+          ]
+        }
+      ],
+      "freshness": {
+        "reason": "Primary snapshot references a superseded NA5 revision; 2026 form is now verified",
+        "status": "requires_recheck",
+        "form_revision": "70/2026/TT-BCA",
+        "form_effective_from": "2026-07-01",
+        "procedure_updated_on": null,
+        "procedure_published_on": null
+      },
+      "catalog_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+      "facts_ready": false,
+      "primary_forms": [
+        {
+          "url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50",
+          "label": "NA5.doc"
+        }
+      ],
+      "primary_source": {
+        "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+        "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+        "raw_path": "data/archive/raw/22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+        "fetched_at": "2026-10-31T03:41:09.403530+00:00"
+      },
+      "attachment_page": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26284",
+      "source_controls": [
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802248)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802249)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802250)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802251)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802252)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802253)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802254)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802255)"
+          ]
+        },
+        {
+          "method": "Trực tiếp",
+          "references": [
+            "showMoreDes(802256)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802257)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802278)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802279)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802280)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802281)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802282)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802283)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802284)"
+          ]
+        },
+        {
+          "method": "Trực tuyến",
+          "references": [
+            "showMoreDes(802285)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802286)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802287)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802288)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802289)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802290)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802291)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802292)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802293)"
+          ]
+        },
+        {
+          "method": "Dịch vụ bưu chính",
+          "references": [
+            "showMoreDes(802294)"
+          ]
+        }
+      ],
+      "form_association": {
+        "family": "NA5",
+        "method": "filename_fallback",
+        "preferred_sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec"
+      },
+      "attachment_source": {
+        "url": "https://dichvucong.bocongan.gov.vn/bocongan/bothutuc/tthc?matt=26284",
+        "sha256": "64714bd066ccc097952b97ecd97bbc57a65f3e47beb0cc6b1f1efcd4e00199ea",
+        "raw_path": "data/archive/raw/64714bd066ccc097952b97ecd97bbc57a65f3e47beb0cc6b1f1efcd4e00199ea",
+        "fetched_at": "2026-10-31T03:37:49.254207+00:00"
+      }
+    }
+  },
+  "structured_profile": null,
+  "facts": [
+    {
+      "id": 46,
+      "snapshot_id": 16,
+      "kind": "steps",
+      "position": 0,
+      "text_verbatim": "Bước 1: Chuẩn bị hồ sơ theo quy định của pháp luật. Bước 2: Nộp hồ sơ vào giờ hành chính các ngày làm việc trong tuần tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an: + Số 44-46 đường Trần Phú, quận Ba Đình, thành phố Hà Nội. + Số 333-335-337 đường Nguyễn Trãi, Quận 1, Thành phố Hồ Chí Minh. Hoặc nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và gửi bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công trực tuyến (nếu có). * Cán bộ tiếp nhận hồ sơ kiểm tra tính pháp lý và nội dung hồ sơ: + Nếu hồ sơ đầy đủ, hợp lệ thì tiếp nhận hồ sơ, in và cấp giấy hẹn trả kết quả cho người nộp hồ sơ; yêu cầu nộp phí cho cán bộ thu phí. Cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị cấp thị thực hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người đề nghị cấp thị thực thanh toán trực tuyến và nhận biên lai điện tử. + Nếu hồ sơ thiếu hoặc không hợp lệ thì cán bộ tiếp nhận hồ sơ hướng dẫn hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an để người nộp hồ sơ hoàn chỉnh. + Trường hợp hồ sơ không đủ điều kiện thì không tiếp nhận hồ sơ, trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. * Trường hợp nộp hồ sơ trực tuyến, người đề nghị cấp thị thực có thể đề nghị nhận kết quả qua dịch vụ bưu chính và phải trả phí dịch vụ chuyển phát. * Thời gian tiếp nhận hồ sơ: Từ thứ 2 đến sáng thứ 7 hàng tuần (trừ ngày Tết, ngày lễ). Bước 3: Nhận kết quả: + Người đề nghị cấp thị thực trực tiếp nhận kết quả tại Cục Quản lý xuất nhập cảnh, Bộ Công an; khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu. Trường hợp đề nghị nhận kết quả qua dịch vụ bưu chính thực hiện theo hướng dẫn của cơ quan cung cấp dịch vụ bưu chính. + Trường hợp chưa cấp thị thực thì trả lời bằng văn bản hoặc thông báo trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an và nêu rõ lý do. + Thời gian trả kết quả: Từ thứ 2 đến thứ 6 hàng tuần (trừ ngày Tết, ngày lễ).",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 47,
+      "snapshot_id": 16,
+      "kind": "agency",
+      "position": 0,
+      "text_verbatim": "Cục quản lý xuất nhập cảnh",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 48,
+      "snapshot_id": 16,
+      "kind": "conditions",
+      "position": 0,
+      "text_verbatim": "+ Cơ quan, tổ chức đề nghị cấp thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam. + Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh”. + Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ) theo quy định tại khoản 1 Điều 45 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    }
+  ],
+  "requirements": [
+    {
+      "id": 96,
+      "snapshot_id": 16,
+      "position": 0,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "Tờ khai đề nghị cấp thị thực, gia hạn tạm trú (mẫu NA5) ban hành kèm theo Thông tư số 22/2023/TT-BCA ngày 30/6/2023 của Bộ Công an.",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+      "form_ids": [
+        53
+      ]
+    },
+    {
+      "id": 97,
+      "snapshot_id": 16,
+      "position": 1,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời.",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+      "form_ids": []
+    },
+    {
+      "id": 98,
+      "snapshot_id": 16,
+      "position": 2,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "Hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế của người nước ngoài.",
+      "originals": 1,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+      "form_ids": []
+    },
+    {
+      "id": 99,
+      "snapshot_id": 16,
+      "position": 3,
+      "group_heading": "Bao gồm",
+      "text_verbatim": "Trường hợp nộp hồ sơ trực tuyến thì hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế phải gửi qua dịch vụ bưu chính công ích về cơ quan tiếp nhận; thành phần hồ sơ khác phải được chứng thực điện tử theo quy định, trường hợp chưa được chứng thực điện tử thì gửi hồ sơ về cơ quan tiếp nhận thông qua dịch vụ bưu chính công ích.",
+      "originals": 0,
+      "copies": 0,
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b",
+      "form_ids": []
+    }
+  ],
+  "methods": [
+    {
+      "id": 42,
+      "snapshot_id": 16,
+      "position": 0,
+      "method": "Trực tiếp",
+      "processing_time_verbatim": "5 Ngày làm việc",
+      "description_verbatim": "nộp hồ sơ trực tiếp tại trụ sở Cục Quản lý xuất nhập cảnh. không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 43,
+      "snapshot_id": 16,
+      "position": 1,
+      "method": "Trực tuyến",
+      "processing_time_verbatim": "5 Ngày làm việc",
+      "description_verbatim": "nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an. không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 44,
+      "snapshot_id": 16,
+      "position": 2,
+      "method": "Dịch vụ bưu chính",
+      "processing_time_verbatim": "5 Ngày làm việc",
+      "description_verbatim": "nộp bổ sung hồ sơ qua dịch vụ bưu chính công ích theo thông báo của Cục Quản lý xuất nhập cảnh trên Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an (nếu có). không quá 05 ngày làm việc kể từ khi nhận đủ hồ sơ.",
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    }
+  ],
+  "fees": [
+    {
+      "id": 79,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 5 USD",
+      "amount": 5,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802248)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 80,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 5 USD",
+      "amount": 5,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802249)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 81,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 25 USD",
+      "amount": 25,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802250)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 82,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 25 USD",
+      "amount": 25,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802251)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 83,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 50 USD",
+      "amount": 50,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802252)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 84,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 95 USD",
+      "amount": 95,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802253)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 85,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 135 USD",
+      "amount": 135,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802254)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 86,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 145 USD",
+      "amount": 145,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802255)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 87,
+      "snapshot_id": 16,
+      "method": "Trực tiếp",
+      "text_verbatim": "Phí: 155 USD",
+      "amount": 155,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802256)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 88,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 5 USD",
+      "amount": 5,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802257)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 89,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 5 USD",
+      "amount": 5,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802278)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 90,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 25 USD",
+      "amount": 25,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802279)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 91,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 25 USD",
+      "amount": 25,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802280)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 92,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 50 USD",
+      "amount": 50,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802281)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 93,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 95 USD",
+      "amount": 95,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802282)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 94,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 135 USD",
+      "amount": 135,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802283)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 95,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 145 USD",
+      "amount": 145,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802284)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 96,
+      "snapshot_id": 16,
+      "method": "Trực tuyến",
+      "text_verbatim": "Phí: 155 USD",
+      "amount": 155,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802285)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 97,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 5 USD",
+      "amount": 5,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802286)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 98,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 5 USD",
+      "amount": 5,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802287)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 99,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 25 USD",
+      "amount": 25,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802288)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 100,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 25 USD",
+      "amount": 25,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802289)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 101,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 50 USD",
+      "amount": 50,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802290)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 102,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 95 USD",
+      "amount": 95,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802291)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 103,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 135 USD",
+      "amount": 135,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802292)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 104,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 145 USD",
+      "amount": 145,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802293)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    },
+    {
+      "id": 105,
+      "snapshot_id": 16,
+      "method": "Dịch vụ bưu chính",
+      "text_verbatim": "Phí: 155 USD",
+      "amount": 155,
+      "currency": "USD",
+      "condition_verbatim": null,
+      "condition_status": "not_separately_stated",
+      "detail_refs": [
+        "showMoreDes(802294)"
+      ],
+      "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+    }
+  ],
+  "forms": [
+    {
+      "id": 53,
+      "snapshot_id": 16,
+      "source_url": "https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fdf7c9d43a8af50",
+      "label": "NA5.doc",
+      "form_sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751",
+      "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+      "association_method": "filename_fallback",
+      "review_status": "draft",
+      "revision_reference": "70/2026/TT-BCA",
+      "issued_on": "2026-05-25",
+      "effective_from": "2026-07-01",
+      "raw_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/NA5--a17ded2807db.docx",
+      "pdf_path": "data/forms/_objects/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/blank.pdf",
+      "linked_from": {
+        "source_url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.003342",
+        "fetched_at": "2026-10-31T03:39:10.236894+00:00",
+        "sha256": "22acda77328078049135f233ca51fb363f931ad9bf759a6afcb2cc63a858442b"
+      },
+      "original_download_url": "/forms/a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751/original"
+    }
+  ]
+}

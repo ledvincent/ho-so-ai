@@ -1,0 +1,26 @@
+{
+  "1.001146": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.001146",
+    "sha256": "6f28545a46f4ff0022d95ae8b2e7c89121dcd68f7d6f04bb1d59e7f3cc406b09",
+    "fetched_at": "2026-10-31T03:03:30.969862+00:00",
+    "raw_path": "data/archive/raw/1.001146.html"
+  },
+  "1.002755": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.002755",
+    "sha256": "bc667b1e2bb26229879a8cc83f6efe02afdbdc4be1678855672b15fdfcdb4e30",
+    "fetched_at": "2026-10-31T03:03:26.771418+00:00",
+    "raw_path": "data/archive/raw/1.002755.html"
+  },
+  "1.004194": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004194",
+    "sha256": "9815676afba1970215f4c4e0ca05242bc59f1e2546292ed6ac3552468a3317b8",
+    "fetched_at": "2026-10-31T03:03:24.661818+00:00",
+    "raw_path": "data/archive/raw/1.004194.html"
+  },
+  "1.004222": {
+    "url": "https://vpcp.dichvucong.gov.vn/p/home/dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=1.004222",
+    "sha256": "5f7d85f80049146afec48ae6221286049594fc000314fa4179f2859dec2d877c",
+    "fetched_at": "2026-10-31T03:03:28.879707+00:00",
+    "raw_path": "data/archive/raw/1.004222.html"
+  }
+}

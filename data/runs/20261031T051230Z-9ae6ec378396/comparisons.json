@@ -1,0 +1,723 @@
+{
+  "relationships": [
+    {
+      "left_code": "1.000771",
+      "right_code": "1.001146",
+      "relationship_type": "different_applicant_basis",
+      "rationale": {
+        "value": "The published stay bases differ: 1.000771 specifically requires entry using a visa exemption certificate, sponsorship in Vietnam and a legitimate reason; 1.001146 describes foreign nationals and Vietnamese people holding foreign passports with a visa unless exempt, temporary-stay certification and residence in Vietnam. This does not establish mutually exclusive eligibility.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "1.000771/primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+          },
+          {
+            "source_id": "1.001146/primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam"
+          }
+        ],
+        "conflicts": []
+      },
+      "distinguishing_criteria": [
+        {
+          "criterion_key": "current_stay_basis",
+          "left": {
+            "value": "Entry using a visa exemption certificate, with sponsorship by an agency, organization or individual in Vietnam and a legitimate reason.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Visa unless exempt, temporary-stay certification issued by a competent Vietnamese authority, and current residence in Vietnam.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "What document or exemption supported your entry, and what temporary-stay certification do you hold?"
+        },
+        {
+          "criterion_key": "receiving_authority",
+          "left": {
+            "value": "Immigration Department, Ministry of Public Security. An explicit authority-level classification is not supplied.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "tại một trong hai trụ sở của Cục Quản lý xuất nhập cảnh - Bộ Công an:"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Provincial police immigration authority.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "section:1:Cách thức thực hiện",
+                "quote": "nộp hồ sơ trực tiếp tại trụ sở Cơ quan Quản lý xuất nhập cảnh Công an cấp tỉnh."
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Which receiving authority is handling your application?"
+        },
+        {
+          "criterion_key": "travel_document_validity",
+          "left": {
+            "value": "Passport or international travel document valid for at least one year.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "+ Có hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị ít nhất 01 năm."
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "The eligibility passage requires a valid passport; it does not specify a one-year minimum.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Which travel document do you hold, and when does it expire?"
+        }
+      ]
+    },
+    {
+      "left_code": "1.000771",
+      "right_code": "1.003326",
+      "relationship_type": "different_applicant_basis",
+      "rationale": {
+        "value": "1.000771 expressly requires entry using a visa exemption certificate. 1.003326 describes a visa-or-exemption basis together with temporary-stay certification and residence in Vietnam. These are different published requirements; their overlap and interchangeability are not established.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "1.000771/primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+          },
+          {
+            "source_id": "1.003326/primary",
+            "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+            "quote": "Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ, có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam"
+          }
+        ],
+        "conflicts": []
+      },
+      "distinguishing_criteria": [
+        {
+          "criterion_key": "current_stay_basis",
+          "left": {
+            "value": "Entry using a visa exemption certificate, sponsorship in Vietnam and a legitimate reason.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Visa unless exempt, temporary-stay certification issued by a competent Vietnamese authority, and residence in Vietnam.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003326/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Did you enter using a visa exemption certificate, and what documents establish your present stay?"
+        },
+        {
+          "criterion_key": "travel_document_validity",
+          "left": {
+            "value": "Passport or international travel document valid for at least one year.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "+ Có hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế còn giá trị ít nhất 01 năm."
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "The eligibility passage requires a valid passport; it does not specify a one-year minimum.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003326/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài có hộ chiếu hợp lệ"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "What travel document do you hold, and how much validity remains?"
+        },
+        {
+          "criterion_key": "published_extension_duration",
+          "left": {
+            "value": "The published outcome limits the extension to six months.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Gia hạn tạm trú (không quá 06 tháng)"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": null,
+            "status": "unknown",
+            "source_refs": [
+              {
+                "source_id": "1.003326/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Gia hạn chứng nhận tạm trú"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "What extension end date are you requesting?"
+        }
+      ]
+    },
+    {
+      "left_code": "1.000771",
+      "right_code": "1.003342",
+      "relationship_type": "different_action",
+      "rationale": {
+        "value": "1.000771 extends temporary stay for visa exemption certificate holders; 1.003342 issues a visa. Their published outcomes confirm this action difference.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "1.000771/primary",
+            "locator": "identity",
+            "quote": "Gia hạn tạm trú cho người đã được cấp giấy miễn thị thực tại Cục Quản lý xuất nhập cảnh Bộ Công an"
+          },
+          {
+            "source_id": "1.000771/supplementary",
+            "locator": "section:13:Kết quả thực hiện",
+            "quote": "Gia hạn tạm trú (không quá 06 tháng)"
+          },
+          {
+            "source_id": "1.003342/primary",
+            "locator": "identity",
+            "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+          },
+          {
+            "source_id": "1.003342/supplementary",
+            "locator": "section:13:Kết quả thực hiện",
+            "quote": "Thị thực loại dán hoặc rời"
+          }
+        ],
+        "conflicts": []
+      },
+      "distinguishing_criteria": [
+        {
+          "criterion_key": "requested_action_and_outcome",
+          "left": {
+            "value": "Temporary-stay extension of no more than six months.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Gia hạn tạm trú (không quá 06 tháng)"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Issuance of a sticker or separate visa.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/primary",
+                "locator": "identity",
+                "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+              },
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Thị thực loại dán hoặc rời"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Are you requesting a temporary-stay extension or issuance of a visa?"
+        },
+        {
+          "criterion_key": "current_stay_basis",
+          "left": {
+            "value": "Entry using a visa exemption certificate, sponsorship in Vietnam and a legitimate reason.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "+ Người nhập cảnh bằng giấy miễn thị thực được cơ quan, tổ chức, cá nhân tại Việt Nam bảo lãnh và có lý do chính đáng."
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Visa unless exempt, temporary-stay certification issued by a competent Vietnamese authority, and residence in Vietnam.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "có thị thực (trừ trường hợp miễn thị thực), chứng nhận tạm trú do cơ quan có thẩm quyền Việt Nam cấp, đang cư trú tại Việt Nam"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "What document or exemption supports your current stay?"
+        },
+        {
+          "criterion_key": "procedure_specific_document",
+          "left": {
+            "value": "The dossier expressly includes one original visa exemption certificate.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.000771/primary",
+                "locator": "section:2:Thành phần hồ sơ",
+                "quote": "Giấy miễn thị thực.\nBản chính: 1 - Bản sao: 0"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "The procedure expressly requires one recent 4 × 6 cm photograph if a separate visa is issued. Associated form instructions differ, as explained in issues.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/primary",
+                "locator": "section:2:Thành phần hồ sơ",
+                "quote": "01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời."
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Does your request concern extension under a visa exemption certificate or issuance of a separate visa?"
+        }
+      ]
+    },
+    {
+      "left_code": "1.001146",
+      "right_code": "1.003326",
+      "relationship_type": "different_authority_level",
+      "rationale": {
+        "value": "Both procedures extend temporary stay, but the original identities expressly distinguish provincial implementation from central implementation. This establishes an authority-level difference, without establishing geographic routing rules or unrestricted choice between them.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "1.001146/primary",
+            "locator": "identity",
+            "quote": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp tỉnh)"
+          },
+          {
+            "source_id": "1.003326/primary",
+            "locator": "identity",
+            "quote": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+          }
+        ],
+        "conflicts": []
+      },
+      "distinguishing_criteria": [
+        {
+          "criterion_key": "authority_level",
+          "left": {
+            "value": "Provincial level.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "identity",
+                "quote": "thực hiện tại cấp tỉnh"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Central level.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003326/primary",
+                "locator": "identity",
+                "quote": "thực hiện tại cấp Trung ương"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Has your application been directed to provincial immigration or the central Immigration Department?"
+        },
+        {
+          "criterion_key": "vietnamese_family_sponsor",
+          "left": {
+            "value": "The primary source lists grandparents, parents, spouses, children and biological siblings; the supplementary source lists parents, spouses and children. Both require proof of relationship. These passages do not expressly specify the sponsor's permanent residence.",
+            "status": "conflict",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)."
+              },
+              {
+                "source_id": "1.001146/supplementary",
+                "locator": "section:10:Yêu cầu - điều kiện",
+                "quote": "Công dân Việt Nam đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài phải là người có quan hệ cha, mẹ, vợ, chồng, con với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)."
+              }
+            ],
+            "conflicts": [
+              "The relationship lists differ. The supplementary omission does not establish that grandparents or biological siblings are excluded.",
+              "Absence of express permanent-residence wording does not establish eligibility for a sponsor residing abroad."
+            ]
+          },
+          "right": {
+            "value": "For the Vietnamese citizen family-sponsor branch, the sponsor permanently resides in Vietnam, has one of the listed relationships and presents relationship evidence.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003326/primary",
+                "locator": "section:4:Yêu cầu, điều kiện thực hiện",
+                "quote": "Công dân Việt Nam thường trú ở trong nước đề nghị cấp, bổ sung, sửa đổi thị thực, gia hạn tạm trú cho người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài là người có quan hệ ông, bà, cha, mẹ, vợ, chồng, con, anh, chị, em ruột với người nước ngoài, người Việt Nam mang hộ chiếu nước ngoài (xuất trình giấy tờ chứng minh quan hệ)"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "If a Vietnamese citizen relative is sponsoring you, what is the relationship and where does the sponsor permanently reside?"
+        },
+        {
+          "criterion_key": "in_person_result_collection",
+          "left": {
+            "value": "The primary collection instructions specify bringing the appointment slip.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "Khi đến nhận kết quả mang theo giấy hẹn trả kết quả để kiểm tra, đối chiếu."
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "The collection instructions specify the appointment slip, identification and payment receipt.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003326/primary",
+                "locator": "section:0:Trình tự thực hiện",
+                "quote": "khi đến nhận kết quả mang theo giấy hẹn trả kết quả, giấy tờ tùy thân, biên lai thu tiền để đối chiếu."
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Will you collect the result in person, and which collection documents do you have?"
+        }
+      ]
+    },
+    {
+      "left_code": "1.001146",
+      "right_code": "1.003342",
+      "relationship_type": "different_action",
+      "rationale": {
+        "value": "1.001146 extends temporary stay at provincial level; 1.003342 issues visas at central level. Both action and authority level differ.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "1.001146/primary",
+            "locator": "identity",
+            "quote": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp tỉnh)"
+          },
+          {
+            "source_id": "1.003342/primary",
+            "locator": "identity",
+            "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+          }
+        ],
+        "conflicts": []
+      },
+      "distinguishing_criteria": [
+        {
+          "criterion_key": "requested_action_and_outcome",
+          "left": {
+            "value": "Extension of temporary-stay certification.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Chứng nhận tạm trú (được gia hạn)"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Issuance of a sticker or separate visa.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/primary",
+                "locator": "identity",
+                "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+              },
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Thị thực loại dán hoặc rời"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Do you need your temporary stay extended or a visa issued?"
+        },
+        {
+          "criterion_key": "authority_level",
+          "left": {
+            "value": "Provincial level.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "identity",
+                "quote": "thực hiện tại cấp tỉnh"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Central level.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/primary",
+                "locator": "identity",
+                "quote": "thực hiện tại cấp Trung ương"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Which authority has been identified for your requested action?"
+        },
+        {
+          "criterion_key": "published_charges",
+          "left": {
+            "value": "The primary source lists USD 10; the supplementary fee and levy fields both say none. The applicable amount remains unresolved.",
+            "status": "conflict",
+            "source_refs": [
+              {
+                "source_id": "1.001146/primary",
+                "locator": "section:1:Cách thức thực hiện",
+                "quote": "Lệ phí: 10 USD"
+              },
+              {
+                "source_id": "1.001146/supplementary",
+                "locator": "section:7:Phí",
+                "quote": "Không"
+              },
+              {
+                "source_id": "1.001146/supplementary",
+                "locator": "section:8:Lệ Phí",
+                "quote": "Không"
+              }
+            ],
+            "conflicts": [
+              "USD 10 versus no charge is an unresolved source conflict; no definitive price comparison is possible."
+            ]
+          },
+          "right": {
+            "value": "Visa fees depend on the stated category: for example, USD 25 for a single-entry visa and USD 50 for a multiple-entry visa valid for no more than 90 days.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:7:Phí",
+                "quote": "Phí: 25 USD (Cấp thị thực có giá trị một lần)"
+              },
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:7:Phí",
+                "quote": "Phí: 50 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị không quá 90 ngày)"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "If requesting a visa, what entry count and validity period are requested?"
+        }
+      ]
+    },
+    {
+      "left_code": "1.003326",
+      "right_code": "1.003342",
+      "relationship_type": "different_action",
+      "rationale": {
+        "value": "Both identities specify central implementation, but 1.003326 extends temporary stay and 1.003342 issues visas. Their distinct published outcomes establish the action difference independently of shared forms.",
+        "status": "supported",
+        "source_refs": [
+          {
+            "source_id": "1.003326/primary",
+            "locator": "identity",
+            "quote": "Gia hạn tạm trú cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+          },
+          {
+            "source_id": "1.003326/supplementary",
+            "locator": "section:13:Kết quả thực hiện",
+            "quote": "Gia hạn chứng nhận tạm trú"
+          },
+          {
+            "source_id": "1.003342/primary",
+            "locator": "identity",
+            "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+          },
+          {
+            "source_id": "1.003342/supplementary",
+            "locator": "section:13:Kết quả thực hiện",
+            "quote": "Thị thực loại dán hoặc rời"
+          }
+        ],
+        "conflicts": []
+      },
+      "distinguishing_criteria": [
+        {
+          "criterion_key": "requested_action_and_outcome",
+          "left": {
+            "value": "Extension of temporary-stay certification.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003326/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Gia hạn chứng nhận tạm trú"
+              }
+            ],
+            "conflicts": []
+          },
+          "right": {
+            "value": "Issuance of a sticker or separate visa.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/primary",
+                "locator": "identity",
+                "quote": "Cấp thị thực cho người nước ngoài tại Việt Nam (thực hiện tại cấp Trung ương)"
+              },
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:13:Kết quả thực hiện",
+                "quote": "Thị thực loại dán hoặc rời"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "Are you seeking an extension of temporary stay or issuance of a visa?"
+        },
+        {
+          "criterion_key": "published_charges",
+          "left": {
+            "value": "USD 10, with the supplementary source specifying per occasion. The sources disagree on classification as phí or lệ phí.",
+            "status": "conflict",
+            "source_refs": [
+              {
+                "source_id": "1.003326/primary",
+                "locator": "section:1:Cách thức thực hiện",
+                "quote": "Lệ phí: 10 USD"
+              },
+              {
+                "source_id": "1.003326/supplementary",
+                "locator": "section:7:Phí",
+                "quote": "10 USD/lần"
+              },
+              {
+                "source_id": "1.003326/supplementary",
+                "locator": "section:8:Lệ Phí",
+                "quote": "Không"
+              }
+            ],
+            "conflicts": [
+              "The amount agrees, but its fee/levy classification differs. These are not established as two cumulative charges."
+            ]
+          },
+          "right": {
+            "value": "Category-dependent visa fees, including USD 25 for single entry and USD 50 for multiple entry valid for no more than 90 days.",
+            "status": "supported",
+            "source_refs": [
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:7:Phí",
+                "quote": "Phí: 25 USD (Cấp thị thực có giá trị một lần)"
+              },
+              {
+                "source_id": "1.003342/supplementary",
+                "locator": "section:7:Phí",
+                "quote": "Phí: 50 USD (Cấp thị thực có giá trị nhiều lần: Loại có giá trị không quá 90 ngày)"
+              }
+            ],
+            "conflicts": []
+          },
+          "question": "If requesting visa issuance, which entry count and validity period are requested?"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    "All six pairs have a supported relationship, so none requires not_established. No equivalence, supersession or mutually exclusive eligibility is established. Shared NA5 forms and similar names were not used to establish equivalence.",
+    "Current validity and procedure effective dates remain unknown. Extraction dates, validation metadata and a form registry's effective date do not establish that a procedure is currently applicable. Office addresses do not establish residence restrictions or provincial routing rules. Questions are generated clarification wording, not additional requirements.",
+    "1.000771 charge classification conflicts: 1.000771/primary, section:1:Cách thức thực hiện, says “Lệ phí: 10 USD”; 1.000771/supplementary, section:7:Phí, says “10 USD”, while section:8:Lệ Phí says “Không”. The amount agrees; classification differs. Do not add the amounts together.",
+    "1.001146 organizational sponsorship remains conflicted: 1.001146/primary, section:4:Yêu cầu, điều kiện thực hiện, specifies “đã có hồ sơ theo quy định tại khoản 2 Điều 16 Luật Nhập cảnh, xuất cảnh, quá cảnh, cư trú của người nước ngoài tại Việt Nam tại Phòng Quản lý xuất nhập cảnh, Công an tỉnh, thành phố trực thuộc Trung ương.” In contrast, 1.001146/supplementary, section:10:Yêu cầu - điều kiện, specifies “đã có hồ sơ chứng minh tư cách pháp nhân tại Cục Quản lý xuất nhập cảnh -Bộ Công an.” Both dossier description and filing location differ; neither version is selected as controlling.",
+    "1.001146 payment timing also conflicts: 1.001146/primary, section:0:Trình tự thực hiện, says “yêu cầu nộp phí cho cán bộ thu phí, cán bộ thu phí thu tiền, giao biên lai thu tiền cho người đề nghị gia hạn tạm trú” at acceptance; 1.001146/supplementary, section:5:Trình tự thực hiện, says “nếu có kết quả gia hạn tạm trú thì yêu cầu người đến nhận kết quả nộp lệ phí và ký nhận.” This latter instruction also conflicts with its fee and levy fields saying “Không”.",
+    "1.001146 online-service descriptions disagree: 1.001146/primary, section:5:Thông tin dịch vụ và đối tượng thực hiện, says “Một phần”; 1.001146/supplementary, section:3:Mức độ cung cấp dịch vụ công trực tuyến, says “Dịch vụ công trực tuyến toàn trình”, while section:4:Cách thức thực hiện says “Trực tiếp”. The primary explicitly permits online submission in section:1:Cách thức thực hiện: “nộp hồ sơ trực tuyến qua Cổng dịch vụ công quốc gia hoặc Cổng dịch vụ công Bộ Công an.” The disagreement does not establish that online submission is unavailable.",
+    "NA5 version applicability is unresolved for every procedure. Each of 1.000771/primary, 1.001146/primary, 1.003326/primary and 1.003342/primary, at section:2:Thành phần hồ sơ, cites “Thông tư số 22/2023/TT-BCA”. Each corresponding namespaced form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751, page:1, instead says “Kèm theo Thông tư số 70/2026/TT-BCA”; each corresponding registry:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751, form-association, says “\"association_method\":\"filename_fallback\"”. These associations do not establish acceptance of that exact 2026 form.",
+    "The downloaded forms do not resolve the version mismatch: 1.000771/form:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec, 1.001146/form:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec and 1.003326/form:c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec each contain “04 /2015/TT-BCA” at page:1; 1.003342/form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5, page:1, contains “04/2015/TT-BCA ngày 05-01-2015”. Each corresponding namespaced registry source, form-association, says “\"association_method\":\"direct_download\"”. Download association does not resolve the disagreement with the procedure's 2023 reference or establish replacement.",
+    "The 2026 form has a bilingual photograph conflict in all four procedure namespaces. In each namespaced form:a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751, page:2, Vietnamese says “nếu thuộc trường hợp cấp thị thực rời thì nộp kèm 01\\nảnh mới chụp”, whereas English says “enclose 2 recently taken photos”. The English also says “Submit in person one completed application form”. These form-level instructions do not remove procedure-level online channels or establish a photograph requirement for a stay-extension-only request.",
+    "For 1.003342, the downloaded 2015 form gives broader photo instructions than the procedure. 1.003342/form:3939f22cebb5464785832c5707678ca1166e02ad49c94e1ca3fe23234157b0e5, page:2, says “Submit in person one completed application form enclosed with passport or International Travel Document and One\\nrecently taken photo in 4x6cm size, with white background, front view, bare head without sunglasses at the Immigration\\nOffice.” The procedure instead conditions the photograph on separate-visa issuance and specifies no glasses: 1.003342/primary, section:2:Thành phần hồ sơ, “01 ảnh mới chụp, cỡ 4 x 6cm, mặt nhìn thẳng, không đội mũ, không đeo kính, trang phục lịch sự, phông ảnh nền trắng nếu thuộc trường hợp cấp thị thực rời.” The exact accepted form and resulting reconciliation remain unknown.",
+    "The entry/exit restriction clause is not converted into an eligibility algorithm. Each of 1.001146/primary, 1.003326/primary and 1.003342/primary, section:4:Yêu cầu, điều kiện thực hiện, says “và không thuộc diện \"chưa cho nhập cảnh Việt Nam\" hoặc không thuộc diện “tạm hoãn xuất cảnh””. Its logical scope remains unresolved. Referenced statutory provisions are not supplied in full and have not been supplemented from legal memory.",
+    "The six-month limit established for 1.000771 is not transferred to other procedures. An unstated duration or requirement remains unknown, not unlimited or waived. Form-specific nationality guidance, certification branches and supporting documents are not promoted into additional procedure-level exclusions or requirements."
+  ],
+  "baseline_id": "9ae6ec3783961087c6c88c9c6e2a01ba75d9dd2d412fe43413901322f74386c9",
+  "model_metadata": {
+    "provider": "codex",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high"
+  },
+  "citations_verified": 60,
+  "review_status": "validated_draft"
+}

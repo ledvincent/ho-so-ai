@@ -1,0 +1,20 @@
+{
+  "sha256": "c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec",
+  "family": "NA5",
+  "original": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/NA5--c66455c8eee0.doc",
+  "preferred": false,
+  "review_status": "draft",
+  "revision_reference": null,
+  "issued_on": null,
+  "effective_from": null,
+  "source_metadata": {},
+  "mapping_metadata": {
+    "model": "gpt-6-astra",
+    "provider": "codex",
+    "cache_path": "data/forms/_objects/c66455c8eee096a8eea0a072a49368643ddad1b96a4f9e5d10d99d8245fb5cec/mappings/6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce.json",
+    "completed_at": "2026-10-31T05:10:01.596531+00:00",
+    "reasoning_effort": "high",
+    "input_fingerprint": "6c74805ba1d6ab8a4766a0fb245abca88eda0635428f55bcbe01ed55f5de06ce"
+  },
+  "superseded_by_sha256": "a17ded2807db3f51347d55b9a5e2cac9d58d58de3c4510786a34b951e8184751"
+}
